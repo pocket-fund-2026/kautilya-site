@@ -61,6 +61,74 @@ export default function PortfolioPage() {
             <div style={{ fontSize: 24, color: 'var(--gold-dim)', transition: 'transform 0.3s' }}>→</div>
           </Link>
 
+          {/* FEATURED STORY — Dino Games */}
+          <Link
+            to="/story-dino-games"
+            className="deal-card reveal"
+            style={{
+              textDecoration: 'none',
+              gridColumn: 'span 2',
+              display: 'grid',
+              gridTemplateColumns: '1fr auto',
+              alignItems: 'center',
+              gap: 20,
+            }}
+          >
+            <div>
+              <div className="deal-meta">
+                <span className="deal-tag sector">Consumer Mobile Gaming</span>
+                <span className="deal-tag buyer">Asset Purchase</span>
+                <span className="deal-tag size">Global · Android + iOS</span>
+              </div>
+              <div className="deal-title" style={{ fontSize: 24 }}>
+                Acquiring a Self-Funding Mobile Asset in 8 Weeks
+              </div>
+              <div className="deal-challenge">
+                Off-market sourcing through founder-native channels. Console-level diligence.
+                Operators deployed from day one. $39K total consideration at 1.1× revenue.
+              </div>
+              <div className="deal-divider" />
+              <div className="deal-outcome">
+                $39K total · 56% at close · ~13 month payback · 8M installs · Operators deployed day one
+              </div>
+            </div>
+            <div style={{ fontSize: 24, color: 'var(--gold-dim)', transition: 'transform 0.3s' }}>→</div>
+          </Link>
+
+          {/* FEATURED STORY — Runify */}
+          <Link
+            to="/story-runify"
+            className="deal-card reveal"
+            style={{
+              textDecoration: 'none',
+              gridColumn: 'span 2',
+              display: 'grid',
+              gridTemplateColumns: '1fr auto',
+              alignItems: 'center',
+              gap: 20,
+            }}
+          >
+            <div>
+              <div className="deal-meta">
+                <span className="deal-tag sector">Consumer Mobile · Health &amp; Fitness</span>
+                <span className="deal-tag buyer">Single-Asset Acquisition</span>
+                <span className="deal-tag size">Global · iOS</span>
+              </div>
+              <div className="deal-title" style={{ fontSize: 24 }}>
+                $110K Acquisition, $30K Down: Structuring Around Uncertainty
+              </div>
+              <div className="deal-challenge">
+                3-month-old fitness app. Revenue was AUD not USD. Trial-heavy MRR. Kautilya underwrote
+                on verified cash and moved every unproven variable into earn-out structure.
+              </div>
+              <div className="deal-divider" />
+              <div className="deal-outcome">
+                $110K total · $20K upfront · 45-day close · 24-month earn-out · $30K guaranteed risk
+              </div>
+            </div>
+            <div style={{ fontSize: 24, color: 'var(--gold-dim)', transition: 'transform 0.3s' }}>→</div>
+          </Link>
+
           <div className="deal-card reveal">
             <div className="deal-meta">
               <span className="deal-tag sector">Healthcare Services</span>
@@ -161,6 +229,7 @@ export default function PortfolioPage() {
             <div className="sector-chip">Government Services</div>
             <div className="sector-chip">Education &amp; Training</div>
             <div className="sector-chip">Consumer &amp; Retail</div>
+            <div className="sector-chip">Consumer Mobile</div>
             <div className="sector-chip">Environmental Services</div>
             <div className="sector-chip">Logistics &amp; Supply Chain</div>
           </div>

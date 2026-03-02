@@ -102,6 +102,38 @@ body {
 .header.header--sky nav a { color: rgba(249,248,246,0.3); }
 .header.header--sky nav a:hover, .header.header--sky nav a.active { color: var(--header-footer-accent); }
 
+/* Hamburger — hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 300;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--text-muted);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
 .cta-btn {
   font-family: 'Lora', serif;
   font-size: 10px;
@@ -861,4 +893,507 @@ body {
   font-size: 10px;
   color: var(--text-muted);
   margin-top: 12px;
+}
+/* ================================================================
+   RESPONSIVE / MOBILE
+   Breakpoints: 768px (tablet), 480px (mobile)
+   ================================================================ */
+
+@media (max-width: 768px) {
+  /* Header — hamburger layout */
+  .header {
+    padding: 16px 24px;
+    flex-wrap: nowrap;
+  }
+
+  .header .logo {
+    font-size: 11px;
+    letter-spacing: 6px;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 3;
+  }
+
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(59,54,64,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 250;
+  }
+
+  .header nav.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header nav a {
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+
+  .cta-btn {
+    font-size: 9px;
+    padding: 8px 16px;
+    order: 2;
+    margin-right: 12px;
+  }
+
+  /* Override sky mode for mobile overlay */
+  .header.header--sky nav {
+    background: rgba(1,1,24,0.97);
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 24px 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    flex: 1;
+  }
+
+  .footer-columns {
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 80px 24px 40px;
+  }
+
+  .page-hero .section-title {
+    font-size: 32px;
+  }
+
+  /* Content sections */
+  .content-section {
+    padding: 60px 24px;
+  }
+
+  /* Common elements */
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-body {
+    font-size: 14px;
+  }
+
+  /* Pathway grid */
+  .pathway-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Portfolio */
+  .deal-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .deal-grid .deal-card {
+    grid-column: span 1 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .sector-tags {
+    gap: 8px;
+  }
+
+  /* Media */
+  .media-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .media-card.featured {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    flex-direction: column;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .values-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Engage */
+  .engage-page {
+    padding: 100px 24px 60px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Careers */
+  .culture-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .open-invite {
+    padding: 30px 24px;
+  }
+
+  /* Story page */
+  .story-hero {
+    padding: 100px 24px 60px;
+  }
+
+  .story-hero h1 {
+    font-size: 36px;
+  }
+
+  .story-body {
+    padding: 0 24px 80px;
+  }
+
+  .story-body h2 {
+    font-size: 24px;
+    margin: 40px 0 16px;
+  }
+
+  .story-body p {
+    font-size: 15px;
+  }
+
+  .pull-quote {
+    padding: 24px 0 24px 20px;
+  }
+
+  .pull-quote p {
+    font-size: 20px;
+  }
+
+  .metrics-strip {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+  }
+
+  .metric-value {
+    font-size: 28px;
+  }
+
+  .share-bar {
+    left: 12px;
+    gap: 12px;
+  }
+
+  .share-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .share-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .share-btn .tooltip {
+    display: none;
+  }
+
+  /* Process section */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Positioning */
+  .positioning {
+    padding: 80px 24px;
+  }
+
+  .positioning blockquote {
+    font-size: 20px;
+    padding: 24px 0 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header — tighter mobile */
+  .header {
+    padding: 14px 20px;
+  }
+
+  .header .logo {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  .header nav a {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+  .cta-btn {
+    font-size: 8px;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 20px 24px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Page wrapper */
+  .page {
+    padding-top: 60px;
+  }
+
+  /* Typography */
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 4px;
+  }
+
+  .section-body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 70px 20px 30px;
+  }
+
+  .page-hero .section-title {
+    font-size: 28px;
+  }
+
+  /* Content sections */
+  .content-section {
+    padding: 50px 20px;
+  }
+
+  /* Pathway cards */
+  .pathway-card {
+    padding: 24px 20px;
+  }
+
+  .pathway-card .card-title {
+    font-size: 18px;
+  }
+
+  .pathway-card .card-desc {
+    font-size: 12px;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .team-avatar {
+    width: 120px;
+    height: 120px;
+    font-size: 28px;
+  }
+
+  .team-name {
+    font-size: 20px;
+  }
+
+  .team-role {
+    font-size: 10px;
+  }
+
+  .team-bio {
+    font-size: 13px;
+  }
+
+  /* Portfolio */
+  .deal-card {
+    padding: 24px 20px;
+  }
+
+  .deal-title {
+    font-size: 18px;
+  }
+
+  .deal-meta {
+    gap: 8px;
+  }
+
+  .deal-tag {
+    font-size: 8px;
+    padding: 3px 8px;
+  }
+
+  /* Media */
+  .media-card {
+    padding: 24px 20px;
+  }
+
+  .media-title {
+    font-size: 18px;
+  }
+
+  .media-card.featured .media-title {
+    font-size: 20px;
+  }
+
+  /* Engage */
+  .engage-container .section-title {
+    font-size: 32px;
+  }
+
+  .engage-form input,
+  .engage-form textarea {
+    font-size: 13px;
+    padding: 12px 0;
+  }
+
+  /* Careers */
+  .role-card {
+    padding: 20px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .role-title {
+    font-size: 18px;
+  }
+
+  .role-arrow {
+    margin-top: 10px;
+  }
+
+  /* Story page */
+  .story-hero {
+    padding: 80px 20px 40px;
+  }
+
+  .story-hero h1 {
+    font-size: 28px;
+  }
+
+  .story-hero .subtitle {
+    font-size: 15px;
+  }
+
+  .story-body {
+    padding: 0 20px 60px;
+  }
+
+  .story-body h2 {
+    font-size: 22px;
+  }
+
+  .story-body p {
+    font-size: 14px;
+  }
+
+  .pull-quote {
+    padding: 20px 0 20px 16px;
+  }
+
+  .pull-quote p {
+    font-size: 18px;
+  }
+
+  .metrics-strip {
+    padding: 20px 0;
+  }
+
+  .metric-value {
+    font-size: 24px;
+  }
+
+  .metric-label {
+    font-size: 9px;
+  }
+
+  .share-bar {
+    display: none;
+  }
+
+  /* Phase dots - hide on mobile */
+  .phase-dots {
+    display: none;
+  }
+
+  /* Positioning */
+  .positioning {
+    padding: 60px 20px;
+  }
+
+  .positioning blockquote {
+    font-size: 18px;
+    padding: 20px 0 20px 16px;
+  }
+
+  .positioning blockquote footer {
+    font-size: 10px;
+  }
+
+  /* Process section */
+  .process-section {
+    padding: 60px 20px;
+  }
+
+  .pillar-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .pillar-body {
+    font-size: 13px;
+  }
+
+  .pillar-number {
+    font-size: 32px;
+  }
+
+  /* Pathways */
+  .pathways-section {
+    padding: 60px 20px;
+  }
 }

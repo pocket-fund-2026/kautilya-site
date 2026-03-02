@@ -556,6 +556,70 @@ export default function HomePage() {
   .pillar-body { font-size: 14px; color: var(--text-secondary); line-height: 1.8; }
 
   .pathways-section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .intro { padding: 100px 24px 60px; min-height: 90vh; }
+    .intro h1 { font-size: 38px !important; max-width: 100% !important; }
+    .intro p { font-size: 14px !important; max-width: 100% !important; margin: 0 auto 40px !important; }
+    .intro .scroll-cue { margin-top: 40px; }
+
+    .transition-to-sky { height: 120px; margin-top: -60px; }
+    .transition-to-canvas { height: 120px; }
+
+    .sky-scroll { height: 600vh; }
+    .sky-text-overlay { padding-bottom: 80px; }
+    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; margin-bottom: 12px; }
+    .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; }
+    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 12px; }
+    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; white-space: normal; max-width: 90%; }
+    .sky-text-overlay .hero-tagline { font-size: 13px; white-space: normal; max-width: 90%; }
+    .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; }
+
+    .positioning { padding: 80px 24px; }
+    .positioning .section-title { font-size: 32px !important; }
+    .positioning .section-body { font-size: 14px !important; max-width: 100%; }
+    .positioning blockquote { font-size: 20px !important; padding: 24px 0 24px 20px !important; }
+    .positioning blockquote footer { font-size: 10px !important; }
+
+    .process-section { padding: 60px 24px; }
+    .process-grid { grid-template-columns: 1fr; gap: 32px; }
+
+    .pathways-section { padding: 60px 24px; }
+  }
+
+  @media (max-width: 480px) {
+    .intro { padding: 80px 20px 50px; }
+    .intro .eyebrow { font-size: 9px; letter-spacing: 5px; }
+    .intro h1 { font-size: 28px !important; line-height: 1.3; }
+    .intro p { font-size: 13px !important; margin: 0 auto 30px !important; }
+    .intro .scroll-cue { margin-top: 30px; }
+    .intro .scroll-cue span { font-size: 8px; letter-spacing: 4px; }
+    .scroll-line { height: 30px; }
+
+    .transition-to-sky { height: 80px; margin-top: -40px; }
+    .transition-to-canvas { height: 80px; margin-bottom: 8px; }
+
+    .sky-scroll { height: 500vh; }
+    .sky-text-overlay { padding-bottom: 60px; }
+    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; }
+    .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; }
+    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 8px; }
+    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; }
+    .sky-text-overlay .hero-tagline { font-size: 11px; margin-top: 8px; }
+    .sky-text-overlay .devanagari { font-size: 10px; margin-top: 12px; }
+
+    .positioning { padding: 60px 20px; }
+    .positioning .section-title { font-size: 26px !important; }
+    .positioning blockquote { font-size: 18px !important; padding: 20px 0 20px 16px !important; }
+
+    .process-section { padding: 50px 20px; }
+    .pillar-title { font-size: 18px; letter-spacing: 2px; }
+    .pillar-body { font-size: 13px; }
+    .pillar-number { font-size: 32px; }
+
+    .pathways-section { padding: 50px 20px; }
+  }
       `}} />
       {/* INTRO */}
       <div className="intro">

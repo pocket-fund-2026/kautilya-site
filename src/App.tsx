@@ -7,6 +7,8 @@ import TeamPage from './pages/TeamPage';
 import EngagePage from './pages/EngagePage';
 import CareersPage from './pages/CareersPage';
 import StoryBorderlessPage from './pages/StoryBorderlessPage';
+import StoryDinoGamesPage from './pages/StoryDinoGamesPage';
+import StoryRunifyPage from './pages/StoryRunifyPage';
 import './pages/style.css';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/engage" element={<EngagePage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/story-borderless" element={<StoryBorderlessPage />} />
+        <Route path="/story-dino-games" element={<StoryDinoGamesPage />} />
+        <Route path="/story-runify" element={<StoryRunifyPage />} />
       </Route>
     </Routes>
   );
