@@ -13,25 +13,15 @@ function generateNakshatra() {
     const x = Math.sin(n * 127.1 + 311.7) * 43758.5453;
     return x - Math.floor(x);
   };
-  // Generate 18 scattered stars in a loose cloud across upper-center
+  // Generate 18 scattered stars in a loose cloud across center (shifted down to compensate parallax)
   const count = 18;
   for (let i = 0; i < count; i++) {
     stars.push({
       x: 0.25 + seed(i * 3 + 1) * 0.50,
-      y: 0.15 + seed(i * 3 + 2) * 0.45,
+      y: 0.30 + seed(i * 3 + 2) * 0.45, // shifted down from 0.15
     });
   }
-  // Connect nearby stars with faint lines (like a scattered web)
-  for (let i = 0; i < count; i++) {
-    for (let j = i + 1; j < count; j++) {
-      const dx = stars[i].x - stars[j].x;
-      const dy = stars[i].y - stars[j].y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 0.12) {
-        lines.push([i, j]);
-      }
-    }
-  }
+  // No connecting lines — Nakshatra is meant to be random/scattered
   return { stars, lines };
 }
 const NAKSHATRA = generateNakshatra();
@@ -123,6 +113,9 @@ const DHRUVA = generateDhruva();
 export default function HomePage() {
   const scrollProgressRef = useRef(0);
   const rafRef = useRef<number>(0);
+  // Mouse parallax — normalised target (-1..1) and smoothed current
+  const mouseTargetRef = useRef({ x: 0, y: 0 });
+  const mouseSmoothedRef = useRef({ x: 0, y: 0 });
 
   const handleScroll = useCallback(() => {
     const skyWrapper = document.getElementById('skyWrapper');
@@ -195,6 +188,15 @@ export default function HomePage() {
 
   useEffect(() => {
     document.title = 'Kautilya — Buy-Side Advisory';
+
+    // ---- Mouse parallax for camera-pan effect ----
+    const onMouseMove = (e: MouseEvent) => {
+      mouseTargetRef.current = {
+        x: (e.clientX / window.innerWidth - 0.5) * 2,   // -1 … 1
+        y: (e.clientY / window.innerHeight - 0.5) * 2,
+      };
+    };
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
 
     // ---- Canvas star field with constellation phases ----
     const canvas = document.getElementById('skyCanvas') as HTMLCanvasElement | null;
@@ -337,11 +339,10 @@ export default function HomePage() {
 
           const lerpSpeed = 0.04;
 
-          // Phase 0: Nakshatra — scattered star cluster
+          // Phase 0: Nakshatra — scattered star cluster (no lines, pure random)
           if (p0 > 0) {
             const mapped = mapCoords(NAKSHATRA.stars);
             lerpStars(mapped, NAKSHATRA.stars.length, lerpSpeed * p0);
-            drawLines(NAKSHATRA.lines, mapped, p0 * 0.25);
             drawConstellationGlow(mapped, p0);
           }
 
@@ -361,24 +362,56 @@ export default function HomePage() {
             drawConstellationGlow(mapped, p2);
           }
 
-          // Phase 3: Dhruva — pole star with rays
+          // Phase 3: Dhruva — all stars converge to the pole star (navigation star)
           if (p3 > 0) {
-            const mapped = mapCoords(DHRUVA.stars);
-            lerpStars(mapped, DHRUVA.stars.length, lerpSpeed * p3);
-            drawLines(DHRUVA.lines, mapped, p3 * 0.45);
-            drawConstellationGlow(mapped, p3);
+            // Converge ALL stars to the center
+            const centerTarget = mapCoords([DHRUVA_CENTER])[0];
+            const convergeFactor = lerpSpeed * p3 * 1.8; // faster convergence
+            for (const s of stars) {
+              s.x += (centerTarget.x - s.x) * convergeFactor;
+              s.y += (centerTarget.y - s.y) * convergeFactor;
+            }
 
-            // Extra bright center pole star
-            const center = mapCoords([DHRUVA_CENTER])[0];
-            ctx.globalAlpha = p3 * 0.8;
+            // Draw Dhruva rays (minimal lines radiating from center)
+            const mapped = mapCoords(DHRUVA.stars);
+            drawLines(DHRUVA.lines, mapped, p3 * 0.3);
+
+            // Gemini-logo style glow on the pole star
+            const center = centerTarget;
+            const pulse = Math.sin(t * 0.0012) * 0.15 + 0.85; // subtle pulse
+
+            // Multi-layer radial gradient glow (Gemini aesthetic)
+            // Outermost halo — soft purple/blue tint
+            const grad1 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 80);
+            grad1.addColorStop(0, `rgba(138, 180, 248, ${p3 * 0.18 * pulse})`);
+            grad1.addColorStop(0.4, `rgba(138, 180, 248, ${p3 * 0.08 * pulse})`);
+            grad1.addColorStop(1, 'rgba(138, 180, 248, 0)');
+            ctx.fillStyle = grad1;
+            ctx.fillRect(center.x - 80, center.y - 80, 160, 160);
+
+            // Mid glow — warm golden
+            const grad2 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 40);
+            grad2.addColorStop(0, `rgba(255, 215, 145, ${p3 * 0.5 * pulse})`);
+            grad2.addColorStop(0.5, `rgba(255, 215, 145, ${p3 * 0.2 * pulse})`);
+            grad2.addColorStop(1, 'rgba(255, 215, 145, 0)');
+            ctx.fillStyle = grad2;
+            ctx.fillRect(center.x - 40, center.y - 40, 80, 80);
+
+            // Inner glow — bright white core
+            const grad3 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 16);
+            grad3.addColorStop(0, `rgba(255, 251, 245, ${p3 * 0.95 * pulse})`);
+            grad3.addColorStop(0.6, `rgba(255, 251, 245, ${p3 * 0.4 * pulse})`);
+            grad3.addColorStop(1, 'rgba(255, 251, 245, 0)');
+            ctx.fillStyle = grad3;
+            ctx.fillRect(center.x - 16, center.y - 16, 32, 32);
+
+            // Bright center dot
+            ctx.globalAlpha = p3 * 0.95 * pulse;
             ctx.fillStyle = '#FFFBF5';
             ctx.beginPath();
-            ctx.arc(center.x, center.y, 4, 0, Math.PI * 2);
+            ctx.arc(center.x, center.y, 3.5, 0, Math.PI * 2);
             ctx.fill();
-            ctx.globalAlpha = p3 * 0.12;
-            ctx.beginPath();
-            ctx.arc(center.x, center.y, 18, 0, Math.PI * 2);
-            ctx.fill();
+            ctx.globalAlpha = 1;
           }
 
           // Return to scattered for neutral phases (gaps between phases)
@@ -404,6 +437,24 @@ export default function HomePage() {
             ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
             ctx.fill();
           }
+
+          // ---- Smooth mouse parallax (camera pan) ----
+          const PAN_RANGE = 18; // max pixels of shift
+          const MOUSE_LERP = 0.045; // smoothing factor (lower = more inertia)
+          const sm = mouseSmoothedRef.current;
+          const mt = mouseTargetRef.current;
+          sm.x += (mt.x - sm.x) * MOUSE_LERP;
+          sm.y += (mt.y - sm.y) * MOUSE_LERP;
+          const tx = sm.x * PAN_RANGE;
+          const ty = sm.y * PAN_RANGE;
+
+          // Apply to video (background layer)
+          const videoEl = canvas.parentElement?.querySelector('video') as HTMLVideoElement | null;
+          if (videoEl) {
+            videoEl.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(1.1)`;
+          }
+          // Apply to canvas (star layer) — same shift keeps them locked together
+          canvas.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(1.1)`;
 
           animFrameId = requestAnimationFrame(draw);
         };
@@ -434,6 +485,7 @@ export default function HomePage() {
         return () => {
           origCleanup();
           window.removeEventListener('scroll', onScroll);
+          window.removeEventListener('mousemove', onMouseMove);
           // Reset header class on unmount
           const header = document.getElementById('mainHeader');
           if (header) header.classList.remove('header--sky');
@@ -450,6 +502,7 @@ export default function HomePage() {
 
     return () => {
       window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('mousemove', onMouseMove);
       const header = document.getElementById('mainHeader');
       if (header) header.classList.remove('header--sky');
     };
@@ -506,9 +559,10 @@ export default function HomePage() {
   .transition-to-sky {
     margin-top: -100px;
     margin-bottom: 0;
-    background: linear-gradient(to bottom, var(--canvas) 0%, #100C22 50%, #000000 100%);
+    background: linear-gradient(to bottom, var(--canvas) 0%, #0A0816 50%, #000000 100%);
     position: relative;
     z-index: 2;
+    overflow: hidden;
   }
   
   .transition-to-canvas {
@@ -520,8 +574,16 @@ export default function HomePage() {
   .sky-wrapper { position: relative; background: var(--sky); margin-top: 0; }
   .sky-scroll { position: relative; height: 800vh; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
-  .sky-sticky video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.9); pointer-events: none; }
-  #skyCanvas { display: block; width: 100%; height: 100%; position: relative; z-index: 1; }
+  .sky-sticky video {
+    position: absolute; top: -5%; left: -5%; width: 110%; height: 110%;
+    object-fit: cover; z-index: 0; filter: brightness(0.9); pointer-events: none;
+    will-change: transform; transform: scale(1.1);
+  }
+  #skyCanvas {
+    display: block; width: 110%; height: 110%;
+    position: absolute; top: -5%; left: -5%;
+    z-index: 1; will-change: transform; transform: scale(1.1);
+  }
 
   .sky-text-overlay {
     position: absolute; inset: 0; display: flex; flex-direction: column;
@@ -639,7 +701,8 @@ export default function HomePage() {
       </div>
 
       {/* SKY */}
-      <div className="transition-to-sky" />
+      <div className="transition-to-sky">
+      </div>
       <div className="sky-wrapper" id="skyWrapper">
         <div className="sky-scroll" id="skyScroll">
           <div className="sky-sticky">

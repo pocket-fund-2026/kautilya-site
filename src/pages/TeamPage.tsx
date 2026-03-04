@@ -14,35 +14,6 @@ export default function TeamPage() {
           A focused team, not a headcount. Every engagement is led by senior practitioners who've built pipelines across
           sectors and deal types.
         </p>
-      </div>
-      <div className="content-section">
-        <div className="team-grid">
-          <div className="team-member reveal">
-            <div className="team-avatar">—</div>
-            <div className="team-name">Team Member</div>
-            <div className="team-role">Managing Partner</div>
-            <div className="team-bio">
-              Background in M&amp;A advisory and corporate development. Leads mandate strategy and client relationships.
-            </div>
-          </div>
-          <div className="team-member reveal" style={{ transitionDelay: '.15s' }}>
-            <div className="team-avatar">—</div>
-            <div className="team-name">Team Member</div>
-            <div className="team-role">Director, Research</div>
-            <div className="team-bio">
-              Former strategy consultant. Builds target universes and oversees the proprietary sourcing methodology.
-            </div>
-          </div>
-          <div className="team-member reveal" style={{ transitionDelay: '.3s' }}>
-            <div className="team-avatar">—</div>
-            <div className="team-name">Team Member</div>
-            <div className="team-role">Associate</div>
-            <div className="team-bio">
-              Focused on outreach execution and target qualification. The engine room of every active mandate.
-            </div>
-          </div>
-        </div>
-
         <div className="culture-section reveal">
           <div className="section-eyebrow">Ethos</div>
           <h2 className="section-title">How We Operate</h2>
@@ -66,6 +37,34 @@ export default function TeamPage() {
             <div className="value-item">
               <div className="value-word">Velocity</div>
               <div className="value-desc">Speed without compromise</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-section">
+        <div className="team-grid">
+          <div className="team-member reveal">
+            <div className="team-avatar">—</div>
+            <div className="team-name">Dev Shah</div>
+            <div className="team-role">Founder</div>
+            <div className="team-bio">
+                Dev drives every smart acquisition at Pocket Fund. 
+            </div>
+          </div>
+          <div className="team-member reveal" style={{ transitionDelay: '.15s' }}>
+            <div className="team-avatar">—</div>
+            <div className="team-name">Aum Thakarkar</div>
+            <div className="team-role">COO & Chief Analyst</div>
+            <div className="team-bio">
+              Head of Analyst at Pocket Fund. Built internal sourcing and operations systems, leads diligence and acquisitions for private capital and search investors.
+            </div>
+          </div>
+          <div className="team-member reveal" style={{ transitionDelay: '.3s' }}>
+            <div className="team-avatar">—</div>
+            <div className="team-name">Team Member</div>
+            <div className="team-role">Associate</div>
+            <div className="team-bio">
+              Focused on outreach execution and target qualification. The engine room of every active mandate.
             </div>
           </div>
         </div>
