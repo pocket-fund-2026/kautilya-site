@@ -508,7 +508,7 @@ export default function HomePage() {
     };
   }, [handleScroll]);
 
-  return (
+return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
   /* Homepage-specific styles */
@@ -544,34 +544,28 @@ export default function HomePage() {
   .intro .scroll-cue {
     margin-top: 60px; display: flex; flex-direction: column;
     align-items: center; gap: 10px;
-    opacity: 0; animation: fadeUp 0.8s ease 1.2s forwards;
+    opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards;
   }
 
-  .intro .scroll-cue span { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-dim); }
-  .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold-dim), transparent); animation: scrollPulse 2s ease-in-out infinite; }
+  .intro .scroll-cue span { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: rgba(201,185,154,0.75); }
+  .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(201,185,154,0.75), transparent); animation: scrollPulse 2s ease-in-out infinite; }
 
-  .transition-to-sky,
-  .transition-to-canvas {
-    height: 180px;
-    pointer-events: none;
-  }
-  
-  .transition-to-sky {
-    margin-top: -100px;
-    margin-bottom: 0;
-    background: linear-gradient(to bottom, var(--canvas) 0%, #0A0816 50%, #000000 100%);
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-  }
-  
-  .transition-to-canvas {
-    margin-top: 0;
-    margin-bottom: 14px;
-    background: linear-gradient(to bottom, #000000 0%, #100C22 50%, var(--canvas) 100%);
-  }
-
+  /* --- NEW MASK STYLES --- */
   .sky-wrapper { position: relative; background: var(--sky); margin-top: 0; }
+  
+  .sky-mask-top {
+    position: absolute; top: 0; left: 0; width: 100%; height: 35vh;
+    background: linear-gradient(to bottom, var(--canvas) 0%, rgba(59, 54, 64, 0) 100%);
+    z-index: 10; pointer-events: none;
+  }
+
+  .sky-mask-bottom {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 35vh;
+    background: linear-gradient(to bottom, rgba(59, 54, 64, 0) 0%, var(--canvas) 100%);
+    z-index: 10; pointer-events: none;
+  }
+  /* ----------------------- */
+
   .sky-scroll { position: relative; height: 800vh; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
   .sky-sticky video {
@@ -626,8 +620,7 @@ export default function HomePage() {
     .intro p { font-size: 14px !important; max-width: 100% !important; margin: 0 auto 40px !important; }
     .intro .scroll-cue { margin-top: 40px; }
 
-    .transition-to-sky { height: 120px; margin-top: -60px; }
-    .transition-to-canvas { height: 120px; }
+    .sky-mask-top, .sky-mask-bottom { height: 20vh; }
 
     .sky-scroll { height: 600vh; }
     .sky-text-overlay { padding-bottom: 80px; }
@@ -656,11 +649,10 @@ export default function HomePage() {
     .intro h1 { font-size: 28px !important; line-height: 1.3; }
     .intro p { font-size: 13px !important; margin: 0 auto 30px !important; }
     .intro .scroll-cue { margin-top: 30px; }
-    .intro .scroll-cue span { font-size: 8px; letter-spacing: 4px; }
+    .intro .scroll-cue span { font-size: 9px; letter-spacing: 4px; }
     .scroll-line { height: 30px; }
 
-    .transition-to-sky { height: 80px; margin-top: -40px; }
-    .transition-to-canvas { height: 80px; margin-bottom: 8px; }
+    .sky-mask-top, .sky-mask-bottom { height: 15vh; }
 
     .sky-scroll { height: 500vh; }
     .sky-text-overlay { padding-bottom: 60px; }
@@ -701,9 +693,8 @@ export default function HomePage() {
       </div>
 
       {/* SKY */}
-      <div className="transition-to-sky">
-      </div>
       <div className="sky-wrapper" id="skyWrapper">
+        <div className="sky-mask-top" />
         <div className="sky-scroll" id="skyScroll">
           <div className="sky-sticky">
             <video autoPlay muted loop playsInline>
@@ -735,8 +726,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <div className="sky-mask-bottom" />
       </div>
-      <div className="transition-to-canvas" />
 
       {/* ARTHASHASTRA APPROACH */}
       <div className="positioning reveal">

@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import SplashCursor from './components/SplashCursor';
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
 import MediaPage from './pages/MediaPage';
@@ -13,9 +14,11 @@ import './pages/style.css';
 
 function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<HomePage />} />
+    <>
+      <SplashCursor />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/media" element={<MediaPage />} />
         <Route path="/team" element={<TeamPage />} />
@@ -26,6 +29,7 @@ function App() {
         <Route path="/story-runify" element={<StoryRunifyPage />} />
       </Route>
     </Routes>
+    </>
   );
 }
 
