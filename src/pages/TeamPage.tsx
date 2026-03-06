@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import devImage from '../assets/dev.jpeg';
+import devImage from '../assets/Dev.jpeg';
 import aumImage from '../assets/aum.png';
 
 type TeamMember = {
