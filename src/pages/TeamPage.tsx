@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import devImage from '../assets/Dev.jpeg';
-import aumImage from '../assets/Aum.png';
+import aumImage from '../assets/aum.png';
 
 type TeamMember = {
   name: string;
