@@ -237,7 +237,7 @@ body {
 .footer {
   padding: 60px 48px 40px;
   border-top: 1px solid var(--border);
-  background: var(--canvas);
+  background: #2F2B33;
 }
 
 .footer-content {
@@ -1427,12 +1427,4 @@ body {
     background: linear-gradient(to bottom, rgba(59, 54, 64, 0) 0%, var(--canvas) 100%);
     z-index: 10;
     pointer-events: none;
-  }
-
-  @media (max-width: 768px) {
-    /* Make the fade a bit shorter on smaller screens */
-    .sky-mask-top, 
-    .sky-mask-bottom {
-      height: 20vh;
-    }
   }

@@ -1,19 +1,31 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import devImage from '../assets/Dev.jpeg';
+import aumImage from '../assets/Aum.png';
+
+type TeamMember = {
+  name: string;
+  role: string;
+  desc: string;
+  initials: string;
+  image?: string;
+};
 
 // ---- Team Data (9 Members for a 3x3 Grid) ----
-const TEAM_MEMBERS = [
+const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Dev Shah',
     role: 'Founder',
     desc: 'Dev drives every smart acquisition at Pocket Fund.',
     initials: 'DS',
+    image: devImage,
   },
   {
     name: 'Aum Thakarkar',
     role: 'Chief Analyst',
     desc: 'Head of Analyst at Pocket Fund. Built internal sourcing and operations systems, leads diligence and acquisitions.',
     initials: 'AT',
+    image: aumImage,
   },
   {
     name: 'Ganesh Jagtap',
@@ -60,7 +72,7 @@ const TEAM_MEMBERS = [
 ];
 
 // ---- Glare Hover Card Component ----
-const GlareAvatar = ({ initials, desc }: { initials: string; desc: string }) => {
+const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string; image?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState({});
 
@@ -101,8 +113,11 @@ const GlareAvatar = ({ initials, desc }: { initials: string; desc: string }) => 
       style={style as React.CSSProperties}
     >
       <div className="glare-card-inner">
-        {/* Placeholder Avatar Background */}
-        <span className="avatar-placeholder">{initials}</span>
+        {image ? (
+          <img src={image} alt={initials} className="avatar-image" loading="lazy" />
+        ) : (
+          <span className="avatar-placeholder">{initials}</span>
+        )}
         
         {/* Description overlay revealed on hover */}
         <div className="glare-card-desc">
@@ -220,8 +235,22 @@ export default function TeamPage() {
           transition: opacity 0.3s ease;
         }
 
+        .avatar-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          transition: opacity 0.3s ease, transform 0.35s ease;
+          transform: scale(1.01);
+        }
+
         .glare-card:hover .avatar-placeholder {
           opacity: 0.1; /* Dim initials when description shows */
+        }
+
+        .glare-card:hover .avatar-image {
+          opacity: 0.15;
+          transform: scale(1.04);
         }
 
         .glare-card-desc {
@@ -350,7 +379,7 @@ export default function TeamPage() {
                 key={member.name}
                 style={{ transitionDelay: `${(index % 3) * 0.15}s` }}
               >
-                <GlareAvatar initials={member.initials} desc={member.desc} />
+                <GlareAvatar initials={member.initials} desc={member.desc} image={member.image} />
                 <div className="member-name">{member.name}</div>
                 <div className="member-role">{member.role}</div>
               </div>
