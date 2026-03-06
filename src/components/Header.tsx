@@ -18,15 +18,12 @@ export default function Header() {
   }, [menuOpen]);
 
   const navMap: Record<string, string> = {
-    '/': 'approach',
     '/portfolio': 'portfolio',
     '/media': 'stories',
     '/story-borderless': 'stories',
     '/story-dino-games': 'stories',
     '/story-runify': 'stories',
     '/team': 'team',
-    '/careers': 'approach',
-    '/engage': 'approach',
   };
 
   const activePage = navMap[path] || '';
@@ -47,7 +44,7 @@ export default function Header() {
       </button>
 
       <nav className={menuOpen ? 'open' : ''}>
-        <a href="#" data-page="approach" className={activePage === 'approach' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Approach</a>
+        <a href="#" data-page="approach" className="" onClick={() => setMenuOpen(false)}>Approach</a>
         <Link to="/portfolio" data-page="portfolio" className={activePage === 'portfolio' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Portfolio</Link>
         <Link to="/media" data-page="stories" className={activePage === 'stories' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Stories</Link>
         <Link to="/team" data-page="team" className={activePage === 'team' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Team</Link>

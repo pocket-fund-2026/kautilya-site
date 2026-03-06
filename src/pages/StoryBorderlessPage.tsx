@@ -1,40 +1,9 @@
-import { useEffect, useCallback } from 'react';
+import { useCallback } from 'react';
+import { useReadingProgressAndShareBar } from '../components/useReadingProgressAndShareBar';
 import { Link } from 'react-router-dom';
 
 export default function StoryBorderlessPage() {
-  useEffect(() => {
-    document.title = 'Kautilya — Borderless: Rewriting the M&A Playbook';
-
-    // Reading progress bar
-    const updateProgress = () => {
-      const bar = document.getElementById('readingProgress');
-      if (!bar) return;
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = docHeight > 0 ? `${(scrollTop / docHeight) * 100}%` : '0%';
-    };
-
-    // Show/hide share bar
-    const toggleShareBar = () => {
-      const shareBar = document.getElementById('shareBar');
-      const storyStart = document.getElementById('storyStart');
-      if (!shareBar || !storyStart) return;
-      const startOffset = storyStart.getBoundingClientRect().top + window.scrollY;
-      if (window.scrollY > startOffset - 200) {
-        shareBar.classList.add('visible');
-      } else {
-        shareBar.classList.remove('visible');
-      }
-    };
-
-    const onScroll = () => {
-      updateProgress();
-      toggleShareBar();
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
