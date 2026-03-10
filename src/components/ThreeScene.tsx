@@ -18,9 +18,6 @@ gsap.registerPlugin(ScrollTrigger);
 const baseBloomStrength = 1.4;
 const baseExposure = 1.5;
 const baseStarEmissive = 2.5;
-const shineOffsetX = -0.3;
-const shineOffsetY = 0.8;
-const shineOffsetZ = 0.7;
 
 interface ModelEntry {
   url: string;
@@ -254,6 +251,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     // Scroll-driven animation
     function setupScrollAnimation() {
       const proxy = { p: 0 };
+      let lockedStarPos: THREE.Vector3 | null = null;
 
       const mapRange = (p: number, start: number, end: number) => {
         if (p <= start) return 0;
@@ -302,15 +300,22 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             });
           });
 
-          // Gemini-style star flash
+          // Gemini-style star flash — track center, lock once converged
           const third = models[2]?.loaded;
           if (geminiStar && third) {
             geminiStar.visible = finalPhase > 0.001;
-            geminiStar.position.set(
-              third.position.x + shineOffsetX,
-              third.position.y + shineOffsetY,
-              third.position.z + shineOffsetZ,
-            );
+            const box = new THREE.Box3().setFromObject(third);
+            const center = box.getCenter(new THREE.Vector3());
+            // Once near full convergence, lock the position permanently
+            if (model2T >= 0.85) {
+              if (!lockedStarPos) {
+                lockedStarPos = center.clone();
+              }
+              geminiStar.position.copy(lockedStarPos);
+            } else {
+              // Track the live center before convergence
+              geminiStar.position.copy(center);
+            }
             const s = THREE.MathUtils.lerp(0.35, 5, finalPhase);
             geminiStar.scale.set(s, s, 1);
             geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.55, finalPhase);
