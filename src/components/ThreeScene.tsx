@@ -41,7 +41,7 @@ function fitAndCenter(model: THREE.Object3D, desiredSize = 7) {
 
 /** Create a 4-point navigation star texture */
 function createGeminiStarTexture() {
-  const size = 512;
+  const size = 256;
   const c = document.createElement('canvas');
   c.width = size;
   c.height = size;
@@ -122,8 +122,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const camera = new THREE.PerspectiveCamera(
       45,
       canvas.clientWidth / canvas.clientHeight,
-      0.01,
-      10000,
+      0.1,
+      100,
     );
     camera.position.set(0, 1, 16);
 
@@ -139,10 +139,10 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
     const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(canvas.clientWidth, canvas.clientHeight),
+      new THREE.Vector2(canvas.clientWidth * 0.5, canvas.clientHeight * 0.5),
       baseBloomStrength,
-      0.8,
-      0.1,
+      0.6,
+      0.15,
     );
     composer.addPass(bloomPass);
 
@@ -159,6 +159,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     geminiStar = new THREE.Sprite(starMaterial);
     geminiStar.visible = false;
     geminiStar.scale.set(0.01, 0.01, 1);
+    geminiStar.frustumCulled = false;
     scene.add(geminiStar);
 
     // Looping video background
@@ -244,8 +245,9 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             model.scale.multiplyScalar(3);
           }
 
-          // Star-like material
+          // Star-like material + perf: disable frustum culling, freeze static transforms
           model.traverse((child) => {
+            child.frustumCulled = false;
             if ((child as THREE.Mesh).isMesh) {
               const mesh = child as THREE.Mesh;
               const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
@@ -341,16 +343,26 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
               action.time = Math.min(targetTime, Math.max(clipDuration - 0.0001, 0));
             });
             entry.mixer.update(0);
+          });
 
-            entry.starMaterials.forEach((mat) => {
-              mat.emissiveIntensity = nakshatraStarEmissive;
-            });
+          // Batch emissive update only when there's a meaningful change
+          const roundedEmissive = Math.round(nakshatraStarEmissive * 100) / 100;
+          models.forEach((entry) => {
+            const first = entry.starMaterials[0];
+            if (first && Math.abs(first.emissiveIntensity - roundedEmissive) > 0.01) {
+              entry.starMaterials.forEach((mat) => {
+                mat.emissiveIntensity = roundedEmissive;
+              });
+            }
           });
 
           // Gemini-style star flash — track center, lock once converged
+          const showStar = finalPhase > 0.001;
           const third = models[2]?.loaded;
           if (geminiStar && third) {
-            geminiStar.visible = finalPhase > 0.001;
+            geminiStar.visible = showStar;
+            if (!showStar) { /* skip expensive bounding box when hidden */ }
+            else {
             const box = tempBox.setFromObject(third);
             const center = box.getCenter(tempCenter);
             // Once near full convergence, lock the position permanently
@@ -366,6 +378,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             const s = THREE.MathUtils.lerp(0.35, 5, finalPhase);
             geminiStar.scale.set(s, s, 1);
             geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.55, finalPhase);
+            }
           }
 
           bloomPass.strength = THREE.MathUtils.lerp(baseBloomStrength, 3, finalPhase);
@@ -377,15 +390,20 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       scrollTriggerRef = scrollTriggerInstance;
     }
 
-    // Resize handler
+    // Resize handler — debounced to avoid layout thrashing
+    let resizeTimer: ReturnType<typeof setTimeout>;
     const onResize = () => {
-      const w = canvas.clientWidth;
-      const h = canvas.clientHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-      renderer.setSize(w, h);
-      composer.setSize(w, h);
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const w = canvas.clientWidth;
+        const h = canvas.clientHeight;
+        if (w === 0 || h === 0) return;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+        renderer.setSize(w, h);
+        composer.setSize(w, h);
+      }, 100);
     };
     window.addEventListener('resize', onResize);
 
@@ -404,6 +422,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     return () => {
       disposed = true;
       cancelAnimationFrame(animFrameId);
+      clearTimeout(resizeTimer);
       window.removeEventListener('resize', onResize);
       document.removeEventListener('visibilitychange', onVisibilityChange);
       window.removeEventListener('pointerdown', onUserResume);

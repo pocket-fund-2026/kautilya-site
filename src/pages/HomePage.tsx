@@ -5,11 +5,38 @@ import ThreeScene from '../components/ThreeScene';
 export default function HomePage() {
   const scrollProgressRef = useRef(0);
 
+  // Cache DOM lookups so we don't getElementById on every scroll frame
+  const domCacheRef = useRef<{
+    skyWrapper: HTMLElement | null;
+    skyScroll: HTMLElement | null;
+    header: HTMLElement | null;
+    phaseDots: HTMLElement | null;
+    phaseDotEls: NodeListOf<Element> | null;
+    textOverlays: (HTMLElement | null)[];
+  } | null>(null);
+
+  const getDomCache = useCallback(() => {
+    if (!domCacheRef.current) {
+      const phaseDots = document.getElementById('phaseDots');
+      domCacheRef.current = {
+        skyWrapper: document.getElementById('skyWrapper'),
+        skyScroll: document.getElementById('skyScroll'),
+        header: document.getElementById('mainHeader'),
+        phaseDots,
+        phaseDotEls: phaseDots?.querySelectorAll('.phase-dot') ?? null,
+        textOverlays: [
+          document.getElementById('skyText0'),
+          document.getElementById('skyText1'),
+          document.getElementById('skyText2'),
+          document.getElementById('skyText3'),
+        ],
+      };
+    }
+    return domCacheRef.current;
+  }, []);
+
   const handleScroll = useCallback(() => {
-    const skyWrapper = document.getElementById('skyWrapper');
-    const skyScroll = document.getElementById('skyScroll');
-    const header = document.getElementById('mainHeader');
-    const phaseDots = document.getElementById('phaseDots');
+    const { skyWrapper, skyScroll, header, phaseDots, phaseDotEls, textOverlays } = getDomCache();
 
     if (!skyWrapper || !skyScroll) return;
 
@@ -22,29 +49,19 @@ export default function HomePage() {
     scrollProgressRef.current = progress;
 
     // Header sky mode
+    const inSky = wrapperRect.top <= 0 && wrapperRect.bottom >= window.innerHeight;
     if (header) {
-      const inSky = wrapperRect.top <= 0 && wrapperRect.bottom >= window.innerHeight;
       header.classList.toggle('header--sky', inSky);
     }
 
     // Phase dots
-    if (phaseDots) {
-      const inSky = wrapperRect.top <= 0 && wrapperRect.bottom >= window.innerHeight;
+    if (phaseDots && phaseDotEls) {
       phaseDots.classList.toggle('show', inSky);
-      const dots = phaseDots.querySelectorAll('.phase-dot');
       const phaseIndex = Math.min(3, Math.floor(progress * 4));
-      dots.forEach((dot, i) => {
+      phaseDotEls.forEach((dot, i) => {
         dot.classList.toggle('active', i <= phaseIndex);
       });
     }
-
-    // Sky text overlays — show one at a time based on scroll progress
-    const textOverlays = [
-      document.getElementById('skyText0'),
-      document.getElementById('skyText1'),
-      document.getElementById('skyText2'),
-      document.getElementById('skyText3'),
-    ];
 
     const phases = [
       [0.00, 0.20],  // phase 0 — "The market is vast"
@@ -72,13 +89,10 @@ export default function HomePage() {
 
       el.style.opacity = String(Math.max(0, Math.min(1, opacity)));
     });
-  }, []);
+  }, [getDomCache]);
 
   useEffect(() => {
     document.title = 'Kautilya — Buy-Side Advisory';
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const onMouseMove = (_e: MouseEvent) => { /* handled by ThreeScene controls */ };
 
     // Scroll handler
     const onScroll = () => {
@@ -90,7 +104,7 @@ export default function HomePage() {
 
     return () => {
       window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('mousemove', onMouseMove);
+      domCacheRef.current = null; // invalidate cached DOM refs
       const header = document.getElementById('mainHeader');
       if (header) header.classList.remove('header--sky');
     };
