@@ -20,6 +20,22 @@ interface Deal {
 
 const deals: Deal[] = [
   {
+    tag: 'Due Diligence',
+    tagClass: 'diligence',
+    price: '$1.8M',
+    name: 'Inspire3',
+    oneLiner:
+      'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio — 30,134 transactions audited across 19 websites in under 15 days.',
+    metrics: [
+      { val: '30,134', label: 'Transactions Validated' },
+      { val: '19', label: 'Websites Audited' },
+      { val: '7+', label: 'Discrepancies Found' },
+      { val: '$1.4M', label: 'Revenue Audited' },
+      { val: '<15 Days', label: 'Turnaround' },
+    ],
+    fullWidth: true,
+  },
+  {
     tag: 'Deal Advisory',
     tagClass: 'advisory',
     price: '£1-5M',
@@ -77,22 +93,6 @@ const deals: Deal[] = [
       { val: '12 Wks', label: 'Time to Close' },
       { val: '200x', label: 'Pricing Efficiency' },
     ],
-  },
-  {
-    tag: 'Due Diligence',
-    tagClass: 'diligence',
-    price: '$1.8M',
-    name: 'Inspire3',
-    oneLiner:
-      'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio — 30,134 transactions audited across 19 websites in under 15 days.',
-    metrics: [
-      { val: '30,134', label: 'Transactions Validated' },
-      { val: '19', label: 'Websites Audited' },
-      { val: '7+', label: 'Discrepancies Found' },
-      { val: '$1.4M', label: 'Revenue Audited' },
-      { val: '<15 Days', label: 'Turnaround' },
-    ],
-    fullWidth: true,
   },
 ];
 

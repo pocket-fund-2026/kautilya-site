@@ -17,9 +17,9 @@ export default function Footer() {
         <div className="footer-columns">
           <div className="footer-column">
             <div className="footer-column-title">Navigation</div>
-            <a href="#">Approach</a>
+            <Link to="/approach">Approach</Link>
             <Link to="/portfolio">Portfolio</Link>
-            <Link to="/media">Stories</Link>
+            <Link to="/stories">Stories</Link>
             <Link to="/team">Team</Link>
           </div>
           <div className="footer-column">

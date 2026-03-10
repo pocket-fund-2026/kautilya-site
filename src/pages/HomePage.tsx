@@ -378,7 +378,7 @@ return (
             <div className="card-desc">The people behind the mandate.</div>
             <span className="card-arrow">→</span>
           </Link>
-          <Link className="pathway-card" to="/media">
+          <Link className="pathway-card" to="/stories">
             <div className="card-eyebrow">Intelligence</div>
             <div className="card-title">Published Thinking</div>
             <div className="card-desc">Market analyses, sourcing frameworks, and sector intelligence.</div>

@@ -1,14 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import SplashCursor from './components/SplashCursor';
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
-import MediaPage from './pages/MediaPage';
+import StoriesPage from './pages/StoriesPage';
 import TeamPage from './pages/TeamPage';
 import EngagePage from './pages/EngagePage';
 import CareersPage from './pages/CareersPage';
 import StoryBorderlessPage from './pages/StoryBorderlessPage';
 import StoryDinoGamesPage from './pages/StoryDinoGamesPage';
+import ApproachPage from './pages/ApproachPage';
 import StoryRunifyPage from './pages/StoryRunifyPage';
 import './pages/style.css';
 
@@ -19,8 +20,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
+        <Route path="/approach" element={<ApproachPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/media" element={<MediaPage />} />
+        <Route path="/stories" element={<StoriesPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/engage" element={<EngagePage />} />
         <Route path="/careers" element={<CareersPage />} />
