@@ -18,8 +18,8 @@ gsap.registerPlugin(ScrollTrigger);
 const baseBloomStrength = 1.4;
 const baseExposure = 1.5;
 const baseStarEmissive = 2.5;
-const shineOffsetX = -0.18;
-const shineOffsetY = 0.5;
+const shineOffsetX = -0.3;
+const shineOffsetY = 0.8;
 const shineOffsetZ = 0.7;
 
 interface ModelEntry {
@@ -163,7 +163,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     videoTexture.minFilter = THREE.LinearFilter;
     videoTexture.magFilter = THREE.LinearFilter;
     scene.background = videoTexture;
-    scene.backgroundIntensity = 0.9;
+    scene.backgroundIntensity = 0.75;
 
     // Lighting
     scene.add(new THREE.AmbientLight(0xffffff, 0.15));
@@ -201,7 +201,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
 
           if (i === 2) {
             model.position.x += 0.4;
-            model.scale.multiplyScalar(1.7);
+            model.scale.multiplyScalar(3);
           }
 
           // Star-like material
@@ -311,12 +311,12 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
               third.position.y + shineOffsetY,
               third.position.z + shineOffsetZ,
             );
-            const s = THREE.MathUtils.lerp(0.35, 9, finalPhase);
+            const s = THREE.MathUtils.lerp(0.35, 5, finalPhase);
             geminiStar.scale.set(s, s, 1);
-            geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.82, finalPhase);
+            geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.55, finalPhase);
           }
 
-          bloomPass.strength = THREE.MathUtils.lerp(baseBloomStrength, 2.25, finalPhase);
+          bloomPass.strength = THREE.MathUtils.lerp(baseBloomStrength, 3, finalPhase);
           renderer.toneMappingExposure = THREE.MathUtils.lerp(baseExposure, 1.72, finalPhase);
         },
       });
