@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -90,13 +90,27 @@ interface ThreeSceneProps {
 
 export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    setIsReady(false);
+
+    let disposed = false;
+    let modelsReady = false;
+    let videoReady = false;
+
+    const markReady = () => {
+      if (!disposed && modelsReady && videoReady) {
+        setIsReady(true);
+      }
+    };
 
     const scene = new THREE.Scene();
     let geminiStar: THREE.Sprite;
+    const tempBox = new THREE.Box3();
+    const tempCenter = new THREE.Vector3();
 
     const models: ModelEntry[] = [
       { url: firstModelUrl, loaded: null, mixer: null, actions: null, duration: 0, starMaterials: [] },
@@ -114,8 +128,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     camera.position.set(0, 1, 16);
 
     // Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
-    renderer.setPixelRatio(window.devicePixelRatio);
+    const renderer = new THREE.WebGLRenderer({ antialias: true, canvas, powerPreference: 'high-performance' });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = baseExposure;
@@ -151,10 +165,39 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const video = document.createElement('video');
     video.src = bgVideoUrl;
     video.crossOrigin = 'anonymous';
+    video.autoplay = true;
     video.loop = true;
     video.muted = true;
     video.playsInline = true;
-    video.play();
+    video.preload = 'auto';
+
+    const tryPlayVideo = () => {
+      void video.play().catch(() => {
+        // Ignore autoplay race errors; we'll retry on user interaction/visibility changes.
+      });
+    };
+
+    const onVisibilityChange = () => {
+      if (!document.hidden) {
+        tryPlayVideo();
+      }
+    };
+
+    const onUserResume = () => {
+      tryPlayVideo();
+    };
+
+    const onVideoReady = () => {
+      videoReady = true;
+      markReady();
+    };
+
+    video.addEventListener('canplay', tryPlayVideo);
+    video.addEventListener('loadeddata', onVideoReady);
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    window.addEventListener('pointerdown', onUserResume, { passive: true });
+    window.addEventListener('touchstart', onUserResume, { passive: true });
+    tryPlayVideo();
     const videoTexture = new THREE.VideoTexture(video);
     videoTexture.colorSpace = THREE.SRGBColorSpace;
     videoTexture.minFilter = THREE.LinearFilter;
@@ -241,7 +284,11 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           }
 
           loadedCount++;
-          if (loadedCount === models.length) setupScrollAnimation();
+          if (loadedCount === models.length) {
+            modelsReady = true;
+            markReady();
+            setupScrollAnimation();
+          }
         },
         undefined,
         (err) => console.error('Failed to load:', entry.url, err),
@@ -304,8 +351,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           const third = models[2]?.loaded;
           if (geminiStar && third) {
             geminiStar.visible = finalPhase > 0.001;
-            const box = new THREE.Box3().setFromObject(third);
-            const center = box.getCenter(new THREE.Vector3());
+            const box = tempBox.setFromObject(third);
+            const center = box.getCenter(tempCenter);
             // Once near full convergence, lock the position permanently
             if (model2T >= 0.85) {
               if (!lockedStarPos) {
@@ -336,6 +383,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       const h = canvas.clientHeight;
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
       renderer.setSize(w, h);
       composer.setSize(w, h);
     };
@@ -354,8 +402,14 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
 
     // Cleanup
     return () => {
+      disposed = true;
       cancelAnimationFrame(animFrameId);
       window.removeEventListener('resize', onResize);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+      window.removeEventListener('pointerdown', onUserResume);
+      window.removeEventListener('touchstart', onUserResume);
+      video.removeEventListener('canplay', tryPlayVideo);
+      video.removeEventListener('loadeddata', onVideoReady);
 
       // Kill GSAP scroll triggers created by this scene
       if (scrollTriggerRef) {
@@ -393,17 +447,40 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
   }, [scrollContainerSelector]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        display: 'block',
-        width: '100%',
-        height: '100%',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        zIndex: 0,
-      }}
-    />
+    <>
+      <canvas
+        ref={canvasRef}
+        style={{
+          display: 'block',
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: 0,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          zIndex: 2,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: 'radial-gradient(ellipse at center, rgba(12,16,28,0.85) 0%, rgba(8,10,18,0.95) 100%)',
+          pointerEvents: 'none',
+          color: 'rgba(249,248,246,0.9)',
+          fontSize: '12px',
+          letterSpacing: '4px',
+          textTransform: 'uppercase' as const,
+          textShadow: '0 0 20px rgba(0,0,0,0.8)',
+          opacity: isReady ? 0 : 1,
+          transition: 'opacity 0.8s ease',
+        }}
+      >
+        Loading Sky...
+      </div>
+    </>
   );
 }
