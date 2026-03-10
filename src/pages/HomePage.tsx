@@ -1,121 +1,9 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import starryBgVideo from '../assets/starry_bg.mp4';
-
-// ---- Constellation definitions (normalised 0–1 coordinate space) ----
-
-// Nakshatra — scattered star field, an organic random cluster
-function generateNakshatra() {
-  const stars: { x: number; y: number }[] = [];
-  const lines: [number, number][] = [];
-  // Seed-based pseudo-random for consistency
-  const seed = (n: number) => {
-    const x = Math.sin(n * 127.1 + 311.7) * 43758.5453;
-    return x - Math.floor(x);
-  };
-  // Generate 18 scattered stars in a loose cloud across center (shifted down to compensate parallax)
-  const count = 18;
-  for (let i = 0; i < count; i++) {
-    stars.push({
-      x: 0.25 + seed(i * 3 + 1) * 0.50,
-      y: 0.30 + seed(i * 3 + 2) * 0.45, // shifted down from 0.15
-    });
-  }
-  // No connecting lines — Nakshatra is meant to be random/scattered
-  return { stars, lines };
-}
-const NAKSHATRA = generateNakshatra();
-
-// Saptarishi / Big Dipper — 7 stars connected, centered on screen
-const SAPTARISHI_STARS = [
-  { x: 0.38, y: 0.38 }, // Dubhe
-  { x: 0.41, y: 0.35 }, // Merak
-  { x: 0.46, y: 0.34 }, // Phecda
-  { x: 0.50, y: 0.37 }, // Megrez (center)
-  { x: 0.55, y: 0.35 }, // Alioth
-  { x: 0.60, y: 0.32 }, // Mizar
-  { x: 0.65, y: 0.30 }, // Alkaid
-];
-const SAPTARISHI_LINES: [number, number][] = [
-  [0, 1], [1, 2], [2, 3], [3, 0], // bowl
-  [3, 4], [4, 5], [5, 6],         // handle
-];
-
-// Chakravyuha — spiral / layered formation (concentric rings of points)
-function generateChakravyuha(cx: number, cy: number, layers: number, pointsPerLayer: number) {
-  const stars: { x: number; y: number }[] = [];
-  const lines: [number, number][] = [];
-  let idx = 0;
-  // Center star
-  stars.push({ x: cx, y: cy });
-  idx++;
-  for (let layer = 1; layer <= layers; layer++) {
-    const radius = 0.04 * layer + 0.01 * layer * layer * 0.3;
-    const count = pointsPerLayer + layer * 2;
-    const offset = layer * 0.4; // spiral offset per layer
-    const firstInLayer = idx;
-    for (let p = 0; p < count; p++) {
-      const angle = ((Math.PI * 2) / count) * p + offset;
-      stars.push({
-        x: cx + Math.cos(angle) * radius,
-        y: cy + Math.sin(angle) * radius * 0.7, // slight ellipse
-      });
-      // Connect to previous point in this ring
-      if (p > 0) lines.push([idx - 1, idx]);
-      // Connect to center for inner ring
-      if (layer === 1) lines.push([0, idx]);
-      idx++;
-    }
-    // Close the ring
-    lines.push([idx - 1, firstInLayer]);
-  }
-  return { stars, lines };
-}
-
-const CHAKRAVYUHA = generateChakravyuha(0.50, 0.45, 3, 5);
-
-// Dhruva — Pole Star with radiating rays
-const DHRUVA_CENTER = { x: 0.50, y: 0.38 };
-function generateDhruva() {
-  const stars: { x: number; y: number }[] = [DHRUVA_CENTER];
-  const lines: [number, number][] = [];
-  const rays = 8;
-  const innerR = 0.04;
-  const outerR = 0.12;
-  let idx = 1;
-  for (let i = 0; i < rays; i++) {
-    const angle = ((Math.PI * 2) / rays) * i - Math.PI / 2;
-    // inner point
-    stars.push({
-      x: DHRUVA_CENTER.x + Math.cos(angle) * innerR,
-      y: DHRUVA_CENTER.y + Math.sin(angle) * innerR * 0.7,
-    });
-    lines.push([0, idx]);
-    idx++;
-    // outer point
-    stars.push({
-      x: DHRUVA_CENTER.x + Math.cos(angle) * outerR,
-      y: DHRUVA_CENTER.y + Math.sin(angle) * outerR * 0.7,
-    });
-    lines.push([idx - 1, idx]);
-    idx++;
-  }
-  // Connect outer ring
-  for (let i = 0; i < rays; i++) {
-    const a = 2 + i * 2; // outer indices: 2, 4, 6 ...
-    const b = 2 + ((i + 1) % rays) * 2;
-    lines.push([a, b]);
-  }
-  return { stars, lines };
-}
-const DHRUVA = generateDhruva();
+import ThreeScene from '../components/ThreeScene';
 
 export default function HomePage() {
   const scrollProgressRef = useRef(0);
-  const rafRef = useRef<number>(0);
-  // Mouse parallax — normalised target (-1..1) and smoothed current
-  const mouseTargetRef = useRef({ x: 0, y: 0 });
-  const mouseSmoothedRef = useRef({ x: 0, y: 0 });
 
   const handleScroll = useCallback(() => {
     const skyWrapper = document.getElementById('skyWrapper');
@@ -189,316 +77,16 @@ export default function HomePage() {
   useEffect(() => {
     document.title = 'Kautilya — Buy-Side Advisory';
 
-    // ---- Mouse parallax for camera-pan effect ----
-    const onMouseMove = (e: MouseEvent) => {
-      mouseTargetRef.current = {
-        x: (e.clientX / window.innerWidth - 0.5) * 2,   // -1 … 1
-        y: (e.clientY / window.innerHeight - 0.5) * 2,
-      };
-    };
-    window.addEventListener('mousemove', onMouseMove, { passive: true });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const onMouseMove = (_e: MouseEvent) => { /* handled by ThreeScene controls */ };
 
-    // ---- Canvas star field with constellation phases ----
-    const canvas = document.getElementById('skyCanvas') as HTMLCanvasElement | null;
-    let animFrameId = 0;
-
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        interface Star {
-          x: number; y: number; r: number; alpha: number; speed: number;
-          // For constellation morphing
-          homeX: number; homeY: number;
-        }
-
-        const stars: Star[] = [];
-        const STAR_COUNT = 300;
-        let W = 0;
-        let H = 0;
-
-        const resize = () => {
-          W = canvas.offsetWidth;
-          H = canvas.offsetHeight;
-          canvas.width = W * window.devicePixelRatio;
-          canvas.height = H * window.devicePixelRatio;
-          ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
-          // Re-scatter home positions on resize
-          for (const s of stars) {
-            s.homeX = Math.random() * W;
-            s.homeY = Math.random() * H;
-            s.x = s.homeX;
-            s.y = s.homeY;
-          }
-        };
-
-        const init = () => {
-          resize();
-          stars.length = 0;
-          for (let i = 0; i < STAR_COUNT; i++) {
-            const x = Math.random() * W;
-            const y = Math.random() * H;
-            stars.push({
-              x, y,
-              homeX: x, homeY: y,
-              r: Math.random() * 2.0 + 0.8,
-              alpha: Math.random() * 0.5 + 0.4,
-              speed: Math.random() * 0.003 + 0.001,
-            });
-          }
-        };
-
-        // Map normalised constellation coords to canvas coords, centred
-        const mapCoords = (pts: { x: number; y: number }[]) =>
-          pts.map(p => ({ x: p.x * W, y: p.y * H }));
-
-        // Smoothly lerp stars toward target positions
-        const lerpStars = (
-          targets: { x: number; y: number }[],
-          count: number,
-          factor: number,
-        ) => {
-          for (let i = 0; i < Math.min(count, targets.length, stars.length); i++) {
-            stars[i].x += (targets[i].x - stars[i].x) * factor;
-            stars[i].y += (targets[i].y - stars[i].y) * factor;
-          }
-        };
-
-        // Return stars to scattered positions
-        const scatterStars = (factor: number) => {
-          for (const s of stars) {
-            s.x += (s.homeX - s.x) * factor;
-            s.y += (s.homeY - s.y) * factor;
-          }
-        };
-
-        // Draw connecting lines between constellation stars
-        const drawLines = (
-          linesDef: [number, number][],
-          mapped: { x: number; y: number }[],
-          lineAlpha: number,
-        ) => {
-          if (lineAlpha <= 0) return;
-          ctx.strokeStyle = 'rgba(201,185,154,' + lineAlpha.toFixed(3) + ')';
-          ctx.lineWidth = 1.2;
-          for (const [a, b] of linesDef) {
-            if (a >= mapped.length || b >= mapped.length) continue;
-            ctx.beginPath();
-            ctx.moveTo(mapped[a].x, mapped[a].y);
-            ctx.lineTo(mapped[b].x, mapped[b].y);
-            ctx.stroke();
-          }
-        };
-
-        // Bright glow on constellation stars
-        const drawConstellationGlow = (
-          mapped: { x: number; y: number }[],
-          glowAlpha: number,
-        ) => {
-          if (glowAlpha <= 0) return;
-          for (const p of mapped) {
-            // bright core
-            ctx.globalAlpha = glowAlpha * 0.9;
-            ctx.fillStyle = '#FFFBF5';
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-            ctx.fill();
-            // mid glow
-            ctx.globalAlpha = glowAlpha * 0.6;
-            ctx.fillStyle = '#C9B99A';
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2);
-            ctx.fill();
-            // outer halo
-            ctx.globalAlpha = glowAlpha * 0.15;
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, 12, 0, Math.PI * 2);
-            ctx.fill();
-          }
-        };
-
-        // Phase visibility helper — returns 0..1 for how "active" a phase is
-        const phaseAlpha = (progress: number, start: number, end: number) => {
-          const fadeIn = 0.03;
-          const fadeOut = 0.03;
-          if (progress < start || progress > end) return 0;
-          if (progress < start + fadeIn) return (progress - start) / fadeIn;
-          if (progress > end - fadeOut) return (end - progress) / fadeOut;
-          return 1;
-        };
-
-        const draw = () => {
-          ctx.clearRect(0, 0, W, H);
-          const t = Date.now();
-          const progress = scrollProgressRef.current;
-
-          // Phase alphas
-          const p0 = phaseAlpha(progress, 0.00, 0.20); // Nakshatra — scattered cluster
-          const p1 = phaseAlpha(progress, 0.25, 0.45); // Saptarishi — Big Dipper
-          const p2 = phaseAlpha(progress, 0.50, 0.72); // Chakravyuha — spiral
-          const p3 = phaseAlpha(progress, 0.76, 1.00); // Dhruva — pole star
-
-          const lerpSpeed = 0.04;
-
-          // Phase 0: Nakshatra — scattered star cluster (no lines, pure random)
-          if (p0 > 0) {
-            const mapped = mapCoords(NAKSHATRA.stars);
-            lerpStars(mapped, NAKSHATRA.stars.length, lerpSpeed * p0);
-            drawConstellationGlow(mapped, p0);
-          }
-
-          // Phase 1: Saptarishi — move first 7 stars into Big Dipper
-          if (p1 > 0) {
-            const mapped = mapCoords(SAPTARISHI_STARS);
-            lerpStars(mapped, SAPTARISHI_STARS.length, lerpSpeed * p1);
-            drawLines(SAPTARISHI_LINES, mapped, p1 * 0.5);
-            drawConstellationGlow(mapped, p1);
-          }
-
-          // Phase 2: Chakravyuha — spiral formation
-          if (p2 > 0) {
-            const mapped = mapCoords(CHAKRAVYUHA.stars);
-            lerpStars(mapped, CHAKRAVYUHA.stars.length, lerpSpeed * p2);
-            drawLines(CHAKRAVYUHA.lines, mapped, p2 * 0.35);
-            drawConstellationGlow(mapped, p2);
-          }
-
-          // Phase 3: Dhruva — all stars converge to the pole star (navigation star)
-          if (p3 > 0) {
-            // Converge ALL stars to the center
-            const centerTarget = mapCoords([DHRUVA_CENTER])[0];
-            const convergeFactor = lerpSpeed * p3 * 1.8; // faster convergence
-            for (const s of stars) {
-              s.x += (centerTarget.x - s.x) * convergeFactor;
-              s.y += (centerTarget.y - s.y) * convergeFactor;
-            }
-
-            // Draw Dhruva rays (minimal lines radiating from center)
-            const mapped = mapCoords(DHRUVA.stars);
-            drawLines(DHRUVA.lines, mapped, p3 * 0.3);
-
-            // Gemini-logo style glow on the pole star
-            const center = centerTarget;
-            const pulse = Math.sin(t * 0.0012) * 0.15 + 0.85; // subtle pulse
-
-            // Multi-layer radial gradient glow (Gemini aesthetic)
-            // Outermost halo — soft purple/blue tint
-            const grad1 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 80);
-            grad1.addColorStop(0, `rgba(138, 180, 248, ${p3 * 0.18 * pulse})`);
-            grad1.addColorStop(0.4, `rgba(138, 180, 248, ${p3 * 0.08 * pulse})`);
-            grad1.addColorStop(1, 'rgba(138, 180, 248, 0)');
-            ctx.fillStyle = grad1;
-            ctx.fillRect(center.x - 80, center.y - 80, 160, 160);
-
-            // Mid glow — warm golden
-            const grad2 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 40);
-            grad2.addColorStop(0, `rgba(255, 215, 145, ${p3 * 0.5 * pulse})`);
-            grad2.addColorStop(0.5, `rgba(255, 215, 145, ${p3 * 0.2 * pulse})`);
-            grad2.addColorStop(1, 'rgba(255, 215, 145, 0)');
-            ctx.fillStyle = grad2;
-            ctx.fillRect(center.x - 40, center.y - 40, 80, 80);
-
-            // Inner glow — bright white core
-            const grad3 = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, 16);
-            grad3.addColorStop(0, `rgba(255, 251, 245, ${p3 * 0.95 * pulse})`);
-            grad3.addColorStop(0.6, `rgba(255, 251, 245, ${p3 * 0.4 * pulse})`);
-            grad3.addColorStop(1, 'rgba(255, 251, 245, 0)');
-            ctx.fillStyle = grad3;
-            ctx.fillRect(center.x - 16, center.y - 16, 32, 32);
-
-            // Bright center dot
-            ctx.globalAlpha = p3 * 0.95 * pulse;
-            ctx.fillStyle = '#FFFBF5';
-            ctx.beginPath();
-            ctx.arc(center.x, center.y, 3.5, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.globalAlpha = 1;
-          }
-
-          // Return to scattered for neutral phases (gaps between phases)
-          const anyConstellation = Math.max(p0, p1, p2, p3);
-          if (anyConstellation < 0.5) {
-            scatterStars(lerpSpeed * (1 - anyConstellation));
-          }
-
-          // Draw all stars with glow halo for prominence
-          for (const s of stars) {
-            const flicker = Math.sin(t * s.speed) * 0.2 + 0.8;
-            const a = s.alpha * flicker;
-            // Soft outer glow
-            ctx.globalAlpha = a * 0.15;
-            ctx.fillStyle = '#C9B99A';
-            ctx.beginPath();
-            ctx.arc(s.x, s.y, s.r * 3, 0, Math.PI * 2);
-            ctx.fill();
-            // Bright core
-            ctx.globalAlpha = a;
-            ctx.fillStyle = '#F9F8F6';
-            ctx.beginPath();
-            ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-            ctx.fill();
-          }
-
-          // ---- Smooth mouse parallax (camera pan) ----
-          const PAN_RANGE = 18; // max pixels of shift
-          const MOUSE_LERP = 0.045; // smoothing factor (lower = more inertia)
-          const sm = mouseSmoothedRef.current;
-          const mt = mouseTargetRef.current;
-          sm.x += (mt.x - sm.x) * MOUSE_LERP;
-          sm.y += (mt.y - sm.y) * MOUSE_LERP;
-          const tx = sm.x * PAN_RANGE;
-          const ty = sm.y * PAN_RANGE;
-
-          // Apply to video (background layer)
-          const videoEl = canvas.parentElement?.querySelector('video') as HTMLVideoElement | null;
-          if (videoEl) {
-            videoEl.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(1.1)`;
-          }
-          // Apply to canvas (star layer) — same shift keeps them locked together
-          canvas.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(1.1)`;
-
-          animFrameId = requestAnimationFrame(draw);
-        };
-
-        init();
-        draw();
-        window.addEventListener('resize', resize);
-
-        // Clean up on unmount
-        const cleanupCanvas = () => {
-          cancelAnimationFrame(animFrameId);
-          window.removeEventListener('resize', resize);
-        };
-
-        // Store cleanup
-        const origCleanup = cleanupCanvas;
-        // We'll handle cleanup in the effect return
-        rafRef.current = animFrameId;
-
-        // Scroll handler
-        const onScroll = () => {
-          requestAnimationFrame(handleScroll);
-        };
-
-        window.addEventListener('scroll', onScroll, { passive: true });
-        handleScroll(); // initial call
-
-        return () => {
-          origCleanup();
-          window.removeEventListener('scroll', onScroll);
-          window.removeEventListener('mousemove', onMouseMove);
-          // Reset header class on unmount
-          const header = document.getElementById('mainHeader');
-          if (header) header.classList.remove('header--sky');
-        };
-      }
-    }
-
-    // If no canvas, still set up scroll handler
+    // Scroll handler
     const onScroll = () => {
       requestAnimationFrame(handleScroll);
     };
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    handleScroll();
+    handleScroll(); // initial call
 
     return () => {
       window.removeEventListener('scroll', onScroll);
@@ -568,15 +156,10 @@ return (
 
   .sky-scroll { position: relative; height: 800vh; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
-  .sky-sticky video {
-    position: absolute; top: -5%; left: -5%; width: 110%; height: 110%;
-    object-fit: cover; z-index: 0; filter: brightness(0.9); pointer-events: none;
-    will-change: transform; transform: scale(1.1);
-  }
-  #skyCanvas {
-    display: block; width: 110%; height: 110%;
-    position: absolute; top: -5%; left: -5%;
-    z-index: 1; will-change: transform; transform: scale(1.1);
+  .sky-sticky canvas {
+    display: block; width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
+    z-index: 0;
   }
 
   .sky-text-overlay {
@@ -586,11 +169,11 @@ return (
     opacity: 0; transition: opacity 0.6s ease;
   }
   .sky-text-overlay.visible { opacity: 1; }
-  .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(201,185,154,0.65); margin-bottom: 18px; }
-  .sky-text-overlay .main-text { font-family: 'Cormorant', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.96); text-align: center; line-height: 1.5; text-shadow: 0 0 80px rgba(0,0,0,0.8); max-width: 750px; }
-  .sky-text-overlay .hero-title { font-family: 'Cormorant', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; color: #FFFBF5; text-shadow: 0 0 100px rgba(125,110,131,0.6), 0 0 160px rgba(11,73,75,0.25); }
-  .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.8); margin-top: 22px; max-width: 600px; white-space: nowrap; }
-  .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.5); margin-top: 12px; max-width: 600px; white-space: nowrap; }
+  .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(201,185,154,0.78); margin-bottom: 18px; text-shadow: 0 2px 18px rgba(0,0,0,0.85); }
+  .sky-text-overlay .main-text { font-family: 'Cormorant', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75); max-width: 750px; }
+  .sky-text-overlay .hero-title { font-family: 'Cormorant', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; color: #FFFBF5; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35); }
+  .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.88); margin-top: 22px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 16px rgba(0,0,0,0.85); }
+  .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.72); margin-top: 12px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 14px rgba(0,0,0,0.82); }
   .sky-text-overlay .devanagari { font-size: 13px; color: rgba(201, 176, 127, 0.35); margin-top: 26px; letter-spacing: normal; word-spacing: 8px; white-space: nowrap; display: inline-block; }
 
   .phase-dots { position: fixed; right: 28px; top: 50%; transform: translateY(-50%); z-index: 150; display: flex; flex-direction: column; gap: 14px; opacity: 0; transition: opacity 0.4s; }
@@ -697,10 +280,7 @@ return (
         <div className="sky-mask-top" />
         <div className="sky-scroll" id="skyScroll">
           <div className="sky-sticky">
-            <video autoPlay muted loop playsInline>
-              <source src={starryBgVideo} type="video/mp4" />
-            </video>
-            <canvas id="skyCanvas" />
+            <ThreeScene scrollContainerSelector="#skyScroll" />
             <div className="sky-text-overlay" id="skyText0">
               <div className="eyebrow">Nakshatra · The Uncharted</div>
               <div className="main-text">The market is vast.</div>
