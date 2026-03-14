@@ -84,6 +84,36 @@ function createGeminiStarTexture() {
   return texture;
 }
 
+function getTrimmedModelAnchor(model: THREE.Object3D) {
+  const meshCenters: THREE.Vector3[] = [];
+  const meshBox = new THREE.Box3();
+
+  model.traverse((child) => {
+    if (!(child as THREE.Mesh).isMesh) return;
+
+    meshBox.setFromObject(child);
+    if (meshBox.isEmpty()) return;
+
+    meshCenters.push(meshBox.getCenter(new THREE.Vector3()));
+  });
+
+  if (meshCenters.length === 0) {
+    return new THREE.Box3().setFromObject(model).getCenter(new THREE.Vector3());
+  }
+
+  const sortedByX = [...meshCenters].sort((a, b) => a.x - b.x);
+  const trimCount = Math.floor(sortedByX.length * 0.2);
+  const trimmed = sortedByX.slice(trimCount, sortedByX.length - trimCount || sortedByX.length);
+  const anchorPool = trimmed.length > 0 ? trimmed : sortedByX;
+
+  const anchor = new THREE.Vector3();
+  anchorPool.forEach((center) => {
+    anchor.add(center);
+  });
+
+  return anchor.multiplyScalar(1 / anchorPool.length);
+}
+
 interface ThreeSceneProps {
   scrollContainerSelector: string;
 }
@@ -111,6 +141,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     let geminiStar: THREE.Sprite;
     const tempBox = new THREE.Box3();
     const tempCenter = new THREE.Vector3();
+    const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
 
     const models: ModelEntry[] = [
       { url: firstModelUrl, loaded: null, mixer: null, actions: null, duration: 0, starMaterials: [] },
@@ -217,6 +248,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     controls.enableZoom = false;
     controls.enablePan = false;
     controls.enableDamping = true;
+    controls.enabled = !isMobileScreen;
     controls.target.set(0, 0, 0);
     controls.update();
 
@@ -241,7 +273,6 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           }
 
           if (i === 2) {
-            model.position.x += 0.4;
             model.scale.multiplyScalar(3);
           }
 
@@ -283,6 +314,23 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             entry.mixer = mixer;
             entry.actions = actions;
             entry.duration = Math.max(...gltf.animations.map((c) => c.duration));
+
+            if (i === 2) {
+              actions.forEach((action) => {
+                const clipDuration = action.getClip().duration;
+                action.time = Math.max(clipDuration - 0.0001, 0);
+              });
+              mixer.update(0);
+
+              const finalAnchor = getTrimmedModelAnchor(model);
+              model.position.x -= finalAnchor.x;
+              model.position.x += 0.3;
+
+              actions.forEach((action) => {
+                action.time = 0;
+              });
+              mixer.update(0);
+            }
           }
 
           loadedCount++;
@@ -321,9 +369,9 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           const nakshatraT = mapRange(progress, 0.0, 0.3); // Early glow for "Nakshatra" text window
           const model0T = mapRange(progress, 0.35, 0.45); // Saptarishi
           const model1T = mapRange(progress, 0.47, 0.67); // Chakravyuha — matches "Strategy is the difference" text window
-          const model2T = mapRange(progress, 0.69, 1.0); // Dhruva (longer, slower convergence)
+          const model2T = mapRange(progress, 0.72, 1.0); // Dhruva
           const modelProgress = [model0T, model1T, model2T];
-          const finalPhase = THREE.MathUtils.smoothstep(model2T, 0.5, 1);
+          const finalPhase = THREE.MathUtils.smoothstep(model2T, 0.76, 1);
           const nakshatraGlowIn = THREE.MathUtils.smoothstep(nakshatraT, 0.02, 0.28);
           const nakshatraGlowOut = 1 - THREE.MathUtils.smoothstep(nakshatraT, 0.45, 0.75);
           const nakshatraGlow = Math.max(0, nakshatraGlowIn * nakshatraGlowOut);
@@ -359,24 +407,20 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           const showStar = finalPhase > 0.001;
           const third = models[2]?.loaded;
           if (geminiStar && third) {
+            const thirdAnchor = getTrimmedModelAnchor(third);
+
             geminiStar.visible = showStar;
-            if (!showStar) { /* skip expensive bounding box when hidden */ }
-            else {
-            const box = tempBox.setFromObject(third);
-            const center = box.getCenter(tempCenter);
-            // Once near full convergence, lock the position permanently
-            if (model2T >= 0.85) {
-              if (!lockedStarPos) {
-                lockedStarPos = center.clone();
-              }
-              geminiStar.position.copy(lockedStarPos);
-            } else {
-              // Track the live center before convergence
-              geminiStar.position.copy(center);
+            if (!showStar) {
+              lockedStarPos = null;
             }
-            const s = THREE.MathUtils.lerp(0.35, 5, finalPhase);
-            geminiStar.scale.set(s, s, 1);
-            geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.55, finalPhase);
+            else {
+              if (!lockedStarPos && finalPhase >= 0.14) {
+                lockedStarPos = thirdAnchor.clone();
+              }
+              geminiStar.position.copy(lockedStarPos ?? thirdAnchor);
+              const s = THREE.MathUtils.lerp(0.35, 5, finalPhase);
+              geminiStar.scale.set(s, s, 1);
+              geminiStar.material.opacity = THREE.MathUtils.lerp(0.04, 0.55, finalPhase);
             }
           }
 

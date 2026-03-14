@@ -132,9 +132,34 @@ const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string
 };
 
 export default function TeamPage() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [showAllMembers, setShowAllMembers] = useState(false);
+
   useEffect(() => {
     document.title = 'Kautilya — Team';
   }, []);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    const syncMobileState = () => {
+      const mobile = mediaQuery.matches;
+      setIsMobile(mobile);
+      if (!mobile) {
+        setShowAllMembers(true);
+      }
+    };
+
+    syncMobileState();
+    mediaQuery.addEventListener('change', syncMobileState);
+
+    return () => {
+      mediaQuery.removeEventListener('change', syncMobileState);
+    };
+  }, []);
+
+  const firstThreeMembers = TEAM_MEMBERS.slice(0, 3);
+  const visibleMembers = isMobile && !showAllMembers ? firstThreeMembers : TEAM_MEMBERS;
 
   return (
     <>
@@ -324,10 +349,46 @@ export default function TeamPage() {
         /* Mobile Adjustments */
         @media (max-width: 768px) {
           .team-grid-3x3 { grid-template-columns: 1fr 1fr; gap: 32px; }
+
+          .team-view-all-wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 8px;
+          }
+
+          .team-view-all-btn {
+            font-family: 'Lora', serif;
+            font-size: 10px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            background: transparent;
+            color: var(--header-footer-accent);
+            border: 1px solid var(--header-footer-accent-dim);
+            padding: 12px 24px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+          }
+
+          .team-view-all-btn:hover {
+            background: var(--header-footer-accent);
+            color: var(--canvas);
+          }
+
         }
         @media (max-width: 480px) {
           .team-grid-3x3 { grid-template-columns: 1fr; gap: 40px; }
           .glare-card { width: 80%; margin: 0 auto 20px; }
+
+          .team-view-all-wrap {
+            margin-top: 18px;
+          }
+
+          .team-view-all-btn {
+            width: 80%;
+            max-width: 320px;
+            padding: 12px 18px;
+          }
         }
       `}} />
 
@@ -373,9 +434,9 @@ export default function TeamPage() {
           </div>
 
           <div className="team-grid-3x3">
-            {TEAM_MEMBERS.map((member, index) => (
-              <div 
-                className="team-member-block reveal" 
+            {visibleMembers.map((member, index) => (
+              <div
+                className="team-member-block"
                 key={member.name}
                 style={{ transitionDelay: `${(index % 3) * 0.15}s` }}
               >
@@ -385,6 +446,18 @@ export default function TeamPage() {
               </div>
             ))}
           </div>
+
+          {isMobile && !showAllMembers && (
+            <div className="team-view-all-wrap">
+              <button
+                className="team-view-all-btn"
+                onClick={() => setShowAllMembers(true)}
+                type="button"
+              >
+                View all members
+              </button>
+            </div>
+          )}
 
           {/* OPEN INVITE SECTION */}
           <div className="open-invite reveal" style={{ marginTop: '100px' }}>
