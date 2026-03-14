@@ -123,7 +123,7 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="page">
+    <div className="page portfolio-page">
       {/* ── Hero ── */}
       <div className="page-hero">
         <div className="section-eyebrow">Portfolio of Proof</div>

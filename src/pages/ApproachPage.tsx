@@ -58,7 +58,7 @@ export default function ApproachPage() {
             .approach-page-methodology {
               color: var(--text);
               font-family: 'Lora', serif;
-              font-size: 15px;
+              font-size: 16px;
               line-height: 1.75;
               overflow-x: hidden;
             }
@@ -70,14 +70,8 @@ export default function ApproachPage() {
               position: relative;
             }
 
-            .approach-page-methodology .eyebrow {
-              font-family: 'Lora', serif;
-              font-size: 10px;
-              letter-spacing: 0.24em;
-              color: var(--gold);
-              text-transform: uppercase;
-              margin-bottom: 28px;
-              opacity: 0.84;
+            .approach-page-methodology .section-eyebrow {
+              color: #c9b99a;
             }
 
             .approach-page-methodology .hero-headline {
@@ -97,7 +91,7 @@ export default function ApproachPage() {
             .approach-page-methodology .hero-sub {
               max-width: 620px;
               color: var(--text-dim);
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.9;
               margin-bottom: 8px;
             }
@@ -127,7 +121,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .services-sub {
               color: var(--text-dim);
-              font-size: 14px;
+              font-size: 16px;
               max-width: 560px;
               line-height: 1.8;
               margin-bottom: 48px;
@@ -138,13 +132,18 @@ export default function ApproachPage() {
               border-bottom: 1px solid var(--border-dim);
               margin-bottom: 0;
               overflow-x: auto;
+              overflow-y: hidden;
+              overscroll-behavior-x: contain;
               scrollbar-width: none;
+              -webkit-overflow-scrolling: touch;
+              touch-action: pan-x;
             }
 
             .approach-page-methodology .services-nav::-webkit-scrollbar { display: none; }
 
             .approach-page-methodology .service-tab {
               display: flex;
+              flex: 0 0 auto;
               flex-direction: column;
               padding: 16px 28px 14px;
               cursor: pointer;
@@ -195,7 +194,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .service-stat-num {
               font-family: 'Cormorant', serif;
-              font-size: 26px;
+              font-size: 30px;
               font-weight: 500;
               color: var(--gold);
               line-height: 1;
@@ -204,7 +203,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .service-stat-label {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.14em;
               color: var(--text-faint);
               text-transform: uppercase;
@@ -213,7 +212,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .service-tag {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.18em;
               color: var(--gold-dim);
               text-transform: uppercase;
@@ -222,7 +221,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .service-title {
               font-family: 'Cormorant', serif;
-              font-size: 28px;
+              font-size: 32px;
               font-weight: 400;
               color: var(--text);
               line-height: 1.3;
@@ -230,7 +229,7 @@ export default function ApproachPage() {
             }
 
             .approach-page-methodology .service-body p {
-              font-size: 14px;
+              font-size: 16px;
               color: var(--text-dim);
               line-height: 1.9;
               margin-bottom: 20px;
@@ -244,7 +243,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .si-label {
               font-family: 'Lora', serif;
-              font-size: 8.5px;
+              font-size: 9.5px;
               letter-spacing: 0.2em;
               color: var(--text-faint);
               text-transform: uppercase;
@@ -259,7 +258,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .si-grid span {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.1em;
               color: var(--text-dim);
               background: var(--card-bg);
@@ -277,21 +276,29 @@ export default function ApproachPage() {
               backdrop-filter: blur(12px);
               border-bottom: 1px solid var(--border-dim);
               padding: 0 80px;
+              overflow: hidden;
             }
 
             .approach-page-methodology .nav-inner {
               max-width: 1300px;
+              width: max-content;
+              min-width: 100%;
               margin: 0 auto;
               display: flex;
               align-items: stretch;
               overflow-x: auto;
+              overflow-y: hidden;
+              overscroll-behavior-x: contain;
               scrollbar-width: none;
+              -webkit-overflow-scrolling: touch;
+              touch-action: pan-x;
             }
 
             .approach-page-methodology .nav-inner::-webkit-scrollbar { display: none; }
 
             .approach-page-methodology .nav-tab {
               display: flex;
+              flex: 0 0 auto;
               flex-direction: column;
               padding: 18px 28px 16px;
               cursor: pointer;
@@ -312,7 +319,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .tab-num {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.2em;
               color: var(--text-faint);
               margin-bottom: 4px;
@@ -355,7 +362,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .phase-eyebrow {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.25em;
               color: var(--gold);
               text-transform: uppercase;
@@ -374,7 +381,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .phase-hook {
               font-family: 'Cormorant', serif;
-              font-size: 22px;
+              font-size: 24px;
               font-style: italic;
               color: var(--text-dim);
               max-width: 760px;
@@ -394,10 +401,28 @@ export default function ApproachPage() {
 
             .approach-page-methodology .narrative p {
               color: var(--text-dim);
-              font-size: 13.5px;
+              font-size: 15px;
               line-height: 1.9;
               margin-bottom: 20px;
             }
+
+            .approach-page-methodology .narrative ul {
+              margin: 0 0 20px 22px;
+              padding: 0;
+            }
+
+            .approach-page-methodology .narrative li {
+              color: var(--text-dim);
+              font-size: 15px;
+              line-height: 1.9;
+              margin-bottom: 10px;
+            }
+
+            .approach-page-methodology .narrative li::marker {
+              color: var(--gold);
+            }
+
+            .approach-page-methodology .narrative li:last-child { margin-bottom: 0; }
 
             .approach-page-methodology .narrative p:last-child { margin-bottom: 0; }
             .approach-page-methodology .narrative strong { color: var(--text); font-weight: 700; }
@@ -411,7 +436,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .pull-quote p {
               font-family: 'Cormorant', serif;
-              font-size: 20px;
+              font-size: 22px;
               font-style: italic;
               color: var(--text) !important;
               line-height: 1.55;
@@ -430,6 +455,15 @@ export default function ApproachPage() {
 
             .approach-page-methodology .cards-column .proof-card.wide { grid-column: span 2; }
             .approach-page-methodology .cards-column .proof-card.tall { grid-row: span 2; }
+
+            .approach-page-methodology .cards-column .proof-card.tall,
+            .approach-page-methodology .cards-column .proof-card.wide {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              text-align: left;
+            }
 
             .approach-page-methodology .proof-card {
               background: var(--card-bg);
@@ -469,7 +503,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .card-label {
               font-family: 'Lora', serif;
-              font-size: 8.5px;
+              font-size: 9.5px;
               letter-spacing: 0.2em;
               color: var(--gold-dim);
               text-transform: uppercase;
@@ -478,17 +512,17 @@ export default function ApproachPage() {
 
             .approach-page-methodology .card-metric {
               font-family: 'Cormorant', serif;
-              font-size: 32px;
+              font-size: 36px;
               font-weight: 500;
               color: var(--gold);
               line-height: 1;
               margin-bottom: 6px;
             }
 
-            .approach-page-methodology .card-metric.small { font-size: 22px; }
+            .approach-page-methodology .card-metric.small { font-size: 26px; }
 
             .approach-page-methodology .card-desc {
-              font-size: 12.5px;
+              font-size: 14px;
               color: var(--text-dim);
               line-height: 1.6;
             }
@@ -499,13 +533,18 @@ export default function ApproachPage() {
               display: inline-block;
               margin-top: 10px;
               font-family: 'Lora', serif;
-              font-size: 8px;
+              font-size: 9px;
               letter-spacing: 0.15em;
               color: var(--text-faint);
               text-transform: uppercase;
               border: 1px solid var(--border-dim);
               padding: 3px 8px;
               border-radius: 1px;
+            }
+
+            .approach-page-methodology .cards-column .proof-card.tall .card-tag,
+            .approach-page-methodology .cards-column .proof-card.wide .card-tag {
+              align-self: flex-start;
             }
 
             .approach-page-methodology .findings-grid {
@@ -546,7 +585,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .finding-num {
               font-family: 'Cormorant', serif;
-              font-size: 38px;
+              font-size: 42px;
               font-weight: 500;
               color: var(--gold);
               line-height: 1;
@@ -555,7 +594,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .finding-title {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.15em;
               color: var(--gold-dim);
               text-transform: uppercase;
@@ -563,7 +602,7 @@ export default function ApproachPage() {
             }
 
             .approach-page-methodology .finding-desc {
-              font-size: 12.5px;
+              font-size: 14px;
               color: var(--text-dim);
               line-height: 1.65;
             }
@@ -603,7 +642,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .funnel-num {
               font-family: 'Cormorant', serif;
-              font-size: 22px;
+              font-size: 24px;
               color: var(--gold);
               min-width: 60px;
               text-align: right;
@@ -611,7 +650,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .funnel-label {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.12em;
               color: var(--text-dim);
               text-transform: uppercase;
@@ -626,7 +665,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .channel-table th {
               font-family: 'Lora', serif;
-              font-size: 8.5px;
+              font-size: 9.5px;
               letter-spacing: 0.2em;
               color: var(--text-faint);
               text-transform: uppercase;
@@ -636,7 +675,7 @@ export default function ApproachPage() {
             }
 
             .approach-page-methodology .channel-table td {
-              font-size: 13px;
+              font-size: 14px;
               color: var(--text-dim);
               padding: 12px;
               border-bottom: 1px solid var(--border-dim);
@@ -647,7 +686,7 @@ export default function ApproachPage() {
             .approach-page-methodology .channel-table td.gold {
               color: var(--gold);
               font-family: 'Cormorant', serif;
-              font-size: 16px;
+              font-size: 18px;
             }
 
             .approach-page-methodology .channel-table tr.top-row td { background: rgba(201,162,39,0.04); }
@@ -662,7 +701,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .scorecard-title {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.25em;
               color: var(--gold);
               text-transform: uppercase;
@@ -677,7 +716,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .sc-num {
               font-family: 'Cormorant', serif;
-              font-size: 28px;
+              font-size: 32px;
               color: var(--text);
               line-height: 1;
               margin-bottom: 4px;
@@ -688,7 +727,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .sc-label {
               font-family: 'Lora', serif;
-              font-size: 8.5px;
+              font-size: 9.5px;
               letter-spacing: 0.12em;
               color: var(--text-faint);
               text-transform: uppercase;
@@ -717,7 +756,7 @@ export default function ApproachPage() {
 
             .approach-page-methodology .deal-card-name {
               font-family: 'Lora', serif;
-              font-size: 9px;
+              font-size: 10px;
               letter-spacing: 0.2em;
               color: var(--gold-dim);
               text-transform: uppercase;
@@ -726,14 +765,14 @@ export default function ApproachPage() {
 
             .approach-page-methodology .deal-card-headline {
               font-family: 'Cormorant', serif;
-              font-size: 20px;
+              font-size: 22px;
               color: var(--text);
               line-height: 1.3;
               margin-bottom: 12px;
             }
 
             .approach-page-methodology .deal-card-body {
-              font-size: 12px;
+              font-size: 14px;
               color: var(--text-dim);
               line-height: 1.65;
             }
@@ -744,7 +783,7 @@ export default function ApproachPage() {
               display: inline-block;
               margin-top: 14px;
               font-family: 'Lora', serif;
-              font-size: 8px;
+              font-size: 9px;
               letter-spacing: 0.15em;
               text-transform: uppercase;
               padding: 3px 8px;
@@ -764,9 +803,11 @@ export default function ApproachPage() {
             }
 
             .approach-page-methodology .section-divider {
+              width: 1px;
+              height: 60px;
               border: none;
-              border-top: 1px solid var(--border-dim);
-              margin: 40px 0;
+              background: linear-gradient(to bottom, transparent, var(--gold-dim), transparent);
+              margin: 0 auto;
             }
 
             .approach-page-methodology .inline-metric {
@@ -776,7 +817,7 @@ export default function ApproachPage() {
               padding: 1px 8px;
               border-radius: 1px;
               font-family: 'Cormorant', serif;
-              font-size: 16px;
+              font-size: 18px;
               color: var(--gold);
               vertical-align: middle;
               margin: 0 2px;
@@ -814,7 +855,7 @@ export default function ApproachPage() {
               .approach-page-methodology .scorecard-grid { grid-template-columns: repeat(2, 1fr); }
               .approach-page-methodology .service-tab,
               .approach-page-methodology .nav-tab { padding: 14px 16px 12px; }
-              .approach-page-methodology .tab-title { font-size: 15px; }
+              .approach-page-methodology .tab-title { font-size: 17px; }
               .approach-page-methodology .funnel-label { min-width: 120px; }
             }
           `,
@@ -822,7 +863,7 @@ export default function ApproachPage() {
       />
 
       <section className="hero">
-        <div className="eyebrow">The Methodology</div>
+        <div className="section-eyebrow">The Methodology</div>
         <h1 className="hero-headline">
           The right acquisition
           <br />
@@ -840,7 +881,7 @@ export default function ApproachPage() {
 
       <section className="services-section">
         <div className="services-inner">
-          <div className="eyebrow">What We Do</div>
+          <div className="section-eyebrow">What We Do</div>
           <h2 className="services-headline">Three ways to work with us.</h2>
           <p className="services-sub">
             Some clients come before they have found a deal. Some come mid-process when something
@@ -901,10 +942,6 @@ export default function ApproachPage() {
                 <div className="service-stat">
                   <div className="service-stat-num">2 of 8+</div>
                   <div className="service-stat-label">LOIs killed to protect buyer</div>
-                </div>
-                <div className="service-stat">
-                  <div className="service-stat-num">GBP 0</div>
-                  <div className="service-stat-label">Capital lost to bad deals</div>
                 </div>
               </div>
 
@@ -1431,14 +1468,6 @@ export default function ApproachPage() {
                   arrangements. <strong>Caught and shut down before signing.</strong>
                 </div>
               </div>
-              <div className="finding-card">
-                <div className="finding-num">0</div>
-                <div className="finding-title">Commission flag silently wrong - Inspire3</div>
-                <div className="finding-desc">
-                  Entire cost category recorded as zero after logic drift.
-                  <strong> Segment cash outflows were understated.</strong>
-                </div>
-              </div>
             </div>
 
             <div className="narrative">
@@ -1461,18 +1490,20 @@ export default function ApproachPage() {
                 On other deals, findings looked different but the principle was the same.
                 Verification before commitment.
               </p>
-              <p>
-                <strong>Dino Games:</strong> discrepancies found across payment platforms, plus
-                legacy monetisation mechanics requiring shutdown before close.
-              </p>
-              <p>
-                <strong>Runify:</strong> quoted MRR did not match collected cash after currency and
-                collection timing adjustments.
-              </p>
-              <p>
-                <strong>SmartPrompt:</strong> two LOIs terminated before closing the right asset.
-                Price looked attractive; probability-weighted downside did not.
-              </p>
+              <ul>
+                <li>
+                  <strong>Dino Games:</strong> discrepancies found across payment platforms, plus
+                  legacy monetisation mechanics requiring shutdown before close.
+                </li>
+                <li>
+                  <strong>Runify:</strong> quoted MRR did not match collected cash after currency
+                  and collection timing adjustments.
+                </li>
+                <li>
+                  <strong>SmartPrompt:</strong> two LOIs terminated before closing the right asset.
+                  Price looked attractive; probability-weighted downside did not.
+                </li>
+              </ul>
             </div>
 
             <div className="deal-cards-row">
@@ -1519,10 +1550,6 @@ export default function ApproachPage() {
                 <div className="sc-item">
                   <div className="sc-num gold">15 days</div>
                   <div className="sc-label">Full DD on a 1.8M portfolio</div>
-                </div>
-                <div className="sc-item">
-                  <div className="sc-num zero">GBP 0</div>
-                  <div className="sc-label">Capital lost to missed diligence</div>
                 </div>
               </div>
             </div>
@@ -1623,14 +1650,6 @@ export default function ApproachPage() {
                 <div className="sc-item">
                   <div className="sc-num gold">5+</div>
                   <div className="sc-label">Deals closed</div>
-                </div>
-                <div className="sc-item">
-                  <div className="sc-num zero">GBP 0</div>
-                  <div className="sc-label">Capital lost to bad structures</div>
-                </div>
-                <div className="sc-item">
-                  <div className="sc-num zero">GBP 0</div>
-                  <div className="sc-label">Capital lost to missed diligence</div>
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">1</div>
