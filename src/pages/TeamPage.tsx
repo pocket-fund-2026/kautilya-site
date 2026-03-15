@@ -8,7 +8,7 @@ import ganeshImage from '../assets/ganesh.jpg';
 import pushkarImage from '../assets/pushkar.jpeg';
 import darshanaImage from '../assets/darshana.jpg';
 import aryanImage from '../assets/aryan.jpeg';
-import ritishImage from '../assets/ritish.jpg';
+import ritishImage from '../assets/ritish.jpeg';
 import adityaImage from '../assets/aditya.jpeg';
 
 // Image URLs served from `public/assets/team/` (place your images there)
