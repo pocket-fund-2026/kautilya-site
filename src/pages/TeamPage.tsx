@@ -1,7 +1,17 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+
 import devImage from '../assets/Dev.jpeg';
-import aumImage from '../assets/aum.png';
+import aumImage from '../assets/aum.jpg';
+import ganeshImage from '../assets/ganesh.jpg';
+//import kavyaImage from '../assets/kavya.jpg';
+import pushkarImage from '../assets/pushkar.jpeg';
+import darshanaImage from '../assets/darshana.jpg';
+import aryanImage from '../assets/aryan.jpeg';
+import ritishImage from '../assets/ritish.jpg';
+import adityaImage from '../assets/aditya.jpeg';
+
+// Image URLs served from `public/assets/team/` (place your images there)
 
 type TeamMember = {
   name: string;
@@ -32,42 +42,49 @@ const TEAM_MEMBERS: TeamMember[] = [
     role: 'Tech Head',
     desc: 'Conducts primary research, pipeline tracking, and preliminary financial modeling.',
     initials: 'GJ',
+    image: ganeshImage,
   },
     {
     name: 'Kavya Sharma',
     role: 'Analyst',
     desc: 'The engine room of the mandate. Oversees outreach execution and target qualification.',
     initials: 'KS',
+    //image: kavyaImage,
   },
   {
     name: 'Pushkar Rathod',
     role: 'Analyst',
     desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
     initials: 'PR',
+    image: pushkarImage,
   },
   {
     name: 'Darshana Yadav',
     role: 'Analyst',
     desc: 'Supports deal origination with comprehensive sector screening and data aggregation.',
     initials: 'DY',
+    image: darshanaImage,
   },
   {
     name: 'Aryan Solanki',
     role: 'Marketing Head',
     desc: 'Drives quantitative modeling, deep-dive market mapping, and valuation structuring.',
     initials: 'AS',
+    image: aryanImage,
   },
   {
-    name: 'Ritesh Maheshwari',
+    name: 'Ritish Maheshwari',
     role: 'Founder\'s Office',
     desc: 'Focuses on thesis development and sector-specific deal origination strategies.',
     initials: 'RM',
+    image: ritishImage,
   },
   {
     name: 'Aditya Negi',
     role: 'Tech Support',
     desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
     initials: 'AN',
+    image: adityaImage,
   },
 ];
 

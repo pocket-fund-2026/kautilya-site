@@ -142,6 +142,9 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const tempBox = new THREE.Box3();
     const tempCenter = new THREE.Vector3();
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
+    const maxPixelRatio = isMobileScreen ? 1 : 1.5;
+    const bloomResolutionScale = isMobileScreen ? 0.32 : 0.5;
+    const bloomStrengthMax = isMobileScreen ? 1.8 : 3;
 
     const models: ModelEntry[] = [
       { url: firstModelUrl, loaded: null, mixer: null, actions: null, duration: 0, starMaterials: [] },
@@ -160,7 +163,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, canvas, powerPreference: 'high-performance' });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = baseExposure;
@@ -170,7 +173,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
     const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(canvas.clientWidth * 0.5, canvas.clientHeight * 0.5),
+      new THREE.Vector2(canvas.clientWidth * bloomResolutionScale, canvas.clientHeight * bloomResolutionScale),
       baseBloomStrength,
       0.6,
       0.15,
@@ -209,6 +212,33 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       });
     };
 
+    const updateVideoBackgroundFraming = (texture: THREE.VideoTexture) => {
+      const canvasWidth = canvas.clientWidth;
+      const canvasHeight = canvas.clientHeight;
+      if (canvasWidth <= 0 || canvasHeight <= 0) return;
+
+      const canvasAspect = canvasWidth / canvasHeight;
+      const videoAspect = video.videoWidth > 0 && video.videoHeight > 0
+        ? video.videoWidth / video.videoHeight
+        : 16 / 9;
+
+      texture.center.set(0.5, 0.5);
+
+      // Keep the video in "cover" mode so it fills the viewport during resizes/orientation changes.
+      if (canvasAspect > videoAspect) {
+        const repeatY = videoAspect / canvasAspect;
+        texture.repeat.set(1, repeatY);
+        texture.offset.set(0, (1 - repeatY) / 2);
+      }
+      else {
+        const repeatX = canvasAspect / videoAspect;
+        texture.repeat.set(repeatX, 1);
+        texture.offset.set((1 - repeatX) / 2, 0);
+      }
+
+      texture.needsUpdate = true;
+    };
+
     const onVisibilityChange = () => {
       if (!document.hidden) {
         tryPlayVideo();
@@ -224,6 +254,15 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       markReady();
     };
 
+    const onVideoMetadata = () => {
+      updateVideoBackgroundFraming(videoTexture);
+      // Some mobile browsers may delay loadeddata but still expose metadata.
+      if (!videoReady) {
+        videoReady = true;
+        markReady();
+      }
+    };
+
     video.addEventListener('canplay', tryPlayVideo);
     video.addEventListener('loadeddata', onVideoReady);
     document.addEventListener('visibilitychange', onVisibilityChange);
@@ -234,8 +273,13 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     videoTexture.colorSpace = THREE.SRGBColorSpace;
     videoTexture.minFilter = THREE.LinearFilter;
     videoTexture.magFilter = THREE.LinearFilter;
+    videoTexture.wrapS = THREE.ClampToEdgeWrapping;
+    videoTexture.wrapT = THREE.ClampToEdgeWrapping;
+    updateVideoBackgroundFraming(videoTexture);
     scene.background = videoTexture;
     scene.backgroundIntensity = 0.75;
+
+    video.addEventListener('loadedmetadata', onVideoMetadata);
 
     // Lighting
     scene.add(new THREE.AmbientLight(0xffffff, 0.15));
@@ -424,7 +468,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             }
           }
 
-          bloomPass.strength = THREE.MathUtils.lerp(baseBloomStrength, 3, finalPhase);
+          bloomPass.strength = THREE.MathUtils.lerp(baseBloomStrength, bloomStrengthMax, finalPhase);
           renderer.toneMappingExposure = THREE.MathUtils.lerp(baseExposure, 1.72, finalPhase);
         },
       });
@@ -449,27 +493,63 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
 
     // Resize handler — debounced to avoid layout thrashing
     let resizeTimer: ReturnType<typeof setTimeout>;
+    let lastViewportWidth = 0;
+    let lastViewportHeight = 0;
+    const fullscreenResizeTimers: ReturnType<typeof setTimeout>[] = [];
+
+    const syncViewportSize = () => {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      if (w === 0 || h === 0) return;
+      if (w === lastViewportWidth && h === lastViewportHeight) return;
+
+      lastViewportWidth = w;
+      lastViewportHeight = h;
+
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
+      renderer.setSize(w, h, false);
+      composer.setSize(w, h);
+      updateVideoBackgroundFraming(videoTexture);
+    };
+
     const onResize = () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        const w = canvas.clientWidth;
-        const h = canvas.clientHeight;
-        if (w === 0 || h === 0) return;
-        camera.aspect = w / h;
-        camera.updateProjectionMatrix();
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-        renderer.setSize(w, h);
-        composer.setSize(w, h);
-      }, 100);
+      resizeTimer = setTimeout(syncViewportSize, 80);
     };
+
+    const resizeObserver = new ResizeObserver(onResize);
+    resizeObserver.observe(canvas);
+
+    const onViewportResize = () => onResize();
+    window.visualViewport?.addEventListener('resize', onViewportResize);
+    window.addEventListener('orientationchange', onViewportResize);
     window.addEventListener('resize', onResize);
+
+    const onFullscreenChange = () => {
+      onResize();
+      [0, 120, 300].forEach((delay) => {
+        const t = setTimeout(syncViewportSize, delay);
+        fullscreenResizeTimers.push(t);
+      });
+    };
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+
+    // Run after first paint so mobile layout settles before first camera/renderer sizing.
+    requestAnimationFrame(onResize);
 
     // Render loop
     let animFrameId = 0;
     let scrollTriggerRef: gsap.core.Animation | null = null;
+    let lastFrameTime = 0;
+    const frameBudgetMs = isMobileScreen ? 1000 / 30 : 1000 / 60;
 
-    const animate = () => {
+    const animate = (time = 0) => {
       animFrameId = requestAnimationFrame(animate);
+      syncViewportSize();
+      if (time - lastFrameTime < frameBudgetMs) return;
+      lastFrameTime = time;
       controls.update();
       composer.render();
     };
@@ -486,6 +566,12 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       window.removeEventListener('touchstart', onUserResume);
       video.removeEventListener('canplay', tryPlayVideo);
       video.removeEventListener('loadeddata', onVideoReady);
+      video.removeEventListener('loadedmetadata', onVideoMetadata);
+      window.removeEventListener('orientationchange', onViewportResize);
+      window.visualViewport?.removeEventListener('resize', onViewportResize);
+      document.removeEventListener('fullscreenchange', onFullscreenChange);
+      resizeObserver.disconnect();
+      fullscreenResizeTimers.forEach((timerId) => clearTimeout(timerId));
 
       // Kill GSAP scroll triggers created by this scene
       if (scrollTriggerRef) {
