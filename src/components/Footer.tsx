@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="footer-tagline">The Architect of the Acquisition</div>
           <div className="footer-tagline-script">कौटिल्य</div>
           <div className="footer-social">
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter/X">X</a>
-            <a href="#" aria-label="Website">Web</a>
+            <a href="https://www.linkedin.com/company/pocket-fund/?originalSubdomain=in" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://x.com/microsearchfund" aria-label="Twitter/X">X</a>
+            <a href="https://www.instagram.com/microsearchfund/" aria-label="Website">Instagram</a>
           </div>
         </div>
         <div className="footer-columns">
@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
           <div className="footer-column">
             <div className="footer-column-title">Company</div>
-            <Link to="/story-borderless">About Us</Link>
+            <Link to="/stories">About Us</Link>
             <Link to="/careers">Careers</Link>
             <Link to="/engage">Contact Us</Link>
           </div>

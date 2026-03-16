@@ -251,44 +251,36 @@ export default function StoriesTimeline() {
   const totalWidth = TRACK_LEFT_PAD + itemsWidth + (timelineItems.length - 1) * COLUMN_GAP + TRACK_RIGHT_PAD;
 
   return (
-    <div className="page approach-page-methodology">
-      <section className="stories-timeline-section">
+    <section className="stories-timeline-section">
         <div className="stories-timeline-header">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="section-eyebrow">The Methodology</p>
-            <h1 className="stories-timeline-heading">
-              The right acquisition does not find you. You find it.
-            </h1>
-            <div className="stories-timeline-header-row">
-              <p className="stories-timeline-intro section-body">
-                Most buyers come to us after the same experience: months of deal flow that went
-                nowhere, a term sheet that fell apart in diligence, or capital deployed into
-                something that made sense on paper and did not in practice. The problem was never
-                the market. The problem was the process.
-              </p>
-              <div className="stories-timeline-hint" aria-hidden="true">
-                <span>Drag or swipe to explore</span>
-                <motion.svg
-                  width="32" height="8" viewBox="0 0 32 8" fill="none"
-                  animate={{ x: [0, 6, 0] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                >
-                  <path
-                    d="M31.354 4.354a.5.5 0 000-.708L28.172.464a.5.5 0 10-.707.708L30.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h31v-1H0v1z"
-                    fill="rgba(201,168,76,0.45)"
-                  />
-                </motion.svg>
-              </div>
+          <p className="section-eyebrow">The Methodology</p>
+          <h1 className="section-title">
+            The right acquisition does not find you. You find it.
+          </h1>
+          <div className="stories-timeline-header-row">
+            <p className="stories-timeline-intro section-body">
+              Most buyers come to us after the same experience: months of deal flow that went
+              nowhere, a term sheet that fell apart in diligence, or capital deployed into
+              something that made sense on paper and did not in practice. The problem was never
+              the market. The problem was the process.
+            </p>
+            <div className="stories-timeline-hint" aria-hidden="true">
+              <span>Drag or swipe to explore</span>
+              <motion.svg
+                width="32" height="8" viewBox="0 0 32 8" fill="none"
+                animate={{ x: [0, 6, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <path
+                  d="M31.354 4.354a.5.5 0 000-.708L28.172.464a.5.5 0 10-.707.708L30.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h31v-1H0v1z"
+                  fill="rgba(201,168,76,0.45)"
+                />
+              </motion.svg>
             </div>
-          </motion.div>
+          </div>
         </div>
 
-        <div className="stories-timeline-rail-wrap" style={{ background: '#0b172b', height: TOTAL_HEIGHT + 40 }}>
+        <div className="stories-timeline-rail-wrap" style={{ height: TOTAL_HEIGHT + 40 }}>
 
           <div
             ref={scrollContainerRef}
@@ -428,7 +420,6 @@ export default function StoriesTimeline() {
           <div className="stories-timeline-edge stories-timeline-edge--left" />
           <div className="stories-timeline-edge stories-timeline-edge--right" />
         </div>
-      </section>
-    </div>
+    </section>
   );
 }
