@@ -30,9 +30,9 @@ export default function StoriesPage() {
               <div className="social-handle">Pocket Fund</div>
               <div className="social-desc">Long-form posts, case reflections, and industry commentary.</div>
             </a>
-            <a className="social-card" href="#">
+            <a className="social-card" href="https://www.reddit.com/r/InsideAcquisitions/">
               <div className="social-platform">Reddit</div>
-              <div className="social-handle">u/kautilya</div>
+              <div className="social-handle">r/InsideAcquisitions</div>
               <div className="social-desc">Community discussions on M&amp;A, sourcing, and deal mechanics.</div>
             </a>
           </div>

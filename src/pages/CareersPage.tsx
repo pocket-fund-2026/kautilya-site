@@ -1,10 +1,164 @@
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState, useRef, type ChangeEvent, type FormEvent } from 'react';
+
+const OPEN_ROLES = [
+  'Analyst — Deal Sourcing',
+  'Associate — Market Intelligence',
+  'Content & Brand Lead',
+] as const;
+
+const WORK_MODES = ['Remote', 'In Mumbai'] as const;
+
+type FormData = {
+  fullName: string;
+  email: string;
+  phone: string;
+  role: string;
+  workMode: string;
+};
+
+type FormErrors = Partial<Record<keyof FormData | 'cv', string>>;
 
 export default function CareersPage() {
+  const [formData, setFormData] = useState<FormData>({
+    fullName: '',
+    email: '',
+    phone: '',
+    role: '',
+    workMode: '',
+  });
+  const [cvFile, setCvFile] = useState<File | null>(null);
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitState, setSubmitState] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitMessage, setSubmitMessage] = useState('');
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const applyRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     document.title = 'Kautilya — Careers';
   }, []);
+
+  const validateForm = (data: FormData, cv: File | null): FormErrors => {
+    const nextErrors: FormErrors = {};
+
+    if (!data.fullName.trim()) {
+      nextErrors.fullName = 'Please enter your full name.';
+    } else if (data.fullName.trim().length < 2) {
+      nextErrors.fullName = 'Name must be at least 2 characters.';
+    }
+
+    if (!data.email.trim()) {
+      nextErrors.email = 'Please enter your email.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
+      nextErrors.email = 'Please enter a valid email address.';
+    }
+
+    if (!data.phone.trim()) {
+      nextErrors.phone = 'Please enter your phone number.';
+    } else if (!/^[+\d][\d\s\-()]{6,}$/.test(data.phone.trim())) {
+      nextErrors.phone = 'Please enter a valid phone number.';
+    }
+
+    if (!data.role) {
+      nextErrors.role = 'Please select a role.';
+    }
+
+    if (!data.workMode) {
+      nextErrors.workMode = 'Please select a work preference.';
+    }
+
+    if (!cv) {
+      nextErrors.cv = 'Please attach your CV.';
+    } else if (cv.size > 5 * 1024 * 1024) {
+      nextErrors.cv = 'File must be under 5 MB.';
+    }
+
+    return nextErrors;
+  };
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (submitState !== 'idle') {
+      setSubmitState('idle');
+      setSubmitMessage('');
+    }
+
+    setErrors((prev) => {
+      if (!prev[name as keyof FormErrors]) return prev;
+      const updated = { ...formData, [name]: value };
+      const fieldError = validateForm(updated, cvFile)[name as keyof FormData];
+      return { ...prev, [name]: fieldError };
+    });
+  };
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] ?? null;
+    setCvFile(file);
+    if (submitState !== 'idle') {
+      setSubmitState('idle');
+      setSubmitMessage('');
+    }
+    setErrors((prev) => {
+      if (!prev.cv) return prev;
+      const cvError = validateForm(formData, file).cv;
+      return { ...prev, cv: cvError };
+    });
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    const nextErrors = validateForm(formData, cvFile);
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors);
+      return;
+    }
+
+    setErrors({});
+    setIsSubmitting(true);
+    setSubmitState('idle');
+    setSubmitMessage('');
+
+    try {
+      const body = new FormData();
+      body.append('_subject', `Career Application — ${formData.role} — ${formData.fullName}`);
+      body.append('name', formData.fullName);
+      body.append('email', formData.email);
+      body.append('phone', formData.phone);
+      body.append('role', formData.role);
+      body.append('work_mode', formData.workMode);
+      body.append('source', 'Kautilya Careers Page');
+      if (cvFile) {
+        body.append('attachment', cvFile);
+      }
+
+      const response = await fetch('https://formsubmit.co/ajax/hello@pocket-fund.com', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body,
+      });
+
+      if (!response.ok) throw new Error('Submission failed');
+
+      setSubmitState('success');
+      setSubmitMessage('Thank you. Your application has been received.');
+      setFormData({ fullName: '', email: '', phone: '', role: '', workMode: '' });
+      setCvFile(null);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    } catch {
+      setSubmitState('error');
+      setSubmitMessage('Could not send right now. Please try again or email careers@kautilya.co.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleRoleClick = (role: string) => {
+    setFormData((prev) => ({ ...prev, role }));
+    setErrors((prev) => ({ ...prev, role: undefined }));
+    applyRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   return (
     <div className="page">
@@ -19,7 +173,7 @@ export default function CareersPage() {
       <div className="content-section">
         <div className="roles-section">
           <div className="section-eyebrow">Open Roles</div>
-          <div className="role-card reveal">
+          <div className="role-card reveal" onClick={() => handleRoleClick('Analyst — Deal Sourcing')}>
             <div>
               <div className="role-title">Analyst — Deal Sourcing</div>
               <div className="role-detail">
@@ -32,7 +186,7 @@ export default function CareersPage() {
             </div>
             <div className="role-arrow">→</div>
           </div>
-          <div className="role-card reveal" style={{ transitionDelay: '.1s' }}>
+          <div className="role-card reveal" style={{ transitionDelay: '.1s' }} onClick={() => handleRoleClick('Associate — Market Intelligence')}>
             <div>
               <div className="role-title">Associate — Market Intelligence</div>
               <div className="role-detail">
@@ -45,7 +199,7 @@ export default function CareersPage() {
             </div>
             <div className="role-arrow">→</div>
           </div>
-          <div className="role-card reveal" style={{ transitionDelay: '.2s' }}>
+          <div className="role-card reveal" style={{ transitionDelay: '.2s' }} onClick={() => handleRoleClick('Content & Brand Lead')}>
             <div>
               <div className="role-title">Content &amp; Brand Lead</div>
               <div className="role-detail">
@@ -58,6 +212,119 @@ export default function CareersPage() {
             </div>
             <div className="role-arrow">→</div>
           </div>
+        </div>
+
+        {/* APPLICATION FORM */}
+        <div ref={applyRef} className="careers-apply reveal">
+          <div className="section-eyebrow">Apply</div>
+          <h2 className="section-title">Submit Your Application</h2>
+          <p className="section-body">Fill in the details below and attach your CV. We'll be in touch.</p>
+          <form className="engage-form" onSubmit={handleSubmit} noValidate>
+            <div className="form-row">
+              <div className="form-group">
+                <label className="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Your full name"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  aria-invalid={Boolean(errors.fullName)}
+                  aria-describedby={errors.fullName ? 'careers-name-error' : undefined}
+                  className={errors.fullName ? 'form-input-error' : undefined}
+                />
+                {errors.fullName && <p id="careers-name-error" className="form-error">{errors.fullName}</p>}
+              </div>
+              <div className="form-group">
+                <label className="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  aria-invalid={Boolean(errors.email)}
+                  aria-describedby={errors.email ? 'careers-email-error' : undefined}
+                  className={errors.email ? 'form-input-error' : undefined}
+                />
+                {errors.email && <p id="careers-email-error" className="form-error">{errors.email}</p>}
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label className="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  aria-invalid={Boolean(errors.phone)}
+                  aria-describedby={errors.phone ? 'careers-phone-error' : undefined}
+                  className={errors.phone ? 'form-input-error' : undefined}
+                />
+                {errors.phone && <p id="careers-phone-error" className="form-error">{errors.phone}</p>}
+              </div>
+              <div className="form-group">
+                <label className="form-label">Applying For</label>
+                <select
+                  name="role"
+                  value={formData.role}
+                  onChange={handleInputChange}
+                  aria-invalid={Boolean(errors.role)}
+                  aria-describedby={errors.role ? 'careers-role-error' : undefined}
+                  className={errors.role ? 'form-input-error' : undefined}
+                >
+                  <option value="" disabled>Select a role</option>
+                  {OPEN_ROLES.map((r) => (
+                    <option key={r} value={r}>{r}</option>
+                  ))}
+                </select>
+                {errors.role && <p id="careers-role-error" className="form-error">{errors.role}</p>}
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label className="form-label">Work Preference</label>
+                <select
+                  name="workMode"
+                  value={formData.workMode}
+                  onChange={handleInputChange}
+                  aria-invalid={Boolean(errors.workMode)}
+                  aria-describedby={errors.workMode ? 'careers-workmode-error' : undefined}
+                  className={errors.workMode ? 'form-input-error' : undefined}
+                >
+                  <option value="" disabled>Remote or In Mumbai</option>
+                  {WORK_MODES.map((m) => (
+                    <option key={m} value={m}>{m}</option>
+                  ))}
+                </select>
+                {errors.workMode && <p id="careers-workmode-error" className="form-error">{errors.workMode}</p>}
+              </div>
+              <div className="form-group">
+                <label className="form-label">Attach CV</label>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  name="cv"
+                  accept=".pdf,.doc,.docx"
+                  onChange={handleFileChange}
+                  aria-invalid={Boolean(errors.cv)}
+                  aria-describedby={errors.cv ? 'careers-cv-error' : undefined}
+                  className={errors.cv ? 'form-input-error' : undefined}
+                />
+                {errors.cv && <p id="careers-cv-error" className="form-error">{errors.cv}</p>}
+              </div>
+            </div>
+
+            <button className="engage-submit" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'Submit Application'}
+            </button>
+            {submitState === 'success' && <p className="form-success">{submitMessage}</p>}
+            {submitState === 'error' && <p className="form-error form-error--submit">{submitMessage}</p>}
+          </form>
         </div>
 
         {/* CULTURE */}
@@ -103,7 +370,7 @@ export default function CareersPage() {
           <p className="section-body">
             We're always interested in exceptional people who think systematically about markets and acquisitions.
           </p>
-          <a href="mailto:careers@kautilya.co">careers@kautilya.co →</a>
+          <a href="mailto:dev@pocket-fund.com">dev@pocket-fund.com →</a>
         </div>
       </div>
     </div>
