@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import devImage from '../assets/Dev.jpeg';
 import aumImage from '../assets/aum.jpg';
 import ganeshImage from '../assets/ganesh.jpg';
-//import kavyaImage from '../assets/kavya.jpg';
+import kavyaImage from '../assets/kavya.jpeg';
 import pushkarImage from '../assets/pushkar.jpeg';
 import darshanaImage from '../assets/darshana.jpg';
 import aryanImage from '../assets/aryan.jpeg';
@@ -49,7 +49,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     role: 'Analyst',
     desc: 'The engine room of the mandate. Oversees outreach execution and target qualification.',
     initials: 'KS',
-    //image: kavyaImage,
+    image: kavyaImage,
   },
   {
     name: 'Pushkar Rathod',
