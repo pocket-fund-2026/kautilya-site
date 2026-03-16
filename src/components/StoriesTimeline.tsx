@@ -2,18 +2,16 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'motion/react';
 import { LaserFlow } from './LaserFlow';
 
-const CARD_HEIGHT = 380;
-const BRANCH_HEIGHT = 72;
+const CARD_HEIGHT = 340;
+const BRANCH_HEIGHT = 52;
 const NODE_SIZE = 12;
 const CARD_WIDTH = 320;
-const YEAR_COL_WIDTH = 112;
-const COLUMN_GAP = 84;
-const TRACK_LEFT_PAD = 112;
-const TRACK_RIGHT_PAD = 280;
-const BEAM_GLOW_HEIGHT = 132;
+const YEAR_COL_WIDTH = 100;
+const COLUMN_GAP = 60;
+const TRACK_LEFT_PAD = 80;
+const TRACK_RIGHT_PAD = 200;
 const BEAM_Y = CARD_HEIGHT + BRANCH_HEIGHT + NODE_SIZE / 2;
 const TOTAL_HEIGHT = CARD_HEIGHT + BRANCH_HEIGHT + NODE_SIZE + BRANCH_HEIGHT + CARD_HEIGHT;
-const RAIL_HEIGHT = TOTAL_HEIGHT + 40;
 
 type Phase = {
   id: number;
@@ -147,33 +145,37 @@ function TimelinePhase({ post }: { post: Phase }) {
   return (
     <div ref={ref} className="stories-timeline-item" style={{ width: CARD_WIDTH, height: TOTAL_HEIGHT }}>
       <motion.div
-        initial={{ opacity: 0, y: isTop ? -26 : 26 }}
+        initial={{ opacity: 0, y: isTop ? -30 : 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.65, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="stories-timeline-card-shell"
-        style={{ top: isTop ? 0 : BEAM_Y + NODE_SIZE / 2 + BRANCH_HEIGHT, width: CARD_WIDTH }}
+        style={{
+          top: isTop ? 0 : BEAM_Y + NODE_SIZE / 2 + BRANCH_HEIGHT,
+          width: CARD_WIDTH,
+        }}
       >
         <PhaseCard post={post} />
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, scaleY: 0 }}
+        initial={{ opacity: 0, scaleY: 0, x: '-50%' }}
         animate={isInView ? { opacity: 1, scaleY: 1 } : {}}
         transition={{ duration: 0.45, delay: 0.25 }}
         className="stories-timeline-branch"
         style={{
           top: isTop ? CARD_HEIGHT : BEAM_Y + NODE_SIZE / 2,
           height: BRANCH_HEIGHT,
+          transformOrigin: 'top center',
           background: isTop
-            ? 'linear-gradient(180deg, transparent 0%, rgba(201,168,76,0.35) 40%, rgba(201,168,76,0.72) 100%)'
-            : 'linear-gradient(180deg, rgba(201,168,76,0.72) 0%, rgba(201,168,76,0.35) 60%, transparent 100%)',
+            ? 'linear-gradient(180deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.4) 40%, rgba(201,168,76,0.7) 100%)'
+            : 'linear-gradient(180deg, rgba(201,168,76,0.7) 0%, rgba(201,168,76,0.4) 60%, rgba(201,168,76,0.18) 100%)',
         }}
       />
 
       <motion.div
-        initial={{ scale: 0 }}
+        initial={{ scale: 0, x: '-50%', y: '-50%' }}
         animate={isInView ? { scale: 1 } : {}}
-        transition={{ duration: 0.35, delay: 0.35, type: 'spring', stiffness: 320 }}
+        transition={{ duration: 0.35, delay: 0.35, type: 'spring', stiffness: 350 }}
         className="stories-timeline-node"
         style={{ top: BEAM_Y }}
       >
@@ -189,17 +191,23 @@ function PhaseDivider({ year }: { year: string }) {
 
   return (
     <div ref={ref} className="stories-timeline-year" style={{ width: YEAR_COL_WIDTH, height: TOTAL_HEIGHT }}>
-      <div className="stories-timeline-year-line stories-timeline-year-line--top" style={{ top: BEAM_Y - 54 }} />
+      <div
+        className="stories-timeline-year-line stories-timeline-year-line--top"
+        style={{ top: BEAM_Y - 60 }}
+      />
       <motion.div
-        initial={{ opacity: 0, scale: 0.88 }}
+        initial={{ opacity: 0, scale: 0.85 }}
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="stories-timeline-year-pill"
-        style={{ top: BEAM_Y - NODE_SIZE / 2 - 5 }}
+        style={{ top: BEAM_Y - NODE_SIZE / 2 - 4 }}
       >
         <span>{year}</span>
       </motion.div>
-      <div className="stories-timeline-year-line stories-timeline-year-line--bottom" style={{ top: BEAM_Y + 18 }} />
+      <div
+        className="stories-timeline-year-line stories-timeline-year-line--bottom"
+        style={{ top: BEAM_Y + 20 }}
+      />
     </div>
   );
 }
@@ -280,7 +288,7 @@ export default function StoriesTimeline() {
           </motion.div>
         </div>
 
-        <div className="stories-timeline-rail-wrap" style={{ background: '#0b172b', height: RAIL_HEIGHT }}>
+        <div className="stories-timeline-rail-wrap" style={{ background: '#0b172b', height: TOTAL_HEIGHT + 40 }}>
 
           <div
             ref={scrollContainerRef}
@@ -331,17 +339,44 @@ export default function StoriesTimeline() {
           >
             <div
               className="stories-timeline-track"
-              style={{ width: totalWidth, height: RAIL_HEIGHT, background: 'transparent' }}
+              style={{ width: totalWidth, height: TOTAL_HEIGHT + 40, background: 'transparent' }}
             >
-              {/* z-0: WebGL beam layer */}
+              {/* z-0: CSS fallback glow (instant) + WebGL beam layer */}
               <div
                 aria-hidden="true"
                 style={{
                   position: 'absolute',
                   left: 0,
-                  top: BEAM_Y - BEAM_GLOW_HEIGHT / 2,
+                  top: BEAM_Y,
                   width: totalWidth,
-                  height: BEAM_GLOW_HEIGHT,
+                  height: 1,
+                  pointerEvents: 'none',
+                  zIndex: 0,
+                  background: 'linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.2) 8%, rgba(201,168,76,0.42) 50%, rgba(201,168,76,0.2) 92%, transparent 100%)',
+                }}
+              />
+              <div
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  left: 0,
+                  top: BEAM_Y - 40,
+                  width: totalWidth,
+                  height: 84,
+                  pointerEvents: 'none',
+                  zIndex: 0,
+                  background: 'linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.04) 15%, rgba(201,168,76,0.08) 50%, rgba(201,168,76,0.04) 85%, transparent 100%)',
+                  filter: 'blur(14px)',
+                }}
+              />
+              <div
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  left: 0,
+                  top: BEAM_Y - 60,
+                  width: totalWidth,
+                  height: 120,
                   pointerEvents: 'none',
                   zIndex: 0,
                   overflow: 'hidden',
@@ -356,17 +391,17 @@ export default function StoriesTimeline() {
                   horizontalBeamOffset={0}
                   verticalSizing={0.12}
                   horizontalSizing={4.0}
-                  wispDensity={0.45}
-                  wispIntensity={2.2}
-                  wispSpeed={11}
-                  flowSpeed={0.38}
-                  flowStrength={0.34}
-                  fogIntensity={0.16}
-                  fogScale={0.22}
-                  fogFallSpeed={0.52}
-                  decay={1.06}
-                  falloffStart={1.12}
-                  mouseTiltStrength={0.007}
+                  wispDensity={0.5}
+                  wispIntensity={2.5}
+                  wispSpeed={10}
+                  flowSpeed={0.25}
+                  flowStrength={0.3}
+                  fogIntensity={0.2}
+                  fogScale={0.15}
+                  fogFallSpeed={0.3}
+                  decay={1.4}
+                  falloffStart={1.0}
+                  mouseTiltStrength={0.003}
                   mouseSmoothTime={0.12}
                 />
               </div>
