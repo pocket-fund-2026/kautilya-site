@@ -30,8 +30,8 @@ export default function Footer() {
           </div>
           <div className="footer-column">
             <div className="footer-column-title">Legal</div>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Policy</a>
+            <a href="https://www.termsfeed.com/live/7e06e006-4620-4566-8122-173ddd5db374" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+            <a href="https://www.termsfeed.com/live/7290f953-1228-4f5a-a862-467780ae8759" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             <div className="footer-copyright">
               Copyright © 2026<br />
               All Rights Reserved

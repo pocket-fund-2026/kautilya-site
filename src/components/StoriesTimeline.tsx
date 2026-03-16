@@ -13,6 +13,7 @@ const TRACK_RIGHT_PAD = 280;
 const BEAM_GLOW_HEIGHT = 132;
 const BEAM_Y = CARD_HEIGHT + BRANCH_HEIGHT + NODE_SIZE / 2;
 const TOTAL_HEIGHT = CARD_HEIGHT + BRANCH_HEIGHT + NODE_SIZE + BRANCH_HEIGHT + CARD_HEIGHT;
+const RAIL_HEIGHT = TOTAL_HEIGHT + 40;
 
 type Phase = {
   id: number;
@@ -207,13 +208,14 @@ export default function StoriesTimeline() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const dragStartRef = useRef({ x: 0, scrollLeft: 0 });
+  const dragPointerIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
-      const isHorizontalGesture = Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > 5;
+      const isHorizontalGesture = Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > 8;
       const isShiftScroll = event.shiftKey && Math.abs(event.deltaY) > 0;
       if (!isHorizontalGesture && !isShiftScroll) return;
 
@@ -225,7 +227,7 @@ export default function StoriesTimeline() {
       if (atStart || atEnd) return;
 
       event.preventDefault();
-      container.scrollLeft += delta * 1.5;
+      container.scrollLeft += delta * 1.25;
     };
 
     container.addEventListener('wheel', handleWheel, { passive: false });
@@ -278,7 +280,7 @@ export default function StoriesTimeline() {
           </motion.div>
         </div>
 
-        <div className="stories-timeline-rail-wrap" style={{ background: '#0b172b', height: TOTAL_HEIGHT }}>
+        <div className="stories-timeline-rail-wrap" style={{ background: '#0b172b', height: RAIL_HEIGHT }}>
 
           <div
             ref={scrollContainerRef}
@@ -288,27 +290,48 @@ export default function StoriesTimeline() {
               position: 'relative',
               zIndex: 2,
               background: 'transparent',
+              touchAction: 'pan-y pinch-zoom',
+              overscrollBehaviorX: 'contain',
             }}
-            onMouseDown={(e) => {
+            onPointerDown={(e) => {
+              if (e.pointerType !== 'mouse') return;
               const container = scrollContainerRef.current;
               if (!container) return;
+              dragPointerIdRef.current = e.pointerId;
+              container.setPointerCapture(e.pointerId);
               setIsDragging(true);
               dragStartRef.current = { x: e.pageX, scrollLeft: container.scrollLeft };
             }}
-            onMouseMove={(e) => {
-              if (!isDragging) return;
+            onPointerMove={(e) => {
+              if (!isDragging || e.pointerType !== 'mouse') return;
               const container = scrollContainerRef.current;
               if (!container) return;
               e.preventDefault();
               const walk = (e.pageX - dragStartRef.current.x) * 1.2;
               container.scrollLeft = dragStartRef.current.scrollLeft - walk;
             }}
-            onMouseUp={() => setIsDragging(false)}
-            onMouseLeave={() => setIsDragging(false)}
+            onPointerUp={(e) => {
+              const container = scrollContainerRef.current;
+              if (container && dragPointerIdRef.current === e.pointerId) {
+                container.releasePointerCapture(e.pointerId);
+              }
+              dragPointerIdRef.current = null;
+              setIsDragging(false);
+            }}
+            onPointerCancel={() => {
+              dragPointerIdRef.current = null;
+              setIsDragging(false);
+            }}
+            onPointerLeave={() => {
+              if (!isDragging) return;
+              dragPointerIdRef.current = null;
+              setIsDragging(false);
+            }}
+            onDragStart={(e) => e.preventDefault()}
           >
             <div
               className="stories-timeline-track"
-              style={{ width: totalWidth, height: TOTAL_HEIGHT, background: 'transparent' }}
+              style={{ width: totalWidth, height: RAIL_HEIGHT, background: 'transparent' }}
             >
               {/* z-0: WebGL beam layer */}
               <div

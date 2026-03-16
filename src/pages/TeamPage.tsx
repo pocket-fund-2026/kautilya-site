@@ -33,14 +33,14 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Aum Thakarkar',
     role: 'Chief Analyst',
-    desc: 'Head of Analyst at Pocket Fund. Built internal sourcing and operations systems, leads diligence and acquisitions.',
+    desc: 'Leads research and analysis across the firm, delivers high-conviction insights on markets and opportunities, and guides data-driven investment decisions.',
     initials: 'AT',
     image: aumImage,
   },
   {
     name: 'Ganesh Jagtap',
     role: 'Tech Head',
-    desc: 'Conducts primary research, pipeline tracking, and preliminary financial modeling.',
+    desc: 'Drives the technology vision, builds scalable systems, and ensures secure, efficient platforms that power our products and operations.',
     initials: 'GJ',
     image: ganeshImage,
   },
@@ -75,14 +75,14 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Ritish Maheshwari',
     role: 'Founder\'s Office',
-    desc: 'Focuses on thesis development and sector-specific deal origination strategies.',
+    desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
     initials: 'RM',
     image: ritishImage,
   },
   {
     name: 'Aditya Negi',
     role: 'Tech Support',
-    desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
+    desc: 'Provides timely technical assistance, resolves issues, and ensures smooth day-to-day use of our systems for clients and internal teams.',
     initials: 'AN',
     image: adityaImage,
   },
