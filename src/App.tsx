@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import SplashCursor from './components/SplashCursor';
 import HomePage from './pages/HomePage';
@@ -51,6 +52,7 @@ function App() {
         <Route path="/story-inspire3" element={<StoryInspire3Page />} />
       </Route>
     </Routes>
+    <Analytics />
     </>
   );
 }
