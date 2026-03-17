@@ -309,10 +309,11 @@ export default function StoriesTimeline() {
     return () => container.removeEventListener('wheel', handleWheel);
   }, []);
 
-  const timelineItems: TimelineItem[] = phases.flatMap((p) => [
-    { type: 'divider', year: p.year || '' },
-    { type: 'post', post: p },
-  ]);
+  const timelineItems: TimelineItem[] = phases.flatMap((p) =>
+    p.year
+      ? [{ type: 'divider' as const, year: p.year }, { type: 'post' as const, post: p }]
+      : [{ type: 'post' as const, post: p }],
+  );
 
   const itemsWidth = timelineItems.reduce((acc, item) => acc + (item.type === 'divider' ? YEAR_COL_WIDTH : CARD_WIDTH), 0);
   const totalWidth = TRACK_LEFT_PAD + itemsWidth + (timelineItems.length - 1) * COLUMN_GAP + TRACK_RIGHT_PAD;

@@ -974,11 +974,15 @@ function SplashCursor({
       }
     }
 
+    const isTouchDevice = window.matchMedia('(hover: none)').matches;
+
     window.addEventListener('mousedown', handleMouseDown);
     window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchmove', handleTouchMove, false);
-    window.addEventListener('touchend', handleTouchEnd);
+    if (!isTouchDevice) {
+      window.addEventListener('touchstart', handleTouchStart);
+      window.addEventListener('touchmove', handleTouchMove, false);
+      window.addEventListener('touchend', handleTouchEnd);
+    }
 
     updateFrame();
 
@@ -992,9 +996,11 @@ function SplashCursor({
 
       window.removeEventListener('mousedown', handleMouseDown);
       window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleTouchEnd);
+      if (!isTouchDevice) {
+        window.removeEventListener('touchstart', handleTouchStart);
+        window.removeEventListener('touchmove', handleTouchMove);
+        window.removeEventListener('touchend', handleTouchEnd);
+      }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
