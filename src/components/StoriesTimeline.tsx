@@ -356,7 +356,7 @@ export default function StoriesTimeline() {
               position: 'relative',
               zIndex: 2,
               background: 'transparent',
-              touchAction: 'pan-y pinch-zoom',
+              touchAction: 'pan-x pan-y pinch-zoom',
               overscrollBehaviorX: 'contain',
             }}
             onPointerDown={(e) => {

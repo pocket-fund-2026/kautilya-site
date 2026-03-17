@@ -92,19 +92,18 @@ const TEAM_MEMBERS: TeamMember[] = [
 const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string; image?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState({});
+  const [tapped, setTapped] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
-    
-    // Calculate mouse position relative to the card center
+
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const cx = rect.width / 2;
     const cy = rect.height / 2;
-    
-    // Calculate rotation limits (max 12 degrees)
-    const rotateX = ((y - cy) / cy) * -12; 
+
+    const rotateX = ((y - cy) / cy) * -12;
     const rotateY = ((x - cx) / cx) * 12;
 
     setStyle({
@@ -115,18 +114,24 @@ const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string
   };
 
   const handleMouseLeave = () => {
-    // Reset back to flat on leave
     setStyle({
       transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
     });
   };
 
+  const handleClick = () => {
+    if (window.matchMedia('(hover: none)').matches) {
+      setTapped((prev) => !prev);
+    }
+  };
+
   return (
     <div
-      className="glare-card"
+      className={`glare-card${tapped ? ' tapped' : ''}`}
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       style={style as React.CSSProperties}
     >
       <div className="glare-card-inner">
@@ -258,6 +263,7 @@ export default function TeamPage() {
           transform-style: preserve-3d;
           will-change: transform;
           box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          contain: layout size;
         }
 
         .glare-card-inner {
@@ -344,6 +350,39 @@ export default function TeamPage() {
 
         .glare-card:hover .glare-card-shine {
           opacity: 1;
+        }
+
+        /* Mobile: use tap toggle instead of hover, disable 3D tilt */
+        @media (hover: none) {
+          .glare-card {
+            cursor: pointer;
+            transform: none !important;
+          }
+
+          .glare-card .glare-card-desc {
+            transition: opacity 0.25s ease;
+          }
+
+          .glare-card.tapped .glare-card-desc {
+            opacity: 1;
+          }
+
+          .glare-card.tapped .glare-card-desc p {
+            transform: translateY(0);
+          }
+
+          .glare-card.tapped .avatar-image {
+            opacity: 0.15;
+            transform: scale(1.04);
+          }
+
+          .glare-card.tapped .avatar-placeholder {
+            opacity: 0.1;
+          }
+
+          .glare-card-shine {
+            display: none;
+          }
         }
 
         /* Typography below the card */

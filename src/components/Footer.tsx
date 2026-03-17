@@ -24,7 +24,6 @@ export default function Footer() {
           </div>
           <div className="footer-column">
             <div className="footer-column-title">Company</div>
-            <Link to="/stories">About Us</Link>
             <Link to="/careers">Careers</Link>
             <Link to="/engage">Contact Us</Link>
           </div>
