@@ -33,6 +33,7 @@ const deals: Deal[] = [
       { val: '$1.4M', label: 'Revenue Audited' },
       { val: '<15 Days', label: 'Turnaround' },
     ],
+    storyLink: '/story-inspire3',
     fullWidth: true,
   },
   {
@@ -93,6 +94,7 @@ const deals: Deal[] = [
       { val: '12 Wks', label: 'Time to Close' },
       { val: '200x', label: 'Pricing Efficiency' },
     ],
+    storyLink: '/story-smartprompt',
   },
 ];
 

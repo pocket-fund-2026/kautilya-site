@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useReadingProgressAndShareBar } from '../components/useReadingProgressAndShareBar';
+import { useReadingProgressAndShareBar } from '../../components/useReadingProgressAndShareBar';
 import { Link } from 'react-router-dom';
 
 export default function StoryRunifyPage() {

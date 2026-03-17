@@ -68,6 +68,7 @@ export default function Header() {
     '/story-borderless': 'stories',
     '/story-dino-games': 'stories',
     '/story-runify': 'stories',
+    '/story-edition-zero': 'stories',
     '/team': 'team',
   };
 

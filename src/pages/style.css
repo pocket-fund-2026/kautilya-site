@@ -739,11 +739,10 @@ a.deal-card { cursor: pointer; }
   border: 1px solid rgba(201, 162, 39, 0.16);
   background: linear-gradient(180deg, rgba(9, 14, 26, 0.94) 0%, rgba(7, 11, 22, 0.98) 100%);
   box-shadow: 0 16px 48px rgba(2, 6, 18, 0.28);
-  transition: transform 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
+  transition: border-color 0.28s ease, background-color 0.28s ease;
 }
 
 .stories-timeline-card-link:hover .stories-timeline-card {
-  transform: translateY(-6px);
   border-color: rgba(201, 162, 39, 0.3);
   background: linear-gradient(180deg, rgba(11, 17, 31, 0.96) 0%, rgba(8, 13, 26, 1) 100%);
 }
@@ -800,6 +799,9 @@ a.deal-card { cursor: pointer; }
 .stories-timeline-card-body {
   padding: 16px 16px 16px;
   background: linear-gradient(180deg, rgba(9, 14, 26, 0.96) 0%, rgba(8, 12, 24, 0.99) 100%);
+  height: calc(100% - 144px);
+  display: flex;
+  flex-direction: column;
 }
 
 .stories-timeline-date {
@@ -829,10 +831,16 @@ a.deal-card { cursor: pointer; }
   font-size: 12.5px;
   line-height: 1.6;
   color: rgba(232, 228, 220, 0.5);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
 }
 
 .stories-timeline-cta {
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -845,6 +853,7 @@ a.deal-card { cursor: pointer; }
   transition: gap 0.28s ease, opacity 0.28s ease;
 }
 
+.stories-timeline-card-link:hover .stories-timeline-cta,
 .stories-timeline-card:hover .stories-timeline-cta {
   gap: 12px;
   opacity: 1;
@@ -1390,7 +1399,7 @@ a.deal-card { cursor: pointer; }
   left: 0;
   height: 2px;
   background: var(--gold);
-  z-index: 300;
+  z-index: 10050;
   width: 0;
   transition: width 0.1s linear;
 }

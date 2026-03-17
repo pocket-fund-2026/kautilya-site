@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { LaserFlow } from './LaserFlow';
+import editionZeroCover from '../assets/blogs/edition-zero.jpeg';
+import editionAcquire from '../assets/blogs/edition-acquire.jpeg';
+import editionThisIsBIz from '../assets/blogs/edition-thisisbiz.jpeg';
+import edition200k from '../assets/blogs/edition-200k.jpeg';
+import editionCollege from '../assets/blogs/edition-college.jpeg';
 
 const CARD_HEIGHT = 340;
 const BRANCH_HEIGHT = 52;
@@ -15,7 +21,7 @@ const TOTAL_HEIGHT = CARD_HEIGHT + BRANCH_HEIGHT + NODE_SIZE + BRANCH_HEIGHT + C
 
 type Phase = {
   id: number;
-  year: string;
+  year?: string;
   month: string;
   tag: string;
   title: string;
@@ -24,80 +30,124 @@ type Phase = {
   accent: string;
   surface: string;
   imgUrl: string;
+  link?: string;
 };
 
 const phases: Phase[] = [
   {
     id: 1,
-    year: '01',
-    month: 'Phase',
-    tag: 'MANDATE DEFINITION',
-    title: 'The mandate is the lens everything is evaluated through.',
+    year: '2023',
+    month: 'May',
+    tag: 'EDITION ZERO',
+    title: 'Where it all started — a Sunday newsletter about buying small businesses.',
     excerpt:
-      'Most acquisitions fail before the first conversation. The problem was never the market — it was the process.',
+      'This Is Bizness launched as a weekly breakdown of five small businesses.',
     position: 'top',
     accent: '#c9a84c',
     surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
-    imgUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80&auto=format',
+    imgUrl: editionZeroCover,
+    link: '/story-edition-zero',
   },
   {
     id: 2,
-    year: '02',
-    month: 'Phase',
-    tag: 'UNIVERSE CONSTRUCTION',
-    title: 'The best deals are not listed anywhere.',
+    month: 'Oct 2023',
+    tag: 'THE POCKET FUND',
+    title: 'A student-led fund buying businesses for under $5,000.',
     excerpt:
-      'The opportunities on open marketplaces have already been seen by everyone. The information asymmetry is gone before you arrive.',
+      'Pocket Fund launched as a student initiative focused on acquisition entrepreneurship — buying, operating, and selling small online businesses.',
     position: 'bottom',
     accent: '#9ec5ff',
     surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
-    imgUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format',
+    imgUrl: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80&auto=format',
+    link: '/story-pocket-fund',
   },
   {
     id: 3,
-    year: '03',
-    month: 'Phase',
-    tag: 'TARGETED OUTREACH',
-    title: 'Trust is the only currency that opens doors in markets like these.',
+    year: '2024',
+    month: 'Feb',
+    tag: 'COLLEGE STARTUPS',
+    title: 'Why college is the best launchpad for your first business.',
     excerpt:
-      'Response rates shifted from below 5% to 20–40% by moving toward social and context-rich outreach. Not a template — a real conversation.',
+      'Reduced startup costs, AI tools, and a generation-wide shift toward entrepreneurship make college the best time to build.',
     position: 'top',
     accent: '#d2b574',
     surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
-    imgUrl: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=700&q=80&auto=format',
+    imgUrl: editionCollege,
+    link: '/story-college-startups',
   },
   {
     id: 4,
-    year: '04',
-    month: 'Phase',
-    tag: 'DILIGENCE & STRUCTURING',
-    title: 'The version you are shown is rarely complete.',
+    month: 'May 2024',
+    tag: 'POCKET DEALS',
+    title: 'Breaking down a $15K micro-SaaS supporting children with autism.',
     excerpt:
-      'Source-level reconstruction surfaces what summary sheets never show. 30,134 transactions validated. 99.83% monetary match rate.',
+      'A micro-SaaS offering visual schedules and step-by-step guidance for children with autism — at a $15K asking price.',
     position: 'bottom',
     accent: '#c9a84c',
-    surface: 'linear-gradient(172deg, #0C1018 0%, #060A10 52%, #0A0E18 100%)',
-    imgUrl: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=80&auto=format',
+    surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
+    imgUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format',
+    link: '/story-pocket-deals',
   },
   {
     id: 5,
-    year: '05',
-    month: 'Phase',
-    tag: 'EXECUTION & CLOSE',
-    title: 'Getting to LOI is not the hard part.',
+    month: 'Jun 2024',
+    tag: 'DEAL SOURCING',
+    title: 'Five filters for spotting real opportunities in a sea of listings.',
     excerpt:
-      'Holding discipline from LOI to close while pressure builds is where most deals fail quietly. We have closed across five asset classes.',
+      'After acquiring six micro-startups, five practical strategies emerged for filtering quality deals from marketplace noise.',
     position: 'top',
     accent: '#9ec5ff',
+    surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
+    imgUrl: editionAcquire,
+    link: '/story-deal-sourcing',
+  },
+  {
+    id: 6,
+    year: '2025',
+    month: 'Jan',
+    tag: 'HIDDEN VALUE',
+    title: 'The best acquisitions are the ones nobody else sees coming.',
+    excerpt:
+      'An under-monetized newsletter becomes a case study in how strategic improvements can dramatically increase business value.',
+    position: 'bottom',
+    accent: '#d2b574',
+    surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
+    imgUrl: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?w=700&q=80&auto=format',
+    link: '/story-diamonds',
+  },
+  {
+    id: 7,
+    month: 'Nov 2024',
+    tag: 'SEARCH FUNDS',
+    title: 'How a Stanford model from the 1980s became a new asset class.',
+    excerpt:
+      'From Stanford MBA experiment to distinct asset class — the search fund model and its evolution across institutional and self-funded approaches.',
+    position: 'top',
+    accent: '#c9a84c',
+    surface: 'linear-gradient(172deg, #0C1018 0%, #060A10 52%, #0A0E18 100%)',
+    imgUrl: editionThisIsBIz,
+    link: '/story-search-funds',
+  },
+  {
+    id: 8,
+    year: '2026',
+    month: 'Feb',
+    tag: 'DEAL CLOSING',
+    title: 'Five deals. Six months. $200K closed — here is what we learned.',
+    excerpt:
+      'The team shifted from buying businesses to advising entrepreneurs on acquisitions, closing five deals totaling $200K.',
+    position: 'bottom',
+    accent: '#9ec5ff',
     surface: 'linear-gradient(172deg, #08101E 0%, #040810 52%, #08101C 100%)',
-    imgUrl: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80&auto=format',
+    imgUrl: edition200k,
+    link: '/story-200k-deals',
   },
 ];
 
 type TimelineItem = { type: 'divider'; year: string } | { type: 'post'; post: Phase };
 
 function PhaseCard({ post }: { post: Phase }) {
-  return (
+  const content = (
     <article className="stories-timeline-card">
       <div className="stories-timeline-visual">
         <img
@@ -135,6 +185,23 @@ function PhaseCard({ post }: { post: Phase }) {
       </div>
     </article>
   );
+
+  if (post.link) {
+    if (post.link.startsWith('http')) {
+      return (
+        <a className="stories-timeline-card-link" href={post.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+          {content}
+        </a>
+      );
+    }
+    return (
+      <Link className="stories-timeline-card-link" to={post.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
 }
 
 function TimelinePhase({ post }: { post: Phase }) {
@@ -243,7 +310,7 @@ export default function StoriesTimeline() {
   }, []);
 
   const timelineItems: TimelineItem[] = phases.flatMap((p) => [
-    { type: 'divider', year: p.year },
+    { type: 'divider', year: p.year || '' },
     { type: 'post', post: p },
   ]);
 
@@ -253,16 +320,15 @@ export default function StoriesTimeline() {
   return (
     <section className="stories-timeline-section">
         <div className="stories-timeline-header">
-          <p className="section-eyebrow">The Methodology</p>
+          <p className="section-eyebrow">The Journey</p>
           <h1 className="section-title">
-            The right acquisition does not find you. You find it.
+            From a Sunday newsletter to closing $1M+ in deals.
           </h1>
           <div className="stories-timeline-header-row">
             <p className="stories-timeline-intro section-body">
-              Most buyers come to us after the same experience: months of deal flow that went
-              nowhere, a term sheet that fell apart in diligence, or capital deployed into
-              something that made sense on paper and did not in practice. The problem was never
-              the market. The problem was the process.
+              What started as a weekly breakdown of five small businesses became a community,
+              then a fund, then a firm. Every edition, every deal sourced, every lesson learned
+              in public &mdash; documented from day one.
             </p>
             <div className="stories-timeline-hint" aria-hidden="true">
               <span>Drag or swipe to explore</span>
@@ -295,6 +361,8 @@ export default function StoriesTimeline() {
             }}
             onPointerDown={(e) => {
               if (e.pointerType !== 'mouse') return;
+              const interactiveTarget = (e.target as HTMLElement).closest('a, button, input, textarea, select, label');
+              if (interactiveTarget) return;
               const container = scrollContainerRef.current;
               if (!container) return;
               dragPointerIdRef.current = e.pointerId;
