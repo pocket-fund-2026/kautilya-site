@@ -147,7 +147,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     setIsTouchDevice(touchDevice);
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
     const maxPixelRatio = isMobileScreen ? 1.5 : 1.5;
-    const bloomResolutionScale = isMobileScreen ? 0.45 : 0.5;
+    const bloomResolutionScale = isMobileScreen ? 0.5 : 0.5;
     const bloomStrengthMax = isMobileScreen ? 1.8 : 3;
 
     const models: ModelEntry[] = [
@@ -341,10 +341,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           }
 
           if (i === 2) {
-            model.scale.multiplyScalar(isMobileScreen ? 2.2 : 3);
-            if (isMobileScreen) {
-              model.position.set(0, 0, 0);
-            }
+            model.scale.multiplyScalar(isMobileScreen ? 2.8 : 3);
           }
 
           // Star-like material + perf: disable frustum culling, freeze static transforms
