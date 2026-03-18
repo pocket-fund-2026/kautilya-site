@@ -168,7 +168,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, canvas, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+    renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = baseExposure;
     renderer.outputColorSpace = THREE.SRGBColorSpace;

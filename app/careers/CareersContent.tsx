@@ -120,24 +120,24 @@ export default function CareersContent() {
 
     try {
       const body = new FormData();
-      body.append('_subject', `Career Application — ${formData.role} — ${formData.fullName}`);
-      body.append('name', formData.fullName);
+      body.append('fullName', formData.fullName);
       body.append('email', formData.email);
       body.append('phone', formData.phone);
       body.append('role', formData.role);
-      body.append('work_mode', formData.workMode);
-      body.append('source', 'Kautilya Careers Page');
+      body.append('workMode', formData.workMode);
       if (cvFile) {
-        body.append('attachment', cvFile);
+        body.append('cv', cvFile);
       }
 
-      const response = await fetch('https://formsubmit.co/ajax/hello@pocket-fund.com', {
+      const response = await fetch('/api/careers', {
         method: 'POST',
-        headers: { Accept: 'application/json' },
         body,
       });
 
-      if (!response.ok) throw new Error('Submission failed');
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        throw new Error(data?.error || 'Submission failed');
+      }
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
