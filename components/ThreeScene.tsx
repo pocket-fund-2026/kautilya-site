@@ -142,6 +142,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     let geminiStar: THREE.Sprite;
     const tempBox = new THREE.Box3();
     const tempCenter = new THREE.Vector3();
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
     const maxPixelRatio = isMobileScreen ? 1 : 1.5;
     const bloomResolutionScale = isMobileScreen ? 0.32 : 0.5;
@@ -288,12 +289,12 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     key.position.set(5, 5, 5);
     scene.add(key);
 
-    // Orbit controls — rotation only
+    // Orbit controls — rotation only; disabled on touch devices to preserve vertical scroll
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
     controls.enablePan = false;
     controls.enableDamping = true;
-    controls.enabled = !isMobileScreen;
+    controls.enabled = !isTouchDevice;
     controls.target.set(0, 0, 0);
     controls.update();
 
@@ -621,6 +622,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           top: 0,
           left: 0,
           zIndex: 0,
+          touchAction: 'pan-y',
         }}
       />
       <div

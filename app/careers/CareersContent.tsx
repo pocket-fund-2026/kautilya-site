@@ -8,7 +8,7 @@ const OPEN_ROLES = [
   'Content & Brand Lead',
 ] as const;
 
-const WORK_MODES = ['Remote', 'In Mumbai'] as const;
+const WORK_MODES = ['Remote', 'On Site (Mumbai)'] as const;
 
 type FormData = {
   fullName: string;
@@ -294,7 +294,7 @@ export default function CareersContent() {
                   aria-describedby={errors.workMode ? 'careers-workmode-error' : undefined}
                   className={errors.workMode ? 'form-input-error' : undefined}
                 >
-                  <option value="" disabled>Remote or In Mumbai</option>
+                  <option value="" disabled>Remote or On Site (Mumbai)</option>
                   {WORK_MODES.map((m) => (
                     <option key={m} value={m}>{m}</option>
                   ))}
