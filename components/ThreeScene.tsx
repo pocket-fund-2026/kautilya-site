@@ -216,15 +216,35 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       });
     };
 
-    const updateVideoBackgroundFraming = (texture: THREE.VideoTexture) => {
+    let lastFramedCanvasW = 0;
+    let lastFramedCanvasH = 0;
+    let lastFramedVideoW = 0;
+    let lastFramedVideoH = 0;
+
+    const updateVideoBackgroundFraming = (texture: THREE.VideoTexture, force = false) => {
       const canvasWidth = canvas.clientWidth;
       const canvasHeight = canvas.clientHeight;
       if (canvasWidth <= 0 || canvasHeight <= 0) return;
 
+      const vw = video.videoWidth;
+      const vh = video.videoHeight;
+
+      // Skip if nothing changed (unless forced)
+      if (
+        !force &&
+        canvasWidth === lastFramedCanvasW &&
+        canvasHeight === lastFramedCanvasH &&
+        vw === lastFramedVideoW &&
+        vh === lastFramedVideoH
+      ) return;
+
+      lastFramedCanvasW = canvasWidth;
+      lastFramedCanvasH = canvasHeight;
+      lastFramedVideoW = vw;
+      lastFramedVideoH = vh;
+
       const canvasAspect = canvasWidth / canvasHeight;
-      const videoAspect = video.videoWidth > 0 && video.videoHeight > 0
-        ? video.videoWidth / video.videoHeight
-        : 16 / 9;
+      const videoAspect = vw > 0 && vh > 0 ? vw / vh : 16 / 9;
 
       texture.center.set(0.5, 0.5);
 
@@ -259,7 +279,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     };
 
     const onVideoMetadata = () => {
-      updateVideoBackgroundFraming(videoTexture);
+      updateVideoBackgroundFraming(videoTexture, true);
       // Some mobile browsers may delay loadeddata but still expose metadata.
       if (!videoReady) {
         videoReady = true;
@@ -495,50 +515,46 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       scrollTriggerRef = scrollTl;
     }
 
-    // Resize handler — debounced to avoid layout thrashing
-    let resizeTimer: ReturnType<typeof setTimeout>;
+    // Resize handler
     let lastViewportWidth = 0;
     let lastViewportHeight = 0;
-    const fullscreenResizeTimers: ReturnType<typeof setTimeout>[] = [];
+    let lastPixelRatio = 0;
 
     const syncViewportSize = () => {
       const w = canvas.clientWidth;
       const h = canvas.clientHeight;
+      const dpr = Math.min(window.devicePixelRatio, maxPixelRatio);
       if (w === 0 || h === 0) return;
-      if (w === lastViewportWidth && h === lastViewportHeight) return;
+      if (w === lastViewportWidth && h === lastViewportHeight && dpr === lastPixelRatio) return;
 
       lastViewportWidth = w;
       lastViewportHeight = h;
+      lastPixelRatio = dpr;
 
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
+
+      renderer.setPixelRatio(dpr);
       renderer.setSize(w, h, false);
+
+      // Rebuild bloom + composer render targets at new resolution
+      bloomPass.resolution.set(w * bloomResolutionScale, h * bloomResolutionScale);
+      // Dispose old render targets and recreate at new size
       composer.setSize(w, h);
-      updateVideoBackgroundFraming(videoTexture);
+      // Force the renderer's internal viewport to match
+      renderer.setViewport(0, 0, w, h);
+
+      updateVideoBackgroundFraming(videoTexture, true);
     };
 
-    const onResize = () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(syncViewportSize, 80);
-    };
-
-    const resizeObserver = new ResizeObserver(onResize);
+    const resizeObserver = new ResizeObserver(() => syncViewportSize());
     resizeObserver.observe(canvas);
 
-    const onViewportResize = () => onResize();
-    window.visualViewport?.addEventListener('resize', onViewportResize);
-    window.addEventListener('orientationchange', onViewportResize);
+    const onResize = () => syncViewportSize();
+    window.visualViewport?.addEventListener('resize', onResize);
+    window.addEventListener('orientationchange', onResize);
     window.addEventListener('resize', onResize);
-
-    const onFullscreenChange = () => {
-      onResize();
-      [0, 120, 300].forEach((delay) => {
-        const t = setTimeout(syncViewportSize, delay);
-        fullscreenResizeTimers.push(t);
-      });
-    };
-    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('fullscreenchange', onResize);
 
     // Run after first paint so mobile layout settles before first camera/renderer sizing.
     requestAnimationFrame(onResize);
@@ -552,6 +568,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const animate = (time = 0) => {
       animFrameId = requestAnimationFrame(animate);
       syncViewportSize();
+      updateVideoBackgroundFraming(videoTexture);
       if (time - lastFrameTime < frameBudgetMs) return;
       lastFrameTime = time;
       controls.update();
@@ -563,19 +580,17 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     return () => {
       disposed = true;
       cancelAnimationFrame(animFrameId);
-      clearTimeout(resizeTimer);
       window.removeEventListener('resize', onResize);
+      window.removeEventListener('orientationchange', onResize);
+      window.visualViewport?.removeEventListener('resize', onResize);
+      document.removeEventListener('fullscreenchange', onResize);
       document.removeEventListener('visibilitychange', onVisibilityChange);
       window.removeEventListener('pointerdown', onUserResume);
       window.removeEventListener('touchstart', onUserResume);
       video.removeEventListener('canplay', tryPlayVideo);
       video.removeEventListener('loadeddata', onVideoReady);
       video.removeEventListener('loadedmetadata', onVideoMetadata);
-      window.removeEventListener('orientationchange', onViewportResize);
-      window.visualViewport?.removeEventListener('resize', onViewportResize);
-      document.removeEventListener('fullscreenchange', onFullscreenChange);
       resizeObserver.disconnect();
-      fullscreenResizeTimers.forEach((timerId) => clearTimeout(timerId));
 
       // Kill GSAP scroll triggers created by this scene
       if (scrollTriggerRef) {
