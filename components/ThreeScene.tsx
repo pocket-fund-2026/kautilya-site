@@ -148,7 +148,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
     const maxPixelRatio = isMobileScreen ? 1.5 : 1.5;
     const bloomResolutionScale = isMobileScreen ? 0.5 : 0.5;
-    const bloomStrengthMax = isMobileScreen ? 1.8 : 3;
+    const bloomStrengthMax = isMobileScreen ? 2.5 : 3;
 
     const models: ModelEntry[] = [
       { url: firstModelUrl, loaded: null, mixer: null, actions: null, duration: 0, starMaterials: [] },
@@ -520,6 +520,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     let lastViewportHeight = 0;
     let lastPixelRatio = 0;
 
+    const baseFov = 45;
+
     const syncViewportSize = () => {
       const w = canvas.clientWidth;
       const h = canvas.clientHeight;
@@ -531,7 +533,10 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       lastViewportHeight = h;
       lastPixelRatio = dpr;
 
-      camera.aspect = w / h;
+      const aspect = w / h;
+      camera.aspect = aspect;
+      // Widen FOV on portrait viewports so horizontal framing matches landscape testing
+      camera.fov = aspect < 1 ? baseFov + (1 - aspect) * 25 : baseFov;
       camera.updateProjectionMatrix();
 
       renderer.setPixelRatio(dpr);
