@@ -278,9 +278,12 @@ return (
       <div className="intro">
         <div className="section-eyebrow">Buy Side Advisory</div>
         <h1 style={{ fontSize: 52, maxWidth: 700, margin: '0 auto 24px' }}>
-          Buy-Side Advisory.<br />
-          Proprietary <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Deal Sourcing.</span>
+          You bring the thesis.<br />
+          We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
         </h1>
+        <p style={{ fontSize: 13, letterSpacing: 3, textTransform: 'uppercase' as const, color: 'var(--text-muted)', marginBottom: 8 }}>
+          Proprietary Deal Sourcing &amp; Buy-Side Advisory
+        </p>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 600, margin: '0 auto 60px', fontSize: 15, color: 'var(--text-secondary)' }}>
           Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles. We don't carry a pipeline. We build yours.
