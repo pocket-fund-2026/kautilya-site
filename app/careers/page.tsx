@@ -2,7 +2,13 @@ import type { Metadata } from 'next';
 import CareersContent from './CareersContent';
 
 export const metadata: Metadata = {
-  title: 'Kautilya — Careers',
+  title: 'Careers',
+  description:
+    'Join Kautilya — open roles in deal sourcing, market intelligence, and brand. Small team, large impact.',
+  openGraph: {
+    title: 'Careers — Kautilya',
+    description: 'Open roles at Kautilya in deal sourcing, market intelligence, and brand.',
+  },
 };
 
 export default function CareersPage() {

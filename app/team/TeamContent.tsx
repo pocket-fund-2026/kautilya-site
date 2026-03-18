@@ -89,7 +89,7 @@ const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 // ---- Glare Hover Card Component ----
-const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string; image?: string }) => {
+const GlareAvatar = ({ name, initials, desc, image }: { name: string; initials: string; desc: string; image?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState({});
   const [tapped, setTapped] = useState(false);
@@ -136,7 +136,7 @@ const GlareAvatar = ({ initials, desc, image }: { initials: string; desc: string
     >
       <div className="glare-card-inner">
         {image ? (
-          <img src={image} alt={initials} className="avatar-image" loading="lazy" />
+          <img src={image} alt={name} className="avatar-image" loading="lazy" />
         ) : (
           <span className="avatar-placeholder">{initials}</span>
         )}
@@ -492,7 +492,7 @@ export default function TeamContent() {
                 key={member.name}
                 style={{ transitionDelay: `${(index % 3) * 0.15}s` }}
               >
-                <GlareAvatar initials={member.initials} desc={member.desc} image={member.image} />
+                <GlareAvatar name={member.name} initials={member.initials} desc={member.desc} image={member.image} />
                 <div className="member-name">{member.name}</div>
                 <div className="member-role">{member.role}</div>
               </div>

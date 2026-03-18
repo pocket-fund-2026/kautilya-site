@@ -153,8 +153,7 @@ function PhaseCard({ post }: { post: Phase }) {
       <div className="stories-timeline-visual">
         <img
           src={post.imgUrl}
-          alt=""
-          aria-hidden="true"
+          alt={post.title}
           style={{
             width: '100%',
             height: '100%',

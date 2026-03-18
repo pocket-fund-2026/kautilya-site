@@ -16,8 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = STORY_META[slug as StorySlug];
   if (!meta) return {};
   return {
-    title: `${meta.title} — Kautilya`,
+    title: meta.title,
     description: meta.description,
+    openGraph: {
+      title: `${meta.title} — Kautilya`,
+      description: meta.description,
+    },
   };
 }
 

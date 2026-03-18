@@ -1,7 +1,15 @@
 import type { Metadata } from 'next';
 import ApproachContent from './ApproachContent';
 
-export const metadata: Metadata = { title: 'Kautilya — Approach' };
+export const metadata: Metadata = {
+  title: 'Approach',
+  description:
+    'How Kautilya sources deals — systematic market mapping, proprietary outreach, and structured qualification across sectors and geographies.',
+  openGraph: {
+    title: 'Approach — Kautilya',
+    description: 'Systematic deal sourcing methodology built from first principles.',
+  },
+};
 
 export default function Page() {
   return <ApproachContent />;

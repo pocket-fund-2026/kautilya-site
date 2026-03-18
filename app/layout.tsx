@@ -25,9 +25,35 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: 'Kautilya — Buy-Side Advisory',
+  metadataBase: new URL('https://www.kautilya-pe.com'),
+  title: {
+    default: 'Kautilya — Buy-Side Advisory',
+    template: '%s — Kautilya',
+  },
   description:
     'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+  keywords: ['buy-side advisory', 'deal sourcing', 'M&A', 'acquisition pipeline', 'Kautilya', 'private equity', 'search fund'],
+  authors: [{ name: 'Kautilya' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.kautilya-pe.com',
+    siteName: 'Kautilya',
+    title: 'Kautilya — Buy-Side Advisory',
+    description:
+      'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kautilya — Buy-Side Advisory',
+    description:
+      'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

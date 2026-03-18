@@ -354,6 +354,7 @@ export default function StoriesContent() {
             <video
               ref={eventVideoRef}
               src="/videos/WebEventFinal.mp4"
+              aria-label="Inside the Room — what happens when acquisition entrepreneurs get together"
               muted
               playsInline
               loop
@@ -378,6 +379,7 @@ export default function StoriesContent() {
             <video
               ref={singVideoRef}
               src="/videos/WebSingFinal.mp4"
+              aria-label="Beyond the Deal — the people behind the spreadsheets"
               muted
               playsInline
               loop
@@ -457,6 +459,7 @@ export default function StoriesContent() {
           <div className="video-player-content" onClick={(e) => e.stopPropagation()}>
             <video
               src={playerSrc}
+              aria-label="Kautilya video player"
               autoPlay
               controls
               playsInline
