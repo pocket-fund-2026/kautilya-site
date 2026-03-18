@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: 'Kautilya — Buy-Side Advisory | Proprietary Deal Sourcing & M&A Pipeline',
+  title: 'Kautilya — Buy-Side Advisory & Deal Sourcing',
   description:
-    'Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand. We source deals from first principles — in any sector, against any criteria, across geographies.',
+    'Kautilya builds proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
   alternates: { canonical: 'https://www.kautilya-pe.com' },
   openGraph: {
-    title: 'Kautilya — Buy-Side Advisory | Proprietary Deal Sourcing & M&A Pipeline',
+    title: 'Kautilya — Buy-Side Advisory & Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
-      'Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand. We source deals from first principles — in any sector, against any criteria.',
+      'Kautilya builds proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
   },
 };
 

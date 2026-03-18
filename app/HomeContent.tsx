@@ -278,8 +278,8 @@ return (
       <div className="intro">
         <div className="section-eyebrow">Buy Side Advisory</div>
         <h1 style={{ fontSize: 52, maxWidth: 700, margin: '0 auto 24px' }}>
-          You bring the thesis.<br />
-          We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
+          Buy-Side Advisory.<br />
+          Proprietary <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Deal Sourcing.</span>
         </h1>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 600, margin: '0 auto 60px', fontSize: 15, color: 'var(--text-secondary)' }}>
@@ -329,7 +329,7 @@ return (
       <div className="positioning reveal">
         <div className="section-eyebrow">The Arthashastra Approach</div>
         <h2 className="section-title" style={{ fontSize: 48, color: 'var(--gold)' }}>
-          Named for the architect of empires
+          Our Approach to Deal Sourcing
         </h2>
         <p
           className="section-body"
@@ -365,28 +365,48 @@ return (
       <div className="pathways-section">
         <div className="reveal">
           <div className="section-eyebrow">Explore</div>
-          <h2 className="section-title">Go Deeper</h2>
+          <h2 className="section-title">Explore Kautilya</h2>
         </div>
         <div className="pathway-grid reveal">
           <Link className="pathway-card" href="/portfolio">
             <div className="card-eyebrow">Portfolio of Proof</div>
-            <div className="card-title">Closed Engagements</div>
-            <div className="card-desc">A buyer came to us with a thesis. Here's what happened.</div>
+            <h3 className="card-title">Advisory Portfolio</h3>
+            <div className="card-desc">Closed acquisition mandates across sectors — from market mapping to deal close.</div>
             <span className="card-arrow">→</span>
           </Link>
           <Link className="pathway-card" href="/team">
             <div className="card-eyebrow">The Counsel</div>
-            <div className="card-title">Our Team</div>
-            <div className="card-desc">The people behind the mandate.</div>
+            <h3 className="card-title">Our Advisory Team</h3>
+            <div className="card-desc">A small team operating with disproportionate intensity across deal sourcing and market intelligence.</div>
             <span className="card-arrow">→</span>
           </Link>
           <Link className="pathway-card" href="/stories">
             <div className="card-eyebrow">Intelligence</div>
-            <div className="card-title">Published Thinking</div>
-            <div className="card-desc">Market analyses, sourcing frameworks, and sector intelligence.</div>
+            <h3 className="card-title">Stories & Market Intelligence</h3>
+            <div className="card-desc">Deal breakdowns, sourcing case studies, sector analyses, and acquisition frameworks.</div>
             <span className="card-arrow">→</span>
           </Link>
         </div>
+      </div>
+
+      {/* SEO CONTENT — visible below pathway cards */}
+      <div className="seo-content reveal" style={{ maxWidth: 800, margin: '0 auto', padding: '60px 24px 20px', textAlign: 'center' }}>
+        <h2 className="section-title" style={{ fontSize: 28, marginBottom: 20 }}>Why Kautilya for Buy-Side Advisory</h2>
+        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)', marginBottom: 20 }}>
+          Kautilya is a buy-side advisory firm specializing in proprietary deal sourcing and acquisition pipeline construction.
+          Unlike traditional M&A intermediaries, we don't carry a static pipeline of deals. Instead, we build bespoke acquisition
+          pipelines from first principles — mapped to your specific thesis, sector focus, and investment criteria.
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)', marginBottom: 20 }}>
+          Our approach combines systematic market mapping, proprietary outreach, and structured target qualification. Whether
+          you're a private equity fund seeking platform acquisitions, a family office pursuing a first-time buy, or a search fund
+          entrepreneur building a deal pipeline from scratch — Kautilya delivers sourcing intelligence that traditional advisors cannot.
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)' }}>
+          Based in Mumbai and operating globally, we work across sectors including technology, SaaS, services, manufacturing,
+          healthcare, and consumer. Every engagement begins with your acquisition criteria and ends with a qualified, actionable pipeline
+          of targets — sourced, mapped, and delivered with the rigor of institutional deal sourcing.
+        </p>
       </div>
 
       {/* PHASE DOTS */}
