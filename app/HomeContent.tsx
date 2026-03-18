@@ -329,7 +329,7 @@ return (
       <div className="positioning reveal">
         <div className="section-eyebrow">The Arthashastra Approach</div>
         <h2 className="section-title" style={{ fontSize: 48, color: 'var(--gold)' }}>
-          Our Approach to Deal Sourcing
+          <span style={{ color: 'var(--text-primary)' }}>Our Approach to</span> Deal Sourcing
         </h2>
         <p
           className="section-body"

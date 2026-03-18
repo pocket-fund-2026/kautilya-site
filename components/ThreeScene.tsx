@@ -335,13 +335,13 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           fitAndCenter(model, 18);
 
           if (i === 1) {
-            model.position.x += 0.9;
-            model.position.y += 2;
-            model.scale.multiplyScalar(1.9);
+            model.position.x += isMobileScreen ? 0.3 : 0.9;
+            model.position.y += isMobileScreen ? 1.2 : 2;
+            model.scale.multiplyScalar(isMobileScreen ? 1.3 : 1.9);
           }
 
           if (i === 2) {
-            model.scale.multiplyScalar(3);
+            model.scale.multiplyScalar(isMobileScreen ? 2 : 3);
           }
 
           // Star-like material + perf: disable frustum culling, freeze static transforms
