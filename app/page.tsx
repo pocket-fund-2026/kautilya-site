@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Kautilya — Buy-Side Advisory',
   description:
     'Proprietary deal sourcing and buy-side advisory. We build acquisition pipelines from first principles — in any sector, against any criteria.',
+  alternates: { canonical: 'https://www.kautilya-pe.com' },
   openGraph: {
     title: 'Kautilya — Buy-Side Advisory',
     description:

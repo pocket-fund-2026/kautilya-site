@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Team',
   description:
     'Meet the Kautilya team — a small group operating with disproportionate intensity across deal sourcing and market intelligence.',
+  alternates: { canonical: 'https://www.kautilya-pe.com/team' },
   openGraph: {
     title: 'Team — Kautilya',
     description: 'Meet the Kautilya team.',

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Careers',
   description:
     'Join Kautilya — open roles in deal sourcing, market intelligence, and brand. Small team, large impact.',
+  alternates: { canonical: 'https://www.kautilya-pe.com/careers' },
   openGraph: {
     title: 'Careers — Kautilya',
     description: 'Open roles at Kautilya in deal sourcing, market intelligence, and brand.',

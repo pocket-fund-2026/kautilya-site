@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
   keywords: ['buy-side advisory', 'deal sourcing', 'M&A', 'acquisition pipeline', 'Kautilya', 'private equity', 'search fund'],
   authors: [{ name: 'Kautilya' }],
+  alternates: {
+    canonical: 'https://www.kautilya-pe.com',
+  },
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -42,12 +49,21 @@ export const metadata: Metadata = {
     title: 'Kautilya — Buy-Side Advisory',
     description:
       'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Kautilya — Buy-Side Advisory',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Kautilya — Buy-Side Advisory',
     description:
       'Buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+    images: ['/opengraph-image'],
   },
   robots: {
     index: true,

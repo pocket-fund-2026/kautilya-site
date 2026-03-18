@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Stories',
   description:
     'Case studies, deal breakdowns, and insights from Kautilya\'s buy-side advisory practice.',
+  alternates: { canonical: 'https://www.kautilya-pe.com/stories' },
   openGraph: {
     title: 'Stories — Kautilya',
     description: 'Case studies, deal breakdowns, and insights from Kautilya.',
