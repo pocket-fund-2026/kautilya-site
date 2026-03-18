@@ -146,8 +146,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const touchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     setIsTouchDevice(touchDevice);
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
-    const maxPixelRatio = isMobileScreen ? 1 : 1.5;
-    const bloomResolutionScale = isMobileScreen ? 0.32 : 0.5;
+    const maxPixelRatio = isMobileScreen ? 1.5 : 1.5;
+    const bloomResolutionScale = isMobileScreen ? 0.45 : 0.5;
     const bloomStrengthMax = isMobileScreen ? 1.8 : 3;
 
     const models: ModelEntry[] = [
@@ -332,16 +332,16 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           scene.add(model);
           entry.loaded = model;
 
-          fitAndCenter(model, 18);
+          fitAndCenter(model, isMobileScreen ? 14 : 18);
 
           if (i === 1) {
-            model.position.x += isMobileScreen ? 0.3 : 0.9;
-            model.position.y += isMobileScreen ? 1.2 : 2;
-            model.scale.multiplyScalar(isMobileScreen ? 1.3 : 1.9);
+            model.position.x += isMobileScreen ? 0 : 0.9;
+            model.position.y += isMobileScreen ? 0.8 : 2;
+            model.scale.multiplyScalar(isMobileScreen ? 1.1 : 1.9);
           }
 
           if (i === 2) {
-            model.scale.multiplyScalar(isMobileScreen ? 2 : 3);
+            model.scale.multiplyScalar(isMobileScreen ? 1.6 : 3);
           }
 
           // Star-like material + perf: disable frustum culling, freeze static transforms
