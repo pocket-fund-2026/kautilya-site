@@ -281,9 +281,6 @@ return (
           You bring the thesis.<br />
           We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
         </h1>
-        <p style={{ fontSize: 13, letterSpacing: 3, textTransform: 'uppercase' as const, color: 'var(--text-muted)', marginBottom: 8 }}>
-          Proprietary Deal Sourcing &amp; Buy-Side Advisory
-        </p>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 600, margin: '0 auto 60px', fontSize: 15, color: 'var(--text-secondary)' }}>
           Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles. We don't carry a pipeline. We build yours.
@@ -399,16 +396,19 @@ return (
           Kautilya is a buy-side advisory firm specializing in proprietary deal sourcing and acquisition pipeline construction.
           Unlike traditional M&A intermediaries, we don't carry a static pipeline of deals. Instead, we build bespoke acquisition
           pipelines from first principles — mapped to your specific thesis, sector focus, and investment criteria.
+          Learn more about <Link href="/approach" style={{ color: 'var(--gold)', textDecoration: 'none' }}>our approach</Link>.
         </p>
         <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)', marginBottom: 20 }}>
-          Our approach combines systematic market mapping, proprietary outreach, and structured target qualification. Whether
+          Our methodology combines systematic market mapping, proprietary outreach, and structured target qualification. Whether
           you're a private equity fund seeking platform acquisitions, a family office pursuing a first-time buy, or a search fund
           entrepreneur building a deal pipeline from scratch — Kautilya delivers sourcing intelligence that traditional advisors cannot.
+          See how we've delivered in our <Link href="/portfolio" style={{ color: 'var(--gold)', textDecoration: 'none' }}>portfolio of engagements</Link>.
         </p>
         <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)' }}>
           Based in Mumbai and operating globally, we work across sectors including technology, SaaS, services, manufacturing,
           healthcare, and consumer. Every engagement begins with your acquisition criteria and ends with a qualified, actionable pipeline
-          of targets — sourced, mapped, and delivered with the rigor of institutional deal sourcing.
+          of targets — sourced, mapped, and delivered with the rigor of institutional deal sourcing. Read
+          our <Link href="/stories" style={{ color: 'var(--gold)', textDecoration: 'none' }}>case studies</Link> or <Link href="/engage" style={{ color: 'var(--gold)', textDecoration: 'none' }}>submit your thesis</Link>.
         </p>
       </div>
 

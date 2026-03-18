@@ -36,6 +36,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'Kautilya' }],
   alternates: {
     canonical: 'https://www.kautilya-pe.com',
+    languages: {
+      'en': 'https://www.kautilya-pe.com',
+      'x-default': 'https://www.kautilya-pe.com',
+    },
   },
   icons: {
     icon: '/icon.svg',
