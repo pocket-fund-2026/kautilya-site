@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.kautilya-pe.com/approach' },
   openGraph: {
     title: 'Approach — Kautilya',
+    url: 'https://www.kautilya-pe.com/approach',
     description: 'Systematic deal sourcing methodology built from first principles.',
   },
 };

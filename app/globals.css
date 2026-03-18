@@ -97,6 +97,8 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--canvas);
   font-family: var(--font-lora), 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--text-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

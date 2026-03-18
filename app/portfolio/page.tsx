@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.kautilya-pe.com/portfolio' },
   openGraph: {
     title: 'Portfolio — Kautilya',
+    url: 'https://www.kautilya-pe.com/portfolio',
     description: 'Selected engagements and acquisition mandates delivered by Kautilya.',
   },
 };
