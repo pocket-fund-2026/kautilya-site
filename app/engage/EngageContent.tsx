@@ -111,20 +111,15 @@ export default function EngageContent() {
     setSubmitMessage('');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/hello@pocket-fund.com', {
+      const response = await fetch('/api/engage', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          _subject: `Acquisition Thesis Inquiry - ${formData.name}`,
           name: formData.name,
           firm: formData.firm || 'N/A',
           email: formData.email,
           phone: formData.phone.trim() ? `${formData.countryCode} ${formData.phone}` : 'N/A',
           acquisition_criteria: formData.criteria,
-          source: 'Kautilya Engage Page',
         }),
       });
 
