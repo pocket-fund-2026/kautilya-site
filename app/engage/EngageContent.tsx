@@ -5,20 +5,37 @@ import { useState, type ChangeEvent, type FormEvent } from 'react';
 const MIN_NAME_LENGTH = 2;
 const MIN_CRITERIA_LENGTH = 15;
 
+const COUNTRY_CODES = [
+  { code: '+91', label: 'IN +91', digits: 10 },
+  { code: '+1', label: 'US +1' },
+  { code: '+44', label: 'UK +44' },
+  { code: '+971', label: 'AE +971' },
+  { code: '+65', label: 'SG +65' },
+  { code: '+852', label: 'HK +852' },
+  { code: '+61', label: 'AU +61' },
+  { code: '+49', label: 'DE +49' },
+  { code: '+33', label: 'FR +33' },
+  { code: '+81', label: 'JP +81' },
+] as const;
+
 type FormData = {
   name: string;
   firm: string;
   email: string;
+  countryCode: string;
+  phone: string;
   criteria: string;
 };
 
 type FormErrors = Partial<Record<keyof FormData, string>>;
 
 export default function EngageContent() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     firm: '',
     email: '',
+    countryCode: '+91',
+    phone: '',
     criteria: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
@@ -44,6 +61,16 @@ export default function EngageContent() {
       nextErrors.email = 'Please enter a valid email address.';
     }
 
+    if (data.phone.trim()) {
+      const digits = data.phone.replace(/\D/g, '');
+      const countryEntry = COUNTRY_CODES.find((c) => c.code === data.countryCode);
+      if (countryEntry && 'digits' in countryEntry && digits.length !== countryEntry.digits) {
+        nextErrors.phone = `Phone number must be ${countryEntry.digits} digits for ${data.countryCode}.`;
+      } else if (digits.length < 7) {
+        nextErrors.phone = 'Please enter a valid phone number.';
+      }
+    }
+
     if (!trimmedCriteria) {
       nextErrors.criteria = 'Please describe your acquisition criteria.';
     } else if (trimmedCriteria.length < MIN_CRITERIA_LENGTH) {
@@ -53,7 +80,7 @@ export default function EngageContent() {
     return nextErrors;
   };
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (submitState !== 'idle') {
@@ -95,6 +122,7 @@ export default function EngageContent() {
           name: formData.name,
           firm: formData.firm || 'N/A',
           email: formData.email,
+          phone: formData.phone.trim() ? `${formData.countryCode} ${formData.phone}` : 'N/A',
           acquisition_criteria: formData.criteria,
           source: 'Kautilya Engage Page',
         }),
@@ -106,7 +134,7 @@ export default function EngageContent() {
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your inquiry has been sent successfully.');
-      setFormData({ name: '', firm: '', email: '', criteria: '' });
+      setFormData({ name: '', firm: '', email: '', countryCode: '+91', phone: '', criteria: '' });
     } catch {
       setSubmitState('error');
       setSubmitMessage('Could not send right now. Please try again or email hello@pocket-fund.com.');
@@ -150,19 +178,47 @@ export default function EngageContent() {
                   />
                 </div>
               </div>
-              <div className="form-group">
-                <label className="form-label">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  aria-invalid={Boolean(errors.email)}
-                  aria-describedby={errors.email ? 'engage-email-error' : undefined}
-                  className={errors.email ? 'form-input-error' : undefined}
-                />
-                {errors.email && <p id="engage-email-error" className="form-error">{errors.email}</p>}
+              <div className="form-row">
+                <div className="form-group">
+                  <label className="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    aria-invalid={Boolean(errors.email)}
+                    aria-describedby={errors.email ? 'engage-email-error' : undefined}
+                    className={errors.email ? 'form-input-error' : undefined}
+                  />
+                  {errors.email && <p id="engage-email-error" className="form-error">{errors.email}</p>}
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Phone (Optional)</label>
+                  <div className="phone-input-row">
+                    <select
+                      name="countryCode"
+                      value={formData.countryCode}
+                      onChange={handleInputChange}
+                      className="phone-code-select"
+                    >
+                      {COUNTRY_CODES.map((c) => (
+                        <option key={c.code} value={c.code}>{c.label}</option>
+                      ))}
+                    </select>
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="98765 43210"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      aria-invalid={Boolean(errors.phone)}
+                      aria-describedby={errors.phone ? 'engage-phone-error' : undefined}
+                      className={errors.phone ? 'form-input-error' : undefined}
+                    />
+                  </div>
+                  {errors.phone && <p id="engage-phone-error" className="form-error">{errors.phone}</p>}
+                </div>
               </div>
               <div className="form-group">
                 <label className="form-label">Acquisition Criteria</label>

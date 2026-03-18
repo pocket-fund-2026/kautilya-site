@@ -10,9 +10,23 @@ const OPEN_ROLES = [
 
 const WORK_MODES = ['Remote', 'On Site (Mumbai)'] as const;
 
+const COUNTRY_CODES = [
+  { code: '+91', label: 'IN +91', digits: 10 },
+  { code: '+1', label: 'US +1' },
+  { code: '+44', label: 'UK +44' },
+  { code: '+971', label: 'AE +971' },
+  { code: '+65', label: 'SG +65' },
+  { code: '+852', label: 'HK +852' },
+  { code: '+61', label: 'AU +61' },
+  { code: '+49', label: 'DE +49' },
+  { code: '+33', label: 'FR +33' },
+  { code: '+81', label: 'JP +81' },
+] as const;
+
 type FormData = {
   fullName: string;
   email: string;
+  countryCode: string;
   phone: string;
   role: string;
   workMode: string;
@@ -24,6 +38,7 @@ export default function CareersContent() {
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
     email: '',
+    countryCode: '+91',
     phone: '',
     role: '',
     workMode: '',
@@ -53,8 +68,14 @@ export default function CareersContent() {
 
     if (!data.phone.trim()) {
       nextErrors.phone = 'Please enter your phone number.';
-    } else if (!/^[+\d][\d\s\-()]{6,}$/.test(data.phone.trim())) {
-      nextErrors.phone = 'Please enter a valid phone number.';
+    } else {
+      const digits = data.phone.replace(/\D/g, '');
+      const countryEntry = COUNTRY_CODES.find((c) => c.code === data.countryCode);
+      if (countryEntry && 'digits' in countryEntry && digits.length !== countryEntry.digits) {
+        nextErrors.phone = `Phone number must be ${countryEntry.digits} digits for ${data.countryCode}.`;
+      } else if (digits.length < 7) {
+        nextErrors.phone = 'Please enter a valid phone number.';
+      }
     }
 
     if (!data.role) {
@@ -122,7 +143,7 @@ export default function CareersContent() {
       const body = new FormData();
       body.append('fullName', formData.fullName);
       body.append('email', formData.email);
-      body.append('phone', formData.phone);
+      body.append('phone', `${formData.countryCode} ${formData.phone}`);
       body.append('role', formData.role);
       body.append('workMode', formData.workMode);
       if (cvFile) {
@@ -141,7 +162,7 @@ export default function CareersContent() {
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
-      setFormData({ fullName: '', email: '', phone: '', role: '', workMode: '' });
+      setFormData({ fullName: '', email: '', countryCode: '+91', phone: '', role: '', workMode: '' });
       setCvFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
     } catch {
@@ -252,16 +273,28 @@ export default function CareersContent() {
             <div className="form-row">
               <div className="form-group">
                 <label className="form-label">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+91 98765 43210"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  aria-invalid={Boolean(errors.phone)}
-                  aria-describedby={errors.phone ? 'careers-phone-error' : undefined}
-                  className={errors.phone ? 'form-input-error' : undefined}
-                />
+                <div className="phone-input-row">
+                  <select
+                    name="countryCode"
+                    value={formData.countryCode}
+                    onChange={handleInputChange}
+                    className="phone-code-select"
+                  >
+                    {COUNTRY_CODES.map((c) => (
+                      <option key={c.code} value={c.code}>{c.label}</option>
+                    ))}
+                  </select>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="98765 43210"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    aria-invalid={Boolean(errors.phone)}
+                    aria-describedby={errors.phone ? 'careers-phone-error' : undefined}
+                    className={errors.phone ? 'form-input-error' : undefined}
+                  />
+                </div>
                 {errors.phone && <p id="careers-phone-error" className="form-error">{errors.phone}</p>}
               </div>
               <div className="form-group">

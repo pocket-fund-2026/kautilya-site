@@ -1016,6 +1016,22 @@ a.deal-card { cursor: pointer; }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
+.phone-input-row { display: flex; gap: 0; }
+.phone-input-row .phone-code-select {
+  flex: 0 0 auto; width: 90px; min-width: 90px;
+  border-bottom: 1px solid var(--border); border-right: none;
+  appearance: none; -webkit-appearance: none; border-radius: 0; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23C9B99A'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 4px center; padding-right: 18px;
+  font-family: var(--font-lora), 'Lora', serif; font-size: 13px; letter-spacing: 0.5px;
+  padding-top: 14px; padding-bottom: 14px;
+  background-color: transparent; color: var(--text-primary); outline: none;
+  transition: border-color 0.3s;
+}
+.phone-input-row .phone-code-select option { background: var(--canvas); color: var(--text-primary); }
+.phone-input-row .phone-code-select:focus { border-color: var(--gold); }
+.phone-input-row input[type="tel"] { flex: 1; min-width: 0; }
+
 .engage-submit {
   font-family: var(--font-lora), 'Lora', serif; font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
   padding: 16px 36px; background: transparent; border: 1px solid var(--gold-dim);
