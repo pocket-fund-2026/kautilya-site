@@ -271,7 +271,7 @@ body {
   width: 40px;
   height: 1px;
   background: var(--gold-dim);
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .section-divider {
@@ -1018,6 +1018,17 @@ a.deal-card { cursor: pointer; }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
+/* Legal pages */
+.legal-content h2 {
+  font-family: var(--font-cormorant), Cormorant, serif;
+  font-size: 22px; font-weight: 400; color: var(--gold);
+  margin: 36px 0 12px;
+}
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content p { font-size: 15px; line-height: 1.9; color: var(--text-secondary); margin-bottom: 14px; }
+.legal-content ul { padding-left: 20px; margin-bottom: 14px; }
+.legal-content li { font-size: 15px; line-height: 1.9; color: var(--text-secondary); margin-bottom: 6px; }
+
 .phone-input-row { display: flex; gap: 0; }
 .phone-input-row .phone-code-select {
   flex: 0 0 auto; width: 90px; min-width: 90px;
@@ -1045,6 +1056,56 @@ a.deal-card { cursor: pointer; }
   opacity: 0.55;
   cursor: not-allowed;
 }
+
+/* Newsletter popup */
+.newsletter-backdrop {
+  position: fixed; inset: 0; z-index: 10050;
+  background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+.newsletter-popup {
+  position: relative; background: var(--canvas); border: 1px solid var(--border);
+  padding: 48px 40px 40px; max-width: 420px; width: 90%; text-align: center;
+  animation: slideUp 0.35s ease;
+}
+.newsletter-close {
+  position: absolute; top: 16px; right: 16px; background: none; border: none;
+  color: var(--text-muted); cursor: pointer; padding: 4px; transition: color 0.2s;
+}
+.newsletter-close:hover { color: var(--text-primary); }
+.newsletter-eyebrow {
+  font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 12px;
+}
+.newsletter-title {
+  font-family: var(--font-cormorant), Cormorant, serif;
+  font-size: 28px; font-weight: 400; color: var(--text-primary); margin-bottom: 10px;
+}
+.newsletter-desc {
+  font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;
+}
+.newsletter-form { display: flex; gap: 0; }
+.newsletter-form input {
+  flex: 1; font-family: var(--font-lora), 'Lora', serif; font-size: 14px;
+  padding: 12px 14px; background: transparent; border: 1px solid var(--border);
+  border-right: none; color: var(--text-primary); outline: none;
+  transition: border-color 0.3s;
+}
+.newsletter-form input::placeholder { color: var(--text-faint); font-style: italic; }
+.newsletter-form input:focus { border-color: var(--gold); }
+.newsletter-form button {
+  font-family: var(--font-lora), 'Lora', serif; font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; padding: 12px 20px; background: transparent;
+  border: 1px solid var(--gold-dim); color: var(--gold); cursor: pointer;
+  transition: all 0.3s; white-space: nowrap;
+}
+.newsletter-form button:hover { background: var(--gold); color: var(--canvas); }
+.newsletter-form button:disabled { opacity: 0.55; cursor: not-allowed; }
+.newsletter-success { color: #9acfb0; font-size: 14px; margin-top: 4px; }
+.newsletter-error { color: #dca1a1; font-size: 12px; margin-top: 8px; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .engage-form .form-success {
   margin-top: 12px;
@@ -1607,7 +1668,7 @@ a.deal-card { cursor: pointer; }
   }
 
   .footer-disclaimer {
-    font-size: 9px;
+    font-size: 11px;
     line-height: 1.8;
   }
 
@@ -1874,7 +1935,7 @@ a.deal-card { cursor: pointer; }
   }
 
   .footer-disclaimer {
-    font-size: 9px;
+    font-size: 11px;
     padding-left: 0;
     padding-right: 0;
   }

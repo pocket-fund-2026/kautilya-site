@@ -50,53 +50,6 @@ const localBusinessSchema = {
   priceRange: '$$$$',
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What does Kautilya do?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand. We source deals from first principles — in any sector, against any criteria, across geographies.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How does Kautilya source deals?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We use systematic market mapping, proprietary outreach, and structured qualification to identify acquisition targets. We don\'t carry a pipeline — we build yours from scratch based on your specific criteria.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What sectors does Kautilya cover?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Kautilya is sector-agnostic. We build acquisition pipelines in any sector, against any criteria — from SaaS and technology to services, manufacturing, and beyond.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Where is Kautilya based?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Kautilya is based in Mumbai, India, and works with clients globally across geographies.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How can I engage Kautilya for a deal sourcing mandate?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You can submit your acquisition thesis through our Engage page at kautilya-pe.com/engage, or book a call directly through our Google Calendar integration.',
-      },
-    },
-  ],
-};
-
 export default function HomePage() {
   return (
     <>
@@ -107,10 +60,6 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HomeContent />
     </>

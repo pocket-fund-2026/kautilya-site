@@ -389,29 +389,6 @@ return (
         </div>
       </div>
 
-      {/* SEO CONTENT — visible below pathway cards */}
-      <div className="seo-content reveal" style={{ maxWidth: 800, margin: '0 auto', padding: '60px 24px 20px', textAlign: 'center' }}>
-        <h2 className="section-title" style={{ fontSize: 28, marginBottom: 20 }}>Why Kautilya for Buy-Side Advisory</h2>
-        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)', marginBottom: 20 }}>
-          Kautilya is a buy-side advisory firm specializing in proprietary deal sourcing and acquisition pipeline construction.
-          Unlike traditional M&A intermediaries, we don't carry a static pipeline of deals. Instead, we build bespoke acquisition
-          pipelines from first principles — mapped to your specific thesis, sector focus, and investment criteria.
-          Learn more about <Link href="/approach" style={{ color: 'var(--gold)', textDecoration: 'none' }}>our approach</Link>.
-        </p>
-        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)', marginBottom: 20 }}>
-          Our methodology combines systematic market mapping, proprietary outreach, and structured target qualification. Whether
-          you're a private equity fund seeking platform acquisitions, a family office pursuing a first-time buy, or a search fund
-          entrepreneur building a deal pipeline from scratch — Kautilya delivers sourcing intelligence that traditional advisors cannot.
-          See how we've delivered in our <Link href="/portfolio" style={{ color: 'var(--gold)', textDecoration: 'none' }}>portfolio of engagements</Link>.
-        </p>
-        <p style={{ fontSize: 15, lineHeight: 1.9, color: 'var(--text-secondary)' }}>
-          Based in Mumbai and operating globally, we work across sectors including technology, SaaS, services, manufacturing,
-          healthcare, and consumer. Every engagement begins with your acquisition criteria and ends with a qualified, actionable pipeline
-          of targets — sourced, mapped, and delivered with the rigor of institutional deal sourcing. Read
-          our <Link href="/stories" style={{ color: 'var(--gold)', textDecoration: 'none' }}>case studies</Link> or <Link href="/engage" style={{ color: 'var(--gold)', textDecoration: 'none' }}>submit your thesis</Link>.
-        </p>
-      </div>
-
       {/* PHASE DOTS */}
       <div className="phase-dots" id="phaseDots">
         <div className="phase-dot" />

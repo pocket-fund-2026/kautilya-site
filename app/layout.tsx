@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Cormorant, Lora } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SplashCursorWrapper from '@/components/SplashCursorWrapper';
+import NewsletterPopup from '@/components/NewsletterPopup';
 import './globals.css';
 
 const cormorant = Cormorant({
@@ -23,6 +24,13 @@ const lora = Lora({
   display: 'swap',
   variable: '--font-lora',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kautilya-pe.com'),
@@ -85,6 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <ScrollToTop />
+        <NewsletterPopup />
         <Analytics />
         <SpeedInsights />
       </body>
