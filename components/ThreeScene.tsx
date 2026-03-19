@@ -146,8 +146,8 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const touchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     setIsTouchDevice(touchDevice);
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
-    const maxPixelRatio = isMobileScreen ? 1.5 : 1.5;
-    const bloomResolutionScale = isMobileScreen ? 0.5 : 0.5;
+    const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
+    const bloomResolutionScale = isMobileScreen ? 0.75 : 1;
     const bloomStrengthMax = isMobileScreen ? 2.5 : 3;
 
     const models: ModelEntry[] = [
@@ -163,7 +163,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       0.1,
       100,
     );
-    camera.position.set(0, 1, 16);
+    camera.position.set(0, 0, 16);
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, canvas, powerPreference: 'high-performance' });
@@ -335,9 +335,13 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           fitAndCenter(model, isMobileScreen ? 14 : 18);
 
           if (i === 1) {
-            model.position.x += isMobileScreen ? 0 : 0.9;
-            model.position.y += isMobileScreen ? 0.8 : 2;
-            model.scale.multiplyScalar(isMobileScreen ? 1.1 : 1.9);
+            model.scale.multiplyScalar(isMobileScreen ? 1.8 : 1.9);
+            // Re-center after scaling so the visual mass stays at origin
+            const anchor = getTrimmedModelAnchor(model);
+            model.position.sub(anchor);
+            // Nudge up above the text overlay area
+            model.position.y += isMobileScreen ? 1.5 : 3;
+            model.position.x += isMobileScreen ? 1.5 : 2;
           }
 
           if (i === 2) {
@@ -542,12 +546,11 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       renderer.setPixelRatio(dpr);
       renderer.setSize(w, h, false);
 
-      // Rebuild bloom + composer render targets at new resolution
-      bloomPass.resolution.set(w * bloomResolutionScale, h * bloomResolutionScale);
-      // Dispose old render targets and recreate at new size
-      composer.setSize(w, h);
-      // Force the renderer's internal viewport to match
-      renderer.setViewport(0, 0, w, h);
+      // Composer & bloom must use physical pixels to match the renderer's drawing buffer
+      const pw = Math.floor(w * dpr);
+      const ph = Math.floor(h * dpr);
+      bloomPass.resolution.set(pw * bloomResolutionScale, ph * bloomResolutionScale);
+      composer.setSize(pw, ph);
 
       updateVideoBackgroundFraming(videoTexture, true);
     };

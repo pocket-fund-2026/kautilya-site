@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 type TabButtonProps = {
   active: boolean;
@@ -820,6 +821,17 @@ export default function ApproachContent() {
               margin: 0 2px;
             }
 
+            .approach-page-methodology .story-link {
+              color: var(--gold);
+              text-decoration: none;
+              border-bottom: 1px solid rgba(201,168,76,0.3);
+              transition: border-color 0.2s;
+            }
+
+            .approach-page-methodology .story-link:hover {
+              border-bottom-color: var(--gold);
+            }
+
             @media (max-width: 1024px) {
               .approach-page-methodology .hero,
               .approach-page-methodology .phases-container {
@@ -979,7 +991,7 @@ export default function ApproachContent() {
 
               <div className="service-stat-row">
                 <div className="service-stat">
-                  <div className="service-stat-num">Inspire3</div>
+                  <div className="service-stat-num"><Link href="/stories/inspire3" className="story-link">Inspire3</Link></div>
                   <div className="service-stat-label">
                     First client we now run as fractional CFOs
                   </div>
@@ -1133,7 +1145,7 @@ export default function ApproachContent() {
                 not a rough budget range.
               </p>
               <p>
-                <strong>For Borderless</strong>, generating 2 to 3M ARR and heading into a Series A,
+                <strong>For <Link href="/stories/borderless" className="story-link">Borderless</Link></strong>, generating 2 to 3M ARR and heading into a Series A,
                 the mandate was not to find a business to acquire. It was to identify 50K to 250K
                 in annualised cashflow through structures the market had not seen before.
               </p>
@@ -1147,7 +1159,7 @@ export default function ApproachContent() {
               </div>
 
               <p>
-                <strong>For SmartPrompt</strong>, we explored four categories before submitting a
+                <strong>For <Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link></strong>, we explored four categories before submitting a
                 single LOI. That process produced a filter precise enough to disqualify two serious
                 candidates mid-engagement.
               </p>
@@ -1227,7 +1239,7 @@ export default function ApproachContent() {
               </div>
 
               <p>
-                For Dino Games, scraping infrastructure pulled App Store and Google Play data across
+                For <Link href="/stories/dino-games" className="story-link">Dino Games</Link>, scraping infrastructure pulled App Store and Google Play data across
                 thousands of titles before contacting a single founder. The asset that closed was
                 not on any marketplace.
               </p>
@@ -1489,15 +1501,15 @@ export default function ApproachContent() {
               </p>
               <ul>
                 <li>
-                  <strong>Dino Games:</strong> discrepancies found across payment platforms, plus
+                  <strong><Link href="/stories/dino-games" className="story-link">Dino Games</Link>:</strong> discrepancies found across payment platforms, plus
                   legacy monetisation mechanics requiring shutdown before close.
                 </li>
                 <li>
-                  <strong>Runify:</strong> quoted MRR did not match collected cash after currency
+                  <strong><Link href="/stories/runify" className="story-link">Runify</Link>:</strong> quoted MRR did not match collected cash after currency
                   and collection timing adjustments.
                 </li>
                 <li>
-                  <strong>SmartPrompt:</strong> two LOIs terminated before closing the right asset.
+                  <strong><Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link>:</strong> two LOIs terminated before closing the right asset.
                   Price looked attractive; probability-weighted downside did not.
                 </li>
               </ul>
@@ -1505,7 +1517,7 @@ export default function ApproachContent() {
 
             <div className="deal-cards-row">
               <div className="deal-card">
-                <div className="deal-card-name">Dino Games</div>
+                <div className="deal-card-name"><Link href="/stories/dino-games" className="story-link">Dino Games</Link></div>
                 <div className="deal-card-headline">44% of consideration deferred over 12 months</div>
                 <div className="deal-card-body">
                   Not price compression, <strong>risk reallocation</strong>. Seller kept headline.
@@ -1514,7 +1526,7 @@ export default function ApproachContent() {
                 <span className="deal-status status-closed">Closed - 39K</span>
               </div>
               <div className="deal-card">
-                <div className="deal-card-name">Runify</div>
+                <div className="deal-card-name"><Link href="/stories/runify" className="story-link">Runify</Link></div>
                 <div className="deal-card-headline">74% of consideration performance-linked</div>
                 <div className="deal-card-body">
                   <strong>30K deployed upfront</strong> on a 110K deal after revenue quality
@@ -1523,7 +1535,7 @@ export default function ApproachContent() {
                 <span className="deal-status status-closed">Closed - 110K</span>
               </div>
               <div className="deal-card">
-                <div className="deal-card-name">SmartPrompt</div>
+                <div className="deal-card-name"><Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link></div>
                 <div className="deal-card-headline">2 LOIs terminated before right close</div>
                 <div className="deal-card-body">
                   80%+ churn, zero proprietary tech, and founder dependency.
@@ -1574,7 +1586,7 @@ export default function ApproachContent() {
 
             <div className="deal-cards-row">
               <div className="deal-card">
-                <div className="deal-card-name">SmartPrompt</div>
+                <div className="deal-card-name"><Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link></div>
                 <div className="deal-card-headline">LOI to close in 7 days. Zero post-close lag.</div>
                 <div className="deal-card-body">
                   Operator recruited in parallel with diligence.
@@ -1584,7 +1596,7 @@ export default function ApproachContent() {
               </div>
 
               <div className="deal-card">
-                <div className="deal-card-name">Dino Games</div>
+                <div className="deal-card-name"><Link href="/stories/dino-games" className="story-link">Dino Games</Link></div>
                 <div className="deal-card-headline">Seller proposed no escrow. Flat rejection.</div>
                 <div className="deal-card-body">
                   Signed APA, inspection period, milestone releases, or no deal.
@@ -1594,7 +1606,7 @@ export default function ApproachContent() {
               </div>
 
               <div className="deal-card">
-                <div className="deal-card-name">Runify</div>
+                <div className="deal-card-name"><Link href="/stories/runify" className="story-link">Runify</Link></div>
                 <div className="deal-card-headline">Neither opening number. Both interests met.</div>
                 <div className="deal-card-body">
                   Seller wanted 30% upfront. We opened at 20%. Final structure solved liquidity
@@ -1613,13 +1625,13 @@ export default function ApproachContent() {
               </div>
 
               <p>
-                For Borderless: 1,500+ operators mapped and 43+ serious conversations converted to
+                For <Link href="/stories/borderless" className="story-link">Borderless</Link>: 1,500+ operators mapped and 43+ serious conversations converted to
                 a referral partnership worth <span className="inline-metric">70K-80K / yr</span>
                 and an enterprise-value impact up to <span className="inline-metric">1.6M</span>.
               </p>
 
               <p>
-                For Inspire3: 15 days, seven findings resolved, and a verified financial model from
+                For <Link href="/stories/inspire3" className="story-link">Inspire3</Link>: 15 days, seven findings resolved, and a verified financial model from
                 independently validated source data. The engagement became an ongoing operating role
                 as fractional CFO.
               </p>

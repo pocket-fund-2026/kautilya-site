@@ -617,8 +617,7 @@ a.deal-card { cursor: pointer; }
 
 .stories-timeline-section {
   padding: 0 0 68px;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: clip;
 }
 
 .stories-timeline-header {
@@ -1060,6 +1059,7 @@ a.deal-card { cursor: pointer; }
 /* Newsletter popup */
 .newsletter-backdrop {
   position: fixed; inset: 0; z-index: 10050;
+  min-height: 100dvh;
   background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
   display: flex; align-items: center; justify-content: center;
   animation: fadeIn 0.3s ease;
@@ -1067,7 +1067,18 @@ a.deal-card { cursor: pointer; }
 .newsletter-popup {
   position: relative; background: var(--canvas); border: 1px solid var(--border);
   padding: 48px 40px 40px; max-width: 420px; width: 90%; text-align: center;
+  box-sizing: border-box;
   animation: slideUp 0.35s ease;
+}
+@media (max-width: 480px) {
+  .newsletter-popup {
+    padding: 36px 24px 28px;
+    width: 92%;
+  }
+  .newsletter-title { font-size: 24px; }
+  .newsletter-form { flex-direction: column; gap: 10px; }
+  .newsletter-form input { border-right: 1px solid var(--border); }
+  .newsletter-form button { width: 100%; padding: 14px 20px; }
 }
 .newsletter-close {
   position: absolute; top: 16px; right: 16px; background: none; border: none;
