@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { Highlighter } from '@/components/Highlighter';
 
 type TabButtonProps = {
   active: boolean;
@@ -92,6 +93,14 @@ export default function ApproachContent() {
               font-size: 16px;
               line-height: 1.9;
               margin-bottom: 8px;
+            }
+
+            .approach-page-methodology .hero-sub--accent {
+              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-size: 22px;
+              color: var(--text);
+              line-height: 1.6;
+              margin-bottom: 4px;
             }
 
             .approach-page-methodology .services-section {
@@ -485,9 +494,17 @@ export default function ApproachContent() {
               transition: opacity 0.25s;
             }
 
+            .approach-page-methodology a.proof-card-link,
+            .approach-page-methodology a.deal-card-link {
+              text-decoration: none;
+              color: inherit;
+              display: contents;
+            }
+
             .approach-page-methodology .proof-card:hover {
               background: var(--card-hover);
               border-color: var(--border);
+              cursor: pointer;
             }
 
             .approach-page-methodology .proof-card:hover::before { opacity: 1; }
@@ -874,17 +891,25 @@ export default function ApproachContent() {
       <section className="hero">
         <div className="section-eyebrow">The Methodology</div>
         <h1 className="hero-headline">
-          The right acquisition
-          <br />
-          does not find you.
-          <br />
+          The right acquisition does not find you.<br />
           <em>You find it.</em>
         </h1>
         <p className="hero-sub">
-          Most buyers come to us after the same experience: months of deal flow that went nowhere,
-          a term sheet that fell apart in diligence, or capital deployed into something that made
-          sense on paper and did not in practice. The problem was never the market. The problem
-          was the process.
+          Most buyers come to us after the same experience: months of deal flow that went
+          nowhere, a term sheet that fell apart in diligence, or capital deployed into
+          something that made sense on paper and did not in practice.
+        </p>
+        <p className="hero-sub hero-sub--accent">
+          <em>The problem was never the{' '}
+          <Highlighter action="strike-through" color="#c9b99a" strokeWidth={3} animationDuration={2000} isView>
+            market
+          </Highlighter>.</em>
+        </p>
+        <p className="hero-sub hero-sub--accent">
+          <em>The problem was the{' '}
+          <Highlighter action="circle" color="#c9b99a" strokeWidth={2} animationDuration={2000} padding={6} isView>
+            process
+          </Highlighter>.</em>
         </p>
       </section>
 
@@ -1166,45 +1191,53 @@ export default function ApproachContent() {
             </div>
 
             <div className="cards-column">
-              <div className="proof-card highlight wide">
-                <div className="card-label">Borderless - Reframing the brief</div>
-                <div className="card-metric small">Not acquire a firm</div>
-                <div className="card-desc">
-                  The original ask was to buy an immigration business. We redefined it:
-                  <strong> acquire recurring cashflow, not ownership.</strong>
+              <Link href="/stories/borderless" className="proof-card-link">
+                <div className="proof-card highlight wide">
+                  <div className="card-label">Borderless - Reframing the brief</div>
+                  <div className="card-metric small">Not acquire a firm</div>
+                  <div className="card-desc">
+                    The original ask was to buy an immigration business. We redefined it:
+                    <strong> acquire recurring cashflow, not ownership.</strong>
+                  </div>
+                  <span className="card-tag">Immigration - UK</span>
                 </div>
-                <span className="card-tag">Immigration - UK</span>
-              </div>
+              </Link>
 
-              <div className="proof-card tall">
-                <div className="card-label">Dino Games - Thesis before sourcing</div>
-                <div className="card-metric small">20+ yrs experience</div>
-                <div className="card-desc">
-                  A seasoned PE-exit operator entering consumer mobile for the first time.
-                  <strong> Mapped before a single target was contacted.</strong>
+              <Link href="/stories/dino-games" className="proof-card-link">
+                <div className="proof-card tall">
+                  <div className="card-label">Dino Games - Thesis before sourcing</div>
+                  <div className="card-metric small">20+ yrs experience</div>
+                  <div className="card-desc">
+                    A seasoned PE-exit operator entering consumer mobile for the first time.
+                    <strong> Mapped before a single target was contacted.</strong>
+                  </div>
+                  <span className="card-tag">Mobile Gaming</span>
                 </div>
-                <span className="card-tag">Mobile Gaming</span>
-              </div>
+              </Link>
 
-              <div className="proof-card">
-                <div className="card-label">Runify - Risk tolerance</div>
-                <div className="card-metric small">3 months old</div>
-                <div className="card-desc">
-                  The mandate defined exactly how much unproven durability the buyer could absorb.
-                  <strong> Structure followed from that.</strong>
+              <Link href="/stories/runify" className="proof-card-link">
+                <div className="proof-card">
+                  <div className="card-label">Runify - Risk tolerance</div>
+                  <div className="card-metric small">3 months old</div>
+                  <div className="card-desc">
+                    The mandate defined exactly how much unproven durability the buyer could absorb.
+                    <strong> Structure followed from that.</strong>
+                  </div>
+                  <span className="card-tag">Consumer Fitness</span>
                 </div>
-                <span className="card-tag">Consumer Fitness</span>
-              </div>
+              </Link>
 
-              <div className="proof-card">
-                <div className="card-label">SmartPrompt - Mandate before market</div>
-                <div className="card-metric small">4 categories</div>
-                <div className="card-desc">
-                  Criteria emerged from structured market exposure, not sector enthusiasm.
-                  <strong> The brief got sharper with every round.</strong>
+              <Link href="/stories/smartprompt" className="proof-card-link">
+                <div className="proof-card">
+                  <div className="card-label">SmartPrompt - Mandate before market</div>
+                  <div className="card-metric small">4 categories</div>
+                  <div className="card-desc">
+                    Criteria emerged from structured market exposure, not sector enthusiasm.
+                    <strong> The brief got sharper with every round.</strong>
+                  </div>
+                  <span className="card-tag">AI / GPT - SaaS</span>
                 </div>
-                <span className="card-tag">AI / GPT - SaaS</span>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -1280,35 +1313,41 @@ export default function ApproachContent() {
             </div>
 
             <div className="cards-column">
-              <div className="proof-card">
-                <div className="card-label">Borderless - Universe built</div>
-                <div className="card-metric">1,500</div>
-                <div className="card-desc">
-                  Advisors mapped from GOV.UK, Companies House, ILB, and WhatsApp communities.
-                  <strong> Built from scratch.</strong>
+              <Link href="/stories/borderless" className="proof-card-link">
+                <div className="proof-card">
+                  <div className="card-label">Borderless - Universe built</div>
+                  <div className="card-metric">1,500</div>
+                  <div className="card-desc">
+                    Advisors mapped from GOV.UK, Companies House, ILB, and WhatsApp communities.
+                    <strong> Built from scratch.</strong>
+                  </div>
+                  <span className="card-tag">Never done before</span>
                 </div>
-                <span className="card-tag">Never done before</span>
-              </div>
+              </Link>
 
-              <div className="proof-card">
-                <div className="card-label">Dino Games - Off-market find</div>
-                <div className="card-metric small">8M installs</div>
-                <div className="card-desc">
-                  Found via Reddit. No broker. No listing.
-                  <strong> 3K monthly net profit.</strong>
+              <Link href="/stories/dino-games" className="proof-card-link">
+                <div className="proof-card">
+                  <div className="card-label">Dino Games - Off-market find</div>
+                  <div className="card-metric small">8M installs</div>
+                  <div className="card-desc">
+                    Found via Reddit. No broker. No listing.
+                    <strong> 3K monthly net profit.</strong>
+                  </div>
+                  <span className="card-tag">Proprietary sourcing</span>
                 </div>
-                <span className="card-tag">Proprietary sourcing</span>
-              </div>
+              </Link>
 
-              <div className="proof-card wide highlight">
-                <div className="card-label">SmartPrompt - Pricing edge from going off-market</div>
-                <div className="card-metric">200x</div>
-                <div className="card-desc">
-                  Discount versus comparable market transactions, only possible because the asset
-                  was sourced before it was widely shopped.
+              <Link href="/stories/smartprompt" className="proof-card-link">
+                <div className="proof-card wide highlight">
+                  <div className="card-label">SmartPrompt - Pricing edge from going off-market</div>
+                  <div className="card-metric">200x</div>
+                  <div className="card-desc">
+                    Discount versus comparable market transactions, only possible because the asset
+                    was sourced before it was widely shopped.
+                  </div>
+                  <span className="card-tag">AI / GPT platform</span>
                 </div>
-                <span className="card-tag">AI / GPT platform</span>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -1387,34 +1426,40 @@ export default function ApproachContent() {
             </div>
 
             <div className="cards-column">
-              <div className="proof-card wide highlight">
-                <div className="card-label">Dino Games - Channel pivot</div>
-                <div className="card-metric">&lt;5% to 40%</div>
-                <div className="card-desc">
-                  Response rate after shifting from email to Reddit and Twitter.
-                  <strong> 3 LOIs issued in the same week.</strong>
+              <Link href="/stories/dino-games" className="proof-card-link">
+                <div className="proof-card wide highlight">
+                  <div className="card-label">Dino Games - Channel pivot</div>
+                  <div className="card-metric">&lt;5% to 40%</div>
+                  <div className="card-desc">
+                    Response rate after shifting from email to Reddit and Twitter.
+                    <strong> 3 LOIs issued in the same week.</strong>
+                  </div>
+                  <span className="card-tag">Week 1 to Week 3</span>
                 </div>
-                <span className="card-tag">Week 1 to Week 3</span>
-              </div>
+              </Link>
 
-              <div className="proof-card tall">
-                <div className="card-label">Borderless - Outreach result</div>
-                <div className="card-metric small">43+</div>
-                <div className="card-desc">
-                  Serious conversations with operators in a market never approached for M and A
-                  before. <strong>8 to 10 aligned operators surfaced.</strong>
+              <Link href="/stories/borderless" className="proof-card-link">
+                <div className="proof-card tall">
+                  <div className="card-label">Borderless - Outreach result</div>
+                  <div className="card-metric small">43+</div>
+                  <div className="card-desc">
+                    Serious conversations with operators in a market never approached for M and A
+                    before. <strong>8 to 10 aligned operators surfaced.</strong>
+                  </div>
+                  <span className="card-tag">UK Immigration</span>
                 </div>
-                <span className="card-tag">UK Immigration</span>
-              </div>
+              </Link>
 
-              <div className="proof-card">
-                <div className="card-label">Runify - Social vs email</div>
-                <div className="card-metric small">20-30%</div>
-                <div className="card-desc">
-                  Response rate via Twitter and Reddit versus <strong>below 5% on email.</strong>
+              <Link href="/stories/runify" className="proof-card-link">
+                <div className="proof-card">
+                  <div className="card-label">Runify - Social vs email</div>
+                  <div className="card-metric small">20-30%</div>
+                  <div className="card-desc">
+                    Response rate via Twitter and Reddit versus <strong>below 5% on email.</strong>
+                  </div>
+                  <span className="card-tag">Consumer fitness</span>
                 </div>
-                <span className="card-tag">Consumer fitness</span>
-              </div>
+              </Link>
 
               <div className="proof-card">
                 <div className="card-label">Intel gathered beyond the deal</div>
@@ -1516,33 +1561,39 @@ export default function ApproachContent() {
             </div>
 
             <div className="deal-cards-row">
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/dino-games" className="story-link">Dino Games</Link></div>
-                <div className="deal-card-headline">44% of consideration deferred over 12 months</div>
-                <div className="deal-card-body">
-                  Not price compression, <strong>risk reallocation</strong>. Seller kept headline.
-                  Buyer kept downside protection.
+              <Link href="/stories/dino-games" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">Dino Games</div>
+                  <div className="deal-card-headline">44% of consideration deferred over 12 months</div>
+                  <div className="deal-card-body">
+                    Not price compression, <strong>risk reallocation</strong>. Seller kept headline.
+                    Buyer kept downside protection.
+                  </div>
+                  <span className="deal-status status-closed">Closed - 39K</span>
                 </div>
-                <span className="deal-status status-closed">Closed - 39K</span>
-              </div>
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/runify" className="story-link">Runify</Link></div>
-                <div className="deal-card-headline">74% of consideration performance-linked</div>
-                <div className="deal-card-body">
-                  <strong>30K deployed upfront</strong> on a 110K deal after revenue quality
-                  adjustments.
+              </Link>
+              <Link href="/stories/runify" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">Runify</div>
+                  <div className="deal-card-headline">74% of consideration performance-linked</div>
+                  <div className="deal-card-body">
+                    <strong>30K deployed upfront</strong> on a 110K deal after revenue quality
+                    adjustments.
+                  </div>
+                  <span className="deal-status status-closed">Closed - 110K</span>
                 </div>
-                <span className="deal-status status-closed">Closed - 110K</span>
-              </div>
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link></div>
-                <div className="deal-card-headline">2 LOIs terminated before right close</div>
-                <div className="deal-card-body">
-                  80%+ churn, zero proprietary tech, and founder dependency.
-                  <strong> Momentum bias overruled by discipline.</strong>
+              </Link>
+              <Link href="/stories/smartprompt" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">SmartPrompt</div>
+                  <div className="deal-card-headline">2 LOIs terminated before right close</div>
+                  <div className="deal-card-body">
+                    80%+ churn, zero proprietary tech, and founder dependency.
+                    <strong> Momentum bias overruled by discipline.</strong>
+                  </div>
+                  <span className="deal-status status-killed">2 LOIs killed</span>
                 </div>
-                <span className="deal-status status-killed">2 LOIs killed</span>
-              </div>
+              </Link>
             </div>
 
             <div className="scorecard">
@@ -1585,35 +1636,41 @@ export default function ApproachContent() {
             </div>
 
             <div className="deal-cards-row">
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/smartprompt" className="story-link">SmartPrompt</Link></div>
-                <div className="deal-card-headline">LOI to close in 7 days. Zero post-close lag.</div>
-                <div className="deal-card-body">
-                  Operator recruited in parallel with diligence.
-                  <strong> Transition-ready before APA signature.</strong>
+              <Link href="/stories/smartprompt" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">SmartPrompt</div>
+                  <div className="deal-card-headline">LOI to close in 7 days. Zero post-close lag.</div>
+                  <div className="deal-card-body">
+                    Operator recruited in parallel with diligence.
+                    <strong> Transition-ready before APA signature.</strong>
+                  </div>
+                  <span className="deal-status status-closed">12K - All cash - 7 days</span>
                 </div>
-                <span className="deal-status status-closed">12K - All cash - 7 days</span>
-              </div>
+              </Link>
 
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/dino-games" className="story-link">Dino Games</Link></div>
-                <div className="deal-card-headline">Seller proposed no escrow. Flat rejection.</div>
-                <div className="deal-card-body">
-                  Signed APA, inspection period, milestone releases, or no deal.
-                  <strong> Safety over speed, every time.</strong>
+              <Link href="/stories/dino-games" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">Dino Games</div>
+                  <div className="deal-card-headline">Seller proposed no escrow. Flat rejection.</div>
+                  <div className="deal-card-body">
+                    Signed APA, inspection period, milestone releases, or no deal.
+                    <strong> Safety over speed, every time.</strong>
+                  </div>
+                  <span className="deal-status status-closed">39K - Structured close</span>
                 </div>
-                <span className="deal-status status-closed">39K - Structured close</span>
-              </div>
+              </Link>
 
-              <div className="deal-card">
-                <div className="deal-card-name"><Link href="/stories/runify" className="story-link">Runify</Link></div>
-                <div className="deal-card-headline">Neither opening number. Both interests met.</div>
-                <div className="deal-card-body">
-                  Seller wanted 30% upfront. We opened at 20%. Final structure solved liquidity
-                  timing with performance linkage.
+              <Link href="/stories/runify" className="deal-card-link">
+                <div className="deal-card">
+                  <div className="deal-card-name">Runify</div>
+                  <div className="deal-card-headline">Neither opening number. Both interests met.</div>
+                  <div className="deal-card-body">
+                    Seller wanted 30% upfront. We opened at 20%. Final structure solved liquidity
+                    timing with performance linkage.
+                  </div>
+                  <span className="deal-status status-closed">110K - 30K upfront</span>
                 </div>
-                <span className="deal-status status-closed">110K - 30K upfront</span>
-              </div>
+              </Link>
             </div>
 
             <div className="narrative">

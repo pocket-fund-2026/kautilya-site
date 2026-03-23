@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { NumberTicker } from '@/components/NumberTicker';
 
 /* -- deal data -- */
 interface DealMetric {
@@ -100,13 +101,7 @@ const deals: Deal[] = [
   },
 ];
 
-/* -- stats bar -- */
-const stats = [
-  { val: '5', label: 'Engagements' },
-  { val: '$1.96M+', label: 'Total Deal Value' },
-  { val: '2,100+', label: 'Analyst Hours' },
-  { val: '100%', label: 'Buyer-Side' },
-];
+/* -- stats bar (now rendered inline with NumberTicker) -- */
 
 /* -- component -- */
 export default function PortfolioContent() {
@@ -126,7 +121,7 @@ export default function PortfolioContent() {
     <div className="page portfolio-page">
       {/* -- Hero -- */}
       <div className="page-hero">
-        <div className="section-eyebrow">Portfolio of Proof</div>
+        <div className="section-eyebrow">Case Studies</div>
         <h1 className="section-title">Deal Portfolio</h1>
         <p className="section-body">
           Case studies from our advisory, sourcing, and diligence engagements across digital assets.
@@ -134,12 +129,22 @@ export default function PortfolioContent() {
 
         {/* Stats bar */}
         <div className="dash-stats-bar">
-          {stats.map((s) => (
-            <div className="dash-stat" key={s.label}>
-              <div className="ds-val">{s.val}</div>
-              <div className="ds-label">{s.label}</div>
-            </div>
-          ))}
+          <div className="dash-stat">
+            <div className="ds-val"><NumberTicker value={5} /></div>
+            <div className="ds-label">Engagements</div>
+          </div>
+          <div className="dash-stat">
+            <div className="ds-val">$<NumberTicker value={1.96} startValue={1.5} decimalPlaces={2} />M+</div>
+            <div className="ds-label">Total Deal Value</div>
+          </div>
+          <div className="dash-stat">
+            <div className="ds-val"><NumberTicker value={2100} startValue={1800} /></div>
+            <div className="ds-label">Analyst Hours</div>
+          </div>
+          <div className="dash-stat">
+            <div className="ds-val"><NumberTicker value={100} startValue={85} suffix="%" /></div>
+            <div className="ds-label">Buyer-Side</div>
+          </div>
         </div>
       </div>
 

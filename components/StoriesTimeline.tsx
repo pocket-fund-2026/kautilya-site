@@ -267,7 +267,7 @@ function PhaseDivider({ year }: { year: string }) {
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="stories-timeline-year-pill"
-        style={{ top: BEAM_Y - NODE_SIZE / 2 - 4 }}
+        style={{ top: BEAM_Y, x: '-50%', y: '-50%' }}
       >
         <span>{year}</span>
       </motion.div>

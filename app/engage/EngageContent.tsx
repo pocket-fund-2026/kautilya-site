@@ -3,7 +3,7 @@
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 const MIN_NAME_LENGTH = 2;
-const MIN_CRITERIA_LENGTH = 15;
+// const MIN_CRITERIA_LENGTH = 15;
 
 const COUNTRY_CODES = [
   { code: '+91', label: 'IN +91', digits: 10 },
@@ -47,7 +47,7 @@ export default function EngageContent() {
     const nextErrors: FormErrors = {};
     const trimmedName = data.name.trim();
     const trimmedEmail = data.email.trim();
-    const trimmedCriteria = data.criteria.trim();
+    // const trimmedCriteria = data.criteria.trim();
 
     if (!trimmedName) {
       nextErrors.name = 'Please enter your name.';
@@ -71,11 +71,11 @@ export default function EngageContent() {
       }
     }
 
-    if (!trimmedCriteria) {
-      nextErrors.criteria = 'Please describe your acquisition criteria.';
-    } else if (trimmedCriteria.length < MIN_CRITERIA_LENGTH) {
-      nextErrors.criteria = `Acquisition criteria must be at least ${MIN_CRITERIA_LENGTH} characters.`;
-    }
+    // if (!trimmedCriteria) {
+    //   nextErrors.criteria = 'Please describe your acquisition criteria.';
+    // } else if (trimmedCriteria.length < MIN_CRITERIA_LENGTH) {
+    //   nextErrors.criteria = `Acquisition criteria must be at least ${MIN_CRITERIA_LENGTH} characters.`;
+    // }
 
     return nextErrors;
   };
@@ -149,11 +149,12 @@ export default function EngageContent() {
             <form className="engage-form" onSubmit={handleSubmit} noValidate>
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">Name <span className="required">*</span></label>
                   <input
                     type="text"
                     name="name"
                     placeholder="Your name"
+                    required
                     value={formData.name}
                     onChange={handleInputChange}
                     aria-invalid={Boolean(errors.name)}
@@ -175,11 +176,12 @@ export default function EngageContent() {
               </div>
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Email</label>
+                  <label className="form-label">Email <span className="required">*</span></label>
                   <input
                     type="email"
                     name="email"
                     placeholder="your@email.com"
+                    required
                     value={formData.email}
                     onChange={handleInputChange}
                     aria-invalid={Boolean(errors.email)}
@@ -254,7 +256,7 @@ export default function EngageContent() {
                 title="Book a call with Kautilya"
                 style={{ border: 0 }}
                 width="100%"
-                height="880"
+                height="600"
                 frameBorder="0"
                 loading="lazy"
               />

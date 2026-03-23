@@ -58,9 +58,13 @@ export default function Header() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen, menuClosing]);
 
+  const portfolioSlugs = ['borderless', 'dino-games', 'runify', 'smartprompt', 'inspire3'];
+  const storySlug = path.startsWith('/stories/') ? path.split('/')[2] : '';
+  const isPortfolioStory = portfolioSlugs.includes(storySlug);
+
   let activePage = '';
   if (path.startsWith('/approach')) activePage = 'approach';
-  else if (path.startsWith('/portfolio')) activePage = 'portfolio';
+  else if (path.startsWith('/portfolio') || isPortfolioStory) activePage = 'portfolio';
   else if (path.startsWith('/stories') || path.startsWith('/story-')) activePage = 'stories';
   else if (path.startsWith('/team')) activePage = 'team';
 

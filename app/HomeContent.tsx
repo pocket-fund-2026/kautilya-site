@@ -170,7 +170,7 @@ return (
   }
   /* ----------------------- */
 
-  .sky-scroll { position: relative; height: 1100vh; overscroll-behavior: none; }
+  .sky-scroll { position: relative; height: 2200vh; overscroll-behavior: none; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
   .sky-sticky canvas {
     display: block; width: 100%; height: 100%;
@@ -277,13 +277,13 @@ return (
       {/* INTRO */}
       <div className="intro">
         <div className="section-eyebrow">Buy Side Advisory</div>
-        <h1 style={{ fontSize: 52, maxWidth: 700, margin: '0 auto 24px' }}>
+        <h1 style={{ fontSize: 64, maxWidth: 800, margin: '0 auto 24px' }}>
           You bring the thesis.<br />
           We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
         </h1>
         <div className="gold-line" style={{ margin: '30px auto' }} />
-        <p style={{ maxWidth: 600, margin: '0 auto 60px', fontSize: 15, color: 'var(--text-secondary)' }}>
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles. We don't carry a pipeline. We build yours.
+        <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.<br />We don't carry a pipeline. We build yours.
         </p>
         <div className="scroll-cue">
           <span>Enter</span>
@@ -310,7 +310,7 @@ return (
             <div className="sky-text-overlay" id="skyText2">
               <div className="eyebrow">Chakravyuha · The Formation</div>
               <div className="main-text">
-                Strategy is the difference<br />between a lead and a legacy.
+                Strategy is the difference<br />between a deal and a dynasty.
               </div>
               <div className="devanagari">चक्रव्यूह</div>
             </div>
@@ -369,7 +369,7 @@ return (
         </div>
         <div className="pathway-grid reveal">
           <Link className="pathway-card" href="/portfolio">
-            <div className="card-eyebrow">Portfolio of Proof</div>
+            <div className="card-eyebrow">Case Studies</div>
             <h3 className="card-title">Advisory Portfolio</h3>
             <div className="card-desc">Closed acquisition mandates across sectors — from market mapping to deal close.</div>
             <span className="card-arrow">→</span>

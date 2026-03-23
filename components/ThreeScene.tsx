@@ -447,7 +447,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           const nakshatraGlowIn = THREE.MathUtils.smoothstep(nakshatraT, 0.02, 0.28);
           const nakshatraGlowOut = 1 - THREE.MathUtils.smoothstep(nakshatraT, 0.45, 0.75);
           const nakshatraGlow = Math.max(0, nakshatraGlowIn * nakshatraGlowOut);
-          const nakshatraPulse = 0.9 + Math.sin(performance.now() * 0.01) * 0.25;
+          const nakshatraPulse = 0.9 + Math.sin(performance.now() * 0.004) * 0.25;
           const nakshatraGlowBoost = Math.min(1, nakshatraGlow * nakshatraPulse);
           const nakshatraStarEmissive = THREE.MathUtils.lerp(baseStarEmissive, 5.4, nakshatraGlowBoost);
 

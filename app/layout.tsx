@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SplashCursorWrapper from '@/components/SplashCursorWrapper';
 import NewsletterPopup from '@/components/NewsletterPopup';
+import SmoothScroll from '@/components/SmoothScroll';
 import './globals.css';
 
 const cormorant = Cormorant({
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${cormorant.variable} ${lora.variable}`}>
       <body>
+        <SmoothScroll />
         <SplashCursorWrapper />
         <Header />
         {children}
