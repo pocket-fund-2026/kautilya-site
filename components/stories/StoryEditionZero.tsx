@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StoryEditionZero() {
   useReadingProgressAndShareBar();
@@ -101,7 +101,7 @@ export default function StoryEditionZero() {
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <Image src="/images/stories/edition-zero/zero.png" alt="Hand-written newsletter draft on a desk marking the origin of This Is Bizness edition zero" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/edition-zero/zero.png" alt="Hand-written newsletter draft on a desk marking the origin of This Is Bizness edition zero" width={1200} height={675} />
         </figure>
 
         <p>
@@ -152,6 +152,15 @@ export default function StoryEditionZero() {
             look at buying businesses with as little as a few thousand dollars.
           </p>
         </div>
+
+        <figure className="story-img">
+          <ShimmerImage
+            src="/images/stories/edition-zero/conviction.png"
+            alt="Entrepreneur browsing startup marketplace listings on a laptop in a cafe, representing the origin of This Is Bizness newsletter and small business acquisition sourcing"
+            width={1200}
+            height={675}
+          />
+        </figure>
 
         <h2>The Conviction</h2>
         <p>

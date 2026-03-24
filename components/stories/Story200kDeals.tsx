@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function Story200kDeals() {
   useReadingProgressAndShareBar();
@@ -110,7 +110,7 @@ export default function Story200kDeals() {
         </div>
 
         <figure className="story-img">
-          <Image src="/images/stories/200k/five-deals.png" alt="Five chess pieces representing the five advisory deals closed by Kautilya totalling $200K" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/five-deals.png" alt="Five chess pieces representing the five advisory deals closed by Kautilya totalling $200K" width={1200} height={675} />
         </figure>
 
         <h2>The Five Deals</h2>
@@ -146,7 +146,7 @@ export default function Story200kDeals() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/200k/architecture.png" alt="Geometric steel beams symbolising structured deal architecture in micro-acquisitions" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/architecture.png" alt="Geometric steel beams symbolising structured deal architecture in micro-acquisitions" width={1200} height={675} />
         </figure>
 
         <h2>Key Learning: Deal Structure</h2>
@@ -157,7 +157,7 @@ export default function Story200kDeals() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/200k/hidden-channel.png" alt="Dimly lit desk with laptop showing off-market deal sourcing channels like Reddit and Twitter" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/hidden-channel.png" alt="Dimly lit desk with laptop showing off-market deal sourcing channels like Reddit and Twitter" width={1200} height={675} />
         </figure>
 
         <h2>Key Learning: Off-Market Sourcing</h2>

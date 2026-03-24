@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StoryBorderless() {
   useReadingProgressAndShareBar();
@@ -116,7 +116,7 @@ export default function StoryBorderless() {
         <p>Simple enough in theory. In practice, the UK immigration market had other plans.</p>
 
         <figure className="story-img">
-          <Image src="/images/stories/borderless/maket-no-deals.png" alt="UK immigration market with closed doors symbolising resistance to traditional M&A dealmaking" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/borderless/maket-no-deals.png" alt="UK immigration market with closed doors symbolising resistance to traditional M&A dealmaking" width={1200} height={675} />
         </figure>
 
         <h2>The Market Said No</h2>
@@ -159,7 +159,7 @@ export default function StoryBorderless() {
         <p>This wasn't standard M&amp;A playbook. But it was structurally aligned with how the market actually works.</p>
 
         <figure className="story-img">
-          <Image src="/images/stories/borderless/exhausting-market.png" alt="Research war room with index cards and data mapping 1500 UK immigration advisors" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/borderless/exhausting-market.png" alt="Research war room with index cards and data mapping 1500 UK immigration advisors" width={1200} height={675} />
         </figure>
 
         <h2>960 Hours of Market Exhaustion</h2>
@@ -224,7 +224,7 @@ export default function StoryBorderless() {
         </div>
 
         <figure className="story-img">
-          <Image src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from Borderless referral partnerships" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from Borderless referral partnerships" width={1200} height={675} />
         </figure>
 
         <h2>What Borderless Walked Away With</h2>

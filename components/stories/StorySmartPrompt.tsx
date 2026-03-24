@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StorySmartPrompt() {
   useReadingProgressAndShareBar();
@@ -97,7 +97,7 @@ export default function StorySmartPrompt() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <Image src="/images/stories/smart-prompt/kill.png" alt="Two deal folders marked with red X and one open folder lit in gold representing SmartPrompt kill discipline" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/smart-prompt/kill.png" alt="Two deal folders marked with red X and one open folder lit in gold representing SmartPrompt kill discipline" width={1200} height={675} />
         </figure>
 
         <p>
@@ -127,7 +127,7 @@ export default function StorySmartPrompt() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/smart-prompt/300.png" alt="Funnel visualisation showing 300 opportunities narrowing to one closed acquisition" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/smart-prompt/300.png" alt="Funnel visualisation showing 300 opportunities narrowing to one closed acquisition" width={1200} height={675} />
         </figure>
 
         <h2>The Five-Gate Evaluation Framework</h2>
@@ -220,7 +220,7 @@ export default function StorySmartPrompt() {
         </div>
 
         <figure className="story-img">
-          <Image src="/images/stories/smart-prompt/discount.png" alt="$12K price tag above 2.5 million conversations showing the 200x pricing efficiency of the SmartPrompt acquisition" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/smart-prompt/discount.png" alt="$12K price tag above 2.5 million conversations showing the 200x pricing efficiency of the SmartPrompt acquisition" width={1200} height={675} />
         </figure>
 
         <h2>What the Buyer Walked Away With</h2>

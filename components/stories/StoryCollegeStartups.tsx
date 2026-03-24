@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StoryCollegeStartups() {
   useReadingProgressAndShareBar();
@@ -97,7 +97,7 @@ export default function StoryCollegeStartups() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <Image src="/images/stories/college-startups/best-time-build.png" alt="College student working on a startup from their dorm room late at night" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/best-time-build.png" alt="College student working on a startup from their dorm room late at night" width={1200} height={675} />
         </figure>
 
         <p>
@@ -139,7 +139,7 @@ export default function StoryCollegeStartups() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/college-startups/ten-jobs.png" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/ten-jobs.png" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
         </figure>
 
         <h2>5. AI-Driven Productivity</h2>
@@ -205,7 +205,7 @@ export default function StoryCollegeStartups() {
         </div>
 
         <figure className="story-img">
-          <Image src="/images/stories/college-startups/start-now.png" alt="Sunrise over a college campus symbolising the best time to start a business" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/start-now.png" alt="Sunrise over a college campus symbolising the best time to start a business" width={1200} height={675} />
         </figure>
 
         <div className="story-coda">

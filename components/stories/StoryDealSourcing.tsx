@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StoryDealSourcing() {
   useReadingProgressAndShareBar();
@@ -97,7 +97,7 @@ export default function StoryDealSourcing() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <Image src="/images/stories/deal-sourcing/morning.png" alt="Laptop showing Acquire.com business marketplace listings during a morning deal sourcing session" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="Laptop showing Acquire.com business marketplace listings during a morning deal sourcing session" width={1200} height={675} />
         </figure>
 
         <p>
@@ -123,7 +123,7 @@ export default function StoryDealSourcing() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/deal-sourcing/thousand.png" alt="Desk covered in printed business summaries being filtered and evaluated for acquisition" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/thousand.png" alt="Desk covered in printed business summaries being filtered and evaluated for acquisition" width={1200} height={675} />
         </figure>
 
         <h2>Five Tips for Serious Buyers</h2>
@@ -179,7 +179,7 @@ export default function StoryDealSourcing() {
         </div>
 
         <figure className="story-img">
-          <Image src="/images/stories/deal-sourcing/discipline.png" alt="Filing cabinet with one golden drawer open symbolising systematic deal sourcing discipline" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/discipline.png" alt="Filing cabinet with one golden drawer open symbolising systematic deal sourcing discipline" width={1200} height={675} />
         </figure>
 
         <div className="story-coda">

@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StorySearchFunds() {
   useReadingProgressAndShareBar();
@@ -97,7 +97,7 @@ export default function StorySearchFunds() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <Image src="/images/stories/search-fund/month.png" alt="Lone figure searching through a vast library symbolising the 20-month median search fund journey" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/month.png" alt="Lone figure searching through a vast library symbolising the 20-month median search fund journey" width={1200} height={675} />
         </figure>
 
         <p>
@@ -123,7 +123,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/search-fund/partnered.png" alt="Two diverging paths in a forest representing the solo versus partnered search fund decision" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/partnered.png" alt="Two diverging paths in a forest representing the solo versus partnered search fund decision" width={1200} height={675} />
         </figure>
 
         <h2>Solo vs. Partnered</h2>
@@ -170,7 +170,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <Image src="/images/stories/search-fund/barbell.png" alt="Barbell shape visualising the bimodal return distribution of search funds with 10x winners and losses" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/barbell.png" alt="Barbell shape visualising the bimodal return distribution of search funds with 10x winners and losses" width={1200} height={675} />
         </figure>
 
         <h2>The Exit Distribution</h2>
