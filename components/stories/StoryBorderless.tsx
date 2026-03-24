@@ -223,6 +223,10 @@ export default function StoryBorderless() {
           </div>
         </div>
 
+        <figure className="story-img">
+          <Image src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from Borderless referral partnerships" width={1200} height={675} />
+        </figure>
+
         <h2>What Borderless Walked Away With</h2>
         <p>
           A strategic referral agreement was agreed in principle, with an estimated annual cashflow impact of £70K–£80K. But

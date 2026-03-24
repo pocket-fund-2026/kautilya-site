@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryCollegeStartups() {
   useReadingProgressAndShareBar();
@@ -95,6 +96,10 @@ export default function StoryCollegeStartups() {
       </div>
 
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/college-startups/best-time-build.png" alt="College student working on a startup from their dorm room late at night" width={1200} height={675} />
+        </figure>
+
         <p>
           The barrier to entry has dramatically lowered. Where previous generations needed significant capital
           for physical infrastructure, today&rsquo;s aspiring entrepreneurs need a couple of hours a week,
@@ -132,6 +137,10 @@ export default function StoryCollegeStartups() {
           No-code platforms like Bubble, Shopify, and Wix eliminate technical barriers. Global markets enable
           selling and hiring worldwide without geographic constraints.
         </p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/college-startups/ten-jobs.png" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
+        </figure>
 
         <h2>5. AI-Driven Productivity</h2>
         <p>
@@ -194,6 +203,10 @@ export default function StoryCollegeStartups() {
             <div className="metric-label">COVID Closures Never Reopened</div>
           </div>
         </div>
+
+        <figure className="story-img">
+          <Image src="/images/stories/college-startups/start-now.png" alt="Sunrise over a college campus symbolising the best time to start a business" width={1200} height={675} />
+        </figure>
 
         <div className="story-coda">
           <div className="coda-text">
