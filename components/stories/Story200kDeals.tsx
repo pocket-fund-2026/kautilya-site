@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Story200kDeals() {
   useReadingProgressAndShareBar();
@@ -108,6 +109,10 @@ export default function Story200kDeals() {
           </p>
         </div>
 
+        <figure className="story-img">
+          <Image src="/images/stories/200k/five-deals.png" alt="Five chess pieces representing the five advisory deals closed by Kautilya totalling $200K" width={1200} height={675} />
+        </figure>
+
         <h2>The Five Deals</h2>
 
         <h2>Runify &mdash; $110K</h2>
@@ -140,12 +145,20 @@ export default function Story200kDeals() {
           A finance publication with 16,000 subscribers. Cash purchase by a media portfolio operator.
         </p>
 
+        <figure className="story-img">
+          <Image src="/images/stories/200k/architecture.png" alt="Geometric steel beams symbolising structured deal architecture in micro-acquisitions" width={1200} height={675} />
+        </figure>
+
         <h2>Key Learning: Deal Structure</h2>
         <p>
           Earnout provisions protecting buyers while providing seller confidence proved critical to closing
           transactions. The headline price is rarely where deals die. Risk allocation is. When both sides
           feel protected, deals close.
         </p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/200k/hidden-channel.png" alt="Dimly lit desk with laptop showing off-market deal sourcing channels like Reddit and Twitter" width={1200} height={675} />
+        </figure>
 
         <h2>Key Learning: Off-Market Sourcing</h2>
         <p>

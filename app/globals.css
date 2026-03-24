@@ -1360,6 +1360,28 @@ a.deal-card { cursor: pointer; }
   font-style: italic;
 }
 
+.story-body .story-img {
+  margin: 40px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.story-body .story-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.story-body .story-img figcaption {
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
 /* Pull quote */
 .pull-quote {
   margin: 48px 0;

@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryBorderless() {
   useReadingProgressAndShareBar();
@@ -114,6 +115,10 @@ export default function StoryBorderless() {
         </p>
         <p>Simple enough in theory. In practice, the UK immigration market had other plans.</p>
 
+        <figure className="story-img">
+          <Image src="/images/stories/borderless/maket-no-deals.png" alt="UK immigration market with closed doors symbolising resistance to traditional M&A dealmaking" width={1200} height={675} />
+        </figure>
+
         <h2>The Market Said No</h2>
         <p>
           Kautilya's initial market work revealed something that a traditional M&amp;A advisor might have taken months to
@@ -152,6 +157,10 @@ export default function StoryBorderless() {
           in exchange for downstream economics.
         </p>
         <p>This wasn't standard M&amp;A playbook. But it was structurally aligned with how the market actually works.</p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/borderless/exhausting-market.png" alt="Research war room with index cards and data mapping 1500 UK immigration advisors" width={1200} height={675} />
+        </figure>
 
         <h2>960 Hours of Market Exhaustion</h2>
         <p>Kautilya doesn't sample markets. It exhausts them.</p>
