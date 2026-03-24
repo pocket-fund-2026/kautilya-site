@@ -283,8 +283,13 @@ export default function ApproachContent() {
               backdrop-filter: blur(12px);
               border-bottom: 1px solid var(--border-dim);
               padding: 0 80px;
-              overflow: hidden;
+              overflow-x: auto;
+              overflow-y: hidden;
+              -webkit-overflow-scrolling: touch;
+              scrollbar-width: none;
             }
+
+            .approach-page-methodology .methodology-nav::-webkit-scrollbar { display: none; }
 
             .approach-page-methodology .nav-inner {
               max-width: 1300px;

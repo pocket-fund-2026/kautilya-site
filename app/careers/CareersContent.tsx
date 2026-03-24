@@ -4,8 +4,10 @@ import { useState, useRef, type ChangeEvent, type FormEvent } from 'react';
 
 const OPEN_ROLES = [
   'Analyst — Deal Sourcing',
-  'Associate — Market Intelligence',
-  'Content & Brand Lead',
+  'Operations',
+  'Full Stack Developer',
+  'Marketing',
+  "Founder's Office Intern",
 ] as const;
 
 const WORK_MODES = ['Remote', 'On Site (Mumbai)'] as const;
@@ -194,7 +196,7 @@ export default function CareersContent() {
           <div className="section-eyebrow">Open Roles</div>
           <div className="role-card reveal" onClick={() => handleRoleClick('Analyst — Deal Sourcing')}>
             <div>
-              <div className="role-title">Analyst — Deal Sourcing</div>
+              <div className="role-title">Analyst</div>
               <div className="role-detail">
                 Research, outreach execution, and target qualification across active mandates.
               </div>
@@ -205,11 +207,11 @@ export default function CareersContent() {
             </div>
             <div className="role-arrow">→</div>
           </div>
-          <div className="role-card reveal" style={{ transitionDelay: '.1s' }} onClick={() => handleRoleClick('Associate — Market Intelligence')}>
+          <div className="role-card reveal" style={{ transitionDelay: '.1s' }} onClick={() => handleRoleClick('Operations')}>
             <div>
-              <div className="role-title">Associate — Market Intelligence</div>
+              <div className="role-title">Operations</div>
               <div className="role-detail">
-                Sector mapping, pipeline construction, and client-facing delivery of sourcing engagements.
+                End-to-end coordination of mandates, client delivery, and internal workflows that keep the firm running at speed.
               </div>
               <div className="role-tags">
                 <span className="role-tag">Full-Time</span>
@@ -218,15 +220,41 @@ export default function CareersContent() {
             </div>
             <div className="role-arrow">→</div>
           </div>
-          <div className="role-card reveal" style={{ transitionDelay: '.2s' }} onClick={() => handleRoleClick('Content & Brand Lead')}>
+          <div className="role-card reveal" style={{ transitionDelay: '.2s' }} onClick={() => handleRoleClick('Full Stack Developer')}>
             <div>
-              <div className="role-title">Content &amp; Brand Lead</div>
+              <div className="role-title">Full Stack Developer</div>
               <div className="role-detail">
-                Own Kautilya's published intelligence — writing, social, and brand presence across channels.
+                Build and maintain Kautilya's web platform, internal tools, and data infrastructure from front to back.
               </div>
               <div className="role-tags">
                 <span className="role-tag">Full-Time</span>
-                <span className="role-tag">Remote</span>
+                <span className="role-tag">On Site / Hybrid</span>
+              </div>
+            </div>
+            <div className="role-arrow">→</div>
+          </div>
+          <div className="role-card reveal" style={{ transitionDelay: '.3s' }} onClick={() => handleRoleClick('Marketing')}>
+            <div>
+              <div className="role-title">Marketing</div>
+              <div className="role-detail">
+                Own Kautilya's brand presence, content strategy, and distribution across social, email, and publishing channels.
+              </div>
+              <div className="role-tags">
+                <span className="role-tag">Full-Time</span>
+                <span className="role-tag">On Site / Hybrid</span>
+              </div>
+            </div>
+            <div className="role-arrow">→</div>
+          </div>
+          <div className="role-card reveal" style={{ transitionDelay: '.4s' }} onClick={() => handleRoleClick("Founder's Office Intern")}>
+            <div>
+              <div className="role-title">Founder&apos;s Office Intern</div>
+              <div className="role-detail">
+                Work directly with the founder across deal sourcing, strategy, and operations — a crash course in building an advisory firm.
+              </div>
+              <div className="role-tags">
+                <span className="role-tag">Internship</span>
+                <span className="role-tag">Remote / On Site / Hybrid</span>
               </div>
             </div>
             <div className="role-arrow">→</div>
