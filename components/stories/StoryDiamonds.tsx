@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryDiamonds() {
   useReadingProgressAndShareBar();
@@ -95,6 +96,10 @@ export default function StoryDiamonds() {
       </div>
 
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/diamonds/uncut.png" alt="Unpolished diamond on dark velvet symbolising hidden value in micro-acquisitions" width={1200} height={675} />
+        </figure>
+
         <p>
           Over one million small businesses are available for purchase globally, most listed at
           2&ndash;3x annual profit or less. The opportunity is not in finding the perfect business.
@@ -107,6 +112,10 @@ export default function StoryDiamonds() {
             rather than luck or timing.
           </p>
         </div>
+
+        <figure className="story-img">
+          <Image src="/images/stories/diamonds/zeroto.png" alt="Neglected storefront being reopened representing a newsletter going from zero to $2500 monthly revenue" width={1200} height={675} />
+        </figure>
 
         <h2>The Case Study</h2>
         <p>
@@ -128,6 +137,10 @@ export default function StoryDiamonds() {
           <li><strong>Low owner involvement:</strong> Operations requiring minimal ongoing time commitment</li>
           <li><strong>Growth potential:</strong> Clear, identifiable improvement opportunities like enhanced marketing or additional offerings</li>
         </ul>
+
+        <figure className="story-img">
+          <Image src="/images/stories/diamonds/mindset.png" alt="Split view comparing a polished expensive business versus an overlooked business with hidden potential" width={1200} height={675} />
+        </figure>
 
         <h2>The Mindset Shift</h2>
         <p>

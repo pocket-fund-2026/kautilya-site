@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryPocketFund() {
   useReadingProgressAndShareBar();
@@ -95,6 +96,10 @@ export default function StoryPocketFund() {
       </div>
 
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/pocket-fund/search.png" alt="A $5 bill transforming into a glowing business symbolising the $5000 Pocket Fund search fund model" width={1200} height={675} />
+        </figure>
+
         <p>
           Welcome to the Pocket Fund edition. What started as a club at Claremont McKenna College became a
           community for entrepreneurs who measure success differently &mdash; not by how much VC funding you
@@ -141,6 +146,10 @@ export default function StoryPocketFund() {
           This is not about building something from zero. It is about recognising value that already exists
           and having the discipline to grow it.
         </p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/pocket-fund/100k.png" alt="Seedling growing into a golden tree representing Sourcely.ai growth from $4K to $100K valuation" width={1200} height={675} />
+        </figure>
 
         <h2>Founder Credentials</h2>
         <p>

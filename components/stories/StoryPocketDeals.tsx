@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryPocketDeals() {
   useReadingProgressAndShareBar();
@@ -95,6 +96,10 @@ export default function StoryPocketDeals() {
       </div>
 
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/micro-saas/bigpurpose.png" alt="Child using an iPad app with visual schedules designed to support children with autism" width={1200} height={675} />
+        </figure>
+
         <p>
           Pocket Deals is our series breaking down real businesses available for acquisition. This first
           edition examines a micro-SaaS startup offering digital tools designed to support children with
@@ -137,6 +142,10 @@ export default function StoryPocketDeals() {
           carefully evaluate scaling strategies given the single-person team structure and specialised
           market focus.
         </p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/micro-saas/15000.png" alt="$15000 price tag on a micro-SaaS app representing an accessible acquisition opportunity" width={1200} height={675} />
+        </figure>
 
         <h2>Our Take</h2>
         <p>

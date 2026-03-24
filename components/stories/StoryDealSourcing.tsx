@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryDealSourcing() {
   useReadingProgressAndShareBar();
@@ -95,6 +96,10 @@ export default function StoryDealSourcing() {
       </div>
 
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/deal-sourcing/morning.png" alt="Laptop showing Acquire.com business marketplace listings during a morning deal sourcing session" width={1200} height={675} />
+        </figure>
+
         <p>
           Spending 30 minutes on Acquire.com every morning has been the single most profitable habit
           in this journey. The marketplace contains thousands of listings, but the quality varies
@@ -116,6 +121,10 @@ export default function StoryDealSourcing() {
           no shortcut can replicate. You start seeing patterns: what is real, what is inflated, and
           what is quietly undervalued.
         </p>
+
+        <figure className="story-img">
+          <Image src="/images/stories/deal-sourcing/thousand.png" alt="Desk covered in printed business summaries being filtered and evaluated for acquisition" width={1200} height={675} />
+        </figure>
 
         <h2>Five Tips for Serious Buyers</h2>
 
@@ -168,6 +177,10 @@ export default function StoryDealSourcing() {
             <div className="metric-label">Minimum Check Frequency</div>
           </div>
         </div>
+
+        <figure className="story-img">
+          <Image src="/images/stories/deal-sourcing/discipline.png" alt="Filing cabinet with one golden drawer open symbolising systematic deal sourcing discipline" width={1200} height={675} />
+        </figure>
 
         <div className="story-coda">
           <div className="coda-text">

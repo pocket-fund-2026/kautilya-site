@@ -2,6 +2,7 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function StoryEditionZero() {
   useReadingProgressAndShareBar();
@@ -99,6 +100,10 @@ export default function StoryEditionZero() {
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
+        <figure className="story-img">
+          <Image src="/images/stories/edition-zero/zero.png" alt="Hand-written newsletter draft on a desk marking the origin of This Is Bizness edition zero" width={1200} height={675} />
+        </figure>
+
         <p>
           Welcome to edition zero of This Is Bizness &mdash; a weekly newsletter every Sunday sharing a passion for
           buying and selling small businesses. What started as a personal experiment in May 2023 became the foundation
