@@ -2,7 +2,9 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { NumberTicker } from '@/components/NumberTicker';
+import { BorderBeam } from '@/components/BorderBeam';
 
 /* -- deal data -- */
 interface DealMetric {
@@ -15,6 +17,7 @@ interface Deal {
   tagClass: string;
   price: string;
   name: string;
+  logo?: string;
   oneLiner: string;
   metrics: DealMetric[];
   storyLink?: string;
@@ -27,6 +30,7 @@ const deals: Deal[] = [
     tagClass: 'diligence',
     price: '$1.8M',
     name: 'Inspire3',
+    logo: '/images/portfolio-logos/inspire3.png',
     oneLiner:
       'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio — 30,134 transactions audited across 19 websites in under 15 days.',
     metrics: [
@@ -44,6 +48,7 @@ const deals: Deal[] = [
     tagClass: 'advisory',
     price: '£1-5M',
     name: 'Borderless',
+    logo: '/images/portfolio-logos/borderless.png',
     oneLiner:
       'Built a proprietary M&A pipeline through unconventional deal structures in the UK immigration market — saved ~£11.5K in the process.',
     metrics: [
@@ -59,6 +64,7 @@ const deals: Deal[] = [
     tagClass: 'sourcing',
     price: '$39K',
     name: 'Dino Games',
+    logo: '/images/portfolio-logos/dino-games.jpeg',
     oneLiner:
       'Sourced, structured, and closed a cash-flow-positive mobile game acquisition — from off-market discovery to operator deployment in 8 weeks.',
     metrics: [
@@ -74,6 +80,7 @@ const deals: Deal[] = [
     tagClass: 'sourcing',
     price: '$110K',
     name: 'Runify',
+    logo: '/images/portfolio-logos/runify.png',
     oneLiner:
       'Sourced, diligenced, and structured a mobile app acquisition with only $20K deployed at close — protected by a performance-linked earn-out.',
     metrics: [
@@ -158,6 +165,11 @@ export default function PortfolioContent() {
                   <span className={`deal-tag ${d.tagClass}`}>{d.tag}</span>
                   <span className="deal-price">{d.price}</span>
                 </div>
+                {d.logo && (
+                  <div className="deal-logo">
+                    <img src={d.logo} alt={`${d.name} logo`} />
+                  </div>
+                )}
                 <div className="deal-name">{d.name}</div>
                 <div className="deal-one-liner">{d.oneLiner}</div>
                 <div className="deal-metrics">
@@ -195,6 +207,28 @@ export default function PortfolioContent() {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Service Cards */}
+      <div className="portfolio-services">
+        <div className="engage-service-card">
+          <BorderBeam duration={10} colorFrom="rgba(201,185,154,0.7)" colorTo="rgba(201,185,154,0.05)" />
+          <div className="service-accent service-accent--advisory" />
+          <div className="service-eyebrow">BUY-SIDE ADVISORY</div>
+          <p className="service-desc">
+            We construct proprietary acquisition pipelines on demand — market mapping, deal sourcing, diligence, and execution across digital assets, SaaS, and micro-PE.
+          </p>
+          <Link href="/engage" className="service-cta">Start a mandate →</Link>
+        </div>
+        <div className="engage-service-card">
+          <BorderBeam duration={10} delay={5} colorFrom="rgba(201,185,154,0.5)" colorTo="rgba(201,185,154,0.05)" />
+          <div className="service-accent service-accent--intelligence" />
+          <div className="service-eyebrow">MARKET INTELLIGENCE</div>
+          <p className="service-desc">
+            Sector analyses, acquisition frameworks, and deal breakdowns — built from real engagements, not theory. We publish what we learn.
+          </p>
+          <Link href="/stories" className="service-cta">Read our stories →</Link>
         </div>
       </div>
     </div>

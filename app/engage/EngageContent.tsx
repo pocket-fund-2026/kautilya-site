@@ -142,6 +142,7 @@ export default function EngageContent() {
     <div className="page">
       <div className="engage-page">
         <div className="engage-container engage-container--wide">
+
           <div className="engage-intake">
             <div className="section-eyebrow">Engage</div>
             <h1 className="section-title">Have an acquisition thesis?</h1>

@@ -118,7 +118,7 @@ const phases: Phase[] = [
   },
   {
     id: 7,
-    month: 'Nov 2024',
+    month: 'Nov 2025',
     tag: 'SEARCH FUNDS',
     title: 'How a Stanford model from the 1980s became a new asset class.',
     excerpt:
