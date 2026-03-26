@@ -58,7 +58,7 @@ export default function NewsletterPopup() {
         <div className="newsletter-eyebrow">This Is Bizness</div>
         <h3 className="newsletter-title">Stay in the deal flow.</h3>
         <p className="newsletter-desc">
-          Market intelligence, sourcing frameworks, and acquisition case studies — delivered weekly.
+          Market intelligence, sourcing frameworks, and acquisition case studies, delivered weekly.
         </p>
 
         {state === 'success' ? (

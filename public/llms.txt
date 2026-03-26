@@ -1,7 +1,7 @@
-# Kautilya — Buy-Side Advisory
+# Kautilya | Buy-Side Advisory
 
 ## About
-Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles. We don't carry a pipeline. We build yours.
+Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles. We don't carry a pipeline. We build yours.
 
 ## Services
 - Proprietary deal sourcing across sectors and geographies

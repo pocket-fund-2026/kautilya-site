@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     authors: [{ name: meta.author }],
     alternates: { canonical: `${BASE_URL}/stories/${slug}` },
     openGraph: {
-      title: `${meta.title} — Kautilya`,
+      title: `${meta.title} | Kautilya`,
       url: `${BASE_URL}/stories/${slug}`,
       description: meta.description,
       type: 'article',

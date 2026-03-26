@@ -9,7 +9,7 @@ export default function StoryBorderless() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Borderless: Rewriting the M&A Playbook — via @kautilya');
+    const text = encodeURIComponent('Borderless: Rewriting the M&A Playbook , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -106,7 +106,7 @@ export default function StoryBorderless() {
         <p>
           The math was straightforward. In venture markets, companies at Borderless's stage typically command around 20×
           revenue multiples. If they could add £50K–£250K in annualised cashflow through acquisitions or partnerships, that
-          would translate into £1M–£5M in enterprise value — without issuing a single new share.
+          would translate into £1M–£5M in enterprise value, without issuing a single new share.
         </p>
         <p>
           So Borderless came to Kautilya with a clear brief: help us acquire immigration law firms or client books, absorb
@@ -122,13 +122,12 @@ export default function StoryBorderless() {
         <h2>The Market Said No</h2>
         <p>
           Kautilya's initial market work revealed something that a traditional M&amp;A advisor might have taken months to
-          discover — or never acknowledged at all.
+          discover, or never acknowledged at all.
         </p>
         <p>
           The UK immigration advisory space is deeply relationship-driven, governed by strict regulatory and ethical
           constraints, and culturally resistant to transactional dealmaking. Operators don't sell partial client books. They
-          don't respond well to cold acquisition outreach. And they certainly don't hand over their most valuable asset —
-          client trust — to a stranger with a term sheet.
+          don't respond well to cold acquisition outreach. And they certainly don't hand over their most valuable asset, client trust, to a stranger with a term sheet.
         </p>
         <ul className="constraint-list">
           <li>Full firm acquisitions required long diligence cycles, partner approvals, and regulatory reviews</li>
@@ -149,11 +148,10 @@ export default function StoryBorderless() {
         </div>
         <p>
           Instead of asking operators to sell, Kautilya asked a different question: if sellers won't part with their clients
-          outright, how else can cashflow be transferred — compliantly, quickly, and with trust intact?
+          outright, how else can cashflow be transferred, compliantly, quickly, and with trust intact?
         </p>
         <p>
-          Two structures emerged. First, targeted client book transfers where legally and operationally feasible. Second — and
-          this became the real unlock — referral-based overflow partnerships, where operators route excess demand to Borderless
+          Two structures emerged. First, targeted client book transfers where legally and operationally feasible. Second, this became the real unlock, referral-based overflow partnerships, where operators route excess demand to Borderless
           in exchange for downstream economics.
         </p>
         <p>This wasn't standard M&amp;A playbook. But it was structurally aligned with how the market actually works.</p>
@@ -166,8 +164,8 @@ export default function StoryBorderless() {
         <p>Kautilya doesn't sample markets. It exhausts them.</p>
         <p>
           Over six weeks, the team executed a research-led sourcing operation across the full UK immigration advisory
-          landscape. The goal was to map every viable counterparty in Borderless's core segment — B2B Skilled Worker
-          sponsor-license providers — and stress-test which deal structures would actually convert.
+          landscape. The goal was to map every viable counterparty in Borderless's core segment, B2B Skilled Worker
+          sponsor-license providers, and stress-test which deal structures would actually convert.
         </p>
         <div className="metrics-strip">
           <div className="metric">
@@ -255,7 +253,7 @@ export default function StoryBorderless() {
         <p>
           The work required approximately 960 hours of effort across sourcing, outreach, structuring, and competitive
           research. To replicate this in-house at even UK minimum wage would have cost Borderless roughly £11,500–£12,000 in
-          direct labour alone — and delivering comparable outcomes would realistically require more senior commercial talent,
+          direct labour alone, and delivering comparable outcomes would realistically require more senior commercial talent,
           pushing the true cost materially higher.
         </p>
         <p>
@@ -276,7 +274,7 @@ export default function StoryBorderless() {
         </p>
         <p>
           Borderless didn't just avoid a suboptimal acquisition. They emerged with a scalable, repeatable model for
-          non-dilutive growth — and the market intelligence to deploy it with confidence.
+          non-dilutive growth, and the market intelligence to deploy it with confidence.
         </p>
         <div className="story-coda">
           <div className="coda-text">

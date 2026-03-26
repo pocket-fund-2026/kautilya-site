@@ -9,7 +9,7 @@ export default function StoryDealSourcing() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('My Morning Routine Is Looking at Acquire.com for 30 Min — via @kautilya');
+    const text = encodeURIComponent('My Morning Routine Is Looking at Acquire.com for 30 Min , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

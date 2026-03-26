@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
       from: `"Kautilya" <${process.env.SMTP_USER}>`,
       to: process.env.CAREERS_EMAIL || 'hello@pocket-fund.com',
       replyTo: email,
-      subject: `Acquisition Thesis Inquiry — ${name}`,
+      subject: `Acquisition Thesis Inquiry: ${name}`,
       html: `
         <h2>New Engagement Inquiry</h2>
         <table style="border-collapse:collapse;font-family:sans-serif;font-size:14px;">

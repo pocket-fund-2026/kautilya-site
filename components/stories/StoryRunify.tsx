@@ -8,7 +8,7 @@ export default function StoryRunify() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('$110K Acquisition, $30K Down: Structuring Around Uncertainty — via @kautilya');
+    const text = encodeURIComponent('$110K Acquisition, $30K Down: Structuring Around Uncertainty , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -126,7 +126,7 @@ export default function StoryRunify() {
         </p>
         <div className="pull-quote">
           <p>
-            How do you price something where the most important signal — whether users actually stick around — hasn't
+            How do you price something where the most important signal, whether users actually stick around, hasn't
             had time to emerge?
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function StoryRunify() {
           different.
         </p>
         <ul className="constraint-list">
-          <li>Revenue was AUD-denominated, not USD — an immediate ~30% haircut</li>
+          <li>Revenue was AUD-denominated, not USD, an immediate ~30% haircut</li>
           <li>A material portion was trial-heavy, with users counted before cash had been collected</li>
           <li>Annual price anchoring distorted MRR optics</li>
           <li>Conversion depended on trial completion, paywall experimentation, and App Store billing timing</li>
@@ -232,14 +232,14 @@ export default function StoryRunify() {
           <li>Founder retained involvement, aligned through structures rewarding real performance</li>
         </ul>
         <p>
-          The negotiation was precise. The seller initially expected 30% upfront on an implied $77,000 valuation —
+          The negotiation was precise. The seller initially expected 30% upfront on an implied $77,000 valuation,
           roughly $23,100 at close. Kautilya's opening position was approximately $16,000 upfront (20%), with the
           remainder delivered through the earn-out and equity structure. The debate wasn't about valuation fairness.
           It was about liquidity timing and certainty, treated as a capital deployment decision rather than a price
           revision.
         </p>
         <p>
-          The resolution landed at $20,000 upfront — a controlled midpoint concession achieved without reopening the
+          The resolution landed at $20,000 upfront, a controlled midpoint concession achieved without reopening the
           earn-out cap, milestone economics, the 70/30 equity split, or any governance and control provisions.
           Post-agreement, the majority of consideration remained performance-linked, time-based, and
           escrow-protected.

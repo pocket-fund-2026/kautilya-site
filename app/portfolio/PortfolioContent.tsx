@@ -32,7 +32,7 @@ const deals: Deal[] = [
     name: 'Inspire3',
     logo: '/images/portfolio-logos/inspire3.png',
     oneLiner:
-      'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio — 30,134 transactions audited across 19 websites in under 15 days.',
+      'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio. 30,134 transactions audited across 19 websites in under 15 days.',
     metrics: [
       { val: '30,134', label: 'Transactions Validated' },
       { val: '19', label: 'Websites Audited' },
@@ -50,7 +50,7 @@ const deals: Deal[] = [
     name: 'Borderless',
     logo: '/images/portfolio-logos/borderless.png',
     oneLiner:
-      'Built a proprietary M&A pipeline through unconventional deal structures in the UK immigration market — saved ~£11.5K in the process.',
+      'Built a proprietary M&A pipeline through unconventional deal structures in the UK immigration market, saved ~£11.5K in the process.',
     metrics: [
       { val: '2,600+', label: 'Outreach Touches' },
       { val: '8-10', label: 'Opportunities' },
@@ -66,7 +66,7 @@ const deals: Deal[] = [
     name: 'Dino Games',
     logo: '/images/portfolio-logos/dino-games.jpeg',
     oneLiner:
-      'Sourced, structured, and closed a cash-flow-positive mobile game acquisition — from off-market discovery to operator deployment in 8 weeks.',
+      'Sourced, structured, and closed a cash-flow-positive mobile game acquisition, from off-market discovery to operator deployment in 8 weeks.',
     metrics: [
       { val: '500+', label: 'Outbound' },
       { val: '~130', label: 'Conversations' },
@@ -82,7 +82,7 @@ const deals: Deal[] = [
     name: 'Runify',
     logo: '/images/portfolio-logos/runify.png',
     oneLiner:
-      'Sourced, diligenced, and structured a mobile app acquisition with only $20K deployed at close — protected by a performance-linked earn-out.',
+      'Sourced, diligenced, and structured a mobile app acquisition with only $20K deployed at close, protected by a performance-linked earn-out.',
     metrics: [
       { val: '~500', label: 'Outbound' },
       { val: '~45 Days', label: 'Time to Close' },
@@ -217,7 +217,7 @@ export default function PortfolioContent() {
           <div className="service-accent service-accent--advisory" />
           <div className="service-eyebrow">BUY-SIDE ADVISORY</div>
           <p className="service-desc">
-            We construct proprietary acquisition pipelines on demand — market mapping, deal sourcing, diligence, and execution across digital assets, SaaS, and micro-PE.
+            We construct proprietary acquisition pipelines on demand: market mapping, deal sourcing, diligence, and execution across digital assets, SaaS, and micro-PE.
           </p>
           <Link href="/engage" className="service-cta">Start a mandate →</Link>
         </div>
@@ -226,7 +226,7 @@ export default function PortfolioContent() {
           <div className="service-accent service-accent--intelligence" />
           <div className="service-eyebrow">MARKET INTELLIGENCE</div>
           <p className="service-desc">
-            Sector analyses, acquisition frameworks, and deal breakdowns — built from real engagements, not theory. We publish what we learn.
+            Sector analyses, acquisition frameworks, and deal breakdowns, built from real engagements, not theory. We publish what we learn.
           </p>
           <Link href="/stories" className="service-cta">Read our stories →</Link>
         </div>

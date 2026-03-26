@@ -9,7 +9,7 @@ export default function StoryPocketDeals() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Pocket Deals #1: A $15K Micro-SaaS for Autism Support — via @kautilya');
+    const text = encodeURIComponent('Pocket Deals #1: A $15K Micro-SaaS for Autism Support , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

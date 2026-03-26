@@ -3,7 +3,7 @@
 import { useState, useRef, type ChangeEvent, type FormEvent } from 'react';
 
 const OPEN_ROLES = [
-  'Analyst — Deal Sourcing',
+  'Analyst',
   'Operations',
   'Full Stack Developer',
   'Marketing',
@@ -164,6 +164,7 @@ export default function CareersContent() {
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
+      window.open('https://forms.gle/4nB5K2rf6jGVWpGt9', '_blank', 'noopener');
       setFormData({ fullName: '', email: '', countryCode: '+91', phone: '', role: '', workMode: '' });
       setCvFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -188,13 +189,13 @@ export default function CareersContent() {
         <h1 className="section-title">Build With Us</h1>
         <p className="careers-statement">
           Kautilya is a small team that operates with disproportionate intensity. We think systematically about markets, value
-          precision over volume, and believe that the best deal sourcing is an intellectual discipline — not a numbers game.
+          precision over volume, and believe that the best deal sourcing is an intellectual discipline, not a numbers game.
         </p>
       </div>
       <div className="content-section">
         <div className="roles-section">
           <div className="section-eyebrow">Open Roles</div>
-          <div className="role-card reveal" onClick={() => handleRoleClick('Analyst — Deal Sourcing')}>
+          <div className="role-card reveal" onClick={() => handleRoleClick('Analyst')}>
             <div>
               <div className="role-title">Analyst</div>
               <div className="role-detail">
@@ -250,7 +251,7 @@ export default function CareersContent() {
             <div>
               <div className="role-title">Founder&apos;s Office Intern</div>
               <div className="role-detail">
-                Work directly with the founder across deal sourcing, strategy, and operations — a crash course in building an advisory firm.
+                Work directly with the founder across deal sourcing, strategy, and operations: a crash course in building an advisory firm.
               </div>
               <div className="role-tags">
                 <span className="role-tag">Internship</span>
@@ -417,7 +418,7 @@ export default function CareersContent() {
               <div className="culture-title">Builder's Mentality</div>
               <div className="culture-desc">
                 Kautilya is being built. If you want to join a finished institution, this isn't it. If you want to help build
-                one — with your fingerprints on the methodology, the brand, and the culture — this is the place.
+                one, with your fingerprints on the methodology, the brand, and the culture. This is the place.
               </div>
             </div>
           </div>

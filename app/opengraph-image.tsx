@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Kautilya — Buy-Side Advisory';
+export const alt = 'Kautilya | Buy-Side Advisory';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -51,7 +51,7 @@ export default function OgImage() {
             lineHeight: 1.6,
           }}
         >
-          Proprietary deal sourcing — in any sector, against any criteria, from first principles.
+          Proprietary deal sourcing: in any sector, against any criteria, from first principles.
         </div>
       </div>
     ),

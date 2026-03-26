@@ -9,7 +9,7 @@ export default function StoryDiamonds() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('How to Find Diamonds in the Rough — via @kautilya');
+    const text = encodeURIComponent('How to Find Diamonds in the Rough , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

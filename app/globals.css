@@ -21,7 +21,7 @@ body {
 }
 
 /* ================================================================
-   KAUTILYA — Shared Styles
+   KAUTILYA – Shared Styles
    Cormorant (display) + Lora (body)
    Canvas: #3B3640 | Sky: #010118
    ================================================================ */
@@ -116,7 +116,7 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   /* Lightened to a richer, more visible indigo/plum */
-  background: rgba(45, 36, 62, 0.88); 
+  background: rgba(45, 36, 62, 0.99);
   border-bottom: 1px solid var(--border);
   transition: all 0.5s ease;
 }
@@ -171,7 +171,7 @@ body {
 .header.header--sky nav a { color: rgba(249,248,246,0.3); }
 .header.header--sky nav a:hover, .header.header--sky nav a.active { color: var(--header-footer-accent); }
 
-/* Hamburger — hidden on desktop */
+/* Hamburger – hidden on desktop */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -543,7 +543,7 @@ body {
 a.deal-card { cursor: pointer; }
 .deal-card.full-width { grid-column: 1 / -1; }
 
-/* Card top row — tag + price */
+/* Card top row – tag + price */
 .deal-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
 
 /* Tags */
@@ -569,7 +569,7 @@ a.deal-card { cursor: pointer; }
 
 /* Logo */
 .deal-logo { margin: 6px 0 8px; height: 36px; display: flex; align-items: center; }
-.deal-logo img { height: 100%; width: auto; max-width: 120px; opacity: 0.9; }
+.deal-logo img { height: 100%; width: auto; max-width: 120px; opacity: 0.9; border-radius: 8px; }
 
 /* Name */
 .deal-name { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 25px; font-weight: 500; color: var(--text-primary); margin-bottom: 6px; letter-spacing: 0.5px; }
@@ -1041,7 +1041,7 @@ a.deal-card { cursor: pointer; }
 }
 .service-cta:hover { border-color: var(--gold); }
 
-/* Border Beam — conic gradient approach */
+/* Border Beam – conic gradient approach */
 @property --beam-angle {
   syntax: '<angle>';
   initial-value: 0deg;
@@ -1571,7 +1571,7 @@ a.deal-card { cursor: pointer; }
 }
 
 .constraint-list li::before {
-  content: '—';
+  content: '–';
   position: absolute;
   left: 0;
   color: var(--gold-dim);
@@ -1655,7 +1655,7 @@ a.deal-card { cursor: pointer; }
    ================================================================ */
 
 @media (max-width: 768px) {
-  /* Header — hamburger layout */
+  /* Header – hamburger layout */
   .header {
     padding: 16px 24px;
     flex-wrap: nowrap;
@@ -1686,7 +1686,7 @@ a.deal-card { cursor: pointer; }
     background: rgba(249,248,246,0.7);
   }
 
-  /* Hide CTA from header bar on mobile — it appears inside the menu */
+  /* Hide CTA from header bar on mobile – it appears inside the menu */
   .header > .cta-btn {
     display: none;
   }
@@ -2032,7 +2032,7 @@ a.deal-card { cursor: pointer; }
 }
 
 @media (max-width: 480px) {
-  /* Header — tighter mobile */
+  /* Header – tighter mobile */
   .header {
     padding: 14px 16px;
   }

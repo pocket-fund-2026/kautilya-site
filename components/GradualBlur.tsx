@@ -1,6 +1,6 @@
 "use client";
 // Component added by Ansh - github.com/ansh-dhanani
-// Adapted from reactbits.dev — mathjs replaced with native Math
+// Adapted from reactbits.dev – mathjs replaced with native Math
 
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import type { CSSProperties } from 'react';

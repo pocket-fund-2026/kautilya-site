@@ -4,7 +4,7 @@ import React, { useState, useCallback } from "react";
 import Image, { type ImageProps } from "next/image";
 
 // ---------------------------------------------------------------------------
-// Shimmer SVG generator — creates an animated gradient that sweeps left-to-right
+// Shimmer SVG generator – creates an animated gradient that sweeps left-to-right
 // The SVG is inlined as a base64 data-URI so there is zero network cost.
 // ---------------------------------------------------------------------------
 
@@ -47,7 +47,7 @@ const toBase64 = (str: string): string =>
 type ShimmerImageProps = Omit<ImageProps, "placeholder" | "blurDataURL"> & {
   /** Duration of the blur-to-sharp transition in ms (default: 500) */
   transitionDuration?: number;
-  /** Shimmer base colour — a dark neutral works best (default: "#1a1a1a") */
+  /** Shimmer base colour – a dark neutral works best (default: "#1a1a1a") */
   shimmerColor?: string;
 };
 
@@ -71,7 +71,7 @@ const ShimmerImage: React.FC<ShimmerImageProps> = ({
     [onLoad]
   );
 
-  // Determine shimmer dimensions — use explicit width/height when available,
+  // Determine shimmer dimensions – use explicit width/height when available,
   // fall back to reasonable defaults so the SVG scales correctly.
   const w = typeof rest.width === "number" ? rest.width : 700;
   const h = typeof rest.height === "number" ? rest.height : 475;

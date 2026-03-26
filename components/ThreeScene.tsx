@@ -311,7 +311,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     key.position.set(5, 5, 5);
     scene.add(key);
 
-    // Orbit controls — rotation only; disabled on touch devices to preserve vertical scroll
+    // Orbit controls – rotation only; disabled on touch devices to preserve vertical scroll
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
     controls.enablePan = false;
@@ -440,7 +440,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
           const progress = proxy.p;
           const nakshatraT = mapRange(progress, 0.0, 0.3); // Early glow for "Nakshatra" text window
           const model0T = mapRange(progress, 0.35, 0.45); // Saptarishi
-          const model1T = mapRange(progress, 0.47, 0.67); // Chakravyuha — matches "Strategy is the difference" text window
+          const model1T = mapRange(progress, 0.47, 0.67); // Chakravyuha – matches "Strategy is the difference" text window
           const model2T = mapRange(progress, 0.72, 1.0); // Dhruva
           const modelProgress = [model0T, model1T, model2T];
           const finalPhase = THREE.MathUtils.smoothstep(model2T, 0.76, 1);
@@ -475,7 +475,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
             }
           });
 
-          // Gemini-style star flash — track center, lock once converged
+          // Gemini-style star flash – track center, lock once converged
           const showStar = finalPhase > 0.001;
           const third = models[2]?.loaded;
           if (geminiStar && third) {

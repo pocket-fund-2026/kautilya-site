@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'FAQ',
   description:
-    'Frequently asked questions about Kautilya — buy-side advisory, deal sourcing methodology, sectors, and how to engage.',
+    'Frequently asked questions about Kautilya, buy-side advisory, deal sourcing methodology, sectors, and how to engage.',
   alternates: { canonical: 'https://www.kautilya-pe.com/faq' },
   openGraph: {
-    title: 'FAQ — Kautilya',
+    title: 'FAQ | Kautilya',
     url: 'https://www.kautilya-pe.com/faq',
-    description: 'Frequently asked questions about Kautilya — buy-side advisory and deal sourcing.',
+    description: 'Frequently asked questions about Kautilya, buy-side advisory and deal sourcing.',
   },
 };
 
@@ -17,17 +17,17 @@ const FAQ_ITEMS = [
   {
     question: 'What does Kautilya do?',
     answer:
-      'Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand. We source deals from first principles — in any sector, against any criteria, across geographies.',
+      'Kautilya is a buy-side advisory firm that constructs proprietary acquisition pipelines on demand. We source deals from first principles: in any sector, against any criteria, across geographies.',
   },
   {
     question: 'How does Kautilya source deals?',
     answer:
-      'We use systematic market mapping, proprietary outreach, and structured qualification to identify acquisition targets. We don\'t carry a pipeline — we build yours from scratch based on your specific criteria.',
+      'We use systematic market mapping, proprietary outreach, and structured qualification to identify acquisition targets. We don\'t carry a pipeline. We build yours from scratch based on your specific criteria.',
   },
   {
     question: 'What sectors does Kautilya cover?',
     answer:
-      'Kautilya is sector-agnostic. We build acquisition pipelines in any sector, against any criteria — from SaaS and technology to services, manufacturing, healthcare, and consumer.',
+      'Kautilya is sector-agnostic. We build acquisition pipelines in any sector, against any criteria: from SaaS and technology to services, manufacturing, healthcare, and consumer.',
   },
   {
     question: 'Where is Kautilya based?',
@@ -48,7 +48,7 @@ const FAQ_ITEMS = [
   {
     question: 'What makes Kautilya different from traditional M&A intermediaries?',
     answer:
-      'Unlike traditional intermediaries who carry a static pipeline of deals, we build bespoke acquisition pipelines from first principles — mapped to your specific thesis, sector focus, and investment criteria. Every engagement starts fresh with your criteria.',
+      'Unlike traditional intermediaries who carry a static pipeline of deals, we build bespoke acquisition pipelines from first principles, mapped to your specific thesis, sector focus, and investment criteria. Every engagement starts fresh with your criteria.',
   },
   {
     question: 'Is Kautilya hiring?',

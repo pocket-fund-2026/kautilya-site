@@ -9,7 +9,7 @@ export default function StoryPocketFund() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('The Pocket Fund: Where success isn\u2019t defined by VC funding — via @kautilya');
+    const text = encodeURIComponent('The Pocket Fund: Where success isn\u2019t defined by VC funding , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

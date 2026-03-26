@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"Kautilya Newsletter" <${process.env.SMTP_USER}>`,
       to: process.env.CAREERS_EMAIL || 'hello@pocket-fund.com',
-      subject: `Newsletter Signup — ${email}`,
+      subject: `Newsletter Signup: ${email}`,
       html: `
         <h2>New Newsletter Subscriber</h2>
         <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>

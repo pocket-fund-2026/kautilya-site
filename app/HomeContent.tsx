@@ -68,10 +68,10 @@ export default function HomeContent() {
     }
 
     const phases = [
-      [0.00, 0.20],  // phase 0 — "The market is vast"
-      [0.25, 0.45],  // phase 1 — "Most of it is noise"
-      [0.50, 0.72],  // phase 2 — "Strategy is the difference"
-      [0.76, 1.00],  // phase 3 — KAUTILYA title hold
+      [0.00, 0.20],  // phase 0 – "The market is vast"
+      [0.25, 0.45],  // phase 1 – "Most of it is noise"
+      [0.50, 0.72],  // phase 2 – "Strategy is the difference"
+      [0.76, 1.00],  // phase 3 – KAUTILYA title hold
     ];
 
     textOverlays.forEach((el, i) => {
@@ -283,7 +283,7 @@ return (
         </h1>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.<br />We don't carry a pipeline. We build yours.
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.<br />We don't carry a pipeline. We build yours.
         </p>
         <div className="scroll-cue">
           <span>Enter</span>
@@ -335,7 +335,7 @@ return (
           className="section-body"
           style={{ maxWidth: 800, margin: '0 auto 40px', fontSize: 15, lineHeight: '1.9', color: 'var(--text-secondary)' }}
         >
-          Chanakya's Arthashastra — the ancient treatise on statecraft and economic policy — is not merely a historical text.
+          Chanakya's Arthashastra, the ancient treatise on statecraft and economic policy, is not merely a historical text.
           It is a blueprint for strategic acquisition, institutional intelligence, and the patient accumulation of advantage.
           Kautilya embodies these principles in modern buy-side advisory.
         </p>
@@ -352,9 +352,9 @@ return (
             color: 'var(--gold)',
           }}
         >
-          "The wise acquire wealth as the bee gathers honey — without harming the flower."
+          "The wise acquire wealth as the bee gathers honey, without harming the flower."
           <footer style={{ marginTop: 20, fontSize: 12, fontStyle: 'normal', letterSpacing: 2, color: 'var(--text-tertiary)' }}>
-            — Arthashastra, Book II
+            – Arthashastra, Book II
           </footer>
         </blockquote>
       </div>
@@ -371,7 +371,7 @@ return (
           <Link className="pathway-card" href="/portfolio">
             <div className="card-eyebrow">Case Studies</div>
             <h3 className="card-title">Advisory Portfolio</h3>
-            <div className="card-desc">Closed acquisition mandates across sectors — from market mapping to deal close.</div>
+            <div className="card-desc">Closed acquisition mandates across sectors, from market mapping to deal close.</div>
             <span className="card-arrow">→</span>
           </Link>
           <Link className="pathway-card" href="/team">

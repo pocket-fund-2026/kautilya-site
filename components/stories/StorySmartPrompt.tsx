@@ -9,7 +9,7 @@ export default function StorySmartPrompt() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('SmartPrompt: Two Deals Killed, One Asset Acquired — via @kautilya');
+    const text = encodeURIComponent('SmartPrompt: Two Deals Killed, One Asset Acquired , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

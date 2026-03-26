@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: 'Kautilya — Buy-Side Advisory & Deal Sourcing',
+  title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
   description:
-    'Kautilya builds proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+    'Kautilya builds proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
   alternates: { canonical: 'https://www.kautilya-pe.com' },
   openGraph: {
-    title: 'Kautilya — Buy-Side Advisory & Deal Sourcing',
+    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
-      'Kautilya builds proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+      'Kautilya builds proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
   },
 };
 
@@ -21,7 +21,7 @@ const organizationSchema = {
   url: 'https://www.kautilya-pe.com',
   logo: 'https://www.kautilya-pe.com/icon.svg',
   description:
-    'Buy-side advisory firm that constructs proprietary acquisition pipelines on demand — in any sector, against any criteria, from first principles.',
+    'Buy-side advisory firm that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'hello@pocket-fund.com',

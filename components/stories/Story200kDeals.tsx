@@ -9,7 +9,7 @@ export default function Story200kDeals() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('How We Closed $200K Worth of Deals in 6 Months — via @kautilya');
+    const text = encodeURIComponent('How We Closed $200K Worth of Deals in 6 Months , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

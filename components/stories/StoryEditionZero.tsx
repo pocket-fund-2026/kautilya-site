@@ -9,7 +9,7 @@ export default function StoryEditionZero() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Edition Zero: How This Is Bizness Began — via @kautilya');
+    const text = encodeURIComponent('Edition Zero: How This Is Bizness Began , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

@@ -4,10 +4,10 @@ import TeamContent from './TeamContent';
 export const metadata: Metadata = {
   title: 'Team',
   description:
-    'Meet the Kautilya team — a small group operating with disproportionate intensity across deal sourcing and market intelligence.',
+    'Meet the Kautilya team: a small group operating with disproportionate intensity across deal sourcing and market intelligence.',
   alternates: { canonical: 'https://www.kautilya-pe.com/team' },
   openGraph: {
-    title: 'Team — Kautilya',
+    title: 'Team | Kautilya',
     url: 'https://www.kautilya-pe.com/team',
     description: 'Meet the Kautilya team.',
   },

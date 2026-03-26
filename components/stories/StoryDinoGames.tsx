@@ -8,7 +8,7 @@ export default function StoryDinoGames() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Acquiring a Self-Funding Mobile Asset in 8 Weeks — via @kautilya');
+    const text = encodeURIComponent('Acquiring a Self-Funding Mobile Asset in 8 Weeks , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -114,7 +114,7 @@ export default function StoryDinoGames() {
         <p>
           The strategic gap was clear. Without a live, revenue-generating asset in the portfolio, the client was flying
           blind. Acquisitions weren't meant to replace internal product development. They were meant to de-risk and
-          accelerate it — compressing learning cycles and grounding decisions in real user behaviour rather than untested
+          accelerate it, compressing learning cycles and grounding decisions in real user behaviour rather than untested
           hypotheses.
         </p>
 
@@ -131,7 +131,7 @@ export default function StoryDinoGames() {
           directories and analytics platforms.
         </p>
         <p>
-          Proprietary, off-market deal flow came through founder-native channels — including Kautilya's owned and
+          Proprietary, off-market deal flow came through founder-native channels, including Kautilya's owned and
           operated acquisition community on Reddit (the largest of its kind on the platform), along with targeted
           outreach to owner-operators on Reddit and Twitter.
         </p>
@@ -219,7 +219,7 @@ export default function StoryDinoGames() {
         <p>
           The first negotiation call was spent entirely on operational mechanics: who managed ad spend and
           optimisation, how often creatives were refreshed, the role of mediation tuning, the level of hands-on
-          involvement required to maintain profitability. This established a critical valuation truth early — the
+          involvement required to maintain profitability. This established a critical valuation truth early: the
           asset's performance was operator-dependent, which meant higher multiples were difficult to justify and risk
           needed to be absorbed through structure, not paid for upfront.
         </p>
@@ -242,7 +242,7 @@ export default function StoryDinoGames() {
         </ul>
         <p>
           The upfront payment alone carried a 7–8 month payback period at current performance. Full valuation payback
-          came in at roughly 13 months — below the industry norm of 18–30 months — achieved without relying on
+          came in at roughly 13 months, below the industry norm of 18–30 months, achieved without relying on
           projections or roadmap execution.
         </p>
 
@@ -272,7 +272,7 @@ export default function StoryDinoGames() {
         </p>
         <p>
           This created immediate friction, but it was deliberate. The team systematically walked each reported number
-          back to source — asking sellers to guide live inside Google Ads (filters, campaign names, paused versus
+          back to source, asking sellers to guide live inside Google Ads (filters, campaign names, paused versus
           enabled campaigns) while cross-checking against AdMob revenue and Play Console IAP receipts.
         </p>
         <p>
@@ -296,8 +296,8 @@ export default function StoryDinoGames() {
         <h2>Post-Close: From Diligence to Execution in Days, Not Months</h2>
         <p>
           A critical component of the engagement extended beyond transaction close. Kautilya supported the client in
-          hiring operators across marketing operations and technical execution — including UI/UX optimisation and game
-          development — sourced directly through Kautilya's existing network of mobile specialists.
+          hiring operators across marketing operations and technical execution, including UI/UX optimisation and game
+          development, sourced directly through Kautilya's existing network of mobile specialists.
         </p>
         <p>
           Candidates were evaluated through multiple interviews, prioritising hands-on experience in mobile growth

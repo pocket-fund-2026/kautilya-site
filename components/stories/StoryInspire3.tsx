@@ -8,7 +8,7 @@ export default function StoryInspire3() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio — via @kautilya');
+    const text = encodeURIComponent('Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

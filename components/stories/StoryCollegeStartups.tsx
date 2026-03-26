@@ -9,7 +9,7 @@ export default function StoryCollegeStartups() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('10 Reasons Why Now Is the Best Time to Start a Business in College — via @kautilya');
+    const text = encodeURIComponent('10 Reasons Why Now Is the Best Time to Start a Business in College , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

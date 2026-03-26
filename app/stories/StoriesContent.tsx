@@ -354,7 +354,7 @@ export default function StoriesContent() {
             <video
               ref={eventVideoRef}
               src="/videos/WebEventFinal.mp4"
-              aria-label="Inside the Room — what happens when acquisition entrepreneurs get together"
+              aria-label="Inside the Room: what happens when acquisition entrepreneurs get together"
               muted
               playsInline
               loop
@@ -379,7 +379,7 @@ export default function StoriesContent() {
             <video
               ref={singVideoRef}
               src="/videos/WebSingFinal.mp4"
-              aria-label="Beyond the Deal — the people behind the spreadsheets"
+              aria-label="Beyond the Deal: the people behind the spreadsheets"
               muted
               playsInline
               loop
@@ -407,7 +407,7 @@ export default function StoriesContent() {
           </div>
           <div className="yt-cta-text">
             <div className="yt-cta-title">See more on YouTube</div>
-            <div className="yt-cta-sub">Deal breakdowns, market analyses, and the journey — documented weekly on @devlikesbizness</div>
+            <div className="yt-cta-sub">Deal breakdowns, market analyses, and the journey, documented weekly on @devlikesbizness</div>
           </div>
           <span className="yt-cta-arrow">&rarr;</span>
         </a>

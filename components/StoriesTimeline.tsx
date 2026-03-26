@@ -40,7 +40,7 @@ const phases: Phase[] = [
     year: '2023',
     month: 'May',
     tag: 'EDITION ZERO',
-    title: 'Where it all started — a Sunday newsletter about buying small businesses.',
+    title: 'Where it all started: a Sunday newsletter about buying small businesses.',
     excerpt:
       'This Is Bizness launched as a weekly breakdown of five small businesses.',
     position: 'top',
@@ -55,7 +55,7 @@ const phases: Phase[] = [
     tag: 'THE POCKET FUND',
     title: 'A student-led fund buying businesses for under $5,000.',
     excerpt:
-      'Pocket Fund launched as a student initiative focused on acquisition entrepreneurship — buying, operating, and selling small online businesses.',
+      'Pocket Fund launched as a student initiative focused on acquisition entrepreneurship: buying, operating, and selling small online businesses.',
     position: 'bottom',
     accent: '#9ec5ff',
     surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
@@ -82,7 +82,7 @@ const phases: Phase[] = [
     tag: 'POCKET DEALS',
     title: 'Breaking down a $15K micro-SaaS supporting children with autism.',
     excerpt:
-      'A micro-SaaS offering visual schedules and step-by-step guidance for children with autism — at a $15K asking price.',
+      'A micro-SaaS offering visual schedules and step-by-step guidance for children with autism, at a $15K asking price.',
     position: 'bottom',
     accent: '#c9a84c',
     surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
@@ -122,7 +122,7 @@ const phases: Phase[] = [
     tag: 'SEARCH FUNDS',
     title: 'How a Stanford model from the 1980s became a new asset class.',
     excerpt:
-      'From Stanford MBA experiment to distinct asset class — the search fund model and its evolution across institutional and self-funded approaches.',
+      'From Stanford MBA experiment to distinct asset class: the search fund model and its evolution across institutional and self-funded approaches.',
     position: 'top',
     accent: '#c9a84c',
     surface: 'linear-gradient(172deg, #0C1018 0%, #060A10 52%, #0A0E18 100%)',
@@ -134,7 +134,7 @@ const phases: Phase[] = [
     year: '2026',
     month: 'Feb',
     tag: 'DEAL CLOSING',
-    title: 'Five deals. Six months. $200K closed — here is what we learned.',
+    title: 'Five deals. Six months. $200K closed. Here is what we learned.',
     excerpt:
       'The team shifted from buying businesses to advising entrepreneurs on acquisitions, closing five deals totaling $200K.',
     position: 'bottom',
