@@ -7,10 +7,17 @@ const OPEN_ROLES = [
   'Operations',
   'Full Stack Developer',
   'Marketing',
-  "Founder's Office Intern",
+  "Founder's Office",
 ] as const;
 
 const WORK_MODES = ['Remote', 'On Site (Mumbai)'] as const;
+
+const ROLE_FORM_LINKS: Record<string, string> = {
+  'Analyst': 'https://forms.gle/EjyxLed7vvpjctKA8',
+  'Operations': 'https://forms.gle/jKF5sir751CYSZiV7',
+  'Full Stack Developer': 'https://forms.gle/rcBFdEbb5o3s4TVF6',
+  'Marketing': 'https://forms.gle/SVZpfo3LL9LgWX1G8',
+};
 
 const COUNTRY_CODES = [
   { code: '+91', label: 'IN +91', digits: 10 },
@@ -164,7 +171,8 @@ export default function CareersContent() {
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
-      window.open('https://forms.gle/4nB5K2rf6jGVWpGt9', '_blank', 'noopener');
+      const formLink = ROLE_FORM_LINKS[formData.role];
+      if (formLink) window.open(formLink, '_blank', 'noopener');
       setFormData({ fullName: '', email: '', countryCode: '+91', phone: '', role: '', workMode: '' });
       setCvFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -247,7 +255,7 @@ export default function CareersContent() {
             </div>
             <div className="role-arrow">→</div>
           </div>
-          <div className="role-card reveal" style={{ transitionDelay: '.4s' }} onClick={() => handleRoleClick("Founder's Office Intern")}>
+          <div className="role-card reveal" style={{ transitionDelay: '.4s' }} onClick={() => handleRoleClick("Founder's Office")}>
             <div>
               <div className="role-title">Founder&apos;s Office Intern</div>
               <div className="role-detail">

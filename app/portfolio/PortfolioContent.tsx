@@ -167,7 +167,7 @@ export default function PortfolioContent() {
                 </div>
                 {d.logo && (
                   <div className="deal-logo">
-                    <img src={d.logo} alt={`${d.name} logo`} />
+                    <img src={d.logo} alt={`${d.name} – ${d.tag} – Kautilya Portfolio`} />
                   </div>
                 )}
                 <div className="deal-name">{d.name}</div>
