@@ -5,6 +5,7 @@ import StoriesTimeline from '@/components/StoriesTimeline';
 
 export default function StoriesContent() {
   const eventVideoRef = useRef<HTMLVideoElement>(null);
+  const symbiosisVideoRef = useRef<HTMLVideoElement>(null);
   const singVideoRef = useRef<HTMLVideoElement>(null);
   const [playerSrc, setPlayerSrc] = useState<string | null>(null);
 
@@ -153,12 +154,18 @@ export default function StoriesContent() {
           margin-left: 3px;
         }
 
+        .video-card-featured {
+          grid-column: 1 / -1;
+          max-width: 660px;
+          margin: 0 auto;
+        }
+
         /* YouTube CTA */
         .yt-cta {
           display: flex;
           align-items: center;
           gap: 20px;
-          margin-top: 28px;
+          margin-top: 60px;
           padding: 24px 32px;
           border: 1px solid var(--border);
           border-radius: 12px;
@@ -301,6 +308,7 @@ export default function StoriesContent() {
 
           .video-card-title { font-size: 18px; }
           .video-card-overlay { padding: 20px; }
+          .video-card-featured { transform: scale(1); max-width: 100%; margin-bottom: 0; }
 
           .yt-cta {
             flex-direction: column;
@@ -372,6 +380,31 @@ export default function StoriesContent() {
 
           <div
             className="video-card"
+            onMouseEnter={() => handleVideoHover(symbiosisVideoRef, true)}
+            onMouseLeave={() => handleVideoHover(symbiosisVideoRef, false)}
+            onClick={() => openPlayer('/videos/WebSymbiosisFinal.mp4')}
+          >
+            <video
+              ref={symbiosisVideoRef}
+              src="/videos/WebSymbiosisFinal.mp4"
+              aria-label="Symbiosis Talk: Dev's college talk on acquisitions"
+              muted
+              playsInline
+              loop
+              preload="metadata"
+            />
+            <div className="video-card-overlay">
+              <div className="video-card-tag">Talk</div>
+              <div className="video-card-title">The Symbiosis Talk</div>
+              <div className="video-card-sub">Dev&apos;s college talk on acquisitions.</div>
+            </div>
+            <div className="video-play-icon">
+              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+            </div>
+          </div>
+
+          <div
+            className="video-card video-card-featured"
             onMouseEnter={() => handleVideoHover(singVideoRef, true)}
             onMouseLeave={() => handleVideoHover(singVideoRef, false)}
             onClick={() => openPlayer('/videos/WebSingFinal.mp4')}
