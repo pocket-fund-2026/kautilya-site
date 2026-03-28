@@ -369,9 +369,9 @@ export default function StoriesContent() {
               preload="metadata"
             />
             <div className="video-card-overlay">
-              <div className="video-card-tag">Event</div>
-              <div className="video-card-title">Inside the Room</div>
-              <div className="video-card-sub">What happens when acquisition entrepreneurs get together.</div>
+              <div className="video-card-tag">Office</div>
+              <div className="video-card-title">Inside the Kautilya Office</div>
+              <div className="video-card-sub">Clips from our office and events we have hosted.</div>
             </div>
             <div className="video-play-icon">
               <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
@@ -395,8 +395,8 @@ export default function StoriesContent() {
             />
             <div className="video-card-overlay">
               <div className="video-card-tag">Talk</div>
-              <div className="video-card-title">The Symbiosis Talk</div>
-              <div className="video-card-sub">Dev&apos;s college talk on acquisitions.</div>
+              <div className="video-card-title">SymBiz 2025 - Symbiosis, Pune</div>
+              <div className="video-card-sub">Our founder was invited to speak about micro acquisitions.</div>
             </div>
             <div className="video-play-icon">
               <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
@@ -419,9 +419,9 @@ export default function StoriesContent() {
               preload="metadata"
             />
             <div className="video-card-overlay">
-              <div className="video-card-tag">Culture</div>
-              <div className="video-card-title">Beyond the Deal</div>
-              <div className="video-card-sub">The people behind the spreadsheets.</div>
+              <div className="video-card-tag">Conference</div>
+              <div className="video-card-title">Team Kautilya at INSEAD Singapore</div>
+              <div className="video-card-sub">Engaging with top investors and searchers at Asia's largest ETA conference.</div>
             </div>
             <div className="video-play-icon">
               <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
@@ -466,11 +466,6 @@ export default function StoriesContent() {
               <div className="social-platform">LinkedIn</div>
               <div className="social-handle">Pocket Fund</div>
               <div className="social-desc">Long-form posts, case reflections, and industry commentary.</div>
-            </a>
-            <a className="social-card" href="https://www.reddit.com/r/InsideAcquisitions/">
-              <div className="social-platform">Reddit</div>
-              <div className="social-handle">r/InsideAcquisitions</div>
-              <div className="social-desc">Community discussions on M&amp;A, sourcing, and deal mechanics.</div>
             </a>
           </div>
         </div>

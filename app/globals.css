@@ -333,7 +333,7 @@ body {
 
 .footer-logo {
   font-family: var(--font-cormorant), 'Cormorant', serif;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 10px;
   text-transform: uppercase;
   color: var(--header-footer-accent);
@@ -343,7 +343,7 @@ body {
 
 .footer-tagline {
   font-family: var(--font-cormorant), 'Cormorant', serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   color: var(--text-primary);
   margin-bottom: 8px;
@@ -351,7 +351,7 @@ body {
 }
 
 .footer-tagline-script {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   margin-bottom: 20px;
 }
@@ -362,7 +362,7 @@ body {
 }
 
 .footer-social a {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: var(--text-muted);
   text-decoration: none;
@@ -387,7 +387,7 @@ body {
 }
 
 .footer-column-title {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--header-footer-accent);
@@ -396,7 +396,7 @@ body {
 }
 
 .footer-column a {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.3s;
@@ -408,7 +408,7 @@ body {
 }
 
 .footer-copyright {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-muted);
   line-height: 1.6;
   margin-top: 12px;
@@ -419,7 +419,7 @@ body {
   margin: 0 auto;
   padding-top: 30px;
   border-top: 1px solid var(--border-light);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
   color: var(--text-faint);
 }
@@ -2063,7 +2063,16 @@ a.deal-card { cursor: pointer; }
 
   .footer-columns {
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
+  }
+
+  .footer-column {
+    gap: 14px;
+  }
+
+  .footer-column a {
+    padding: 4px 0;
+    display: block;
   }
 
   .footer-disclaimer {

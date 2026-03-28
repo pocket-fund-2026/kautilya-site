@@ -126,15 +126,15 @@ return (
     text-align: center;
   }
 
-  .intro .eyebrow {
-    font-size: 10px; letter-spacing: 7px; text-transform: uppercase;
-    color: var(--gold); font-weight: 400;
+  .intro .section-eyebrow {
+    font-size: 12px; letter-spacing: 7px;
+    font-weight: 400;
     opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
   }
 
   .intro h1 {
     font-family: var(--font-cormorant), 'Cormorant', serif;
-    font-size: 52px; font-weight: 400; color: var(--text-primary);
+    font-size: 52px; font-weight: 600; color: var(--text-primary);
     margin-top: 24px; letter-spacing: 2px; line-height: 1.2;
     opacity: 1;
   }
@@ -222,7 +222,7 @@ return (
     .sky-mask-top, .sky-mask-bottom { height: 20vh; }
 
     .sky-scroll { height: 850vh; }
-    .sky-text-overlay { padding-bottom: 80px; }
+    .sky-text-overlay { padding-bottom: 8vh; }
     .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; margin-bottom: 12px; }
     .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; }
     .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 12px; }
@@ -254,7 +254,7 @@ return (
     .sky-mask-top, .sky-mask-bottom { height: 15vh; }
 
     .sky-scroll { height: 720vh; }
-    .sky-text-overlay { padding-bottom: 60px; }
+    .sky-text-overlay { padding-bottom: 18vh; }
     .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; }
     .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; }
     .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 8px; }
@@ -283,7 +283,7 @@ return (
         </h1>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.<br />We don't carry a pipeline. We build yours.
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.<br /><span style={{ color: '#fff' }}>We don&apos;t carry a pipeline. We build yours.</span>
         </p>
         <div className="scroll-cue">
           <span>Enter</span>
