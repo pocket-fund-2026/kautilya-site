@@ -26,7 +26,7 @@ export type StoryMeta = {
 
 export const STORY_META: Record<StorySlug, StoryMeta> = {
   'borderless': {
-    title: 'Borderless: Rewriting the M&A Playbook for UK Immigration',
+    title: 'Rewriting the M&A Playbook for UK Immigration',
     description: 'How Kautilya built a proprietary deal pipeline in a market that doesn\'t do deals.',
     author: 'Dev Shah',
   },

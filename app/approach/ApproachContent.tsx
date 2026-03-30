@@ -1175,7 +1175,7 @@ export default function ApproachContent() {
                 not a rough budget range.
               </p>
               <p>
-                <strong>For <Link href="/stories/borderless" className="story-link">Borderless</Link></strong>, generating 2 to 3M ARR and heading into a Series A,
+                <strong>For <Link href="/stories/borderless" className="story-link">a UK immigration platform</Link></strong>, generating 2 to 3M ARR and heading into a Series A,
                 the mandate was not to find a business to acquire. It was to identify 50K to 250K
                 in annualised cashflow through structures the market had not seen before.
               </p>
@@ -1198,7 +1198,7 @@ export default function ApproachContent() {
             <div className="cards-column">
               <Link href="/stories/borderless" className="proof-card-link">
                 <div className="proof-card highlight wide">
-                  <div className="card-label">Borderless - Reframing the brief</div>
+                  <div className="card-label">UK Immigration - Reframing the brief</div>
                   <div className="card-metric small">Not acquire a firm</div>
                   <div className="card-desc">
                     The original ask was to buy an immigration business. We redefined it:
@@ -1271,7 +1271,7 @@ export default function ApproachContent() {
 
               <div className="pull-quote">
                 <p>
-                  For Borderless, we built a target universe that had never existed before, mapping
+                  For a UK immigration advisory client, we built a target universe that had never existed before, mapping
                   a market that had never been systematically approached for M and A.
                 </p>
               </div>
@@ -1320,7 +1320,7 @@ export default function ApproachContent() {
             <div className="cards-column">
               <Link href="/stories/borderless" className="proof-card-link">
                 <div className="proof-card">
-                  <div className="card-label">Borderless - Universe built</div>
+                  <div className="card-label">UK Immigration - Universe built</div>
                   <div className="card-metric">1,500</div>
                   <div className="card-desc">
                     Advisors mapped from GOV.UK, Companies House, ILB, and WhatsApp communities.
@@ -1389,7 +1389,7 @@ export default function ApproachContent() {
               </div>
 
               <p>
-                For Borderless, we ran channels in parallel and measured conversion in real time.
+                For this engagement, we ran channels in parallel and measured conversion in real time.
               </p>
 
               <table className="channel-table">
@@ -1445,7 +1445,7 @@ export default function ApproachContent() {
 
               <Link href="/stories/borderless" className="proof-card-link">
                 <div className="proof-card tall">
-                  <div className="card-label">Borderless - Outreach result</div>
+                  <div className="card-label">UK Immigration - Outreach result</div>
                   <div className="card-metric small">43+</div>
                   <div className="card-desc">
                     Serious conversations with operators in a market never approached for M and A
@@ -1681,13 +1681,13 @@ export default function ApproachContent() {
             <div className="narrative">
               <div className="pull-quote">
                 <p>
-                  Borderless entered its Series A with a live growth lever worth 70K to 80K
+                  The client entered its Series A with a live growth lever worth 70K to 80K
                   annually and a repeatable framework to keep deploying.
                 </p>
               </div>
 
               <p>
-                For <Link href="/stories/borderless" className="story-link">Borderless</Link>: 1,500+ operators mapped and 43+ serious conversations converted to
+                For <Link href="/stories/borderless" className="story-link">our UK immigration client</Link>: 1,500+ operators mapped and 43+ serious conversations converted to
                 a referral partnership worth <span className="inline-metric">70K-80K / yr</span>
                 and an enterprise-value impact up to <span className="inline-metric">1.6M</span>.
               </p>

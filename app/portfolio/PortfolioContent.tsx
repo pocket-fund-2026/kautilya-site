@@ -47,10 +47,9 @@ const deals: Deal[] = [
     tag: 'Deal Advisory',
     tagClass: 'advisory',
     price: '£1-5M',
-    name: 'Borderless',
-    logo: '/images/portfolio-logos/borderless.png',
+    name: 'UK Immigration Advisory',
     oneLiner:
-      'Built a proprietary M&A pipeline through unconventional deal structures in the UK immigration market, saved ~£11.5K in the process.',
+      'Rewrote the M&A playbook for UK immigration — built a proprietary deal pipeline in a market that doesn\'t do deals, saving ~£11.5K in the process.',
     metrics: [
       { val: '2,600+', label: 'Outreach Touches' },
       { val: '8-10', label: 'Opportunities' },

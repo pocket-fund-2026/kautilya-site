@@ -9,7 +9,7 @@ export default function StoryBorderless() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Borderless: Rewriting the M&A Playbook , via @kautilya');
+    const text = encodeURIComponent('Rewriting the M&A Playbook for UK Immigration, via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -19,7 +19,7 @@ export default function StoryBorderless() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('Borderless: Rewriting the M&A Playbook');
+    const subject = encodeURIComponent('Rewriting the M&A Playbook for UK Immigration');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -91,7 +91,7 @@ export default function StoryBorderless() {
           <span className="meta-tag geo">United Kingdom</span>
           <span className="meta-tag stage">Seed → Series A</span>
         </div>
-        <h1>Borderless: Rewriting the M&amp;A Playbook for UK Immigration</h1>
+        <h1>Rewriting the M&amp;A Playbook for UK Immigration</h1>
         <div className="subtitle">How Kautilya built a proprietary deal pipeline in a market that doesn't do deals.</div>
         <div className="hero-line" />
       </div>
@@ -99,17 +99,17 @@ export default function StoryBorderless() {
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
         <p>
-          Borderless had the kind of problem most seed-stage startups would envy. A $2.5M raise behind them, $2–3M in ARR on
+          The client had the kind of problem most seed-stage startups would envy. A $2.5M raise behind them, $2–3M in ARR on
           the books, and a Series A process on the horizon. What they needed wasn't more product. It was more revenue. Fast,
           non-dilutive, and executable before investors came knocking.
         </p>
         <p>
-          The math was straightforward. In venture markets, companies at Borderless's stage typically command around 20×
+          The math was straightforward. In venture markets, companies at the client's stage typically command around 20×
           revenue multiples. If they could add £50K–£250K in annualised cashflow through acquisitions or partnerships, that
           would translate into £1M–£5M in enterprise value, without issuing a single new share.
         </p>
         <p>
-          So Borderless came to Kautilya with a clear brief: help us acquire immigration law firms or client books, absorb
+          So the client came to Kautilya with a clear brief: help us acquire immigration law firms or client books, absorb
           their recurring revenue onto our platform, and enter the Series A process with real growth levers investors can
           underwrite.
         </p>
@@ -142,7 +142,7 @@ export default function StoryBorderless() {
         <h2>The Reframe</h2>
         <div className="pull-quote">
           <p>
-            Borderless didn't actually need to own a business. They needed access to cash-flowing clients. Once that
+            The client didn't actually need to own a business. They needed access to cash-flowing clients. Once that
             distinction was clear, everything changed.
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function StoryBorderless() {
           outright, how else can cashflow be transferred, compliantly, quickly, and with trust intact?
         </p>
         <p>
-          Two structures emerged. First, targeted client book transfers where legally and operationally feasible. Second, this became the real unlock, referral-based overflow partnerships, where operators route excess demand to Borderless
+          Two structures emerged. First, targeted client book transfers where legally and operationally feasible. Second, this became the real unlock, referral-based overflow partnerships, where operators route excess demand to the client
           in exchange for downstream economics.
         </p>
         <p>This wasn't standard M&amp;A playbook. But it was structurally aligned with how the market actually works.</p>
@@ -164,7 +164,7 @@ export default function StoryBorderless() {
         <p>Kautilya doesn't sample markets. It exhausts them.</p>
         <p>
           Over six weeks, the team executed a research-led sourcing operation across the full UK immigration advisory
-          landscape. The goal was to map every viable counterparty in Borderless's core segment, B2B Skilled Worker
+          landscape. The goal was to map every viable counterparty in the client's core segment, B2B Skilled Worker
           sponsor-license providers, and stress-test which deal structures would actually convert.
         </p>
         <div className="metrics-strip">
@@ -207,7 +207,7 @@ export default function StoryBorderless() {
             <div className="phase-label">Weeks 3–4 · Qualification</div>
             <p>
               The funnel produced 43+ serious conversations with operators demonstrating genuine interest, and 8–10 with
-              strong strategic alignment to Borderless's B2B sponsor-license focus. B2C-heavy firms were excluded for weaker
+              strong strategic alignment to the client's B2B sponsor-license focus. B2C-heavy firms were excluded for weaker
               LTV/CAC dynamics. Mixed-service operators filtered out for requiring a different go-to-market motion. Focus
               narrowed to pure B2B providers.
             </p>
@@ -222,16 +222,16 @@ export default function StoryBorderless() {
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from Borderless referral partnerships" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from the client referral partnerships" width={1200} height={675} />
         </figure>
 
-        <h2>What Borderless Walked Away With</h2>
+        <h2>What the Client Walked Away With</h2>
         <p>
           A strategic referral agreement was agreed in principle, with an estimated annual cashflow impact of £70K–£80K. But
           the real deliverable was broader than any single deal.
         </p>
         <p>
-          Borderless emerged with a pipeline of 8–10 vetted, negotiation-ready opportunities. Pre-structured client book
+          The client emerged with a pipeline of 8–10 vetted, negotiation-ready opportunities. Pre-structured client book
           transfer arrangements. A repeatable partnership framework that could scale to £50K–£250K in total annualised
           cashflow. And critically, comprehensive competitive intelligence gathered organically through 1,000–1,500 operator
           conversations.
@@ -252,7 +252,7 @@ export default function StoryBorderless() {
         </div>
         <p>
           The work required approximately 960 hours of effort across sourcing, outreach, structuring, and competitive
-          research. To replicate this in-house at even UK minimum wage would have cost Borderless roughly £11,500–£12,000 in
+          research. To replicate this in-house at even UK minimum wage would have cost the client roughly £11,500–£12,000 in
           direct labour alone, and delivering comparable outcomes would realistically require more senior commercial talent,
           pushing the true cost materially higher.
         </p>
@@ -273,7 +273,7 @@ export default function StoryBorderless() {
           that runs on relationships.
         </p>
         <p>
-          Borderless didn't just avoid a suboptimal acquisition. They emerged with a scalable, repeatable model for
+          The client didn't just avoid a suboptimal acquisition. They emerged with a scalable, repeatable model for
           non-dilutive growth, and the market intelligence to deploy it with confidence.
         </p>
         <div className="story-coda">
