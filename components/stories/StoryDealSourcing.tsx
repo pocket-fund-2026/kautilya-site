@@ -97,7 +97,7 @@ export default function StoryDealSourcing() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="Laptop showing Acquire.com business marketplace listings during a morning deal sourcing session" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="5 habits of serious acquirers: check frequently, build analytical skill, use filters, negotiate early, track and revisit" width={1200} height={675} />
         </figure>
 
         <p>
@@ -123,7 +123,7 @@ export default function StoryDealSourcing() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/thousand.png" alt="Desk covered in printed business summaries being filtered and evaluated for acquisition" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/thousand.png" alt="From browse to buy: ~1,000 businesses reviewed, 100–200 evaluated per deal, multiple negotiations, 6 acquisitions closed" width={1200} height={675} />
         </figure>
 
         <h2>Five Tips for Serious Buyers</h2>

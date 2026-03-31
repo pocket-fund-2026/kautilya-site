@@ -97,7 +97,7 @@ export default function StorySearchFunds() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/month.png" alt="Lone figure searching through a vast library symbolising the 20-month median search fund journey" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/month.png" alt="The rise of search funds 1984–present: timeline from Jim Southern to 81% solo funds, 20-month median search, 37% never close, $14.4M median price" width={1200} height={675} />
         </figure>
 
         <p>
@@ -123,7 +123,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/partnered.png" alt="Two diverging paths in a forest representing the solo versus partnered search fund decision" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/partnered.png" alt="Solo vs partnered search: partnered 40.5% IRR with 25–30% equity, solo 30.3% IRR with 20–25% equity" width={1200} height={675} />
         </figure>
 
         <h2>Solo vs. Partnered</h2>
@@ -170,7 +170,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/barbell.png" alt="Barbell shape visualising the bimodal return distribution of search funds with 10x winners and losses" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/barbell.png" alt="The exit distribution: 31% result in losses, $2.25M median exit payout, 11% achieve 10x+ ROI" width={1200} height={675} />
         </figure>
 
         <h2>The Exit Distribution</h2>

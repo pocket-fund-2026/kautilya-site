@@ -97,7 +97,7 @@ export default function StoryPocketDeals() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.png" alt="Child using an iPad app with visual schedules designed to support children with autism" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.png" alt="Acquisition snapshot for iOS autism support app: $15,000 asking price, 2.5x revenue multiple, ~100% profit margin" width={1200} height={675} />
         </figure>
 
         <p>
@@ -144,7 +144,7 @@ export default function StoryPocketDeals() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/15000.png" alt="$15000 price tag on a micro-SaaS app representing an accessible acquisition opportunity" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/15000.png" alt="Pocket Deals #1 deal scorecard: margins, valuation, defensibility, and growth potential" width={1200} height={675} />
         </figure>
 
         <h2>Our Take</h2>
@@ -173,6 +173,10 @@ export default function StoryPocketDeals() {
             <div className="metric-label">Profit Margin</div>
           </div>
         </div>
+
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/micro-saas/numbers.png" alt="The numbers at a glance: $6,000 annual revenue and profit, $480 monthly revenue, $475 monthly profit" width={1200} height={675} />
+        </figure>
 
         <div className="story-coda">
           <div className="coda-text">

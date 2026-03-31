@@ -110,7 +110,7 @@ export default function Story200kDeals() {
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/five-deals.png" alt="Five chess pieces representing the five advisory deals closed by Kautilya totalling $200K" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/five-deals.png" alt="Six months, one milestone: $200K total deals closed, 5 advisory deals, 6 months, 11 team members" width={1200} height={675} />
         </figure>
 
         <h2>The Five Deals</h2>
@@ -146,7 +146,7 @@ export default function Story200kDeals() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/architecture.png" alt="Geometric steel beams symbolising structured deal architecture in micro-acquisitions" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/architecture.png" alt="Five deals, six months, $200K: deal stack showing Runify $110K, Dino Games $39K, Note Companion $30K, SmartPrompt $12K, Daily Trades $8K" width={1200} height={675} />
         </figure>
 
         <h2>Key Learning: Deal Structure</h2>
@@ -157,7 +157,7 @@ export default function Story200kDeals() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/hidden-channel.png" alt="Dimly lit desk with laptop showing off-market deal sourcing channels like Reddit and Twitter" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/hidden-channel.png" alt="How the $200K was structured: cash at close versus deferred and earnout breakdown for all five deals" width={1200} height={675} />
         </figure>
 
         <h2>Key Learning: Off-Market Sourcing</h2>

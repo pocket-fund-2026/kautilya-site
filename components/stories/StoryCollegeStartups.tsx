@@ -97,7 +97,7 @@ export default function StoryCollegeStartups() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/college-startups/best-time-build.png" alt="College student working on a startup from their dorm room late at night" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/best-time-build.png" alt="10 reasons to start a business in college: reduced risk, historical opportunity, record formation, tech democratisation, and more" width={1200} height={675} />
         </figure>
 
         <p>
@@ -205,7 +205,7 @@ export default function StoryCollegeStartups() {
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/college-startups/start-now.png" alt="Sunrise over a college campus symbolising the best time to start a business" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/start-now.png" alt="The Old Path versus The Builder Path: raise VC vs buy or bootstrap, build from zero vs start with $0, need a team vs AI does the work" width={1200} height={675} />
         </figure>
 
         <div className="story-coda">

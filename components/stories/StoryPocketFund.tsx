@@ -97,7 +97,7 @@ export default function StoryPocketFund() {
 
       <article className="story-body" id="storyBody">
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/pocket-fund/search.png" alt="A $5 bill transforming into a glowing business symbolising the $5000 Pocket Fund search fund model" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/pocket-fund/search.png" alt="Success isn't defined by the VC funding you raise — Kautilya PE, Oct 2023" width={1200} height={675} />
         </figure>
 
         <p>
@@ -148,7 +148,11 @@ export default function StoryPocketFund() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/pocket-fund/100k.png" alt="Seedling growing into a golden tree representing Sourcely.ai growth from $4K to $100K valuation" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/pocket-fund/cycle.png" alt="The Pocket Fund three-step cycle: Find on Acquire.com, Operate for 12–18 months, Sell at 5x valuation, then repeat" width={1200} height={675} />
+        </figure>
+
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/pocket-fund/100k.png" alt="Pocket Fund acquisition metrics: $4K cost, $100K valuation, 5x target exit, 12–18 month hold" width={1200} height={675} />
         </figure>
 
         <h2>Founder Credentials</h2>
