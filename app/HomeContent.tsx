@@ -223,12 +223,12 @@ return (
 
     .sky-scroll { height: 850vh; }
     .sky-text-overlay { padding-bottom: 8vh; }
-    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; margin-bottom: 12px; }
-    .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; }
-    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 12px; }
-    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; white-space: normal; max-width: 90%; }
-    .sky-text-overlay .hero-tagline { font-size: 13px; white-space: normal; max-width: 90%; }
-    .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; }
+    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; padding-left: 4px; margin-bottom: 12px; text-align: center; }
+    .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; text-align: center; }
+    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 12px; padding-left: 12px; text-align: center; }
+    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; padding-left: 4px; white-space: normal; max-width: 90%; text-align: center; }
+    .sky-text-overlay .hero-tagline { font-size: 13px; white-space: normal; max-width: 90%; text-align: center; }
+    .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; text-align: center; }
 
     .positioning { padding: 80px 24px; }
     .positioning .section-title { font-size: 32px !important; }
@@ -255,12 +255,12 @@ return (
 
     .sky-scroll { height: 720vh; }
     .sky-text-overlay { padding-bottom: 18vh; }
-    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; }
-    .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; }
-    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 8px; }
-    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; }
-    .sky-text-overlay .hero-tagline { font-size: 11px; margin-top: 8px; }
-    .sky-text-overlay .devanagari { font-size: 10px; margin-top: 12px; }
+    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; padding-left: 3px; text-align: center; }
+    .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; text-align: center; }
+    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 8px; padding-left: 8px; text-align: center; }
+    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; padding-left: 3px; text-align: center; }
+    .sky-text-overlay .hero-tagline { font-size: 11px; margin-top: 8px; text-align: center; }
+    .sky-text-overlay .devanagari { font-size: 10px; margin-top: 12px; text-align: center; }
 
     .positioning { padding: 60px 20px; }
     .positioning .section-title { font-size: 26px !important; }
