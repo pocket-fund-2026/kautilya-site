@@ -181,6 +181,11 @@ export default function StorySourcely() {
 
         <h2>The Big Picture</h2>
 
+        <p>
+          You guys knows how much I love my big picture view so find below a chart of Sourcelys larger vision and planned features roll out.
+          I had so much fun thinking about this and making this chart! It really reminded me of why I wanna do this stuff which is just to build
+          and have fun with it 
+        </p>
         <figure className="story-img">
           <ShimmerImage src="/images/stories/sourcely/essay.png" alt="Sourcely product map: Citations, Plagiarism checker, Essay builder, and Advanced essay tools planned across four phases" width={1200} height={675} />
         </figure>
