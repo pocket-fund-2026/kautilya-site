@@ -95,25 +95,43 @@ export default function StoryEditionZero() {
         <div className="subtitle">
           The origin story of a weekly newsletter built around one conviction: you don&rsquo;t need a lot of money to buy a business. You just need to start looking.
         </div>
+        <div className="story-date">May 1, 2023</div>
         <div className="hero-line" />
       </div>
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/edition-zero/zero.png" alt="Hand-written newsletter draft on a desk marking the origin of This Is Bizness edition zero" width={1200} height={675} />
-        </figure>
-
         <p>
-          Welcome to edition zero of This Is Bizness &mdash; a weekly newsletter every Sunday sharing a passion for
-          buying and selling small businesses. What started as a personal experiment in May 2023 became the foundation
-          for everything that followed.
+          Hey guys, I hope you&rsquo;re having a great day. Welcome to edition zero of my newsletter,
+          This Is Bizness &mdash; a weekly newsletter every Sunday sharing my passion for buying and
+          selling small businesses.
         </p>
         <p>
-          The premise was simple. Every week, break down five unique small businesses. Give readers a quick snapshot
-          of their business model, financials, and overall potential. Rate them on Growth &amp; Scalability, Risk,
-          Price to Value, and Innovation &amp; Tech. And wherever possible, go deeper &mdash; with founder interviews
-          and operational breakdowns that most deal-flow newsletters never touch.
+          If you&rsquo;re curious about the name: inspired by one of my favourite memes ever. Please
+          do yourself a favour and watch the video below.
+        </p>
+
+        <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: 8, marginBottom: 32 }}>
+          <iframe
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+            src="https://www.youtube.com/embed/M7AGB7itYFk?si=wC5tx-ZWC_aqa-26&start=10"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+
+        <p>
+          Every week I will break down <strong><span style={{ color: 'var(--gold)' }}>5 unique small businesses</span></strong>.
+          I&rsquo;ll give you a quick snapshot of their business model, financials, and discuss their overall
+          potential. I&rsquo;ll also add ratings on Growth &amp; Scalability, Risk, Price to Value,
+          Innovation &amp; Tech, and explore growth strategies. I hope to add a deep dive with
+          interviews with founders for 1/5 businesses every week.
+        </p>
+        <p>
+          This format is in its early stages so expect it to be constantly changing as I experiment
+          with it. Feedback, especially bad, is extremely welcome.
         </p>
         <div className="pull-quote">
           <p>
@@ -123,96 +141,103 @@ export default function StoryEditionZero() {
 
         <h2>Who Was This For?</h2>
         <p>
-          The newsletter was designed for individuals interested in business and investing, with a specific focus on
-          buying and selling small businesses. Not institutional buyers. Not private equity associates running
-          screens. Regular people who wanted to understand a world of transactions that most never know exists.
+          The newsletter was designed for <strong>individuals interested in business and investing</strong>,
+          with a focus on buying and selling small businesses. Not institutional buyers. Not private equity
+          associates running screens. Regular people who wanted to understand a world of transactions that
+          most never know exists.
         </p>
         <p>
-          With easy-to-digest information and insights, the goal was to make the content accessible to everyone
-          who wanted to learn about the world of small businesses &mdash; regardless of their starting capital
-          or experience level.
+          With easy-to-digest information and insights, the goal was to make the content{' '}
+          <strong>accessible to everyone</strong> who wanted to learn about the world of small businesses
+          &mdash; regardless of their starting capital or experience level.
         </p>
 
         <h2>The Origin Story</h2>
         <p>
-          Dev Shah, originally from Mumbai, India, and studying in California, had run a successful college admissions
-          consulting side hustle for two years and decided to invest the profits. The stock market&rsquo;s 10% annual
-          returns weren&rsquo;t the speed or scale of growth he was looking for. Looking for alternative investments,
-          he realised there was no real option that matched his appetite &mdash; until he discovered Acquire.com.
+          Dev Shah, originally from Mumbai, India, and studying in California, had run a successful college
+          admissions consulting side hustle for two years and decided to invest the profits. The stock
+          market&rsquo;s <span style={{ color: 'var(--gold)' }}>10% annual returns</span> weren&rsquo;t
+          the speed or scale of growth he was looking for. Looking for alternative investments, he realised
+          there was no real option that matched his appetite &mdash; until he discovered{' '}
+          <span style={{ color: 'var(--gold)' }}>Acquire.com</span>.
         </p>
         <p>
-          Acquire.com &mdash; the world&rsquo;s largest startup marketplace with over $500M in total acquisitions
-          closed and 150,000+ registered buyers and sellers &mdash; opened up a whole new world. From developers
-          selling pre-revenue projects to well-established businesses with owners looking to retire, the range
-          was staggering.
+          Acquire.com &mdash; the world&rsquo;s largest startup marketplace with over{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>$500M</span></strong> in total acquisitions
+          closed and <strong><span style={{ color: 'var(--gold)' }}>150,000+</span></strong> registered
+          buyers and sellers &mdash; opened up a whole new world. From developers selling pre-revenue
+          projects to well-established businesses with owners looking to retire, the range was staggering.
         </p>
+
+        <figure className="story-img">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/stories/edition-zero/wholenewworld.gif" alt="A whole new world — Aladdin GIF representing discovering Acquire.com" style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
+          <figcaption style={{ textAlign: 'center', fontSize: 13, color: 'var(--text-muted)', marginTop: 8, fontStyle: 'italic' }}>Acquire and me</figcaption>
+        </figure>
+
         <div className="pull-quote">
           <p>
-            The best part? You do not need a lot of money. Most people don&rsquo;t realise that you can seriously
-            look at buying businesses with as little as a few thousand dollars.
+            The best part?{' '}
+            <span style={{ color: 'var(--gold)' }}>You do not need a lot of money.</span>{' '}
+            Most people don&rsquo;t realise that you can seriously look at buying businesses with
+            as little as a few thousand dollars.
           </p>
         </div>
 
-        <figure className="story-img">
-          <ShimmerImage
-            src="/images/stories/edition-zero/conviction.png"
-            alt="Entrepreneur browsing startup marketplace listings on a laptop in a cafe, representing the origin of This Is Bizness newsletter and small business acquisition sourcing"
-            width={1200}
-            height={675}
-          />
-        </figure>
-
         <h2>The Conviction</h2>
         <p>
-          The businesses featured were primarily sourced from Acquire.com and Microns.io, with a focus on the
-          $5&ndash;$10K range. The thesis was clear: small acquisitions are not just accessible &mdash; they are
-          one of the most underexplored paths to building real wealth outside of traditional markets.
+          The businesses featured were primarily sourced from{' '}
+          <span style={{ color: 'var(--gold)' }}>Acquire.com</span> and{' '}
+          <span style={{ color: 'var(--gold)' }}>Microns.io</span>, with a focus on the{' '}
+          <strong>$5&ndash;$10K range</strong>. The thesis was clear: small acquisitions are not just
+          accessible &mdash; they are one of the most underexplored paths to building real wealth
+          outside of traditional markets.
         </p>
         <p>
-          The format was deliberately early-stage and experimental. Feedback was actively encouraged, especially
-          critical feedback. The commitment was to keep it real &mdash; sharing mistakes and breakthroughs with
-          equal transparency.
+          The format was deliberately early-stage and experimental. Feedback was actively encouraged,
+          especially critical feedback. The commitment was to keep it real &mdash; sharing mistakes and
+          breakthroughs with equal transparency.
         </p>
         <ul className="constraint-list">
-          <li>Weekly breakdown of 5 unique small businesses with financials and potential analysis</li>
+          <li>Weekly breakdown of <span style={{ color: 'var(--gold)' }}>5 unique small businesses</span> with financials and potential analysis</li>
           <li>Ratings on Growth &amp; Scalability, Risk, Price to Value, and Innovation &amp; Tech</li>
           <li>Deep dives with founder interviews for select businesses each week</li>
-          <li>Businesses primarily sourced from Acquire.com and Microns.io in the $5&ndash;$10K range</li>
+          <li>Businesses primarily sourced from Acquire.com and Microns.io in the <span style={{ color: 'var(--gold)' }}>$5&ndash;$10K range</span></li>
         </ul>
 
         <h2>Why This Edition Matters</h2>
         <p>
-          Edition Zero was never meant to be polished. It was meant to be honest. A founder learning in public,
-          documenting the journey of exploring small business acquisitions from the ground up &mdash; the good
-          and the bad.
+          Edition Zero was never meant to be polished. It was meant to be{' '}
+          <strong>honest</strong>. A founder learning in public, documenting the journey of exploring
+          small business acquisitions from the ground up &mdash; the good and the bad.
         </p>
         <p>
-          That raw, transparent approach became the DNA of everything that came after. The newsletter grew into
-          a community. The community grew into deal flow. And the deal flow grew into Kautilya &mdash; a firm
-          built on the conviction that the best acquisitions happen when you understand markets deeply enough
-          to see what others miss.
+          That raw, transparent approach became the DNA of everything that came after. The newsletter
+          grew into a community. The community grew into deal flow. And the deal flow grew into{' '}
+          <span style={{ color: 'var(--gold)' }}>Kautilya</span> &mdash; a firm built on the conviction
+          that the best acquisitions happen when you understand markets deeply enough to see what others miss.
         </p>
         <p>
-          Every case study on this site, every deal closed, every pipeline built &mdash; it traces back to this
-          moment. A first edition. A Sunday newsletter. And the belief that you have to learn to walk before
-          you can run.
+          Every case study on this site, every deal closed, every pipeline built &mdash; it traces back
+          to this moment. A first edition. A Sunday newsletter. And the belief that{' '}
+          <em>you have to learn to walk before you can run</em>.
         </p>
 
         <div className="metrics-strip">
           <div className="metric">
-            <div className="metric-value">May 2023</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>May 2023</div>
             <div className="metric-label">First Edition Published</div>
           </div>
           <div className="metric">
-            <div className="metric-value">5</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>5</div>
             <div className="metric-label">Businesses Per Edition</div>
           </div>
           <div className="metric">
-            <div className="metric-value">$5–$10K</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$5–$10K</div>
             <div className="metric-label">Target Acquisition Range</div>
           </div>
           <div className="metric">
-            <div className="metric-value">150K+</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>150K+</div>
             <div className="metric-label">Acquire.com Buyers &amp; Sellers</div>
           </div>
         </div>

@@ -92,95 +92,115 @@ export default function StoryPocketDeals() {
         <div className="subtitle">
           Breaking down a niche iOS app offering visual schedules, gentle alarms, and step-by-step guidance &mdash; listed at a $15,000 asking price.
         </div>
+        <div className="story-date">May 17, 2024</div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.png" alt="Acquisition snapshot for iOS autism support app: $15,000 asking price, 2.5x revenue multiple, ~100% profit margin" width={1200} height={675} />
-        </figure>
 
         <p>
-          Pocket Deals is our series breaking down real businesses available for acquisition. This first
-          edition examines a micro-SaaS startup offering digital tools designed to support children with
-          autism through an iOS app ecosystem.
+          Yo guys, sorry for the fat break I&rsquo;ve taken from the newsletter! Will be sharing
+          deals more often and launching some paid services related to buying businesses.
         </p>
-
-        <h2>The Business</h2>
         <p>
-          The company operates as a B2C venture, distributing its application through Apple&rsquo;s App Store.
-          The app maintains compatibility with current iOS versions and provides structured support tools
-          including visual schedules, gentle alarms, countdown timers, and sequential task guidance &mdash;
-          features designed to help children manage daily activities while maintaining composure and focus.
+          I&rsquo;d love to hear from you guys so feel free to reply to this email. Today&rsquo;s
+          bizness breakdown is a unique startup that offers tools and support for children with autism.
         </p>
 
         <div className="pull-quote">
           <p>
-            A meaningful solution with proven functionality and a dedicated market &mdash; at a price point accessible to first-time acquirers.
+            Asking price = <span style={{ color: 'var(--gold)' }}>$15,000</span>{' '}
+            (<span style={{ color: 'var(--gold)' }}>2.6x profit</span> and{' '}
+            <span style={{ color: 'var(--gold)' }}>2.5x revenue</span>)
           </p>
         </div>
 
-        <h2>The Numbers</h2>
-        <p>
-          At a $15,000 asking price, the valuation sits at 2.6x profit and 2.5x revenue. Twelve-month
-          revenue stands at $6,000 with $6,000 in profit &mdash; effectively 100% margins. Recent monthly
-          performance shows $480 in revenue and $475 in profit.
-        </p>
-
-        <h2>Investment Advantages</h2>
-        <ul className="constraint-list">
-          <li>Established methodologies for supporting autistic children</li>
-          <li>Intellectual property included with transfer</li>
-          <li>Operational website and active social channels</li>
-          <li>Growth potential via strategic marketing and feature expansion</li>
-        </ul>
-
-        <h2>Investment Considerations</h2>
-        <p>
-          The business is currently a solo operation with one person managing all responsibilities. The
-          target demographic is narrow and requires specialised promotion. Prospective buyers should
-          carefully evaluate scaling strategies given the single-person team structure and specialised
-          market focus.
-        </p>
-
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/15000.png" alt="Pocket Deals #1 deal scorecard: margins, valuation, defensibility, and growth potential" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.png" alt="Acquisition snapshot for iOS autism support app: $15,000 asking price, 2.5x revenue multiple, ~100% profit margin" width={1200} height={675} />
         </figure>
 
-        <h2>Our Take</h2>
+        <h2>The Business</h2>
         <p>
-          This is exactly the kind of acquisition we look for: a functioning product, real revenue, a
-          defensible niche, and clear upside through marketing investment. The 100% profit margins mean
-          every dollar of growth drops straight to the bottom line. The question is not whether the
-          product works &mdash; it is whether the next owner can find the audience.
+          This startup has developed an app that serves as a stable ecosystem for children with autism.
+          It provides a range of tools including <strong>visual schedules</strong>,{' '}
+          <strong>soft alarms</strong>, <strong>timers</strong>, and{' '}
+          <strong>step-by-step guidance</strong>. These tools are designed to help children with autism
+          stay calm, focused, and learn effectively &mdash; regardless of their developmental delay.
+        </p>
+        <p>
+          The startup follows a <span style={{ color: 'var(--gold)' }}>B2C model</span>, selling its
+          tools and services via the App Store. The app has been designed to comply with the latest iOS
+          updates, ensuring compatibility and reliability.
         </p>
 
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">$15K</div>
-            <div className="metric-label">Asking Price</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">2.5x</div>
-            <div className="metric-label">Revenue Multiple</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">$6K</div>
-            <div className="metric-label">Annual Revenue</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~100%</div>
-            <div className="metric-label">Profit Margin</div>
-          </div>
-        </div>
+        <h2>The Numbers</h2>
+        <p>
+          In the last 12 months, the startup has generated{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>$6,000 in revenue</span></strong> with a
+          profit of <strong><span style={{ color: 'var(--gold)' }}>$6,000</span></strong> &mdash;
+          effectively <strong>100% margins</strong>. In the previous month alone, it achieved{' '}
+          <span style={{ color: 'var(--gold)' }}>$480 in revenue</span>, resulting in a profit of{' '}
+          <span style={{ color: 'var(--gold)' }}>$475</span>.
+        </p>
 
         <figure className="story-img">
           <ShimmerImage src="/images/stories/micro-saas/numbers.png" alt="The numbers at a glance: $6,000 annual revenue and profit, $480 monthly revenue, $475 monthly profit" width={1200} height={675} />
         </figure>
 
+        <h2>Pros of Investing</h2>
+        <ul className="constraint-list">
+          <li>Established and proven strategies for supporting children with autism</li>
+          <li>Intellectual property and ongoing support included in the sale</li>
+          <li>Functional website and active social media channels already in place</li>
+          <li>Potential for growth through targeted marketing and collaborations</li>
+        </ul>
+
+        <h2>Cons of Investing</h2>
+        <ul className="constraint-list">
+          <li>Limited team size &mdash; only <strong>one person</strong> currently managing the business</li>
+          <li>Specific target market, requiring focused marketing efforts</li>
+        </ul>
+
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/micro-saas/15000.png" alt="Pocket Deals #1 deal scorecard: margins, valuation, defensibility, and growth potential" width={1200} height={675} />
+        </figure>
+
+        <h2>Overall Analysis</h2>
+        <p>
+          This startup offers a <strong>unique and valuable solution</strong> for children with autism
+          and their caregivers. With a proven track record and a comprehensive set of tools, it has the
+          potential for further growth and expansion. However, due to its specific target market and
+          limited team size, careful consideration should be given to marketing strategies and resource
+          allocation.
+        </p>
+        <p>
+          The <span style={{ color: 'var(--gold)' }}>100% profit margins</span> mean every dollar of
+          growth drops straight to the bottom line. The question is not whether the product works
+          &mdash; it is whether the next owner can find the audience.
+        </p>
+
+        <div className="metrics-strip">
+          <div className="metric">
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$15K</div>
+            <div className="metric-label">Asking Price</div>
+          </div>
+          <div className="metric">
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>2.5x</div>
+            <div className="metric-label">Revenue Multiple</div>
+          </div>
+          <div className="metric">
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$6K</div>
+            <div className="metric-label">Annual Revenue</div>
+          </div>
+          <div className="metric">
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>~100%</div>
+            <div className="metric-label">Profit Margin</div>
+          </div>
+        </div>
+
         <div className="story-coda">
           <div className="coda-text">
-            The best micro-acquisitions solve real problems for real people. This one does both.
+            Would you buy this business or nah?
           </div>
         </div>
       </article>

@@ -51,21 +51,47 @@ const phases: Phase[] = [
   },
   {
     id: 2,
+    month: 'Jun 2023',
+    tag: 'FIRST ACQUISITION',
+    title: 'Sourcely: an AI student tool acquired for $4K with $500 MRR.',
+    excerpt:
+      'Dev and his partner Elman acquired Sourcely, an AI-powered source-finding tool for students, at an 8x MRR multiple — and grew it to $4.5K MRR in five months.',
+    position: 'bottom',
+    accent: '#9ec5ff',
+    surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
+    imgUrl: '/images/stories/sourcely/logo_sourcely.png',
+    link: '/stories/sourcely',
+  },
+  {
+    id: 3,
     month: 'Oct 2023',
     tag: 'THE POCKET FUND',
     title: 'A student-led fund buying businesses for under $5,000.',
     excerpt:
       'Pocket Fund launched as a student initiative focused on acquisition entrepreneurship: buying, operating, and selling small online businesses.',
-    position: 'bottom',
-    accent: '#9ec5ff',
-    surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
+    position: 'top',
+    accent: '#d2b574',
+    surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
     imgUrl: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80&auto=format',
     link: '/stories/pocket-fund',
   },
   {
-    id: 3,
+    id: 4,
     year: '2024',
-    month: 'Feb',
+    month: 'Jan',
+    tag: '2023 REVIEW',
+    title: 'From a broken ankle to $150K: a year that changed everything.',
+    excerpt:
+      'Sourcely grew to a $150K+ valuation in 5 months. A VC internship in SF. And a decision to go all in on building — even if it meant leaving college.',
+    position: 'bottom',
+    accent: '#c9a84c',
+    surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
+    imgUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=700&q=80&auto=format',
+    link: '/stories/review',
+  },
+  {
+    id: 6,
+    month: 'Feb 2024',
     tag: 'COLLEGE STARTUPS',
     title: 'Why college is the best launchpad for your first business.',
     excerpt:
@@ -77,7 +103,7 @@ const phases: Phase[] = [
     link: '/stories/college-startups',
   },
   {
-    id: 4,
+    id: 7,
     month: 'May 2024',
     tag: 'POCKET DEALS',
     title: 'Breaking down a $15K micro-SaaS supporting children with autism.',
@@ -90,7 +116,7 @@ const phases: Phase[] = [
     link: '/stories/pocket-deals',
   },
   {
-    id: 5,
+    id: 8,
     month: 'Jun 2024',
     tag: 'DEAL SOURCING',
     title: 'Five filters for spotting real opportunities in a sea of listings.',
@@ -103,7 +129,7 @@ const phases: Phase[] = [
     link: '/stories/deal-sourcing',
   },
   {
-    id: 6,
+    id: 9,
     year: '2025',
     month: 'Jan',
     tag: 'HIDDEN VALUE',
@@ -117,7 +143,7 @@ const phases: Phase[] = [
     link: '/stories/diamonds',
   },
   {
-    id: 7,
+    id: 10,
     month: 'Nov 2025',
     tag: 'SEARCH FUNDS',
     title: 'How a Stanford model from the 1980s became a new asset class.',
@@ -130,7 +156,7 @@ const phases: Phase[] = [
     link: '/stories/search-funds',
   },
   {
-    id: 8,
+    id: 11,
     year: '2026',
     month: 'Feb',
     tag: 'DEAL CLOSING',

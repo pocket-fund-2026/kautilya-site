@@ -92,61 +92,74 @@ export default function StoryDiamonds() {
         <div className="subtitle">
           The best acquisitions are businesses that previous owners abandoned or failed to monetise &mdash; and that the next owner can transform.
         </div>
+        <div className="story-date">January 11, 2025</div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/diamonds/uncut.png" alt="What makes a diamond in the rough: stable cash flow, low owner involvement, growth potential" width={1200} height={675} />
-        </figure>
 
         <p>
-          Over one million small businesses are available for purchase globally, most listed at
-          2&ndash;3x annual profit or less. The opportunity is not in finding the perfect business.
-          It is in finding the imperfect one that nobody else sees potential in.
+          There&rsquo;s a secret nobody&rsquo;s talking about. Some of the best businesses out there
+          aren&rsquo;t the ones everyone&rsquo;s chasing. They&rsquo;re the ones people{' '}
+          <em>gave up on</em>.
+        </p>
+        <p>
+          Businesses where the owner got tired, or didn&rsquo;t know how to grow it &mdash; so
+          they&rsquo;re sitting on something valuable without even realising it.
+        </p>
+
+        <h2>The Case Study</h2>
+        <p>
+          Last year, a friend picked up a newsletter for way less than its actual worth. The previous
+          owner had solid content but zero monetisation strategy. It was getting{' '}
+          <strong>5,000 readers a month</strong> but wasn&rsquo;t making a single dollar.
+        </p>
+        <p>
+          He added sponsorships, built a product, and now it brings in{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>$2,500 a month</span></strong> &mdash;
+          passively. The purchase price was a fraction of its current annual revenue.
         </p>
 
         <div className="pull-quote">
           <p>
-            Success in micro-acquisitions depends on recognising hidden potential others overlook,
-            rather than luck or timing.
+            Buying a business like this isn&rsquo;t about luck. It&rsquo;s about spotting potential
+            in what others ignore.
           </p>
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/diamonds/zeroto.png" alt="The diamond pattern: before and after comparison showing 5,000 readers going from $0 to $2,500 monthly revenue" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/diamonds/uncut.png" alt="What makes a diamond in the rough: stable cash flow, low owner involvement, growth potential" width={1200} height={675} />
         </figure>
 
-        <h2>The Case Study</h2>
+        <h2>The Numbers Don&rsquo;t Lie</h2>
         <p>
-          A friend purchased a newsletter generating 5,000 monthly readers with zero revenue. The
-          previous owner had built the audience but never monetised it. After implementing
-          sponsorships and creating complementary products, that newsletter now generates $2,500
-          monthly &mdash; passively. The purchase price was a fraction of its current annual revenue.
+          There are over <strong><span style={{ color: 'var(--gold)' }}>1 million</span></strong>{' '}
+          small businesses for sale globally right now. Most are listed at{' '}
+          <strong>2&ndash;3x annual profit</strong> or less. With even basic improvements, you could
+          double that value within a year.
         </p>
-        <p>
-          This is the pattern. Businesses with real traction but neglected monetisation represent
-          some of the highest-return acquisitions available. Basic improvements &mdash; adding a
-          revenue stream, optimising pricing, or simply marketing what already exists &mdash; can
-          potentially double valuations within one year.
-        </p>
+        <p>These deals aren&rsquo;t hard to find. People just don&rsquo;t know what to look for.</p>
 
-        <h2>What Makes a Diamond</h2>
-        <ul className="constraint-list">
-          <li><strong>Stable cash flow:</strong> Businesses already generating consistent revenue, even if modest</li>
-          <li><strong>Low owner involvement:</strong> Operations requiring minimal ongoing time commitment</li>
-          <li><strong>Growth potential:</strong> Clear, identifiable improvement opportunities like enhanced marketing or additional offerings</li>
-        </ul>
+        <h2>What Makes a Good Deal</h2>
+
+        <h3 style={{ color: 'var(--gold)' }}>Stable cash flow</h3>
+        <p>Is the business already making consistent money? You want traction, not a turnaround project.</p>
+
+        <h3 style={{ color: 'var(--gold)' }}>Low owner involvement</h3>
+        <p>Can you run it without working 24/7? The best acquisitions have operations that don&rsquo;t depend on the founder being present.</p>
+
+        <h3 style={{ color: 'var(--gold)' }}>Growth potential</h3>
+        <p>Is there an obvious way to improve it &mdash; better marketing, new offers, a revenue stream that was never activated? The improvement should be clear, not speculative.</p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/diamonds/mindset.png" alt="Split view comparing a polished expensive business versus an overlooked business with hidden potential" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/diamonds/zeroto.png" alt="Newsletter case study: 5,000 readers, $0 revenue to $2,500 per month passive income" width={1200} height={675} />
         </figure>
 
         <h2>The Mindset Shift</h2>
         <p>
-          Most buyers search for businesses that are already optimised. They want clean financials,
-          steady growth, and minimal work required. But those businesses are priced accordingly &mdash;
-          often at premiums that eliminate the upside.
+          Most buyers search for businesses that are already optimised &mdash; clean financials,
+          steady growth, minimal work required. But those businesses are priced accordingly. Often
+          at premiums that eliminate the upside entirely.
         </p>
         <p>
           The real opportunity is in businesses that look rough on the surface but have solid
@@ -157,22 +170,37 @@ export default function StoryDiamonds() {
 
         <div className="metrics-strip">
           <div className="metric">
-            <div className="metric-value">1M+</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>1M+</div>
             <div className="metric-label">Small Businesses Available</div>
           </div>
           <div className="metric">
-            <div className="metric-value">2&ndash;3x</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>2&ndash;3x</div>
             <div className="metric-label">Typical Listing Multiple</div>
           </div>
           <div className="metric">
-            <div className="metric-value">$0 &rarr; $2.5K/mo</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$0 &rarr; $2.5K/mo</div>
             <div className="metric-label">Newsletter Case Study</div>
           </div>
           <div className="metric">
-            <div className="metric-value">2x</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>2x</div>
             <div className="metric-label">Potential Valuation Increase</div>
           </div>
         </div>
+
+        <h2>What&rsquo;s Your Biggest Roadblock?</h2>
+        <p>If any of these sound familiar, you&rsquo;re not alone:</p>
+        <ul className="constraint-list">
+          <li>I don&rsquo;t know where to find good deals.</li>
+          <li>I&rsquo;m not sure how to value a business.</li>
+          <li>I don&rsquo;t have enough cash to get started.</li>
+          <li>I&rsquo;m nervous about running a business after I buy it.</li>
+          <li>I don&rsquo;t even know where to begin.</li>
+        </ul>
+        <p>
+          If this is something you&rsquo;ve been curious about &mdash; or even if you&rsquo;re just
+          confused by how it all works &mdash; reach out. Happy to explain it or point you in the
+          right direction.
+        </p>
 
         <div className="story-coda">
           <div className="coda-text">

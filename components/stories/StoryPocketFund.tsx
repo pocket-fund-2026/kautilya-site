@@ -90,105 +90,132 @@ export default function StoryPocketFund() {
         </div>
         <h1>The Pocket Fund: Where Success Isn&rsquo;t Defined by the VC Funding You Raise</h1>
         <div className="subtitle">
-          A student-led $5,000 search fund built around one idea: you can buy, operate, and sell small online businesses without raising venture capital.
+          A student-led <span style={{ color: 'var(--gold)' }}>$5,000</span> search fund built around one idea: you can buy, operate, and sell small online businesses without raising venture capital.
         </div>
+        <div className="story-date">October 2, 2023</div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/pocket-fund/search.png" alt="Success isn't defined by the VC funding you raise — Kautilya PE, Oct 2023" width={1200} height={675} />
-        </figure>
 
         <p>
-          Welcome to the Pocket Fund edition. What started as a club at Claremont McKenna College became a
-          community for entrepreneurs who measure success differently &mdash; not by how much VC funding you
-          raise, but by how resourcefully you can build.
+          Welcome to The Pocket Fund Edition &mdash; and a big shout out to the{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>88 new subscribers</span></strong> this week!
+          (I had 100 before so this is a big increase lol.)
         </p>
         <p>
-          The premise was simple: a $5,000 search fund targeting small online businesses. Find a business on
-          Acquire.com, operate it for 12&ndash;18 months, sell for a 5x valuation, and repeat. No pitch decks.
-          No Series A. Just acquisition entrepreneurship at its most accessible.
+          Sorry about the month-long break. Fortunately, when you work for yourself, you can do
+          whatever you want to. I was working on a lot and needed to take a break to focus on the
+          businesses. I have many exciting things coming and we&rsquo;ll be back to regular programming
+          this week onwards. I&rsquo;ve been waiting a while to write this edition &mdash; let&rsquo;s
+          get right into it.
         </p>
-        <div className="pull-quote">
-          <p>
-            Money isn&rsquo;t the motivating factor here. Do it for the love of entrepreneurship.
-          </p>
-        </div>
 
         <h2>What Is Pocket Fund?</h2>
         <p>
-          Pocket Fund addresses what we saw as insufficient recognition for student entrepreneurs pursuing
-          sustainable, profitable businesses rather than moonshot ventures. The organisation prioritises
-          open-source practices, sharing activities and learnings with members and the broader community.
+          Pocket Fund is a home for a <strong>new kind of entrepreneur</strong> &mdash; where success
+          isn&rsquo;t defined by how much VC funding you raise.
         </p>
         <p>
-          The core objective: demonstrate that acquisition entrepreneurship &mdash; buying, running, and selling
-          small businesses &mdash; is an accessible path anyone can pursue. Donations function as a vote of
-          faith rather than equity stakes. Every contribution is welcomed, regardless of size.
+          Pocket Fund will start with a focus on{' '}
+          <span style={{ color: 'var(--gold)' }}>acquisition entrepreneurship</span> with a{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>$5,000 search fund</span></strong> for small
+          online businesses. The first chapter of Pocket Fund will operate as a club out of{' '}
+          <strong>Claremont McKenna College</strong>.
         </p>
 
-        <h2>Business Selection Criteria</h2>
-        <ul className="constraint-list">
-          <li>Online businesses under $5,000</li>
-          <li>Solves niche problems with minimal direct competition</li>
-          <li>Focuses on untapped potential and leverages member strengths</li>
-          <li>Bootstrapped, profitable operations emphasising systems and automation</li>
-        </ul>
+        <div className="pull-quote">
+          <p>
+            Money isn&rsquo;t the motivating factor here.{' '}
+            <span style={{ color: 'var(--gold)' }}>Do it for the love of entrepreneurship.</span>
+          </p>
+        </div>
 
-        <h2>The Three-Step Model</h2>
-        <p>
-          The model is deliberately simple. Step one: find and purchase a business on Acquire.com. Step two:
-          operate the business for 12&ndash;18 months, applying systems thinking and lean operational
-          improvements. Step three: sell for a 5x valuation. Then repeat the cycle.
-        </p>
-        <p>
-          This is not about building something from zero. It is about recognising value that already exists
-          and having the discipline to grow it.
-        </p>
+        <h2>The Simple 3-Step Plan</h2>
 
         <figure className="story-img">
           <ShimmerImage src="/images/stories/pocket-fund/cycle.png" alt="The Pocket Fund three-step cycle: Find on Acquire.com, Operate for 12–18 months, Sell at 5x valuation, then repeat" width={1200} height={675} />
         </figure>
 
+        <p>
+          The model is deliberately simple:
+        </p>
+        <ul className="constraint-list">
+          <li><strong><span style={{ color: 'var(--gold)' }}>1.</span></strong> Find &amp; buy a business on Acquire.com</li>
+          <li><strong><span style={{ color: 'var(--gold)' }}>2.</span></strong> Run the business for <strong>12&ndash;18 months</strong></li>
+          <li><strong><span style={{ color: 'var(--gold)' }}>3.</span></strong> Sell at a <strong>5x valuation</strong></li>
+          <li><strong><span style={{ color: 'var(--gold)' }}>Bonus:</span></strong> Repeat</li>
+        </ul>
+        <p>
+          Pocket Fund has been started to combat what I feel is a lack of recognition given to student
+          entrepreneurs who aren&rsquo;t looking to raise millions to found a &lsquo;moonshot&rsquo;
+          startup. Entrepreneurs who are just looking to follow their passions, start their own
+          businesses, and define success in their own way.
+        </p>
+        <p>
+          Pocket Fund is committed to <strong>open-source practices</strong> &mdash; all activities and
+          learnings are shared openly with members and the broader community.
+        </p>
+
+        <h2>What Kind of Business Will We Buy?</h2>
+        <ul className="constraint-list">
+          <li>Online business for <span style={{ color: 'var(--gold)' }}>&lt;$5,000</span></li>
+          <li>Solving a niche problem with little direct competition</li>
+          <li>Focus on finding untapped potential</li>
+          <li>Takes advantage of the existing strengths of members</li>
+          <li>Bootstrapped, run with an eye on profitability and sustainable growth &mdash; focus on systems and automation</li>
+        </ul>
+        <p>
+          We believe in growing a <strong>healthy and profitable business</strong> and are not trying to
+          raise money for a moonshot start-up.
+        </p>
+
+        <h2>Why Us?</h2>
+        <p>
+          We aren&rsquo;t entirely sure how &mdash; that&rsquo;s kind of the fun of it. If we knew
+          exactly what to do, then what&rsquo;s the point? But here&rsquo;s some success I&rsquo;ve
+          had in the past:
+        </p>
+        <ul className="constraint-list">
+          <li>Built a side hustle to <strong><span style={{ color: 'var(--gold)' }}>$25,000</span></strong> at age 18</li>
+          <li>Acquired <strong>Sourcely.ai</strong> for <span style={{ color: 'var(--gold)' }}>$4,000</span>, grew it to a valuation of{' '}
+            <strong><span style={{ color: 'var(--gold)' }}>$100K</span></strong> in 3 months</li>
+        </ul>
+
         <figure className="story-img">
           <ShimmerImage src="/images/stories/pocket-fund/100k.png" alt="Pocket Fund acquisition metrics: $4K cost, $100K valuation, 5x target exit, 12–18 month hold" width={1200} height={675} />
         </figure>
 
-        <h2>Founder Credentials</h2>
+        <h2>Future Plans</h2>
         <p>
-          Dev Shah built a side business generating $25,000 at age 18. He then acquired Sourcely.ai for
-          $4,000, growing it to a $100,000 valuation within three months. These early wins proved the thesis:
-          small acquisitions, executed well, can generate outsized returns.
+          We&rsquo;re only just getting started. We plan to open chapters in colleges across the US
+          with a focus on recruiting <strong>genuine leaders</strong>, rather than school prestige.
+        </p>
+        <p>
+          Where we&rsquo;re at right now: raised{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>$4,000</span></strong> out of the{' '}
+          <span style={{ color: 'var(--gold)' }}>$5,000</span> goal.
         </p>
 
-        <h2>Why This Edition Matters</h2>
-        <p>
-          Pocket Fund was never about the money. It was about proving a model &mdash; that students with limited
-          capital and unlimited energy could compete in the acquisition space. The expansion plans include
-          establishing chapters across U.S. colleges, prioritising genuine leadership qualities over
-          institutional prestige.
-        </p>
-        <p>
-          Every deal we close today traces back to this conviction. You do not need permission or a large
-          balance sheet. You need a process, a community, and the willingness to start.
-        </p>
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/pocket-fund/search.png" alt="Success isn't defined by the VC funding you raise — Kautilya PE, Oct 2023" width={1200} height={675} />
+        </figure>
 
         <div className="metrics-strip">
           <div className="metric">
-            <div className="metric-value">Oct 2023</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>Oct 2023</div>
             <div className="metric-label">Pocket Fund Launched</div>
           </div>
           <div className="metric">
-            <div className="metric-value">$5K</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$5K</div>
             <div className="metric-label">Search Fund Target</div>
           </div>
           <div className="metric">
-            <div className="metric-value">5x</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>5x</div>
             <div className="metric-label">Target Valuation Multiple</div>
           </div>
           <div className="metric">
-            <div className="metric-value">$4K &rarr; $100K</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>$4K &rarr; $100K</div>
             <div className="metric-label">Sourcely.ai Growth</div>
           </div>
         </div>

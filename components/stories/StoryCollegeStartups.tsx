@@ -90,123 +90,182 @@ export default function StoryCollegeStartups() {
         </div>
         <h1>10 Reasons Why Now Is the Best Time to Start a Business in College</h1>
         <div className="subtitle">
-          Reduced startup costs, AI-driven productivity, and a generation-wide shift toward entrepreneurship make this the most accessible era to build.
+          Some macro trends + stats + my opinions.
         </div>
+        <div className="story-date">February 18, 2024</div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
+
         <figure className="story-img">
           <ShimmerImage src="/images/stories/college-startups/best-time-build.png" alt="10 reasons to start a business in college: reduced risk, historical opportunity, record formation, tech democratisation, and more" width={1200} height={675} />
         </figure>
 
+        <h2 style={{ color: 'var(--gold)' }}>1. Reducing Risk of Starting Up and Failure</h2>
         <p>
-          The barrier to entry has dramatically lowered. Where previous generations needed significant capital
-          for physical infrastructure, today&rsquo;s aspiring entrepreneurs need a couple of hours a week,
-          a Shopify store, and very little upfront cost. Print-on-demand models and no-code tools eliminate
-          inventory requirements entirely.
+          20 years ago you needed investment of some kind for a physical location, inventory, or other
+          high costs like legality and registration. Now all you need is a couple of hours a week and a
+          Shopify store with very little upfront cost and high potential.
+        </p>
+        <p>
+          Consider the print-on-demand model with a Shopify store &mdash; no inventory or physical store
+          needed. Costs are restricted to hosting and order fulfillment. Similarly, creating software
+          involves minimal risks; once developed, maintenance expenses are low without requiring extensive
+          upfront investments.
+        </p>
+        <p>
+          In the case of failure, you can just start again. A worst case scenario of{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>0</span></strong> is much better than{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>&ndash;ve</span></strong>.
+        </p>
+
+        <h2 style={{ color: 'var(--gold)' }}>2. The Generation Before Us Started the Least Businesses Ever</h2>
+        <p>
+          All these mofos just became employees as the corporations grew. According to a WSJ analysis of
+          Fed data, the share of people under 30 who own a business has fallen by{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>65%</span></strong> since the 1980s and is now
+          at a quarter-century low &mdash; only about{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>2%</span></strong> of millennials being
+          self-employed as of 2014, compared to{' '}
+          <span style={{ color: 'var(--gold)' }}>7.6%</span> of Generation X and{' '}
+          <span style={{ color: 'var(--gold)' }}>8.3%</span> of baby boomers.
+        </p>
+        <p>
+          During COVID, the overall unemployment rate for young workers aged 16&ndash;24 jumped from{' '}
+          <strong>8.4% to 24.4%</strong> from spring 2019 to spring 2020. COVID has accelerated our
+          generation&rsquo;s acceptance of self-employment and the gig economy. The opportunity is there
+          and I think Gen Z is ready to take it.
         </p>
 
         <div className="pull-quote">
           <p>
-            The share of people under 30 who own a business has fallen by 65% since the 1980s. The opportunity gap is widening &mdash; and that is exactly where you step in.
+            The share of people under 30 who own a business has fallen by{' '}
+            <span style={{ color: 'var(--gold)' }}>65%</span> since the 1980s. The opportunity gap is
+            widening &mdash; and that is exactly where you step in.
           </p>
         </div>
 
-        <h2>1. Reduced Startup Risk</h2>
+        <h2 style={{ color: 'var(--gold)' }}>3. Record Number of New Businesses</h2>
         <p>
-          Starting a business no longer requires significant capital. No-code tools, print-on-demand, and
-          cloud infrastructure mean you can test ideas with near-zero upfront cost.
+          A record-breaking <strong><span style={{ color: 'var(--gold)' }}>5,481,437</span></strong>{' '}
+          new businesses were started in 2023 &mdash; the highest year on record, a{' '}
+          <strong>56.7% increase</strong> from 2019. The U.S. Chamber of Commerce also reported a
+          record-breaking <strong>5.5 million</strong> new business applications filed in 2023. It has
+          never been easier to start a business and people are recognising the opportunity.
         </p>
 
-        <h2>2. Historical Opportunity</h2>
+        <h2 style={{ color: 'var(--gold)' }}>4. Lowered Barriers to Entry &mdash; Technology, Capital, Globalisation</h2>
         <p>
-          Young business ownership has declined significantly. Only 2% of millennials were self-employed in
-          2014, compared to 7.6% of Generation X and 8.3% of baby boomers. The competitive landscape for
-          young founders has never been thinner.
-        </p>
-
-        <h2>3. Record Business Formation</h2>
-        <p>
-          2023 saw unprecedented startup activity: 5.48 million new businesses launched &mdash; a 56.7% increase
-          from 2019. The macro environment favours builders.
-        </p>
-
-        <h2>4. Technology Democratisation</h2>
-        <p>
-          No-code platforms like Bubble, Shopify, and Wix eliminate technical barriers. Global markets enable
-          selling and hiring worldwide without geographic constraints.
+          No-code tools like <strong>Bubble, Shopify, Wix</strong> have reduced any tech barriers to
+          starting up on the internet. Anyone can set up a Shopify site or basic SaaS in a week. You no
+          longer need upfront investment to start up &mdash; preorder waitlists and platforms like
+          Kickstarter have changed how you can approach starting. You can hire from and sell to anyone,
+          anywhere in the world.
         </p>
 
         <figure className="story-img">
           <ShimmerImage src="/images/stories/college-startups/ten-jobs.png" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
         </figure>
 
-        <h2>5. AI-Driven Productivity</h2>
+        <h2 style={{ color: 'var(--gold)' }}>5. Productivity &times; AI</h2>
         <p>
-          Artificial intelligence has increased individual productivity significantly, allowing solo entrepreneurs
-          to accomplish what previously required a team.
+          The productivity of one person has increased{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>10x</span></strong> with the introduction of
+          AI. We are currently using one of the <em>worst</em> versions of AI. Tools like AI agents
+          will change how people approach businesses entirely.
         </p>
 
-        <h2>6. Knowledge Accessibility</h2>
+        <h2 style={{ color: 'var(--gold)' }}>6. Democratisation of Knowledge</h2>
         <p>
-          YouTube and platforms like Khan Academy provide free education, reducing dependence on traditional
-          institutions. The knowledge gap between a degree and self-education is closing rapidly.
+          You can learn pretty much anything you need to from YouTube. There are countless hours of
+          lectures and teaching material on every subject made by extremely knowledgeable people. You
+          no longer require the systems and processes of institutions to give you an education.
+          Companies like Khan Academy and Buildspace will provide options for students to gain an
+          education at a much lower cost than before.
         </p>
 
-        <h2>7. Declining Degree Value</h2>
+        <h2 style={{ color: 'var(--gold)' }}>7. The Declining Value of a College Degree</h2>
         <p>
-          College curricula lag industry development. Practical experience often supersedes academic credentials
-          within three years of graduation.
+          Colleges are extremely out of touch with the general day-to-day of the higher-value workforce.
+          It&rsquo;s generally common for you to learn on the job and not use much of what you learned in
+          college after 3 years working. There is a lot of value it provides in terms of being a base and
+          other social aspects &mdash; but in absolute terms of its value for employers and, more
+          importantly, to prepare its degree holders for the workforce, it has been declining in value.
+          Especially as the development of technology outpaced how quickly it could update its curriculum.
         </p>
 
-        <h2>8. Economic Pressures</h2>
+        <h2 style={{ color: 'var(--gold)' }}>8. The Debt Is Just Too Damn High</h2>
         <p>
-          Rising national debt may constrain wage growth, making entrepreneurial ownership more attractive than
-          traditional employment as a path to wealth.
+          I don&rsquo;t know what the US can do on a 10&ndash;20 year time frame. I think they&rsquo;re
+          going to try to grow their way out of the debt &mdash; grow the GDP as much as they can to
+          reduce the debt:GDP ratio. It will be extremely hard for{' '}
+          <strong>wage growth to keep up</strong>. This will only hasten the erosion of the middle class
+          in America. The best way to avoid it will be to capitalise on the growth{' '}
+          <span style={{ color: 'var(--gold)' }}>with ownership</span>.
         </p>
 
-        <h2>9. Market Consolidation</h2>
+        <h2 style={{ color: 'var(--gold)' }}>9. Fewer Businesses = More Opportunity</h2>
         <p>
-          Competitor closures create market vacancies. Sixty percent of COVID-era closures never reopened,
-          leaving opportunities for new entrants.
+          The number of startups that have shut down has drastically increased. VC funding has dried up
+          as the public markets rally.{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>60%</span></strong> of businesses that closed
+          during COVID never reopened. There is a lot of market share up for grabs in different
+          industries.
         </p>
 
-        <h2>10. Succession Opportunities</h2>
+        <h2 style={{ color: 'var(--gold)' }}>10. Silver Tsunami &mdash; Aging Business Owners Looking to Sell</h2>
         <p>
-          Between 2000 and 2020, business owners at retirement age increased 87%, creating a wave of acquisition
-          possibilities for the next generation.
+          Between 2000 and 2020, the number of business owners at full retirement age increased by{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>87%</span></strong>. Lots of business owners
+          are looking to retire and sell, and there are not enough people willing to take over these
+          businesses.
         </p>
-
-        <div className="pull-quote">
-          <p>
-            Build an audience through consistent content. Start low-effort ventures targeting niche markets.
-            Embrace failure as learning rather than loss.
-          </p>
-        </div>
 
         <div className="metrics-strip">
           <div className="metric">
-            <div className="metric-value">5.48M</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>5.48M</div>
             <div className="metric-label">New Businesses in 2023</div>
           </div>
           <div className="metric">
-            <div className="metric-value">65%</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>65%</div>
             <div className="metric-label">Decline in Young Ownership</div>
           </div>
           <div className="metric">
-            <div className="metric-value">87%</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>87%</div>
             <div className="metric-label">Increase in Retiring Owners</div>
           </div>
           <div className="metric">
-            <div className="metric-value">60%</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>60%</div>
             <div className="metric-label">COVID Closures Never Reopened</div>
           </div>
         </div>
 
+        <h2>Actionable Steps</h2>
+
         <figure className="story-img">
           <ShimmerImage src="/images/stories/college-startups/start-now.png" alt="The Old Path versus The Builder Path: raise VC vs buy or bootstrap, build from zero vs start with $0, need a team vs AI does the work" width={1200} height={675} />
         </figure>
+
+        <h3 style={{ color: 'var(--gold)' }}>1. Start building an audience</h3>
+        <p>
+          Post things you find interesting. Expect to post into the void and that your first 100 posts
+          will be shit. Go from there.
+        </p>
+
+        <h3 style={{ color: 'var(--gold)' }}>2. Start a business with as low effort as possible</h3>
+        <p>
+          Try to start with a small problem for a niche target audience. Try an agency, Shopify store,
+          no-code SaaS. Just make your{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>first $1 online</span></strong>.
+        </p>
+
+        <h3 style={{ color: 'var(--gold)' }}>3. Seek failure</h3>
+        <p>
+          Instead of avoiding failure, figure out how you can fail quickly and reframe failure from
+          negative to a positive learning experience. Presume you currently know nothing and be hungry
+          to learn.
+        </p>
 
         <div className="story-coda">
           <div className="coda-text">

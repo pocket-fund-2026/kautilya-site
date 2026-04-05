@@ -90,103 +90,146 @@ export default function StoryDealSourcing() {
         </div>
         <h1>My Morning Routine Is Looking at Acquire.com for 30 Minutes</h1>
         <div className="subtitle">
-          After acquiring six micro-startups, five practical strategies for filtering quality deals from thousands of marketplace listings.
+          Advice on searching for serious buyers &mdash; five tips for finding the needle in the haystack.
         </div>
+        <div className="story-date">June 27, 2024</div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="5 habits of serious acquirers: check frequently, build analytical skill, use filters, negotiate early, track and revisit" width={1200} height={675} />
-        </figure>
 
         <p>
-          Spending 30 minutes on Acquire.com every morning has been the single most profitable habit
-          in this journey. The marketplace contains thousands of listings, but the quality varies
-          significantly. Knowing how to filter is the skill that separates browsers from buyers.
+          I don&rsquo;t really have much of a morning routine. I just wake up, start working until I
+          get a bit hungry and then have breakfast. I do this pretty much every day.
+        </p>
+        <p>
+          Searching Acquire every day is probably the one habit I stick to daily. It has by far given
+          me the most returns out of anything I&rsquo;ve done.
+        </p>
+        <p>
+          Unfortunately Acquire has tens of thousands of businesses and gets 100+ listings every week.
+          Despite spending close to 10 hours a week on Acquire I&rsquo;m <strong>never</strong> able
+          to go through all the listings. And that&rsquo;s just one marketplace.
         </p>
 
         <div className="pull-quote">
           <p>
-            90&ndash;95% of the listings on marketplaces like Acquire are either stale, without updated
-            stats, dead businesses, or overpriced. Your business is only worth what you can convince
-            others to pay.
+            <span style={{ color: 'var(--gold)' }}>90&ndash;95%</span> of listings on marketplaces
+            like Acquire are either stale, without updated stats, dead businesses, have a terrible
+            asking price, or just aren&rsquo;t good businesses.
           </p>
         </div>
 
+        <p>
+          I find many sellers quite simply a little delusional when it comes to the negatives of their
+          business and how much it&rsquo;s worth. At the end of the day, beauty (valuation) is in the
+          eye of the beholder. Your business is only worth what you can convince others to pay &mdash;
+          not a standard multiple you&rsquo;ve fantasised about.
+        </p>
+
         <h2>The Numbers Behind the Process</h2>
         <p>
-          Across six successful acquisitions, we reviewed 100&ndash;200 businesses per deal &mdash;
-          approximately 1,000 total opportunities. That volume of analysis builds an intuition that
-          no shortcut can replicate. You start seeing patterns: what is real, what is inflated, and
-          what is quietly undervalued.
+          We&rsquo;ve bought <strong><span style={{ color: 'var(--gold)' }}>6 businesses</span></strong>{' '}
+          so far. For each deal closed we&rsquo;ve gone through at least 100&ndash;200 businesses.
+          Maybe even more. That&rsquo;s almost{' '}
+          <strong><span style={{ color: 'var(--gold)' }}>1,000</span></strong> different micro
+          startups reviewed.
         </p>
 
         <figure className="story-img">
           <ShimmerImage src="/images/stories/deal-sourcing/thousand.png" alt="From browse to buy: ~1,000 businesses reviewed, 100–200 evaluated per deal, multiple negotiations, 6 acquisitions closed" width={1200} height={675} />
         </figure>
 
+        <p>
+          This has given me a real intuition for acquiring micro startups &mdash; how to value them,
+          and how to interact with sellers.
+        </p>
+        <p>
+          Here are my 5 tips for finding the needle (your ideal micro startup) in the haystack
+          (thousands of businesses for sale). For serious buyers only.
+        </p>
+
         <h2>Five Tips for Serious Buyers</h2>
 
-        <h2>1. Check Frequently</h2>
+        <h3 style={{ color: 'var(--gold)' }}>1. Check marketplaces 3x a week</h3>
         <p>
-          The best opportunities disappear within weeks. Check at least three times per week.
-          Acquire remains the primary marketplace; Microns.io offers alternatives for smaller deals.
+          Acquire has over 500,000 registered buyers. The best deals are taken within weeks. If you
+          check once a month you&rsquo;re likely to miss them entirely. Most listings are stale and
+          will give you a bad impression of what&rsquo;s available &mdash; Acquire is the best
+          marketplace by far, and Microns.io also has some solid micro startups.
         </p>
 
-        <h2>2. Develop Analytical Skills</h2>
+        <h3 style={{ color: 'var(--gold)' }}>2. Analysing listings is like a muscle</h3>
         <p>
-          Build evaluation capability the way you would build physical strength &mdash; through
-          repetition. Returns depend heavily on buyer capabilities, not market conditions.
+          You have to work it out very often to maintain your sense. There are different ways to
+          analyse listings and find the right business. For PE firms and startups, there are debt
+          constraints or multiples to work within. With micro startups, the potential return depends
+          a lot on the buyer and their capabilities. The risk is low when buying for under $5,000
+          and the potential reward is quite high if you can make it a viable business.
         </p>
 
-        <h2>3. Use Marketplace Filters</h2>
+        <h3 style={{ color: 'var(--gold)' }}>3. Filters are your best friend</h3>
         <p>
-          Revenue, industry, age, and customer count filters help navigate thousands of listings
-          effectively. Do not scroll aimlessly. Be surgical.
+          Marketplaces have filters around revenue, industry, startup age, number of customers, and
+          more. Use them to navigate thousands of listings effectively. Use them as much as you can
+          to get a real understanding of the different types of businesses available.
         </p>
 
-        <h2>4. Enter Negotiations Early</h2>
+        <h3 style={{ color: 'var(--gold)' }}>4. You don&rsquo;t need the perfect deal to enter negotiations</h3>
         <p>
-          Perfect deals do not exist. Multiple negotiations teach deal-making fundamentals that
-          reading about them never will. The first conversation is always the hardest.
+          Finding the right business is extremely important but it&rsquo;s just the first step. You
+          need to know how to value the business, conduct due diligence, negotiate a good deal, and
+          then actually run it. You need to enter negotiations multiple times before learning the
+          ropes and crafting the perfect deal.
         </p>
 
-        <h2>5. Track and Revisit</h2>
+        <h3 style={{ color: 'var(--gold)' }}>5. Track things and go back to old deals</h3>
         <p>
-          Measure your searches systematically. Older listings often yield better terms as sellers
-          become motivated. A business that was overpriced three months ago might be fairly priced
-          today.
+          It&rsquo;s important to track and measure your search &mdash; you get a lot of important
+          data this way. There&rsquo;s also a lot of alpha in going back to deals that didn&rsquo;t
+          work out but are still on the market. After a couple of months, many sellers are willing
+          to give you a more favourable deal in order to close. Go back to old deals you found
+          interesting to see if there&rsquo;s a way to make them work.
         </p>
+
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="5 habits of serious acquirers: check frequently, build analytical skill, use filters, negotiate early, track and revisit" width={1200} height={675} />
+        </figure>
+
+        <h2>Here&rsquo;s a Look at Our Acquire CRM</h2>
+
+        <figure className="story-img">
+          <ShimmerImage src="/images/stories/deal-sourcing/crm.png" alt="Kautilya's Acquire CRM spreadsheet tracking business name, asking price, type, industry, description, and deal phase" width={1200} height={675} />
+        </figure>
 
         <div className="metrics-strip">
           <div className="metric">
-            <div className="metric-value">6</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>6</div>
             <div className="metric-label">Acquisitions Completed</div>
           </div>
           <div className="metric">
-            <div className="metric-value">~1,000</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>~1,000</div>
             <div className="metric-label">Businesses Reviewed</div>
           </div>
           <div className="metric">
-            <div className="metric-value">30 min</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>30 min</div>
             <div className="metric-label">Daily Sourcing Habit</div>
           </div>
           <div className="metric">
-            <div className="metric-value">3x/week</div>
+            <div className="metric-value" style={{ color: 'var(--gold)' }}>3x/week</div>
             <div className="metric-label">Minimum Check Frequency</div>
           </div>
         </div>
-
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/discipline.png" alt="Filing cabinet with one golden drawer open symbolising systematic deal sourcing discipline" width={1200} height={675} />
-        </figure>
 
         <div className="story-coda">
           <div className="coda-text">
             Deal sourcing is not a task. It is a discipline. Thirty minutes a day compounds into an unfair advantage.
           </div>
         </div>
+
+        <p style={{ fontStyle: 'italic', color: 'var(--text-muted)', fontSize: 14, marginTop: 32 }}>
+          Best of luck to those seriously looking at acquiring a business. It takes time to get a good system going, but once it&rsquo;s in place it really becomes easy to find deals with high alpha.
+        </p>
       </article>
     </>
   );
