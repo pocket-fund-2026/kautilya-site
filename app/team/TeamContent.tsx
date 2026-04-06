@@ -6,7 +6,7 @@ import Link from 'next/link';
 const devImage = '/images/Dev.jpeg';
 const aumImage = '/images/aum.jpg';
 const ganeshImage = '/images/ganesh.jpg';
-const kavyaImage = '/images/kavya.jpeg';
+const manasImage = '/images/manas.jpeg';
 const pushkarImage = '/images/pushkar.jpeg';
 const darshanaImage = '/images/darshana.jpg';
 const aryanImage = '/images/aryan.jpeg';
@@ -45,11 +45,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     image: ganeshImage,
   },
     {
-    name: 'Kavya Sharma',
-    role: 'Analyst',
-    desc: 'The engine room of the mandate. Oversees outreach execution and target qualification.',
-    initials: 'KS',
-    image: kavyaImage,
+    name: 'Manas',
+    role: 'AI Consultant',
+    desc: 'Brings AI expertise to the firm, designing intelligent workflows and applying AI to accelerate diligence, and unlock data-driven edges across mandates.',
+    initials: 'M',
+    image: manasImage,
   },
   {
     name: 'Pushkar Rathod',
