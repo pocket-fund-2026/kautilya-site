@@ -85,7 +85,7 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
   },
   'diamonds': {
     title: 'How to Find Diamonds in the Rough',
-    description: 'The best acquisitions are businesses that previous owners failed to monetise.',
+    description: 'The best acquisitions are businesses that previous owners failed to monetize.',
     author: 'Dev Shah',
     image: '/images/blogs/edition-thisisbiz.jpeg',
   },

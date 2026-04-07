@@ -107,8 +107,8 @@ export default function StoryEditionZero() {
           selling small businesses.
         </p>
         <p>
-          If you&rsquo;re curious about the name: inspired by one of my favourite memes ever. Please
-          do yourself a favour and watch the video below.
+          If you&rsquo;re curious about the name: inspired by one of my favorite memes ever. Please
+          do yourself a favor and watch the video below.
         </p>
 
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: 8, marginBottom: 32 }}>

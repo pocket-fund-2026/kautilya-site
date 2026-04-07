@@ -1,28 +1,65 @@
 'use client';
 
 import { useState, useEffect, type FormEvent } from 'react';
+import { usePathname } from 'next/navigation';
 
-const DISMISSED_KEY = 'kautilya_newsletter_dismissed';
-const POPUP_DELAY = 60_000; // 60 seconds
+const DISMISSED_KEY = 'kautilya_newsletter_dismissed_at';
+const POPUP_DELAY = 90_000; // 90 seconds — long enough that the user has chosen to be here
+const DISMISS_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 export default function NewsletterPopup() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [state, setState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
+  // Don't pop on the landing page — the user just arrived; the page is busy
+  // with a video/star field/whoosh and asking for an email is the worst
+  // possible greeting.
+  const suppressOnRoute = pathname === '/' || pathname === '';
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    const dismissed = sessionStorage.getItem(DISMISSED_KEY);
-    if (dismissed) return;
+    if (suppressOnRoute) return;
+
+    // Persistent dismissal with TTL — sessionStorage was too short and
+    // produced the "no, no, no" experience. localStorage with 30-day TTL
+    // means a dismissed user is genuinely left alone.
+    try {
+      const raw = localStorage.getItem(DISMISSED_KEY);
+      if (raw) {
+        const dismissedAt = Number(raw);
+        if (Number.isFinite(dismissedAt) && Date.now() - dismissedAt < DISMISS_TTL_MS) {
+          return;
+        }
+      }
+    } catch {
+      // localStorage may be blocked; fall through and just show on delay.
+    }
 
     const timer = setTimeout(() => setVisible(true), POPUP_DELAY);
     return () => clearTimeout(timer);
-  }, []);
+  }, [suppressOnRoute]);
 
   const dismiss = () => {
     setVisible(false);
-    sessionStorage.setItem(DISMISSED_KEY, '1');
+    try {
+      localStorage.setItem(DISMISSED_KEY, String(Date.now()));
+    } catch {
+      // Ignore storage failures — the popup will still close for this session.
+    }
   };
+
+  // Escape-to-dismiss. Required because the popup interrupts the page and
+  // refusing to honor Escape is a common dark-pattern complaint.
+  useEffect(() => {
+    if (!visible) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') dismiss();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [visible]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();

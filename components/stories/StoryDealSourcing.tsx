@@ -159,10 +159,10 @@ export default function StoryDealSourcing() {
           marketplace by far, and Microns.io also has some solid micro startups.
         </p>
 
-        <h3 style={{ color: 'var(--gold)' }}>2. Analysing listings is like a muscle</h3>
+        <h3 style={{ color: 'var(--gold)' }}>2. Analyzing listings is like a muscle</h3>
         <p>
           You have to work it out very often to maintain your sense. There are different ways to
-          analyse listings and find the right business. For PE firms and startups, there are debt
+          analyze listings and find the right business. For PE firms and startups, there are debt
           constraints or multiples to work within. With micro startups, the potential return depends
           a lot on the buyer and their capabilities. The risk is low when buying for under $5,000
           and the potential reward is quite high if you can make it a viable business.
@@ -188,7 +188,7 @@ export default function StoryDealSourcing() {
           It&rsquo;s important to track and measure your search &mdash; you get a lot of important
           data this way. There&rsquo;s also a lot of alpha in going back to deals that didn&rsquo;t
           work out but are still on the market. After a couple of months, many sellers are willing
-          to give you a more favourable deal in order to close. Go back to old deals you found
+          to give you a more favorable deal in order to close. Go back to old deals you found
           interesting to see if there&rsquo;s a way to make them work.
         </p>
 

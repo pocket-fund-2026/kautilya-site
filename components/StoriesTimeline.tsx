@@ -332,6 +332,13 @@ export default function StoriesTimeline() {
     };
 
     container.addEventListener('wheel', handleWheel, { passive: false });
+
+    // Nudge the initial scroll position so the first card sits partially
+    // off the left edge. This signals to the user that the rail is
+    // horizontally scrollable instead of looking like a static layout.
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    container.scrollLeft = isMobile ? 48 : 80;
+
     return () => container.removeEventListener('wheel', handleWheel);
   }, []);
 

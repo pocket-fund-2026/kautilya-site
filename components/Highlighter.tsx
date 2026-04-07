@@ -1,8 +1,7 @@
 "use client"
 
-import { useLayoutEffect, useRef } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import type React from "react"
-import { useInView } from "motion/react"
 import { annotate } from "rough-notation"
 import { type RoughAnnotation } from "rough-notation/lib/model"
 
@@ -39,11 +38,38 @@ export function Highlighter({
   isView = false,
 }: HighlighterProps) {
   const elementRef = useRef<HTMLSpanElement>(null)
+  const [isInView, setIsInView] = useState(!isView)
 
-  const isInView = useInView(elementRef, {
-    once: true,
-    margin: "-10%",
-  })
+  // Manual visibility detection. We avoid motion's `useInView` here because
+  // on client-side route re-entries the element is often already on screen
+  // before the IntersectionObserver attaches, and with `once: true` the
+  // observer never fires — leaving the annotation permanently hidden after
+  // the first page load.
+  useEffect(() => {
+    if (!isView) return
+    const el = elementRef.current
+    if (!el) return
+
+    // If the element is already in the viewport at mount, show immediately.
+    const rect = el.getBoundingClientRect()
+    const verticalMargin = window.innerHeight * 0.1
+    if (rect.top < window.innerHeight - verticalMargin && rect.bottom > verticalMargin) {
+      setIsInView(true)
+      return
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setIsInView(true)
+          io.disconnect()
+        }
+      },
+      { rootMargin: "-10%" },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [isView])
 
   const shouldShow = !isView || isInView
 

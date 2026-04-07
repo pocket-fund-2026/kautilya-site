@@ -185,12 +185,12 @@ return (
     opacity: 0; transition: opacity 0.6s ease;
   }
   .sky-text-overlay.visible { opacity: 1; }
-  .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(236,221,191,0.95); margin-bottom: 18px; text-shadow: 0 2px 18px rgba(0,0,0,0.9); display: inline-block; padding: 7px 14px; border-radius: 999px; background: rgba(8,12,22,0.58); border: 1px solid rgba(201,185,154,0.28); backdrop-filter: blur(4px); }
-  .sky-text-overlay .main-text { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75); max-width: 620px; }
-  .sky-text-overlay .hero-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; padding-left: 24px; color: #FFFBF5; margin-bottom: 8px; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35); }
-  .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.88); margin-top: 6px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 16px rgba(0,0,0,0.85); display: inline-block; padding: 7px 14px 7px 21px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); backdrop-filter: blur(4px); }
-  .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.72); margin-top: 12px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 14px rgba(0,0,0,0.82); }
-  .sky-text-overlay .devanagari { font-size: 13px; color: rgba(225, 201, 154, 0.82); margin-top: 26px; letter-spacing: normal; word-spacing: 8px; white-space: nowrap; display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); text-shadow: 0 1px 10px rgba(0,0,0,0.75); }
+  .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(236,221,191,0.95); margin-bottom: 18px; text-shadow: 0 2px 18px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px; border-radius: 999px; background: rgba(8,12,22,0.58); border: 1px solid rgba(201,185,154,0.28); backdrop-filter: blur(4px); }
+  .sky-text-overlay .main-text { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75), 0 2px 8px rgba(0,0,0,0.95); max-width: 620px; }
+  .sky-text-overlay .hero-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; padding-left: 24px; color: #FFFBF5; margin-bottom: 8px; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35), 0 3px 12px rgba(0,0,0,0.95); }
+  .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.88); margin-top: 6px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px 7px 21px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); backdrop-filter: blur(4px); }
+  .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.72); margin-top: 12px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 14px rgba(0,0,0,0.82), 0 1px 4px rgba(0,0,0,0.95); }
+  .sky-text-overlay .devanagari { font-size: 13px; color: rgba(225, 201, 154, 0.82); margin-top: 26px; letter-spacing: normal; word-spacing: 8px; white-space: nowrap; display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); text-shadow: 0 1px 10px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.95); }
 
   .phase-dots { position: fixed; right: 28px; top: 50%; transform: translateY(-50%); z-index: 150; display: flex; flex-direction: column; gap: 14px; opacity: 0; transition: opacity 0.4s; }
   .phase-dots.show { opacity: 1; }
@@ -223,10 +223,14 @@ return (
 
     .sky-scroll { height: 850vh; }
     .sky-text-overlay { padding-bottom: 8vh; }
-    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; padding-left: 4px; margin-bottom: 12px; text-align: center; }
+    /* Mobile centering fix: removed leftover padding-left values that
+       offset elements from true center. The hero-title also no longer
+       compensates for letter-spacing on mobile, so it sits visually
+       centered instead of nudged right. */
+    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; padding: 0; margin-bottom: 12px; text-align: center; }
     .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; text-align: center; }
-    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 12px; padding-left: 12px; text-align: center; }
-    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; padding-left: 4px; white-space: normal; max-width: 90%; text-align: center; }
+    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 8px; padding-left: 8px; text-align: center; }
+    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; padding: 0; white-space: normal; max-width: 90%; text-align: center; }
     .sky-text-overlay .hero-tagline { font-size: 13px; white-space: normal; max-width: 90%; text-align: center; }
     .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; text-align: center; }
 
@@ -255,10 +259,10 @@ return (
 
     .sky-scroll { height: 720vh; }
     .sky-text-overlay { padding-bottom: 18vh; }
-    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; padding-left: 3px; text-align: center; }
+    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; padding: 0; text-align: center; }
     .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; text-align: center; }
-    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 8px; padding-left: 8px; text-align: center; }
-    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; padding-left: 3px; text-align: center; }
+    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 6px; padding-left: 6px; text-align: center; }
+    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; padding: 0; text-align: center; }
     .sky-text-overlay .hero-tagline { font-size: 11px; margin-top: 8px; text-align: center; }
     .sky-text-overlay .devanagari { font-size: 10px; margin-top: 12px; text-align: center; }
 

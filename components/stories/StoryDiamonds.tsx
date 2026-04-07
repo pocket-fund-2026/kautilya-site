@@ -90,7 +90,7 @@ export default function StoryDiamonds() {
         </div>
         <h1>How to Find Diamonds in the Rough</h1>
         <div className="subtitle">
-          The best acquisitions are businesses that previous owners abandoned or failed to monetise &mdash; and that the next owner can transform.
+          The best acquisitions are businesses that previous owners abandoned or failed to monetize &mdash; and that the next owner can transform.
         </div>
         <div className="story-date">January 11, 2025</div>
         <div className="hero-line" />
@@ -111,7 +111,7 @@ export default function StoryDiamonds() {
         <h2>The Case Study</h2>
         <p>
           Last year, a friend picked up a newsletter for way less than its actual worth. The previous
-          owner had solid content but zero monetisation strategy. It was getting{' '}
+          owner had solid content but zero monetization strategy. It was getting{' '}
           <strong>5,000 readers a month</strong> but wasn&rsquo;t making a single dollar.
         </p>
         <p>
@@ -157,13 +157,13 @@ export default function StoryDiamonds() {
 
         <h2>The Mindset Shift</h2>
         <p>
-          Most buyers search for businesses that are already optimised &mdash; clean financials,
+          Most buyers search for businesses that are already optimized &mdash; clean financials,
           steady growth, minimal work required. But those businesses are priced accordingly. Often
           at premiums that eliminate the upside entirely.
         </p>
         <p>
           The real opportunity is in businesses that look rough on the surface but have solid
-          foundations underneath. An under-monetised newsletter. A SaaS tool with loyal users but
+          foundations underneath. An under-monetized newsletter. A SaaS tool with loyal users but
           no marketing. An e-commerce store with great products and terrible SEO. These are the
           diamonds.
         </p>

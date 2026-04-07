@@ -103,18 +103,18 @@ export default function StoryDinoGames() {
         <p>
           The client had just exited a founder-led software business to a private equity firm. With over 20 years of
           operating experience across enterprise and SaaS, he was ready for something different: a concentrated portfolio
-          of consumer mobile applications centred around health, fitness, and lifestyle, with a core design principle of
+          of consumer mobile applications centered around health, fitness, and lifestyle, with a core design principle of
           habit formation and long-term retention over short-term engagement spikes.
         </p>
         <p>
           There was one problem. At the time of onboarding, the client had two internally developed mobile apps in
-          progress. Both were pre-launch. Neither was monetised. There was no live user data, no distribution leverage,
+          progress. Both were pre-launch. Neither was monetized. There was no live user data, no distribution leverage,
           and no cash flow. Every early decision was being driven by conviction rather than validated performance.
         </p>
         <p>
           The strategic gap was clear. Without a live, revenue-generating asset in the portfolio, the client was flying
           blind. Acquisitions weren't meant to replace internal product development. They were meant to de-risk and
-          accelerate it, compressing learning cycles and grounding decisions in real user behaviour rather than untested
+          accelerate it, compressing learning cycles and grounding decisions in real user behavior rather than untested
           hypotheses.
         </p>
 
@@ -126,7 +126,7 @@ export default function StoryDinoGames() {
         </p>
         <p>
           The team built and operated in-house scraping infrastructure to systematically pull data from the Apple App
-          Store and Google Play, tracking ranking stability, review velocity, update cadence, monetisation signals, and
+          Store and Google Play, tracking ranking stability, review velocity, update cadence, monetization signals, and
           install momentum across target categories. These datasets were cross-validated against third-party app
           directories and analytics platforms.
         </p>
@@ -143,7 +143,7 @@ export default function StoryDinoGames() {
           </p>
         </div>
         <p>
-          By week two, Kautilya had fully pivoted to personalised, buyer-anonymous outreach on Reddit and Twitter,
+          By week two, Kautilya had fully pivoted to personalized, buyer-anonymous outreach on Reddit and Twitter,
           leveraging public posting history, product announcements, and prior technical discussions to tailor each
           message to the specific asset and operator. Outreach volume held steady at roughly 50 direct founder
           conversations per week without automation-heavy tooling.
@@ -181,9 +181,9 @@ export default function StoryDinoGames() {
         </p>
         <p>
           The durability was structural, not accidental. The game sat in a less crowded simulator/fantasy niche where
-          monetisation is driven by session volume and ad density rather than the habit-based retention loops typical
+          monetization is driven by session volume and ad density rather than the habit-based retention loops typical
           of puzzle or word games. The game's ability to remain profitable under modest retention metrics reflected a
-          front-loaded LTV system: value is realised early in the engagement cycle through high-frequency ad exposure
+          front-loaded LTV system: value is realized early in the engagement cycle through high-frequency ad exposure
           during short, repeat sessions.
         </p>
         <p>
@@ -218,7 +218,7 @@ export default function StoryDinoGames() {
         </p>
         <p>
           The first negotiation call was spent entirely on operational mechanics: who managed ad spend and
-          optimisation, how often creatives were refreshed, the role of mediation tuning, the level of hands-on
+          optimization, how often creatives were refreshed, the role of mediation tuning, the level of hands-on
           involvement required to maintain profitability. This established a critical valuation truth early: the
           asset's performance was operator-dependent, which meant higher multiples were difficult to justify and risk
           needed to be absorbed through structure, not paid for upfront.
@@ -280,7 +280,7 @@ export default function StoryDinoGames() {
           revealing a data entry discrepancy. More importantly, Kautilya deconstructed the ad mediation stack and
           established that what appeared to be diversified revenue across multiple ad networks was in fact a single
           mediated income stream running through one platform. This collapsed the seller's narrative of revenue
-          diversification and reframed growth claims as optimisation upside rather than historical proof.
+          diversification and reframed growth claims as optimization upside rather than historical proof.
         </p>
         <p>
           Kautilya also identified embedded future loss risk in the form of heavily discounted lifetime IAP purchases
@@ -296,12 +296,12 @@ export default function StoryDinoGames() {
         <h2>Post-Close: From Diligence to Execution in Days, Not Months</h2>
         <p>
           A critical component of the engagement extended beyond transaction close. Kautilya supported the client in
-          hiring operators across marketing operations and technical execution, including UI/UX optimisation and game
+          hiring operators across marketing operations and technical execution, including UI/UX optimization and game
           development, sourced directly through Kautilya's existing network of mobile specialists.
         </p>
         <p>
-          Candidates were evaluated through multiple interviews, prioritising hands-on experience in mobile growth
-          and monetisation, the ability to operate independently in early-stage environments, and familiarity with
+          Candidates were evaluated through multiple interviews, prioritizing hands-on experience in mobile growth
+          and monetization, the ability to operate independently in early-stage environments, and familiarity with
           live consumer products rather than greenfield builds.
         </p>
         <p>
@@ -320,7 +320,7 @@ export default function StoryDinoGames() {
         <div className="pull-quote">
           <p>
             A self-funding acquisition loop where capital deployed into user acquisition is recovered quickly through
-            ad monetisation, allowing the business to compound without external funding.
+            ad monetization, allowing the business to compound without external funding.
           </p>
         </div>
         <p>

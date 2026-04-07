@@ -654,17 +654,21 @@ a.deal-card { cursor: pointer; }
 }
 
 .stories-timeline-hint {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding-bottom: 6px;
-  color: var(--text-faint);
+  padding: 8px 16px;
+  color: var(--gold);
   font-family: var(--font-lora), 'Lora', serif;
-  font-size: 10px;
-  letter-spacing: 0.14em;
+  font-size: 12px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   flex: 0 0 auto;
+  border: 1px solid rgba(201, 168, 76, 0.55);
+  border-radius: 999px;
+  background: rgba(201, 168, 76, 0.08);
 }
+.stories-timeline-hint svg path { fill: currentColor !important; }
 
 .stories-timeline-rail-wrap {
   position: relative;
@@ -1176,19 +1180,30 @@ a.deal-card { cursor: pointer; }
 .newsletter-form { display: flex; gap: 0; }
 .newsletter-form input {
   flex: 1; font-family: var(--font-lora), 'Lora', serif; font-size: 14px;
-  padding: 12px 14px; background: transparent; border: 1px solid var(--border);
-  border-right: none; color: var(--text-primary); outline: none;
-  transition: border-color 0.3s;
+  /* Inset, recessed look so the input is unmistakably an input rather than
+     a second button. Filled background, no caps, mixed case placeholder. */
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-right: none;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.35);
+  color: var(--text-primary); outline: none;
+  text-transform: none;
+  letter-spacing: 0;
+  transition: border-color 0.3s, background 0.3s;
 }
-.newsletter-form input::placeholder { color: var(--text-faint); font-style: italic; }
-.newsletter-form input:focus { border-color: var(--gold); }
+.newsletter-form input::placeholder { color: var(--text-faint); font-style: italic; text-transform: none; }
+.newsletter-form input:focus { border-color: var(--gold); background: rgba(255, 255, 255, 0.06); }
 .newsletter-form button {
   font-family: var(--font-lora), 'Lora', serif; font-size: 11px; letter-spacing: 3px;
-  text-transform: uppercase; padding: 12px 20px; background: transparent;
-  border: 1px solid var(--gold-dim); color: var(--gold); cursor: pointer;
+  text-transform: uppercase; padding: 12px 20px;
+  /* Filled gold to clearly distinguish from the recessed input next to it. */
+  background: var(--gold); border: 1px solid var(--gold);
+  color: var(--canvas); cursor: pointer;
   transition: all 0.3s; white-space: nowrap;
+  font-weight: 600;
 }
-.newsletter-form button:hover { background: var(--gold); color: var(--canvas); }
+.newsletter-form button:hover { background: transparent; color: var(--gold); }
 .newsletter-form button:disabled { opacity: 0.55; cursor: not-allowed; }
 .newsletter-success { color: #9acfb0; font-size: 14px; margin-top: 4px; }
 .newsletter-error { color: #dca1a1; font-size: 12px; margin-top: 8px; }
@@ -1306,11 +1321,22 @@ a.deal-card { cursor: pointer; }
   padding: 5px 12px;
   border: 1px solid var(--border);
   font-family: var(--font-lora), 'Lora', serif;
+  /* These are passive metadata labels, not links. Single muted color +
+     no-select + default cursor stops people from trying to click them. */
+  color: var(--text-faint);
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 }
 
-.meta-tag.sector { border-color: rgba(11,73,75,0.3); color: #4A8A8C; }
-.meta-tag.geo { border-color: rgba(201,185,154,0.2); color: var(--gold); }
-.meta-tag.stage { border-color: rgba(125,110,131,0.2); color: var(--plum); }
+/* Color variants intentionally collapsed to a single tone — having three
+   different colors made them read as three different links. */
+.meta-tag.sector,
+.meta-tag.geo,
+.meta-tag.stage {
+  border-color: var(--border);
+  color: var(--text-faint);
+}
 
 .story-hero h1 {
   font-family: var(--font-cormorant), 'Cormorant', serif;
@@ -2192,7 +2218,10 @@ a.deal-card { cursor: pointer; }
   }
 
   .stories-timeline-hint {
-    display: none;
+    font-size: 11px;
+    padding: 6px 12px;
+    margin-top: 12px;
+    align-self: flex-start;
   }
 
   .stories-timeline-card {

@@ -103,7 +103,7 @@ export default function StoryRunify() {
         <p>
           The client was the same operator from Kautilya's earlier mobile gaming acquisition. A 20-year software
           veteran who had recently exited a founder-led business to private equity and was now building a concentrated
-          portfolio of consumer mobile applications across health, fitness, and lifestyle. The thesis was centred on
+          portfolio of consumer mobile applications across health, fitness, and lifestyle. The thesis was centered on
           habit formation and long-term retention, not engagement spikes or arbitrage-driven growth.
         </p>
         <p>

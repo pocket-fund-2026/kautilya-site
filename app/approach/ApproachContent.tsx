@@ -273,6 +273,11 @@ export default function ApproachContent() {
               padding: 5px 10px;
               border-radius: 1px;
               text-transform: uppercase;
+              /* These look button-shaped but are not interactive — block
+                 selection so accidental clicks don't highlight the text. */
+              user-select: none;
+              -webkit-user-select: none;
+              cursor: default;
             }
 
             .approach-page-methodology .methodology-nav {
@@ -980,7 +985,7 @@ export default function ApproachContent() {
                 </div>
                 <div className="service-stat">
                   <div className="service-stat-num">2 of 8+</div>
-                  <div className="service-stat-label">LOIs killed to protect buyer</div>
+                  <div className="service-stat-label">LOI<span style={{ textTransform: 'none' }}>s</span> killed to protect buyer</div>
                 </div>
               </div>
 
@@ -1383,7 +1388,7 @@ export default function ApproachContent() {
 
               <div className="pull-quote">
                 <p>
-                  Personalisation was treated as a first-order variable, not an optimisation layer.
+                  Personalization was treated as a first-order variable, not an optimization layer.
                   Each message was a real opening to a real conversation.
                 </p>
               </div>
@@ -1552,7 +1557,7 @@ export default function ApproachContent() {
               <ul>
                 <li>
                   <strong><Link href="/stories/dino-games" className="story-link">Dino Games</Link>:</strong> discrepancies found across payment platforms, plus
-                  legacy monetisation mechanics requiring shutdown before close.
+                  legacy monetization mechanics requiring shutdown before close.
                 </li>
                 <li>
                   <strong><Link href="/stories/runify" className="story-link">Runify</Link>:</strong> quoted MRR did not match collected cash after currency
@@ -1596,7 +1601,7 @@ export default function ApproachContent() {
                     80%+ churn, zero proprietary tech, and founder dependency.
                     <strong> Momentum bias overruled by discipline.</strong>
                   </div>
-                  <span className="deal-status status-killed">2 LOIs killed</span>
+                  <span className="deal-status status-killed">2 LOI<span style={{ textTransform: 'none' }}>s</span> killed</span>
                 </div>
               </Link>
             </div>
@@ -1712,11 +1717,11 @@ export default function ApproachContent() {
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">8+</div>
-                  <div className="sc-label">LOIs submitted</div>
+                  <div className="sc-label">LOI<span style={{ textTransform: 'none' }}>s</span> submitted</div>
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">2</div>
-                  <div className="sc-label">LOIs terminated to protect buyer</div>
+                  <div className="sc-label">LOI<span style={{ textTransform: 'none' }}>s</span> terminated to protect buyer</div>
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">5+</div>

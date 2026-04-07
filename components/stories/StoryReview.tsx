@@ -131,7 +131,7 @@ export default function StoryReview() {
         <p>
           Then I came across <strong>Acquire.com</strong> and idk what to say but I fell in love
           instantly. I just got to look at cool businesses and I can also buy some of them? For as
-          little as <span style={{ color: 'var(--gold)' }}>$5,000</span>? Very soon the favourite part
+          little as <span style={{ color: 'var(--gold)' }}>$5,000</span>? Very soon the favorite part
           of my day became looking at businesses on Acquire. I started posting on X in February.
         </p>
         <p>

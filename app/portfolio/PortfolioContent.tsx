@@ -32,7 +32,7 @@ const deals: Deal[] = [
     name: 'Inspire3',
     logo: '/images/portfolio-logos/inspire3.png',
     oneLiner:
-      'Full-scope financial and operational due diligence on a $1.8M digital wellness portfolio. 30,134 transactions audited across 19 websites in under 15 days.',
+      'A $1.8M wellness business put 19 websites and 30,134 transactions in front of us. We checked every dollar in under 15 days and flagged the ones the seller had missed.',
     metrics: [
       { val: '30,134', label: 'Transactions Validated' },
       { val: '19', label: 'Websites Audited' },
@@ -49,7 +49,7 @@ const deals: Deal[] = [
     price: '£1-5M',
     name: 'UK Immigration Advisory',
     oneLiner:
-      'Rewrote the M&A playbook for UK immigration — built a proprietary deal pipeline in a market that doesn\'t do deals, saving ~£11.5K in the process.',
+      'A buyer wanted to grow by acquisition in a sector where almost nobody sells. We mapped the market from scratch and handed them a list of real, contactable owners — work that would have cost them about £11.5K to do in-house.',
     metrics: [
       { val: '2,600+', label: 'Outreach Touches' },
       { val: '8-10', label: 'Opportunities' },
@@ -63,9 +63,11 @@ const deals: Deal[] = [
     tagClass: 'sourcing',
     price: '$39K',
     name: 'Dino Games',
-    logo: '/images/portfolio-logos/dino-games.jpeg',
+    // Logo intentionally omitted: the previous asset was Google's well-known
+    // Chrome offline T-Rex graphic, which read as a borrowed brand mark
+    // rather than this company's own logo. Card falls back to text-only.
     oneLiner:
-      'Sourced, structured, and closed a cash-flow-positive mobile game acquisition, from off-market discovery to operator deployment in 8 weeks.',
+      'A buyer asked us to find a profitable mobile game that was already paying for itself. Eight weeks later they owned one — and an operator was running it.',
     metrics: [
       { val: '500+', label: 'Outbound' },
       { val: '~130', label: 'Conversations' },
@@ -81,7 +83,7 @@ const deals: Deal[] = [
     name: 'Runify',
     logo: '/images/portfolio-logos/runify.png',
     oneLiner:
-      'Sourced, diligenced, and structured a mobile app acquisition with only $20K deployed at close, protected by a performance-linked earn-out.',
+      'A $110K mobile app deal where the buyer only had to put $20K in cash on the table at closing. The rest is paid out of the app\'s own future revenue.',
     metrics: [
       { val: '~500', label: 'Outbound' },
       { val: '~45 Days', label: 'Time to Close' },
@@ -96,7 +98,7 @@ const deals: Deal[] = [
     price: '$12K',
     name: 'SmartPrompt',
     oneLiner:
-      'Killed two deals, closed one. Acquired a GPT-native education platform at a 200x discount to market comparables.',
+      'We walked away from two deals before finding the right one. The buyer paid $12K for an education business that comparable buyers were paying ~200x more for.',
     metrics: [
       { val: '~300', label: 'Evaluated' },
       { val: '2 of 3', label: 'Deals Killed' },
@@ -130,7 +132,7 @@ export default function PortfolioContent() {
         <div className="section-eyebrow">Case Studies</div>
         <h1 className="section-title">Deal Portfolio</h1>
         <p className="section-body">
-          Case studies from our advisory, sourcing, and diligence engagements across digital assets.
+          What we've actually done for buyers — finding deals, checking the numbers, and getting them across the line.
         </p>
 
         {/* Stats bar */}
@@ -216,7 +218,7 @@ export default function PortfolioContent() {
           <div className="service-accent service-accent--advisory" />
           <div className="service-eyebrow">BUY-SIDE ADVISORY</div>
           <p className="service-desc">
-            We construct proprietary acquisition pipelines on demand: market mapping, deal sourcing, diligence, and execution across digital assets, SaaS, and micro-PE.
+            Tell us what you want to buy. We'll find the companies, check them out, and help you close — even in markets where nothing is for sale.
           </p>
           <Link href="/engage" className="service-cta">Start a mandate →</Link>
         </div>
@@ -225,7 +227,7 @@ export default function PortfolioContent() {
           <div className="service-accent service-accent--intelligence" />
           <div className="service-eyebrow">MARKET INTELLIGENCE</div>
           <p className="service-desc">
-            Sector analyses, acquisition frameworks, and deal breakdowns, built from real engagements, not theory. We publish what we learn.
+            Long-form notes on the deals we worked on, why we walked from the ones we didn't, and what we'd do differently. Written from the chair, not a textbook.
           </p>
           <Link href="/stories" className="service-cta">Read our stories →</Link>
         </div>

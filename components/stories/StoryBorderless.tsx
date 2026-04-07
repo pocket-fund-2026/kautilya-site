@@ -253,7 +253,7 @@ export default function StoryBorderless() {
         <p>
           The work required approximately 960 hours of effort across sourcing, outreach, structuring, and competitive
           research. To replicate this in-house at even UK minimum wage would have cost the client roughly £11,500–£12,000 in
-          direct labour alone, and delivering comparable outcomes would realistically require more senior commercial talent,
+          direct labor alone, and delivering comparable outcomes would realistically require more senior commercial talent,
           pushing the true cost materially higher.
         </p>
         <p>

@@ -145,9 +145,9 @@ export default function StorySourcely() {
 
         <div className="pull-quote">
           <p>
-            We recognised the potential the site had &mdash; it was at a decent MRR through{' '}
+            We recognized the potential the site had &mdash; it was at a decent MRR through{' '}
             <span style={{ color: 'var(--gold)' }}>organic traffic</span> with a subpar landing page.
-            Optimise a few things, add more features, and we could provide a lot more value.
+            Optimize a few things, add more features, and we could provide a lot more value.
           </p>
         </div>
 
@@ -166,7 +166,7 @@ export default function StorySourcely() {
 
         <h2>So How Are We Going to Turn $4K &rarr; $240K?</h2>
         <p>
-          First order of business is to <strong>optimise everything</strong> to improve conversion
+          First order of business is to <strong>optimize everything</strong> to improve conversion
           rates and traffic. That includes remaking the website with better copy, a better landing
           page, and adding guides and videos on how to use the tool &mdash; since we notice many
           users inputting essays incorrectly into the chatbot. Along with this we will begin

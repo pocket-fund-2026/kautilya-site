@@ -67,15 +67,23 @@ export default function StoriesContent() {
           position: relative;
           border-radius: 16px;
           overflow: hidden;
-          border: 1px solid var(--border);
           background: #000;
-          transition: border-color 0.3s ease, transform 0.3s ease;
+          /* Border drawn as inset box-shadow rather than a real border, so
+             it doesn't participate in layout or interact with the rounded
+             clipping path. Without this, hover translateY produced a 1px
+             sliver of the border color along the bottom edge during the
+             transform, because subpixel rounding briefly exposed the gap
+             between the video frame and the rounded clip. */
+          box-shadow: inset 0 0 0 1px var(--border);
+          transition: box-shadow 0.3s ease, transform 0.3s ease;
           cursor: pointer;
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
 
         .video-card:hover {
-          border-color: var(--gold-dim);
-          transform: translateY(-4px);
+          box-shadow: inset 0 0 0 1px var(--gold-dim);
+          transform: translate3d(0, -4px, 0);
         }
 
         .video-card video {
@@ -83,6 +91,9 @@ export default function StoriesContent() {
           aspect-ratio: 16 / 9;
           object-fit: cover;
           display: block;
+          /* Pull the video a hair past the bottom edge to absorb any
+             subpixel rounding gap during transforms. */
+          margin-bottom: -1px;
         }
 
         .video-card-overlay {

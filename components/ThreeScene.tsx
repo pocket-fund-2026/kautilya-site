@@ -146,7 +146,11 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     const touchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     setIsTouchDevice(touchDevice);
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
-    const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
+    // Cap DPR aggressively. Bloom postprocess on retina/4K displays
+    // dragged the star field down to ~15fps; the cap brings it back near
+    // 60fps with no perceptible quality loss because the bloom is soft
+    // anyway. Was 2.
+    const maxPixelRatio = Math.min(window.devicePixelRatio, isMobileScreen ? 1.5 : 1.5);
     const bloomResolutionScale = isMobileScreen ? 0.75 : 1;
     const bloomStrengthMax = isMobileScreen ? 2.5 : 3;
 

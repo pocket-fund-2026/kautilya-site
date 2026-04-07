@@ -152,7 +152,7 @@ export default function StoryCollegeStartups() {
           new businesses were started in 2023 &mdash; the highest year on record, a{' '}
           <strong>56.7% increase</strong> from 2019. The U.S. Chamber of Commerce also reported a
           record-breaking <strong>5.5 million</strong> new business applications filed in 2023. It has
-          never been easier to start a business and people are recognising the opportunity.
+          never been easier to start a business and people are recognizing the opportunity.
         </p>
 
         <h2 style={{ color: 'var(--gold)' }}>4. Lowered Barriers to Entry &mdash; Technology, Capital, Globalisation</h2>

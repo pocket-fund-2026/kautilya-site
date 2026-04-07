@@ -112,7 +112,7 @@ export default function StorySearchFunds() {
           The search fund model was born in the early 1980s at Stanford GSB, designed as a vehicle
           for capable but inexperienced MBA graduates to become CEOs. One of the first deals under
           this model was Jim Southern raising a fund in 1984 and acquiring Uniform Printing &mdash;
-          validating the model&rsquo;s potential and launching what is now recognised as the first
+          validating the model&rsquo;s potential and launching what is now recognized as the first
           search fund, Nova Capital.
         </p>
         <p>

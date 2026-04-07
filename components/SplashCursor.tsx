@@ -911,7 +911,13 @@ function SplashCursor({
 
     function scaleByPixelRatio(input) {
       const pixelRatio = window.devicePixelRatio || 1;
-      return Math.floor(input * pixelRatio);
+      // Cap effective backing-buffer so high-DPI / 4K+ displays don't grind
+      // the fluid sim. ~2560px on the long edge keeps perf sane while still
+      // looking sharp; below that, behave normally.
+      const longEdge = Math.max(window.innerWidth, window.innerHeight) || 1;
+      const cap = 2560 / longEdge;
+      const effective = Math.min(pixelRatio, Math.max(1, cap));
+      return Math.floor(input * effective);
     }
 
     function hashCode(s) {
@@ -1011,7 +1017,11 @@ function SplashCursor({
         position: 'fixed',
         top: 0,
         left: 0,
-        zIndex: 9999,
+        // Sit behind page content. Was zIndex: 9999, which put the fluid
+        // canvas on top of every button and text block — that caused
+        // hover-state paint lag (the GPU was busy compositing splats over
+        // the button) and made text overlapping the toy hard to read.
+        zIndex: 0,
         pointerEvents: 'none',
         width: '100%',
         height: '100%'

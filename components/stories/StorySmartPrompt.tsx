@@ -122,7 +122,7 @@ export default function StorySmartPrompt() {
         <p>
           SmartPrompt is a portfolio of 30&ndash;35 custom GPTs within the ChatGPT ecosystem, with 2.5M+
           cumulative conversations and approximately 100K monthly active users. Revenue is derived from
-          ChatGPT&rsquo;s revenue sharing programme. At $12K, the acquisition price works out to $0.0048
+          ChatGPT&rsquo;s revenue sharing program. At $12K, the acquisition price works out to $0.0048
           per conversation &mdash; a 200x discount to comparable assets in the market.
         </p>
 
@@ -173,7 +173,7 @@ export default function StorySmartPrompt() {
         <h2>Deal #3: SmartPrompt &mdash; Closed</h2>
         <p>
           SmartPrompt cleared all five gates. The GPT portfolio had genuine user engagement, minimal
-          operational overhead, and a clear path to monetisation improvement. At $12K all-cash, the
+          operational overhead, and a clear path to monetization improvement. At $12K all-cash, the
           valuation provided asymmetric upside with minimal downside &mdash; a textbook micro-PE entry point.
         </p>
         <p>
