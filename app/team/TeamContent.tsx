@@ -45,7 +45,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     image: ganeshImage,
   },
     {
-    name: 'Manas',
+    name: 'Manas Kogta',
     role: 'AI Consultant',
     desc: 'Brings AI expertise to the firm, designing intelligent workflows and applying AI to accelerate diligence, and unlock data-driven edges across mandates.',
     initials: 'M',
