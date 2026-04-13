@@ -87,7 +87,7 @@ export default function PrivacyPage() {
         <h2>Contact</h2>
         <p>
           For privacy-related inquiries or to exercise your rights, contact us at{' '}
-          <a href="mailto:hello@pocket-fund.com" style={{ color: 'var(--gold)' }}>hello@pocket-fund.com</a>.
+          <a href="mailto:contact@kautilya-pe.com" style={{ color: 'var(--gold)' }}>contact@kautilya-pe.com</a>.
         </p>
       </div>
     </div>

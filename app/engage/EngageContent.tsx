@@ -132,7 +132,7 @@ export default function EngageContent() {
       setFormData({ name: '', firm: '', email: '', countryCode: '+91', phone: '', criteria: '' });
     } catch {
       setSubmitState('error');
-      setSubmitMessage('Could not send right now. Please try again or email hello@pocket-fund.com.');
+      setSubmitMessage('Could not send right now. Please try again or email contact@kautilya-pe.com.');
     } finally {
       setIsSubmitting(false);
     }
@@ -239,7 +239,7 @@ export default function EngageContent() {
             </form>
             <div className="engage-alt">
               <p>Prefer to reach out directly?</p>
-              <a href="mailto:hello@pocket-fund.com">hello@pocket-fund.com →</a>
+              <a href="mailto:contact@kautilya-pe.com">contact@kautilya-pe.com →</a>
             </div>
           </div>
 

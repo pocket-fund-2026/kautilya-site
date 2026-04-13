@@ -178,7 +178,7 @@ export default function CareersContent() {
       if (fileInputRef.current) fileInputRef.current.value = '';
     } catch {
       setSubmitState('error');
-      setSubmitMessage('Could not send right now. Please try again or email careers@kautilya.co.');
+      setSubmitMessage('Could not send right now. Please try again or email career@kautilya-pe.com.');
     } finally {
       setIsSubmitting(false);
     }
@@ -438,7 +438,7 @@ export default function CareersContent() {
           <p className="section-body">
             We're always interested in exceptional people who think systematically about markets and acquisitions.
           </p>
-          <a href="mailto:dev@pocket-fund.com">dev@pocket-fund.com →</a>
+          <a href="mailto:career@kautilya-pe.com">career@kautilya-pe.com →</a>
         </div>
       </div>
     </div>

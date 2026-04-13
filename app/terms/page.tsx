@@ -83,7 +83,7 @@ export default function TermsPage() {
         <h2>Contact</h2>
         <p>
           For questions about these terms, contact us at{' '}
-          <a href="mailto:hello@pocket-fund.com" style={{ color: 'var(--gold)' }}>hello@pocket-fund.com</a>.
+          <a href="mailto:contact@kautilya-pe.com" style={{ color: 'var(--gold)' }}>contact@kautilya-pe.com</a>.
         </p>
       </div>
     </div>

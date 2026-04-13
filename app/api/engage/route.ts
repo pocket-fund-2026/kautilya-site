@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"Kautilya" <${process.env.SMTP_USER}>`,
-      to: process.env.CAREERS_EMAIL || 'hello@pocket-fund.com',
+      to: process.env.CONTACT_EMAIL || 'contact@kautilya-pe.com',
       replyTo: email,
       subject: `Acquisition Thesis Inquiry: ${name}`,
       html: `

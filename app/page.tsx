@@ -24,7 +24,7 @@ const organizationSchema = {
     'Buy-side advisory firm that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'hello@pocket-fund.com',
+    email: 'contact@kautilya-pe.com',
     contactType: 'sales',
   },
   sameAs: [
@@ -41,7 +41,7 @@ const localBusinessSchema = {
   name: 'Kautilya',
   url: 'https://www.kautilya-pe.com',
   description: 'Buy-side advisory and proprietary deal sourcing firm.',
-  email: 'hello@pocket-fund.com',
+  email: 'contact@kautilya-pe.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Mumbai',
