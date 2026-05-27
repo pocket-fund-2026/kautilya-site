@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import StoriesContent from './StoriesContent';
 
 export const metadata: Metadata = {
-  title: 'Stories',
+  title: 'Acquisition Stories & Market Intelligence',
   description:
-    'Case studies, deal breakdowns, and insights from Kautilya\'s buy-side advisory practice.',
+    'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice — from a Sunday newsletter to $1M+ in closed acquisitions.',
   alternates: { canonical: 'https://www.kautilya-pe.com/stories' },
   openGraph: {
-    title: 'Stories | Kautilya',
+    title: 'Kautilya | Acquisition Stories & Market Intelligence',
     url: 'https://www.kautilya-pe.com/stories',
-    description: 'Case studies, deal breakdowns, and insights from Kautilya.',
+    description: 'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice.',
   },
 };
 

@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import TeamContent from './TeamContent';
 
 export const metadata: Metadata = {
-  title: 'Team',
+  title: 'Our M&A Advisory Team',
   description:
-    'Meet the Kautilya team: a small group operating with disproportionate intensity across deal sourcing and market intelligence.',
+    'Meet the Kautilya team: analysts, operators, and M&A specialists who have sourced and closed acquisitions across SaaS, digital media, mobile apps, and professional services.',
   alternates: { canonical: 'https://www.kautilya-pe.com/team' },
   openGraph: {
-    title: 'Team | Kautilya',
+    title: 'Kautilya | Our M&A Advisory Team',
     url: 'https://www.kautilya-pe.com/team',
-    description: 'Meet the Kautilya team.',
+    description: 'Analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
   },
 };
 

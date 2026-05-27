@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'FAQ',
+  title: 'Micro Private Equity & Buy-Side Advisory FAQ',
   description:
-    'Frequently asked questions about Kautilya, micro private equity, deal sourcing, due diligence, pricing, and how to engage.',
+    '23 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing — from $6,500 standalone DD to full-service retainers.',
   alternates: { canonical: 'https://www.kautilya-pe.com/faq' },
   openGraph: {
-    title: 'FAQ | Kautilya',
+    title: 'Kautilya | Micro Private Equity & Buy-Side Advisory FAQ',
     url: 'https://www.kautilya-pe.com/faq',
-    description: 'Frequently asked questions about Kautilya, micro private equity, deal sourcing, and acquisitions.',
+    description: '23 answered questions on M&A advisory, off-market deal sourcing, due diligence, and transparent pricing.',
   },
 };
 

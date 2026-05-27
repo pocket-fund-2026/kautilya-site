@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
+  title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
   description:
-    'Kautilya builds proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
+    'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   alternates: { canonical: 'https://www.kautilya-pe.com' },
   openGraph: {
-    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
+    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
-      'Kautilya builds proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
+      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   },
 };
 
@@ -37,10 +37,10 @@ const organizationSchema = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'ProfessionalService',
   name: 'Kautilya',
   url: 'https://www.kautilya-pe.com',
-  description: 'Buy-side advisory and proprietary deal sourcing firm.',
+  description: 'Buy-side M&A advisory and proprietary deal sourcing firm serving PE, VC, and family office buyers.',
   email: 'contact@kautilya-pe.com',
   address: {
     '@type': 'PostalAddress',

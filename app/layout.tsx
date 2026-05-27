@@ -37,11 +37,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kautilya-pe.com'),
   title: {
-    default: 'Kautilya | Buy-Side Advisory',
-    template: '%s | Kautilya',
+    default: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    template: 'Kautilya | %s',
   },
   description:
-    'Buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
+    'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   keywords: ['buy-side advisory', 'deal sourcing', 'M&A', 'acquisition pipeline', 'Kautilya', 'private equity', 'search fund'],
   authors: [{ name: 'Kautilya' }],
   alternates: {
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.kautilya-pe.com',
     siteName: 'Kautilya',
-    title: 'Kautilya | Buy-Side Advisory',
+    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     description:
-      'Buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
+      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
     images: [
       {
         url: '/opengraph-image',
@@ -74,9 +74,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kautilya | Buy-Side Advisory',
+    site: '@microsearchfund',
+    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     description:
-      'Buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.',
+      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
     images: ['/opengraph-image'],
   },
   robots: {
