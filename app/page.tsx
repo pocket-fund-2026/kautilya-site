@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+  title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing' },
   description:
     'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   alternates: { canonical: 'https://www.kautilya-pe.com' },
   openGraph: {
-    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
       'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
