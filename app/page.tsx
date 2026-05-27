@@ -35,6 +35,31 @@ const organizationSchema = {
   ],
 };
 
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Kautilya',
+  url: 'https://www.kautilya-pe.com',
+  description: 'Buy-side M&A advisory firm that constructs proprietary acquisition pipelines for PE, VC, and family office buyers.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://www.kautilya-pe.com/stories?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Kautilya',
+    url: 'https://www.kautilya-pe.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.kautilya-pe.com/icon.svg',
+    },
+  },
+};
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
@@ -56,6 +81,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <script
         type="application/ld+json"
