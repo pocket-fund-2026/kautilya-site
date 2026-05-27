@@ -1,4 +1,99 @@
+# Kautilya | Buy-Side M&A Advisory
+# https://www.kautilya-pe.com
+# robots.txt — last updated 2026-05-27
+
+# -----------------------------------------------
+# General crawlers — full access
+# -----------------------------------------------
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# -----------------------------------------------
+# Google — full access
+# -----------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# -----------------------------------------------
+# Bing / Microsoft
+# -----------------------------------------------
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# -----------------------------------------------
+# OpenAI / ChatGPT
+# -----------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# -----------------------------------------------
+# Anthropic / Claude
+# -----------------------------------------------
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# -----------------------------------------------
+# Perplexity
+# -----------------------------------------------
+User-agent: PerplexityBot
+Allow: /
+
+# -----------------------------------------------
+# Common Crawl (used by many LLMs for training)
+# -----------------------------------------------
+User-agent: CCBot
+Allow: /
+
+# -----------------------------------------------
+# Apple
+# -----------------------------------------------
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# -----------------------------------------------
+# Meta / Facebook
+# -----------------------------------------------
+User-agent: FacebookBot
+Allow: /
+
+# -----------------------------------------------
+# Cohere
+# -----------------------------------------------
+User-agent: cohere-ai
+Allow: /
+
+# -----------------------------------------------
+# You.com
+# -----------------------------------------------
+User-agent: YouBot
+Allow: /
+
+# -----------------------------------------------
+# Sitemap location
+# -----------------------------------------------
 Sitemap: https://www.kautilya-pe.com/sitemap.xml
