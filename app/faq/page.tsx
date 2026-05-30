@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'SaaS acquisition FAQ India', 'how does off-market sourcing work India',
     'proprietary deal sourcing process FAQ', 'acquisition mandate FAQ India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/faq' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/faq', languages: { 'en': 'https://www.kautilya-pe.com/faq', 'x-default': 'https://www.kautilya-pe.com/faq' } },
   openGraph: {
     title: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
     url: 'https://www.kautilya-pe.com/faq',

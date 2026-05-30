@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'off-market acquisition', 'micro private equity', 'search fund India',
       'business acquisition story', 'due diligence India', meta.title,
     ],
-    alternates: { canonical: `${BASE_URL}/stories/${slug}` },
+    alternates: { canonical: `${BASE_URL}/stories/${slug}`, languages: { 'en': `${BASE_URL}/stories/${slug}`, 'x-default': `${BASE_URL}/stories/${slug}` } },
     openGraph: {
       title: `${meta.title} | Kautilya`,
       url: `${BASE_URL}/stories/${slug}`,

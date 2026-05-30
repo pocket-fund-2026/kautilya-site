@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     'join micro PE team India', 'work with search fund India',
     'ETA community jobs India', 'acquisition ecosystem India jobs',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/careers' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/careers', languages: { 'en': 'https://www.kautilya-pe.com/careers', 'x-default': 'https://www.kautilya-pe.com/careers' } },
   openGraph: {
     title: 'Careers | Kautilya | Join the Team',
     url: 'https://www.kautilya-pe.com/careers',

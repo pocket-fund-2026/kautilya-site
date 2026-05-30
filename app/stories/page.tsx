@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     'operator placement guide India', '100 day plan post-acquisition India',
     'acquisition exit guide India', 'exit strategy India', 'sell business India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/stories' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/stories', languages: { 'en': 'https://www.kautilya-pe.com/stories', 'x-default': 'https://www.kautilya-pe.com/stories' } },
   openGraph: {
     title: 'Stories | Kautilya | Acquisitions & Market Intelligence',
     url: 'https://www.kautilya-pe.com/stories',

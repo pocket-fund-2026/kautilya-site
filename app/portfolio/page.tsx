@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'bolt-on acquisition case study India', 'acqui-hire India case study',
     'digital wellness M&A India', 'professional services acquisition India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/portfolio' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/portfolio', languages: { 'en': 'https://www.kautilya-pe.com/portfolio', 'x-default': 'https://www.kautilya-pe.com/portfolio' } },
   openGraph: {
     title: 'Portfolio | Kautilya | Acquisitions & Case Studies',
     url: 'https://www.kautilya-pe.com/portfolio',

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'acquisition advisory India contact', 'M&A advisor Mumbai contact',
     'buy-side M&A contact India', 'acquisition pipeline enquiry India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/engage' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/engage', languages: { 'en': 'https://www.kautilya-pe.com/engage', 'x-default': 'https://www.kautilya-pe.com/engage' } },
   openGraph: {
     title: 'Engage | Kautilya | Start Your Acquisition Mandate',
     url: 'https://www.kautilya-pe.com/engage',

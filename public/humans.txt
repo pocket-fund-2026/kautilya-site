@@ -1,0 +1,25 @@
+/* TEAM */
+Founder & Lead Advisor: Dev Shah
+Chief Analyst: Aum Thakarkar
+Tech Head: Ganesh Jagtap
+AI Consultant: Manas Kogta
+Analyst: Pushkar Rathod
+Analyst: Darshana Yadav
+Marketing Head: Aryan Solanki
+Founder's Office: Ritish Maheshwari
+Tech Support: Aditya Negi
+Contact: contact@kautilya-pe.com
+From: Mumbai, India
+Twitter: @microsearchfund
+LinkedIn: https://www.linkedin.com/company/pocket-fund/
+
+/* SITE */
+Last update: 2026-05-30
+Standards: HTML5, CSS3, JSON-LD, Schema.org
+Components: Next.js 16, React, TypeScript
+Hosted: Vercel
+Language: English
+Doctype: HTML5
+
+/* THANKS */
+Built with Claude Code by Anthropic

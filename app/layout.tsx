@@ -187,6 +187,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="search" type="application/opensearchdescription+xml" title="Kautilya" href="/opensearch.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Kautilya Stories" href="/rss.xml" />
         <meta name="theme-color" content="#c9a84c" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-KGENMTGL7K" strategy="afterInteractive" />
         <Script id="ga-init" strategy="afterInteractive">

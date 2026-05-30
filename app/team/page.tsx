@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'analyst team buy-side India', 'senior M&A practitioners India',
     'Kautilya advisory people', 'acquisition advisory counsel India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/team' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/team', languages: { 'en': 'https://www.kautilya-pe.com/team', 'x-default': 'https://www.kautilya-pe.com/team' } },
   openGraph: {
     title: 'Team | Kautilya | M&A Advisory Specialists',
     url: 'https://www.kautilya-pe.com/team',

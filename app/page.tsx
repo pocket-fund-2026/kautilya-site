@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'acquisition opportunity India', 'buying a business guide India',
     'how to acquire a business India', 'steps to buy a business India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com' },
+  alternates: { canonical: 'https://www.kautilya-pe.com', languages: { 'en': 'https://www.kautilya-pe.com', 'x-default': 'https://www.kautilya-pe.com' } },
   openGraph: {
     title: 'Kautilya | Buy-Side Advisory & Deal Sourcing India',
     url: 'https://www.kautilya-pe.com',
@@ -247,12 +247,51 @@ const professionalServiceSchema = {
   },
 };
 
+const eventSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: 'INSEAD ETA Conference 2025',
+    description: 'Dev Shah, Founder of Kautilya, speaks on micro private equity, acquisition entrepreneurship, and off-market deal sourcing in India.',
+    startDate: '2025',
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    isAccessibleForFree: false,
+    performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
+    organizer: { '@type': 'Organization', name: 'INSEAD' },
+    about: [
+      { '@type': 'Thing', name: 'Acquisition entrepreneurship' },
+      { '@type': 'Thing', name: 'Micro private equity India' },
+      { '@type': 'Thing', name: 'Search fund advisory' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: 'SymBiz 2025',
+    description: 'Dev Shah speaks on buy-side M&A advisory, proprietary deal sourcing, and building acquisition pipelines for PE and family office buyers.',
+    startDate: '2025',
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    isAccessibleForFree: false,
+    performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
+    organizer: { '@type': 'Organization', name: 'SymBiz' },
+    about: [
+      { '@type': 'Thing', name: 'Buy-side M&A advisory' },
+      { '@type': 'Thing', name: 'Proprietary deal sourcing' },
+    ],
+  },
+];
+
 export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }} />
+      {eventSchemas.map((event, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(event) }} />
+      ))}
       <HomeContent />
     </>
   );

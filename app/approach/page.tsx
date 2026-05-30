@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     'acquisition success rate India', 'response rate outreach acquisition',
     'off-market deal process India', 'proprietary sourcing process India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/approach' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/approach', languages: { 'en': 'https://www.kautilya-pe.com/approach', 'x-default': 'https://www.kautilya-pe.com/approach' } },
   openGraph: {
     title: 'Approach | Kautilya | M&A Methodology & Deal Sourcing',
     url: 'https://www.kautilya-pe.com/approach',
