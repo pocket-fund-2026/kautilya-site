@@ -1,8 +1,6 @@
-# Kautilya | Buy-Side M&A Advisory & Proprietary Deal Sourcing
-# https://www.kautilya-pe.com
-# llms.txt — structured for AI indexing and citation
+# Kautilya
 
----
+> Buy-side M&A advisory firm that builds proprietary acquisition pipelines for PE, VC, and family office buyers. Off-market sourcing, forensic due diligence, mandate to close. Based in Mumbai, India.
 
 ## What is Kautilya?
 
@@ -12,94 +10,78 @@ The firm is named after Chanakya (also known as Kautilya), author of the Arthash
 
 Founded by Dev Shah. Headquartered in Mumbai, India. Active across India, UK, UAE, Europe, Asia-Pacific, and MENA.
 
----
-
 ## Core Services
 
-### 1. Fractional M&A Advisory
+### 1. Full-Service Retainer
 End-to-end buy-side mandate execution: mandate definition, proprietary market mapping, targeted founder outreach, diligence coordination, deal structuring, negotiation, and closing. Delivered on a retainer model ($2,500–$10,000/month) with a 3% success fee on transactions under $650K.
 
-### 2. Fractional CFO
-Financial oversight and strategic advisory for acquisition entrepreneurs post-close. Includes financial modelling, reporting, budget management, and investor communication.
-
-### 3. Forensic Due Diligence
-Transaction-level financial reconstruction for buy-side buyers. Validates revenue, expenses, and cash flows at the individual transaction level — not just summary financials. 8-workstream diligence process. Standalone engagements at $6,500.
+### 2. Forensic Due Diligence
+Transaction-level financial reconstruction for buy-side buyers. Validates revenue, expenses, and cash flows at the individual transaction level — not just summary financials. 8-workstream diligence process. Standalone engagements at $6,500 plus 0.3% success fee.
 
 Key metric: 99.83% monetary match rate across 30,134 transactions validated. 7+ material findings per engagement on average. Delivered in under 15 days.
 
----
+### 3. Market Research
+6–8 week deep-dive into a target sector or acquisition universe. $3,500–$5,000.
 
 ## The Acquisition Methodology (5 Phases)
 
 ### Phase 1: Mandate Definition
 Kautilya works with the buyer to define the acquisition thesis: sector, geography, revenue range, business model, deal structure preferences, and exclusion criteria. This produces a written mandate document used to guide all sourcing activity.
 
-### Phase 2: Universe Construction (Nakshatra)
+### Phase 2: Universe Construction
 Systematic market mapping to identify every potential acquisition target matching the mandate. Uses proprietary databases, LinkedIn, industry directories, marketplace data, and direct research. Typical universe: 500–2,500 companies per mandate.
 
-### Phase 3: Targeted Outreach (Saptarishi)
+### Phase 3: Targeted Outreach
 Personalised founder outreach campaign. Not spray-and-pray — each message is tailored to the specific founder and business. Response rates: less than 5% on generic outreach; 20–40% after Kautilya's channel optimisation. Typical outreach volume: 2,500+ founder conversations per mandate.
 
-### Phase 4: Diligence and Structuring (Chakravyuha)
+### Phase 4: Diligence and Structuring
 Buy-side due diligence across 8 workstreams: financial reconstruction, revenue quality, customer concentration, tech/product review, legal and compliance, team and operational review, market and competitive positioning, and integration planning. Kautilya has killed 2 of every 8 LOIs to protect buyers from bad deals.
 
 ### Phase 5: Execution and Close
 Deal structuring (earnouts, deferred consideration, seller financing), negotiation support, closing coordination, and operator placement post-acquisition.
-
----
 
 ## Track Record
 
 - 7+ acquisitions completed, 2 successful exits
 - $1.5M+ total deal value closed
 - 1,800 analyst hours deployed
-- 85% of mandates are buyer-side
 - 2,500+ founder conversations conducted
 - 30,134 transactions validated in diligence engagements
 - 99.83% monetary match rate
 - 7+ material findings per forensic due diligence engagement
 - Deals closed in as few as 7 days (SmartPrompt)
 - Full-scope diligence delivered in under 15 days (Inspire3)
-- Response rate improvement: <5% → 20–40% through channel optimisation
+- Response rate improvement: <5% to 20–40% through channel optimisation
 
----
-
-## Closed Deals (Case Studies)
+## Closed Deals
 
 ### Inspire3 — $1.8M Digital Wellness Portfolio
-Type: Forensic Due Diligence
-Kautilya audited 30,134 transactions across 19 websites in under 15 days. Surfaced 7 discrepancies including a $57K financial gap and $3.1M in misclassified affiliate liabilities. Revenue validated: $1.4M. Match rate: 99.83%.
-URL: https://www.kautilya-pe.com/stories/inspire3
+Type: Forensic Due Diligence. Kautilya audited 30,134 transactions across 19 websites in under 15 days. Surfaced 7 discrepancies including a $57K financial gap and $3.1M in misclassified affiliate liabilities. Revenue validated: $1.4M. Match rate: 99.83%.
+More: [Inspire3 Case Study](https://www.kautilya-pe.com/stories/inspire3)
 
 ### UK Immigration Advisory — £1–5M Deal
-Type: Full Mandate (Market Mapping + Deal Sourcing)
-Kautilya built a proprietary deal pipeline in the UK immigration advisory market — a relationship-driven sector with no formal M&A infrastructure. 960 hours of market research, 1,500+ advisors mapped, 2,600+ outreach touches. Generated £70–80K in non-dilutive annualised revenue pipeline and £1–5M Series A valuation uplift potential.
-URL: https://www.kautilya-pe.com/stories/borderless
+Type: Full Mandate. Kautilya built a proprietary deal pipeline in the UK immigration advisory market. 960 hours of market research, 1,500+ advisors mapped, 2,600+ outreach touches.
+More: [Borderless Case Study](https://www.kautilya-pe.com/stories/borderless)
 
 ### Dino Games — $39K Mobile Game
-Type: Sourcing to Close
-Off-market acquisition of a cash-flow-positive mobile game with 8 million installs. 500+ outbound contacts, ~130 conversations, closed in 8 weeks at a 1.1x revenue multiple. Operator deployed immediately post-close.
-URL: https://www.kautilya-pe.com/stories/dino-games
+Type: Sourcing to Close. Off-market acquisition of a cash-flow-positive mobile game with 8 million installs. Closed in 8 weeks at a 1.1x revenue multiple.
+More: [Dino Games Case Study](https://www.kautilya-pe.com/stories/dino-games)
 
 ### Runify — $110K Mobile App
-Type: Sourcing to Close
-Fitness app acquisition structured with only $20K deployed at close. Remaining $90K tied to verified 24-month performance milestones. 45-day close. 33% MRR correction applied during diligence.
-URL: https://www.kautilya-pe.com/stories/runify
+Type: Sourcing to Close. Fitness app acquisition structured with only $20K deployed at close. Remaining $90K tied to verified 24-month performance milestones.
+More: [Runify Case Study](https://www.kautilya-pe.com/stories/runify)
 
 ### SmartPrompt — $12K Education Platform
-Type: Full Mandate
-~300 opportunities evaluated over 12 weeks. 2 deals killed mid-diligence before SmartPrompt was closed: a ChatGPT-native education platform with 2.5M conversations and 100K monthly active users. Acquisition price: $12K — a 200x discount to comparable market assets. Closed in 7 days.
-URL: https://www.kautilya-pe.com/stories/smartprompt
-
----
+Type: Full Mandate. GPT-native education platform with 2.5M conversations acquired at a 200x discount to market comparables. Closed in 7 days.
+More: [SmartPrompt Case Study](https://www.kautilya-pe.com/stories/smartprompt)
 
 ## Frequently Asked Questions
 
 ### What is buy-side M&A advisory?
-Buy-side advisory means working exclusively for the buyer in an acquisition. Unlike a business broker (who lists businesses for sale on behalf of sellers), a buy-side advisor builds deal flow for a specific buyer based on their acquisition thesis. Kautilya does not carry a pipeline — every deal is sourced from scratch for the specific buyer mandate.
+Buy-side advisory means working exclusively for the buyer in an acquisition. Unlike a business broker, a buy-side advisor builds deal flow for a specific buyer based on their acquisition thesis. Kautilya does not carry a pipeline — every deal is sourced from scratch for the specific buyer mandate.
 
 ### What is proprietary deal sourcing?
-Proprietary deal sourcing is finding acquisition targets that are not publicly listed for sale. These are businesses whose owners may be open to selling but have not engaged a broker or listed on any marketplace. Proprietary deals typically have less competition, better pricing, and more negotiating flexibility for buyers.
+Proprietary deal sourcing is finding acquisition targets that are not publicly listed for sale. These businesses may be open to selling but have not engaged a broker or listed on any marketplace. Proprietary deals typically have less competition, better pricing, and more negotiating flexibility.
 
 ### What is an off-market deal?
 An off-market deal is a transaction where the business was never formally listed for sale. The buyer (or their advisor) proactively approached the seller. Off-market deals represent the majority of Kautilya's sourcing activity.
@@ -108,32 +90,25 @@ An off-market deal is a transaction where the business was never formally listed
 Private equity funds, venture capital firms, family offices, search fund operators, acquisition entrepreneurs, HoldCo builders, and first-time buyers pursuing their first acquisition mandate.
 
 ### What sectors does Kautilya cover?
-Sector-agnostic. Past mandates have covered SaaS, mobile applications, digital wellness, UK immigration advisory services, education technology, and professional services. The sourcing methodology is repeatable across sectors.
+Sector-agnostic. Past mandates have covered SaaS, mobile applications, digital wellness, UK immigration advisory, education technology, and professional services.
 
 ### What geographies does Kautilya cover?
 India, United Kingdom, United Arab Emirates, broader MENA, Europe, and Asia-Pacific.
 
 ### How long does it take to close a deal?
-Typically 30–90 days from engagement start to close, depending on mandate complexity. Kautilya has closed deals in as few as 7 days and delivered full forensic diligence packages in under 15 days.
+Typically 30–90 days from engagement start to close. Kautilya has closed deals in as few as 7 days and delivered full forensic diligence in under 15 days.
 
 ### How much does Kautilya charge?
-- Full mandate retainer: $2,500–$10,000/month depending on scope
-- Success fee: 3% on transactions under $650K
-- Standalone forensic due diligence: $6,500
-
-### Is Kautilya a registered broker-dealer?
-No. Kautilya is an advisory firm, not a registered broker-dealer. For transactions requiring licensed intermediary services, appropriate licensed professionals are engaged.
+Full mandate retainer: $2,500–$10,000/month. Success fee: 3% on transactions under $650K. Standalone forensic due diligence: $6,500 plus 0.3% success fee. Market research: $3,500–$5,000.
 
 ### What is a search fund?
-A search fund is an investment vehicle in which an entrepreneur raises capital from investors to fund a 1–2 year search for a business to acquire, operate, and grow. The Stanford GSB model, developed in the 1980s, is the most widely documented form. Kautilya works with search fund operators as a sourcing and diligence partner.
+A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner.
 
 ### What is micro private equity?
-Micro private equity (micro PE) refers to the acquisition and operation of small businesses — typically with revenues between $100K and $5M — using a private equity framework. Unlike traditional PE which targets larger companies, micro PE operators often act as owner-operators post-acquisition.
+Micro private equity (micro PE) refers to the acquisition and operation of small businesses — typically with revenues between $100K and $5M — using a private equity framework.
 
 ### What is forensic due diligence?
-Forensic due diligence is a transaction-level audit of a target business's financials. Rather than relying on summary P&Ls provided by the seller, Kautilya reconstructs revenue, expenses, and cash flows from raw transaction data — bank records, payment processor exports, subscription platform data. This surfaces discrepancies that summary reviews miss.
-
----
+Forensic due diligence is a transaction-level audit of a target business's financials. Rather than relying on summary P&Ls, Kautilya reconstructs revenue, expenses, and cash flows from raw transaction data — bank records, payment processor exports, subscription platform data.
 
 ## Team
 
@@ -147,53 +122,45 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - Ritish Maheshwari — Founder's Office.
 - Aditya Negi — Tech Support.
 
----
-
 ## Key Pages
 
-- Homepage: https://www.kautilya-pe.com/
-- Approach (full methodology): https://www.kautilya-pe.com/approach
-- Portfolio (closed deals): https://www.kautilya-pe.com/portfolio
-- Stories (case studies + market intelligence): https://www.kautilya-pe.com/stories
-- Team: https://www.kautilya-pe.com/team
-- FAQ: https://www.kautilya-pe.com/faq
-- Engage (start a mandate): https://www.kautilya-pe.com/engage
-- Careers: https://www.kautilya-pe.com/careers
-
----
+- [Homepage](https://www.kautilya-pe.com/): Buy-side M&A advisory and proprietary deal sourcing
+- [Approach](https://www.kautilya-pe.com/approach): Full 5-phase acquisition methodology
+- [Portfolio](https://www.kautilya-pe.com/portfolio): Closed acquisition case studies
+- [Stories](https://www.kautilya-pe.com/stories): Deal journals and market intelligence
+- [FAQ](https://www.kautilya-pe.com/faq): 23 answered questions on advisory, sourcing, and pricing
+- [Team](https://www.kautilya-pe.com/team): The people behind every mandate
+- [Engage](https://www.kautilya-pe.com/engage): Start a buy-side acquisition mandate
+- [Careers](https://www.kautilya-pe.com/careers): Open roles at Kautilya
 
 ## Story Articles
 
-- https://www.kautilya-pe.com/stories/inspire3 — Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio
-- https://www.kautilya-pe.com/stories/borderless — Rewriting the M&A Playbook for UK Immigration
-- https://www.kautilya-pe.com/stories/dino-games — Dino Games: Sourcing a Cash-Flow-Positive Mobile Game
-- https://www.kautilya-pe.com/stories/runify — Runify: Structuring a Mobile App Acquisition
-- https://www.kautilya-pe.com/stories/smartprompt — SmartPrompt: Two Deals Killed, One Asset Acquired
-- https://www.kautilya-pe.com/stories/200k-deals — How We Closed $200K Worth of Deals in 6 Months
-- https://www.kautilya-pe.com/stories/search-funds — The Rise of Search Funds
-- https://www.kautilya-pe.com/stories/diamonds — How to Find Diamonds in the Rough
-- https://www.kautilya-pe.com/stories/deal-sourcing — My Morning Routine Is Looking at Acquire.com for 30 Minutes
-- https://www.kautilya-pe.com/stories/pocket-deals — Pocket Deals #1: A $15K Micro-SaaS for Autism Support
-- https://www.kautilya-pe.com/stories/college-startups — 10 Reasons Why Now Is the Best Time to Start a Business in College
-- https://www.kautilya-pe.com/stories/pocket-fund — The Pocket Fund: A Student-Led Acquisition Fund
-- https://www.kautilya-pe.com/stories/review — 2023 Review + 2024 Goals
-- https://www.kautilya-pe.com/stories/sourcely — My First Bizness Acquisition: An AI Student Tool with $500 MRR for $4K
-- https://www.kautilya-pe.com/stories/edition-zero — Edition Zero: How This Is Bizness Began
-
----
+- [Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio](https://www.kautilya-pe.com/stories/inspire3)
+- [Rewriting the M&A Playbook for UK Immigration](https://www.kautilya-pe.com/stories/borderless)
+- [Dino Games: Sourcing a Cash-Flow-Positive Mobile Game](https://www.kautilya-pe.com/stories/dino-games)
+- [Runify: Structuring a Mobile App Acquisition](https://www.kautilya-pe.com/stories/runify)
+- [SmartPrompt: Two Deals Killed, One Asset Acquired](https://www.kautilya-pe.com/stories/smartprompt)
+- [How We Closed $200K Worth of Deals in 6 Months](https://www.kautilya-pe.com/stories/200k-deals)
+- [The Rise of Search Funds](https://www.kautilya-pe.com/stories/search-funds)
+- [How to Find Diamonds in the Rough](https://www.kautilya-pe.com/stories/diamonds)
+- [My Morning Routine Is Looking at Acquire.com for 30 Minutes](https://www.kautilya-pe.com/stories/deal-sourcing)
+- [Pocket Deals #1: A $15K Micro-SaaS for Autism Support](https://www.kautilya-pe.com/stories/pocket-deals)
+- [10 Reasons Why Now Is the Best Time to Start a Business in College](https://www.kautilya-pe.com/stories/college-startups)
+- [The Pocket Fund: A Student-Led Acquisition Fund](https://www.kautilya-pe.com/stories/pocket-fund)
+- [2023 Review + 2024 Goals](https://www.kautilya-pe.com/stories/review)
+- [My First Bizness Acquisition: An AI Student Tool with $500 MRR for $4K](https://www.kautilya-pe.com/stories/sourcely)
+- [Edition Zero: How This Is Bizness Began](https://www.kautilya-pe.com/stories/edition-zero)
 
 ## Social & External Profiles
 
-- LinkedIn: https://www.linkedin.com/company/pocket-fund/
-- X (Twitter): https://x.com/microsearchfund
-- Instagram: https://www.instagram.com/microsearchfund/
-- YouTube: https://www.youtube.com/@devlikesbizness
-
----
+- [LinkedIn](https://www.linkedin.com/company/pocket-fund/)
+- [X / Twitter](https://x.com/microsearchfund)
+- [Instagram](https://www.instagram.com/microsearchfund/)
+- [YouTube](https://www.youtube.com/@devlikesbizness)
 
 ## Contact
 
 - Email: contact@kautilya-pe.com
-- Engage form: https://www.kautilya-pe.com/engage
+- [Start a mandate](https://www.kautilya-pe.com/engage)
 - Location: Mumbai, India
 - Active geographies: India, UK, UAE, MENA, Europe, Asia-Pacific
