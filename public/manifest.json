@@ -1,0 +1,23 @@
+{
+  "name": "Kautilya | Buy-Side M&A Advisory",
+  "short_name": "Kautilya",
+  "description": "Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Off-market sourcing, forensic due diligence, mandate to close.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#c9a84c",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["finance", "business"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

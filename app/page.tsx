@@ -80,12 +80,23 @@ const organizationSchema = {
     'Seller financing',
     'Post-acquisition operations',
   ],
+  founder: {
+    '@type': 'Person',
+    name: 'Dev Shah',
+    jobTitle: 'Founder',
+    url: `${BASE}/team`,
+    sameAs: ['https://x.com/microsearchfund'],
+  },
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'contact@kautilya-pe.com',
     contactType: 'sales',
     areaServed: ['IN', 'US', 'GB', 'AE'],
     availableLanguage: 'English',
+  },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2', '.hero-description', '.section-body'],
   },
   sameAs: [
     'https://x.com/microsearchfund',

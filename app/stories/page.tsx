@@ -74,6 +74,32 @@ const blogSchema = {
   },
 };
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Kautilya Stories — Acquisition Case Studies & Market Intelligence',
+  url: `${BASE}/stories`,
+  description: '15 deal journals, case studies, and market intelligence articles from Kautilya\'s buy-side advisory practice.',
+  numberOfItems: 15,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1,  url: `${BASE}/stories/inspire3`,       name: 'Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio' },
+    { '@type': 'ListItem', position: 2,  url: `${BASE}/stories/borderless`,     name: 'Rewriting the M&A Playbook for UK Immigration' },
+    { '@type': 'ListItem', position: 3,  url: `${BASE}/stories/200k-deals`,     name: 'How We Closed $200K Worth of Deals in 6 Months' },
+    { '@type': 'ListItem', position: 4,  url: `${BASE}/stories/smartprompt`,    name: 'SmartPrompt: Two Deals Killed, One Asset Acquired' },
+    { '@type': 'ListItem', position: 5,  url: `${BASE}/stories/runify`,         name: 'Runify: Structuring a Mobile App Acquisition' },
+    { '@type': 'ListItem', position: 6,  url: `${BASE}/stories/dino-games`,     name: 'Dino Games: Sourcing a Cash-Flow-Positive Mobile Game' },
+    { '@type': 'ListItem', position: 7,  url: `${BASE}/stories/search-funds`,   name: 'The Rise of Search Funds' },
+    { '@type': 'ListItem', position: 8,  url: `${BASE}/stories/diamonds`,       name: 'How to Find Diamonds in the Rough' },
+    { '@type': 'ListItem', position: 9,  url: `${BASE}/stories/deal-sourcing`,  name: 'My Morning Routine Is Looking at Acquire.com for 30 Minutes' },
+    { '@type': 'ListItem', position: 10, url: `${BASE}/stories/sourcely`,       name: 'My First Bizness Acquisition: An AI Student Tool with $500 MRR for $4K' },
+    { '@type': 'ListItem', position: 11, url: `${BASE}/stories/pocket-fund`,    name: 'The Pocket Fund: A Student-Led Acquisition Fund' },
+    { '@type': 'ListItem', position: 12, url: `${BASE}/stories/college-startups`, name: '10 Reasons Why Now Is the Best Time to Start a Business in College' },
+    { '@type': 'ListItem', position: 13, url: `${BASE}/stories/review`,         name: '2023 Review + 2024 Goals' },
+    { '@type': 'ListItem', position: 14, url: `${BASE}/stories/pocket-deals`,   name: 'Pocket Deals #1: A $15K Micro-SaaS for Autism Support' },
+    { '@type': 'ListItem', position: 15, url: `${BASE}/stories/edition-zero`,   name: 'Edition Zero: How This Is Bizness Began' },
+  ],
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -87,6 +113,7 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <StoriesContent />
     </>

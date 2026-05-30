@@ -102,6 +102,22 @@ const portfolioSchema = {
   ],
 };
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Kautilya Deal Portfolio — Closed Acquisitions',
+  url: `${BASE}/portfolio`,
+  description: '$1.5M+ in closed deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
+  numberOfItems: 5,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, url: `${BASE}/stories/inspire3`,   name: 'Inspire3 — $1.8M Digital Wellness DD',           description: '30,134 transactions audited across 19 websites in under 15 days.' },
+    { '@type': 'ListItem', position: 2, url: `${BASE}/stories/borderless`, name: 'Borderless — UK Immigration Deal Advisory',       description: 'Built a proprietary acquisition pipeline in a market where almost no businesses are listed for sale.' },
+    { '@type': 'ListItem', position: 3, url: `${BASE}/stories/dino-games`, name: 'Dino Games — $39K Mobile Game',                  description: 'Off-market acquisition of a cash-flow-positive mobile game. Sourced to close in 8 weeks.' },
+    { '@type': 'ListItem', position: 4, url: `${BASE}/stories/runify`,     name: 'Runify — $110K Mobile App Acquisition',          description: 'Structured with only $20K deployed at close. Remaining tied to performance milestones.' },
+    { '@type': 'ListItem', position: 5, url: `${BASE}/stories/smartprompt`,name: 'SmartPrompt — $12K Education Platform',          description: 'GPT-native platform acquired at a 200x discount to market comparables.' },
+  ],
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -115,6 +131,7 @@ export default function PortfolioPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PortfolioContent />
     </>

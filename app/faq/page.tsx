@@ -241,9 +241,18 @@ const FAQ_SECTIONS: FaqSection[] = [
 
 const allItems = FAQ_SECTIONS.flatMap((s) => s.items);
 
+const BASE = 'https://www.kautilya-pe.com';
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
+  name: 'Kautilya FAQs — Micro Private Equity & Buy-Side Advisory',
+  description: '23 answered questions on buy-side M&A advisory, off-market deal sourcing, forensic due diligence, deal structures, and transparent pricing.',
+  url: `${BASE}/faq`,
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2', '.faq-question', '.faq-answer'],
+  },
   mainEntity: allItems.map((item) => ({
     '@type': 'Question',
     name: item.question,
@@ -254,13 +263,35 @@ const faqSchema = {
   })),
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${BASE}/faq` },
+  ],
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
+  url: `${BASE}/faq`,
+  description: '23 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing.',
+  inLanguage: 'en-US',
+  isPartOf: { '@type': 'WebSite', url: BASE, name: 'Kautilya' },
+  breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${BASE}/faq` },
+  ]},
+};
+
 export default function FaqPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       <style dangerouslySetInnerHTML={{ __html: `
         .faq-sections {
