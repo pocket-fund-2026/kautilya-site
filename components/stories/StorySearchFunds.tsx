@@ -317,7 +317,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/why_deals_fail_post_loi.png" alt="Why deals fail post-LOI: 63% due diligence problems, 48% valuation issues, 38% seller retraction" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/why_deals_fail_post_loi.avif" alt="Why deals fail post-LOI: 63% due diligence problems, 48% valuation issues, 38% seller retraction" width={1200} height={675} />
         </figure>
 
         <h3 style={{ color: 'var(--gold)' }}>How to Handle Seller Considerations</h3>
