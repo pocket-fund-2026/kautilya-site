@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[StorySlug] }) {
-  const jsonLd: Record<string, unknown> = {
+  const articleLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: meta.title,
@@ -60,14 +60,33 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     },
   };
 
-  if (meta.datePublished) jsonLd.datePublished = meta.datePublished;
-  if (meta.image) jsonLd.image = `${BASE_URL}${meta.image}`;
+  if (meta.datePublished) {
+    articleLd.datePublished = meta.datePublished;
+    articleLd.dateModified = meta.datePublished;
+  }
+  if (meta.image) articleLd.image = `${BASE_URL}${meta.image}`;
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Stories', item: `${BASE_URL}/stories` },
+      { '@type': 'ListItem', position: 3, name: meta.title, item: `${BASE_URL}/stories/${slug}` },
+    ],
+  };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+    </>
   );
 }
 

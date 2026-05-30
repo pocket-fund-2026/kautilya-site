@@ -13,6 +13,102 @@ export const metadata: Metadata = {
   },
 };
 
+const BASE_URL = 'https://www.kautilya-pe.com';
+
+const teamSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Kautilya',
+  url: BASE_URL,
+  member: [
+    {
+      '@type': 'Person',
+      name: 'Dev Shah',
+      jobTitle: 'Founder',
+      description: 'Micro PE operator who has personally acquired and exited multiple businesses. Leads every engagement at Kautilya.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+      url: `${BASE_URL}/team`,
+    },
+    {
+      '@type': 'Person',
+      name: 'Aum Thakarkar',
+      jobTitle: 'Chief Analyst',
+      description: 'Leads research and analysis across the firm, delivers high-conviction insights on markets and opportunities.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Ganesh Jagtap',
+      jobTitle: 'Tech Head',
+      description: 'Drives the technology vision, builds scalable systems, and ensures secure, efficient platforms.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Manas Kogta',
+      jobTitle: 'AI Consultant',
+      description: 'Designs intelligent workflows and applies AI to accelerate diligence and unlock data-driven edges across mandates.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Pushkar Rathod',
+      jobTitle: 'Analyst',
+      description: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Darshana Yadav',
+      jobTitle: 'Analyst',
+      description: 'Supports deal origination with comprehensive sector screening and data aggregation.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Aryan Solanki',
+      jobTitle: 'Marketing Head',
+      description: 'Drives quantitative modeling, deep-dive market mapping, and valuation structuring.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Ritish Maheshwari',
+      jobTitle: 'Founder\'s Office',
+      description: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+    {
+      '@type': 'Person',
+      name: 'Aditya Negi',
+      jobTitle: 'Tech Support',
+      description: 'Provides technical assistance and ensures smooth operation of systems for clients and internal teams.',
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Team', item: `${BASE_URL}/team` },
+  ],
+};
+
 export default function TeamPage() {
-  return <TeamContent />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <TeamContent />
+    </>
+  );
 }
