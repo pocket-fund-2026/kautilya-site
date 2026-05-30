@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/engage',
     description: 'Submit your acquisition thesis or book a call. Kautilya builds your proprietary deal pipeline from day one.',
   },
+  other: {
+    'DC.title': 'Engage | Kautilya | Start Your Acquisition Mandate',
+    'DC.subject': 'Start M&A mandate, hire buy-side advisor India, acquisition retainer enquiry',
+    'DC.type': 'InteractiveResource',
+    pagename: 'Kautilya — Engage',
+    abstract: 'Submit your acquisition thesis or book a call. Kautilya builds your proprietary deal pipeline from day one.',
+    summary: 'Contact Kautilya to start a buy-side acquisition mandate — retainers from $2,500/month, standalone DD from $6,500.',
+    'og:see_also': 'https://www.kautilya-pe.com/approach',
+  },
 };
 
 const BASE = 'https://www.kautilya-pe.com';

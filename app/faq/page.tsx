@@ -18,6 +18,15 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/faq',
     description: '23 answered questions on M&A advisory, off-market deal sourcing, due diligence, and transparent pricing.',
   },
+  other: {
+    'DC.title': 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
+    'DC.subject': 'M&A advisory FAQ, acquisition process questions, due diligence pricing, micro private equity guide',
+    'DC.type': 'InteractiveResource',
+    pagename: 'Kautilya — FAQ',
+    abstract: '23 answered questions covering buy-side advisory, off-market deal sourcing, forensic due diligence, pricing, deal structures, and post-acquisition operations.',
+    summary: 'Comprehensive FAQ for first-time buyers and experienced acquirers: what is Kautilya, how deals are sourced, what due diligence covers, and pricing from $3,500 to $10,000/month.',
+    'og:see_also': 'https://www.kautilya-pe.com/engage',
+  },
 };
 
 interface FaqItem {

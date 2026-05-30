@@ -17,6 +17,15 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/careers',
     description: 'Open roles at Kautilya in deal sourcing, market intelligence, and brand.',
   },
+  other: {
+    'DC.title': 'Careers | Kautilya | Join the Team',
+    'DC.subject': 'M&A analyst jobs India, buy-side advisory careers, deal sourcing jobs Mumbai',
+    'DC.type': 'Text',
+    pagename: 'Kautilya — Careers',
+    abstract: 'Open roles at Kautilya in deal sourcing (Analyst) and brand/content (Marketing). Remote-friendly, India-based.',
+    summary: 'Join a small, high-intensity M&A advisory team. Open roles: Analyst and Marketing. Apply at careers@kautilya-pe.com.',
+    'og:see_also': 'https://www.kautilya-pe.com/team',
+  },
 };
 
 const BASE = 'https://www.kautilya-pe.com';

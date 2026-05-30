@@ -17,6 +17,17 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/team',
     description: 'Analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
   },
+  other: {
+    'DC.title': 'Team | Kautilya | M&A Advisory Specialists',
+    'DC.subject': 'Kautilya team, M&A analysts India, acquisition specialists, Dev Shah',
+    'DC.creator': 'Dev Shah',
+    'DC.contributor': 'Aum Thakarkar, Ganesh Jagtap, Manas Kogta, Pushkar Rathod, Darshana Yadav, Aryan Solanki, Ritish Maheshwari, Aditya Negi',
+    'DC.type': 'Text',
+    pagename: 'Kautilya — Team',
+    abstract: '9-person team of analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
+    summary: 'Led by Dev Shah (Founder), the Kautilya team covers deal sourcing, forensic due diligence, tech, AI workflows, and marketing.',
+    'og:see_also': 'https://www.kautilya-pe.com/careers',
+  },
 };
 
 const BASE_URL = 'https://www.kautilya-pe.com';

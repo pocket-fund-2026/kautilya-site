@@ -18,6 +18,15 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/portfolio',
     description: '$1.5M+ in deal value. Case studies across SaaS, mobile apps, digital wellness, and immigration tech.',
   },
+  other: {
+    'DC.title': 'Portfolio | Kautilya | Acquisitions & Case Studies',
+    'DC.subject': 'M&A deal portfolio, acquisition case studies, buy-side advisory results India',
+    'DC.type': 'Collection',
+    pagename: 'Kautilya — Deal Portfolio',
+    abstract: 'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
+    summary: 'Five closed acquisition case studies: Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K).',
+    'og:see_also': 'https://www.kautilya-pe.com/stories',
+  },
 };
 
 const BASE = 'https://www.kautilya-pe.com';

@@ -18,6 +18,15 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/stories',
     description: 'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice.',
   },
+  other: {
+    'DC.title': 'Stories | Kautilya | Acquisitions & Market Intelligence',
+    'DC.subject': 'Acquisition entrepreneurship, M&A case studies, deal sourcing guides, micro private equity India',
+    'DC.type': 'Collection',
+    pagename: 'Kautilya — Stories',
+    abstract: '15 deal journals, case studies, and market intelligence articles from Kautilya\'s buy-side advisory practice.',
+    summary: 'Acquisition case studies and market intelligence covering search funds, micro PE, off-market deal sourcing, and due diligence in India.',
+    'og:see_also': 'https://www.kautilya-pe.com/portfolio',
+  },
 };
 
 const BASE = 'https://www.kautilya-pe.com';

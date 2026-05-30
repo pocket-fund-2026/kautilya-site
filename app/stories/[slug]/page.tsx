@@ -45,6 +45,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       creator: '@microsearchfund',
       ...(meta.image ? { images: [meta.image] } : {}),
     },
+    other: {
+      'DC.title': meta.title,
+      'DC.creator': meta.author,
+      'DC.subject': 'Acquisition entrepreneurship, M&A case study, buy-side advisory India, micro private equity',
+      'DC.type': 'Text',
+      'DC.publisher': 'Kautilya',
+      'DC.language': 'en',
+      ...(meta.datePublished ? { 'DC.date': meta.datePublished, 'article:published_time': meta.datePublished } : {}),
+      'article:author': meta.author,
+      'article:section': 'Acquisitions',
+      'article:tag': 'M&A, buy-side advisory, acquisition, India, micro private equity, deal sourcing',
+      pagename: `Kautilya Stories — ${meta.title}`,
+      abstract: meta.description,
+      summary: meta.description,
+    },
   };
 }
 
@@ -77,6 +92,10 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
       '@type': 'Blog',
       name: 'Kautilya Stories',
       url: `${BASE_URL}/stories`,
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.story-byline'],
     },
   };
 

@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     url: 'https://www.kautilya-pe.com/approach',
     description: 'Five-phase acquisition process: mandate definition, universe construction, targeted outreach, diligence, and close.',
   },
+  other: {
+    'DC.title': 'Approach | Kautilya | M&A Methodology & Deal Sourcing',
+    'DC.subject': 'M&A methodology, acquisition process, due diligence, deal sourcing India',
+    pagename: 'Kautilya — Approach',
+    abstract: 'Five-phase buy-side acquisition methodology: mandate definition, universe construction, targeted outreach, forensic diligence, and close.',
+    summary: 'Kautilya\'s proprietary 5-phase acquisition process — 2,500+ founder conversations, 99.83% match rate, diligence in under 15 days.',
+    'og:see_also': 'https://www.kautilya-pe.com/portfolio',
+  },
 };
 
 const BASE = 'https://www.kautilya-pe.com';
@@ -73,6 +81,51 @@ const serviceSchema = {
   },
 };
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Execute a Buy-Side Business Acquisition in India',
+  description: 'Kautilya\'s 5-phase methodology for building proprietary acquisition pipelines and closing off-market deals.',
+  totalTime: 'P90D',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Mandate Definition',
+      text: 'Define the acquisition thesis: sector, geography, revenue range, business model, deal structure preferences, and exclusion criteria. Produces a written mandate document guiding all sourcing.',
+      url: `${BASE}/approach`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Universe Construction',
+      text: 'Build a proprietary target list from first principles — not broker databases. Typical universe: 500–2,500 companies per mandate using LinkedIn, industry directories, and direct research.',
+      url: `${BASE}/approach`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Targeted Outreach',
+      text: 'Personalised founder outreach via cold email, LinkedIn, and Loom video. 14.8% response rate vs industry average of ~5%. Typical volume: 2,500+ founder conversations per mandate.',
+      url: `${BASE}/approach`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Diligence & Structuring',
+      text: '8-workstream forensic due diligence: financial, commercial, email & CRM, traffic & conversion, tech & data, operational, strategic, and exit. Creative structures: seller financing, earnouts, revenue-based payments. Delivered in under 15 days.',
+      url: `${BASE}/approach`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Execution & Close',
+      text: 'Deal structuring, negotiation support, operator placement, and 30-60-90 day post-close plan. Typical timeline: 30–90 days from mandate start to close.',
+      url: `${BASE}/approach`,
+    },
+  ],
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -86,6 +139,7 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ApproachContent />
     </>
