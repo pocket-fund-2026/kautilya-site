@@ -66,24 +66,46 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[StorySlug] }) {
   const articleLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'NewsArticle',
     headline: meta.title,
+    alternativeHeadline: meta.description,
     description: meta.description,
-    articleSection: 'Acquisitions',
-    keywords: 'acquisition, buy-side advisory, off-market deals, micro private equity, India M&A',
+    articleSection: 'Acquisitions & Market Intelligence',
+    keywords: 'acquisition, buy-side advisory, off-market deals, micro private equity, India M&A, deal sourcing, forensic due diligence',
     inLanguage: 'en-US',
+    copyrightYear: '2024',
+    copyrightHolder: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
     author: {
       '@type': 'Person',
       name: meta.author,
       url: `${BASE_URL}/team`,
+      nationality: 'Indian',
+      knowsAbout: ['Micro private equity', 'Acquisition entrepreneurship', 'M&A advisory India', 'Off-market deal sourcing'],
       worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
+      sameAs: ['https://x.com/microsearchfund'],
     },
     publisher: {
       '@type': 'Organization',
       name: 'Kautilya',
       url: BASE_URL,
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.svg` },
+      logo: {
+        '@type': 'ImageObject',
+        url: `${BASE_URL}/icon.svg`,
+        width: 512,
+        height: 512,
+      },
     },
+    about: [
+      { '@type': 'Thing', name: 'Acquisition entrepreneurship' },
+      { '@type': 'Thing', name: 'Buy-side M&A advisory India' },
+      { '@type': 'Thing', name: 'Off-market deal sourcing' },
+      { '@type': 'Thing', name: 'Micro private equity' },
+    ],
+    audience: {
+      '@type': 'Audience',
+      audienceType: 'PE funds, VCs, family offices, search fund operators, acquisition entrepreneurs, first-time buyers',
+    },
+    teaches: 'How to source, evaluate, and close off-market business acquisitions in India and globally.',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}/stories/${slug}`,
@@ -93,6 +115,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
       name: 'Kautilya Stories',
       url: `${BASE_URL}/stories`,
     },
+    isAccessibleForFree: true,
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.story-byline'],
@@ -103,7 +126,10 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     articleLd.datePublished = meta.datePublished;
     articleLd.dateModified = meta.datePublished;
   }
-  if (meta.image) articleLd.image = { '@type': 'ImageObject', url: `${BASE_URL}${meta.image}`, width: 1200, height: 630 };
+  if (meta.image) {
+    articleLd.image = { '@type': 'ImageObject', url: `${BASE_URL}${meta.image}`, width: 1200, height: 630 };
+    articleLd.thumbnailUrl = `${BASE_URL}${meta.image}`;
+  }
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',

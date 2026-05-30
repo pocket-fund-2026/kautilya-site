@@ -65,11 +65,30 @@ const serviceSchema = {
   name: 'Buy-Side M&A Advisory',
   url: `${BASE}/approach`,
   description: 'Kautilya constructs proprietary acquisition pipelines for PE, VC, and family office buyers — sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+  slogan: 'Proprietary deal flow. From mandate to close.',
   provider: {
     '@type': 'Organization',
     name: 'Kautilya',
     url: BASE,
+    founder: { '@type': 'Person', name: 'Dev Shah' },
   },
+  serviceAudience: {
+    '@type': 'Audience',
+    audienceType: 'Private equity funds, venture capital firms, family offices, search fund operators, acquisition entrepreneurs, HoldCo builders',
+  },
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    serviceUrl: `${BASE}/engage`,
+    servicePhone: '',
+    servicePostalAddress: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mumbai',
+      addressRegion: 'Maharashtra',
+      addressCountry: 'IN',
+    },
+    availableLanguage: { '@type': 'Language', name: 'English' },
+  },
+  termsOfService: `${BASE}/terms`,
   areaServed: [
     { '@type': 'Country', name: 'India' },
     { '@type': 'Country', name: 'United States' },
@@ -114,8 +133,22 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to Execute a Buy-Side Business Acquisition in India',
-  description: 'Kautilya\'s 5-phase methodology for building proprietary acquisition pipelines and closing off-market deals.',
+  description: 'Kautilya\'s 5-phase methodology for building proprietary acquisition pipelines and closing off-market deals. From mandate definition to close in 30–90 days.',
   totalTime: 'P90D',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '2500', minValue: '2500', maxValue: '10000' },
+  yield: 'A closed off-market business acquisition with forensic diligence, optimal deal structure, and post-acquisition operations plan.',
+  tool: [
+    { '@type': 'HowToTool', name: 'Proprietary CRM and outreach platform' },
+    { '@type': 'HowToTool', name: 'Financial reconstruction model' },
+    { '@type': 'HowToTool', name: 'AI-assisted deal screening' },
+    { '@type': 'HowToTool', name: 'Sector mapping database' },
+  ],
+  supply: [
+    { '@type': 'HowToSupply', name: 'Acquisition mandate criteria' },
+    { '@type': 'HowToSupply', name: 'Target sector or geography' },
+    { '@type': 'HowToSupply', name: 'Available acquisition budget' },
+    { '@type': 'HowToSupply', name: 'Deal structure preferences' },
+  ],
   step: [
     {
       '@type': 'HowToStep',
