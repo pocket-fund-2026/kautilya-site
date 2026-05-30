@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: { absolute: 'Careers | Kautilya | Join the Team' },
   description:
     'Join Kautilya: open roles in deal sourcing, market intelligence, and brand. Small team, large impact.',
+  keywords: [
+    'Kautilya careers', 'M&A analyst jobs India', 'buy-side advisory jobs India',
+    'deal sourcing analyst Mumbai', 'acquisition analyst job India',
+    'micro PE jobs India', 'search fund jobs India', 'startup jobs Mumbai',
+    'M&A marketing jobs India', 'finance jobs Mumbai', 'investment analyst India',
+  ],
   alternates: { canonical: 'https://www.kautilya-pe.com/careers' },
   openGraph: {
     title: 'Careers | Kautilya | Join the Team',
@@ -13,12 +19,12 @@ export const metadata: Metadata = {
   },
 };
 
-const BASE_URL = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya-pe.com';
 
 const hiringOrganization = {
   '@type': 'Organization' as const,
   name: 'Kautilya',
-  url: BASE_URL,
+  url: BASE,
   sameAs: 'https://www.linkedin.com/company/pocket-fund/',
 };
 
@@ -31,11 +37,14 @@ const jobPostings = [
     hiringOrganization,
     jobLocation: {
       '@type': 'Place',
-      address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
+      address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressRegion: 'Maharashtra', addressCountry: 'IN' },
     },
+    jobLocationType: 'TELECOMMUTE',
+    applicantLocationRequirements: { '@type': 'Country', name: 'India' },
     employmentType: ['FULL_TIME', 'PART_TIME'],
-    workHours: 'Remote / Hybrid',
-    url: `${BASE_URL}/careers`,
+    datePosted: '2026-04-01',
+    validThrough: '2026-12-31',
+    url: `${BASE}/careers`,
     applicationContact: {
       '@type': 'ContactPoint',
       email: 'careers@kautilya-pe.com',
@@ -49,11 +58,14 @@ const jobPostings = [
     hiringOrganization,
     jobLocation: {
       '@type': 'Place',
-      address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
+      address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressRegion: 'Maharashtra', addressCountry: 'IN' },
     },
+    jobLocationType: 'TELECOMMUTE',
+    applicantLocationRequirements: { '@type': 'Country', name: 'India' },
     employmentType: ['FULL_TIME', 'PART_TIME'],
-    workHours: 'Remote / Hybrid',
-    url: `${BASE_URL}/careers`,
+    datePosted: '2026-04-01',
+    validThrough: '2026-12-31',
+    url: `${BASE}/careers`,
     applicationContact: {
       '@type': 'ContactPoint',
       email: 'careers@kautilya-pe.com',
@@ -65,8 +77,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-    { '@type': 'ListItem', position: 2, name: 'Careers', item: `${BASE_URL}/careers` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+    { '@type': 'ListItem', position: 2, name: 'Careers', item: `${BASE}/careers` },
   ],
 };
 
@@ -80,10 +92,7 @@ export default function CareersPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(job) }}
         />
       ))}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <CareersContent />
     </>
   );

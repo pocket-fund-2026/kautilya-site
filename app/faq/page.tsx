@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: { absolute: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory' },
   description:
     '23 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing — from $6,500 standalone DD to full-service retainers.',
+  keywords: [
+    'M&A advisory FAQ', 'buy a business FAQ India', 'off-market deal sourcing questions',
+    'due diligence cost India', 'acquisition advisory pricing', 'micro private equity FAQ',
+    'search fund questions India', 'business acquisition process FAQ',
+    'seller financing explained', 'how to buy a business India', 'first-time buyer acquisition',
+    'what is buy-side advisory', 'M&A retainer pricing India',
+  ],
   alternates: { canonical: 'https://www.kautilya-pe.com/faq' },
   openGraph: {
     title: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',

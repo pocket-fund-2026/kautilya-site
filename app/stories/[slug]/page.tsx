@@ -20,16 +20,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: meta.title,
     description: meta.description,
-    authors: [{ name: meta.author }],
+    authors: [{ name: meta.author, url: `${BASE_URL}/team` }],
+    creator: meta.author,
+    keywords: [
+      'acquisition case study', 'buy a business India', 'M&A deal India',
+      'off-market acquisition', 'micro private equity', 'search fund India',
+      'business acquisition story', 'due diligence India', meta.title,
+    ],
     alternates: { canonical: `${BASE_URL}/stories/${slug}` },
     openGraph: {
       title: `${meta.title} | Kautilya`,
       url: `${BASE_URL}/stories/${slug}`,
       description: meta.description,
       type: 'article',
-      ...(meta.datePublished ? { publishedTime: meta.datePublished } : {}),
+      siteName: 'Kautilya',
+      ...(meta.datePublished ? { publishedTime: meta.datePublished, modifiedTime: meta.datePublished } : {}),
       authors: [meta.author],
-      ...(meta.image ? { images: [{ url: meta.image }] } : {}),
+      ...(meta.image ? { images: [{ url: meta.image, width: 1200, height: 630, alt: meta.title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${meta.title} | Kautilya`,
+      description: meta.description,
+      creator: '@microsearchfund',
+      ...(meta.image ? { images: [meta.image] } : {}),
     },
   };
 }
@@ -40,23 +54,29 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     '@type': 'Article',
     headline: meta.title,
     description: meta.description,
+    articleSection: 'Acquisitions',
+    keywords: 'acquisition, buy-side advisory, off-market deals, micro private equity, India M&A',
+    inLanguage: 'en-US',
     author: {
       '@type': 'Person',
       name: meta.author,
       url: `${BASE_URL}/team`,
+      worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
     },
     publisher: {
       '@type': 'Organization',
       name: 'Kautilya',
       url: BASE_URL,
-      logo: {
-        '@type': 'ImageObject',
-        url: `${BASE_URL}/icon.svg`,
-      },
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.svg` },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}/stories/${slug}`,
+    },
+    isPartOf: {
+      '@type': 'Blog',
+      name: 'Kautilya Stories',
+      url: `${BASE_URL}/stories`,
     },
   };
 
@@ -64,7 +84,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     articleLd.datePublished = meta.datePublished;
     articleLd.dateModified = meta.datePublished;
   }
-  if (meta.image) articleLd.image = `${BASE_URL}${meta.image}`;
+  if (meta.image) articleLd.image = { '@type': 'ImageObject', url: `${BASE_URL}${meta.image}`, width: 1200, height: 630 };
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',

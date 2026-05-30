@@ -42,8 +42,19 @@ export const metadata: Metadata = {
   },
   description:
     'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
-  keywords: ['buy-side advisory', 'deal sourcing', 'M&A', 'acquisition pipeline', 'Kautilya', 'private equity', 'search fund'],
-  authors: [{ name: 'Kautilya' }],
+  keywords: [
+    'buy-side advisory', 'deal sourcing', 'M&A advisory India', 'acquisition pipeline',
+    'Kautilya', 'Kautilya PE', 'Kautilya advisory', 'micro private equity',
+    'off-market deal sourcing', 'search fund India', 'ETA India',
+    'acquisition entrepreneurship', 'business acquisition India',
+    'buy a business India', 'forensic due diligence', 'buy-side M&A',
+    'proprietary deal flow', 'family office advisory', 'PE advisory India',
+    'mandate to close', 'business broker India', 'acquisition advisory',
+  ],
+  authors: [{ name: 'Kautilya', url: 'https://www.kautilya-pe.com' }],
+  creator: 'Kautilya',
+  publisher: 'Kautilya',
+  category: 'Finance & M&A Advisory',
   alternates: {
     canonical: 'https://www.kautilya-pe.com',
     languages: {
@@ -54,6 +65,19 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icon.svg',
     apple: '/icon.svg',
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  appleWebApp: {
+    capable: true,
+    title: 'Kautilya',
+    statusBarStyle: 'black-translucent',
+  },
+  verification: {
+    google: 'google70b4b94502d91da5',
   },
   openGraph: {
     type: 'website',
@@ -75,6 +99,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@microsearchfund',
+    creator: '@microsearchfund',
     title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     description:
       'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
@@ -83,7 +108,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

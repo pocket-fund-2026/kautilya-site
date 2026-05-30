@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: { absolute: 'Team | Kautilya | M&A Advisory Specialists' },
   description:
     'Meet the Kautilya team: analysts, operators, and M&A specialists who have sourced and closed acquisitions across SaaS, digital media, mobile apps, and professional services.',
+  keywords: [
+    'Kautilya team', 'M&A advisory team India', 'buy-side advisory analysts',
+    'acquisition specialist India', 'due diligence analysts India',
+    'Dev Shah Kautilya', 'micro PE team India', 'search fund team India',
+    'deal sourcing analysts', 'M&A operator India',
+  ],
   alternates: { canonical: 'https://www.kautilya-pe.com/team' },
   openGraph: {
     title: 'Team | Kautilya | M&A Advisory Specialists',
