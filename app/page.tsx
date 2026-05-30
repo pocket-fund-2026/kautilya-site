@@ -167,10 +167,6 @@ const organizationSchema = {
       },
     ],
   },
-  speakable: {
-    '@type': 'SpeakableSpecification',
-    cssSelector: ['h1', 'h2', '.hero-description', '.section-body'],
-  },
   sameAs: [
     'https://x.com/microsearchfund',
     'https://www.instagram.com/microsearchfund/',
@@ -202,6 +198,10 @@ const webSiteSchema = {
       '@type': 'ImageObject',
       url: `${BASE}/icon.svg`,
     },
+  },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2', '.hero-description', '.section-body'],
   },
 };
 
@@ -253,12 +253,21 @@ const eventSchemas = [
     '@type': 'Event',
     name: 'INSEAD ETA Conference 2025',
     description: 'Dev Shah, Founder of Kautilya, speaks on micro private equity, acquisition entrepreneurship, and off-market deal sourcing in India.',
-    startDate: '2025',
+    startDate: '2025-01-01',
+    endDate: '2025-12-31',
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    isAccessibleForFree: false,
+    location: {
+      '@type': 'Place',
+      name: 'INSEAD',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Fontainebleau',
+        addressCountry: 'FR',
+      },
+    },
     performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
-    organizer: { '@type': 'Organization', name: 'INSEAD' },
+    organizer: { '@type': 'Organization', name: 'INSEAD', url: 'https://www.insead.edu' },
     about: [
       { '@type': 'Thing', name: 'Acquisition entrepreneurship' },
       { '@type': 'Thing', name: 'Micro private equity India' },
@@ -270,10 +279,19 @@ const eventSchemas = [
     '@type': 'Event',
     name: 'SymBiz 2025',
     description: 'Dev Shah speaks on buy-side M&A advisory, proprietary deal sourcing, and building acquisition pipelines for PE and family office buyers.',
-    startDate: '2025',
+    startDate: '2025-01-01',
+    endDate: '2025-12-31',
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    isAccessibleForFree: false,
+    location: {
+      '@type': 'Place',
+      name: 'SymBiz Conference',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Mumbai',
+        addressCountry: 'IN',
+      },
+    },
     performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
     organizer: { '@type': 'Organization', name: 'SymBiz' },
     about: [
