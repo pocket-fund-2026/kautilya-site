@@ -94,6 +94,8 @@ User-agent: YouBot
 Allow: /
 
 # -----------------------------------------------
-# Sitemap location
+# Sitemap locations
 # -----------------------------------------------
 Sitemap: https://www.kautilya-pe.com/sitemap.xml
+Sitemap: https://www.kautilya-pe.com/news-sitemap.xml
+Sitemap: https://www.kautilya-pe.com/image-sitemap.xml
