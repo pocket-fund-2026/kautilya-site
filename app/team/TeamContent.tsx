@@ -74,7 +74,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Kabir',
-    role: 'AI Consultant & Business Associate',
+    role: 'Business Associate',
     desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
     initials: 'K',
     image: kabirImage,
