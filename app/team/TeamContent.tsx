@@ -10,7 +10,7 @@ const manasImage = '/images/manas.jpeg';
 const pushkarImage = '/images/pushkar.jpeg';
 const darshanaImage = '/images/darshana.jpg';
 const aryanImage = '/images/aryan.jpeg';
-const ritishImage = '/images/ritish.jpeg';
+const kabirImage = '/images/kabir.jpg';
 const adityaImage = '/images/aditya.jpeg';
 
 type TeamMember = {
@@ -73,11 +73,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     image: aryanImage,
   },
   {
-    name: 'Ritish Maheshwari',
-    role: 'Founder\'s Office',
+    name: 'Kabir',
+    role: 'AI Consultant & Business Associate',
     desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
-    initials: 'RM',
-    image: ritishImage,
+    initials: 'K',
+    image: kabirImage,
   },
   {
     name: 'Aditya Negi',
