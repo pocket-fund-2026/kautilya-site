@@ -81,7 +81,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Aditya Negi',
-    role: 'Tech Support',
+    role: 'Full Stack Developer',
     desc: 'Provides timely technical assistance, resolves issues, and ensures smooth day-to-day use of our systems for clients and internal teams.',
     initials: 'AN',
     image: adityaImage,
