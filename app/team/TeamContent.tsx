@@ -73,10 +73,10 @@ const TEAM_MEMBERS: TeamMember[] = [
     image: aryanImage,
   },
   {
-    name: 'Kabir',
+    name: 'Kabir Dhumale',
     role: 'Business Associate',
     desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
-    initials: 'K',
+    initials: 'KD',
     image: kabirImage,
   },
   {
