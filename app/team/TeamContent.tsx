@@ -8,7 +8,7 @@ const aumImage = '/images/aum.jpg';
 const ganeshImage = '/images/ganesh.jpg';
 const manasImage = '/images/manas.jpeg';
 const pushkarImage = '/images/pushkar.jpeg';
-const darshanaImage = '/images/darshana.jpg';
+const lashitaImage = '/images/lashita.jpg';
 const aryanImage = '/images/aryan.jpeg';
 const kabirImage = '/images/kabir.jpg';
 const adityaImage = '/images/aditya.jpeg';
@@ -59,11 +59,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     image: pushkarImage,
   },
   {
-    name: 'Darshana Yadav',
-    role: 'Analyst',
-    desc: 'Supports deal origination with comprehensive sector screening and data aggregation.',
-    initials: 'DY',
-    image: darshanaImage,
+    name: 'Lashita Luniya',
+    role: 'Creative Strategist',
+    desc: 'Shapes brand narrative and campaign direction, turning market insight into sharp creative that elevates how Kautilya engages founders and partners.',
+    initials: 'LL',
+    image: lashitaImage,
   },
   {
     name: 'Aryan Solanki',

@@ -84,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [
         `${WWW}/images/aum.jpg`,
         `${WWW}/images/aditya.jpeg`,
-        `${WWW}/images/darshana.jpg`,
+        `${WWW}/images/lashita.jpg`,
       ],
     },
     {
