@@ -14,178 +14,122 @@ export default function BlogContent() {
   return (
     <div className="page blog-index-page">
       <style dangerouslySetInnerHTML={{ __html: `
-        .blog-index-page {
-          overflow-x: hidden;
-        }
+        .blog-index-page { overflow-x: hidden; }
 
-        /* Hero — prefixed to avoid collision with blog post .blog-hero */
-        .blog-index-hero {
-          text-align: center;
-          padding: 100px 48px 72px;
-          max-width: 820px;
-          margin: 0 auto;
-        }
-        .blog-index-hero-eyebrow {
-          display: block;
-          font-size: 11px;
-          letter-spacing: 7px;
-          text-transform: uppercase;
-          color: var(--gold);
-          margin-bottom: 28px;
-        }
-        .blog-index-hero-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 58px;
-          font-weight: 500;
-          color: var(--text-primary);
-          letter-spacing: 2px;
-          line-height: 1.1;
-          margin-bottom: 28px;
-        }
-        .blog-index-gold-rule {
-          width: 40px;
-          height: 1px;
-          background: var(--gold);
-          margin: 0 auto 28px;
-        }
-        .blog-index-hero-desc {
-          font-size: 16px;
-          color: var(--text-secondary);
-          line-height: 1.85;
-          max-width: 580px;
-          margin: 0 auto;
-        }
-
-        /* Post card */
-        .blog-posts-wrap {
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 0 48px 140px;
-        }
-        .blog-posts-label {
-          display: block;
-          font-size: 10px;
-          letter-spacing: 5px;
-          text-transform: uppercase;
-          color: var(--text-muted);
-          margin-bottom: 28px;
-        }
+        /* Blog post card — extends .pathway-card pattern from globals */
         .blog-post-card {
           display: block;
           text-decoration: none;
-          border: 1px solid rgba(201,185,154,0.15);
-          border-radius: 4px;
-          padding: 56px 64px;
-          background: rgba(255,255,255,0.016);
-          transition: border-color 0.35s ease, background 0.35s ease;
+          border: 1px solid var(--border);
+          border-radius: 3px;
+          padding: 52px 60px;
+          background: rgba(255,255,255,0.015);
+          transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.22,1,0.36,1);
           position: relative;
           overflow: hidden;
         }
         .blog-post-card::before {
           content: '';
           position: absolute;
-          top: 0; left: 0;
-          width: 2px; height: 100%;
-          background: linear-gradient(to bottom, var(--gold), transparent);
-          opacity: 0;
-          transition: opacity 0.35s ease;
+          bottom: 0; left: 0; right: 0;
+          height: 2px;
+          background: var(--gold);
+          transform: scaleX(0);
+          transition: transform 0.4s ease;
         }
         .blog-post-card:hover {
-          border-color: rgba(201,185,154,0.38);
-          background: rgba(255,255,255,0.026);
+          background: rgba(255,255,255,0.03);
+          border-color: rgba(201,185,154,0.28);
+          transform: translateY(-3px);
         }
-        .blog-post-card:hover::before { opacity: 1; }
+        .blog-post-card:hover::before { transform: scaleX(1); }
 
         .blog-card-meta {
           display: flex;
           align-items: center;
           gap: 14px;
           flex-wrap: wrap;
-          margin-bottom: 32px;
+          margin-bottom: 28px;
         }
         .blog-card-tag {
-          display: inline-block;
           font-size: 9px;
-          letter-spacing: 4px;
+          letter-spacing: 3px;
           text-transform: uppercase;
           color: var(--gold);
-          border: 1px solid rgba(201,185,154,0.3);
+          border: 1px solid rgba(201,185,154,0.28);
           padding: 4px 11px;
           border-radius: 999px;
         }
         .blog-card-sep {
-          width: 1px; height: 12px;
-          background: rgba(201,185,154,0.22);
+          width: 1px; height: 10px;
+          background: var(--border);
         }
-        .blog-card-date {
+        .blog-card-date, .blog-card-readtime {
+          font-family: var(--font-lora), 'Lora', serif;
           font-size: 12px;
-          letter-spacing: 1.5px;
+          letter-spacing: 0.5px;
           color: var(--text-muted);
         }
-        .blog-card-readtime {
-          font-size: 12px;
-          color: var(--text-muted);
-        }
-
         .blog-card-title {
           font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 44px;
+          font-size: 42px;
           font-weight: 500;
           color: var(--text-primary);
-          line-height: 1.22;
+          line-height: 1.2;
           letter-spacing: 0.5px;
-          margin-bottom: 14px;
+          margin-bottom: 12px;
         }
         .blog-card-subtitle {
-          font-size: 17px;
+          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-size: 20px;
           font-style: italic;
+          font-weight: 400;
           color: var(--gold);
-          line-height: 1.55;
-          margin-bottom: 28px;
+          line-height: 1.4;
+          margin-bottom: 24px;
         }
         .blog-card-excerpt {
+          font-family: var(--font-lora), 'Lora', serif;
           font-size: 15px;
           color: var(--text-secondary);
-          line-height: 1.9;
-          max-width: 720px;
-          margin-bottom: 40px;
+          line-height: 1.85;
+          max-width: 640px;
+          margin-bottom: 36px;
         }
-        .blog-card-cta {
+        .blog-card-arrow {
           font-size: 11px;
           letter-spacing: 4px;
           text-transform: uppercase;
           color: var(--gold);
+          transition: transform 0.3s;
+          display: inline-block;
         }
+        .blog-post-card:hover .blog-card-arrow { transform: translateX(6px); }
 
-        /* Mobile */
         @media (max-width: 768px) {
-          .blog-index-hero { padding: 60px 24px 48px; }
-          .blog-index-hero-title { font-size: 38px; }
-          .blog-posts-wrap { padding: 0 24px 80px; }
           .blog-post-card { padding: 36px 28px; }
-          .blog-card-title { font-size: 30px; }
-          .blog-card-subtitle { font-size: 15px; }
+          .blog-card-title { font-size: 28px; }
+          .blog-card-subtitle { font-size: 17px; }
         }
         @media (max-width: 480px) {
-          .blog-index-hero-title { font-size: 28px; }
-          .blog-card-title { font-size: 24px; }
           .blog-post-card { padding: 28px 20px; }
+          .blog-card-title { font-size: 24px; }
         }
       `}} />
 
-      {/* Hero */}
-      <div className="blog-index-hero">
-        <span className="blog-index-hero-eyebrow">Insight & Intelligence</span>
-        <h1 className="blog-index-hero-title">The Kautilya Blog</h1>
-        <div className="blog-index-gold-rule" />
-        <p className="blog-index-hero-desc">
+      {/* Header — uses .page-hero, .section-title, .section-body, .gold-line from globals */}
+      <div className="page-hero">
+        <div className="phase-label">Insight & Intelligence</div>
+        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Blog</h1>
+        <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
+        <p className="section-body">
           Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team.
         </p>
       </div>
 
-      {/* Post */}
-      <div className="blog-posts-wrap">
-        <span className="blog-posts-label">Latest</span>
+      {/* Post listing — uses .content-section from globals */}
+      <div className="content-section" style={{ paddingTop: 40 }}>
+        <div className="phase-label" style={{ marginBottom: 24 }}>Latest</div>
         <Link href={`/blog/${slug}`} className="blog-post-card">
           <div className="blog-card-meta">
             <span className="blog-card-tag">{meta.category}</span>
@@ -197,7 +141,7 @@ export default function BlogContent() {
           <div className="blog-card-title">{meta.title}</div>
           {meta.subtitle && <div className="blog-card-subtitle">{meta.subtitle}</div>}
           <p className="blog-card-excerpt">{meta.description}</p>
-          <span className="blog-card-cta">Read Article →</span>
+          <span className="blog-card-arrow">Read Article →</span>
         </Link>
       </div>
     </div>
