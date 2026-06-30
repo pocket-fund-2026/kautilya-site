@@ -104,7 +104,7 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/blog/${slug}` },
     isPartOf: { '@type': 'Blog', name: 'The Kautilya Blog', url: `${BASE}/blog` },
     isAccessibleForFree: true,
-    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.blog-post-lede'] },
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.blog-body p:first-child'] },
   };
 
   const faqLd = {
@@ -129,7 +129,7 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
       },
       {
         '@type': 'Question',
-        name: 'What did KKR do to increase JB Chemicals\' value before selling to Torrent?',
+        name: "What did KKR do to increase JB Chemicals' value before selling to Torrent?",
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'KKR made five moves over five years: appointed a professional CEO, ran a consistent bolt-on acquisition strategy, funded a dormant CDMO capability in medicated lozenges that grew to Rs. 446 Cr in revenue, improved EBITDA margins from 15-18% to 27-29%, and rebuilt governance to institutional standards. The combined effect was a Rs. 22,000 Cr increase in exit value.',
@@ -173,45 +173,6 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
   );
 }
 
-function BlogByline({ meta }: { meta: (typeof BLOG_META)[BlogSlug] }) {
-  const formatted = new Date(meta.datePublished).toLocaleDateString('en-US', {
-    year: 'numeric', month: 'long', day: 'numeric',
-  });
-
-  return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        .blog-byline-bar {
-          display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-          padding: 0 24px; margin-bottom: 32px;
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px; letter-spacing: 0.04em; color: var(--text-muted);
-        }
-        .blog-byline-tag {
-          display: inline-block; font-size: 9px; letter-spacing: 4px;
-          text-transform: uppercase; color: var(--gold);
-          border: 1px solid rgba(201,185,154,0.28); padding: 3px 10px; border-radius: 999px;
-        }
-        .blog-byline-sep { width: 1px; height: 10px; background: rgba(201,185,154,0.22); }
-        .blog-byline-author {
-          color: var(--gold); text-decoration: none;
-          border-bottom: 1px solid transparent; transition: border-color 0.2s;
-        }
-        .blog-byline-author:hover { border-bottom-color: var(--gold); }
-      `}} />
-      <div className="blog-byline-bar">
-        <span className="blog-byline-tag">{meta.category}</span>
-        <div className="blog-byline-sep" />
-        <a href="/team" className="blog-byline-author">{meta.author}</a>
-        <div className="blog-byline-sep" />
-        <time dateTime={meta.datePublished}>{formatted}</time>
-        <div className="blog-byline-sep" />
-        <span>{meta.readTime} read</span>
-      </div>
-    </>
-  );
-}
-
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   if (!BLOG_SLUGS.includes(slug as BlogSlug)) notFound();
@@ -221,7 +182,6 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       <BlogJsonLd slug={slug} meta={meta} />
-      <BlogByline meta={meta} />
       <BlogPharmaValuation />
     </>
   );

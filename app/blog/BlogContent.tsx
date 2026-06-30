@@ -12,21 +12,20 @@ export default function BlogContent() {
   const meta = BLOG_META[slug];
 
   return (
-    <div className="blog-index-page">
+    <div className="page blog-index-page">
       <style dangerouslySetInnerHTML={{ __html: `
         .blog-index-page {
-          min-height: 100vh;
-          padding-top: 80px;
+          overflow-x: hidden;
         }
 
-        /* Hero */
-        .blog-hero {
+        /* Hero — prefixed to avoid collision with blog post .blog-hero */
+        .blog-index-hero {
           text-align: center;
           padding: 100px 48px 72px;
           max-width: 820px;
           margin: 0 auto;
         }
-        .blog-hero-eyebrow {
+        .blog-index-hero-eyebrow {
           display: block;
           font-size: 11px;
           letter-spacing: 7px;
@@ -34,7 +33,7 @@ export default function BlogContent() {
           color: var(--gold);
           margin-bottom: 28px;
         }
-        .blog-hero-title {
+        .blog-index-hero-title {
           font-family: var(--font-cormorant), 'Cormorant', serif;
           font-size: 58px;
           font-weight: 500;
@@ -43,13 +42,13 @@ export default function BlogContent() {
           line-height: 1.1;
           margin-bottom: 28px;
         }
-        .blog-gold-rule {
+        .blog-index-gold-rule {
           width: 40px;
           height: 1px;
           background: var(--gold);
           margin: 0 auto 28px;
         }
-        .blog-hero-desc {
+        .blog-index-hero-desc {
           font-size: 16px;
           color: var(--text-secondary);
           line-height: 1.85;
@@ -160,26 +159,26 @@ export default function BlogContent() {
 
         /* Mobile */
         @media (max-width: 768px) {
-          .blog-hero { padding: 80px 24px 56px; }
-          .blog-hero-title { font-size: 38px; }
+          .blog-index-hero { padding: 60px 24px 48px; }
+          .blog-index-hero-title { font-size: 38px; }
           .blog-posts-wrap { padding: 0 24px 80px; }
           .blog-post-card { padding: 36px 28px; }
           .blog-card-title { font-size: 30px; }
           .blog-card-subtitle { font-size: 15px; }
         }
         @media (max-width: 480px) {
-          .blog-hero-title { font-size: 30px; }
+          .blog-index-hero-title { font-size: 28px; }
           .blog-card-title { font-size: 24px; }
           .blog-post-card { padding: 28px 20px; }
         }
       `}} />
 
       {/* Hero */}
-      <div className="blog-hero">
-        <span className="blog-hero-eyebrow">Insight & Intelligence</span>
-        <h1 className="blog-hero-title">The Kautilya Blog</h1>
-        <div className="blog-gold-rule" />
-        <p className="blog-hero-desc">
+      <div className="blog-index-hero">
+        <span className="blog-index-hero-eyebrow">Insight & Intelligence</span>
+        <h1 className="blog-index-hero-title">The Kautilya Blog</h1>
+        <div className="blog-index-gold-rule" />
+        <p className="blog-index-hero-desc">
           Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team.
         </p>
       </div>
