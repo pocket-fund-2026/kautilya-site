@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
+import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 
 const WWW = 'https://www.kautilya-pe.com';
 
@@ -107,6 +108,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const blogIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${WWW}/blog`,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      lastModified: '2026-06-29',
+      images: [`${WWW}/opengraph-image`],
+    },
+  ];
+
+  const blogPages: MetadataRoute.Sitemap = BLOG_SLUGS.map((slug) => {
+    const meta = BLOG_META[slug as BlogSlug];
+    return {
+      url: `${WWW}/blog/${slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      lastModified: meta.datePublished,
+    };
+  });
+
   const storyPages: MetadataRoute.Sitemap = STORY_SLUGS.map((slug) => {
     const meta = STORY_META[slug as StorySlug];
     const imgs = (STORY_IMAGES[slug] ?? []).map((p) => `${WWW}${p}`);
@@ -122,5 +143,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticPages, ...storyPages];
+  return [...staticPages, ...blogIndexPage, ...blogPages, ...storyPages];
 }

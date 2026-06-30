@@ -20,6 +20,7 @@ export default function Footer() {
             <Link href="/approach">Approach</Link>
             <Link href="/portfolio">Portfolio</Link>
             <Link href="/stories">Stories</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/team">Team</Link>
           </div>
           <div className="footer-column">
