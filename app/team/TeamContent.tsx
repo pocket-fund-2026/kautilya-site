@@ -8,7 +8,6 @@ const aumImage = '/images/aum.jpg';
 const ganeshImage = '/images/ganesh.jpg';
 const manasImage = '/images/manas.jpeg';
 const pushkarImage = '/images/pushkar.jpeg';
-const lashitaImage = '/images/lashita.jpg';
 const aryanImage = '/images/aryan.jpeg';
 const kabirImage = '/images/kabir.jpg';
 const adityaImage = '/images/aditya.jpeg';
@@ -19,6 +18,7 @@ type TeamMember = {
   desc: string;
   initials: string;
   image?: string;
+  linkedin?: string;
 };
 
 // ---- Team Data (9 Members for a 3x3 Grid) ----
@@ -29,6 +29,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Dev drives every smart acquisition at Pocket Fund.',
     initials: 'DS',
     image: devImage,
+    linkedin: 'https://www.linkedin.com/in/devlikesbizness/',
   },
   {
     name: 'Aum Thakarkar',
@@ -36,6 +37,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Leads research and analysis across the firm, delivers high-conviction insights on markets and opportunities, and guides data-driven investment decisions.',
     initials: 'AT',
     image: aumImage,
+    linkedin: 'https://www.linkedin.com/in/aumthakarkar/',
   },
   {
     name: 'Ganesh Jagtap',
@@ -50,6 +52,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Brings AI expertise to the firm, designing intelligent workflows and applying AI to accelerate diligence, and unlock data-driven edges across mandates.',
     initials: 'M',
     image: manasImage,
+    linkedin: 'https://www.linkedin.com/in/manaskogta/',
   },
   {
     name: 'Pushkar Rathod',
@@ -57,13 +60,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
     initials: 'PR',
     image: pushkarImage,
-  },
-  {
-    name: 'Lashita Luniya',
-    role: 'Creative Strategist',
-    desc: 'Shapes brand narrative and campaign direction, turning market insight into sharp creative that elevates how Kautilya engages founders and partners.',
-    initials: 'LL',
-    image: lashitaImage,
+    linkedin: 'https://www.linkedin.com/in/pushkarrathod12/',
   },
   {
     name: 'Aryan Solanki',
@@ -71,6 +68,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Drives quantitative modeling, deep-dive market mapping, and valuation structuring.',
     initials: 'AS',
     image: aryanImage,
+    linkedin: 'https://www.linkedin.com/in/aryan-solanki-a15b4b246/',
   },
   {
     name: 'Kabir Dhumale',
@@ -78,6 +76,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
     initials: 'KD',
     image: kabirImage,
+    linkedin: 'https://www.linkedin.com/in/kabir-dhumale/',
   },
   {
     name: 'Aditya Negi',
@@ -85,8 +84,16 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Provides timely technical assistance, resolves issues, and ensures smooth day-to-day use of our systems for clients and internal teams.',
     initials: 'AN',
     image: adityaImage,
+    linkedin: 'https://www.linkedin.com/in/aditya-negi-9a12a2223/',
   },
 ];
+
+// ---- LinkedIn Icon ----
+const LinkedInIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+  </svg>
+);
 
 // ---- Glare Hover Card Component ----
 const GlareAvatar = ({ name, initials, desc, image }: { name: string; initials: string; desc: string; image?: string }) => {
@@ -398,6 +405,27 @@ export default function TeamContent() {
           color: var(--gold);
         }
 
+        .member-linkedin {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 10px;
+          font-size: 10px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: var(--text-muted);
+          text-decoration: none;
+          transition: color 0.25s ease;
+        }
+
+        .member-linkedin:hover {
+          color: var(--gold);
+        }
+
+        .member-linkedin svg {
+          display: block;
+        }
+
         /* Mobile Adjustments */
         @media (max-width: 768px) {
           .team-grid-3x3 { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -495,6 +523,19 @@ export default function TeamContent() {
                 <GlareAvatar name={member.name} initials={member.initials} desc={member.desc} image={member.image} />
                 <div className="member-name">{member.name}</div>
                 <div className="member-role">{member.role}</div>
+                {member.linkedin && (
+                  <a
+                    className="member-linkedin"
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${member.name} on LinkedIn`}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <LinkedInIcon />
+                    <span>LinkedIn</span>
+                  </a>
+                )}
               </div>
             ))}
           </div>

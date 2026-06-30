@@ -34,7 +34,6 @@ const IMAGE_MAP: Array<{
     images: [
       { src: '/images/aum.jpg', title: 'Aum Thakarkar — Chief Analyst, Kautilya', caption: 'Aum Thakarkar leads research and analysis across the firm, delivering high-conviction insights on markets and acquisition opportunities.' },
       { src: '/images/aditya.jpeg', title: 'Aditya Negi — Tech Support, Kautilya', caption: 'Aditya Negi provides technical assistance and ensures smooth operation of systems for clients and internal teams at Kautilya.' },
-      { src: '/images/lashita.jpg', title: 'Lashita Luniya — Creative Strategist, Kautilya', caption: 'Lashita Luniya shapes brand narrative and campaign direction, turning market insight into sharp creative that elevates how Kautilya engages founders and partners.' },
     ],
   },
   {

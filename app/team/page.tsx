@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     'DC.title': 'Team | Kautilya | M&A Advisory Specialists',
     'DC.subject': 'Kautilya team, M&A analysts India, acquisition specialists, Dev Shah',
     'DC.creator': 'Dev Shah',
-    'DC.contributor': 'Aum Thakarkar, Ganesh Jagtap, Manas Kogta, Pushkar Rathod, Lashita Luniya, Aryan Solanki, Kabir Dhumale, Aditya Negi',
+    'DC.contributor': 'Aum Thakarkar, Ganesh Jagtap, Manas Kogta, Pushkar Rathod, Aryan Solanki, Kabir Dhumale, Aditya Negi',
     'DC.type': 'Text',
     pagename: 'Kautilya — Team',
     abstract: '9-person team of analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
@@ -76,7 +76,7 @@ const teamSchema = {
         knowsAbout: ['Micro private equity', 'Off-market deal sourcing', 'Acquisition entrepreneurship', 'M&A advisory India', 'Search funds', 'Forensic due diligence'],
         hasOccupation: { '@type': 'Occupation', name: 'Founder & M&A Advisor', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
         award: ['INSEAD ETA Conference Speaker 2025', 'SymBiz 2025 Speaker'],
-        sameAs: ['https://x.com/microsearchfund', 'https://www.instagram.com/microsearchfund/'],
+        sameAs: ['https://www.linkedin.com/in/devlikesbizness/', 'https://x.com/microsearchfund', 'https://www.instagram.com/microsearchfund/'],
       },
       {
         '@type': 'Person',
@@ -87,6 +87,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Market research', 'Acquisition target analysis', 'Financial analysis', 'Deal sourcing', 'Sector mapping'],
         hasOccupation: { '@type': 'Occupation', name: 'Chief Analyst', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
+        sameAs: ['https://www.linkedin.com/in/aumthakarkar/'],
       },
       {
         '@type': 'Person',
@@ -107,6 +108,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Artificial intelligence', 'AI workflows', 'Machine learning', 'Data analysis', 'AI-assisted due diligence'],
         hasOccupation: { '@type': 'Occupation', name: 'AI Consultant', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
+        sameAs: ['https://www.linkedin.com/in/manaskogta/'],
       },
       {
         '@type': 'Person',
@@ -117,19 +119,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Cross-border M&A', 'Deal structuring', 'Acquisition negotiations', 'Due diligence'],
         hasOccupation: { '@type': 'Occupation', name: 'M&A Analyst', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
-      },
-      {
-        '@type': 'Person',
-        name: 'Lashita Luniya',
-        jobTitle: 'Creative Strategist',
-        description: 'Shapes brand narrative and campaign direction, turning market insight into sharp creative that elevates how Kautilya engages founders and partners.',
-        nationality: 'Indian',
-        url: `${BASE_URL}/team`,
-        image: `${BASE_URL}/images/lashita.jpg`,
-        worksFor: org,
-        knowsAbout: ['Creative strategy', 'Brand narrative', 'Campaign direction', 'Content strategy', 'Marketing'],
-        hasOccupation: { '@type': 'Occupation', name: 'Creative Strategist', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
-        sameAs: ['https://www.linkedin.com/in/lashitaluniya/'],
+        sameAs: ['https://www.linkedin.com/in/pushkarrathod12/'],
       },
       {
         '@type': 'Person',
@@ -140,6 +130,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Brand marketing', 'Content strategy', 'Social media', 'Newsletter marketing', 'Growth marketing'],
         hasOccupation: { '@type': 'Occupation', name: 'Head of Marketing', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
+        sameAs: ['https://www.linkedin.com/in/aryan-solanki-a15b4b246/'],
       },
       {
         '@type': 'Person',
@@ -150,6 +141,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Strategic initiatives', 'Business operations', 'Partnerships', 'Project management'],
         hasOccupation: { '@type': 'Occupation', name: 'Business Associate', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
+        sameAs: ['https://www.linkedin.com/in/kabir-dhumale/'],
       },
       {
         '@type': 'Person',
@@ -160,6 +152,7 @@ const teamSchema = {
         worksFor: org,
         knowsAbout: ['Full stack development', 'Technical support', 'System administration', 'Client support'],
         hasOccupation: { '@type': 'Occupation', name: 'Full Stack Developer', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
+        sameAs: ['https://www.linkedin.com/in/aditya-negi-9a12a2223/'],
       },
     ],
   },
