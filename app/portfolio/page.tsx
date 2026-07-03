@@ -4,8 +4,11 @@ import PortfolioContent from './PortfolioContent';
 export const metadata: Metadata = {
   title: { absolute: 'Portfolio | Kautilya | Acquisitions & Case Studies' },
   description:
-    'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech — with full mandate-to-close case studies.',
+    'Kautilya\'s closed acquisition portfolio: $1.9M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech — with full mandate-to-close case studies.',
   keywords: [
+    'DM Pro acquisition case study', 'Twitter automation SaaS acquisition',
+    'X automation SaaS acquisition India', 'buy-side mandate case study India',
+    '$25K acquisition case study', 'off-market SaaS acquisition India',
     'acquisition case studies India', 'M&A deal portfolio', 'closed acquisitions',
     'SaaS acquisition India', 'mobile app acquisition', 'digital wellness acquisition',
     'buy-side advisory results', 'off-market deal examples', 'micro PE portfolio',
@@ -42,15 +45,22 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Portfolio | Kautilya | Acquisitions & Case Studies',
     url: 'https://www.kautilya-pe.com/portfolio',
-    description: '$1.5M+ in deal value. Case studies across SaaS, mobile apps, digital wellness, and immigration tech.',
+    description: '$1.9M+ in deal value. Case studies across SaaS, mobile apps, digital wellness, and immigration tech.',
+    images: [{ url: 'https://www.kautilya-pe.com/images/stories/dm-pro/mrr-growth.png', width: 1200, height: 549, alt: 'Kautilya closed acquisition portfolio' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio | Kautilya | Acquisitions & Case Studies',
+    description: '$1.9M+ in deal value. Case studies across SaaS, mobile apps, digital wellness, and immigration tech.',
+    images: ['https://www.kautilya-pe.com/images/stories/dm-pro/mrr-growth.png'],
   },
   other: {
     'DC.title': 'Portfolio | Kautilya | Acquisitions & Case Studies',
     'DC.subject': 'M&A deal portfolio, acquisition case studies, buy-side advisory results India',
     'DC.type': 'Collection',
     pagename: 'Kautilya — Deal Portfolio',
-    abstract: 'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
-    summary: 'Five closed acquisition case studies: Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K).',
+    abstract: 'Kautilya\'s closed acquisition portfolio: $1.9M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
+    summary: 'Six closed acquisition case studies: Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K), DM Pro ($25K).',
     'og:see_also': 'https://www.kautilya-pe.com/stories',
   },
 };
@@ -99,6 +109,12 @@ const portfolioSchema = {
       url: `${BASE}/stories/smartprompt`,
       description: 'Closed a GPT-native education platform at a 200x discount to market comparables.',
     },
+    {
+      '@type': 'Article',
+      name: 'DM Pro: From 1,600 DMs to One Twitter/X SaaS Acquisition',
+      url: `${BASE}/stories/dm-pro`,
+      description: 'A $25K off-market buy-side mandate on a Twitter/X automation SaaS — sourcing to close in 12 weeks, no broker, no marketplace.',
+    },
   ],
 };
 
@@ -107,14 +123,15 @@ const itemListSchema = {
   '@type': 'ItemList',
   name: 'Kautilya Deal Portfolio — Closed Acquisitions',
   url: `${BASE}/portfolio`,
-  description: '$1.5M+ in closed deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
-  numberOfItems: 5,
+  description: '$1.9M+ in closed deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
+  numberOfItems: 6,
   itemListElement: [
     { '@type': 'ListItem', position: 1, url: `${BASE}/stories/inspire3`,   name: 'Inspire3 — $1.8M Digital Wellness DD',           description: '30,134 transactions audited across 19 websites in under 15 days.' },
     { '@type': 'ListItem', position: 2, url: `${BASE}/stories/borderless`, name: 'Borderless — UK Immigration Deal Advisory',       description: 'Built a proprietary acquisition pipeline in a market where almost no businesses are listed for sale.' },
     { '@type': 'ListItem', position: 3, url: `${BASE}/stories/dino-games`, name: 'Dino Games — $39K Mobile Game',                  description: 'Off-market acquisition of a cash-flow-positive mobile game. Sourced to close in 8 weeks.' },
     { '@type': 'ListItem', position: 4, url: `${BASE}/stories/runify`,     name: 'Runify — $110K Mobile App Acquisition',          description: 'Structured with only $20K deployed at close. Remaining tied to performance milestones.' },
     { '@type': 'ListItem', position: 5, url: `${BASE}/stories/smartprompt`,name: 'SmartPrompt — $12K Education Platform',          description: 'GPT-native platform acquired at a 200x discount to market comparables.' },
+    { '@type': 'ListItem', position: 6, url: `${BASE}/stories/dm-pro`,     name: 'DM Pro — $25K Twitter/X SaaS Acquisition',       description: '1,700+ outreach messages, no broker, no marketplace. Closed at 14x MRR with 70% cash at close.' },
   ],
 };
 
