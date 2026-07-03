@@ -107,21 +107,6 @@ const deals: Deal[] = [
     ],
     storyLink: '/stories/smartprompt',
   },
-  {
-    tag: 'Full Mandate',
-    tagClass: 'mandate',
-    price: '$25K',
-    name: 'DM Pro',
-    oneLiner:
-      '1,700+ outreach messages, zero brokers, one Twitter/X automation SaaS. Sourced off-market, diligenced across three layers, and closed at 14x MRR with 70% cash at close.',
-    metrics: [
-      { val: '1,700+', label: 'Outreach Messages' },
-      { val: '21', label: 'Deals Shortlisted' },
-      { val: '14x', label: 'MRR Multiple' },
-      { val: '12 Wks', label: 'Time to Close' },
-    ],
-    storyLink: '/stories/dm-pro',
-  },
 ];
 
 /* -- stats bar (now rendered inline with NumberTicker) -- */
@@ -153,11 +138,11 @@ export default function PortfolioContent() {
         {/* Stats bar */}
         <div className="dash-stats-bar">
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={6} /></div>
+            <div className="ds-val"><NumberTicker value={5} /></div>
             <div className="ds-label">Engagements</div>
           </div>
           <div className="dash-stat">
-            <div className="ds-val">$<NumberTicker value={1.99} startValue={1.5} decimalPlaces={2} />M+</div>
+            <div className="ds-val">$<NumberTicker value={1.96} startValue={1.5} decimalPlaces={2} />M+</div>
             <div className="ds-label">Total Deal Value</div>
           </div>
           <div className="dash-stat">
