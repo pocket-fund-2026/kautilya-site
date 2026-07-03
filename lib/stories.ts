@@ -115,5 +115,7 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: 'DM Pro: From 1,600 DMs to One Twitter/X SaaS Acquisition',
     description: 'A $25K off-market buy-side mandate — sourcing to close in 12 weeks, no broker, no marketplace.',
     author: 'Dev Shah',
+    datePublished: '2026-07-03',
+    image: '/images/stories/dm-pro/mrr-growth.png',
   },
 };
