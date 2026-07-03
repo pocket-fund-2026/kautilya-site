@@ -1,6 +1,7 @@
 "use client";
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
+import ShimmerImage from '@/components/ShimmerImage';
 import Link from 'next/link';
 
 export default function StoryDMPro() {
@@ -163,6 +164,14 @@ export default function StoryDMPro() {
           website content as context. At the time of acquisition it ranked first in Google AI Overviews for
           Twitter cold-DM tool queries, entirely organic.
         </p>
+
+        <ShimmerImage
+          src="/images/stories/dm-pro/mrr-growth.png"
+          alt="DM Pro monthly revenue growth from $348 to $2,156 between September 2025 and May 2026, with $1,771 MRR at close"
+          width={1200}
+          height={549}
+        />
+
         <p>
           Financial diligence pulled direct Stripe access and reconciled it 100% against the seller's P&amp;L.
           Roughly $800 in lifetime-plan purchases was flagged as non-recurring so the buyers underwrote real,
@@ -217,6 +226,14 @@ export default function StoryDMPro() {
           <li>10% equity retained by the founder, with a 1.25x MRR exit right at 12 months</li>
           <li>Capped 3-month developer transition commitment to de-risk the handover</li>
         </ul>
+
+        <ShimmerImage
+          src="/images/stories/dm-pro/deal-structure.png"
+          alt="Deal structure across Kautilya's completed acquisitions: Runify $30,000 upfront / $80,000 deferred, Dino Games $22,000 upfront / $17,000 deferred, DM Pro $17,500 upfront / $7,500 deferred"
+          width={1200}
+          height={532}
+        />
+
         <p>
           Seller headline value stayed at $25,000 — the full price the founder wanted. What changed was how the
           risk was carried: platform risk was priced into a 14x MRR multiple, and founder-dependence was addressed
