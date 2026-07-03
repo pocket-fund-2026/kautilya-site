@@ -424,6 +424,27 @@ body {
   color: var(--text-faint);
 }
 
+.footer-badges {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.footer-badges:hover {
+  opacity: 1;
+}
+
+.footer-badges img {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
