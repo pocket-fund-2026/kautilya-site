@@ -17,7 +17,6 @@ const storyComponents: Record<string, React.ComponentType> = {
   '200k-deals': dynamic(() => import('@/components/stories/Story200kDeals')),
   'smartprompt': dynamic(() => import('@/components/stories/StorySmartPrompt')),
   'inspire3': dynamic(() => import('@/components/stories/StoryInspire3')),
-  'dm-pro': dynamic(() => import('@/components/stories/StoryDMPro')),
 };
 
 export default function StoryContent({ slug }: { slug: string }) {
