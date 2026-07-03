@@ -14,6 +14,7 @@ export const STORY_SLUGS = [
   '200k-deals',
   'smartprompt',
   'inspire3',
+  'dm-pro',
 ] as const;
 
 export type StorySlug = (typeof STORY_SLUGS)[number];
@@ -108,6 +109,11 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
   'inspire3': {
     title: 'Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio',
     description: '30,134 transactions audited across 19 websites in under 15 days.',
+    author: 'Dev Shah',
+  },
+  'dm-pro': {
+    title: 'DM Pro: From 1,600 DMs to One Twitter/X SaaS Acquisition',
+    description: 'A $25K off-market buy-side mandate — sourcing to close in 12 weeks, no broker, no marketplace.',
     author: 'Dev Shah',
   },
 };
