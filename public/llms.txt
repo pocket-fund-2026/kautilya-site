@@ -55,6 +55,10 @@ Deal structuring (earnouts, deferred consideration, seller financing), negotiati
 
 ## Closed Deals
 
+### Confidential MSP — $21M Buy-Side Due Diligence
+Type: Forensic Due Diligence. Kautilya rebuilt a California-based managed service provider's economics from primary operational data — 303 customer agreements modeled and 51,063 time entries re-costed across three reconciled systems (ConnectWise, Metabase, Intuit). Turned a distrusted 32% blended gross margin into a defensible ~45% recurring margin and identified $3.2M of non-delivery labor driving the EBITDA gap. Revenue audited: ~$21M (3-year). ~300 analyst-hours, 2 analysts, ~1 month.
+More: [Confidential MSP Case Study](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
+
 ### Inspire3 — $1.8M Digital Wellness Portfolio
 Type: Forensic Due Diligence. Kautilya audited 30,134 transactions across 19 websites in under 15 days. Surfaced 7 discrepancies including a $57K financial gap and $3.1M in misclassified affiliate liabilities. Revenue validated: $1.4M. Match rate: 99.83%.
 More: [Inspire3 Case Study](https://www.kautilya-pe.com/stories/inspire3)
@@ -134,6 +138,7 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 
 ## Story Articles
 
+- [Confidential MSP: Buy-Side DD on a $21M Managed-Services Business](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
 - [Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio](https://www.kautilya-pe.com/stories/inspire3)
 - [Rewriting the M&A Playbook for UK Immigration](https://www.kautilya-pe.com/stories/borderless)
 - [Dino Games: Sourcing a Cash-Flow-Positive Mobile Game](https://www.kautilya-pe.com/stories/dino-games)

@@ -107,6 +107,21 @@ const deals: Deal[] = [
     ],
     storyLink: '/stories/smartprompt',
   },
+  {
+    tag: 'Due Diligence',
+    tagClass: 'diligence',
+    price: '$21M',
+    name: 'Confidential MSP',
+    oneLiner:
+      'A ~$21M managed-services business, buy-side DD end-to-end — every one of 303 customer agreements modeled and 51,063 hours re-costed, turning a distrusted 32% blend into a defensible 45% recurring margin.',
+    metrics: [
+      { val: '303', label: 'Agreements Modeled' },
+      { val: '51,063', label: 'Time Entries Re-Costed' },
+      { val: '3', label: 'Systems Reconciled' },
+      { val: '~45%', label: 'True Recurring Margin' },
+    ],
+    storyLink: '/stories/msp-buy-side-diligence',
+  },
 ];
 
 /* -- stats bar (now rendered inline with NumberTicker) -- */
@@ -138,7 +153,7 @@ export default function PortfolioContent() {
         {/* Stats bar */}
         <div className="dash-stats-bar">
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={5} /></div>
+            <div className="ds-val"><NumberTicker value={6} startValue={5} /></div>
             <div className="ds-label">Engagements</div>
           </div>
           <div className="dash-stat">
@@ -146,7 +161,7 @@ export default function PortfolioContent() {
             <div className="ds-label">Total Deal Value</div>
           </div>
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={2100} startValue={1800} /></div>
+            <div className="ds-val"><NumberTicker value={2400} startValue={2100} /></div>
             <div className="ds-label">Analyst Hours</div>
           </div>
           <div className="dash-stat">

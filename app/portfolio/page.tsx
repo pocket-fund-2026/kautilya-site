@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech — with full mandate-to-close case studies.',
   keywords: [
+    'MSP buy-side due diligence case study', 'managed service provider acquisition',
+    'MSP due diligence India', '$21M MSP due diligence case study',
+    'managed services quality of earnings', 'MSP EBITDA normalization',
     'acquisition case studies India', 'M&A deal portfolio', 'closed acquisitions',
     'SaaS acquisition India', 'mobile app acquisition', 'digital wellness acquisition',
     'buy-side advisory results', 'off-market deal examples', 'micro PE portfolio',
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
     'DC.type': 'Collection',
     pagename: 'Kautilya — Deal Portfolio',
     abstract: 'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
-    summary: 'Five closed acquisition case studies: Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K).',
+    summary: 'Six closed acquisition and due-diligence case studies: Confidential MSP ($21M buy-side DD), Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K).',
     'og:see_also': 'https://www.kautilya-pe.com/stories',
   },
 };
@@ -69,6 +72,12 @@ const portfolioSchema = {
     url: BASE,
   },
   hasPart: [
+    {
+      '@type': 'Article',
+      name: 'Confidential MSP: Buy-Side DD on a $21M Managed-Services Business',
+      url: `${BASE}/stories/msp-buy-side-diligence`,
+      description: 'Full-scope buy-side DD rebuilding revenue, cost, and margin for 303 agreements and 51,063 time entries on a ~$21M managed-services business.',
+    },
     {
       '@type': 'Article',
       name: 'Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio',
@@ -108,13 +117,14 @@ const itemListSchema = {
   name: 'Kautilya Deal Portfolio — Closed Acquisitions',
   url: `${BASE}/portfolio`,
   description: '$1.5M+ in closed deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
-  numberOfItems: 5,
+  numberOfItems: 6,
   itemListElement: [
-    { '@type': 'ListItem', position: 1, url: `${BASE}/stories/inspire3`,   name: 'Inspire3 — $1.8M Digital Wellness DD',           description: '30,134 transactions audited across 19 websites in under 15 days.' },
-    { '@type': 'ListItem', position: 2, url: `${BASE}/stories/borderless`, name: 'Borderless — UK Immigration Deal Advisory',       description: 'Built a proprietary acquisition pipeline in a market where almost no businesses are listed for sale.' },
-    { '@type': 'ListItem', position: 3, url: `${BASE}/stories/dino-games`, name: 'Dino Games — $39K Mobile Game',                  description: 'Off-market acquisition of a cash-flow-positive mobile game. Sourced to close in 8 weeks.' },
-    { '@type': 'ListItem', position: 4, url: `${BASE}/stories/runify`,     name: 'Runify — $110K Mobile App Acquisition',          description: 'Structured with only $20K deployed at close. Remaining tied to performance milestones.' },
-    { '@type': 'ListItem', position: 5, url: `${BASE}/stories/smartprompt`,name: 'SmartPrompt — $12K Education Platform',          description: 'GPT-native platform acquired at a 200x discount to market comparables.' },
+    { '@type': 'ListItem', position: 1, url: `${BASE}/stories/msp-buy-side-diligence`, name: 'Confidential MSP — $21M Buy-Side DD', description: '303 agreements modeled and 51,063 time entries re-costed to rebuild a distrusted 32% margin into a defensible 45%.' },
+    { '@type': 'ListItem', position: 2, url: `${BASE}/stories/inspire3`,   name: 'Inspire3 — $1.8M Digital Wellness DD',           description: '30,134 transactions audited across 19 websites in under 15 days.' },
+    { '@type': 'ListItem', position: 3, url: `${BASE}/stories/borderless`, name: 'Borderless — UK Immigration Deal Advisory',       description: 'Built a proprietary acquisition pipeline in a market where almost no businesses are listed for sale.' },
+    { '@type': 'ListItem', position: 4, url: `${BASE}/stories/dino-games`, name: 'Dino Games — $39K Mobile Game',                  description: 'Off-market acquisition of a cash-flow-positive mobile game. Sourced to close in 8 weeks.' },
+    { '@type': 'ListItem', position: 5, url: `${BASE}/stories/runify`,     name: 'Runify — $110K Mobile App Acquisition',          description: 'Structured with only $20K deployed at close. Remaining tied to performance milestones.' },
+    { '@type': 'ListItem', position: 6, url: `${BASE}/stories/smartprompt`,name: 'SmartPrompt — $12K Education Platform',          description: 'GPT-native platform acquired at a 200x discount to market comparables.' },
   ],
 };
 
