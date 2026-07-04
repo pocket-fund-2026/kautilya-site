@@ -18,6 +18,7 @@ const STORY_IMAGES: Record<string, string[]> = {
   '200k-deals':      ['/images/blogs/edition-200k.jpeg', '/images/stories/200k/architecture.png', '/images/stories/200k/five-deals.png', '/images/stories/200k/hidden-channel.png'],
   'smartprompt':     ['/images/stories/smart-prompt/300.png', '/images/stories/smart-prompt/discount.png', '/images/stories/smart-prompt/kill.png'],
   'inspire3':        ['/images/portfolio-logos/inspire3.png'],
+  'msp-buy-side-diligence': [],
 };
 
 const STORY_SUMMARIES: Record<string, string> = {
@@ -36,6 +37,7 @@ const STORY_SUMMARIES: Record<string, string> = {
   '200k-deals':       'Five advisory deals, an eleven-person team, and the shift from buying to advising — how Kautilya closed $200K in deal value in 6 months.',
   'smartprompt':      'Two deals killed mid-diligence before closing a GPT-native education platform at a 200x discount to market comparables.',
   'inspire3':         '30,134 transactions audited across 19 websites in under 15 days — full forensic due diligence on a $1.8M digital wellness portfolio.',
+  'msp-buy-side-diligence': 'Full-scope buy-side due diligence on a ~$21M managed-services business — 303 agreements modeled and 51,063 time entries re-costed to turn a distrusted 32% margin into a defensible 45%.',
 };
 
 function escapeXml(str: string): string {
