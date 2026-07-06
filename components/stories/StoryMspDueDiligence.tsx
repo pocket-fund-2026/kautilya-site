@@ -102,7 +102,7 @@ export default function StoryMspDueDiligence() {
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
-        <div style={{ display: 'flex', gap: '32px', justifyContent: 'flex-start', flexWrap: 'wrap', margin: '0 0 16px' }}>
+        <div style={{ display: 'flex', gap: '32px', justifyContent: 'center', flexWrap: 'wrap', margin: '0 0 16px' }}>
           <div style={{ textAlign: 'center' }}>
             <Image
               src="/images/Dev.jpeg"
@@ -140,7 +140,7 @@ export default function StoryMspDueDiligence() {
             <div className="team-role" style={{ marginBottom: 0 }}>Analyst</div>
           </div>
         </div>
-        <p style={{ fontSize: 13, color: 'var(--text-muted)', margin: '0 0 40px' }}>
+        <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--text-muted)', margin: '0 0 40px' }}>
           Two analysts, ~300 hours, roughly a month — the team behind this engagement.{' '}
           <Link href="/team">Meet the rest of Kautilya</Link>.
         </p>
