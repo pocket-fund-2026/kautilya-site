@@ -1472,6 +1472,9 @@ a.deal-card { cursor: pointer; }
   color: var(--text-secondary);
   line-height: 1.85;
   margin-bottom: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .story-body h2 {
@@ -1611,6 +1614,9 @@ a.deal-card { cursor: pointer; }
 .phase-block p {
   margin-bottom: 8px;
   font-size: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 /* Constraints list */
