@@ -116,5 +116,6 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     description: 'Kautilya rebuilt an MSP\'s economics from 303 agreements and 51,063 time entries — turning a distrusted 32% blend into a defensible 45% recurring margin.',
     author: 'Dev Shah',
     datePublished: '2026-07-04',
+    image: '/images/Dev.jpeg',
   },
 };
