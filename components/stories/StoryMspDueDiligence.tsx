@@ -336,6 +336,50 @@ export default function StoryMspDueDiligence() {
           <li>Per-pillar context memos — methodology, assumptions, caveats, and the findings that matter</li>
         </ul>
 
+        <h2>The Team on This Engagement</h2>
+        <p>
+          Two analysts, ~300 hours, roughly a month, in near-daily working sessions — small enough that every
+          record got traced by someone who understood the whole model, not handed off across a large team.
+        </p>
+        <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', flexWrap: 'wrap', margin: '32px 0 40px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <img
+              src="/images/Dev.jpeg"
+              alt="Dev Shah — Founder, Kautilya"
+              width={88}
+              height={88}
+              style={{ width: 88, height: 88, borderRadius: '50%', objectFit: 'cover', marginBottom: 12, border: '1px solid var(--border)' }}
+            />
+            <div className="team-name" style={{ fontSize: 16, marginBottom: 2 }}>Dev</div>
+            <div className="team-role" style={{ marginBottom: 0 }}>Founder</div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <img
+              src="/images/aum.jpg"
+              alt="Aum Thakarkar — Senior Analyst, Kautilya"
+              width={88}
+              height={88}
+              style={{ width: 88, height: 88, borderRadius: '50%', objectFit: 'cover', marginBottom: 12, border: '1px solid var(--border)' }}
+            />
+            <div className="team-name" style={{ fontSize: 16, marginBottom: 2 }}>Aum</div>
+            <div className="team-role" style={{ marginBottom: 0 }}>Senior Analyst</div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <img
+              src="/images/pushkar.jpeg"
+              alt="Pushkar Rathod — Analyst, Kautilya"
+              width={88}
+              height={88}
+              style={{ width: 88, height: 88, borderRadius: '50%', objectFit: 'cover', marginBottom: 12, border: '1px solid var(--border)' }}
+            />
+            <div className="team-name" style={{ fontSize: 16, marginBottom: 2 }}>Pushkar</div>
+            <div className="team-role" style={{ marginBottom: 0 }}>Analyst</div>
+          </div>
+        </div>
+        <p>
+          Meet the rest of the team on <Link href="/team">the Kautilya team page</Link>.
+        </p>
+
         <h2>Why This Engagement Matters</h2>
         <p>
           Most advisory firms won&rsquo;t give a sub-$10M deal this much attention — the model doesn&rsquo;t

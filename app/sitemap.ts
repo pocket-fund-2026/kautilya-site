@@ -20,7 +20,7 @@ const STORY_IMAGES: Record<string, string[]> = {
   '200k-deals':      ['/images/blogs/edition-200k.jpeg', '/images/stories/200k/architecture.png', '/images/stories/200k/five-deals.png', '/images/stories/200k/hidden-channel.png'],
   'smartprompt':     ['/images/stories/smart-prompt/300.png', '/images/stories/smart-prompt/discount.png', '/images/stories/smart-prompt/kill.png'],
   'inspire3':        ['/images/portfolio-logos/inspire3.png'],
-  'msp-buy-side-diligence': [],
+  'msp-buy-side-diligence': ['/images/Dev.jpeg', '/images/aum.jpg', '/images/pushkar.jpeg'],
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
