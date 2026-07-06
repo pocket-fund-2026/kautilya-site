@@ -1494,6 +1494,18 @@ a.deal-card { cursor: pointer; }
   font-style: italic;
 }
 
+.story-body a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold-dim);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.story-body a:hover {
+  text-decoration-color: var(--gold);
+}
+
 .story-body .story-img {
   margin: 40px 0;
   border-radius: 4px;
