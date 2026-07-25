@@ -1,29 +1,22 @@
 'use client';
 
 import Link from 'next/link';
-import { BLOG_META, BLOG_SLUGS, type BlogSlug } from '@/lib/blogs';
 import { NEWSLETTER_META, NEWSLETTER_SLUGS, type NewsletterSlug } from '@/lib/newsletters';
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-export default function BlogContent() {
-  const slugs = [...BLOG_SLUGS].sort(
-    (a, b) => new Date(BLOG_META[b as BlogSlug].datePublished).getTime() - new Date(BLOG_META[a as BlogSlug].datePublished).getTime()
-  ) as BlogSlug[];
-
-  const newsletterSlugs = [...NEWSLETTER_SLUGS].sort(
+export default function NewsletterContent() {
+  const slugs = [...NEWSLETTER_SLUGS].sort(
     (a, b) => new Date(NEWSLETTER_META[b as NewsletterSlug].datePublished).getTime() - new Date(NEWSLETTER_META[a as NewsletterSlug].datePublished).getTime()
   ) as NewsletterSlug[];
-  const latestIssue = NEWSLETTER_META[newsletterSlugs[0]];
 
   return (
     <div className="page blog-index-page">
       <style dangerouslySetInnerHTML={{ __html: `
         .blog-index-page { overflow-x: hidden; }
 
-        /* Blog post card — extends .pathway-card pattern from globals */
         .blog-post-card {
           display: block;
           text-decoration: none;
@@ -67,10 +60,7 @@ export default function BlogContent() {
           padding: 4px 11px;
           border-radius: 999px;
         }
-        .blog-card-sep {
-          width: 1px; height: 10px;
-          background: var(--border);
-        }
+        .blog-card-sep { width: 1px; height: 10px; background: var(--border); }
         .blog-card-date, .blog-card-readtime {
           font-family: var(--font-lora), 'Lora', serif;
           font-size: 12px;
@@ -122,65 +112,25 @@ export default function BlogContent() {
           .blog-post-card { padding: 28px 20px; }
           .blog-card-title { font-size: 24px; }
         }
-
-        /* Kautilya Newsletter section */
-        .newsletter-section {
-          margin-top: 72px;
-          padding-top: 56px;
-          border-top: 1px solid var(--border);
-        }
-        .newsletter-section-head {
-          display: flex;
-          align-items: baseline;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          gap: 16px;
-          margin-bottom: 12px;
-        }
-        .newsletter-section-desc {
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 15px;
-          color: var(--text-secondary);
-          line-height: 1.8;
-          max-width: 680px;
-          margin-bottom: 32px;
-        }
-        .newsletter-linkedin-link {
-          font-size: 10px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          color: var(--gold);
-          text-decoration: none;
-          border-bottom: 1px solid var(--gold-dim);
-          padding-bottom: 3px;
-          white-space: nowrap;
-          transition: border-color 0.2s;
-        }
-        .newsletter-linkedin-link:hover { border-color: var(--gold); }
-        .newsletter-card {
-          border-color: rgba(201,185,154,0.22);
-          background: rgba(201,185,154,0.025);
-        }
       `}} />
 
-      {/* Header — uses .page-hero, .section-title, .section-body, .gold-line from globals */}
       <div className="page-hero">
-        <div className="phase-label">Insight & Intelligence</div>
-        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Blog</h1>
+        <div className="phase-label">Deal Table Teardowns</div>
+        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Newsletter</h1>
         <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
         <p className="section-body">
-          Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team.
+          Deal-structure teardowns from Kautilya&apos;s advisory desk — buyer, target, structure,
+          and a scorecard, every time, so you can compare deals as the archive grows.
         </p>
       </div>
 
-      {/* Post listing — uses .content-section from globals */}
       <div className="content-section" style={{ paddingTop: 40 }}>
         <div className="phase-label" style={{ marginBottom: 24 }}>Latest</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           {slugs.map((slug) => {
-            const meta = BLOG_META[slug];
+            const meta = NEWSLETTER_META[slug];
             return (
-              <Link key={slug} href={`/blog/${slug}`} className="blog-post-card">
+              <Link key={slug} href={`/newsletter/${slug}`} className="blog-post-card">
                 <div className="blog-card-meta">
                   <span className="blog-card-tag">{meta.category}</span>
                   <div className="blog-card-sep" />
@@ -191,49 +141,10 @@ export default function BlogContent() {
                 <div className="blog-card-title">{meta.title}</div>
                 {meta.subtitle && <div className="blog-card-subtitle">{meta.subtitle}</div>}
                 <p className="blog-card-excerpt">{meta.description}</p>
-                <span className="blog-card-arrow">Read Article →</span>
+                <span className="blog-card-arrow">Read Teardown →</span>
               </Link>
             );
           })}
-        </div>
-
-        {/* Kautilya Newsletter — deal-structure teardowns, distinct from the advisory blog above */}
-        <div className="newsletter-section">
-          <div className="newsletter-section-head">
-            <div>
-              <div className="phase-label" style={{ marginBottom: 8 }}>Deal Table Teardowns</div>
-              <h2 className="section-title" style={{ fontSize: 32 }}>The Kautilya Newsletter</h2>
-            </div>
-            <a
-              href="https://www.linkedin.com/newsletters/the-india-deal-sheet-7472989616799850497/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="newsletter-linkedin-link"
-            >
-              Subscribe on LinkedIn →
-            </a>
-          </div>
-          <p className="newsletter-section-desc">
-            Deal-structure teardowns from Kautilya&apos;s advisory desk: buyer, target, structure,
-            and a scorecard for every Indian M&A deal worth studying — separate from the
-            advisory guides above.
-          </p>
-
-          {latestIssue && (
-            <Link href={`/newsletter/${newsletterSlugs[0]}`} className="blog-post-card newsletter-card">
-              <div className="blog-card-meta">
-                <span className="blog-card-tag">{latestIssue.category}</span>
-                <div className="blog-card-sep" />
-                <span className="blog-card-date">{formatDate(latestIssue.datePublished)}</span>
-                <div className="blog-card-sep" />
-                <span className="blog-card-readtime">{latestIssue.readTime} read</span>
-              </div>
-              <div className="blog-card-title">{latestIssue.title}</div>
-              {latestIssue.subtitle && <div className="blog-card-subtitle">{latestIssue.subtitle}</div>}
-              <p className="blog-card-excerpt">{latestIssue.description}</p>
-              <span className="blog-card-arrow">Read Teardown →</span>
-            </Link>
-          )}
         </div>
       </div>
     </div>

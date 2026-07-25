@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
+import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 
 const WWW = 'https://www.kautilya-pe.com';
 
@@ -129,6 +130,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
+  const newsletterIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${WWW}/newsletter`,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      lastModified: '2026-07-25',
+      images: [`${WWW}/opengraph-image`],
+    },
+  ];
+
+  const newsletterPages: MetadataRoute.Sitemap = NEWSLETTER_SLUGS.map((slug) => {
+    const meta = NEWSLETTER_META[slug as NewsletterSlug];
+    return {
+      url: `${WWW}/newsletter/${slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      lastModified: meta.datePublished,
+    };
+  });
+
   const storyPages: MetadataRoute.Sitemap = STORY_SLUGS.map((slug) => {
     const meta = STORY_META[slug as StorySlug];
     const imgs = (STORY_IMAGES[slug] ?? []).map((p) => `${WWW}${p}`);
@@ -144,5 +165,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticPages, ...blogIndexPage, ...blogPages, ...storyPages];
+  return [...staticPages, ...blogIndexPage, ...blogPages, ...newsletterIndexPage, ...newsletterPages, ...storyPages];
 }
