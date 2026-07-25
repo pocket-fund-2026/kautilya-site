@@ -33,6 +33,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     category: 'Buyer Guides',
     readTime: '7 min',
     wordCount: 1250,
+    image: '/images/blogs/family-business-acquisition/family-business-acquisition-hero.webp',
     keywords: [
       // Primary
       'buying a family owned business in India',

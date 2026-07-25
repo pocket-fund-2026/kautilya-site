@@ -2,7 +2,10 @@
 
 import { useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
+
+const IMG_BASE = '/images/blogs/family-business-acquisition';
 
 export default function BlogFamilyBusinessAcquisition() {
   useReadingProgressAndShareBar();
@@ -96,6 +99,32 @@ export default function BlogFamilyBusinessAcquisition() {
           transition: opacity 0.2s;
         }
         .story-coda .coda-link:hover { opacity: 0.88; }
+
+        /* Editorial images */
+        .blog-hero-image {
+          margin: 32px 0 40px;
+          border-radius: 3px;
+          overflow: hidden;
+          border: 1px solid var(--border);
+        }
+        .blog-hero-image img { width: 100%; height: auto; display: block; }
+
+        .blog-figure {
+          margin: 40px 0;
+          border-radius: 3px;
+          overflow: hidden;
+          border: 1px solid var(--border);
+          background: rgba(255,255,255,0.015);
+        }
+        .blog-figure img { width: 100%; height: auto; display: block; }
+        .blog-figure-caption {
+          font-family: var(--font-lora), 'Lora', serif;
+          font-size: 12px;
+          color: var(--text-muted);
+          text-align: center;
+          padding: 14px 20px;
+          border-top: 1px solid var(--border);
+        }
       `}} />
 
       <div className="reading-progress" id="readingProgress" />
@@ -137,6 +166,18 @@ export default function BlogFamilyBusinessAcquisition() {
 
       {/* ── Body: uses .story-body, .pull-quote, .constraint-list, .story-coda ── */}
       <article className="story-body">
+        <div className="blog-hero-image">
+          <Image
+            src={`${IMG_BASE}/family-business-acquisition-hero.webp`}
+            alt="Built over decades, handed over with trust — buying a family-owned business in India"
+            title="Buying a Family-Owned Business in India"
+            width={1536}
+            height={1024}
+            priority
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <p>
           Most small businesses for sale in India are family businesses. A promoter built it over
           15 or 25 years, ran it with relatives or long-time loyal staff, and is now selling
@@ -211,6 +252,19 @@ export default function BlogFamilyBusinessAcquisition() {
           <li><strong>Sensitivity around legacy and continuity</strong>: many family sellers care more than a corporate seller would about whether the business, the brand name, or the staff will be treated well after the sale</li>
           <li><strong>Slower decision timelines</strong>, particularly when multiple family members need to agree, or when the sale carries emotional weight around a life&apos;s work ending</li>
         </ul>
+
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/family-business-negotiation.webp`}
+            alt="Second-generation family business owner negotiating a sale across the table from a buyer, discussing valuation, transition plan, and employee retention"
+            title="Negotiating with a family business owner in India"
+            width={1619}
+            height={971}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+          <div className="blog-figure-caption">Respect the legacy, communicate openly, align expectations, build the future — the tone that shapes a family business negotiation.</div>
+        </div>
+
         <p>
           This isn&apos;t necessarily a disadvantage for a buyer. Sellers who are motivated by
           continuity and legacy, rather than purely maximizing price, are often more open to
@@ -218,13 +272,6 @@ export default function BlogFamilyBusinessAcquisition() {
           because those structures keep them involved and demonstrate you&apos;ll run the business
           responsibly.
         </p>
-
-        <div className="pull-quote">
-          <p>
-            The goal is converting informal, personal trust into documented, transferable business
-            relationships before you take ownership.
-          </p>
-        </div>
 
         <h2>Family Business Succession Due Diligence Checklist</h2>
         <p>
@@ -239,6 +286,17 @@ export default function BlogFamilyBusinessAcquisition() {
           <li><strong>Family agreement confirmation</strong>: verify all owners (siblings, spouse, adult children with a stake) are actually aligned on the sale, not just the person you&apos;ve been negotiating with</li>
         </ul>
 
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/family-business-due-diligence-checklist.webp`}
+            alt="Family business due diligence checklist covering financials and tax records, legal and ownership documents, operations and customer base, liabilities, key-person and succession risk, and growth drivers"
+            title="Due diligence checklist for buying a family-owned business in India"
+            width={1619}
+            height={971}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <h2>How to Structure an Acquisition of a Family-Owned Business</h2>
         <p>
           Family business acquisitions often benefit from structures that address the emotional
@@ -249,6 +307,18 @@ export default function BlogFamilyBusinessAcquisition() {
           <li>Seller financing or an earnout tied to retained customers, which gives the seller confidence the business (and their legacy) will be looked after, while protecting you if customer relationships don&apos;t transfer as smoothly as promised</li>
           <li>Written retention agreements with key family or long-serving employees, ideally signed before closing, not negotiated after</li>
         </ul>
+
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/family-business-acquisition-structure.webp`}
+            alt="Four steps to structure a family-owned business acquisition: transition consulting period, seller financing or earnout, written retention agreements, and documenting and transferring relationships"
+            title="How to structure an acquisition of a family-owned business"
+            width={1619}
+            height={971}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <p>
           The goal is converting informal, personal trust into documented, transferable business
           relationships before you take ownership.
