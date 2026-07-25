@@ -141,7 +141,7 @@ export default function BlogPharmaValuation() {
         }
 
         /* CTA button inside story-coda */
-        .coda-link {
+        .story-coda .coda-link {
           display: inline-block;
           margin-top: 24px;
           font-size: 10px;
@@ -154,7 +154,7 @@ export default function BlogPharmaValuation() {
           text-decoration: none;
           transition: opacity 0.2s;
         }
-        .coda-link:hover { opacity: 0.88; }
+        .story-coda .coda-link:hover { opacity: 0.88; }
 
         /* h3 inside story-body (globals only defines h2) */
         .story-body h3 {
