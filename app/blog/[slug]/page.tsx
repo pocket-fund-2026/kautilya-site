@@ -2,8 +2,14 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 import BlogPharmaValuation from '@/components/blogs/BlogPharmaValuation';
+import BlogFamilyBusinessAcquisition from '@/components/blogs/BlogFamilyBusinessAcquisition';
 
 const BASE = 'https://www.kautilya-pe.com';
+
+const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
+  'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,
+  'pharma-business-valuation-india-jb-chemicals': BlogPharmaValuation,
+};
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -132,28 +138,7 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
     sameAs: ['https://x.com/microsearchfund'],
   };
 
-  const faqItems = [
-    {
-      q: 'What EBITDA multiple do pharma businesses sell for in India?',
-      a: 'Founder-owned pharma businesses in the Rs. 50–500 Cr revenue range typically sell at 6–8x EBITDA. PE-backed assets with institutional governance and professional management trade at 18–24x. The Torrent-JB Chemicals deal at 24.8x represents the current ceiling for institutionally prepared assets in Indian mid-market pharma.',
-    },
-    {
-      q: 'How long does it take to prepare a pharma business for sale in India?',
-      a: 'Meaningful preparation typically requires 18–36 months. The highest-priority work: installing a professional management layer, cleaning the P&L of personal expenses, documenting customer relationships, resolving governance gaps, and identifying and beginning to fund any dormant capability.',
-    },
-    {
-      q: "What did KKR do to increase JB Chemicals' value before selling to Torrent?",
-      a: 'KKR made five moves over five years: appointed a professional CEO, ran a consistent bolt-on acquisition strategy, funded a dormant CDMO capability in medicated lozenges that grew to Rs. 446 Cr in revenue, improved EBITDA margins from 15–18% to 27–29%, and rebuilt governance to institutional standards. The combined effect was a Rs. 22,000 Cr increase in exit value.',
-    },
-    {
-      q: 'What is the difference between a motivated seller and a distressed seller in Indian pharma M&A?',
-      a: 'A motivated seller approaches the market by choice, with time and options. A distressed seller approaches because an external pressure — such as a compliance deadline or succession crisis — has removed optionality. Motivated sellers price at the top of the range. Distressed sellers price at the bottom.',
-    },
-    {
-      q: 'Do I need an investment bank to sell a pharma business in India?',
-      a: 'For businesses in the Rs. 50–300 Cr range, a boutique M&A advisory firm with demonstrated experience in Indian mid-market pharma will typically be more effective than a large investment bank, which tends to focus on transactions above Rs. 500 Cr. The advisor\'s most important work happens in the 18–24 months before any sale process — not during it.',
-    },
-  ];
+  const faqItems = meta.faqs ?? [];
 
   const faqLd = {
     '@context': 'https://schema.org',
@@ -206,19 +191,18 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
       url: `${BASE}/blog`,
       publisher: org,
     },
-    about: [
-      { '@type': 'Thing', name: 'Pharma business valuation India' },
-      { '@type': 'Thing', name: 'EBITDA multiples India mid-market pharma' },
-      { '@type': 'Thing', name: 'Indian M&A advisory' },
-      { '@type': 'Thing', name: 'Founder-owned business exit India' },
-    ],
-    mentions: [
-      { '@type': 'Organization', name: 'KKR', sameAs: 'https://www.kkr.com' },
-      { '@type': 'Organization', name: 'JB Chemicals & Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/JB_Chemicals_%26_Pharmaceuticals' },
-      { '@type': 'Organization', name: 'Torrent Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/Torrent_Pharmaceuticals' },
-      { '@type': 'Organization', name: 'ChrysCapital' },
-      { '@type': 'Organization', name: 'Novartis India' },
-    ],
+    about: (meta.about ?? []).map((name) => ({ '@type': 'Thing', name })),
+    ...(slug === 'pharma-business-valuation-india-jb-chemicals'
+      ? {
+          mentions: [
+            { '@type': 'Organization', name: 'KKR', sameAs: 'https://www.kkr.com' },
+            { '@type': 'Organization', name: 'JB Chemicals & Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/JB_Chemicals_%26_Pharmaceuticals' },
+            { '@type': 'Organization', name: 'Torrent Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/Torrent_Pharmaceuticals' },
+            { '@type': 'Organization', name: 'ChrysCapital' },
+            { '@type': 'Organization', name: 'Novartis India' },
+          ],
+        }
+      : {}),
     hasPart: {
       '@type': 'FAQPage',
       '@id': `${BASE}/blog/${slug}#faq`,
@@ -254,11 +238,12 @@ export default async function BlogPostPage({ params }: Props) {
   if (!BLOG_SLUGS.includes(slug as BlogSlug)) notFound();
 
   const meta = BLOG_META[slug as BlogSlug];
+  const BlogComponent = BLOG_COMPONENTS[slug as BlogSlug];
 
   return (
     <>
       <BlogJsonLd slug={slug} meta={meta} />
-      <BlogPharmaValuation />
+      <BlogComponent />
     </>
   );
 }

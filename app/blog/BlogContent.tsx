@@ -8,8 +8,9 @@ function formatDate(iso: string) {
 }
 
 export default function BlogContent() {
-  const slug = BLOG_SLUGS[0] as BlogSlug;
-  const meta = BLOG_META[slug];
+  const slugs = [...BLOG_SLUGS].sort(
+    (a, b) => new Date(BLOG_META[b as BlogSlug].datePublished).getTime() - new Date(BLOG_META[a as BlogSlug].datePublished).getTime()
+  ) as BlogSlug[];
 
   return (
     <div className="page blog-index-page">
@@ -130,19 +131,26 @@ export default function BlogContent() {
       {/* Post listing — uses .content-section from globals */}
       <div className="content-section" style={{ paddingTop: 40 }}>
         <div className="phase-label" style={{ marginBottom: 24 }}>Latest</div>
-        <Link href={`/blog/${slug}`} className="blog-post-card">
-          <div className="blog-card-meta">
-            <span className="blog-card-tag">{meta.category}</span>
-            <div className="blog-card-sep" />
-            <span className="blog-card-date">{formatDate(meta.datePublished)}</span>
-            <div className="blog-card-sep" />
-            <span className="blog-card-readtime">{meta.readTime} read</span>
-          </div>
-          <div className="blog-card-title">{meta.title}</div>
-          {meta.subtitle && <div className="blog-card-subtitle">{meta.subtitle}</div>}
-          <p className="blog-card-excerpt">{meta.description}</p>
-          <span className="blog-card-arrow">Read Article →</span>
-        </Link>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+          {slugs.map((slug) => {
+            const meta = BLOG_META[slug];
+            return (
+              <Link key={slug} href={`/blog/${slug}`} className="blog-post-card">
+                <div className="blog-card-meta">
+                  <span className="blog-card-tag">{meta.category}</span>
+                  <div className="blog-card-sep" />
+                  <span className="blog-card-date">{formatDate(meta.datePublished)}</span>
+                  <div className="blog-card-sep" />
+                  <span className="blog-card-readtime">{meta.readTime} read</span>
+                </div>
+                <div className="blog-card-title">{meta.title}</div>
+                {meta.subtitle && <div className="blog-card-subtitle">{meta.subtitle}</div>}
+                <p className="blog-card-excerpt">{meta.description}</p>
+                <span className="blog-card-arrow">Read Article →</span>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

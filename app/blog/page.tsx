@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     // Core topics
     'pharma business valuation India', 'pharma M&A India', 'EBITDA multiple pharma India',
     'founder-owned business valuation India', 'how to value a business India',
+    'buying a family owned business in India', 'family business succession sale India',
+    'acquiring family business India due diligence', 'family business transition acquisition',
     // Advisory
     'M&A advisory India blog', 'buy-side advisory India insights',
     'acquisition advisory India notes', 'M&A advisory notes India',
@@ -77,7 +79,7 @@ export const metadata: Metadata = {
     'DC.description': 'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team covering Indian M&A.',
     'DC.publisher': 'Kautilya',
     'DC.contributor': 'Kautilya Team',
-    'DC.date': '2025-06-29',
+    'DC.date': '2026-07-25',
     'DC.type': 'Collection',
     'DC.format': 'text/html',
     'DC.language': 'en',
@@ -127,6 +129,15 @@ const blogListSchema = {
   blogPost: [
     {
       '@type': 'BlogPosting',
+      headline: 'Buying a Family-Owned Business in India: What First-Time Buyers Need to Know',
+      url: `${BASE_URL}/blog/buying-family-owned-business-india`,
+      datePublished: '2026-07-25',
+      author: { '@type': 'Person', name: 'Dev Shah', url: `${BASE_URL}/team` },
+      description: "Family-owned businesses make up most SME listings in India. Here's what makes acquiring one different: succession dynamics, informal records, and diligence red flags.",
+      keywords: 'buying a family owned business in India, family business succession sale India, acquiring family business India due diligence, buying business from retiring owner India, family business transition acquisition',
+    },
+    {
+      '@type': 'BlogPosting',
       headline: 'How to Value a Founder-Owned Pharma Business in India: What the Torrent-JB Chemicals Deal Actually Tells You',
       url: `${BASE_URL}/blog/pharma-business-valuation-india-jb-chemicals`,
       datePublished: '2025-06-29',
@@ -142,11 +153,17 @@ const itemListSchema = {
   '@type': 'ItemList',
   name: 'The Kautilya Blog — Market Intelligence & Advisory Notes',
   url: `${BASE_URL}/blog`,
-  numberOfItems: 1,
+  numberOfItems: 2,
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
+      url: `${BASE_URL}/blog/buying-family-owned-business-india`,
+      name: 'Buying a Family-Owned Business in India',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
       url: `${BASE_URL}/blog/pharma-business-valuation-india-jb-chemicals`,
       name: 'How to Value a Founder-Owned Pharma Business in India',
     },
