@@ -2,7 +2,10 @@
 
 import { useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
+
+const IMG_BASE = '/images/newsletter/aurum-housing-com-acquisition';
 
 function Stars({ value }: { value: number }) {
   const full = Math.floor(value);
@@ -204,6 +207,24 @@ export default function NewsletterAurumHousing() {
           margin-left: 12px;
         }
 
+        /* Editorial images */
+        .blog-hero-image {
+          margin: 32px 0 40px;
+          border-radius: 3px;
+          overflow: hidden;
+          border: 1px solid var(--border);
+        }
+        .blog-hero-image img { width: 100%; height: auto; display: block; }
+
+        .blog-figure {
+          margin: 40px 0;
+          border-radius: 3px;
+          overflow: hidden;
+          border: 1px solid var(--border);
+          background: rgba(255,255,255,0.015);
+        }
+        .blog-figure img { width: 100%; height: auto; display: block; }
+
         @media (max-width: 640px) {
           .story-coda .coda-link.secondary { margin-left: 0; margin-top: 12px; }
         }
@@ -268,6 +289,18 @@ export default function NewsletterAurumHousing() {
       </div>
 
       <article className="story-body">
+        <div className="blog-hero-image">
+          <Image
+            src={`${IMG_BASE}/aurum-housing-hero.webp`}
+            alt={'REA "exited" Housing.com and it became Aurum\'s biggest shareholder — a zero-cash, all-share deal that rewired an MNC\'s India exit, ₹458 crore, 100% share swap, REA stake 5.54% to 24.90%'}
+            title="Aurum's Housing.com acquisition — deal overview"
+            width={1536}
+            height={1024}
+            priority
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <p>
           REA Group &ldquo;exited&rdquo; Housing.com for ₹458 crore (~$47.4M), and took every rupee
           of it in stock, not cash. REA&apos;s stake in the acquirer, listed proptech Aurum
@@ -341,6 +374,17 @@ export default function NewsletterAurumHousing() {
           <li>Two all-share swaps, eighteen months apart, took REA from an operator with ~$210M invested to a 24.90% shareholder with zero cash recovered: a full rotation, not a single event.</li>
         </ul>
 
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/aurum-housing-operating-control-swap.webp`}
+            alt="Before and after: REA owned Housing.com outright with zero cash exchanged; after the deal, Aurum owns Housing.com, REA holds 24.90% of Aurum, paid entirely in Aurum shares"
+            title="Operating control traded for equity carry"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <h2>The Numbers</h2>
         <div className="deal-table-wrap">
           <table className="deal-table">
@@ -370,17 +414,51 @@ export default function NewsletterAurumHousing() {
           <li>A pure-cash version of this same deal would likely have printed even lower. The equity structure is doing some of the work of making 0.67x look acceptable to REA at all.</li>
         </ul>
 
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/aurum-housing-exit-multiples.webp`}
+            alt="Real-estate portal exit multiples: Housing.com priced at 0.67x revenue versus a 2x-4x range for late-stage private proptech in 2022-24, a 70-85% haircut from peak private marks"
+            title="What the exit multiples are actually printing"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <h3>The open question the piece can&apos;t resolve</h3>
         <ul className="constraint-list">
           <li>Locon&apos;s disclosed FY26 revenue of ₹309.93 crore (~$32.1M) is down roughly 55% on FY25&apos;s ₹687.46 crore (~$71.2M), and it&apos;s explicitly marked unaudited. The deal&apos;s Regulation 30 annexure sizes the target on the FY25 figure, not FY26.</li>
           <li>Aurum&apos;s diligence evidently judged the drop recoverable, or a basis artefact, but that judgment isn&apos;t explained in the material available. The EGM notice (August 14, 2026) is where that explanation should surface, and it hasn&apos;t yet.</li>
         </ul>
 
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/aurum-housing-revenue-swing.webp`}
+            alt="Locon's revenue swing: FY24 Rs 447 crore, FY25 Rs 687 crore (+53.7% YoY), FY26 Rs 310 crore unaudited — a roughly 55% drop that is unexplained in public filings"
+            title="Locon's revenue swing — the deal's open question"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <h2>The Structure</h2>
         <p>
           This is an all-share preferential issue engineered around a specific regulatory line.
           The design carries as much of the story as the price.
         </p>
+
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/aurum-housing-stake-trigger-line.webp`}
+            alt="REA's Aurum stake, engineered just under the trigger line: from 5.54% pre-deal to 24.90% post-deal, a +19.36% increase deliberately kept under the 25% open-offer trigger"
+            title="REA's Aurum stake, engineered just under the 25% open-offer trigger"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <ul className="constraint-list">
           <li><strong>Zero cash, entirely in stock.</strong> Aurum pays for a ₹458 crore (~$47.4M) acquisition, more than a quarter of its own ~₹1,738 crore (~$180M) market cap, without touching its treasury or raising new public capital.</li>
           <li><strong>Priced at the regulatory floor.</strong> ₹231.42/share (~$2.40/share) is the SEBI ICDR floor (the higher of the 90-day or 10-day VWAP), sitting about 4% below Aurum&apos;s deal-day close of ₹241.19 (~$2.50).</li>

@@ -32,7 +32,7 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
     category: 'Deal Teardowns',
     readTime: '11 min',
     wordCount: 2300,
-    image: '/opengraph-image',
+    image: '/images/newsletter/aurum-housing-com-acquisition/aurum-housing-hero.webp',
     keywords: [
       // Deal-specific
       'Aurum PropTech Housing.com acquisition',
