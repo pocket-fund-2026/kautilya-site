@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import Link from 'next/link';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 
-export default function BlogPharmaValuation() {
+export default function NewsletterPharmaValuation() {
   useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
@@ -198,7 +198,7 @@ export default function BlogPharmaValuation() {
 
       {/* ── Hero: uses existing .story-hero, .meta-tag, .metrics-strip ── */}
       <div className="story-hero" id="storyStart">
-        <Link href="/blog" className="back-link">← Blog</Link>
+        <Link href="/newsletter" className="back-link">← Kautilya Newsletter</Link>
         <div className="meta-row">
           <span className="meta-tag">Market Intelligence</span>
           <span className="meta-tag">India</span>

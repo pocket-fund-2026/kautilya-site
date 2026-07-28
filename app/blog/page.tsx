@@ -4,18 +4,17 @@ import BlogContent from './BlogContent';
 const BASE = 'https://www.kautilya-pe.com';
 
 export const metadata: Metadata = {
-  title: { absolute: 'The Kautilya Blog | Market Intelligence & M&A Advisory Notes' },
+  title: { absolute: 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes' },
   description:
-    'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team. Covering Indian pharma M&A, founder-owned business valuations, off-market deal sourcing, and SME acquisitions.',
+    'Buyer guides and acquisition frameworks from the Kautilya advisory team. Covering the search fund model, family-owned business acquisitions, and SME acquisitions in India.',
   category: 'Finance & M&A Advisory',
   keywords: [
     // Brand
     'kautilya blog', 'kautilya M&A advisory blog', 'kautilya market intelligence',
     // Core topics
-    'pharma business valuation India', 'pharma M&A India', 'EBITDA multiple pharma India',
-    'founder-owned business valuation India', 'how to value a business India',
     'buying a family owned business in India', 'family business succession sale India',
     'acquiring family business India due diligence', 'family business transition acquisition',
+    'how to value a business India',
     // Advisory
     'M&A advisory India blog', 'buy-side advisory India insights',
     'acquisition advisory India notes', 'M&A advisory notes India',
@@ -26,10 +25,6 @@ export const metadata: Metadata = {
     'micro private equity India', 'search fund India blog',
     'acquisition entrepreneurship blog India', 'ETA blog India',
     'SME acquisition India', 'SMB acquisition India insights',
-    // India M&A
-    'India M&A market intelligence', 'Indian M&A market insights 2025',
-    'Indian pharma M&A deal analysis', 'JB Chemicals Torrent deal analysis',
-    'KKR pharma India exit', 'PE deal India blog',
     // Buyer types
     'family office acquisition India', 'PE deal sourcing India',
     'search fund buyer India', 'first-time buyer business India',
@@ -37,10 +32,8 @@ export const metadata: Metadata = {
     'how to buy a business India', 'acquisition framework India',
     'due diligence guide India', 'business acquisition guide India',
     'acquisition thesis India', 'deal structure guide India',
-    'EBITDA valuation guide India', 'business broker alternative India',
+    'business broker alternative India',
     // Long-tail
-    'Schedule M pharma compliance India', 'pharma succession India',
-    'founder pharma exit India', 'promoter-owned business sale India',
     'mid-market acquisition India blog', 'off-market M&A India notes',
     // Search fund explainer
     'what is a search fund', 'search fund model', 'search fund meaning',
@@ -55,17 +48,17 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: `${BASE}/blog`,
-    title: 'The Kautilya Blog | Market Intelligence & M&A Advisory Notes',
+    title: 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes',
     description:
-      'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team. Indian pharma M&A, off-market deal sourcing, founder-owned business valuations.',
+      'Buyer guides and acquisition frameworks from the Kautilya advisory team. The search fund model, family-owned business acquisitions, off-market deal sourcing.',
     siteName: 'Kautilya',
-    images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'The Kautilya Blog — Market Intelligence & Advisory Notes' }],
+    images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'The Kautilya Blog — Buyer Guides & Advisory Notes' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Kautilya Blog | Market Intelligence & M&A Advisory Notes',
+    title: 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes',
     description:
-      'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team.',
+      'Buyer guides and acquisition frameworks from the Kautilya advisory team.',
     site: '@microsearchfund',
     creator: '@microsearchfund',
     images: [`${BASE}/opengraph-image`],
@@ -77,10 +70,10 @@ export const metadata: Metadata = {
   },
   other: {
     // Dublin Core
-    'DC.title': 'The Kautilya Blog | Market Intelligence & M&A Advisory Notes',
+    'DC.title': 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes',
     'DC.creator': 'Dev Shah',
-    'DC.subject': 'Buy-side M&A advisory, Indian pharma M&A, founder-owned business valuation, off-market deal sourcing, acquisition entrepreneurship India',
-    'DC.description': 'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team covering Indian M&A.',
+    'DC.subject': 'Buy-side M&A advisory, search fund model, family-owned business acquisition, off-market deal sourcing, acquisition entrepreneurship India',
+    'DC.description': 'Buyer guides and acquisition frameworks from the Kautilya advisory team covering the search fund model and Indian SME M&A.',
     'DC.publisher': 'Kautilya',
     'DC.contributor': 'Kautilya Team',
     'DC.date': '2026-07-28',
@@ -91,11 +84,11 @@ export const metadata: Metadata = {
     'DC.coverage': 'India',
     // Standard hidden meta
     pagename: 'Kautilya — Blog',
-    subject: 'Market intelligence and advisory notes on Indian M&A, pharma business valuations, and acquisition entrepreneurship',
-    topic: 'M&A Advisory, Indian Pharma M&A, Business Valuation, Deal Sourcing',
-    classification: 'Finance / M&A Advisory / Market Intelligence',
-    abstract: 'The Kautilya Blog publishes market intelligence, deal breakdowns, and acquisition frameworks for buyers and sellers in Indian mid-market M&A.',
-    summary: 'Advisory notes covering founder-owned pharma valuations, PE deal analysis, off-market sourcing, and the Indian M&A market from Kautilya.',
+    subject: 'Buyer guides on the search fund model, family-owned business acquisitions, and acquisition entrepreneurship',
+    topic: 'M&A Advisory, Search Funds, Family Business Acquisition, Deal Sourcing',
+    classification: 'Finance / M&A Advisory / Buyer Guides',
+    abstract: 'The Kautilya Blog publishes buyer guides and acquisition frameworks for buyers and sellers in Indian mid-market M&A.',
+    summary: 'Buyer guides covering the search fund model, family-owned business acquisitions, off-market sourcing, and SME M&A in India.',
     language: 'English',
     revisit: '7 days',
     distribution: 'Global',
@@ -112,7 +105,7 @@ const blogListSchema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'The Kautilya Blog',
-  description: 'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team covering Indian M&A, pharma business valuations, and off-market deal sourcing.',
+  description: 'Buyer guides and acquisition frameworks from the Kautilya advisory team covering the search fund model, family-owned business acquisitions, and off-market deal sourcing.',
   url: `${BASE_URL}/blog`,
   inLanguage: 'en-US',
   publisher: {
@@ -142,15 +135,6 @@ const blogListSchema = {
     },
     {
       '@type': 'BlogPosting',
-      headline: 'How to Value a Founder-Owned Pharma Business in India: What the Torrent-JB Chemicals Deal Actually Tells You',
-      url: `${BASE_URL}/blog/pharma-business-valuation-india-jb-chemicals`,
-      datePublished: '2025-06-29',
-      author: { '@type': 'Person', name: 'Dev Shah', url: `${BASE_URL}/team` },
-      description: 'KKR turned a Rs. 3,100 Cr pharma acquisition into a Rs. 25,689 Cr exit in five years. Here is what the 24.8x EBITDA Torrent-JB Chemicals deal means for founder-owned pharma businesses in India.',
-      keywords: 'pharma business valuation India, EBITDA multiple pharma India, JB Chemicals Torrent deal, KKR pharma exit India, sell pharma company India',
-    },
-    {
-      '@type': 'BlogPosting',
       headline: "What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money",
       url: `${BASE_URL}/blog/what-is-a-search-fund`,
       datePublished: '2026-07-28',
@@ -164,9 +148,9 @@ const blogListSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'The Kautilya Blog — Market Intelligence & Advisory Notes',
+  name: 'The Kautilya Blog — Buyer Guides & Advisory Notes',
   url: `${BASE_URL}/blog`,
-  numberOfItems: 3,
+  numberOfItems: 2,
   itemListElement: [
     {
       '@type': 'ListItem',
@@ -179,12 +163,6 @@ const itemListSchema = {
       position: 2,
       url: `${BASE_URL}/blog/buying-family-owned-business-india`,
       name: 'Buying a Family-Owned Business in India',
-    },
-    {
-      '@type': 'ListItem',
-      position: 3,
-      url: `${BASE_URL}/blog/pharma-business-valuation-india-jb-chemicals`,
-      name: 'How to Value a Founder-Owned Pharma Business in India',
     },
   ],
 };

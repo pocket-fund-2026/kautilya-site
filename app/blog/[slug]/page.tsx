@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
-import BlogPharmaValuation from '@/components/blogs/BlogPharmaValuation';
 import BlogFamilyBusinessAcquisition from '@/components/blogs/BlogFamilyBusinessAcquisition';
 import BlogWhatIsASearchFund from '@/components/blogs/BlogWhatIsASearchFund';
 
@@ -9,7 +8,6 @@ const BASE = 'https://www.kautilya-pe.com';
 
 const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,
-  'pharma-business-valuation-india-jb-chemicals': BlogPharmaValuation,
   'what-is-a-search-fund': BlogWhatIsASearchFund,
 };
 
@@ -194,17 +192,6 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
       publisher: org,
     },
     about: (meta.about ?? []).map((name) => ({ '@type': 'Thing', name })),
-    ...(slug === 'pharma-business-valuation-india-jb-chemicals'
-      ? {
-          mentions: [
-            { '@type': 'Organization', name: 'KKR', sameAs: 'https://www.kkr.com' },
-            { '@type': 'Organization', name: 'JB Chemicals & Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/JB_Chemicals_%26_Pharmaceuticals' },
-            { '@type': 'Organization', name: 'Torrent Pharmaceuticals', sameAs: 'https://en.wikipedia.org/wiki/Torrent_Pharmaceuticals' },
-            { '@type': 'Organization', name: 'ChrysCapital' },
-            { '@type': 'Organization', name: 'Novartis India' },
-          ],
-        }
-      : {}),
     hasPart: {
       '@type': 'FAQPage',
       '@id': `${BASE}/blog/${slug}#faq`,

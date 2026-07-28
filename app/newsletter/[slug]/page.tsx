@@ -2,11 +2,13 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 import NewsletterAurumHousing from '@/components/newsletters/NewsletterAurumHousing';
+import NewsletterPharmaValuation from '@/components/newsletters/NewsletterPharmaValuation';
 
 const BASE = 'https://www.kautilya-pe.com';
 
 const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,
+  'torrent-jb-chemicals-pharma-valuation': NewsletterPharmaValuation,
 };
 
 type Props = {
@@ -121,6 +123,18 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
     sameAs: ['https://x.com/microsearchfund'],
   };
 
+  const faqItems = meta.faqs ?? [];
+
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -168,6 +182,15 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
       name: m.name,
       ...(m.sameAs ? { sameAs: m.sameAs } : {}),
     })),
+    ...(faqItems.length
+      ? {
+          hasPart: {
+            '@type': 'FAQPage',
+            '@id': `${BASE}/newsletter/${slug}#faq`,
+            mainEntity: faqLd.mainEntity,
+          },
+        }
+      : {}),
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.story-body > p:first-child'],
@@ -187,6 +210,9 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      {faqItems.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     </>
   );

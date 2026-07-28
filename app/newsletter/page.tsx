@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     'buy-side advisory newsletter India', 'India M&A newsletter', 'Aurum PropTech Housing.com acquisition',
     'REA Group Housing.com exit', 'Indian proptech M&A 2026', 'all-share preferential issue India M&A',
     'M&A structure analysis newsletter', 'Kautilya market intelligence newsletter',
+    'pharma business valuation India', 'pharma M&A India', 'EBITDA multiple pharma India',
+    'JB Chemicals Torrent deal', 'KKR JB Chemicals acquisition', 'founder-owned pharma valuation India',
   ],
   alternates: {
     canonical: `${BASE}/newsletter`,
