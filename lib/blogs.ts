@@ -1,6 +1,7 @@
 export const BLOG_SLUGS = [
   'buying-family-owned-business-india',
   'pharma-business-valuation-india-jb-chemicals',
+  'what-is-a-search-fund',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -181,6 +182,94 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'EBITDA multiples India mid-market pharma',
       'Indian M&A advisory',
       'Founder-owned business exit India',
+    ],
+  },
+  'what-is-a-search-fund': {
+    title: 'What Is a Search Fund?',
+    subtitle: "A Beginner's Guide to Buying a Business With Other People's Money",
+    description:
+      "A plain-English guide to search funds: how search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits — and doesn't — in India.",
+    author: 'Dev Shah',
+    datePublished: '2026-07-28',
+    category: 'Fundamentals',
+    readTime: '9 min',
+    wordCount: 2150,
+    keywords: [
+      // Primary
+      'what is a search fund',
+      'search fund model',
+      'search fund meaning',
+      'how does a search fund work',
+      'entrepreneurship through acquisition',
+      // Explainer / beginner intent
+      'search fund explained',
+      'search fund for beginners',
+      'what is entrepreneurship through acquisition',
+      'ETA meaning business',
+      'buying a business with other people\'s money',
+      // Structure
+      'search capital vs acquisition capital',
+      'search fund step up ratio',
+      'search fund right of first refusal',
+      'traditional search fund vs self funded search',
+      'self funded search fund',
+      'how much money do you need to start a search fund',
+      // Economics
+      'search fund searcher equity',
+      'how much equity does a searcher get',
+      'search fund equity vesting',
+      'search fund IRR hurdle',
+      'search fund vesting tranches',
+      // Target profile
+      'search fund acquisition criteria',
+      'search fund target company profile',
+      'search fund EBITDA requirements',
+      // Geography
+      'search funds in India',
+      'entrepreneurship through acquisition India',
+      'ETA India',
+      'search fund India example',
+      'self funded search India',
+      // Institutional
+      'Stanford search fund model',
+      'search fund investors',
+      'search fund advisory India',
+    ],
+    faqs: [
+      {
+        q: 'What is a search fund?',
+        a: "An investment vehicle, conceived in 1984 at Stanford Graduate School of Business, through which investors financially support an entrepreneur's efforts to locate, acquire, manage and grow a privately held company. The entrepreneur raises a small fund to finance a roughly two-year search, then raises a larger amount from the same investors to buy the company they find, and becomes its CEO.",
+      },
+      {
+        q: 'How does a search fund work?',
+        a: 'In four stages: raise search capital from six to ten investors; spend about 20 months finding a company; return to those investors to fund the acquisition, usually alongside debt; then run the business as CEO for five to seven years before selling.',
+      },
+      {
+        q: 'How much money do you need to start a search fund?',
+        a: 'Typically none of your own for a traditional search. Investors provide roughly $400,000 to $500,000 (~₹3.9 to ~₹4.8 crore) of search capital covering about 24 months of salary and expenses. A self-funded search reverses this: you cover your own costs and retain much more equity.',
+      },
+      {
+        q: 'How much equity does a searcher get?',
+        a: 'Median equity at acquisition is 25%, rising to 30-35% if performance targets are met. It vests in three tranches: one at closing, one over four to five years of operating, and one at exit tied to the IRR delivered. Below 20% IRR the final tranche pays nothing.',
+      },
+      {
+        q: 'What kind of business does a search fund buy?',
+        a: 'Profitable, unglamorous companies with EBITDA above $2M (~₹19.3 crore), margins above 15%, 60% or more recurring revenue, simple operations, low capital expenditure, and an industry growing at least twice as fast as GDP.',
+      },
+      {
+        q: 'What is entrepreneurship through acquisition?',
+        a: 'The broader idea of becoming an entrepreneur by buying an existing business rather than founding one. A search fund is the most formalised version of it, but self-funded acquisitions and holding companies pursue the same path.',
+      },
+      {
+        q: 'Do search funds exist in India?',
+        a: 'The formal model is concentrated in the US and Canada, which is where the defining Stanford dataset is drawn from. Acquisition activity in India is real but often happens at deal sizes below the classic search fund range, where self-funded structures fit better than a funded search.',
+      },
+    ],
+    about: [
+      'Search fund model',
+      'Entrepreneurship through acquisition',
+      'Search fund structure and economics',
+      'Entrepreneurship through acquisition in India',
     ],
   },
 };

@@ -3,12 +3,14 @@ import type { Metadata } from 'next';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 import BlogPharmaValuation from '@/components/blogs/BlogPharmaValuation';
 import BlogFamilyBusinessAcquisition from '@/components/blogs/BlogFamilyBusinessAcquisition';
+import BlogWhatIsASearchFund from '@/components/blogs/BlogWhatIsASearchFund';
 
 const BASE = 'https://www.kautilya-pe.com';
 
 const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,
   'pharma-business-valuation-india-jb-chemicals': BlogPharmaValuation,
+  'what-is-a-search-fund': BlogWhatIsASearchFund,
 };
 
 type Props = {
