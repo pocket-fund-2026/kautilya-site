@@ -106,7 +106,7 @@ Typically 30–90 days from engagement start to close. Kautilya has closed deals
 Full mandate retainer: $2,500–$10,000/month. Success fee: 3% on transactions under $650K. Standalone forensic due diligence: $6,500 plus 0.3% success fee. Market research: $3,500–$5,000.
 
 ### What is a search fund?
-A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner.
+A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner. Full guide: https://www.kautilya-pe.com/blog/what-is-a-search-fund
 
 ### What is micro private equity?
 Micro private equity (micro PE) refers to the acquisition and operation of small businesses — typically with revenues between $100K and $5M — using a private equity framework.
@@ -130,11 +130,19 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - [Homepage](https://www.kautilya-pe.com/): Buy-side M&A advisory and proprietary deal sourcing
 - [Approach](https://www.kautilya-pe.com/approach): Full 5-phase acquisition methodology
 - [Portfolio](https://www.kautilya-pe.com/portfolio): Closed acquisition case studies
+- [Blog](https://www.kautilya-pe.com/blog): Market intelligence, buyer guides, and deal-structure teardowns
+- [Newsletter](https://www.kautilya-pe.com/newsletter): The Kautilya Newsletter — deal-by-deal teardowns
 - [Stories](https://www.kautilya-pe.com/stories): Deal journals and market intelligence
 - [FAQ](https://www.kautilya-pe.com/faq): 23 answered questions on advisory, sourcing, and pricing
 - [Team](https://www.kautilya-pe.com/team): The people behind every mandate
 - [Engage](https://www.kautilya-pe.com/engage): Start a buy-side acquisition mandate
 - [Careers](https://www.kautilya-pe.com/careers): Open roles at Kautilya
+
+## Blog Articles
+
+- [What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money](https://www.kautilya-pe.com/blog/what-is-a-search-fund): How search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits in India.
+- [Buying a Family-Owned Business in India: What First-Time Buyers Need to Know](https://www.kautilya-pe.com/blog/buying-family-owned-business-india): Succession dynamics, informal financial records, and diligence red flags specific to family-owned acquisition targets.
+- [How to Value a Founder-Owned Pharma Business in India](https://www.kautilya-pe.com/blog/pharma-business-valuation-india-jb-chemicals): What the 24.8x EBITDA Torrent-JB Chemicals deal means for founder-owned pharma businesses and how to close the valuation gap before engaging a bank.
 
 ## Story Articles
 

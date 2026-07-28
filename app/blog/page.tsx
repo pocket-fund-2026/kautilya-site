@@ -42,6 +42,10 @@ export const metadata: Metadata = {
     'Schedule M pharma compliance India', 'pharma succession India',
     'founder pharma exit India', 'promoter-owned business sale India',
     'mid-market acquisition India blog', 'off-market M&A India notes',
+    // Search fund explainer
+    'what is a search fund', 'search fund model', 'search fund meaning',
+    'how does a search fund work', 'entrepreneurship through acquisition',
+    'search fund explained', 'self funded search fund', 'search fund India',
   ],
   alternates: {
     canonical: `${BASE}/blog`,
@@ -79,7 +83,7 @@ export const metadata: Metadata = {
     'DC.description': 'Market intelligence, deal breakdowns, and acquisition frameworks from the Kautilya advisory team covering Indian M&A.',
     'DC.publisher': 'Kautilya',
     'DC.contributor': 'Kautilya Team',
-    'DC.date': '2026-07-25',
+    'DC.date': '2026-07-28',
     'DC.type': 'Collection',
     'DC.format': 'text/html',
     'DC.language': 'en',
@@ -145,6 +149,15 @@ const blogListSchema = {
       description: 'KKR turned a Rs. 3,100 Cr pharma acquisition into a Rs. 25,689 Cr exit in five years. Here is what the 24.8x EBITDA Torrent-JB Chemicals deal means for founder-owned pharma businesses in India.',
       keywords: 'pharma business valuation India, EBITDA multiple pharma India, JB Chemicals Torrent deal, KKR pharma exit India, sell pharma company India',
     },
+    {
+      '@type': 'BlogPosting',
+      headline: "What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money",
+      url: `${BASE_URL}/blog/what-is-a-search-fund`,
+      datePublished: '2026-07-28',
+      author: { '@type': 'Person', name: 'Dev Shah', url: `${BASE_URL}/team` },
+      description: "A plain-English guide to search funds: how search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits — and doesn't — in India.",
+      keywords: 'what is a search fund, search fund model, search fund meaning, how does a search fund work, entrepreneurship through acquisition',
+    },
   ],
 };
 
@@ -153,17 +166,23 @@ const itemListSchema = {
   '@type': 'ItemList',
   name: 'The Kautilya Blog — Market Intelligence & Advisory Notes',
   url: `${BASE_URL}/blog`,
-  numberOfItems: 2,
+  numberOfItems: 3,
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
+      url: `${BASE_URL}/blog/what-is-a-search-fund`,
+      name: 'What Is a Search Fund?',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
       url: `${BASE_URL}/blog/buying-family-owned-business-india`,
       name: 'Buying a Family-Owned Business in India',
     },
     {
       '@type': 'ListItem',
-      position: 2,
+      position: 3,
       url: `${BASE_URL}/blog/pharma-business-valuation-india-jb-chemicals`,
       name: 'How to Value a Founder-Owned Pharma Business in India',
     },
