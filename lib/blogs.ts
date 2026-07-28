@@ -109,6 +109,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     category: 'Fundamentals',
     readTime: '9 min',
     wordCount: 2150,
+    image: '/images/blogs/what-is-a-search-fund/what-is-a-search-fund-hero.webp',
     keywords: [
       // Primary
       'what is a search fund',

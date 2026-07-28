@@ -2,7 +2,10 @@
 
 import { useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
+
+const IMG_BASE = '/images/blogs/what-is-a-search-fund';
 
 export default function BlogWhatIsASearchFund() {
   useReadingProgressAndShareBar();
@@ -101,113 +104,23 @@ export default function BlogWhatIsASearchFund() {
           white-space: nowrap;
         }
 
-        /* Four-stage grid */
-        .stage-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
-          margin: 28px 0 8px;
-        }
-        .stage-card {
-          border: 1px solid var(--border);
-          border-radius: 3px;
-          padding: 22px 18px;
-          background: rgba(255,255,255,0.015);
-        }
-        .stage-eyebrow {
-          font-size: 10px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: var(--gold);
-          display: block;
-          margin-bottom: 10px;
-        }
-        .stage-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 17px;
-          font-weight: 500;
-          color: var(--text-primary);
-          margin-bottom: 8px;
-          line-height: 1.3;
-        }
-        .stage-desc {
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12.5px;
-          color: var(--text-secondary);
-          line-height: 1.7;
-          margin: 0;
-        }
-
-        /* IRR vesting-hurdle grid, same pattern as the pharma post's valuation-gap */
-        .irr-gap {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 1px;
-          background: var(--border);
-          border: 1px solid var(--border);
+        /* Editorial images */
+        .blog-hero-image {
+          margin: 32px 0 40px;
           border-radius: 3px;
           overflow: hidden;
-          margin: 32px 0;
-        }
-        .irr-cell { padding: 28px 18px; background: var(--canvas); text-align: center; }
-        .irr-cell.highlight { background: rgba(201,185,154,0.04); }
-        .irr-figure {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 30px;
-          font-weight: 500;
-          line-height: 1;
-          color: rgba(201,185,154,0.35);
-          margin-bottom: 10px;
-        }
-        .irr-cell.highlight .irr-figure { color: var(--gold); }
-        .irr-desc {
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 11px;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          color: var(--text-muted);
-          line-height: 1.6;
-        }
-        .irr-cell.highlight .irr-desc { color: var(--text-secondary); }
-
-        /* Kautilya deal-size spread bar chart */
-        .deal-bar-chart {
-          margin: 32px 0;
           border: 1px solid var(--border);
+        }
+        .blog-hero-image img { width: 100%; height: auto; display: block; }
+
+        .blog-figure {
+          margin: 40px 0;
           border-radius: 3px;
-          padding: 26px 24px 10px;
+          overflow: hidden;
+          border: 1px solid var(--border);
           background: rgba(255,255,255,0.015);
         }
-        .deal-bar-row {
-          display: grid;
-          grid-template-columns: 150px 1fr 92px;
-          align-items: center;
-          gap: 14px;
-          margin-bottom: 16px;
-        }
-        .deal-bar-label {
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12.5px;
-          color: var(--text-secondary);
-        }
-        .deal-bar-track {
-          height: 8px;
-          background: rgba(255,255,255,0.05);
-          border-radius: 999px;
-          overflow: hidden;
-        }
-        .deal-bar-fill {
-          height: 100%;
-          background: var(--gold);
-          border-radius: 999px;
-        }
-        .deal-bar-value {
-          font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px;
-          color: var(--gold);
-          text-align: right;
-          white-space: nowrap;
-        }
+        .blog-figure img { width: 100%; height: auto; display: block; }
 
         /* FAQ */
         .blog-faq {
@@ -273,20 +186,6 @@ export default function BlogWhatIsASearchFund() {
         }
         .story-coda .coda-link:hover { opacity: 0.88; }
 
-        @media (max-width: 900px) {
-          .stage-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-          .irr-gap { grid-template-columns: 1fr; }
-          .irr-figure { font-size: 26px; }
-        }
-        @media (max-width: 640px) {
-          .deal-bar-row { grid-template-columns: 96px 1fr 72px; gap: 10px; }
-          .deal-bar-label { font-size: 11px; }
-        }
-        @media (max-width: 480px) {
-          .stage-grid { grid-template-columns: 1fr; }
-        }
       `}} />
 
       <div className="reading-progress" id="readingProgress" />
@@ -333,6 +232,18 @@ export default function BlogWhatIsASearchFund() {
 
       {/* ── Body: uses .story-body, .pull-quote, .constraint-list, .story-coda ── */}
       <article className="story-body">
+        <div className="blog-hero-image">
+          <Image
+            src={`${IMG_BASE}/what-is-a-search-fund-hero.webp`}
+            alt="What is a search fund? Buying a business with other people's money — investors fund a two-year search, then they fund the purchase, then you become the CEO. Conceived at Stanford GSB, 1984, median 20 months to acquisition."
+            title="What Is a Search Fund?"
+            width={1536}
+            height={1024}
+            priority
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <p>
           A search fund is an investment vehicle through which investors pay an entrepreneur to
           spend about two years finding a private company to buy, then fund the purchase and hand
@@ -377,28 +288,22 @@ export default function BlogWhatIsASearchFund() {
 
         <h2>How a Search Fund Works, Stage by Stage</h2>
         <p>Four stages, running roughly four to seven years end to end.</p>
-        <div className="stage-grid">
-          <div className="stage-card">
-            <span className="stage-eyebrow">Stage 1</span>
-            <div className="stage-title">Raise the search capital</div>
-            <p className="stage-desc">The searcher raises a small fund from a group of investors, typically six to ten experienced search fund backers, to pay salary, travel and admin while they look for a company.</p>
-          </div>
-          <div className="stage-card">
-            <span className="stage-eyebrow">Stage 2</span>
-            <div className="stage-title">Search</div>
-            <p className="stage-desc">The searcher spends roughly two years contacting owners, screening companies, and negotiating. Median time to acquisition is about 20 months, per Stanford data.</p>
-          </div>
-          <div className="stage-card">
-            <span className="stage-eyebrow">Stage 3</span>
-            <div className="stage-title">Acquire</div>
-            <p className="stage-desc">Once a target is agreed, the searcher returns to the same investors to fund the purchase. They have first claim on the deal, but no obligation. Debt usually covers part of the price.</p>
-          </div>
-          <div className="stage-card">
-            <span className="stage-eyebrow">Stage 4</span>
-            <div className="stage-title">Operate, then exit</div>
-            <p className="stage-desc">The searcher becomes CEO and runs the company, typically for five to seven years, growing profits before selling. The biggest payday comes at exit, not at acquisition.</p>
-          </div>
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/search-fund-lifecycle-four-stages.webp`}
+            alt="The search fund lifecycle, four stages, four to seven years: 1. Raise search capital from 6-10 investors (~$450K / ~₹4.3 cr); 2. Search — full-time hunt for a company to buy (~20 months median); 3. Acquire — investors fund the purchase plus debt ($10-30M deal / ~₹97-290 cr); 4. Operate — run it as CEO, then sell (5-7 years)"
+            title="The search fund lifecycle: four stages, four to seven years"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
         </div>
+        <ul className="constraint-list">
+          <li><strong>Stage 1: Raise the search capital.</strong> The searcher raises a small fund from a group of investors, typically six to ten experienced search fund backers, to pay salary, travel and admin while they look for a company.</li>
+          <li><strong>Stage 2: Search.</strong> The searcher spends roughly two years contacting owners, screening companies, and negotiating. Median time to acquisition is about 20 months, per Stanford data.</li>
+          <li><strong>Stage 3: Acquire.</strong> Once a target is agreed, the searcher returns to the same investors to fund the purchase. They have first claim on the deal, but no obligation. Debt usually covers part of the price.</li>
+          <li><strong>Stage 4: Operate, then exit.</strong> The searcher becomes CEO and runs the company, typically for five to seven years, growing profits before selling. The biggest payday comes at exit, not at acquisition.</li>
+        </ul>
 
         <h2>Where the Money Comes From</h2>
         <p>
@@ -418,6 +323,16 @@ export default function BlogWhatIsASearchFund() {
               <tr><td>Risk</td><td>Very high &mdash; many searches never close a deal</td><td>Lower &mdash; a real business with real numbers</td></tr>
             </tbody>
           </table>
+        </div>
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/search-fund-capital-comparison.webp`}
+            alt="Search funds raise capital twice, on very different terms. Stage 1, search capital: before any target exists, ~$400-500K, buys ~24 months of runway, very high risk. Stage 2, acquisition capital: once a target is agreed, $6-24M equity, buys the company itself, lower risk with real numbers. Search capital converts into acquisition equity at a 1.5x step-up."
+            title="Search funds raise capital twice, on very different terms"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
         </div>
         <p>Two mechanics matter and are easy to miss:</p>
         <ul className="constraint-list">
@@ -455,19 +370,15 @@ export default function BlogWhatIsASearchFund() {
           The third tranche is where the real conditionality sits. It is tied to the internal rate
           of return delivered to investors at exit:
         </p>
-        <div className="irr-gap">
-          <div className="irr-cell">
-            <div className="irr-figure">&lt;20%</div>
-            <div className="irr-desc">IRR &mdash; searcher receives nothing from this tranche</div>
-          </div>
-          <div className="irr-cell">
-            <div className="irr-figure">20&ndash;35%</div>
-            <div className="irr-desc">IRR &mdash; vests on a sliding scale</div>
-          </div>
-          <div className="irr-cell highlight">
-            <div className="irr-figure">35%+</div>
-            <div className="irr-desc">IRR &mdash; searcher receives the full third</div>
-          </div>
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/search-fund-irr-vesting-hurdle.webp`}
+            alt="The searcher's final third is not guaranteed: below 20% IRR delivered to investors at exit, the searcher earns nothing from the final tranche; between 20% and 35% it vests on a sliding scale; at 35% or above the searcher receives the full tranche."
+            title="The searcher's final equity tranche is tied to IRR delivered at exit"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
         </div>
         <p>
           Read that structure carefully, because it tells you what the model actually is. A
@@ -536,32 +447,15 @@ export default function BlogWhatIsASearchFund() {
           managed-services deal sits squarely inside the classic search fund range. Others sit far
           below it:
         </p>
-        <div className="deal-bar-chart">
-          <div className="deal-bar-row">
-            <span className="deal-bar-label">Confidential MSP deal</span>
-            <div className="deal-bar-track"><div className="deal-bar-fill" style={{ width: '100%' }} /></div>
-            <span className="deal-bar-value">$21M</span>
-          </div>
-          <div className="deal-bar-row">
-            <span className="deal-bar-label">Inspire3</span>
-            <div className="deal-bar-track"><div className="deal-bar-fill" style={{ width: '70%' }} /></div>
-            <span className="deal-bar-value">$1.8M</span>
-          </div>
-          <div className="deal-bar-row">
-            <span className="deal-bar-label">Runify</span>
-            <div className="deal-bar-track"><div className="deal-bar-fill" style={{ width: '35%' }} /></div>
-            <span className="deal-bar-value">$110K</span>
-          </div>
-          <div className="deal-bar-row">
-            <span className="deal-bar-label">Dino Games</span>
-            <div className="deal-bar-track"><div className="deal-bar-fill" style={{ width: '23%' }} /></div>
-            <span className="deal-bar-value">$39K</span>
-          </div>
-          <div className="deal-bar-row">
-            <span className="deal-bar-label">SmartPrompt</span>
-            <div className="deal-bar-track"><div className="deal-bar-fill" style={{ width: '8%' }} /></div>
-            <span className="deal-bar-value">$12K</span>
-          </div>
+        <div className="blog-figure">
+          <Image
+            src={`${IMG_BASE}/search-fund-deal-size-spread.webp`}
+            alt="Most real acquisitions happen below the classic search fund range of $10M-30M: SmartPrompt $12K, Dino Games $39K, Runify $110K, Inspire3 $1.8M, and a confidential managed-services deal at $21M, plotted on a log scale."
+            title="Most real acquisitions happen below the classic search fund range"
+            width={1672}
+            height={941}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
         </div>
         <p>
           Three practical consequences follow, and these are Kautilya&apos;s read rather than
