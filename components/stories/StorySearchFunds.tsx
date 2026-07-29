@@ -128,6 +128,11 @@ export default function StorySearchFunds() {
           The rules of the game are changing, and knowing how they changed is the first step in
           playing it well.
         </p>
+        <p>
+          New to the model itself? Start with our plain-English explainer,{' '}
+          <Link href="/blog/what-is-a-search-fund">What Is a Search Fund?</Link>, before diving
+          into this evolution.
+        </p>
 
         <div className="pull-quote">
           <p>

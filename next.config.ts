@@ -65,6 +65,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: '/blog/pharma-business-valuation-india-jb-chemicals', destination: '/newsletter/torrent-jb-chemicals-pharma-valuation', permanent: true },
       { source: '/story-borderless', destination: '/stories/borderless', permanent: true },
       { source: '/story-dino-games', destination: '/stories/dino-games', permanent: true },
       { source: '/story-runify', destination: '/stories/runify', permanent: true },

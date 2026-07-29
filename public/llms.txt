@@ -55,6 +55,10 @@ Deal structuring (earnouts, deferred consideration, seller financing), negotiati
 
 ## Closed Deals
 
+### Confidential MSP — $21M Buy-Side Due Diligence
+Type: Forensic Due Diligence. Kautilya rebuilt a California-based managed service provider's economics from primary operational data — 303 customer agreements modeled and 51,063 time entries re-costed across three reconciled systems (ConnectWise, Metabase, Intuit). Turned a distrusted 32% blended gross margin into a defensible ~45% recurring margin and identified $3.2M of non-delivery labor driving the EBITDA gap. Revenue audited: ~$21M (3-year). ~300 analyst-hours, 2 analysts, ~1 month.
+More: [Confidential MSP Case Study](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
+
 ### Inspire3 — $1.8M Digital Wellness Portfolio
 Type: Forensic Due Diligence. Kautilya audited 30,134 transactions across 19 websites in under 15 days. Surfaced 7 discrepancies including a $57K financial gap and $3.1M in misclassified affiliate liabilities. Revenue validated: $1.4M. Match rate: 99.83%.
 More: [Inspire3 Case Study](https://www.kautilya-pe.com/stories/inspire3)
@@ -102,7 +106,7 @@ Typically 30–90 days from engagement start to close. Kautilya has closed deals
 Full mandate retainer: $2,500–$10,000/month. Success fee: 3% on transactions under $650K. Standalone forensic due diligence: $6,500 plus 0.3% success fee. Market research: $3,500–$5,000.
 
 ### What is a search fund?
-A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner.
+A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner. Full guide: https://www.kautilya-pe.com/blog/what-is-a-search-fund
 
 ### What is micro private equity?
 Micro private equity (micro PE) refers to the acquisition and operation of small businesses — typically with revenues between $100K and $5M — using a private equity framework.
@@ -126,14 +130,27 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - [Homepage](https://www.kautilya-pe.com/): Buy-side M&A advisory and proprietary deal sourcing
 - [Approach](https://www.kautilya-pe.com/approach): Full 5-phase acquisition methodology
 - [Portfolio](https://www.kautilya-pe.com/portfolio): Closed acquisition case studies
+- [Blog](https://www.kautilya-pe.com/blog): Market intelligence, buyer guides, and deal-structure teardowns
+- [Newsletter](https://www.kautilya-pe.com/newsletter): The Kautilya Newsletter — deal-by-deal teardowns
 - [Stories](https://www.kautilya-pe.com/stories): Deal journals and market intelligence
 - [FAQ](https://www.kautilya-pe.com/faq): 23 answered questions on advisory, sourcing, and pricing
 - [Team](https://www.kautilya-pe.com/team): The people behind every mandate
 - [Engage](https://www.kautilya-pe.com/engage): Start a buy-side acquisition mandate
 - [Careers](https://www.kautilya-pe.com/careers): Open roles at Kautilya
 
+## Blog Articles
+
+- [What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money](https://www.kautilya-pe.com/blog/what-is-a-search-fund): How search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits in India.
+- [Buying a Family-Owned Business in India: What First-Time Buyers Need to Know](https://www.kautilya-pe.com/blog/buying-family-owned-business-india): Succession dynamics, informal financial records, and diligence red flags specific to family-owned acquisition targets.
+
+## Newsletter Articles
+
+- [How to Value a Founder-Owned Pharma Business in India](https://www.kautilya-pe.com/newsletter/torrent-jb-chemicals-pharma-valuation): What the 24.8x EBITDA Torrent-JB Chemicals deal means for founder-owned pharma businesses and how to close the valuation gap before engaging a bank.
+- [Aurum's Housing.com Acquisition, Explained](https://www.kautilya-pe.com/newsletter/aurum-housing-com-acquisition): How REA "exited" Housing.com by becoming Aurum PropTech's biggest shareholder in an all-share preferential issue.
+
 ## Story Articles
 
+- [Confidential MSP: Buy-Side DD on a $21M Managed-Services Business](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
 - [Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio](https://www.kautilya-pe.com/stories/inspire3)
 - [Rewriting the M&A Playbook for UK Immigration](https://www.kautilya-pe.com/stories/borderless)
 - [Dino Games: Sourcing a Cash-Flow-Positive Mobile Game](https://www.kautilya-pe.com/stories/dino-games)

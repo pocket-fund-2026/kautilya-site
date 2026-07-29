@@ -66,6 +66,7 @@ export default function Header() {
   if (path.startsWith('/approach')) activePage = 'approach';
   else if (path.startsWith('/portfolio') || isPortfolioStory) activePage = 'portfolio';
   else if (path.startsWith('/stories') || path.startsWith('/story-')) activePage = 'stories';
+  else if (path.startsWith('/blog')) activePage = 'blog';
   else if (path.startsWith('/team')) activePage = 'team';
 
   const menuVisible = menuOpen || menuClosing;
@@ -90,6 +91,7 @@ export default function Header() {
         <Link href="/approach" data-page="approach" className={activePage === 'approach' ? 'active' : ''} onClick={closeMenu}>Approach</Link>
         <Link href="/portfolio" data-page="portfolio" className={activePage === 'portfolio' ? 'active' : ''} onClick={closeMenu}>Portfolio</Link>
         <Link href="/stories" data-page="stories" className={activePage === 'stories' ? 'active' : ''} onClick={closeMenu}>Stories</Link>
+        <Link href="/blog" data-page="blog" className={activePage === 'blog' ? 'active' : ''} onClick={closeMenu}>Blog</Link>
         <Link href="/team" data-page="team" className={activePage === 'team' ? 'active' : ''} onClick={closeMenu}>Team</Link>
         <Link className="cta-btn-mobile" href="/engage" onClick={closeMenu}>Engage</Link>
       </nav>

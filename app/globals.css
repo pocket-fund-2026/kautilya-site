@@ -424,6 +424,27 @@ body {
   color: var(--text-faint);
 }
 
+.footer-badges {
+  max-width: 1200px;
+  margin: 14px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.footer-badges:hover {
+  opacity: 1;
+}
+
+.footer-badges img {
+  display: block;
+  height: 9px;
+  width: auto;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -1451,6 +1472,9 @@ a.deal-card { cursor: pointer; }
   color: var(--text-secondary);
   line-height: 1.85;
   margin-bottom: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .story-body h2 {
@@ -1471,6 +1495,18 @@ a.deal-card { cursor: pointer; }
 .story-body em {
   color: var(--text-primary);
   font-style: italic;
+}
+
+.story-body a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold-dim);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.story-body a:hover {
+  text-decoration-color: var(--gold);
 }
 
 .story-body .story-img {
@@ -1578,6 +1614,9 @@ a.deal-card { cursor: pointer; }
 .phase-block p {
   margin-bottom: 8px;
   font-size: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 /* Constraints list */

@@ -14,6 +14,7 @@ export const STORY_SLUGS = [
   '200k-deals',
   'smartprompt',
   'inspire3',
+  'msp-buy-side-diligence',
 ] as const;
 
 export type StorySlug = (typeof STORY_SLUGS)[number];
@@ -109,5 +110,12 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: 'Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio',
     description: '30,134 transactions audited across 19 websites in under 15 days.',
     author: 'Dev Shah',
+  },
+  'msp-buy-side-diligence': {
+    title: 'Confidential MSP: Buy-Side DD on a $21M Managed-Services Business',
+    description: 'Kautilya rebuilt an MSP\'s economics from 303 agreements and 51,063 time entries — turning a distrusted 32% blend into a defensible 45% recurring margin.',
+    author: 'Dev Shah',
+    datePublished: '2026-07-04',
+    image: '/images/Dev.jpeg',
   },
 };
