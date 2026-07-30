@@ -92,7 +92,7 @@ export default function NewsletterPopup() {
           </svg>
         </button>
 
-        <div className="newsletter-eyebrow">This Is Bizness</div>
+        <div className="newsletter-eyebrow">India Deal Sheet</div>
         <h3 className="newsletter-title">Stay in the deal flow.</h3>
         <p className="newsletter-desc">
           Market intelligence, sourcing frameworks, and acquisition case studies, delivered weekly.
