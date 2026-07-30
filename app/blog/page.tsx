@@ -142,6 +142,15 @@ const blogListSchema = {
       description: "A plain-English guide to search funds: how search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits — and doesn't — in India.",
       keywords: 'what is a search fund, search fund model, search fund meaning, how does a search fund work, entrepreneurship through acquisition',
     },
+    {
+      '@type': 'BlogPosting',
+      headline: "Lockheed Martin's Ultra Maritime Acquisition: A Deal Teardown",
+      url: `${BASE_URL}/blog/lockheed-ultra-maritime-acquisition-teardown`,
+      datePublished: '2026-07-30',
+      author: { '@type': 'Person', name: 'Dev Shah', url: `${BASE_URL}/team` },
+      description: "Lockheed Martin paid $3.45B for Ultra Maritime, an undersea-warfare business Advent International bought in 2022 and grew from $494M to an estimated $784M in revenue. Here's the deal, the multiple, and what it means for buy-side value creation.",
+      keywords: 'Lockheed Martin Ultra Maritime acquisition, Advent International Ultra Maritime exit, defense M&A deal teardown, private equity value creation case study, EBITDA multiple defense acquisition',
+    },
   ],
 };
 
@@ -150,17 +159,23 @@ const itemListSchema = {
   '@type': 'ItemList',
   name: 'The Kautilya Blog — Buyer Guides & Advisory Notes',
   url: `${BASE_URL}/blog`,
-  numberOfItems: 2,
+  numberOfItems: 3,
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
+      url: `${BASE_URL}/blog/lockheed-ultra-maritime-acquisition-teardown`,
+      name: "Lockheed Martin's Ultra Maritime Acquisition: A Deal Teardown",
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
       url: `${BASE_URL}/blog/what-is-a-search-fund`,
       name: 'What Is a Search Fund?',
     },
     {
       '@type': 'ListItem',
-      position: 2,
+      position: 3,
       url: `${BASE_URL}/blog/buying-family-owned-business-india`,
       name: 'Buying a Family-Owned Business in India',
     },
