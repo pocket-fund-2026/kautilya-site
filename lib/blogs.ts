@@ -1,7 +1,6 @@
 export const BLOG_SLUGS = [
   'buying-family-owned-business-india',
   'what-is-a-search-fund',
-  'lockheed-ultra-maritime-acquisition-teardown',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -187,63 +186,6 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Entrepreneurship through acquisition',
       'Search fund structure and economics',
       'Entrepreneurship through acquisition in India',
-    ],
-  },
-  'lockheed-ultra-maritime-acquisition-teardown': {
-    title: "Lockheed Martin's Ultra Maritime Acquisition: A Deal Teardown",
-    subtitle: 'What a $3.45B, 22x-EBITDA, All-Cash Deal Actually Tells You',
-    description:
-      "Lockheed Martin paid $3.45B for Ultra Maritime, an undersea-warfare business Advent International bought in 2022 and grew from $494M to an estimated $784M in revenue. Here's the deal, the multiple, and what it means for buy-side value creation.",
-    author: 'Dev Shah',
-    datePublished: '2026-07-30',
-    category: 'Deal Teardowns',
-    readTime: '5 min',
-    wordCount: 850,
-    image: '/images/blogs/lockheed-ultra-maritime-teardown/lockheed-ultra-maritime-teardown-hero.webp',
-    keywords: [
-      'Lockheed Martin Ultra Maritime acquisition',
-      'Lockheed Martin Ultra Maritime deal',
-      'Ultra Maritime Advent International',
-      'Advent International Ultra Maritime exit',
-      'Lockheed Martin $3.45 billion acquisition',
-      'defense M&A deal teardown',
-      'private equity value creation case study',
-      'EBITDA multiple defense acquisition',
-      'sonar systems acquisition',
-      'undersea warfare systems M&A',
-      'Rotary and Mission Systems Lockheed Martin',
-      'all-cash M&A deal defense sector',
-      'private equity exit strategic buyer',
-      'buy-side advisory deal analysis',
-      'M&A deal structure teardown',
-    ],
-    faqs: [
-      {
-        q: 'How much did Lockheed Martin pay for Ultra Maritime?',
-        a: 'Lockheed Martin acquired Ultra Maritime from Advent International for $3.45 billion in an all-cash transaction, announced July 6, 2026.',
-      },
-      {
-        q: 'What does Ultra Maritime do?',
-        a: 'Ultra Maritime specializes in undersea warfare systems, including sonobuoys, sonar systems, torpedo-defence countermeasures, radar, and autonomous maritime sensing platforms.',
-      },
-      {
-        q: 'How much did Advent International make on the deal?',
-        a: "Advent's original 2022 purchase price for Ultra Maritime was never disclosed, so the actual return on investment cannot be calculated. What is known: Advent invested roughly $170 million over four years and grew revenue from $494 million (2023) to an estimated $784 million (2026), about 59% growth in three years.",
-      },
-      {
-        q: 'Why did Lockheed Martin pay an above-market multiple?',
-        a: "The deal carries an estimated 22x EBITDA multiple, well above the typical 10-15x range for defense transactions. The premium reflects Ultra Maritime's growth trajectory and sole-source navy contracts, and addresses a 19% profit decline in Lockheed's Rotary and Mission Systems division in Q1 2026.",
-      },
-      {
-        q: 'Why is this deal considered risky for Lockheed Martin?',
-        a: "Lockheed paid entirely in cash with no earnout protections, meaning the full purchase price was committed upfront with no structure tying payment to Ultra Maritime's future performance.",
-      },
-    ],
-    about: [
-      'Defense industry M&A',
-      'Private equity value creation',
-      'Deal structure and multiples',
-      'Buy-side and sell-side deal analysis',
     ],
   },
 };

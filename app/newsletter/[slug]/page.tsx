@@ -3,12 +3,14 @@ import type { Metadata } from 'next';
 import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 import NewsletterAurumHousing from '@/components/newsletters/NewsletterAurumHousing';
 import NewsletterPharmaValuation from '@/components/newsletters/NewsletterPharmaValuation';
+import NewsletterLockheedUltraMaritime from '@/components/newsletters/NewsletterLockheedUltraMaritime';
 
 const BASE = 'https://www.kautilya-pe.com';
 
 const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,
   'torrent-jb-chemicals-pharma-valuation': NewsletterPharmaValuation,
+  'lockheed-ultra-maritime-acquisition-teardown': NewsletterLockheedUltraMaritime,
 };
 
 type Props = {

@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 
-const IMG_BASE = '/images/blogs/lockheed-ultra-maritime-teardown';
+const IMG_BASE = '/images/newsletter/lockheed-ultra-maritime-acquisition-teardown';
 
-export default function BlogLockheedUltraMaritime() {
+export default function NewsletterLockheedUltraMaritime() {
   useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
@@ -180,6 +180,16 @@ export default function BlogLockheedUltraMaritime() {
           transition: opacity 0.2s;
         }
         .story-coda .coda-link:hover { opacity: 0.88; }
+        .story-coda .coda-link.secondary {
+          background: transparent;
+          border: 1px solid var(--gold-dim);
+          color: var(--gold);
+          margin-left: 12px;
+        }
+
+        @media (max-width: 640px) {
+          .story-coda .coda-link.secondary { margin-left: 0; margin-top: 12px; }
+        }
 
       `}} />
 
@@ -206,9 +216,9 @@ export default function BlogLockheedUltraMaritime() {
 
       {/* ── Hero ── */}
       <div className="story-hero" id="storyStart">
-        <Link href="/blog" className="back-link">← Blog</Link>
+        <Link href="/newsletter" className="back-link">← Kautilya Newsletter</Link>
         <div className="meta-row">
-          <span className="meta-tag">Deal Teardowns</span>
+          <span className="meta-tag">Deal Teardown</span>
           <span className="meta-tag">Defense &amp; Aerospace</span>
           <span className="meta-tag">5 min read</span>
         </div>
@@ -400,10 +410,18 @@ export default function BlogLockheedUltraMaritime() {
         {/* CTA */}
         <div className="story-coda">
           <p className="coda-text">
-            Evaluating a buy-side deal, or trying to read what a multiple is really telling you?
-            We help buyers structure diligence and read the deal underneath the headline number.
+            Every Kautilya Teardown tags buyer, target, structure, and score the same way, so you
+            can compare them later. Get the next one the day it publishes.
           </p>
-          <Link href="/engage" className="coda-link">Begin the Conversation</Link>
+          <Link href="/newsletter" className="coda-link">Read More Teardowns</Link>
+          <a
+            href="https://kautilya-pe.beehiiv.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="coda-link secondary"
+          >
+            Subscribe on Beehiiv
+          </a>
         </div>
 
       </article>
