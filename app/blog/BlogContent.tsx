@@ -300,12 +300,12 @@ export default function BlogContent() {
                 structure, and a scorecard for every Indian M&amp;A deal worth studying.
               </p>
               <a
-                href="https://www.linkedin.com/newsletters/the-india-deal-sheet-7472989616799850497/"
+                href="https://kautilya-pe.beehiiv.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="newsletter-linkedin-link"
               >
-                Subscribe on LinkedIn →
+                Subscribe on Beehiiv →
               </a>
             </div>
             <div>

@@ -590,12 +590,12 @@ export default function NewsletterAurumHousing() {
           </p>
           <Link href="/newsletter" className="coda-link">Read More Teardowns</Link>
           <a
-            href="https://www.linkedin.com/newsletters/the-india-deal-sheet-7472989616799850497/"
+            href="https://kautilya-pe.beehiiv.com"
             target="_blank"
             rel="noopener noreferrer"
             className="coda-link secondary"
           >
-            Subscribe on LinkedIn
+            Subscribe on Beehiiv
           </a>
         </div>
       </article>
