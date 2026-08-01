@@ -443,9 +443,13 @@ export default function BlogWhatIsASearchFund() {
           below that.
         </p>
         <p>
-          Kautilya&apos;s own published engagements illustrate the spread. One confidential
-          managed-services deal sits squarely inside the classic search fund range. Others sit far
-          below it:
+          Kautilya&apos;s own published engagements illustrate the spread. One{' '}
+          <Link href="/stories/msp-buy-side-diligence">confidential managed-services deal</Link>{' '}
+          sits squarely inside the classic search fund range. Others, like{' '}
+          <Link href="/stories/smartprompt">SmartPrompt</Link>,{' '}
+          <Link href="/stories/dino-games">Dino Games</Link>,{' '}
+          <Link href="/stories/runify">Runify</Link>, and{' '}
+          <Link href="/stories/inspire3">Inspire3</Link>, sit far below it:
         </p>
         <div className="blog-figure">
           <Image
@@ -528,6 +532,10 @@ export default function BlogWhatIsASearchFund() {
           </ul>
           <p>Not investment advice. This is an explainer for people evaluating acquisition paths, not a recommendation to pursue one.</p>
         </div>
+
+        <p>
+          Related reading: <Link href="/stories/search-funds">The Rise of Search Funds</Link>.
+        </p>
 
         {/* CTA */}
         <div className="story-coda">
