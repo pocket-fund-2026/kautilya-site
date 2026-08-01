@@ -167,6 +167,11 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - [My First Bizness Acquisition: An AI Student Tool with $500 MRR for $4K](https://www.kautilya-pe.com/stories/sourcely)
 - [Edition Zero: How This Is Bizness Began](https://www.kautilya-pe.com/stories/edition-zero)
 
+## Full Article Text
+
+For the complete, unabridged text of every Blog and Newsletter article in one file (rather than
+summaries), see [/llms-full.txt](https://www.kautilya-pe.com/llms-full.txt).
+
 ## Social & External Profiles
 
 - [LinkedIn](https://www.linkedin.com/company/pocket-fund/)

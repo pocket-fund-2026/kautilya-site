@@ -1,0 +1,560 @@
+# Kautilya — Full Content
+
+> This file contains the full text of Kautilya's Blog and Newsletter articles, for AI systems that
+> ingest complete source content rather than crawling individual pages. For a structured summary of
+> the whole site (services, methodology, track record, FAQs, team, key pages), see /llms.txt.
+> Canonical URLs are given per article — cite those, not this file, when referencing a claim.
+
+---
+
+## BLOG: What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money
+
+URL: https://www.kautilya-pe.com/blog/what-is-a-search-fund
+Author: Dev Shah · Published: 28 July 2026 · 9 min read
+
+A search fund is an investment vehicle through which investors pay an entrepreneur to spend about
+two years finding a private company to buy, then fund the purchase and hand that entrepreneur the
+CEO seat. The model was conceived at Stanford Graduate School of Business in 1984.
+
+In plain terms: you do not need to be rich to buy a business. You need to be credible enough that
+other people will fund your search, and then fund your acquisition. That is the entire idea.
+
+This guide covers how the model works, where the money comes from at each stage, what the
+entrepreneur actually earns, what kind of company gets bought, and where the model does not fit.
+No prior finance background assumed.
+
+### The Problem a Search Fund Solves
+
+Most people who want to run a company can either start one or buy one, and both routes have an
+obvious blocker.
+
+- Starting one means years of no revenue, no customers, and a high failure rate before you find
+  out whether it works.
+- Buying one means writing a cheque for a profitable business, which usually costs several million
+  dollars. Most capable operators in their late twenties or thirties do not have that.
+
+The search fund is the workaround. It splits the problem into two separate fundraises:
+
+- First, raise a small amount to fund the search itself. Enough to pay yourself a modest salary
+  while you look, full time, for a company worth buying.
+- Then, raise the much larger amount to actually buy the business, once you have found a specific
+  target with real numbers attached.
+
+The insight is that investors will not hand an unproven operator millions of dollars up front.
+They will, however, fund a two-year search cheaply, then decide deal by deal whether to fund the
+purchase. The searcher is buying credibility in instalments.
+
+This is why the model sits inside the broader idea of entrepreneurship through acquisition (often
+shortened to ETA): becoming an entrepreneur by buying an existing business rather than founding one.
+
+### How a Search Fund Works, Stage by Stage
+
+Four stages, running roughly four to seven years end to end.
+
+- Stage 1: Raise the search capital. The searcher raises a small fund from a group of investors,
+  typically six to ten experienced search fund backers, to pay salary, travel and admin while they
+  look for a company.
+- Stage 2: Search. The searcher spends roughly two years contacting owners, screening companies,
+  and negotiating. Median time to acquisition is about 20 months, per Stanford data.
+- Stage 3: Acquire. Once a target is agreed, the searcher returns to the same investors to fund the
+  purchase. They have first claim on the deal, but no obligation. Debt usually covers part of the
+  price.
+- Stage 4: Operate, then exit. The searcher becomes CEO and runs the company, typically for five to
+  seven years, growing profits before selling. The biggest payday comes at exit, not at
+  acquisition.
+
+### Where the Money Comes From
+
+Search funds raise capital twice, on very different terms. This two-step structure is the defining
+feature of the model.
+
+| | Search Capital | Acquisition Capital |
+|---|---|---|
+| When | Before any target is identified | Once a specific company is agreed |
+| Typical size | ~$400,000–500,000 (~₹3.9–4.8 crore) | $6M–24M equity (~₹58–232 crore) |
+| What it buys | ~24 months of salary, travel, admin | The company itself |
+| Who provides it | 6–10 search fund investors | Usually the same investors, plus debt |
+| Risk | Very high — many searches never close a deal | Lower — a real business with real numbers |
+
+Two mechanics matter and are easy to miss:
+
+- The step-up. Money put into the search converts into acquisition equity at a premium,
+  industry-standard 1.5x. Invest $100,000 (~₹96.6 lakh) in the search, and it counts as $150,000
+  (~₹1.45 crore) of equity at the acquisition. This compensates investors for backing a person with
+  no target yet.
+- Right of first refusal. Search investors get the pro-rata right of first refusal on the
+  acquisition equity. They can fund the deal on the same terms as anyone else, before outside money
+  is invited. It is a right, not an obligation, so a weak target can still fail to attract funding.
+
+Total deal sizes typically run $10M to $30M (~₹97 crore to ~₹290 crore), with bank or seller debt
+covering 20% to 40% of the purchase price.
+
+### What the Searcher Actually Earns
+
+Median searcher equity at acquisition is 25%, rising to 30–35% if performance targets are met. But
+that equity is not handed over at closing. It vests in three roughly equal tranches:
+
+| Tranche | Vests When | What It Rewards |
+|---|---|---|
+| First third | At closing of the acquisition | Finding and completing a deal |
+| Second third | Over the following 4–5 years | Staying and operating the business |
+| Final third | At exit, based on IRR achieved | Actually generating returns |
+
+The third tranche is tied to the internal rate of return delivered to investors at exit: below 20%
+IRR delivered to investors, the searcher earns nothing from the final tranche; between 20% and 35%
+it vests on a sliding scale; at 35% or above the searcher receives the full tranche.
+
+A searcher who buys a company, runs it competently for six years, and returns 15% a year to
+investors keeps roughly two thirds of their equity and forfeits the rest. The model does not pay
+for effort. It pays for outcome.
+
+### What a Search Fund Actually Buys
+
+The target profile is narrow, and deliberately boring. Investors are funding a first-time CEO, so
+they want a business that will not punish inexperience.
+
+| Criterion | Typical Requirement |
+|---|---|
+| EBITDA (annual operating profit) | Above $2M (~₹19.3 crore), ideally $2–4M (~₹19–39 crore) |
+| EBITDA margin | Above 15% |
+| Recurring revenue | 60%+ under contract |
+| Business model | Services, B2B or B2C, simple operations |
+| Capital expenditure | Low maintenance capex |
+| Industry growth | At least 2x GDP growth |
+| Track record | Consistent history of profit |
+
+The pattern: predictable cash flow, low capital intensity, and no technological cliff edge. A
+profitable, unglamorous, contract-heavy services business is close to the ideal. High-growth
+startups, capital-hungry manufacturers, and anything requiring deep technical specialisation are
+typically avoided.
+
+### Two Main Variants
+
+- Traditional (funded) search. Investors fund the search, get the step-up and the right of first
+  refusal, and the searcher takes a salary while looking. Lower personal financial risk, less
+  control, smaller equity share.
+- Self-funded search. The searcher funds their own search, usually while working, and finances the
+  acquisition with debt and seller financing rather than a syndicate of institutional backers.
+  Higher personal risk and no salary during the search, but a substantially larger equity stake and
+  no investor group to answer to. Self-funded searchers typically buy smaller companies than the
+  $10M–$30M range above.
+
+Accelerator-backed and sponsor-backed variants also exist, where an institution provides
+infrastructure and support alongside capital.
+
+### Where the Model Does Not Fit
+
+- Many searches never close. The search capital is genuinely at risk, and a meaningful share of
+  searchers finish two years without an acquisition.
+- You are buying a job you cannot easily quit. The second vesting tranche runs four to five years.
+  Leaving early forfeits equity.
+- The performance hurdle is demanding. A 20% IRR floor before the final tranche pays anything is a
+  high bar for a small services business in a slow-growing sector.
+- The target profile excludes most businesses. EBITDA above $2M with 60% recurring revenue rules
+  out the overwhelming majority of small companies.
+- It is heavily concentrated in the US and Canada. The Stanford study that defines the model's
+  track record covers funds formed in those two markets.
+
+### What This Looks Like Outside the US
+
+The classic search fund targets deals of $10M to $30M. A large share of real acquisition activity
+in India and other emerging markets happens well below that. Kautilya's own published engagements
+illustrate the spread: one confidential managed-services deal ($21M) sits inside the classic range;
+others (SmartPrompt $12K, Dino Games $39K, Runify $110K, Inspire3 $1.8M) sit far below it.
+
+Three practical consequences follow (Kautilya's read, not published data — no equivalent India
+dataset exists):
+
+- The search capital stage is often skipped. At a $100,000 purchase price, raising a $450,000
+  search fund to find it makes no sense.
+- Self-funded search is the more realistic template for most first-time acquirers in these markets.
+- The screening discipline still transfers even when the structure does not: recurring revenue, low
+  capex, boring and profitable, no technology cliff.
+
+The structure is US-shaped. The diligence logic is universal.
+
+### FAQ
+
+**What is a search fund?** An investment vehicle, conceived in 1984 at Stanford Graduate School of
+Business, through which investors financially support an entrepreneur's efforts to locate, acquire,
+manage and grow a privately held company. The entrepreneur raises a small fund to finance a roughly
+two-year search, then raises a larger amount from the same investors to buy the company they find,
+and becomes its CEO.
+
+**How does a search fund work?** In four stages: raise search capital from six to ten investors;
+spend about 20 months finding a company; return to those investors to fund the acquisition, usually
+alongside debt; then run the business as CEO for five to seven years before selling.
+
+**How much money do you need to start a search fund?** Typically none of your own for a traditional
+search. Investors provide roughly $400,000 to $500,000 of search capital covering about 24 months
+of salary and expenses. A self-funded search reverses this.
+
+**How much equity does a searcher get?** Median equity at acquisition is 25%, rising to 30–35% if
+performance targets are met, vesting in three tranches (closing, 4–5 years of operating, and exit
+tied to IRR). Below 20% IRR the final tranche pays nothing.
+
+**What kind of business does a search fund buy?** Profitable, unglamorous companies with EBITDA
+above $2M, margins above 15%, 60%+ recurring revenue, simple operations, low capex, and industry
+growth at least 2x GDP.
+
+**What is entrepreneurship through acquisition?** The broader idea of becoming an entrepreneur by
+buying an existing business rather than founding one. A search fund is the most formalised version.
+
+**Do search funds exist in India?** The formal model is concentrated in the US and Canada. Real
+acquisition activity in India often happens at deal sizes below the classic search fund range,
+where self-funded structures fit better.
+
+Sources: Stanford GSB Center for Entrepreneurial Studies (Search Funds, 2026 Search Fund Study);
+Pacific Lake Partners (Intro to Search Funds); Acquisition Stars and Search Funds News (investor
+agreements, searcher economics); IESE Business School and Yale SOM (academic context). Not
+investment advice.
+
+---
+
+## BLOG: Buying a Family-Owned Business in India: What First-Time Buyers Need to Know
+
+URL: https://www.kautilya-pe.com/blog/buying-family-owned-business-india
+Author: Dev Shah · Published: 25 July 2026 · 7 min read
+
+Most small businesses for sale in India are family businesses. A promoter built it over 15 or 25
+years, ran it with relatives or long-time loyal staff, and is now selling because of retirement,
+health, or the next generation choosing a different career. This is a different transaction from
+buying a professionally-run, systemized company, with its own specific risks and negotiation
+dynamics that generic due diligence advice doesn't fully cover.
+
+### Why Buying a Family-Owned Business in India Is Different
+
+A professionally-run business sale is largely a numbers exercise: verify the financials, agree a
+price, transfer ownership. A family business sale carries an additional layer, because the business
+and the owner's identity are often the same thing. Three structural differences show up
+consistently.
+
+### 1. Informal Financial Records in Family-Owned Businesses
+
+Family businesses, especially those run for a decade or more without professional management,
+frequently keep looser financial records than the business's actual revenue would suggest:
+
+- Cash transactions not fully reflected in books, sometimes to reduce tax exposure, sometimes just
+  from years of informal habit.
+- Owner expenses mixed with business expenses: a family car, personal travel, or relatives on
+  payroll doing minimal actual work.
+- Multiple sets of numbers: what's reported for tax, what's shown to a bank for a loan, and what
+  the owner tells you privately may all differ.
+
+None of this necessarily means fraud. It often means the business has been run the way a family
+managed it for 20 years, not the way a buyer needs it documented. Expect to spend more time
+normalizing financials than with a corporatized target.
+
+### 2. Employee Loyalty in Family Business Acquisitions
+
+In a family business, key employees are frequently loyal to the promoter personally — sometimes
+because they're relatives, sometimes because of decades-long personal relationships. This creates a
+retention risk that doesn't show up in a standard organizational chart review. Questions worth
+asking before you close: which employees are related to the seller and do they intend to stay?
+Does the business depend on informal knowledge the owner holds in their head, or relationships built
+on personal trust? Will long-serving staff accept a new, unrelated owner?
+
+### 3. Negotiating With a Family Business Owner in India
+
+Negotiating with a founder who built the business is different from negotiating with a private
+equity seller or a corporate divestiture team:
+
+- Attachment to a number that isn't grounded in financials — the owner may have a price in mind
+  tied to what the business means to them, not what it earns.
+- Sensitivity around legacy and continuity — many family sellers care more than a corporate seller
+  would about whether the business, brand name, or staff will be treated well after the sale.
+- Slower decision timelines, particularly when multiple family members need to agree.
+
+Sellers motivated by continuity and legacy, rather than purely maximizing price, are often more open
+to structures like seller financing, transition consulting periods, or earnouts.
+
+### Family Business Succession Due Diligence Checklist
+
+- Family employment audit: list every employee related to the seller, their actual role and
+  output, and whether they're staying post-sale.
+- Verbal agreement inventory: identify supplier terms, customer arrangements, or informal
+  understandings that were never written down.
+- Owner dependency mapping: determine which functions only the owner can perform, and build a
+  realistic transition timeline.
+- Multiple financial record reconciliation: compare tax filings, bank statements, and any informal
+  figures the seller shares privately.
+- Family agreement confirmation: verify all owners (siblings, spouse, adult children with a stake)
+  are actually aligned on the sale.
+
+### How to Structure an Acquisition of a Family-Owned Business
+
+- A transition consulting period, where the seller stays on for 3 to 6 months post-sale to hand
+  over supplier and customer relationships personally.
+- Seller financing or an earnout tied to retained customers.
+- Written retention agreements with key family or long-serving employees, signed before closing.
+
+The goal is converting informal, personal trust into documented, transferable business relationships
+before you take ownership.
+
+### Red Flags When Buying a Family-Owned Business
+
+- Reluctance to share full financial records early, when it stems from decades of informal
+  bookkeeping rather than active concealment.
+- A seller who wants to remain heavily involved post-sale in a way that suggests they haven't
+  actually decided to exit.
+- Key relatives or staff who are notably absent from negotiations but clearly influential in daily
+  operations.
+
+None of these mean walk away. They mean slow down, ask directly, and structure the deal to account
+for what you find.
+
+### FAQ
+
+**Is buying a family-owned business riskier than buying a corporate-run one?** Not inherently
+riskier, but the risks are different in kind. Financial informality and owner/employee dependency
+need more attention; outright fraud or complex corporate liabilities are often less of a factor.
+
+**How do I value a family business with informal financial records?** Start by reconciling all
+available records — bank statements, tax filings, GST returns — against what the seller states
+verbally. A CA experienced in SME valuations can normalize the numbers, but expect the process to
+take longer.
+
+**Will employees stay after a family business is sold to an unrelated buyer?** It depends heavily
+on how the transition is handled. Direct conversations with key staff before closing, retention
+agreements for critical roles, and a visible transition period all improve the odds.
+
+**Should I be concerned if a family business seller wants to stay on after the sale?** Not
+necessarily. A defined transition period is often valuable. The concern is a seller who wants to
+stay indefinitely involved, which usually signals they haven't committed to the exit.
+
+---
+
+## NEWSLETTER: How to Value a Founder-Owned Pharma Business in India
+
+URL: https://www.kautilya-pe.com/newsletter/torrent-jb-chemicals-pharma-valuation
+Author: Dev Shah · Published: 29 June 2025 · 12 min read
+Key metrics: ₹3,100 Cr KKR entry (2020) → ₹25,689 Cr Torrent exit (2025), 8x return in 5 years.
+
+If you run a pharma business in India and have not read the Torrent-JB Chemicals deal announcement
+carefully, you should. Not because it is a pharma story. Because it is the clearest public data
+point in years on what your business is actually worth — and what it would be worth if you spent
+five years preparing it properly before a sale.
+
+Torrent Pharmaceuticals paid 24.8× EBITDA for JB Chemicals in June 2025. KKR had bought the same
+business in 2020 for roughly Rs. 3,100 Cr. Five years. Eight times the entry price. No new drugs
+invented. No new markets entered. No company rebuilt from scratch.
+
+This is a business preparation story, and the gap it reveals between what founder-owned pharma
+businesses sell for today and what they could sell for with the right preparation is the most
+important number in Indian mid-market M&A right now.
+
+### What Pharma Business Valuation in India Actually Looks Like
+
+- Founder-owned, underprepared: 6–8× EBITDA
+- PE-backed, institutional: 18–24× EBITDA
+- JB Chemicals 2025 (Torrent deal): 24.8×
+
+The current market prices founder-owned pharma businesses in the Rs. 50 to 500 Cr revenue range at
+6 to 8× EBITDA. PE-backed assets with institutional governance and professional management trade at
+18 to 24×. That is not a sector difference — both pools sit in the same therapeutic categories, same
+geographies, same regulatory environment. The difference is diligence-readiness.
+
+JB Chemicals under the Mody family: Rs. 2,800 Cr revenue, EBITDA margins of 15–18%. Under KKR: 18%
+revenue CAGR, margins of 27–29%, Rs. 7–7.5 billion in annual free cash flow. Same assets. Different
+preparation. Three times the multiple.
+
+### Five Decisions That Created Rs. 22,000 Crore of Exit Value
+
+1. **Separate ownership from management on day one.** KKR appointed Nikhil Chopra as CEO within
+   weeks — a 24-year Cipla veteran. The Mody family exited operations immediately and cleanly. An
+   acquirer will not pay 20× for a business that stops working when the promoter steps back.
+2. **Run a consistent bolt-on acquisition strategy.** Five bolt-on acquisitions in four years, each
+   receiving the same operating playbook. Sporlac grew 34% post-acquisition. Razel grew 33%. JB
+   Chemicals moved from 28th to 21st in the Indian pharma market.
+3. **Fund the capability the promoter had been ignoring.** The CDMO arm — medicated lozenges with
+   global potential — was 11% of revenue when KKR arrived, starved of capital. By FY25 it generated
+   Rs. 446 Cr annually with global leadership in a USD 4.6 billion segment.
+4. **Improve the economics without changing the business.** EBITDA margins nearly doubled — from
+   15–18% to a guided 27–29% — through supply chain optimisation and product mix discipline, not
+   price increases.
+5. **Build governance so any buyer can understand the business quickly.** An institutional board,
+   credentialed independent directors, and an audit trail rebuilt to diligence standards. When
+   Torrent arrived at the data room, there were no structural surprises.
+
+### Why the Next 24 Months Are an Unusual Window
+
+- **Schedule M**: Revised Schedule M became binding on January 1, 2026. Tier 3 manufacturers who
+  cannot fund the upgrades are approaching advisors now — not distressed, but unable to wait out
+  another market cycle.
+- **PE Capital**: ChrysCapital's Rs. 1,300 Cr acquisition of 71% of Novartis India in Q1 2026
+  confirmed institutional buyers are not on the sidelines. The Torrent-JB deal sets the ceiling
+  multiple.
+- **Succession**: Second-generation families across the Rs. 50–300 Cr pharma segment are facing a
+  question the first generation never had to answer: does this business need to stay in the family?
+
+### What a Valuation-Ready Pharma Business Looks Like
+
+Governance & Documentation: at least one credentialed independent director before any formal
+process; clean separation of company vs. promoter personal expenses in the P&L; all key customer
+and distributor relationships documented and transferable; regulatory compliance current and
+auditable (GMP, Schedule M, GST/ITR/EPF/ESI); three years of audited financials with no unexplained
+adjustments; EBITDA reconciliation a buyer's CFO can verify without the promoter.
+
+Management & Strategy: a second layer that can run the business without the promoter for 90 days;
+customer concentration quantified (top five customers, contract terms, renewal history); one
+identified dormant capability with a documented investment thesis; a clear answer to why a strategic
+buyer would pay more than a financial buyer.
+
+None of this requires hiring an investment bank today. It requires 12 to 24 months of deliberate
+preparation.
+
+### The Risks This Deal Creates
+
+The Torrent-JB deal will cause some buyers to overpay for pharma assets on the assumption that every
+founder-owned business contains hidden upside of the same type. It does not — the CDMO vertical at
+JB Chemicals was genuinely underinvested, a specific set of conditions that does not exist in every
+mid-market acquisition. For sellers, the risk is timing: the Schedule M compliance window and the
+current PE deployment cycle are creating motivated but non-distressed seller conditions that will
+not persist indefinitely.
+
+### FAQ
+
+**What EBITDA multiple do pharma businesses sell for in India?** Founder-owned businesses in the
+Rs. 50–500 Cr range typically sell at 6–8× EBITDA. PE-backed assets with institutional governance
+trade at 18–24×. The Torrent-JB Chemicals deal at 24.8× is the current ceiling.
+
+**How long does it take to prepare a pharma business for sale in India?** Typically 18–36 months:
+professional management layer, clean P&L, documented customer relationships, resolved governance
+gaps, and funding any dormant capability.
+
+**What did KKR do to increase JB Chemicals' value before selling to Torrent?** Appointed a
+professional CEO, ran a consistent bolt-on strategy across five targets, funded a dormant CDMO
+capability that grew to Rs. 446 Cr, improved EBITDA margins from 15–18% to 27–29%, and rebuilt
+governance to institutional diligence standards.
+
+**What is the difference between a motivated and a distressed seller in Indian pharma M&A?** A
+motivated seller approaches the market by choice, with time and options. A distressed seller
+approaches because external pressure has removed optionality. Motivated sellers price at the top of
+the range; distressed sellers price at the bottom.
+
+**Do I need an investment bank to sell a pharma business in India?** For businesses in the
+Rs. 50–300 Cr range, a boutique M&A advisory firm with Indian mid-market pharma experience will
+typically be more effective than a large investment bank.
+
+---
+
+## NEWSLETTER: Aurum's Housing.com Acquisition, Explained
+
+URL: https://www.kautilya-pe.com/newsletter/aurum-housing-com-acquisition
+Author: Dev Shah, Kautilya Deal Table teardown · Published: 25 July 2026 · Deal announced 16 July 2026 · 11 min read
+Key metrics: ₹458 Cr deal value (all-stock) · REA's Aurum stake 5.54% → 24.90% · ~AUD 110M implied loss to REA.
+
+REA Group "exited" Housing.com for ₹458 crore (~$47.4M), and took every rupee of it in stock, not
+cash. REA's stake in the acquirer, listed proptech Aurum PropTech, jumped from 5.54% to 24.90%,
+making the seller the single largest non-promoter shareholder of the company that just bought its
+India business. On the reported numbers, this books REA a AUD 110 million (~$77M / ~₹744 crore)
+loss. But REA didn't leave India; it rotated. Operating control of one portal traded for a quarter
+of a listed acquirer.
+
+### The Snapshot
+
+Buyer: Aurum PropTech Ltd (BSE-listed; formerly Majesco). Target: Locon Solutions Pvt Ltd, parent of
+Housing.com. Seller: REA India Pte Ltd (REA Group, Australia). Sector: Proptech / real estate
+marketplaces. Size/price: ₹458.06 crore (~$47.4M), 100% share swap, zero cash. Structure: All-share
+preferential issue — 1,97,93,309 Aurum shares at ₹231.42/share (~$2.40/share) to REA; REA's Aurum
+stake rises 5.54% → 24.90%. Announced: July 16, 2026.
+
+### What Happened
+
+- July 16, 2026: Aurum PropTech's board approves acquiring 100% of Locon Solutions for ₹458.06
+  crore (~$47.4M), covering equity shares, compulsorily convertible preference shares, and
+  debentures on a fully diluted basis.
+- The entire consideration is paid in Aurum stock: 1,97,93,309 shares issued to REA at
+  ₹231.42/share (~$2.40/share), on a preferential basis. No cash changes hands.
+- REA's Aurum stake rises from 5.54% to 24.90%, deliberately just under the 25% threshold that
+  would trigger a mandatory open offer to Aurum's public shareholders.
+- Same day, Aurum also issues 51,00,000 warrants to its own promoter at the identical ₹231.42
+  price (up to ₹118 crore / ~$12.2M), taking promoter holding to 41.17% fully diluted.
+
+Locon Solutions, founded 2012, owns Housing.com: ~58 million average monthly visits, ~12 million
+monthly active users. Revenue: FY24 ₹447.49 crore (~$46.3M), FY25 ₹687.46 crore (~$71.2M, +53.7%
+YoY), FY26 ₹309.93 crore (~$32.1M, unaudited) — a ~55% drop from FY25 not yet explained in public
+filings. Aurum itself: ₹241.19/share (~$2.50/share) on deal day, ~₹1,738 crore (~$180M) market cap,
+P/E ~96.
+
+This is REA's second asset sold to Aurum — PropTiger went across in September 2025 for ₹86.45 crore
+(~$9.0M), an all-share deal. REA entered India in January 2017 via Elara Technologies (US$50M) to
+combine PropTiger and Housing.com; total investment over nine years reached roughly AUD 300 million
+(~$210M / ~₹2,029 crore). Two all-share swaps, eighteen months apart, took REA from an operator with
+~$210M invested to a 24.90% shareholder with zero cash recovered.
+
+### The Numbers
+
+Deal multiple (Kautilya estimate): ~0.67x FY25 revenue (₹458 crore deal value ÷ ₹687 crore FY25
+revenue) — a 70 to 85% haircut against the 2x to 4x revenue multiples late-stage proptech rounds
+fetched in 2022 to 24. That low multiple reflects three things at once: FY26 revenue softness, REA's
+priority on exiting rather than maximizing price, and consideration paid in equity rather than cash.
+
+The open question: Locon's disclosed FY26 revenue is down roughly 55% on FY25, unaudited, and the
+deal's Regulation 30 annexure sizes the target on the FY25 figure, not FY26. That judgment isn't
+explained in the material available; the EGM notice (August 14, 2026) may address it.
+
+### The Structure
+
+- Zero cash, entirely in stock. Aurum pays for a ₹458 crore acquisition, more than a quarter of its
+  own ~₹1,738 crore market cap, without touching its treasury or raising new public capital.
+- Priced at the regulatory floor. ₹231.42/share is the SEBI ICDR floor, about 4% below Aurum's
+  deal-day close of ₹241.19.
+- 24.90% is an engineered ceiling, not a coincidence. Crossing 25% would trigger a mandatory open
+  offer under India's Takeover Regulations.
+- A three-year lock-in. SEBI's rules on preferential allotments to non-promoters lock REA out of
+  selling its new shares until roughly Q3 FY29.
+
+Aurum's managed risk: bought scale without straining its balance sheet, avoided a cash outlay and a
+public dilution event. REA's accepted risk: converted a certain, crystallized loss into an
+uncertain, three-year-locked bet on Aurum's share price.
+
+### Why It Matters
+
+1. **REA rotated its exposure; it didn't reduce it.** Cash would have crystallized the loss and
+   ended REA's India story cleanly. Instead REA holds 24.90% of the combined platform — any
+   post-integration re-rating of Aurum flows back to REA. A portfolio rotation wearing the language
+   of a divestment.
+2. **Every listed mid-market acquirer with a credible share price now has this playbook.** The
+   preferential-issue-to-one-named-allottee route is available to any listed company with stock
+   investors will accept as payment.
+3. **India's independent proptech portal count just dropped to three.** Housing.com and PropTiger
+   now both sit under Aurum. Magicbricks belongs to Times Group; 99acres to Info Edge; NoBroker and
+   a handful of smaller players remain independent.
+
+### The Buyer's Takeaway (Advisor/Operator Lens)
+
+1. An all-share preferential issue is a real alternative to a cash sale, not a consolation prize —
+   useful for an MNC parent done running its Indian subsidiary, preserving India upside instead of
+   forcing a lower-value cash exit.
+2. Watch for the number just under a regulatory trigger — 24.90% next to a 25% open-offer threshold
+   is an engineered ceiling, not a coincidence.
+3. An unexplained revenue swing doesn't have to kill a deal, but it should change your price — it
+   should show up as a lower multiple or a holdback, not get absorbed silently.
+
+Limit: this structure depends on the buyer being listed with a share price sellers are willing to
+accept as payment, and on the seller genuinely preferring optioned upside over a clean cash exit.
+
+### The Kautilya Deal Score
+
+Price Discipline: 4.5/5. Structure & Risk Absorption: 4.5/5. Cash-Flow Quality: 2/5. Strategic Fit /
+Value Path: 4/5. Replicability: 4/5. **Overall: 3.8/5 — Solid.**
+
+Verdict: An exceptionally well-engineered structure, cheap for the buyer, cash-preserving,
+regulatorily precise, built on top of a target whose most recent year of revenue is a genuine,
+unresolved red flag. The structure is the transferable lesson; the FY26 numbers are the reason this
+isn't scored higher.
+
+Sources: Aurum PropTech's BSE intimation (July 16, 2026); Business Standard, Entrackr, Business
+Upturn; Screener; RP Realty Plus, Elite Agent. Currency conversions are Kautilya estimates at
+approximate July 2026 spot rates (~₹96.6/$1, ~$0.70/AUD1), not independently disclosed figures.
+
+---
+
+## More Kautilya Content
+
+- [Blog index](https://www.kautilya-pe.com/blog)
+- [Newsletter index](https://www.kautilya-pe.com/newsletter)
+- [Stories — case studies and deal journals](https://www.kautilya-pe.com/stories)
+- [FAQ — 23 answered questions on advisory, sourcing, and pricing](https://www.kautilya-pe.com/faq)
+- Company overview, methodology, track record, and team: see [/llms.txt](https://www.kautilya-pe.com/llms.txt)
