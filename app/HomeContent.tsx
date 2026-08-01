@@ -396,12 +396,6 @@ return (
             <div className="card-desc">Search funds, family-owned business acquisitions, and buy-side fundamentals explained.</div>
             <span className="card-arrow">→</span>
           </Link>
-          <Link className="pathway-card" href="/newsletter">
-            <div className="card-eyebrow">Deal Teardowns</div>
-            <h3 className="card-title">The Kautilya Newsletter</h3>
-            <div className="card-desc">Deal-by-deal structure teardowns from live M&A activity in India and beyond.</div>
-            <span className="card-arrow">→</span>
-          </Link>
         </div>
       </div>
 
