@@ -140,6 +140,7 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 
 ## Blog Articles
 
+- [What Is Buy-Side M&A Advisory? A Beginner's Guide to Buying a Business in India](https://www.kautilya-pe.com/blog/what-is-buy-side-ma-advisory): What a buy-side advisor does, buy-side vs. sell-side advisory, why first-time buyers in India use one, the step-by-step process, and common mistakes without one.
 - [What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money](https://www.kautilya-pe.com/blog/what-is-a-search-fund): How search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits in India.
 - [Buying a Family-Owned Business in India: What First-Time Buyers Need to Know](https://www.kautilya-pe.com/blog/buying-family-owned-business-india): Succession dynamics, informal financial records, and diligence red flags specific to family-owned acquisition targets.
 

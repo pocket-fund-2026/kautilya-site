@@ -7,6 +7,122 @@
 
 ---
 
+## BLOG: What Is Buy-Side M&A Advisory? A Beginner's Guide to Buying a Business in India
+
+URL: https://www.kautilya-pe.com/blog/what-is-buy-side-ma-advisory
+Author: Dev Shah · Published: 3 August 2026 · 8 min read
+
+Buy-side M&A advisory is professional support for the buyer in a business acquisition — someone
+who finds, evaluates, negotiates, and closes a deal on your behalf, instead of you doing it alone.
+
+If you've ever thought about buying an existing business instead of starting one from scratch,
+this guide explains where a buy-side advisor fits into that process, and why most first-time
+buyers in India don't go through it solo.
+
+Key takeaways: a buy-side advisor works only for the buyer — sourcing, valuing, and vetting deals
+in your interest. It's not just for large M&A — search funds and individual buyers use it for
+deals as small as ₹25L–5Cr. The biggest risk without one: overpaying, or missing a liability that
+surfaces only after you've signed.
+
+### What Does a Buy-Side Advisor Actually Do?
+
+A buy-side advisor represents the buyer's interests from the first conversation to the final
+signature. Their job breaks down into five stages: Sourcing — identifying businesses that match
+your budget, industry, and goals, including off-market opportunities that never get publicly
+listed. A large share of small-business acquisitions in India happen off-market, sourced through
+direct relationships rather than public listings. Screening — filtering targets by financial
+health, growth potential, and fit. Valuation — assessing what a business is actually worth, using
+earnings multiples, comparable transactions, and discounted cash flow analysis, not just the
+seller's asking price. Due diligence — verifying financials, legal standing, contracts, licenses,
+and liabilities before you commit capital. Negotiation & closing — structuring deal terms,
+financing, and paperwork to protect your interests through to signing.
+
+### Buy-Side vs. Sell-Side Advisory
+
+A sell-side advisor works for the seller, a buy-side advisor works for you. A sell-side advisor
+represents the seller, aims to maximize sale price, sources deals from their own client, and is
+typically paid a percentage of sale price. A buy-side advisor represents the buyer, aims to
+minimize overpayment risk and maximize deal quality, sources from the broader market including
+off-market targets, and is typically paid a retainer plus success fee on close. If you're buying
+and working with someone who represents the seller — or no one at all — you're at an information
+disadvantage: they know things about the business you don't, their incentives don't point in your
+direction, and you have no one independently checking the seller's numbers.
+
+### Why First-Time Buyers in India Use a Buy-Side Advisor
+
+Access to off-market deals: many of the best acquisition targets in India are never publicly
+listed. Avoiding overpayment: without independent valuation, buyers commonly anchor on the
+seller's numbers, which are rarely neutral. Navigating diligence blind spots: family-owned and
+small-to-mid businesses in India often have informal record-keeping, unclear ownership structures,
+or contingent liabilities that are easy to miss without experience. Regulatory complexity:
+depending on structure, acquisitions can involve company law, tax, and — for NRI or foreign
+buyers — FEMA compliance. Time: sourcing and vetting targets alone can take months of unproductive
+searching.
+
+### Is Buy-Side Advisory Only for Large Acquisitions?
+
+No — this is a common misconception. Search funds, individual entrepreneurs, and small holding
+companies increasingly use buy-side advisory for deals in the crores range, not just large
+institutional M&A. Buy-side advisory is most valuable in the ₹25L–5Cr range: complex enough to
+need expertise, small enough to be overlooked by investment banks, which focus on larger
+transactions, and above what makes sense to do fully DIY.
+
+### What the Buy-Side Process Looks Like, Step by Step
+
+Define your acquisition criteria (industry, size, geography, budget). Sourcing and initial
+outreach, including off-market approaches to owners who haven't publicly signaled they're
+selling. Preliminary screening and management calls. Indicative valuation and a non-binding
+letter of intent (LOI). Due diligence — financial, legal, tax, and operational checks, where most
+red flags surface. Final negotiation and deal structuring (earnouts, seller financing). Closing —
+legal documentation, regulatory filings, and fund transfer.
+
+### Common Mistakes First-Time Buyers Make Without an Advisor
+
+Trusting seller-provided financials at face value instead of independently verifying them.
+Skipping legal diligence on contracts, licenses, and pending litigation. Underestimating working
+capital needs post-acquisition, leading to a cash crunch right after closing. Negotiating price
+without negotiating terms — structure often matters as much as headline price. Not planning the
+transition, risking key employees or customer relationships in the handover period.
+
+A common pattern: a first-time buyer finds a manufacturing business through a broker, priced on
+the seller's self-reported EBITDA. What a buy-side advisor would catch: revenue concentration (if
+60%+ of revenue comes from one customer, that's a material risk the asking price doesn't
+reflect), add-back inflation (sellers often add back "one-time" expenses to inflate EBITDA), and
+working capital gaps (the deal may look fully priced on paper but leave the buyer
+under-capitalized for day-one operations).
+
+### How Kautilya's Buy-Side Process Works
+
+Kautilya works exclusively on the buy side — we don't represent sellers, so there's no conflict
+of interest in what we recommend.
+
+### FAQ
+
+**How much does a buy-side advisor cost?** Fee structures vary by firm and deal size, but most
+follow a retainer plus success fee model — a fixed monthly or upfront fee during sourcing and
+diligence, plus a percentage tied to the deal actually closing.
+
+**How long does the process take?** Sourcing to close typically runs three to nine months,
+depending on target availability, how well-documented the business is, and diligence complexity.
+
+**Do I need an advisor if I already found a business to buy?** Yes, if you haven't done
+independent valuation and diligence yet. Advisors add the most value at exactly this stage.
+
+**What's the difference between a buy-side advisor and an M&A lawyer?** An advisor manages the
+overall deal — sourcing, valuation, negotiation strategy, and coordinating diligence — while a
+lawyer drafts and reviews legal documentation and handles regulatory filings.
+
+**Can NRIs or foreign buyers use a buy-side advisor for Indian acquisitions?** Yes, and it's
+often more important in that case. Cross-border acquisitions add FEMA compliance, repatriation
+rules, and sector-specific foreign investment restrictions.
+
+**What size of business is a buy-side advisor worth it for?** No fixed cutoff, but once a deal is
+large enough that a bad valuation or a missed liability would meaningfully hurt you financially,
+an advisor's fee is cheap insurance — in practice this covers most deals from a few tens of lakhs
+upward.
+
+---
+
 ## BLOG: What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money
 
 URL: https://www.kautilya-pe.com/blog/what-is-a-search-fund
