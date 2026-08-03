@@ -1245,6 +1245,7 @@ a.deal-card { cursor: pointer; }
   display: inline-block; text-decoration: none; text-align: center;
   margin-top: 4px;
 }
+.careers-modal-role { color: var(--gold); }
 
 .engage-form .form-success {
   margin-top: 12px;

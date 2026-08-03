@@ -13,7 +13,7 @@ const OPEN_ROLES = [
 const WORK_MODES = ['Remote', 'On Site (Mumbai)'] as const;
 
 const ROLE_FORM_LINKS: Record<string, string> = {
-  'Analyst': 'https://forms.gle/EjyxLed7vvpjctKA8',
+  'Analyst': 'https://docs.google.com/forms/d/e/1FAIpQLSfqACamTziN95G3HbX2v1NoiIzSsyysRZfoORcizq6i-NRUwA/viewform?usp=dialog',
   'Operations': 'https://forms.gle/jKF5sir751CYSZiV7',
   'Full Stack Developer': 'https://forms.gle/rcBFdEbb5o3s4TVF6',
   'Marketing': 'https://forms.gle/SVZpfo3LL9LgWX1G8',
@@ -464,8 +464,8 @@ export default function CareersContent() {
             <h2 id="careers-success-title" className="newsletter-title">Thank You</h2>
             <p className="newsletter-desc">
               We&apos;ve received your resume. To be considered for the{' '}
-              <strong>{successModal.role}</strong> role, please complete the short application form
-              below so we can review your candidacy.
+              <strong className="careers-modal-role">{successModal.role}</strong> role, please{' '}
+              <u>complete the short application form below</u> so we can review your candidacy.
             </p>
             <a
               className="engage-submit careers-modal-cta"
