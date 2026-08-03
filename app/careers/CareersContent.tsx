@@ -464,15 +464,19 @@ export default function CareersContent() {
             <h2 id="careers-success-title" className="newsletter-title">Thank You</h2>
             <p className="newsletter-desc">
               We&apos;ve received your resume. To be considered for the{' '}
-              <strong className="careers-modal-role">{successModal.role}</strong> role, please{' '}
-              <u>complete the short application form below</u> so we can review your candidacy.
+              <strong className="careers-modal-role">{successModal.role}</strong> role, please complete
+              the short application form below so we can review your candidacy.
             </p>
             <a
               className="engage-submit careers-modal-cta"
               href={successModal.formLink}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setSuccessModal(null)}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(successModal.formLink, '_blank', 'noopener,noreferrer');
+                setSuccessModal(null);
+              }}
             >
               Fill Out the Application →
             </a>
