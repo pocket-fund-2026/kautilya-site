@@ -57,7 +57,7 @@ export default function CareersContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitState, setSubmitState] = useState<'idle' | 'success' | 'error'>('idle');
   const [submitMessage, setSubmitMessage] = useState('');
-  const [successModal, setSuccessModal] = useState<{ role: string; formLink: string } | null>(null);
+  const [successModal, setSuccessModal] = useState<{ role: string; formLink?: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const applyRef = useRef<HTMLDivElement>(null);
 
@@ -172,8 +172,7 @@ export default function CareersContent() {
 
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
-      const formLink = ROLE_FORM_LINKS[formData.role];
-      if (formLink) setSuccessModal({ role: formData.role, formLink });
+      setSuccessModal({ role: formData.role, formLink: ROLE_FORM_LINKS[formData.role] });
       setFormData({ fullName: '', email: '', countryCode: '+91', phone: '', role: '', workMode: '' });
       setCvFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -462,24 +461,34 @@ export default function CareersContent() {
             </button>
             <div className="newsletter-eyebrow">Application Received</div>
             <h2 id="careers-success-title" className="newsletter-title">Thank You</h2>
-            <p className="newsletter-desc">
-              We&apos;ve received your resume. To be considered for the{' '}
-              <strong className="careers-modal-role">{successModal.role}</strong> role, please complete
-              the short application form below so we can review your candidacy.
-            </p>
-            <a
-              className="engage-submit careers-modal-cta"
-              href={successModal.formLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => {
-                e.preventDefault();
-                window.open(successModal.formLink, '_blank', 'noopener,noreferrer');
-                setSuccessModal(null);
-              }}
-            >
-              Fill Out the Application →
-            </a>
+            {successModal.formLink ? (
+              <>
+                <p className="newsletter-desc">
+                  We&apos;ve received your resume. To be considered for the{' '}
+                  <strong className="careers-modal-role">{successModal.role}</strong> role, please complete
+                  the short application form below so we can review your candidacy.
+                </p>
+                <a
+                  className="engage-submit careers-modal-cta"
+                  href={successModal.formLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(successModal.formLink, '_blank', 'noopener,noreferrer');
+                    setSuccessModal(null);
+                  }}
+                >
+                  Fill Out the Application →
+                </a>
+              </>
+            ) : (
+              <p className="newsletter-desc" style={{ marginBottom: 0 }}>
+                We&apos;ve received your resume and application for the{' '}
+                <strong className="careers-modal-role">{successModal.role}</strong> role. Our team will
+                review it and reach out with next steps.
+              </p>
+            )}
           </div>
         </div>
       )}
