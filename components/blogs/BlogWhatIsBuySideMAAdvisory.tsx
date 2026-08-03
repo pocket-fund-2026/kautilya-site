@@ -112,6 +112,44 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           white-space: nowrap;
         }
 
+        /* Below ~560px the three-column comparison table gets too cramped to
+           read (labels collide with values), so it restacks into cards —
+           one per row, with each cell's column header shown inline. */
+        @media (max-width: 560px) {
+          .deal-table-wrap { overflow-x: visible; }
+          .deal-table, .deal-table thead, .deal-table tbody, .deal-table tr, .deal-table td {
+            display: block;
+            width: 100%;
+          }
+          .deal-table thead { display: none; }
+          .deal-table tr {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+          }
+          .deal-table tr:last-child { border-bottom: none; }
+          .deal-table td {
+            padding: 4px 0;
+            border-bottom: none;
+            white-space: normal;
+          }
+          .deal-table td:first-child {
+            padding-top: 0;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gold);
+          }
+          .deal-table td[data-label]:not(:first-child)::before {
+            content: attr(data-label);
+            display: block;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 8px;
+          }
+        }
+
         /* Editorial images */
         .blog-hero-image {
           margin: 32px 0 40px;
@@ -301,10 +339,10 @@ export default function BlogWhatIsBuySideMAAdvisory() {
               <tr><th></th><th>Sell-Side Advisor</th><th>Buy-Side Advisor</th></tr>
             </thead>
             <tbody>
-              <tr><td>Represents</td><td>The seller</td><td>The buyer</td></tr>
-              <tr><td>Goal</td><td>Maximize sale price</td><td>Minimize overpayment risk, maximize deal quality</td></tr>
-              <tr><td>Sources deals from</td><td>Their own client (the seller)</td><td>The broader market, including off-market targets</td></tr>
-              <tr><td>Typical fee alignment</td><td>% of sale price</td><td>Retainer + success fee on close</td></tr>
+              <tr><td>Represents</td><td data-label="Sell-Side Advisor">The seller</td><td data-label="Buy-Side Advisor">The buyer</td></tr>
+              <tr><td>Goal</td><td data-label="Sell-Side Advisor">Maximize sale price</td><td data-label="Buy-Side Advisor">Minimize overpayment risk, maximize deal quality</td></tr>
+              <tr><td>Sources deals from</td><td data-label="Sell-Side Advisor">Their own client (the seller)</td><td data-label="Buy-Side Advisor">The broader market, including off-market targets</td></tr>
+              <tr><td>Typical fee alignment</td><td data-label="Sell-Side Advisor">% of sale price</td><td data-label="Buy-Side Advisor">Retainer + success fee on close</td></tr>
             </tbody>
           </table>
         </div>

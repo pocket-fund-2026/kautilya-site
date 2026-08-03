@@ -198,7 +198,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     datePublished: '2026-08-03',
     category: 'Buyer Guides',
     readTime: '8 min',
-    wordCount: 1900,
+    wordCount: 1550,
     image: '/images/blogs/what-is-buy-side-ma-advisory/what-is-buy-side-ma-advisory-hero.webp',
     keywords: [
       // Primary
