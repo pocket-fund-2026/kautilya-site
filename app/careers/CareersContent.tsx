@@ -57,6 +57,7 @@ export default function CareersContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitState, setSubmitState] = useState<'idle' | 'success' | 'error'>('idle');
   const [submitMessage, setSubmitMessage] = useState('');
+  const [successModal, setSuccessModal] = useState<{ role: string; formLink: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const applyRef = useRef<HTMLDivElement>(null);
 
@@ -172,7 +173,7 @@ export default function CareersContent() {
       setSubmitState('success');
       setSubmitMessage('Thank you. Your application has been received.');
       const formLink = ROLE_FORM_LINKS[formData.role];
-      if (formLink) window.open(formLink, '_blank', 'noopener');
+      if (formLink) setSuccessModal({ role: formData.role, formLink });
       setFormData({ fullName: '', email: '', countryCode: '+91', phone: '', role: '', workMode: '' });
       setCvFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -441,6 +442,43 @@ export default function CareersContent() {
           <a href="mailto:careers@kautilya-pe.com">careers@kautilya-pe.com →</a>
         </div>
       </div>
+
+      {successModal && (
+        <div
+          className="newsletter-backdrop"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="careers-success-title"
+          onClick={() => setSuccessModal(null)}
+        >
+          <div className="newsletter-popup" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="newsletter-close"
+              aria-label="Close"
+              onClick={() => setSuccessModal(null)}
+            >
+              ✕
+            </button>
+            <div className="newsletter-eyebrow">Application Received</div>
+            <h2 id="careers-success-title" className="newsletter-title">Thank You</h2>
+            <p className="newsletter-desc">
+              We&apos;ve received your resume. To be considered for the{' '}
+              <strong>{successModal.role}</strong> role, please complete the short application form
+              below so we can review your candidacy.
+            </p>
+            <a
+              className="engage-submit careers-modal-cta"
+              href={successModal.formLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setSuccessModal(null)}
+            >
+              Fill Out the Application →
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1241,6 +1241,11 @@ a.deal-card { cursor: pointer; }
   .newsletter-form button { width: 100%; padding: 14px 20px; }
 }
 
+.careers-modal-cta {
+  display: inline-block; text-decoration: none; text-align: center;
+  margin-top: 4px;
+}
+
 .engage-form .form-success {
   margin-top: 12px;
   color: #9acfb0;
