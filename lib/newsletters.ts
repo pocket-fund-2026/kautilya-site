@@ -2,6 +2,7 @@ export const NEWSLETTER_SLUGS = [
   'torrent-jb-chemicals-pharma-valuation',
   'aurum-housing-com-acquisition',
   'lockheed-ultra-maritime-acquisition-teardown',
+  'jsw-paints-akzo-nobel-dulux-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -239,6 +240,97 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Lockheed Martin', sameAs: 'https://www.lockheedmartin.com' },
       { name: 'Advent International', sameAs: 'https://www.adventinternational.com' },
       { name: 'Ultra Maritime' },
+    ],
+  },
+  'jsw-paints-akzo-nobel-dulux-acquisition-explained': {
+    title: 'JSW Paints–Akzo Nobel Deal, Explained',
+    subtitle: "How ₹12,915 Crore Bought India's No. 4 Paints Position Overnight",
+    description:
+      "JSW Paints bought Akzo Nobel India (Dulux) for up to ₹12,915 Cr and became India's No. 4 paints player overnight. Full breakdown of the deal structure, valuation, and buy-vs-build lessons.",
+    author: 'Dev Shah',
+    datePublished: '2026-08-06',
+    dealDate: '2025-06-27',
+    category: 'Deal Teardowns',
+    readTime: '13 min',
+    wordCount: 2900,
+    keywords: [
+      // Deal-specific
+      'JSW Paints Akzo Nobel acquisition',
+      'JSW Paints Akzo Nobel deal',
+      'JSW Dulux Ltd',
+      'Akzo Nobel India acquisition',
+      'JSW Paints Dulux deal explained',
+      'JSW Paints 12915 crore deal',
+      'Akzo Nobel India Dulux sale',
+      'JSW Paints Akzo Nobel open offer',
+      // Structure angle
+      'SPA and open offer India takeover',
+      'SEBI SAST open offer formula',
+      'mandatory open offer India explained',
+      'MNC exit India listed subsidiary',
+      'how a foreign parent exits a listed Indian company',
+      'control premium vs open offer price India',
+      // Sector
+      'India paints industry consolidation',
+      'Asian Paints Birla Opus JSW Dulux',
+      'Indian decorative paints market share',
+      'paints industry M&A India 2026',
+      // Strategy angle
+      'buy versus build strategy M&A',
+      'buy vs build case study India',
+      'EBITDA multiple paints acquisition',
+      'control premium India M&A',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'buy-side M&A advisory India',
+      'M&A deal structure analysis India',
+      // Long-tail
+      'why did JSW Paints buy Akzo Nobel India',
+      'how much did JSW pay for Dulux India',
+      'JSW Paints market share after Akzo Nobel deal',
+      'JSW Paints JSW Dulux merger',
+    ],
+    faqs: [
+      {
+        q: 'How much did JSW pay for Akzo Nobel India (Dulux)?',
+        a: "Up to ₹12,915 crore (~$1.5 billion) in total — up to ₹8,986 crore for a controlling block bought directly from Akzo Nobel N.V.'s parent entities, plus up to ₹3,929 crore for a mandatory public open offer. The deal closed with JSW holding 61.2% of the company.",
+      },
+      {
+        q: 'Why is JSW Paints now called JSW Dulux Ltd?',
+        a: 'After the acquisition closed on December 10, 2025, JSW renamed the company to JSW Dulux Ltd, effective March 11, 2026, to reflect its ownership of the Dulux brand in India.',
+      },
+      {
+        q: 'What market share did JSW gain from the Akzo Nobel deal?',
+        a: 'The combined entity holds roughly 7% of the Indian decorative paints market and became the No. 4 player overall, and the No. 2 player in industrial coatings, immediately on closing.',
+      },
+      {
+        q: 'Why did the public shareholders refuse the open offer?',
+        a: 'JSW offered ₹3,417.77 per share, but the stock traded above that price throughout the entire offer window. Shareholders bet that a widely expected merger of unlisted JSW Paints into the listed entity would deliver more value than the fixed cash offer. Only 0.44% of the targeted 25.24% stake was tendered.',
+      },
+      {
+        q: 'Is 25x EBITDA expensive for a paints company?',
+        a: "It's rich relative to a pure trading multiple, but reasonable against two alternatives: Asian Paints and Berger have historically traded at 40–60x earnings, and Birla Opus spent massive capital to reach a similar ~6–7% share organically, with none of the existing profitability ANIL brought.",
+      },
+      {
+        q: 'What happens next in the JSW Dulux story?',
+        a: 'The next major event to watch is the expected merger of unlisted JSW Paints into the now-listed JSW Dulux, anticipated within 2–3 years. The ratio at which that merger happens will determine how much value remaining minority shareholders capture.',
+      },
+    ],
+    about: [
+      'JSW Paints Akzo Nobel Dulux acquisition',
+      'SPA and open offer deal structure India',
+      'MNC exit from an Indian listed subsidiary',
+      'Buy-versus-build M&A strategy',
+    ],
+    mentions: [
+      { name: 'JSW Paints Ltd' },
+      { name: 'Akzo Nobel India Ltd' },
+      { name: 'Akzo Nobel N.V.', sameAs: 'https://www.akzonobel.com' },
+      { name: 'Asian Paints', sameAs: 'https://www.asianpaints.com' },
+      { name: 'Birla Opus' },
+      { name: 'Pidilite' },
     ],
   },
 };
