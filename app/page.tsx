@@ -110,7 +110,11 @@ const organizationSchema = {
     url: `${BASE}/team`,
     nationality: 'Indian',
     knowsAbout: ['Micro private equity', 'Acquisition entrepreneurship', 'Off-market deal sourcing', 'Search funds', 'M&A advisory India'],
-    sameAs: ['https://x.com/microsearchfund', 'https://www.instagram.com/microsearchfund/'],
+    sameAs: [
+      'https://x.com/microsearchfund',
+      'https://www.instagram.com/microsearchfund/',
+      'https://in.linkedin.com/in/devlikesbizness',
+    ],
     hasOccupation: {
       '@type': 'Occupation',
       name: 'M&A Advisor',
@@ -247,69 +251,12 @@ const professionalServiceSchema = {
   },
 };
 
-const eventSchemas = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Event',
-    name: 'INSEAD ETA Conference 2025',
-    description: 'Dev Shah, Founder of Kautilya, speaks on micro private equity, acquisition entrepreneurship, and off-market deal sourcing in India.',
-    startDate: '2025-01-01',
-    endDate: '2025-12-31',
-    eventStatus: 'https://schema.org/EventScheduled',
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: {
-      '@type': 'Place',
-      name: 'INSEAD',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Fontainebleau',
-        addressCountry: 'FR',
-      },
-    },
-    performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
-    organizer: { '@type': 'Organization', name: 'INSEAD', url: 'https://www.insead.edu' },
-    about: [
-      { '@type': 'Thing', name: 'Acquisition entrepreneurship' },
-      { '@type': 'Thing', name: 'Micro private equity India' },
-      { '@type': 'Thing', name: 'Search fund advisory' },
-    ],
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Event',
-    name: 'SymBiz 2025',
-    description: 'Dev Shah speaks on buy-side M&A advisory, proprietary deal sourcing, and building acquisition pipelines for PE and family office buyers.',
-    startDate: '2025-01-01',
-    endDate: '2025-12-31',
-    eventStatus: 'https://schema.org/EventScheduled',
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: {
-      '@type': 'Place',
-      name: 'SymBiz Conference',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Mumbai',
-        addressCountry: 'IN',
-      },
-    },
-    performer: { '@type': 'Person', name: 'Dev Shah', url: `${BASE}/team` },
-    organizer: { '@type': 'Organization', name: 'SymBiz' },
-    about: [
-      { '@type': 'Thing', name: 'Buy-side M&A advisory' },
-      { '@type': 'Thing', name: 'Proprietary deal sourcing' },
-    ],
-  },
-];
-
 export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }} />
-      {eventSchemas.map((event, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(event) }} />
-      ))}
       <HomeContent />
     </>
   );

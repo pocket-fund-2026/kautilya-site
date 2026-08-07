@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!meta) return {};
 
   const fullTitle = meta.subtitle ? `${meta.title}: ${meta.subtitle}` : meta.title;
-  const pageTitle = `${meta.title} | Kautilya Newsletter`;
+  const pageTitle = `${meta.title} | Kautilya`;
   const kw = meta.keywords ?? [];
 
   return {

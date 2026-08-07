@@ -126,10 +126,9 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     articleLd.datePublished = meta.datePublished;
     articleLd.dateModified = meta.datePublished;
   }
-  if (meta.image) {
-    articleLd.image = { '@type': 'ImageObject', url: `${BASE_URL}${meta.image}`, width: 1200, height: 630 };
-    articleLd.thumbnailUrl = `${BASE_URL}${meta.image}`;
-  }
+  const imageUrl = meta.image ? `${BASE_URL}${meta.image}` : `${BASE_URL}/opengraph-image`;
+  articleLd.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 630 };
+  articleLd.thumbnailUrl = imageUrl;
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',

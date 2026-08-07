@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: { absolute: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory' },
   description:
-    '23 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing — from $6,500 standalone DD to full-service retainers.',
+    '26 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing — from $6,500 standalone DD to full-service retainers.',
   keywords: [
     'M&A advisory FAQ', 'buy a business FAQ India', 'off-market deal sourcing questions',
     'due diligence cost India', 'acquisition advisory pricing', 'micro private equity FAQ',
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
     url: 'https://www.kautilya-pe.com/faq',
-    description: '23 answered questions on M&A advisory, off-market deal sourcing, due diligence, and transparent pricing.',
+    description: '26 answered questions on M&A advisory, off-market deal sourcing, due diligence, and transparent pricing.',
   },
   other: {
     'DC.title': 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
     'DC.subject': 'M&A advisory FAQ, acquisition process questions, due diligence pricing, micro private equity guide',
     'DC.type': 'InteractiveResource',
     pagename: 'Kautilya — FAQ',
-    abstract: '23 answered questions covering buy-side advisory, off-market deal sourcing, forensic due diligence, pricing, deal structures, and post-acquisition operations.',
+    abstract: '26 answered questions covering buy-side advisory, off-market deal sourcing, forensic due diligence, pricing, deal structures, and post-acquisition operations.',
     summary: 'Comprehensive FAQ for first-time buyers and experienced acquirers: what is Kautilya, how deals are sourced, what due diligence covers, and pricing from $3,500 to $10,000/month.',
     'og:see_also': 'https://www.kautilya-pe.com/engage',
   },
@@ -78,27 +78,27 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'What is Kautilya?',
         answer:
-          'Kautilya is a micro private equity firm that helps buyers acquire, operate, and grow small businesses in the $50K-$5M range. We handle everything from deal sourcing and due diligence to operator placement and post-acquisition growth - so you can own a profitable, cash-flowing business without quitting your day job or starting from scratch.',
+          'Kautilya is a micro private equity firm that helps buyers acquire, operate, and grow small businesses in the $50K-$5M range. Founded in 2023 and based in Mumbai, Kautilya handles the entire acquisition lifecycle: off-market deal sourcing, forensic due diligence across 8 workstreams, deal structuring, operator placement, and post-acquisition growth. The firm has completed 7 acquisitions with 2 successful exits to date, and its 10-person team reviews 30-50 deals per week. Clients include first-time buyers, search fund entrepreneurs, software HoldCos, roll-up operators, and VC-backed companies. Engagement types range from standalone due diligence at $6,500 to full-service retainers at $2,500-$10,000 per month. In practice, Kautilya lets a buyer own a profitable, cash-flowing business without quitting a day job or building an acquisition team from scratch.',
       },
       {
         question: 'Who is Kautilya for?',
         answer:
-          "We work with individual first-time buyers, search fund entrepreneurs, software HoldCos, roll-up operators, and VC-backed companies looking to grow through acquisition. If you know what kind of business you want and need the deal flow, diligence, and operational support to get it done - that's us.",
+          'Kautilya works with five types of buyers: individual first-time acquirers, search fund entrepreneurs, software HoldCo operators, roll-up acquirers building through bolt-on deals, and VC-backed companies pursuing growth through acquisition. The common requirement is clarity, not experience: a buyer who knows what kind of business they want, by industry, size, or geography, and needs the deal flow, diligence, and operational support to close it. A significant portion of Kautilya\'s clients are first-time buyers with no prior M&A experience. Kautilya provides the acquisition criteria refinement, off-market sourcing, forensic due diligence, and operator placement needed to take a buyer from mandate to close, then supports post-acquisition growth through a dedicated playbook covering revenue optimization, cost efficiency, and expansion.',
       },
       {
         question: 'What makes Kautilya different from a traditional M&A advisor or broker?',
         answer:
-          "Most advisors hand you a report and disappear. We stay through the entire lifecycle - sourcing, diligence, structuring, operations setup, and growth. We're operators first, not just consultants. We also specialize in creative deal structures (seller financing, earnouts, revenue-based payments) that make acquisitions possible without massive upfront capital.",
+          'Traditional M&A advisors and business brokers typically deliver a report or a listing and step away once a deal is introduced. Kautilya stays through the entire acquisition lifecycle: sourcing, due diligence, deal structuring, operations setup, and growth, functioning as an operator first and a consultant second. The firm specializes in creative deal structures, including seller financing, earnouts, and revenue-based payments, that make acquisitions possible without large upfront capital. Kautilya\'s due diligence process runs 8 workstreams over roughly 6 weeks: Financial, Commercial/Product, Email & CRM, Affiliate & Partnerships, Traffic & Conversion, Tech & Data, Operational & Team, and Strategic & Exit. After close, Kautilya places vetted operators and builds a 30-60-90 day post-acquisition action plan, rather than exiting once the deal is signed.',
       },
       {
         question: 'What industries do you cover?',
         answer:
-          "We're sector-flexible but focus on asset-light, founder-operated businesses - SaaS, content sites, service businesses, IT staffing, e-commerce, and digital-first companies. If it's operationally simple and has real cash flow, we'll look at it.",
+          'Kautilya is sector-flexible but concentrates on asset-light, founder-operated businesses: SaaS products, content sites, service businesses, IT staffing firms, e-commerce operations, and other digital-first companies. The underlying criterion is operational simplicity paired with real, verifiable cash flow rather than a specific vertical. Deal sizes typically range from $50K to $5M. Because these businesses tend to run on lean teams and standardized processes, they transfer more cleanly to a new operator during the 30-90 day post-acquisition transition, and their financials are easier to verify during the 8-workstream due diligence process. Kautilya\'s analyst team evaluates 30-50 potential deals per week against these criteria before presenting vetted opportunities to retainer clients.',
       },
       {
         question: 'What geographies do you operate in?',
         answer:
-          'We source deals across the US, UAE, Europe, Asia-Pacific, and MENA. Our team has localized playbooks for different markets, so structuring and diligence adjust to the jurisdiction.',
+          'Kautilya sources acquisition targets across the United States, United Arab Emirates, Europe, Asia-Pacific, and MENA, in addition to its home market of India. The advisory team maintains localized playbooks for each region, so deal structuring, due diligence, and regulatory considerations adjust to the jurisdiction where the target business operates. This geographic range lets Kautilya serve buyers, including PE funds, VC firms, family offices, and individual acquirers, who are based in one country but want to acquire a business in another. Cross-border engagements follow the same core process as domestic ones: off-market sourcing, an 8-workstream forensic due diligence review, deal structuring, and post-acquisition operator placement.',
       },
     ],
   },
@@ -108,22 +108,22 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'How do you find deals?',
         answer:
-          'Primarily off-market. We run direct founder outreach (cold email, LinkedIn, Loom videos), tap into a deep broker network, mine community forums, and use social signal analysis to detect selling intent before businesses hit the open market. We also monitor 30+ vetted online marketplaces as a supplement.',
+          'Kautilya sources the large majority of its deal flow off-market, meaning the target businesses are not listed for sale on any public marketplace. Deal sourcing methods include direct founder outreach by cold email, LinkedIn messaging, and personalized Loom videos; a broker network built over multiple years; monitoring of community forums where founders discuss selling; and social-signal analysis used to detect early selling intent before a business is formally for sale. As a supplement, Kautilya also monitors more than 30 vetted online marketplaces. The firm\'s analyst team has run over 1,200 outreach campaigns with a 14.8% response rate, well above industry norms, and reviews 30-50 potential deals every week before presenting pre-screened options to clients.',
       },
       {
         question: 'How many deals will I see?',
         answer:
-          'Depends on your plan. Our retainer tiers deliver 8, 20, or 50+ vetted deals per month. Every deal is pre-screened - verified financials, seller motivation assessed, creative financing potential evaluated.',
+          'The number of deals a client sees depends on their retainer tier: Kautilya\'s plans deliver 8, 20, or 50+ vetted acquisition opportunities per month. Every deal that reaches a client has already been pre-screened, meaning Kautilya has verified the target\'s financials, assessed the seller\'s motivation to sell, and evaluated the potential for creative financing structures such as seller notes or earnouts. This pre-screening is designed to save buyers from spending time on deals that would fail basic diligence. Clients on higher-volume tiers typically pursue more aggressive acquisition timelines or are evaluating multiple acquisition theses simultaneously, such as roll-up operators building a platform through several bolt-on deals.',
       },
       {
         question: 'What does "off-market" actually mean?',
         answer:
-          "The business isn't listed on any marketplace. We're reaching out directly to founders and owners who may be open to selling but haven't publicly announced it. These deals tend to have less competition, more flexible terms, and better pricing.",
+          'An off-market deal is a business that is not listed on any brokerage site or marketplace, and whose owner has not publicly announced an intent to sell. Kautilya identifies these opportunities by reaching out directly to founders and owners who may be open to selling but have not taken any formal step toward a sale. Off-market deals typically face less competition from other buyers, allow for more flexible deal terms such as seller financing or earnouts, and often come with better pricing than businesses actively marketed for sale, since the seller has not run a competitive auction process. This is the core sourcing method behind Kautilya\'s proprietary deal pipeline, supplemented by monitoring of 30+ vetted marketplaces.',
       },
       {
         question: 'Can I define exactly what kind of business I want?',
         answer:
-          "That's the expectation. The more specific your criteria - industry, size, geography, margin thresholds, deal-breakers - the better we perform. We build a personalized acquisition plan based on your exact parameters.",
+          'Yes, and specificity is the expectation, not an obstacle. Kautilya builds each client\'s acquisition plan around explicit criteria: industry, business size, geography, margin thresholds, and deal-breakers, and the more precisely a buyer defines these parameters, the more targeted and efficient the sourcing process becomes. This personalized approach applies to every client type Kautilya works with, from first-time individual buyers to search fund entrepreneurs, roll-up operators, and VC-backed companies pursuing a defined acquisition thesis. Once criteria are set, Kautilya\'s team uses them to filter off-market outreach, broker relationships, and marketplace monitoring, so that the 8-50+ deals delivered per month based on retainer tier are pre-matched to what the client is actually looking to buy.',
       },
     ],
   },
@@ -133,22 +133,22 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'What does your due diligence process look like?',
         answer:
-          'A 6-week deep dive across 8 workstreams: Financial, Commercial/Product, Email & CRM, Affiliate & Partnerships, Traffic & Conversion, Tech & Data, Operational & Team, and Strategic & Exit. You get a full DD report, normalized financial model, risk map, transition plan, and a 30-60-90 day post-close action plan.',
+          'Kautilya\'s due diligence process is a roughly 6-week deep dive across 8 defined workstreams: Financial, Commercial/Product, Email & CRM, Affiliate & Partnerships, Traffic & Conversion, Tech & Data, Operational & Team, and Strategic & Exit. At the end of the process, the client receives a full due diligence report, a normalized financial model, a risk map identifying deal-specific red flags, a transition plan for the ownership handover, and a 30-60-90 day post-close action plan. The process can be run as part of a full-service retainer or purchased as a standalone engagement starting at $6,500 plus a 0.3% success fee on close, regardless of how the underlying deal was sourced.',
       },
       {
         question: 'How big is the DD team?',
         answer:
-          'Typically 1-3 analysts and, if required, 1 developer per engagement, led by a dedicated team lead. For retainer clients, the team scales with your plan tier.',
+          'A typical Kautilya due diligence engagement is staffed by 1 to 3 analysts and, when the target requires technical review, 1 developer, all led by a dedicated team lead who oversees the 8-workstream process. For clients on a full-service retainer, the size of the due diligence team scales with the client\'s plan tier and deal volume: buyers on higher-tier retainers, who see 20 or 50+ vetted deals per month, are supported by a proportionally larger analyst allocation. This staffing model is drawn from Kautilya\'s broader 10-person team, which includes analysts, a dedicated DD lead, engineers, and operations support led by founder Dev Shah.',
       },
       {
         question: 'Do you just check boxes, or do you actually tell me if a deal is bad?',
         answer:
-          "We'll kill a deal if the numbers don't work. Our approach is owner-minded - we evaluate every business as if we were buying it ourselves. If we see red flags, you'll hear about them before you waste another dollar.",
+          'No. Kautilya\'s due diligence approach is owner-minded: every business is evaluated as though the analyst team were buying it themselves, not simply completing a checklist for a fee. If the underlying numbers do not work, or if the 8-workstream review surfaces red flags such as unreliable revenue, customer concentration, or overstated margins, Kautilya will recommend killing the deal before the client commits further capital or time. Clients hear about these issues directly, as part of the full due diligence report and risk map delivered at the end of the roughly 6-week process. This is the same standard applied whether the due diligence engagement is bundled into a full-service retainer or purchased standalone at $6,500 plus a 0.3% success fee.',
       },
       {
         question: 'Can I hire you just for due diligence on a deal I found myself?',
         answer:
-          'Yes. Standalone DD engagements start at $6,500 plus a 0.3% success fee on close. You get the full 8-workstream analysis regardless of how you sourced the deal.',
+          'Yes. Kautilya offers standalone due diligence engagements starting at $6,500 plus a 0.3% success fee due only if the deal closes. A standalone DD engagement receives the identical 8-workstream analysis Kautilya runs for retainer clients: Financial, Commercial/Product, Email & CRM, Affiliate & Partnerships, Traffic & Conversion, Tech & Data, Operational & Team, and Strategic & Exit, regardless of whether the buyer found the deal independently or through Kautilya\'s own off-market sourcing. The engagement typically takes about 6 weeks and concludes with a full DD report, a normalized financial model, a risk map, a transition plan, and a 30-60-90 day post-close action plan.',
       },
     ],
   },
@@ -158,17 +158,17 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'How much does it cost?',
         answer:
-          'We offer three engagement types: Due Diligence Only ($6,500 + 0.3% success fee on close), Market Research ($3,500-$5,000 for a 6-8 week deep dive), and Full-Service Retainer ($2,500-$10,000/month depending on deal volume, plus success fees - 3% under $650K, 1.5% above $650K).',
+          'Kautilya offers three engagement types with transparent pricing. Due Diligence Only starts at $6,500 plus a 0.3% success fee on close. Market Research runs $3,500-$5,000 for a 6-8 week deep dive into a target acquisition sector. A Full-Service Retainer, covering sourcing, diligence, structuring, and post-acquisition support, costs $2,500-$10,000 per month depending on deal volume, plus a success fee of 3% on deals under $650,000 and 1.5% on deals above $650,000. Retainers are month-to-month with no long-term lock-in, and payment terms are typically 50% upfront and 50% at Phase 1 close. Success fees are only due once a deal actually closes, aligning Kautilya\'s incentives with the client\'s outcome.',
       },
       {
         question: 'What are the payment terms?',
         answer:
-          '50% upfront, 50% at Phase 1 close (or as agreed per engagement). Success fees are due only when a deal closes.',
+          'Kautilya\'s standard payment structure is 50% due upfront and 50% due at Phase 1 close, though exact terms can be adjusted per engagement. Success fees, 3% on deals closing under $650,000 and 1.5% on deals above that threshold for full-service retainer clients, or a flat 0.3% for standalone due diligence engagements, are only charged once a transaction actually closes, not for deals that are sourced or diligenced but not completed. Retainer fees themselves range from $2,500 to $10,000 per month depending on plan tier, and are billed on a month-to-month basis with no long-term lock-in, so clients are not committed beyond the value they are actively receiving.',
       },
       {
         question: 'Is there a minimum commitment?',
         answer:
-          'Retainers are month-to-month. DD and research engagements are scoped per project. No long-term lock-ins.',
+          'No. Kautilya\'s full-service retainers are structured month-to-month, with no long-term lock-in and no penalty for a client who chooses to stop. Due diligence and market research engagements are scoped and priced per project rather than as ongoing commitments: a standalone DD engagement starts at $6,500 plus a 0.3% success fee, and market research runs $3,500-$5,000 for a defined 6-8 week deep dive. If a retainer client is unhappy with the deal flow they are receiving, Kautilya recalibrates the sourcing criteria first; if the fit still is not right, the client can walk away without penalty, keeping the engagement structure aligned with ongoing value rather than a fixed contract term.',
       },
     ],
   },
@@ -178,22 +178,22 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'How long does it take to close a deal?',
         answer:
-          'Typical timeline is 30-90 days from the time you engage with a target. Sourcing the right deal can take a few weeks to a few months depending on how specific your criteria are.',
+          'The typical timeline from engaging with a specific target to closing is 30-90 days, though this depends heavily on deal complexity, financing structure, and how quickly both parties move through negotiation. Before that stage, sourcing the right deal in the first place can take anywhere from a few weeks to a few months, depending on how narrow the client\'s acquisition criteria are: a highly specific mandate covering industry, size, geography, and margin thresholds takes longer to match than a broad one. Clients on higher-volume retainer tiers, who see 20 or 50+ vetted deals per month rather than 8, generally reach a matching target faster since more pre-screened opportunities are in the pipeline at any given time.',
       },
       {
         question: "I've never bought a business before. Can I still work with you?",
         answer:
-          "Absolutely - a significant portion of our clients are first-time acquirers. We walk you through every step: defining your criteria, evaluating deals, structuring the offer, running diligence, setting up operations, and planning for growth. You don't need M&A experience. You need clarity on what you want.",
+          'Yes. A significant portion of Kautilya\'s clients are first-time acquirers with no prior M&A experience. Kautilya walks first-time buyers through every stage of the process: defining acquisition criteria, evaluating specific deals, structuring the offer including creative options like seller financing or earnouts, running the 8-workstream due diligence process, setting up post-acquisition operations, and planning for growth. No M&A background is required; what matters is clarity about the kind of business the buyer wants to own. This is the same end-to-end support model Kautilya applies to more experienced clients such as search fund entrepreneurs and roll-up operators, just with more guidance at the criteria-definition and deal-evaluation stages.',
       },
       {
         question: 'Do you help with financing the acquisition?',
         answer:
-          "We don't provide capital directly, but we specialize in creative deal structures - seller financing, earnouts, revenue-based payments, and hybrid structures that reduce the cash you need upfront. We'll help you structure the deal so it works for your situation.",
+          'Kautilya does not provide acquisition capital directly, but the firm specializes in structuring deals to reduce the cash a buyer needs upfront. Common structures include seller financing, where the seller carries part of the purchase price as a note; earnouts, where part of the price is paid based on future performance; revenue-based payments; and hybrid combinations of these. Kautilya\'s team structures the deal terms around the buyer\'s actual financial situation during the negotiation phase, which typically falls within the 30-90 day window between engaging with a target and closing. This creative-structuring approach is one of the ways Kautilya differs from a traditional business broker, who typically presents a listing without helping negotiate non-cash payment terms.',
       },
       {
         question: 'What happens after I buy the business?',
         answer:
-          "We don't disappear at close. Phase 3 is operations setup - we place experienced operators, implement automation, and build your management dashboards. Phase 4 is growth strategy: revenue optimization, cost efficiency, market expansion, and exit preparation.",
+          'Kautilya does not exit the relationship at close. The engagement moves into Phase 3, operations setup, where Kautilya places experienced operators, implements automation, and builds management dashboards so the business can run without the new owner spending 40 hours a week on it. Phase 4 is growth strategy: revenue optimization, cost efficiency improvements, market expansion, and exit preparation for when the owner eventually wants to sell. Kautilya stays on as a partner for 30-90 days post-close as standard, and longer for clients on a full-service retainer. The goal of operator placement specifically is for the new owner to spend roughly 3-5 hours per week on the business rather than running it full-time.',
       },
     ],
   },
@@ -203,17 +203,17 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'What is operator placement?',
         answer:
-          'We source and vet operational talent - managers, specialists, and integrators - who step in to run the day-to-day of your newly acquired business. The goal is for you to spend 3-5 hours per week on the business, not 40.',
+          'Operator placement is the process by which Kautilya sources and vets operational talent, including managers, functional specialists, and integrators, who step in to run the day-to-day operations of a newly acquired business on the owner\'s behalf. The target outcome is for the buyer to spend roughly 3-5 hours per week overseeing the business rather than 40 hours running it directly. Operator placement is part of Phase 3 of Kautilya\'s post-acquisition process, alongside automation implementation and the construction of management dashboards that let an owner monitor performance without being involved in daily operations. This service is included for full-service retainer clients and is one of the primary ways Kautilya differs from advisors who stop working once a deal closes.',
       },
       {
         question: 'Do I need to run the business myself?',
         answer:
-          "No. That's the point of operator placement. We help you build a team so the business runs without you being in the weeds daily.",
+          'No. Operator placement exists specifically so that a Kautilya client does not need to run the acquired business day-to-day. After close, Kautilya sources and vets a manager or operator to handle daily operations, implements automation where possible, and builds management dashboards so the owner can track performance remotely. The target is for the new owner to spend roughly 3-5 hours per week on oversight rather than the 40 hours a full-time operator would spend. This structure is designed for buyers who want to own a cash-flowing business, including PE funds, family offices, and individual acquirers who are not looking to become full-time operators themselves, without giving up strategic control of decisions like growth strategy or eventual exit timing.',
       },
       {
         question: 'How do you help me grow the business after acquisition?',
         answer:
-          'We build a growth playbook specific to your business - revenue levers, cost optimization, expansion opportunities, and a clear exit strategy. We stay on as a partner for 30-90 days post-close (and beyond, for retainer clients).',
+          'After close, Kautilya builds a growth playbook specific to the acquired business, covering revenue levers, cost optimization opportunities, expansion paths, and a clear long-term exit strategy. This work falls under Phase 4 of Kautilya\'s post-acquisition process, following Phase 3\'s operations setup, which includes operator placement, automation, and management dashboards. Kautilya stays on as a partner for 30-90 days post-close as standard practice, and for longer periods with clients on a full-service retainer. The growth playbook is built from the same forensic due diligence findings, including financial, commercial, traffic, and operational data, gathered during the original 8-workstream diligence process, so growth recommendations are grounded in verified data about the business rather than generic advice.',
       },
     ],
   },
@@ -223,17 +223,17 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: 'How many deals has your team completed?',
         answer:
-          '7 acquisitions with 2 successful exits to date. Our analyst team reviews 30-50 deals per week and has completed 1,200+ outreach campaigns with a 14.8% response rate - well above industry average.',
+          'Kautilya has completed 7 acquisitions with 2 successful exits to date. The firm\'s analyst team reviews 30-50 potential deals every week as part of its off-market sourcing process, and has run more than 1,200 outreach campaigns to founders and business owners, achieving a 14.8% response rate, well above typical industry benchmarks for cold outreach. These figures reflect both Kautilya\'s own acquisitions, made through its micro PE practice, and the deal flow delivered to advisory and retainer clients across sectors including SaaS, content sites, service businesses, IT staffing, and e-commerce. The 10-person team behind this track record is led by founder Dev Shah, a 24-year-old operator who has personally acquired and exited multiple businesses.',
       },
       {
         question: "Who's on the team?",
         answer:
-          "A 10-person team including analysts, a DD lead, engineers, and operations support - led by Dev Shah, a 24-year-old micro PE operator who's personally acquired and exited multiple businesses.",
+          'Kautilya\'s team consists of 10 people: analysts who source and screen deals, a dedicated due diligence lead, engineers who support technical diligence workstreams, and operations support staff. The team is led by Dev Shah, a 24-year-old micro private equity operator who has personally acquired and exited multiple businesses and personally leads every Kautilya engagement. On a typical due diligence engagement, 1 to 3 analysts and, when required, 1 developer are staffed under a team lead, with staffing scaling up for higher-tier retainer clients who receive 20 or 50+ vetted deals per month rather than 8. This structure keeps Kautilya\'s 8-workstream diligence process consistent across both retainer clients and standalone engagements.',
       },
       {
         question: "What if I'm not happy with the deal flow?",
         answer:
-          "Retainers are month-to-month. If the deals aren't matching your criteria, we recalibrate. If it's still not a fit, you walk - no penalties, no hard feelings.",
+          'Kautilya\'s retainers are structured month-to-month specifically so that fit can be reassessed continuously. If the deals a client is receiving are not matching their defined criteria, such as industry, size, geography, or margin thresholds, Kautilya first recalibrates the sourcing approach using that feedback. If the mismatch persists after recalibration, the client can walk away with no penalties, no cancellation fees, and no hard feelings, since there is no long-term lock-in on the retainer structure. This flexibility applies across all three engagement types Kautilya offers: full-service retainers, standalone due diligence, and market research, all of which are scoped and priced without requiring a multi-month or multi-year commitment from the client.',
       },
     ],
   },
@@ -247,7 +247,7 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   name: 'Kautilya FAQs — Micro Private Equity & Buy-Side Advisory',
-  description: '23 answered questions on buy-side M&A advisory, off-market deal sourcing, forensic due diligence, deal structures, and transparent pricing.',
+  description: '26 answered questions on buy-side M&A advisory, off-market deal sourcing, forensic due diligence, deal structures, and transparent pricing.',
   url: `${BASE}/faq`,
   speakable: {
     '@type': 'SpeakableSpecification',
@@ -277,7 +277,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
   url: `${BASE}/faq`,
-  description: '23 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing.',
+  description: '26 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing.',
   inLanguage: 'en-US',
   isPartOf: { '@type': 'WebSite', url: BASE, name: 'Kautilya' },
   breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
