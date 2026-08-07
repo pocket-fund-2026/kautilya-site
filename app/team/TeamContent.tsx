@@ -26,7 +26,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Dev Shah',
     role: 'Founder',
-    desc: 'Dev drives every smart acquisition at Pocket Fund.',
+    desc: 'A 24-year-old micro PE operator who has personally acquired and exited multiple businesses. Leads every Kautilya engagement, from mandate definition through sourcing, diligence, and post-acquisition growth.',
     initials: 'DS',
     image: devImage,
     linkedin: 'https://www.linkedin.com/in/devlikesbizness/',
@@ -65,7 +65,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Aryan Solanki',
     role: 'Marketing Head',
-    desc: 'Drives quantitative modeling, deep-dive market mapping, and valuation structuring.',
+    desc: 'Drives brand, content, and growth strategy for Kautilya across social, newsletter, and outbound channels.',
     initials: 'AS',
     image: aryanImage,
     linkedin: 'https://www.linkedin.com/in/aryan-solanki-a15b4b246/',
