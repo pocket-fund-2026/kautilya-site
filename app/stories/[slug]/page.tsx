@@ -184,6 +184,41 @@ function StoryByline({ meta }: { meta: typeof STORY_META[StorySlug] }) {
   );
 }
 
+function MoreStories({ slug }: { slug: StorySlug }) {
+  const currentIndex = STORY_SLUGS.indexOf(slug);
+  const related = STORY_SLUGS
+    .filter((s) => s !== slug)
+    .slice(currentIndex + 1)
+    .concat(STORY_SLUGS.filter((s) => s !== slug))
+    .slice(0, 3);
+
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .more-stories { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; border-top: 1px solid var(--border, #262626); }
+        .more-stories-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 24px; font-weight: 400; color: var(--gold, #c9a84c); margin: 32px 0 20px; }
+        .more-stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .more-stories-card { display: block; text-decoration: none; padding: 16px; border: 1px solid var(--border, #262626); border-radius: 8px; transition: border-color 0.2s; }
+        .more-stories-card:hover { border-color: var(--gold, #c9a84c); }
+        .more-stories-card-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 17px; color: var(--text-primary, #f2f2f2); margin-bottom: 6px; }
+        .more-stories-card-desc { font-size: 13px; line-height: 1.6; color: var(--text-secondary, #999); }
+        @media (max-width: 768px) { .more-stories-grid { grid-template-columns: 1fr; } }
+      `}} />
+      <div className="more-stories">
+        <div className="more-stories-title">More Stories</div>
+        <div className="more-stories-grid">
+          {related.map((s) => (
+            <a key={s} href={`/stories/${s}`} className="more-stories-card">
+              <div className="more-stories-card-title">{STORY_META[s].title}</div>
+              <div className="more-stories-card-desc">{STORY_META[s].description}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default async function StoryPage({ params }: Props) {
   const { slug } = await params;
   if (!STORY_SLUGS.includes(slug as StorySlug)) {
@@ -195,6 +230,7 @@ export default async function StoryPage({ params }: Props) {
       <StoryJsonLd slug={slug} meta={meta} />
       <StoryByline meta={meta} />
       <StoryContent slug={slug} />
+      <MoreStories slug={slug as StorySlug} />
     </>
   );
 }
