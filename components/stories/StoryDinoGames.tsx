@@ -8,7 +8,7 @@ export default function StoryDinoGames() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Acquiring a Self-Funding Mobile Asset in 8 Weeks , via @kautilya');
+    const text = encodeURIComponent('How to value and de-risk a mobile game acquisition , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -18,7 +18,7 @@ export default function StoryDinoGames() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('Acquiring a Self-Funding Mobile Asset in 8 Weeks');
+    const subject = encodeURIComponent('How to Value and De-Risk a Mobile Game Acquisition');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -90,248 +90,172 @@ export default function StoryDinoGames() {
           <span className="meta-tag geo">Global · Android + iOS</span>
           <span className="meta-tag stage">Asset Purchase (Carve-out)</span>
         </div>
-        <h1>Acquiring a Self-Funding Mobile Asset in 8 Weeks</h1>
+        <h1>How to Value and De-Risk a Mobile Game Acquisition</h1>
         <div className="subtitle">
-          How Kautilya sourced, valued, and closed a cash-flow-positive mobile game through off-market channels, then
-          deployed operators to run it from day one.
+          How Kautilya bought a real game at ~1.1x with the downside engineered through structure, not the price.
         </div>
         <div className="hero-line" />
       </div>
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
+        <div className="last-updated">Last updated: August 14, 2026</div>
+
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
+          <p>
+            A cash-flowing mobile game is worth what its revenue survives verification, not its install count.
+            Verify revenue at the console level, treat mediated ad revenue as a single dependent stream, and price
+            platform and transition risk through structure rather than by cutting the headline number. Below is how
+            that works, and how Kautilya bought a real game at ~1.1x with the downside engineered through
+            structure.
+          </p>
+        </div>
+
         <p>
-          The client had just exited a founder-led software business to a private equity firm. With over 20 years of
-          operating experience across enterprise and SaaS, he was ready for something different: a concentrated portfolio
-          of consumer mobile applications centered around health, fitness, and lifestyle, with a core design principle of
-          habit formation and long-term retention over short-term engagement spikes.
+          Search for how to value a mobile game and you&rsquo;ll mostly find calculators estimating what it costs
+          to build one, or advice for developers picking a game idea. Almost nobody writes the buyer&rsquo;s
+          playbook: how to value a small, cash-flowing game you want to acquire, and how to protect yourself doing
+          it.
         </p>
         <p>
-          There was one problem. At the time of onboarding, the client had two internally developed mobile apps in
-          progress. Both were pre-launch. Neither was monetized. There was no live user data, no distribution leverage,
-          and no cash flow. Every early decision was being driven by conviction rather than validated performance.
-        </p>
-        <p>
-          The strategic gap was clear. Without a live, revenue-generating asset in the portfolio, the client was flying
-          blind. Acquisitions weren't meant to replace internal product development. They were meant to de-risk and
-          accelerate it, compressing learning cycles and grounding decisions in real user behavior rather than untested
-          hypotheses.
+          That&rsquo;s the gap this engagement fills. Kautilya sourced, valued and structured the acquisition of
+          Dino Games, a cash-flow-positive dinosaur-simulation title with about 8M Android installs, carved out
+          from a nine-title studio portfolio. It closed at $39K, roughly 1.1x revenue, in a deal where the
+          buyer&rsquo;s downside was engineered through structure rather than a low price, and where the real work
+          was refusing to take the seller&rsquo;s numbers at face value.
         </p>
 
-        <h2>Sourcing: Where Kautilya Found the Deal</h2>
+        <h2>What actually drives a mobile game&rsquo;s acquisition value</h2>
         <p>
-          Kautilya began by mapping the consumer mobile landscape across health, fitness, lifestyle, and adjacent
-          gamified categories. The goal was to build a high-signal view of sub-scale, cash-flowing mobile assets and
-          establish repeatable sourcing channels before engaging in asset-level diligence.
+          Value is verified, durable cash flow, not installs and not dashboard revenue. Installs are a vanity
+          metric without retained monetisation behind them; what matters is whether the game reliably converts
+          usage into cash, how dependent that cash is on a third-party platform, and how much survives once the
+          seller is gone.
         </p>
-        <p>
-          The team built and operated in-house scraping infrastructure to systematically pull data from the Apple App
-          Store and Google Play, tracking ranking stability, review velocity, update cadence, monetization signals, and
-          install momentum across target categories. These datasets were cross-validated against third-party app
-          directories and analytics platforms.
-        </p>
-        <p>
-          Proprietary, off-market deal flow came through founder-native channels, including Kautilya's owned and
-          operated acquisition community on Reddit (the largest of its kind on the platform), along with targeted
-          outreach to owner-operators on Reddit and Twitter.
-        </p>
-        <div className="pull-quote">
+        <div className="proof-block">
+          <div className="proof-label">What Was Being Bought</div>
           <p>
-            Email-led discussions skewed transactional and valuation-forward. Response quality was meaningfully
-            stronger within founder-native social channels, where conversations tended to be higher-context and
-            operationally grounded.
+            Kautilya underwrote Dino Games on cash-flow-positive operations, roughly $3,000 a month of net profit
+            on $3,000 to $4,000 of ad spend, at a 1.1x revenue multiple, not on its 8M install count. It sustained
+            40&ndash;50% net margins despite modest retention (sub-10% 30-day, ~4% 7-day) and no major updates for
+            over two years, because its value is realised early in each user&rsquo;s life through short, ad-dense
+            sessions, a front-loaded LTV model. Recognising that is what justified the price.
+          </p>
+        </div>
+
+        <h2>Step 1, Verify revenue at the console, not the dashboard</h2>
+        <p>
+          Seller summaries smooth over currency, timing and platform gaps. Insist on console-level access to every
+          revenue and user-acquisition surface, and walk each number back to its source before treating any of it
+          as bankable. Historical opacity isn&rsquo;t a footnote, it changes what the revenue is worth.
+        </p>
+        <p>The seller wanted to work from summaries. The team refused.</p>
+        <div className="proof-block">
+          <div className="proof-label">Forcing Console-Level Proof</div>
+          <p>
+            Kautilya demanded console-level access across Google Ads, AdMob and Play Console, which forced the
+            seller to acknowledge historical reporting gaps and abandon the story of one clean revenue source.
+            Cross-checking spend against revenue against in-app-purchase receipts surfaced concrete discrepancies,
+            including a ~$182 Play Console mismatch the seller wrote off as a data-entry error. Once historical
+            opacity was on the table, the revenue became probabilistic rather than bankable, and the risk premium
+            rose accordingly.
+          </p>
+        </div>
+
+        <h2>Step 2, Treat mediated ad revenue as one dependent stream</h2>
+        <p>
+          Ad revenue appearing across several dashboards can look like diversification when it&rsquo;s really a
+          single mediated stack. If one network mediates the others, that&rsquo;s one source of truth and one point
+          of failure, and it deserves a risk premium, not a blended average that implies resilience the business
+          doesn&rsquo;t have.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The Mediation Collapse</div>
+          <p>
+            The seller&rsquo;s revenue appeared on both AppLovin and Google, until they confirmed AdMob was running
+            inside AppLovin mediation. That made post-cutoff revenue a single mediated stream, not independent
+            sources. The team disallowed blended averages, fixed AppLovin as the sole post-cutoff source of truth,
+            and the seller&rsquo;s diversification narrative, and the premium it implied, collapsed. Growth claims
+            were reframed as optimization upside, not proven history.
+          </p>
+        </div>
+
+        <h2>Step 3, Price platform and transition risk through structure</h2>
+        <p>
+          Rather than compressing valuation to offset transition risk, engineer the risk out through payment timing
+          and controls. Defer part of the consideration and tie it to stability rather than speculative
+          performance; use escrow and an inspection period to keep leverage until the asset is verifiably
+          transferred; and remove embedded liabilities before close so you never inherit them.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">Risk Priced Through Structure</div>
+          <p>
+            The deal closed at $39K, about 1.1x revenue and 1.2x normalized profit, with ~56% paid at close (~$22K)
+            and 44% deferred over twelve months against transition stability. Kautilya held the line on escrow
+            despite seller pressure for off-escrow splits over jurisdictional limitations, structuring it through a
+            US LLC workaround with a signed APA, an inspection period and milestone releases. Technical diligence
+            was sequenced as a hard gate, buyer-selected reviewer first, no asset release until scope was met,
+            turning diligence timing into leverage. And a 70%-off lifetime IAP promotion was shut off before close,
+            so the buyer never inherited that perpetual, loss-making obligation.
           </p>
         </div>
         <p>
-          By week two, Kautilya had fully pivoted to personalized, buyer-anonymous outreach on Reddit and Twitter,
-          leveraging public posting history, product announcements, and prior technical discussions to tailor each
-          message to the specific asset and operator. Outreach volume held steady at roughly 50 direct founder
-          conversations per week without automation-heavy tooling.
+          The effect was decisive: the headline price was preserved, no bruising renegotiation, while the
+          buyer&rsquo;s real exposure at close was materially reduced. Upfront capital of ~$22K against ~$3K a
+          month of net profit implied a payback measured in months. That is what disciplined structuring buys a
+          buyer, and it&rsquo;s the discipline{' '}
+          <Link href="/engage">Kautilya brings to acquisitions</Link> where the revenue sits on someone
+          else&rsquo;s platform.
+        </p>
+        <p>
+          The same underwrite-conservative, structure-the-rest approach is what makes a young business financeable
+          in the first place, see how it plays out on{' '}
+          <Link href="/stories/runify">a $110K acquisition closed with $20K down</Link>.
         </p>
 
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">500</div>
-            <div className="metric-label">Outbound Messages</div>
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you value a mobile game acquisition?</h3>
+            <p className="story-faq-a">
+              On verified, durable cash flow, not installs or dashboard revenue. Confirm revenue at the console
+              level, understand what it depends on (platform, ad mediation, geography), and recognise the
+              monetisation model, an ad-led, front-loaded-LTV game can be sound even with weak retention.
+              Cash-flowing games sourced off-market often trade near 1x revenue.
+            </p>
           </div>
-          <div className="metric">
-            <div className="metric-value">130</div>
-            <div className="metric-label">Conversations</div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you verify a mobile game&rsquo;s revenue before buying?</h3>
+            <p className="story-faq-a">
+              Work from console and platform payout data, Google Ads, AdMob, Play Console, not the seller&rsquo;s
+              dashboard. Reconcile ad spend, ad revenue and in-app-purchase receipts against each other, and if ad
+              revenue is mediated through one network, treat it as a single dependent stream rather than
+              diversified income.
+            </p>
           </div>
-          <div className="metric">
-            <div className="metric-value">20</div>
-            <div className="metric-label">Mandate-Aligned Deals</div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What multiple do cash-flowing mobile games sell for?</h3>
+            <p className="story-faq-a">
+              It varies with revenue durability and platform risk, but cash-flowing games sourced off-market can
+              change hands close to 1x revenue, as this one did at about 1.1x. Platform and operator dependency are
+              the biggest discount factors, which is why they belong in the structure as well as the price.
+            </p>
           </div>
-          <div className="metric">
-            <div className="metric-value">3 LOIs</div>
-            <div className="metric-label">Issued in 1 Week</div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you protect yourself buying a mobile app?</h3>
+            <p className="story-faq-a">
+              Price the risk through structure: defer part of the payment against transition stability, insist on
+              escrow with an inspection period and milestone releases, sequence technical diligence as a hard gate
+              before any asset release, and remove embedded liabilities like discounted lifetime purchases before
+              close.
+            </p>
           </div>
         </div>
-
-        <h2>The Asset: Why This One</h2>
-        <p>
-          From the seller's broader portfolio of nine mobile titles, Kautilya deliberately selected one asset for its
-          demonstrably superior operating profile and capital efficiency relative to the sibling titles.
-        </p>
-        <p>
-          The game was a dinosaur simulation, live for roughly eight years, with approximately 8 million Android
-          installs and a sustained base of 200K–300K monthly active users. It had received no major updates for over
-          two years. Despite that, it remained cash-flow positive, generating approximately $3,000 in monthly net
-          profit on $3,000–$4,000 of ad spend, with net margins running at 40–50%.
-        </p>
-        <p>
-          The durability was structural, not accidental. The game sat in a less crowded simulator/fantasy niche where
-          monetization is driven by session volume and ad density rather than the habit-based retention loops typical
-          of puzzle or word games. The game's ability to remain profitable under modest retention metrics reflected a
-          front-loaded LTV system: value is realized early in the engagement cycle through high-frequency ad exposure
-          during short, repeat sessions.
-        </p>
-        <p>
-          The technical foundation was clean. Unity 3D (C#), a single shared codebase across Android and iOS, fully
-          documented GitHub repository, and a centralised ad mediation stack. No proprietary dependencies, no
-          platform-specific forks, easy onboarding for any Unity developer.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">~8M</div>
-            <div className="metric-label">Android Installs</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">200–300K</div>
-            <div className="metric-label">Monthly Active Users</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~$3K/mo</div>
-            <div className="metric-label">Net Profit</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">40–50%</div>
-            <div className="metric-label">Net Margins</div>
-          </div>
-        </div>
-
-        <h2>Valuation &amp; Structure: Engineering Risk Through Payment, Not Price</h2>
-        <p>
-          Kautilya's approach to valuation started not with a number, but with a question: how does this asset
-          actually function day to day, and what breaks if the operator changes?
-        </p>
-        <p>
-          The first negotiation call was spent entirely on operational mechanics: who managed ad spend and
-          optimization, how often creatives were refreshed, the role of mediation tuning, the level of hands-on
-          involvement required to maintain profitability. This established a critical valuation truth early: the
-          asset's performance was operator-dependent, which meant higher multiples were difficult to justify and risk
-          needed to be absorbed through structure, not paid for upfront.
-        </p>
-        <div className="pull-quote">
-          <p>
-            Cash timing became the lever, not total price. Kautilya deliberately separated liquidity needs from
-            economic risk allocation.
-          </p>
-        </div>
-        <p>
-          The transaction closed at $39,000 in total consideration, representing approximately 1.1× annual revenue
-          and 1.2× normalised annual profit. Rather than compressing valuation to offset transition risk, Kautilya
-          engineered the risk through structure:
-        </p>
-        <ul className="constraint-list">
-          <li>~56% ($22,000) paid at close</li>
-          <li>Remaining 44% ($17,000) deferred over twelve months, tied to transition stability</li>
-          <li>First deferred tranche ($9,500) cleared within 90 days</li>
-          <li>Final $7,500 paid quarterly over the following nine months</li>
-        </ul>
-        <p>
-          The upfront payment alone carried a 7–8 month payback period at current performance. Full valuation payback
-          came in at roughly 13 months, below the industry norm of 18–30 months, achieved without relying on
-          projections or roadmap execution.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">$39K</div>
-            <div className="metric-label">Total Consideration</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">1.1×</div>
-            <div className="metric-label">Revenue Multiple</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">56%</div>
-            <div className="metric-label">Paid at Close</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~13 mo</div>
-            <div className="metric-label">Full Payback</div>
-          </div>
-        </div>
-
-        <h2>Diligence: Console-Level Verification, Not Spreadsheet Trust</h2>
-        <p>
-          Kautilya refused to accept secondary revenue summaries and instead demanded console-level access across
-          every revenue and user acquisition surface.
-        </p>
-        <p>
-          This created immediate friction, but it was deliberate. The team systematically walked each reported number
-          back to source, asking sellers to guide live inside Google Ads (filters, campaign names, paused versus
-          enabled campaigns) while cross-checking against AdMob revenue and Play Console IAP receipts.
-        </p>
-        <p>
-          The process surfaced several critical findings. Play Console IAP mismatches were identified for two months,
-          revealing a data entry discrepancy. More importantly, Kautilya deconstructed the ad mediation stack and
-          established that what appeared to be diversified revenue across multiple ad networks was in fact a single
-          mediated income stream running through one platform. This collapsed the seller's narrative of revenue
-          diversification and reframed growth claims as optimization upside rather than historical proof.
-        </p>
-        <p>
-          Kautilya also identified embedded future loss risk in the form of heavily discounted lifetime IAP purchases
-          that would create perpetual service obligations for the buyer. These were shut down pre-close under LOI
-          terms, with the seller absorbing the revenue impact.
-        </p>
-        <p>
-          On the structural side, when the seller proposed off-escrow payment splits to accelerate the process,
-          Kautilya rejected the approach outright and forced escrow structuring through a US LLC workaround, requiring
-          a signed APA, an inspection period, and milestone-based releases.
-        </p>
-
-        <h2>Post-Close: From Diligence to Execution in Days, Not Months</h2>
-        <p>
-          A critical component of the engagement extended beyond transaction close. Kautilya supported the client in
-          hiring operators across marketing operations and technical execution, including UI/UX optimization and game
-          development, sourced directly through Kautilya's existing network of mobile specialists.
-        </p>
-        <p>
-          Candidates were evaluated through multiple interviews, prioritizing hands-on experience in mobile growth
-          and monetization, the ability to operate independently in early-stage environments, and familiarity with
-          live consumer products rather than greenfield builds.
-        </p>
-        <p>
-          The selected operators were onboarded immediately post-close and remain actively engaged in running and
-          improving the application today. This compressed the post-close ramp period from what typically takes months
-          into days, allowing the client to sprint into execution while preserving continuity.
-        </p>
-
-        <h2>The Outcome</h2>
-        <p>
-          A cash-flow-positive mobile gaming asset acquired for $39,000 at 1.1× revenue, with 56% paid at close and
-          the remainder structured over twelve months. Upfront payback in under 8 months. Full payback in roughly 13
-          months. Operators deployed from day one. No reliance on forward projections, roadmap execution, or
-          speculative growth.
-        </p>
-        <div className="pull-quote">
-          <p>
-            A self-funding acquisition loop where capital deployed into user acquisition is recovered quickly through
-            ad monetization, allowing the business to compound without external funding.
-          </p>
-        </div>
-        <p>
-          For the client, this was more than a single deal. It was the first live asset in a portfolio strategy,
-          delivering immediate cash flow, real user data, and a compressed learning cycle that de-risked every
-          decision that followed.
-        </p>
 
         <div className="story-coda">
           <div className="coda-text">
-            When you can't learn from a dashboard, acquire the signal.
+            When you can&rsquo;t learn from a dashboard, acquire the signal.
           </div>
         </div>
       </article>

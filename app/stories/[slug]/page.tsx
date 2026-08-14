@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
+import { STORY_SLUGS, STORY_META, STORY_FAQ, STORY_HOWTO, type StorySlug } from '@/lib/stories';
 import StoryContent from './StoryContent';
 
 const BASE_URL = 'https://www.kautilya-pe.com';
@@ -140,6 +140,29 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     ],
   };
 
+  const faqItems = STORY_FAQ[slug as StorySlug];
+  const faqLd = faqItems && faqItems.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } : null;
+
+  const howTo = STORY_HOWTO[slug as StorySlug];
+  const howToLd = howTo ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: howTo.name,
+    step: howTo.steps.map((step) => ({
+      '@type': 'HowToStep',
+      name: step.name,
+      text: step.text,
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -150,6 +173,18 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
+        />
+      )}
     </>
   );
 }
