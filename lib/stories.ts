@@ -29,20 +29,20 @@ export type StoryMeta = {
 
 export const STORY_META: Record<StorySlug, StoryMeta> = {
   'borderless': {
-    title: 'How to Source Off-Market Deals Without a Broker | Case Study',
-    description: 'How to build proprietary deal flow with no listings or brokers, shown through a real six-week campaign: map the full market, rank channels by conversion, test structures owners accept.',
+    title: 'How to Source Off-Market Deals Without a Broker',
+    description: 'How to build proprietary deal flow with no listings or brokers: map the full market, rank outreach channels by conversion, test structures owners accept.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
   },
   'dino-games': {
-    title: 'How to Value and De-Risk a Mobile Game Acquisition | Case Study',
-    description: 'How to value a cash-flowing mobile game, shown through a real ~1.1x carve-out: verify revenue at the console, treat mediated ad revenue as one stream, price risk through structure.',
+    title: 'How to Value & De-Risk a Mobile Game Acquisition',
+    description: 'How to value a cash-flowing mobile game, on a real ~1.1x carve-out: verify console revenue, treat mediated ad revenue as one stream, price risk via structure.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
   },
   'runify': {
-    title: 'How to Buy a Business With Seller Financing | Case Study',
-    description: 'How seller financing works when revenue isn\'t proven, shown through a real $110K deal closed with $20K down: underwrite on verified cash, defer the rest into an earn-out.',
+    title: 'How to Buy a Business With Seller Financing',
+    description: 'How seller financing works when revenue isn\'t proven: a real $110K deal closed with $20K down, verified cash upfront and the rest deferred into an earn-out.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
   },
@@ -105,20 +105,20 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     image: '/images/blogs/edition-200k.jpeg',
   },
   'smartprompt': {
-    title: 'When to Walk Away From an Acquisition | Case Study',
-    description: 'How to build go/no-go gates that kill bad deals early, shown through a real mandate where two deals died, one pre-LOI, one post-LOI, so one could close at a 200x discount.',
+    title: 'When to Walk Away From an Acquisition',
+    description: 'How to build go/no-go gates that kill bad deals early, shown through a mandate where two deals died, pre- and post-LOI, so one could close at a 200x discount.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
   },
   'inspire3': {
-    title: 'How to Verify Revenue Buying an Online Business | Case Study',
-    description: 'How to verify revenue buying an online business, shown on a real 19-site portfolio: validate every transaction, deconstruct affiliate lines, reconcile every system, then run the finances.',
+    title: 'How to Verify Revenue Buying an Online Business',
+    description: 'How to verify revenue buying an online business, on a real 19-site portfolio: validate every transaction, deconstruct affiliate lines, then run the finances.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
   },
   'msp-buy-side-diligence': {
-    title: 'How to Do Buy-Side Due Diligence on an MSP | Case Study',
-    description: 'How to run buy-side diligence on an MSP, shown through a real $21M rebuild: separate blended margins, re-cost labour, reconcile PSA, billing and GL into an EBITDA bridge.',
+    title: 'How to Do Buy-Side Due Diligence on an MSP',
+    description: 'How to run buy-side diligence on an MSP, on a real $21M rebuild: separate blended margins, re-cost labour, reconcile PSA and billing into an EBITDA bridge.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
     image: '/images/Dev.jpeg',
