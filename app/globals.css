@@ -536,7 +536,7 @@ body {
 .portfolio-page .section-body {
   font-size: 17px;
   line-height: 1.85;
-  max-width: 760px;
+  max-width: 880px;
 }
 
 /* Stats bar */
@@ -1467,7 +1467,7 @@ a.deal-card { cursor: pointer; }
 
 /* Story body */
 .story-body {
-  max-width: 720px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 48px 100px;
 }
