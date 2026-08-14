@@ -147,21 +147,23 @@ export default function StorySmartPrompt() {
           first, then ran every opportunity through them.
         </p>
 
-        <table className="data-table">
-          <thead>
-            <tr>
-              <th>Gate</th>
-              <th>What it confirms</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1. Financial reality</td><td>The business is economically real, cash-flow quality, revenue concentration, unit economics.</td></tr>
-            <tr><td>2. Risk identification</td><td>Structural and operational risks surfaced, regulatory, competitive, dependency.</td></tr>
-            <tr><td>3. Market validation</td><td>The market has depth and durability, saturation, growth ceiling, intensity.</td></tr>
-            <tr><td>4. Price discipline</td><td>Price reflects risk, risk-adjusted valuation, comparables, a defined walk-away threshold.</td></tr>
-            <tr><td>5. Deal structure</td><td>The deal works after close, term-sheet adequacy, risk allocation, transferability.</td></tr>
-          </tbody>
-        </table>
+        <div className="data-table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Gate</th>
+                <th>What it confirms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1. Financial reality</td><td>The business is economically real, cash-flow quality, revenue concentration, unit economics.</td></tr>
+              <tr><td>2. Risk identification</td><td>Structural and operational risks surfaced, regulatory, competitive, dependency.</td></tr>
+              <tr><td>3. Market validation</td><td>The market has depth and durability, saturation, growth ceiling, intensity.</td></tr>
+              <tr><td>4. Price discipline</td><td>Price reflects risk, risk-adjusted valuation, comparables, a defined walk-away threshold.</td></tr>
+              <tr><td>5. Deal structure</td><td>The deal works after close, term-sheet adequacy, risk allocation, transferability.</td></tr>
+            </tbody>
+          </table>
+        </div>
 
         <p>
           The sequence matters. The early gates are cheap to run and kill weak deals fast; the later gates are

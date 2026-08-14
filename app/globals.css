@@ -1705,10 +1705,16 @@ a.deal-card { cursor: pointer; }
 .proof-block p + p { margin-top: 14px; }
 
 /* Data table (structure tables, gate tables, etc.) */
+.data-table-wrap {
+  margin: 32px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .data-table {
   width: 100%;
+  min-width: 380px;
   border-collapse: collapse;
-  margin: 32px 0;
   font-family: var(--font-lora), 'Lora', serif;
 }
 
@@ -1733,7 +1739,9 @@ a.deal-card { cursor: pointer; }
 .data-table td:first-child { color: var(--text-primary); }
 
 @media (max-width: 640px) {
-  .data-table { display: block; overflow-x: auto; }
+  .data-table { min-width: 0; }
+  .data-table th,
+  .data-table td { padding: 10px 12px; font-size: 13px; }
 }
 
 /* H3 for FAQ questions and sub-sections inside a story */
@@ -1802,9 +1810,28 @@ a.deal-card { cursor: pointer; }
 }
 
 @media (max-width: 768px) {
-  .short-answer { padding: 22px 20px; }
-  .proof-block { padding: 20px 18px; }
+  .short-answer { padding: 22px 20px; margin: 32px 0 40px; }
+  .short-answer p { font-size: 15px; }
+  .proof-block { padding: 20px 18px; margin: 28px 0; }
+  .proof-block p { font-size: 14px; }
+  .story-faq { margin-top: 48px; padding-top: 40px; }
+  .story-faq-title { font-size: 23px; margin-bottom: 22px; }
+  .story-faq-item { margin-bottom: 26px; padding-bottom: 26px; }
   .story-faq-q { font-size: 17px; }
+  .story-faq-a { font-size: 14px; }
+  .story-body h3 { font-size: 19px; margin: 32px 0 10px; }
+}
+
+@media (max-width: 480px) {
+  .short-answer { padding: 18px 16px; }
+  .short-answer-label { font-size: 9px; letter-spacing: 2px; }
+  .short-answer p { font-size: 14px; line-height: 1.75; }
+  .proof-block { padding: 16px 14px; }
+  .proof-label { font-size: 9px; }
+  .proof-block p { font-size: 13.5px; line-height: 1.7; }
+  .story-faq-q { font-size: 16px; }
+  .story-faq-a { font-size: 13.5px; }
+  .last-updated { font-size: 11px; }
 }
 
 /* Final callout */
@@ -2483,7 +2510,8 @@ a.deal-card { cursor: pointer; }
   }
 
   .story-hero h1 {
-    font-size: 28px;
+    font-size: 25px;
+    letter-spacing: 0.3px;
   }
 
   .story-hero .subtitle {

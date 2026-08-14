@@ -179,21 +179,23 @@ export default function StoryRunify() {
         </p>
         <p>Here is the full structure the two prior steps produced:</p>
 
-        <table className="data-table">
-          <thead>
-            <tr>
-              <th>Component</th>
-              <th>Detail</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Total consideration</td><td>$110K</td></tr>
-            <tr><td>Cash at close</td><td>$20,000 (about 25%)</td></tr>
-            <tr><td>Earn-out</td><td>Up to $57,000, a 20% net-profit share over 24 months</td></tr>
-            <tr><td>Balance</td><td>Salary, milestone bonuses, and retained minority equity</td></tr>
-            <tr><td>Guaranteed capital at risk</td><td>About $30K</td></tr>
-          </tbody>
-        </table>
+        <div className="data-table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Total consideration</td><td>$110K</td></tr>
+              <tr><td>Cash at close</td><td>$20,000 (about 25%)</td></tr>
+              <tr><td>Earn-out</td><td>Up to $57,000, a 20% net-profit share over 24 months</td></tr>
+              <tr><td>Balance</td><td>Salary, milestone bonuses, and retained minority equity</td></tr>
+              <tr><td>Guaranteed capital at risk</td><td>About $30K</td></tr>
+            </tbody>
+          </table>
+        </div>
 
         <div className="proof-block">
           <div className="proof-label">Where the Risk Went</div>
