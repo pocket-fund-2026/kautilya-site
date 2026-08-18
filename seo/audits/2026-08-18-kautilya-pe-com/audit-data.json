@@ -1,0 +1,449 @@
+{
+  "summary": {
+    "health_score": 80,
+    "business_type": "B2B buy-side M&A / private equity advisory firm (Mumbai, India; active across India, UK, UAE, MENA, Europe, APAC)",
+    "audit_date": "2026-08-18",
+    "domain": "https://www.kautilya-pe.com",
+    "top_findings": [
+      "CRITICAL: Homepage has a stuck 'Loading Sky...' WebGL asset creating ~17,500px of dead scroll space between the hero and main content (components/ThreeScene.tsx)",
+      "CRITICAL: ~94MB of unoptimized images sitewide (54 sitemap images), 16 exceeding 1MB, ten Stories-page PNGs at 7-9.2MB each; zero next/image, WebP/AVIF, or responsive srcset usage",
+      "CRITICAL: Deprecated HowTo schema (removed by Google Sept 2023) still live on /approach and /stories/[slug] pages, polluting Search Console",
+      "HIGH: Apex domain kautilya-pe.com redirects to www with a temporary 307 instead of a permanent 301/308",
+      "HIGH: news-sitemap.xml misapplies the Google News protocol to evergreen /stories/* content, several dated 2024, likely generating persistent GSC errors",
+      "HIGH: No standalone 'buy-side due diligence' service page despite that SERP being dominated by dedicated service pages",
+      "HIGH: Primary 'ENGAGE' CTA hidden behind a hamburger menu on mobile, invisible above the fold",
+      "HIGH: Off-site authority signals (no Wikipedia, no Reddit, unverified YouTube activity) remain the primary AI-citation/GEO score cap",
+      "MEDIUM: Confirmed content cannibalization between /blog/what-is-a-search-fund and /stories/search-funds",
+      "MEDIUM: Two heavily keyword-targeted topics (off-market deal sourcing, buy-side due diligence checklist) have zero dedicated pillar content"
+    ],
+    "quick_wins": [
+      "Set apex-to-www redirect to permanent 301/308 in Vercel domain settings",
+      "Delete deprecated HowTo JSON-LD blocks from /approach and /stories/[slug] pages",
+      "Fix llms.txt FAQ count mismatch (23 -> 26 questions, one-line edit)",
+      "Remove news-sitemap.xml route and its robots.txt reference (stories already covered by sitemap.xml)",
+      "Add explicit width/height to portfolio-logo <img> tags to close a CLS risk"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "weight": 0.22,
+      "score": 87,
+      "what_works": [
+        "All 35 sitemap URLs return HTTP 200, no 404s or soft-404s",
+        "Every sampled page is SSG (x-nextjs-prerender: 1, is_spa: false) with no CSR/SPA dependency",
+        "Complete, consistent security headers sitewide (HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) via next.config.ts",
+        "Canonical tags and meta robots are clean, unique, and correct on every page sampled",
+        "Valid multi-type JSON-LD on every sampled page",
+        "llms.txt and llms-full.txt both resolve and are comprehensive",
+        "HTTP to HTTPS redirects are clean single-hop 308s"
+      ],
+      "findings": [
+        {
+          "title": "Apex domain uses a temporary 307 redirect instead of permanent 301/308",
+          "severity": "High",
+          "description": "http://kautilya-pe.com/ -> 308 -> https://kautilya-pe.com/ -> 307 -> https://www.kautilya-pe.com/ is a 3-hop chain with a non-permanent final hop, inconsistent with the clean 308 seen on the www variant.",
+          "recommendation": "Set the redirect type for kautilya-pe.com -> www.kautilya-pe.com to Permanent (308) in Vercel Domains settings, or add an explicit vercel.json/next.config.ts redirect with permanent: true."
+        },
+        {
+          "title": "No Content-Security-Policy header",
+          "severity": "Medium",
+          "description": "HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy are all present sitewide but no CSP or CSP-Report-Only header is defined anywhere in next.config.ts headers().",
+          "recommendation": "Add a CSP header scoped to known third-party origins (Google Tag Manager, the five badge domains, Unsplash) in next.config.ts headers()."
+        },
+        {
+          "title": "No IndexNow protocol support",
+          "severity": "Medium",
+          "description": "No IndexNow key file or submission integration found in the codebase, despite regular /newsletter and /stories publishing that would benefit from instant Bing/Yandex crawl notification.",
+          "recommendation": "Generate an IndexNow key, host it at /{key}.txt, and add a submission call triggered on publish for /blog/[slug], /newsletter/[slug], /stories/[slug]."
+        },
+        {
+          "title": "Sitewide WebGL SplashCursor effect is a latent INP risk",
+          "severity": "Medium",
+          "description": "A continuous per-pointer-move WebGL fluid-dye simulation runs on every route via SplashCursorWrapper in the root layout. Deferred via next/dynamic so it doesn't block LCP, but competes with click/tap handlers on the main thread.",
+          "recommendation": "Lab-test INP with the cursor effect active vs. disabled; gate it to pointer-fine devices only via window.matchMedia('(pointer: fine)') so mobile visitors skip it entirely."
+        },
+        {
+          "title": "Homepage canonical omits trailing slash",
+          "severity": "Low",
+          "description": "Homepage is served at https://www.kautilya-pe.com/ but its canonical tag reads https://www.kautilya-pe.com (no trailing slash), inconsistent with every other page's exact-match canonical.",
+          "recommendation": "Add the trailing slash to the homepage canonical to match observed serving behavior exactly."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "weight": 0.23,
+      "score": 82,
+      "what_works": [
+        "Specific, falsifiable case-study numbers (99.83% match rate, 30,134 transactions, named deal values) verified present in rendered HTML, not just marketing copy",
+        "Full 8-person named team roster with roles and LinkedIn links on /team",
+        "Dated, bylined long-form content with real publish dates matching JSON-LD",
+        "Newsletter deal-teardowns are the strongest content asset (sourced stats, scored rubric, tables)",
+        "Zero AI-pattern filler language detected on any sampled page",
+        "Good topical depth on long-form pages (1,700-3,300 words)"
+      ],
+      "findings": [
+        {
+          "title": "Single-author concentration across all long-form content",
+          "severity": "Medium",
+          "description": "All 8 sampled blog/newsletter/story posts are bylined 'Dev Shah' only, despite 6 other named specialists on /team whose expertise is never attributed to specific published content.",
+          "recommendation": "Attribute posts to the team member with domain expertise, or add a 'Reviewed by' credit line, to diversify the expertise signal."
+        },
+        {
+          "title": "No visible per-post author bio or credentials block",
+          "severity": "Medium",
+          "description": "Articles show 'Dev Shah - [date]' only with no inline bio, headshot, or credentials snippet; the founder bio only exists on /team and in JSON-LD.",
+          "recommendation": "Add a short author byline block (1-2 sentences + photo + link to /team) at the top or bottom of every long-form post."
+        },
+        {
+          "title": "No visible phone number or physical address in body copy",
+          "severity": "Medium",
+          "description": "Across all 15 pages sampled, the only visible contact signal is an email address; no street address or phone number appears in rendered text anywhere.",
+          "recommendation": "Add a visible registered office address and contact phone number to /team, /engage, and the footer to strengthen Trustworthiness E-E-A-T."
+        },
+        {
+          "title": "Homepage body copy is thin relative to a 500-word floor",
+          "severity": "Low",
+          "description": "Stripped of nav/footer boilerplate, the homepage yields ~357 words of substantive body copy, below the typical homepage topical-coverage floor.",
+          "recommendation": "Add 2-3 more substantive paragraphs surfacing the track-record stats on-page, not just in llms.txt."
+        },
+        {
+          "title": "Stories case-study stats remain prose-only with no tables/visuals",
+          "severity": "Low",
+          "description": "Flagship stats-heavy case studies (e.g. /stories/inspire3) deliver numbers as prose only, with no supporting chart or table, unlike the newsletter's table pattern.",
+          "recommendation": "Add at minimum one summary-stats visual per Stories case study, matching the newsletter's table pattern."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "weight": 0.20,
+      "score": 82,
+      "what_works": [
+        "Consistent 'PageName | Kautilya | Keywords' title pattern across all pages sampled",
+        "Exactly one H1 per page on every page sampled, no missing/duplicate H1s",
+        "Every page has a unique meta description",
+        "Canonical tags present and correct on every page, all pointing to the www host",
+        "robots meta consistently index,follow with no accidental noindex",
+        "OG:title distinct from and complementary to the SEO title on long-form pages"
+      ],
+      "findings": [
+        {
+          "title": "Multiple meta descriptions exceed the ~155-160 character SERP display limit",
+          "severity": "Medium",
+          "description": "9 of 16 sampled pages have over-length meta descriptions; worst offender is the Torrent-JB Chemicals newsletter post at 255 characters, risking truncation in search results.",
+          "recommendation": "Trim to 150-155 characters with the most compelling/keyword-relevant clause first."
+        },
+        {
+          "title": "/portfolio and /newsletter have zero H2 subheadings",
+          "severity": "Medium",
+          "description": "Both list-style pages rely on a single H1 with no subheading structure despite listing multiple distinct case studies/newsletter issues.",
+          "recommendation": "Add H2s per portfolio company / per newsletter issue for on-page structure and accessibility."
+        },
+        {
+          "title": "Portfolio-logo and OG images missing width/height attributes",
+          "severity": "Medium",
+          "description": "Portfolio company logos render as plain <img> tags with no explicit dimensions, creating CLS risk.",
+          "recommendation": "Add explicit width/height (or migrate to next/image, which enforces this)."
+        },
+        {
+          "title": "Third-party badge images hotlinked on key pages",
+          "severity": "Low",
+          "description": "Homepage and /portfolio embed external badges from five low-authority directory sites via direct hotlinked <img> tags, adding external DNS/connection overhead.",
+          "recommendation": "Self-host or remove these badges given limited relevance to a B2B M&A advisory audience."
+        }
+      ]
+    },
+    {
+      "name": "Schema & Structured Data",
+      "weight": 0.10,
+      "score": 78,
+      "what_works": [
+        "Fully SSR'd, valid JSON on every block sampled, no malformed/truncated data",
+        "Unusually complete Organization schema (foundingDate, areaServed, knowsAbout, founder, sameAs)",
+        "BreadcrumbList present on every deep page sampled",
+        "Person schema for all 8 team members with jobTitle and sameAs",
+        "BlogPosting correctly used for blog posts with all required and recommended properties",
+        "Absolute URLs and ISO 8601 dates throughout, correct SearchAction formatting"
+      ],
+      "findings": [
+        {
+          "title": "Deprecated HowTo schema still in production",
+          "severity": "Critical",
+          "description": "Google removed HowTo rich results in September 2023. This markup is live on /approach and conditionally on /stories/[slug] pages, earning nothing and polluting Search Console's Enhancements report.",
+          "recommendation": "Remove the howToSchema block from /approach and the howToLd block from stories pages entirely; leave visible HTML content in place."
+        },
+        {
+          "title": "FAQPage markup has no Google SERP benefit as of the audit date",
+          "severity": "Info",
+          "description": "Google retired FAQ rich results for all sites on 2026-05-07. FAQPage markup site-wide produces no SERP feature currently, though it may still aid AI/GEO extraction.",
+          "recommendation": "No urgent action; if kept, label internally as GEO-only, unconfirmed benefit rather than rich-result schema."
+        },
+        {
+          "title": "FAQ question-count mismatch between llms.txt and live FAQPage schema",
+          "severity": "Low",
+          "description": "llms.txt states 23 answered questions; live FAQPage JSON-LD contains 26 Question items.",
+          "recommendation": "Update llms.txt to state 26 answered questions."
+        },
+        {
+          "title": "Two separate top-level entities for the same business with no @id linkage",
+          "severity": "Medium",
+          "description": "Homepage emits both an Organization and a ProfessionalService for Kautilya independently, with drifting offer-catalog details (one includes pricing, the other doesn't) and no @id to declare they're the same entity.",
+          "recommendation": "Give the canonical Organization a stable @id (e.g. https://www.kautilya-pe.com/#organization) and reference it from WebSite.publisher and ProfessionalService; reconcile the pricing discrepancy."
+        },
+        {
+          "title": "NewsArticle type used for evergreen Stories content",
+          "severity": "Low",
+          "description": "Stories and Newsletter pages both use @type: NewsArticle, but Stories are evergreen case studies, not time-sensitive journalism.",
+          "recommendation": "Change Stories pages to plain Article or BlogPosting; keep NewsArticle on Newsletter posts, which do track live deal news."
+        },
+        {
+          "title": "Malformed empty-string servicePhone property",
+          "severity": "Low",
+          "description": "app/approach/page.tsx sets servicePhone: '' inside ServiceChannel, an invalid placeholder value.",
+          "recommendation": "Remove the servicePhone key entirely or populate with a real number."
+        }
+      ]
+    },
+    {
+      "name": "Performance",
+      "weight": 0.10,
+      "score": 85,
+      "what_works": [
+        "Excellent TTFB across all pages tested (55-109ms)",
+        "Brotli compression confirmed sitewide",
+        "Static assets cached with immutable, max-age=31536000",
+        "Self-hosted next/font woff2 fonts with font-display: swap, no FOIT, no third-party Google Fonts round trip",
+        "Content fully server-rendered with no CSR dependency for LCP-relevant content",
+        "Blog images correctly use next/image with responsive srcSet and explicit dimensions"
+      ],
+      "findings": [
+        {
+          "title": "Portfolio logo images missing width/height (CLS risk)",
+          "severity": "Medium",
+          "description": "Two logo images on /portfolio are raw <img> tags with no dimensions and no next/image optimization, unlike the blog template which correctly uses next/image.",
+          "recommendation": "Convert to next/image or add explicit width/height attributes."
+        },
+        {
+          "title": "Five third-party badge images from five external domains on every page",
+          "severity": "Low",
+          "description": "Badge images from five separate external origins load identically on home, /approach, /portfolio, blog, and stories pages, adding DNS/TLS overhead for content irrelevant to the target audience.",
+          "recommendation": "Self-host or lazy-load these badge images; consider removing entirely."
+        },
+        {
+          "title": "HTML responses use Cache-Control: max-age=0, must-revalidate",
+          "severity": "Low",
+          "description": "Browser is told to revalidate HTML on every navigation rather than serving from disk cache, though Vercel's ISR edge caching (300s revalidate) already compensates well given the low TTFBs measured.",
+          "recommendation": "Consider explicit s-maxage/stale-while-revalidate tuning if perceived back/forward navigation speed becomes a priority; low impact at current TTFB levels."
+        },
+        {
+          "title": "No CrUX/PSI field or full Lighthouse data obtained",
+          "severity": "Info",
+          "description": "No Google API credentials configured in this environment; PageSpeed Insights returned a rate-limit error on every attempt. All performance findings are lab-based estimates from curl timing and header inspection.",
+          "recommendation": "Re-run PageSpeed Insights / CrUX Vis once API access is available to confirm lab signals hold under real user conditions, particularly mobile INP."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "weight": 0.05,
+      "score": 38,
+      "what_works": [
+        "100% alt-text coverage across all ~92 images sampled on 16 pages, zero missing or empty alt attributes",
+        "loading=lazy used on below-the-fold avatar images",
+        "Logo/icon assets are SVG, small footprint",
+        "Descriptive, semantic image filenames"
+      ],
+      "findings": [
+        {
+          "title": "Story/blog images are massively oversized",
+          "severity": "Critical",
+          "description": "Total payload of ~94MB across the 54 images referenced in image-sitemap.xml; 16 of 54 (30%) exceed 1MB, with ten Stories-page PNGs at 7-9.2MB each (e.g. /images/stories/borderless/exhausting-market.png at 9.22MB).",
+          "recommendation": "Re-export chart/diagram images at a sane display resolution (<=1600px wide), compress with a tool like squoosh/sharp, convert to WebP or AVIF, targeting <150-250KB per content image."
+        },
+        {
+          "title": "No modern image format usage, zero next/image optimization pipeline",
+          "severity": "High",
+          "description": "Every image is served as raw .png/.jpg/.jpeg directly from static paths with zero requests through /_next/image, confirming plain <img> tags are used instead of Next.js's built-in image optimization.",
+          "recommendation": "Migrate all content/avatar/portfolio-logo <img> usages to next/image for automatic responsive srcset, lazy-loading, CLS prevention, and WebP/AVIF serving."
+        },
+        {
+          "title": "No responsive srcset, identical image served to mobile and desktop",
+          "severity": "High",
+          "description": "srcset appears 0 times across homepage, /portfolio, and /stories HTML; a mobile visitor downloads the identical multi-megabyte asset as a desktop visitor.",
+          "recommendation": "Same fix as next/image migration above."
+        },
+        {
+          "title": "Missing width/height on portfolio-logo and badge images",
+          "severity": "Medium",
+          "description": "Portfolio company logos render without explicit dimensions, contributing to Cumulative Layout Shift.",
+          "recommendation": "Add explicit dimensions to every <img> or migrate to next/image."
+        },
+        {
+          "title": "Third-party hotlinked badge images on homepage/portfolio",
+          "severity": "Low",
+          "description": "Badges from five external directory sites add extra DNS/TLS round-trips on key pages.",
+          "recommendation": "Self-host or remove if these directory badges provide negligible referral/SEO value."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "weight": 0.10,
+      "score": 76,
+      "what_works": [
+        "robots.txt explicitly allows every major AI crawler (GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, anthropic-ai, PerplexityBot, CCBot, Applebot-Extended, cohere-ai, YouBot)",
+        "llms.txt (91 lines) and llms-full.txt (676 lines) both resolve and are content-rich, with explicit citation-provenance guidance",
+        "Headline statistics quoted in llms.txt verified to appear verbatim in actual on-page rendered content",
+        "Fully static, JS-independent delivery confirmed on every page sampled (mode_used: raw, is_spa: false)",
+        "New SpeakableSpecification schema block adds voice-AI eligibility",
+        "FAQPage schema with 26 Q&A pairs correctly typed",
+        "Newsletter's sourced tables and Sources: attribution line are the strongest citability asset on the site"
+      ],
+      "findings": [
+        {
+          "title": "Off-site authority signals remain the primary score cap",
+          "severity": "High",
+          "description": "No Wikipedia entity for Kautilya or Dev Shah, no Reddit presence, and the linked YouTube channel's activity could not be verified due to a consent-wall. YouTube mentions correlate most strongly (~0.737) with AI citation odds of any signal in the GEO framework.",
+          "recommendation": "Pursue a sustained off-site footprint: YouTube video output tied to existing deal-teardown content, Reddit participation in relevant subreddits, and eventual Wikipedia notability."
+        },
+        {
+          "title": "Flagship stats-heavy case study has zero in-content visuals or video",
+          "severity": "Medium",
+          "description": "/stories/inspire3 (99.83% match rate case study) has no charts, screenshots, or diagrams supporting its own claims despite dense quantified content.",
+          "recommendation": "Add at minimum one summary-stats visual per Stories case study; embed 1-2 relevant videos on /approach and high-traffic Stories pages."
+        },
+        {
+          "title": "llms-full.txt excludes Stories full text",
+          "severity": "Medium",
+          "description": "llms-full.txt's header claims complete Blog and Newsletter article coverage but excludes the richest quantified case-study detail found in Stories pages.",
+          "recommendation": "Extend llms-full.txt to include full Stories/case-study text, or add a separate /llms-stories.txt referenced from /llms.txt."
+        },
+        {
+          "title": "News sitemap misapplies news protocol to evergreen content",
+          "severity": "Medium",
+          "description": "news-sitemap.xml still carries 2024-dated publication_date values for evergreen Stories content, coordinated with the same finding filed as High severity in the Sitemap category.",
+          "recommendation": "Remove Stories URLs from news-sitemap.xml entirely unless pursuing actual Google News inclusion."
+        },
+        {
+          "title": "FAQ answers remain snippet-length only",
+          "severity": "Low",
+          "description": "FAQ answers run 26-53 words, good for Google AI Overview/voice extraction but thin for Perplexity-style multi-source synthesis, which favors longer self-contained passages.",
+          "recommendation": "Link each short FAQ answer to a 134-167 word expanded answer in corresponding blog/approach content."
+        }
+      ]
+    }
+  ],
+  "supplementary_analyses": [
+    {
+      "name": "Search Experience Optimization (SXO)",
+      "score": 70,
+      "note": "Not included in the weighted health score; supplements the On-Page and Content categories with SERP-backwards page-type-mismatch analysis.",
+      "top_findings": [
+        "No standalone buy-side due diligence service page despite that SERP being dominated by dedicated service pages",
+        "Homepage is thin (357 words) for the trust bar its target SERP requires",
+        "Definitional blog posts face an authority ceiling on global terms; India-qualified variants are more winnable"
+      ]
+    },
+    {
+      "name": "Content Architecture / Topic Clustering",
+      "score": 54,
+      "note": "Not included in the weighted health score; supplements the Content Quality category with hub-and-spoke architecture analysis.",
+      "top_findings": [
+        "Confirmed cannibalization between /blog/what-is-a-search-fund and /stories/search-funds",
+        "Two heavily keyword-targeted topics (off-market deal sourcing, buy-side due diligence checklist) have zero dedicated pillar content",
+        "/newsletter is a complete internal-linking island; 9 of 16 Stories posts are internal-link dead ends"
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Fix the stuck 'Loading Sky...' homepage bug creating ~17,500px of dead scroll space",
+          "Migrate images to next/image and re-export/recompress the 16 sitemap images over 1MB",
+          "Remove deprecated HowTo JSON-LD from /approach and /stories/[slug] pages"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Fix apex domain redirect to permanent 301/308",
+          "Remove news-sitemap.xml",
+          "Add width/height to portfolio-logo images",
+          "Fix mobile CTA visibility gap (persistent ENGAGE button)",
+          "Ship standalone Buy-Side Due Diligence service page",
+          "Build Off-Market Deal Sourcing and Due Diligence Checklist content pillars",
+          "Fix search-fund content cannibalization",
+          "Kick off off-site authority building (YouTube, Reddit)"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Fix llms.txt FAQ count and extend llms-full.txt to cover Stories",
+          "Add @id linkage between Organization and ProfessionalService schema, reconcile pricing drift",
+          "Add CSP header",
+          "Add IndexNow support",
+          "Trim over-length meta descriptions",
+          "Add H2 structure to /portfolio and /newsletter",
+          "Add visuals/tables to stats-heavy Stories pages",
+          "Add author bio blocks and diversify bylines",
+          "Add visible phone/address contact signals",
+          "Repair internal link graph between newsletter, blog, and stories",
+          "Expand homepage body copy and trust bar",
+          "Remove or self-host third-party directory badges",
+          "Fix NewsArticle schema type on Stories pages",
+          "Consolidate image-sitemap data source"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Derive lastmod from actual content dates for aggregator pages",
+          "Remove unused priority/changefreq sitemap tags",
+          "Fix homepage canonical trailing slash",
+          "Remove empty servicePhone schema property",
+          "Add expanded FAQ answer variants for Perplexity-style synthesis",
+          "Fix or restyle the homepage 'ENTER' scroll cue",
+          "Add sticky CTA reinforcement during homepage scroll",
+          "Reclassify legacy personal-journal Stories as Origin Story sub-section",
+          "Add a RelatedContent component driven by cluster tags",
+          "Re-verify performance findings against real CrUX/PSI field data once API access is available"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/",
+    "findings_files": [
+      "findings/technical.md",
+      "findings/content.md",
+      "findings/onpage.md",
+      "findings/schema.md",
+      "findings/sitemap.md",
+      "findings/performance.md",
+      "findings/images.md",
+      "findings/geo.md",
+      "findings/visual.md",
+      "findings/sxo.md",
+      "findings/cluster.md"
+    ],
+    "screenshot_files": [
+      "screenshots/homepage-desktop.png",
+      "screenshots/homepage-desktop-fold.png",
+      "screenshots/homepage-desktop-afterscroll.png",
+      "screenshots/homepage-mobile.png",
+      "screenshots/homepage-mobile-fold.png",
+      "screenshots/approach-desktop.png",
+      "screenshots/portfolio-desktop.png"
+    ]
+  }
+}
