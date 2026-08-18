@@ -79,7 +79,6 @@ const serviceSchema = {
   availableChannel: {
     '@type': 'ServiceChannel',
     serviceUrl: `${BASE}/engage`,
-    servicePhone: '',
     servicePostalAddress: {
       '@type': 'PostalAddress',
       addressLocality: 'Mumbai',

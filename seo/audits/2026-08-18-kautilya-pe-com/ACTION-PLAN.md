@@ -23,21 +23,25 @@ Derived from the full audit dated 2026-08-18. See `FULL-AUDIT-REPORT.md` for ful
 
 ## High (fix within 1 week)
 
-4. **Fix the apex domain redirect to permanent (301/308).** In Vercel's Domains settings, set `kautilya-pe.com → www.kautilya-pe.com` to a permanent redirect rather than relying on the default 307 behavior. If Vercel's UI doesn't expose this, add an explicit `vercel.json` redirect or handle it in `next.config.ts`/middleware.
+4. **NOT FIXED — needs a human decision, see note.** Fix the apex domain redirect to permanent (301/308). In Vercel's Domains settings, set `kautilya-pe.com → www.kautilya-pe.com` to a permanent redirect rather than relying on the default 307 behavior. If Vercel's UI doesn't expose this, add an explicit `vercel.json` redirect or handle it in `next.config.ts`/middleware.
    - **Effort:** Low (<1 hour, platform config change)
    - **Source:** `findings/technical.md` Finding #1
+   - **Note (2026-08-18):** This redirect happens at the Vercel platform/domain layer, before any request reaches the Next.js app — it isn't in this repo's code, and the CLI session used to fix the other items doesn't have access to the `kautilya-pe.com` domain under this Vercel scope. Needs someone with dashboard access to the domain's project settings to flip it to permanent.
 
-5. **Remove `news-sitemap.xml`.** Delete `app/news-sitemap.xml/route.ts` and its `robots.txt` reference. The 16 `/stories/*` URLs it lists (several with stale 2024 `publication_date`s) are already fully covered by `sitemap.xml` — no discoverability is lost, and this stops likely persistent "invalid publication date" errors in Search Console.
+5. ~~**Remove `news-sitemap.xml`.**~~ **FIXED 2026-08-18.** Deleted `app/news-sitemap.xml/route.ts` and its `robots.txt` reference. The 16 `/stories/*` URLs it lists (several with stale 2024 `publication_date`s) are already fully covered by `sitemap.xml` — no discoverability is lost, and this stops likely persistent "invalid publication date" errors in Search Console.
    - **Effort:** Low (<1 hour)
    - **Source:** `findings/sitemap.md` Finding #1, confirmed independently in `findings/geo.md` Finding #5
+   - **Resolution:** Route and `robots.txt` `Sitemap:` line removed; verified `/news-sitemap.xml` now 404s and the site still builds and serves cleanly.
 
-6. **Add explicit `width`/`height` to portfolio-logo `<img>` tags** (or migrate them to `next/image` as part of item #2). Closes a concrete CLS risk on `/portfolio`.
+6. ~~**Add explicit `width`/`height` to portfolio-logo `<img>` tags**~~ **FIXED 2026-08-18.** Closes a concrete CLS risk on `/portfolio`.
    - **Effort:** Low (<1 hour if done standalone; folded into #2 if done together)
    - **Source:** `findings/onpage.md` Finding #3, `findings/performance.md` Finding #1, `findings/images.md` Finding #4
+   - **Resolution:** Added `width`/`height` attributes (376×376 for Inspire3, 400×400 for Runify — the two deals with a `logo` field) sourced from the actual PNG dimensions, via new `logoWidth`/`logoHeight` fields on the `Deal` type in `app/portfolio/PortfolioContent.tsx`. Migration to `next/image` (item #2, full image-weight pass) is still open.
 
-7. **Fix the mobile CTA visibility gap.** Add a persistent, always-visible "ENGAGE" button in the mobile header (next to the hamburger icon) rather than nesting the primary conversion action only inside the expanded menu.
+7. ~~**Fix the mobile CTA visibility gap.**~~ **FIXED 2026-08-18.** Add a persistent, always-visible "ENGAGE" button in the mobile header (next to the hamburger icon) rather than nesting the primary conversion action only inside the expanded menu.
    - **Effort:** Low–Medium (1 day: component + responsive header work)
    - **Source:** `findings/visual.md` Finding #2
+   - **Resolution:** Added a compact `.cta-btn-compact` "Engage" link in `components/Header.tsx`, positioned between the logo and hamburger, shown only at the ≤768px breakpoint (`app/globals.css`) so it doesn't duplicate the full-size desktop CTA. Verified visually via Playwright at 390×844.
 
 8. **Ship a standalone "Buy-Side Due Diligence" service page.** The SERP for this core, high-intent Kautilya service is dominated exclusively by standalone service/landing pages (PwC, Plante Moran, Dealroom, Auxo Capital). Kautilya's DD content (8-workstream process, $6,500 pricing, 99.83% match rate, <15-day turnaround) is strong but currently scattered across `/faq` and `/approach` with no dedicated URL to rank. Build using existing proven content assets.
    - **Effort:** Medium (2–3 days: page build using existing content, Service schema, internal linking)
@@ -87,13 +91,15 @@ Derived from the full audit dated 2026-08-18. See `FULL-AUDIT-REPORT.md` for ful
     - **Effort:** Medium (1–2 days for a first batch)
     - **Source:** `findings/geo.md` Finding #2, `findings/content.md` Finding #6
 
-19. **Add visible author bio/credentials blocks to blog/newsletter/story posts**, and diversify bylines across the 6 other named specialists on `/team` where topically appropriate (e.g., Tech Head or AI Consultant on SaaS/AI-tool acquisition stories).
+19. **PARTIALLY ADDRESSED — byline diversification needs a human decision, see note.** Add visible author bio/credentials blocks to blog/newsletter/story posts, and diversify bylines across the 6 other named specialists on `/team` where topically appropriate (e.g., Tech Head or AI Consultant on SaaS/AI-tool acquisition stories).
     - **Effort:** Medium (1–2 days: component + content assignment)
     - **Source:** `findings/content.md` Findings #1–2
+    - **Note (2026-08-18):** Every post in `lib/blogs.ts`, `lib/newsletters.ts`, and `lib/stories.ts` is hardcoded `author: 'Dev Shah'`. Reassigning any of these to another team member without knowing who actually wrote/contributed to that specific piece would be publishing false authorship for a financial advisory firm — not something to guess at. Needs Kautilya to confirm real authorship per post before bylines change. Author bio/credentials blocks (the other half of this item) are still open and don't have this constraint.
 
-20. **Add a visible phone number and physical/registered office address** to `/team`, `/engage`, and the site footer — currently only an email address is visible in body copy.
+20. ~~**Add a visible phone number and physical/registered office address**~~ **PARTIALLY FIXED 2026-08-18.** to `/team`, `/engage`, and the site footer — currently only an email address is visible in body copy.
     - **Effort:** Low (few hours, pending business decision on what to publish)
     - **Source:** `findings/content.md` Finding #3
+    - **Resolution:** Added a visible `contact@kautilya-pe.com` mailto link and "Mumbai, Maharashtra, India" line to the site footer (`components/Footer.tsx`) — city-level, matching the `PostalAddress` already present in JSON-LD on the homepage/careers pages, so nothing new was fabricated. Also removed an empty-string `servicePhone: ''` from `/approach`'s Service schema (an empty value is worse than omitting the field). **Still open:** no real phone number or street-level address exists anywhere in the codebase to surface — publishing one requires Kautilya to supply an actual number/address, not an invented one.
 
 21. **Repair the internal link graph**: connect `/newsletter` posts to relevant blog pillars/`/approach` sections (currently a total linking island), and give the 9 dead-end Stories posts at least one contextual outbound link into the nearest topic cluster or `/engage`/`/portfolio`.
     - **Effort:** Medium (1–2 days across all affected posts)

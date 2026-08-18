@@ -8,6 +8,10 @@ export default function Footer() {
           <div className="footer-logo">Kautilya</div>
           <div className="footer-tagline">The Architect of the Acquisition</div>
           <div className="footer-tagline-script">कौटिल्य</div>
+          <div className="footer-contact">
+            <a href="mailto:contact@kautilya-pe.com">contact@kautilya-pe.com</a>
+            <span className="footer-contact-address">Mumbai, Maharashtra, India</span>
+          </div>
           <div className="footer-social">
             <a href="https://www.linkedin.com/company/pocket-fund/?originalSubdomain=in" aria-label="LinkedIn">LinkedIn</a>
             <a href="https://x.com/microsearchfund" aria-label="Twitter/X">X</a>
