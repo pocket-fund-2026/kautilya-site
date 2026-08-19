@@ -130,14 +130,24 @@ body {
 .header .logo {
   display: flex;
   align-items: center;
+  gap: 14px;
   text-decoration: none;
   transition: opacity 0.4s;
 }
 
 .header .logo img {
-  height: 48px;
+  height: 40px;
   width: auto;
   display: block;
+}
+
+.header .logo-text {
+  font-family: var(--font-fraunces), 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-primary);
 }
 
 .header .logo:hover { opacity: 0.85; }
@@ -1956,10 +1966,16 @@ a.deal-card { cursor: pointer; }
 
   .header .logo {
     flex: 1;
+    gap: 10px;
   }
 
   .header .logo img {
-    height: 38px;
+    height: 32px;
+  }
+
+  .header .logo-text {
+    font-size: 20px;
+    letter-spacing: 1.5px;
   }
 
   .hamburger {
@@ -2354,8 +2370,17 @@ a.deal-card { cursor: pointer; }
     padding: 14px 16px;
   }
 
+  .header .logo {
+    gap: 8px;
+  }
+
   .header .logo img {
-    height: 30px;
+    height: 26px;
+  }
+
+  .header .logo-text {
+    font-size: 16px;
+    letter-spacing: 1px;
   }
 
   .header nav {

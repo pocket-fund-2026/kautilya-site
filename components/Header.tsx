@@ -77,12 +77,13 @@ export default function Header() {
     <header className={`header${menuVisible ? ' menu-open' : ''}`} id="mainHeader">
       <Link className="logo" href="/">
         <Image
-          src="/images/kautilya-logo.png"
-          alt="Kautilya"
-          width={1775}
+          src="/images/kautilya-icon.png"
+          alt=""
+          width={819}
           height={819}
           priority
         />
+        <span className="logo-text">Kautilya</span>
       </Link>
 
       <Link className="cta-btn-compact" href="/engage">Engage</Link>
