@@ -267,9 +267,9 @@ export default function EngageContent() {
 
         <style dangerouslySetInnerHTML={{ __html: `
           .engage-next-steps { max-width: 900px; margin: 72px auto 0; padding: 48px 24px 0; border-top: 1px solid var(--border, #262626); }
-          .engage-next-steps-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 26px; font-weight: 400; color: var(--gold, #c9a84c); margin-bottom: 28px; text-align: center; }
+          .engage-next-steps-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 26px; font-weight: 400; color: var(--gold, #c9a84c); margin-bottom: 28px; text-align: center; }
           .engage-next-steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-          .engage-next-step-num { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 32px; color: var(--gold, #c9a84c); margin-bottom: 8px; }
+          .engage-next-step-num { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 32px; color: var(--gold, #c9a84c); margin-bottom: 8px; }
           .engage-next-step-title { font-size: 15px; font-weight: 600; color: var(--text-primary, #f2f2f2); margin-bottom: 8px; }
           .engage-next-step-desc { font-size: 13px; line-height: 1.7; color: var(--text-secondary, #999); }
           @media (max-width: 768px) { .engage-next-steps-grid { grid-template-columns: 1fr; gap: 32px; } }

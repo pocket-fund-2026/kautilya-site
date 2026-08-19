@@ -20,11 +20,11 @@ function CaseStudies() {
       <style dangerouslySetInnerHTML={{ __html: `
         .case-studies-section { max-width: 1200px; margin: 0 auto; padding: 60px 48px 20px; }
         .case-studies-eyebrow { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
-        .case-studies-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 32px; font-weight: 400; color: var(--text-primary); margin: 0 0 32px; }
+        .case-studies-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 32px; font-weight: 400; color: var(--text-primary); margin: 0 0 32px; }
         .case-studies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .case-study-card { display: block; text-decoration: none; padding: 24px; border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.2s; }
         .case-study-card:hover { border-color: var(--gold); }
-        .case-study-card-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 19px; line-height: 1.3; color: var(--text-primary); margin-bottom: 10px; }
+        .case-study-card-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 19px; line-height: 1.3; color: var(--text-primary); margin-bottom: 10px; }
         .case-study-card-desc { font-size: 13px; line-height: 1.7; color: var(--text-secondary); }
         @media (max-width: 900px) { .case-studies-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 640px) { .case-studies-grid { grid-template-columns: 1fr; } .case-studies-section { padding: 40px 24px 0; } }

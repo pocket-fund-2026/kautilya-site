@@ -70,7 +70,7 @@ export default function NewsletterJSWAkzoNobel() {
         .blog-author-byline a:hover { border-bottom-color: var(--gold); }
 
         .story-body h3 {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 21px;
           font-weight: 500;
           color: var(--text-primary);
@@ -146,7 +146,7 @@ export default function NewsletterJSWAkzoNobel() {
         }
         .pc-cell.highlight { background: rgba(201,185,154,0.04); }
         .pc-value {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 30px;
           font-weight: 500;
           line-height: 1;
@@ -216,7 +216,7 @@ export default function NewsletterJSWAkzoNobel() {
           padding: 22px 0;
         }
         .blog-faq-q {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 500;
           color: var(--text-primary);

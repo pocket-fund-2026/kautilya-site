@@ -1777,7 +1777,7 @@ a.deal-card { cursor: pointer; }
 
 /* H3 for FAQ questions and sub-sections inside a story */
 .story-body h3 {
-  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-family: var(--font-fraunces), 'Fraunces', serif;
   font-size: 21px;
   font-weight: 400;
   color: var(--text-primary);
@@ -1794,7 +1794,7 @@ a.deal-card { cursor: pointer; }
 }
 
 .story-faq-title {
-  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-family: var(--font-fraunces), 'Fraunces', serif;
   font-size: 26px;
   font-weight: 400;
   color: var(--gold);
@@ -1815,7 +1815,7 @@ a.deal-card { cursor: pointer; }
 }
 
 .story-faq-q {
-  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-family: var(--font-fraunces), 'Fraunces', serif;
   font-size: 19px;
   font-weight: 400;
   color: var(--text-primary);

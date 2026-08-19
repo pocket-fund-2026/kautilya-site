@@ -179,7 +179,7 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           padding: 22px 0;
         }
         .blog-faq-q {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 500;
           color: var(--text-primary);
@@ -201,7 +201,7 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           border-top: 1px solid var(--border);
         }
         .sources-appendix h3 {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 15px;
           letter-spacing: 1px;
           color: var(--text-primary);
