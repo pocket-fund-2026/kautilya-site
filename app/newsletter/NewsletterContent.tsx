@@ -52,7 +52,7 @@ export default function NewsletterContent() {
           margin-bottom: 28px;
         }
         .blog-card-tag {
-          font-size: 9px;
+          font-size: 10px;
           letter-spacing: 3px;
           text-transform: uppercase;
           color: var(--gold);
@@ -63,12 +63,12 @@ export default function NewsletterContent() {
         .blog-card-sep { width: 1px; height: 10px; background: var(--border); }
         .blog-card-date, .blog-card-readtime {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px;
+          font-size: 13px;
           letter-spacing: 0.5px;
           color: var(--text-muted);
         }
         .blog-card-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 42px;
           font-weight: 500;
           color: var(--text-primary);
@@ -77,7 +77,7 @@ export default function NewsletterContent() {
           margin-bottom: 12px;
         }
         .blog-card-subtitle {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-style: italic;
           font-weight: 400;

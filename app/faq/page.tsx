@@ -304,7 +304,7 @@ export default function FaqPage() {
         }
 
         .faq-section-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 28px;
           font-weight: 400;
           color: var(--gold);
@@ -327,7 +327,7 @@ export default function FaqPage() {
         }
 
         .faq-question {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 400;
           color: var(--text-primary);
@@ -348,7 +348,7 @@ export default function FaqPage() {
         }
 
         .faq-cta-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 28px;
           font-weight: 400;
           color: var(--text-primary);

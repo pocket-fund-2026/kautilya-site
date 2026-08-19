@@ -133,7 +133,7 @@ return (
   }
 
   .intro h1 {
-    font-family: var(--font-cormorant), 'Cormorant', serif;
+    font-family: var(--font-fraunces), 'Fraunces', serif;
     font-size: 52px; font-weight: 600; color: var(--text-primary);
     margin-top: 24px; letter-spacing: 2px; line-height: 1.2;
     opacity: 1;
@@ -186,8 +186,8 @@ return (
   }
   .sky-text-overlay.visible { opacity: 1; }
   .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(236,221,191,0.95); margin-bottom: 18px; text-shadow: 0 2px 18px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px; border-radius: 999px; background: rgba(8,12,22,0.58); border: 1px solid rgba(201,185,154,0.28); backdrop-filter: blur(4px); }
-  .sky-text-overlay .main-text { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75), 0 2px 8px rgba(0,0,0,0.95); max-width: 620px; }
-  .sky-text-overlay .hero-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; padding-left: 24px; color: #FFFBF5; margin-bottom: 8px; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35), 0 3px 12px rgba(0,0,0,0.95); }
+  .sky-text-overlay .main-text { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75), 0 2px 8px rgba(0,0,0,0.95); max-width: 620px; }
+  .sky-text-overlay .hero-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; padding-left: 24px; color: #FFFBF5; margin-bottom: 8px; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35), 0 3px 12px rgba(0,0,0,0.95); }
   .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.88); margin-top: 6px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px 7px 21px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); backdrop-filter: blur(4px); }
   .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.72); margin-top: 12px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 14px rgba(0,0,0,0.82), 0 1px 4px rgba(0,0,0,0.95); }
   .sky-text-overlay .devanagari { font-size: 13px; color: rgba(225, 201, 154, 0.82); margin-top: 26px; letter-spacing: normal; word-spacing: 8px; white-space: nowrap; display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); text-shadow: 0 1px 10px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.95); }
@@ -206,8 +206,8 @@ return (
   .process-pillar { position: relative; padding-top: 40px; }
   .pillar-line { width: 1px; height: 0; background: linear-gradient(to bottom, var(--gold), transparent); margin-bottom: 20px; transition: height 1s ease; }
   .pillar-line.drawn { height: 32px; }
-  .pillar-number { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 42px; font-weight: 300; color: var(--border-light); position: absolute; top: 0; right: 0; }
-  .pillar-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 22px; font-weight: 500; color: var(--text-primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
+  .pillar-number { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 42px; font-weight: 300; color: var(--border-light); position: absolute; top: 0; right: 0; }
+  .pillar-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 22px; font-weight: 500; color: var(--text-primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
   .pillar-body { font-size: 14px; color: var(--text-secondary); line-height: 1.8; }
 
   .pathways-section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
@@ -349,7 +349,7 @@ return (
             maxWidth: 700,
             padding: '30px 0 30px 28px',
             borderLeft: '2px solid var(--gold)',
-            fontFamily: "var(--font-cormorant), Cormorant, serif",
+            fontFamily: "var(--font-fraunces), Fraunces, serif",
             fontSize: 24,
             fontStyle: 'italic',
             lineHeight: '1.8',

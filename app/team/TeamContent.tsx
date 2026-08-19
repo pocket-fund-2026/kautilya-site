@@ -215,7 +215,7 @@ export default function TeamContent() {
         }
 
         .value-word {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 24px;
           font-weight: 500;
           color: var(--text-primary);
@@ -279,7 +279,7 @@ export default function TeamContent() {
         }
 
         .avatar-placeholder {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 48px;
           font-weight: 300;
           color: var(--text-faint);
@@ -390,7 +390,7 @@ export default function TeamContent() {
 
         /* Typography below the card */
         .member-name {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 24px;
           font-weight: 500;
           color: var(--text-primary);

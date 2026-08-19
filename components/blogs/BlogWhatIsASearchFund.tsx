@@ -45,7 +45,7 @@ export default function BlogWhatIsASearchFund() {
       <style dangerouslySetInnerHTML={{ __html: `
         .blog-author-byline {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13px;
+          font-size: 14px;
           color: var(--text-muted);
           margin-top: 14px;
           margin-bottom: 0;
@@ -60,7 +60,7 @@ export default function BlogWhatIsASearchFund() {
 
         .currency-note {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px;
+          font-size: 13px;
           font-style: italic;
           color: var(--text-muted);
           margin: 14px 0 0;
@@ -78,11 +78,11 @@ export default function BlogWhatIsASearchFund() {
           width: 100%;
           border-collapse: collapse;
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13.5px;
+          font-size: 14.5px;
         }
         .deal-table th {
           text-align: left;
-          font-size: 10px;
+          font-size: 11px;
           letter-spacing: 2px;
           text-transform: uppercase;
           color: var(--gold);
@@ -133,7 +133,7 @@ export default function BlogWhatIsASearchFund() {
           padding: 22px 0;
         }
         .blog-faq-q {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 500;
           color: var(--text-primary);
@@ -155,7 +155,7 @@ export default function BlogWhatIsASearchFund() {
           border-top: 1px solid var(--border);
         }
         .sources-appendix h3 {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 15px;
           letter-spacing: 1px;
           color: var(--text-primary);
@@ -164,7 +164,7 @@ export default function BlogWhatIsASearchFund() {
         .sources-appendix p,
         .sources-appendix li {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12.5px;
+          font-size: 13.5px;
           color: var(--text-muted);
           line-height: 1.8;
         }

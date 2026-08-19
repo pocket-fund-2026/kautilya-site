@@ -58,7 +58,7 @@ export default function BlogContent() {
           margin-bottom: 28px;
         }
         .blog-card-tag {
-          font-size: 9px;
+          font-size: 10px;
           letter-spacing: 3px;
           text-transform: uppercase;
           color: var(--gold);
@@ -72,12 +72,12 @@ export default function BlogContent() {
         }
         .blog-card-date, .blog-card-readtime {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px;
+          font-size: 13px;
           letter-spacing: 0.5px;
           color: var(--text-muted);
         }
         .blog-card-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 42px;
           font-weight: 500;
           color: var(--text-primary);
@@ -86,7 +86,7 @@ export default function BlogContent() {
           margin-bottom: 12px;
         }
         .blog-card-subtitle {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-style: italic;
           font-weight: 400;
@@ -136,7 +136,7 @@ export default function BlogContent() {
         }
         .grid-column-head { margin-bottom: 28px; }
         .grid-column-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 30px;
           font-weight: 500;
           color: var(--text-primary);
@@ -145,7 +145,7 @@ export default function BlogContent() {
         }
         .grid-column-desc {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 14px;
+          font-size: 15px;
           color: var(--text-secondary);
           line-height: 1.75;
         }
@@ -200,16 +200,16 @@ export default function BlogContent() {
           margin-bottom: 18px;
         }
         .side-card-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 24px;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
+          font-size: 27px;
           font-weight: 500;
           color: var(--text-primary);
           line-height: 1.25;
           margin-bottom: 8px;
         }
         .side-card-subtitle {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
-          font-size: 15px;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
+          font-size: 16px;
           font-style: italic;
           font-weight: 400;
           color: var(--gold);
@@ -218,7 +218,7 @@ export default function BlogContent() {
         }
         .side-card-excerpt {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13.5px;
+          font-size: 15px;
           color: var(--text-secondary);
           line-height: 1.75;
           margin-bottom: 20px;

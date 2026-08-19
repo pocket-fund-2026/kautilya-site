@@ -42,7 +42,7 @@ export default function NewsletterPharmaValuation() {
       <style dangerouslySetInnerHTML={{ __html: `
         .blog-author-byline {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13px;
+          font-size: 14px;
           color: var(--text-muted);
           margin-top: 14px;
           margin-bottom: 0;
@@ -73,7 +73,7 @@ export default function NewsletterPharmaValuation() {
         }
         .vg-cell.highlight { background: rgba(201,185,154,0.04); }
         .vg-multiple {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 42px;
           font-weight: 500;
           line-height: 1;
@@ -125,7 +125,7 @@ export default function NewsletterPharmaValuation() {
           padding: 22px 0;
         }
         .blog-faq-q {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 500;
           color: var(--text-primary);
@@ -158,7 +158,7 @@ export default function NewsletterPharmaValuation() {
 
         /* h3 inside story-body (globals only defines h2) */
         .story-body h3 {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 22px;
           font-weight: 500;
           color: var(--text-primary);

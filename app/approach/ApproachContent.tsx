@@ -74,7 +74,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .hero-headline {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: clamp(42px, 5vw, 72px);
               font-weight: 400;
               line-height: 1.1;
@@ -96,7 +96,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .hero-sub--accent {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 22px;
               color: var(--text);
               line-height: 1.6;
@@ -118,7 +118,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .services-headline {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: clamp(32px, 4vw, 52px);
               font-weight: 400;
               color: var(--text);
@@ -200,7 +200,7 @@ export default function ApproachContent() {
             .approach-page-methodology .service-stat:last-child { border-right: none; }
 
             .approach-page-methodology .service-stat-num {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 30px;
               font-weight: 500;
               color: var(--gold);
@@ -227,7 +227,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .service-title {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 32px;
               font-weight: 400;
               color: var(--text);
@@ -345,7 +345,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .tab-title {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 17px;
               font-weight: 500;
               color: color-mix(in srgb, var(--text-dim) 90%, #ffffff 10%);
@@ -388,7 +388,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .phase-title {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: clamp(36px, 4vw, 56px);
               font-weight: 400;
               line-height: 1.1;
@@ -397,7 +397,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .phase-hook {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 24px;
               font-style: italic;
               color: var(--text-dim);
@@ -452,7 +452,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .pull-quote p {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 22px;
               font-style: italic;
               color: var(--text) !important;
@@ -536,7 +536,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .card-metric {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 36px;
               font-weight: 500;
               color: var(--gold);
@@ -609,7 +609,7 @@ export default function ApproachContent() {
             .approach-page-methodology .finding-card:hover::after { opacity: 1; }
 
             .approach-page-methodology .finding-num {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 42px;
               font-weight: 500;
               color: var(--gold);
@@ -666,7 +666,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .funnel-num {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 24px;
               color: var(--gold);
               min-width: 60px;
@@ -710,7 +710,7 @@ export default function ApproachContent() {
             .approach-page-methodology .channel-table td:first-child { color: var(--text); }
             .approach-page-methodology .channel-table td.gold {
               color: var(--gold);
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 18px;
             }
 
@@ -740,7 +740,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .sc-num {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 32px;
               color: var(--text);
               line-height: 1;
@@ -789,7 +789,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .deal-card-headline {
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 22px;
               color: var(--text);
               line-height: 1.3;
@@ -841,7 +841,7 @@ export default function ApproachContent() {
               border: 1px solid var(--border);
               padding: 1px 8px;
               border-radius: 1px;
-              font-family: var(--font-cormorant), 'Cormorant', serif;
+              font-family: var(--font-fraunces), 'Fraunces', serif;
               font-size: 18px;
               color: var(--gold);
               vertical-align: middle;

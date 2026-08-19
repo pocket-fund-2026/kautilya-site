@@ -58,7 +58,7 @@ export default function NewsletterAurumHousing() {
       <style dangerouslySetInnerHTML={{ __html: `
         .blog-author-byline {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13px;
+          font-size: 14px;
           color: var(--text-muted);
           margin-top: 14px;
           margin-bottom: 0;
@@ -73,7 +73,7 @@ export default function NewsletterAurumHousing() {
 
         .currency-note {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12px;
+          font-size: 13px;
           font-style: italic;
           color: var(--text-muted);
           margin: 14px 0 0;
@@ -81,7 +81,7 @@ export default function NewsletterAurumHousing() {
         }
 
         .story-body h3 {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 21px;
           font-weight: 500;
           color: var(--text-primary);
@@ -101,11 +101,11 @@ export default function NewsletterAurumHousing() {
           width: 100%;
           border-collapse: collapse;
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 13.5px;
+          font-size: 14.5px;
         }
         .deal-table th {
           text-align: left;
-          font-size: 10px;
+          font-size: 11px;
           letter-spacing: 2px;
           text-transform: uppercase;
           color: var(--gold);
@@ -179,7 +179,7 @@ export default function NewsletterAurumHousing() {
         .sources-appendix p,
         .sources-appendix li {
           font-family: var(--font-lora), 'Lora', serif;
-          font-size: 12.5px;
+          font-size: 13.5px;
           color: var(--text-muted);
           line-height: 1.8;
         }

@@ -121,7 +121,7 @@ export default function StoriesContent() {
         }
 
         .video-card-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 22px;
           font-weight: 500;
           color: #fff;
@@ -213,7 +213,7 @@ export default function StoriesContent() {
         .yt-cta-text { flex: 1; }
 
         .yt-cta-title {
-          font-family: var(--font-cormorant), 'Cormorant', serif;
+          font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 20px;
           font-weight: 500;
           color: var(--text-primary);

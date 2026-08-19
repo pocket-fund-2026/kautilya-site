@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { Cormorant, Lora } from 'next/font/google';
+import { Fraunces, Lora } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from '@/components/Header';
@@ -11,12 +11,12 @@ import NewsletterPopup from '@/components/NewsletterPopup';
 import SmoothScroll from '@/components/SmoothScroll';
 import './globals.css';
 
-const cormorant = Cormorant({
+const fraunces = Fraunces({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-cormorant',
+  variable: '--font-fraunces',
 });
 
 const lora = Lora({
@@ -178,7 +178,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${lora.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${lora.variable}`}>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
