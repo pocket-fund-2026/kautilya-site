@@ -142,10 +142,10 @@ body {
 }
 
 .header .logo-text {
-  font-family: var(--font-fraunces), 'Fraunces', serif;
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--text-primary);
 }
@@ -1974,8 +1974,8 @@ a.deal-card { cursor: pointer; }
   }
 
   .header .logo-text {
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 18px;
+    letter-spacing: 3px;
   }
 
   .hamburger {
@@ -2379,8 +2379,8 @@ a.deal-card { cursor: pointer; }
   }
 
   .header .logo-text {
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 
   .header nav {
