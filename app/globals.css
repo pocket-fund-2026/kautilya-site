@@ -128,17 +128,21 @@ body {
 }
 
 .header .logo {
-  font-family: var(--font-fraunces), 'Fraunces', serif;
-  font-size: 14px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--header-footer-accent);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  transition: color 0.4s;
+  transition: opacity 0.4s;
 }
 
-.header.header--sky .logo { color: rgba(249,248,246,0.75); }
+.header .logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.header .logo:hover { opacity: 0.85; }
+
+.header.header--sky .logo { opacity: 0.85; }
 
 .header nav { display: flex; gap: 28px; align-items: center; }
 
@@ -1951,9 +1955,11 @@ a.deal-card { cursor: pointer; }
   }
 
   .header .logo {
-    font-size: 11px;
-    letter-spacing: 6px;
     flex: 1;
+  }
+
+  .header .logo img {
+    height: 24px;
   }
 
   .hamburger {
@@ -2348,9 +2354,8 @@ a.deal-card { cursor: pointer; }
     padding: 14px 16px;
   }
 
-  .header .logo {
-    font-size: 10px;
-    letter-spacing: 4px;
+  .header .logo img {
+    height: 20px;
   }
 
   .header nav {

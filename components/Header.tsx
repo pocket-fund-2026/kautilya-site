@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const MOBILE_MENU_CLOSE_MS = 220;
@@ -74,7 +75,15 @@ export default function Header() {
 
   return (
     <header className={`header${menuVisible ? ' menu-open' : ''}`} id="mainHeader">
-      <Link className="logo" href="/">Kautilya</Link>
+      <Link className="logo" href="/">
+        <Image
+          src="/images/kautilya-logo.png"
+          alt="Kautilya"
+          width={1775}
+          height={819}
+          priority
+        />
+      </Link>
 
       <Link className="cta-btn-compact" href="/engage">Engage</Link>
 
