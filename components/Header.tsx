@@ -76,6 +76,8 @@ export default function Header() {
     <header className={`header${menuVisible ? ' menu-open' : ''}`} id="mainHeader">
       <Link className="logo" href="/">Kautilya</Link>
 
+      <Link className="cta-btn-compact" href="/engage">Engage</Link>
+
       <button
         className={`hamburger${menuVisible ? ' active' : ''}`}
         onClick={toggleMenu}

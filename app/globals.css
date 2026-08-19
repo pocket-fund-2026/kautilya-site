@@ -231,6 +231,14 @@ body {
   display: none;
 }
 
+/* Compact "Engage" CTA shown in the header bar itself on mobile (see
+   768px breakpoint below) so the primary conversion action stays visible
+   without requiring the hamburger menu to be opened. Hidden on desktop,
+   where the full-size .cta-btn already covers this. */
+.cta-btn-compact {
+  display: none;
+}
+
 /* ===== PAGE WRAPPER ===== */
 .page {
   padding-top: 80px;
@@ -354,6 +362,29 @@ body {
   font-size: 16px;
   color: var(--text-muted);
   margin-bottom: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer-contact a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: var(--header-footer-accent);
+}
+
+.footer-contact-address {
+  letter-spacing: 0.3px;
 }
 
 .footer-social {
@@ -536,7 +567,7 @@ body {
 .portfolio-page .section-body {
   font-size: 17px;
   line-height: 1.85;
-  max-width: 760px;
+  max-width: 880px;
 }
 
 /* Stats bar */
@@ -1467,7 +1498,7 @@ a.deal-card { cursor: pointer; }
 
 /* Story body */
 .story-body {
-  max-width: 720px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 48px 100px;
 }
@@ -1648,6 +1679,192 @@ a.deal-card { cursor: pointer; }
   color: var(--gold-dim);
 }
 
+/* Short-answer block (the searchable answer-first summary at top of a story) */
+.short-answer {
+  margin: 40px 0 48px;
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  background: rgba(255,255,255,0.015);
+}
+
+.short-answer-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  font-family: var(--font-lora), 'Lora', serif;
+}
+
+.short-answer p {
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--text-primary);
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Proof block (tinted callout carrying the real-deal evidence inside a method step) */
+.proof-block {
+  margin: 32px 0;
+  padding: 26px 28px;
+  background: rgba(201,168,76,0.035);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold-dim);
+}
+
+.proof-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-family: var(--font-lora), 'Lora', serif;
+}
+
+.proof-block p {
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.proof-block p + p { margin-top: 14px; }
+
+/* Data table (structure tables, gate tables, etc.) */
+.data-table-wrap {
+  margin: 32px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 380px;
+  border-collapse: collapse;
+  font-family: var(--font-lora), 'Lora', serif;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.data-table th {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.data-table td { color: var(--text-secondary); }
+.data-table td:first-child { color: var(--text-primary); }
+
+@media (max-width: 640px) {
+  .data-table { min-width: 0; }
+  .data-table th,
+  .data-table td { padding: 10px 12px; font-size: 13px; }
+}
+
+/* H3 for FAQ questions and sub-sections inside a story */
+.story-body h3 {
+  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: 0.3px;
+  margin: 40px 0 12px;
+  line-height: 1.3;
+}
+
+/* Story FAQ section */
+.story-faq {
+  margin: 64px 0 0;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.story-faq-title {
+  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+.story-faq-item {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.story-faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.story-faq-q {
+  font-family: var(--font-cormorant), 'Cormorant', serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+
+.story-faq-a {
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+/* Visible freshness line */
+.last-updated {
+  font-family: var(--font-lora), 'Lora', serif;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin: 0 0 32px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .short-answer { padding: 22px 20px; margin: 32px 0 40px; }
+  .short-answer p { font-size: 15px; }
+  .proof-block { padding: 20px 18px; margin: 28px 0; }
+  .proof-block p { font-size: 14px; }
+  .story-faq { margin-top: 48px; padding-top: 40px; }
+  .story-faq-title { font-size: 23px; margin-bottom: 22px; }
+  .story-faq-item { margin-bottom: 26px; padding-bottom: 26px; }
+  .story-faq-q { font-size: 17px; }
+  .story-faq-a { font-size: 14px; }
+  .story-body h3 { font-size: 19px; margin: 32px 0 10px; }
+}
+
+@media (max-width: 480px) {
+  .short-answer { padding: 18px 16px; }
+  .short-answer-label { font-size: 9px; letter-spacing: 2px; }
+  .short-answer p { font-size: 14px; line-height: 1.75; }
+  .proof-block { padding: 16px 14px; }
+  .proof-label { font-size: 9px; }
+  .proof-block p { font-size: 13.5px; line-height: 1.7; }
+  .story-faq-q { font-size: 16px; }
+  .story-faq-a { font-size: 13.5px; }
+  .last-updated { font-size: 11px; }
+}
+
 /* Final callout */
 .story-coda {
   margin: 56px 0 0;
@@ -1757,9 +1974,32 @@ a.deal-card { cursor: pointer; }
     background: rgba(249,248,246,0.7);
   }
 
-  /* Hide CTA from header bar on mobile – it appears inside the menu */
+  /* Hide the full-size desktop CTA on mobile – replaced by the compact
+     header CTA below, so a persistent "Engage" action stays visible
+     without requiring the hamburger menu to be opened. */
   .header > .cta-btn {
     display: none;
+  }
+
+  .cta-btn-compact {
+    display: inline-block;
+    order: 2;
+    font-family: var(--font-lora), 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    margin-right: 8px;
+    background: transparent;
+    border: 1px solid var(--header-footer-accent-dim);
+    color: var(--header-footer-accent);
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .header.header--sky .cta-btn-compact {
+    color: rgba(249,248,246,0.75);
   }
 
   .header nav {
@@ -2127,6 +2367,13 @@ a.deal-card { cursor: pointer; }
     padding: 12px 28px;
   }
 
+  .cta-btn-compact {
+    font-size: 8px;
+    padding: 7px 10px;
+    margin-right: 4px;
+    letter-spacing: 1px;
+  }
+
   /* Footer */
   .footer {
     padding: 30px 16px 24px;
@@ -2324,7 +2571,8 @@ a.deal-card { cursor: pointer; }
   }
 
   .story-hero h1 {
-    font-size: 28px;
+    font-size: 25px;
+    letter-spacing: 0.3px;
   }
 
   .story-hero .subtitle {

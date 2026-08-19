@@ -204,7 +204,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SmoothScroll />
         <SplashCursorWrapper />
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
         <ScrollToTop />
         <NewsletterPopup />

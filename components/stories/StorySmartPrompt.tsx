@@ -2,14 +2,13 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StorySmartPrompt() {
   useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('SmartPrompt: Two Deals Killed, One Asset Acquired , via @kautilya');
+    const text = encodeURIComponent('When to walk away from an acquisition, and how to decide , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -19,7 +18,7 @@ export default function StorySmartPrompt() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('SmartPrompt: Two Deals Killed, One Asset Acquired');
+    const subject = encodeURIComponent('When to Walk Away From an Acquisition (and How to Decide)');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -82,173 +81,203 @@ export default function StorySmartPrompt() {
       </div>
 
       <div className="story-hero" id="storyStart">
-        <Link href="/portfolio" className="back-link">&larr; Portfolio</Link>
+        <Link href="/portfolio" className="back-link">← Portfolio</Link>
         <div className="meta-row">
-          <span className="meta-tag sector">GPT &amp; AI Education</span>
+          <span className="meta-tag sector">GPT & AI Education</span>
           <span className="meta-tag geo">Global / ChatGPT Ecosystem</span>
           <span className="meta-tag stage">Full Mandate</span>
         </div>
-        <h1>SmartPrompt: Two Deals Killed. One Asset Acquired.</h1>
+        <h1>When to Walk Away From an Acquisition (and How to Decide)</h1>
         <div className="subtitle">
-          How Kautilya converted an undefined acquisition mandate into a structured deployment strategy, walked away from two deals mid-process, and closed a GPT-native education platform at a 200x discount to market comparables.
+          How Kautilya killed two deals and closed one at a 200x discount, using go/no-go gates defined before
+          any target was in sight.
         </div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/smart-prompt/kill.png" alt="Two deal folders marked with red X and one open folder lit in gold representing SmartPrompt kill discipline" width={1200} height={675} />
-        </figure>
+        <div className="last-updated">Last updated: August 14, 2026</div>
 
-        <p>
-          The mandate started without a target. A first-time acquirer with $50K in deployable capital, a strong
-          interest in AI-native assets, and no acquisition framework. Kautilya&rsquo;s task: define what to buy,
-          find it, evaluate it, and close it &mdash; or walk away if the numbers did not work.
-        </p>
-        <p>
-          Over twelve weeks, the team evaluated approximately 300 opportunities, entered serious negotiations on
-          three, killed two mid-process, and closed one &mdash; a GPT-native education platform with 2.5 million
-          cumulative conversations and roughly 100,000 monthly active users.
-        </p>
-
-        <div className="pull-quote">
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
           <p>
-            The discipline to kill a deal is worth more than the deal itself. Two of the three
-            opportunities looked attractive on paper. Neither survived diligence.
+            Decide before you look. Build hard go/no-go gates covering financial reality, risk, market, price and
+            structure, then apply them even after weeks of diligence. A strong business wrapped in a bad structure
+            is still a bad acquisition, and walking away, even post-LOI, is the process working. Below is how that
+            discipline works, and how it led a first-time acquirer to kill two deals and close the right one at a
+            200x discount.
           </p>
         </div>
 
-        <h2>The Asset</h2>
         <p>
-          SmartPrompt is a portfolio of 30&ndash;35 custom GPTs within the ChatGPT ecosystem, with 2.5M+
-          cumulative conversations and approximately 100K monthly active users. Revenue is derived from
-          ChatGPT&rsquo;s revenue sharing program. At $12K, the acquisition price works out to $0.0048
-          per conversation &mdash; a 200x discount to comparable assets in the market.
+          Deal fever is real and well-documented: once a buyer has a target in their sights, momentum and sunk cost
+          make it hard to stop, and surveys have found roughly a third of acquirers admit they didn&rsquo;t walk
+          away from deals they had genuine doubts about. The protection isn&rsquo;t willpower in the moment,
+          it&rsquo;s a set of decision gates defined before you start looking, applied the same way whether
+          you&rsquo;re at first glance or a signed letter of intent.
+        </p>
+        <p>
+          Here is how that plays out in practice. A first-time acquirer with a technical background and $50K came
+          to Kautilya with capital and intent but no framework, an open-ended interest in AI and SaaS and a real
+          risk of buying on enthusiasm. Kautilya&rsquo;s job was to build the discipline before the deals, then
+          hold it. Across the mandate that meant screening about 300 opportunities, three serious negotiations, two
+          deals deliberately killed, and one closed at roughly a 200x discount to comparable pricing.
         </p>
 
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/smart-prompt/300.png" alt="Funnel visualisation showing 300 opportunities narrowing to one closed acquisition" width={1200} height={675} />
-        </figure>
-
-        <h2>The Five-Gate Evaluation Framework</h2>
+        <h2>Why walking away is the skill that protects your capital</h2>
         <p>
-          Before reviewing a single listing, Kautilya built a structured evaluation framework for the buyer.
-          Every opportunity had to pass five gates: market defensibility, revenue quality, operational
-          transferability, valuation discipline, and post-close readiness. This prevented the analysis paralysis
-          that kills most first-time acquisition mandates.
+          The instinct most buyers need to unlearn is that a killed deal is a failure. It isn&rsquo;t. In a
+          disciplined process, the deals you don&rsquo;t do are as much a product of the work as the one you close,
+          because each one you correctly avoid preserves capital and negotiating position for the right target.
         </p>
-        <ul className="constraint-list">
-          <li>Acquisition Mandate Definition</li>
-          <li>Five-Gate Evaluation Framework</li>
-          <li>Off-Market Sourcing Pipeline</li>
-          <li>Deal Termination Analysis (x2)</li>
-          <li>GPT-Native Technical Diligence</li>
-          <li>Transaction Structuring &amp; Execution</li>
-        </ul>
-
-        <h2>Deal #1: ResearchKick &mdash; Killed Pre-LOI</h2>
-        <p>
-          ResearchKick was an AI research tool with strong metrics and an attractive price. But the deal
-          structure was fatally flawed. The seller retained financing leverage and competitive positioning
-          post-close. Value erosion was structurally likely, with the buyer locked into an asset whose growth
-          depended on a seller who had no incentive to cooperate.
-        </p>
-        <p>
-          Kautilya recommended termination before the LOI stage. Walking away early preserved both capital
-          and negotiating position for the deals that followed.
-        </p>
-
-        <h2>Deal #2: Keymate AI &mdash; Killed Post-LOI</h2>
-        <p>
-          Keymate AI passed initial screening and reached the LOI stage. But post-LOI diligence revealed
-          deteriorating fundamentals masked by headline metrics. Early user churn was likely to continue or
-          accelerate. Without this kill, the buyer would have closed on an asset with declining engagement
-          and no structural moat.
-        </p>
-        <p>
-          The post-LOI termination preserved approximately $27K in capital that would have been deployed
-          into a declining asset.
-        </p>
-
-        <h2>Deal #3: SmartPrompt &mdash; Closed</h2>
-        <p>
-          SmartPrompt cleared all five gates. The GPT portfolio had genuine user engagement, minimal
-          operational overhead, and a clear path to monetization improvement. At $12K all-cash, the
-          valuation provided asymmetric upside with minimal downside &mdash; a textbook micro-PE entry point.
-        </p>
-        <p>
-          The transaction completed in twelve weeks from mandate definition to close. 100% equity transfer.
-          Day-one operational readiness. The buyer deployed with a structured framework, not a guess.
-        </p>
-
-        <div className="phase-timeline">
-          <div className="phase-block">
-            <div className="phase-label">Weeks 1&ndash;2 &middot; Mandate &amp; Sourcing</div>
-            <p>
-              Defined the acquisition mandate, built the five-gate framework, and began sourcing across
-              off-market channels. Approximately 300 opportunities evaluated at the top of the funnel.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">Week 4 &middot; ResearchKick Killed</div>
-            <p>
-              Structural analysis revealed misaligned incentives in the proposed deal. Terminated pre-LOI
-              to preserve capital and negotiating leverage.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">Week 7 &middot; Keymate AI Killed</div>
-            <p>
-              Post-LOI diligence uncovered deteriorating user metrics masked by topline numbers. Terminated
-              to preserve approximately $27K in deployable capital.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">Weeks 9&ndash;11 &middot; SmartPrompt Due Diligence</div>
-            <p>
-              GPT-native technical diligence across the full portfolio. Validated conversation metrics,
-              user retention, revenue sharing economics, and operational transfer requirements.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">Week 12 &middot; Close</div>
-            <p>
-              All-cash transaction at $12K. 100% equity transfer. Operator recruited and onboarded.
-              Day-one operational readiness achieved.
-            </p>
-          </div>
+        <div className="proof-block">
+          <div className="proof-label">Why It Mattered</div>
+          <p>
+            Across this mandate, two of the three opportunities that reached serious negotiation did not survive
+            scrutiny. Killing them was not lost work, it preserved an estimated $30K to $65K in losses and
+            overpayment, and kept the buyer&rsquo;s capital and attention available for the deal that did clear.
+          </p>
         </div>
 
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/smart-prompt/discount.png" alt="$12K price tag above 2.5 million conversations showing the 200x pricing efficiency of the SmartPrompt acquisition" width={1200} height={675} />
-        </figure>
+        <h2>The five gates every deal should clear</h2>
+        <p>
+          The framework has to exist before you see a single target, or excitement and sunk cost will bend the
+          decision when they arrive. Every opportunity clears the same five gates in sequence, and any failure is
+          an automatic disqualification, no progression on sector enthusiasm alone. Kautilya built these gates
+          first, then ran every opportunity through them.
+        </p>
 
-        <h2>What the Buyer Walked Away With</h2>
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">$12K</div>
-            <div className="metric-label">Acquisition Price</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">2.5M</div>
-            <div className="metric-label">Conversations</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~100K</div>
-            <div className="metric-label">Monthly Active Users</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">200x</div>
-            <div className="metric-label">Pricing Efficiency</div>
-          </div>
+        <div className="data-table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Gate</th>
+                <th>What it confirms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1. Financial reality</td><td>The business is economically real, cash-flow quality, revenue concentration, unit economics.</td></tr>
+              <tr><td>2. Risk identification</td><td>Structural and operational risks surfaced, regulatory, competitive, dependency.</td></tr>
+              <tr><td>3. Market validation</td><td>The market has depth and durability, saturation, growth ceiling, intensity.</td></tr>
+              <tr><td>4. Price discipline</td><td>Price reflects risk, risk-adjusted valuation, comparables, a defined walk-away threshold.</td></tr>
+              <tr><td>5. Deal structure</td><td>The deal works after close, term-sheet adequacy, risk allocation, transferability.</td></tr>
+            </tbody>
+          </table>
         </div>
 
         <p>
-          Beyond the closed asset, the buyer received a complete acquisition infrastructure: a defined
-          mandate, a repeatable evaluation framework, an off-market sourcing pipeline, two documented deal
-          termination analyses, and a post-close transition playbook. The $12K acquisition was the output.
-          The process that produced it is the lasting value.
+          The sequence matters. The early gates are cheap to run and kill weak deals fast; the later gates are
+          where sunk cost has already built up, which is exactly why they have to be as binding as the first.
         </p>
+
+        <h2>Killing a deal on structure, not just the numbers</h2>
+        <p>
+          Some businesses are perfectly healthy and still bad acquisitions, because of how the deal is built. A
+          strong operating business wrapped in a structure that leaves the seller with leverage, a conflict, or a
+          way to erode value post-close is not worth doing at any price. This is the trap the fifth gate exists to
+          catch.
+        </p>
+        <p>The first serious target was exactly that trap, and the team called it.</p>
+        <div className="proof-block">
+          <div className="proof-label">Deal One · Killed Pre-LOI</div>
+          <p>
+            The target had about $3K MRR, a credible niche brand, positive growth and viable fundamentals. It
+            passed the first three gates. It failed on structure: the seller required seller financing as the
+            primary structure (leaving the buyer with insufficient downside protection), ran a competing product
+            concurrently, and rejected every risk-mitigation term offered, non-compete, revenue-share, equity
+            alignment. Kautilya advised killing it pre-LOI. The principle it established held for the rest of the
+            mandate: a strong business plus an inadequate structure equals a poor acquisition.
+          </p>
+        </div>
+
+        <h2>Why the LOI is not the finish line</h2>
+        <p>
+          A signed letter of intent feels like a commitment, and that feeling is precisely the danger. Post-LOI
+          diligence exists to catch what screening missed, and it&rsquo;s where deterioration hides behind headline
+          metrics. The gates have to keep binding after the LOI, when momentum is strongest and walking away feels
+          most costly. It usually isn&rsquo;t.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">Deal Two · Terminated Post-LOI</div>
+          <p>
+            The second target passed screening and reached a signed LOI. Then seven days of post-LOI diligence
+            surfaced four critical risks: a 7-day churn rate high enough to structurally compromise revenue,
+            cash-flow fluctuations with no stabilisation trend (making downside modelling impossible), no
+            proprietary technology (replicable with minimal effort), and entirely founder-dependent operations with
+            no team, documentation or transferable process. Favourable terms and a 25% upfront couldn&rsquo;t
+            offset that concentration of risk. Kautilya recommended termination; the LOI was walked, preserving
+            roughly $9K to $15K a completed deal would likely have lost within 6 to 12 months.
+          </p>
+        </div>
+        <p>
+          Post-LOI termination is uncommon precisely because of momentum bias, which is what makes it a signal of
+          discipline rather than indecision. Walking away here was the framework working exactly as designed.
+        </p>
+
+        <h2>What the discipline produced</h2>
+        <p>
+          The one deal that cleared all five gates was a GPT-native education platform with 2.5M conversations of
+          usage history, acquired for $12,000, all-cash, zero contingencies, about $0.0048 per conversation against
+          $2 to $3 for comparable assets, a discount of roughly 200x. Because the earlier gates had done their
+          work, diligence on the winning deal took only a few hours; the framework had already filtered out
+          everything that would have needed defending.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The Real Deliverable</div>
+          <p>
+            The buyer walked away with more than one asset. They had a defined acquisition mandate, a reusable
+            five-gate framework, two documented kill analyses, a clean 200x-discount acquisition, and a post-close
+            operator already prepared. The reusable framework, not any single deal, was the durable product of the
+            engagement, and building that discipline into a first-time buyer is exactly the kind of outcome
+            Kautilya is engaged to deliver. If you want that same discipline built for your own mandate,{' '}
+            <Link href="/engage">Kautilya can build the gates with you</Link>.
+          </p>
+        </div>
+
+        <p>
+          The same five gates are what surface the numbers a target has to survive in the first place, whether
+          that&rsquo;s{' '}
+          <Link href="/stories/msp-buy-side-diligence">rebuilding an MSP&rsquo;s margins from source</Link> or{' '}
+          <Link href="/stories/inspire3">validating an online business&rsquo;s revenue transaction by transaction</Link>.
+        </p>
+
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">When should you walk away from an acquisition?</h3>
+            <p className="story-faq-a">
+              When a target fails a predefined gate, financial reality, risk, market, price or structure, even
+              after weeks of diligence. Sunk cost is not a reason to close a bad deal; the gates exist so the
+              decision is made on fundamentals, not momentum.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What are the red flags that should kill a deal?</h3>
+            <p className="story-faq-a">
+              A structure that leaves the seller with leverage or a competing interest, fundamentals deteriorating
+              beneath healthy headline metrics, no defensible moat, and total founder dependency. A single flag may
+              be manageable; a concentration of them rarely is. How a seller responds when you raise a problem is
+              itself a signal.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">Is it normal to walk away after signing an LOI?</h3>
+            <p className="story-faq-a">
+              Yes. An LOI is not a binding commitment to close; post-LOI diligence exists to catch problems
+              screening missed. Terminating there is uncommon only because momentum makes it feel costly, which is
+              why the discipline matters. In this mandate, one of the two kills happened after the LOI.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What is a five-gate deal evaluation framework?</h3>
+            <p className="story-faq-a">
+              A fixed sequence of go/no-go checks, financial reality, risk, market, price discipline and deal
+              structure, that every opportunity must clear before progressing. Failing any gate is automatic
+              disqualification. Defined before sourcing, it converts evaluation from enthusiasm into consistent,
+              risk-adjusted analysis.
+            </p>
+          </div>
+        </div>
 
         <div className="story-coda">
           <div className="coda-text">

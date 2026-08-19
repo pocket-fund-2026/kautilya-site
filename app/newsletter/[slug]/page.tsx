@@ -4,6 +4,7 @@ import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/ne
 import NewsletterAurumHousing from '@/components/newsletters/NewsletterAurumHousing';
 import NewsletterPharmaValuation from '@/components/newsletters/NewsletterPharmaValuation';
 import NewsletterLockheedUltraMaritime from '@/components/newsletters/NewsletterLockheedUltraMaritime';
+import NewsletterJSWAkzoNobel from '@/components/newsletters/NewsletterJSWAkzoNobel';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -11,6 +12,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,
   'torrent-jb-chemicals-pharma-valuation': NewsletterPharmaValuation,
   'lockheed-ultra-maritime-acquisition-teardown': NewsletterLockheedUltraMaritime,
+  'jsw-paints-akzo-nobel-dulux-acquisition-explained': NewsletterJSWAkzoNobel,
 };
 
 type Props = {
@@ -27,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!meta) return {};
 
   const fullTitle = meta.subtitle ? `${meta.title}: ${meta.subtitle}` : meta.title;
-  const pageTitle = `${meta.title} | Kautilya Newsletter`;
+  const pageTitle = `${meta.title} | Kautilya`;
   const kw = meta.keywords ?? [];
 
   return {

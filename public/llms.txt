@@ -40,7 +40,7 @@ Buy-side due diligence across 8 workstreams: financial reconstruction, revenue q
 ### Phase 5: Execution and Close
 Deal structuring (earnouts, deferred consideration, seller financing), negotiation support, closing coordination, and operator placement post-acquisition.
 
-## Track Record
+## Key Facts / Track Record
 
 - 7+ acquisitions completed, 2 successful exits
 - $1.5M+ total deal value closed
@@ -53,31 +53,64 @@ Deal structuring (earnouts, deferred consideration, seller financing), negotiati
 - Full-scope diligence delivered in under 15 days (Inspire3)
 - Response rate improvement: <5% to 20–40% through channel optimisation
 
-## Closed Deals
+## Closed Deals & Method Guides
 
-### Confidential MSP — $21M Buy-Side Due Diligence
-Type: Forensic Due Diligence. Kautilya rebuilt a California-based managed service provider's economics from primary operational data — 303 customer agreements modeled and 51,063 time entries re-costed across three reconciled systems (ConnectWise, Metabase, Intuit). Turned a distrusted 32% blended gross margin into a defensible ~45% recurring margin and identified $3.2M of non-delivery labor driving the EBITDA gap. Revenue audited: ~$21M (3-year). ~300 analyst-hours, 2 analysts, ~1 month.
-More: [Confidential MSP Case Study](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
+Kautilya publishes its acquisition method as answer-first how-to guides, each grounded in a real,
+anonymized engagement. These are the six most-cited:
 
-### Inspire3 — $1.8M Digital Wellness Portfolio
-Type: Forensic Due Diligence. Kautilya audited 30,134 transactions across 19 websites in under 15 days. Surfaced 7 discrepancies including a $57K financial gap and $3.1M in misclassified affiliate liabilities. Revenue validated: $1.4M. Match rate: 99.83%.
-More: [Inspire3 Case Study](https://www.kautilya-pe.com/stories/inspire3)
+### How to Buy a Business With Seller Financing (When the Revenue Isn't Proven Yet)
+Method: underwrite the base valuation only on verified, collected cash; keep cash at close small;
+move every unproven variable into a profit-indexed earn-out; keep the founder aligned to real
+performance. Applied on a real $110K acquisition of a 3-month-old fitness app: $20K cash at close
+(~25%), up to $57K in a 20% net-profit-share earn-out over 24 months, remainder in salary,
+milestone bonuses, and retained minority equity. Closed in 45 days.
+More: [How to Buy a Business With Seller Financing](https://www.kautilya-pe.com/stories/runify)
 
-### UK Immigration Advisory — £1–5M Deal
-Type: Full Mandate. Kautilya built a proprietary deal pipeline in the UK immigration advisory market. 960 hours of market research, 1,500+ advisors mapped, 2,600+ outreach touches.
-More: [Borderless Case Study](https://www.kautilya-pe.com/stories/borderless)
+### When to Walk Away From an Acquisition (and How to Decide)
+Method: a five-gate go/no-go framework — financial reality, risk identification, market
+validation, price discipline, deal structure — applied the same way pre- and post-LOI, with any
+gate failure an automatic disqualification. Applied across a $50K first-time-buyer mandate: ~300
+opportunities screened, 2 of 3 serious deals killed (one pre-LOI on bad structure, one post-LOI on
+deteriorating fundamentals), and one GPT-native education platform (2.5M conversations) closed at
+$12K — a ~200x discount to comparable assets.
+More: [When to Walk Away From an Acquisition](https://www.kautilya-pe.com/stories/smartprompt)
 
-### Dino Games — $39K Mobile Game
-Type: Sourcing to Close. Off-market acquisition of a cash-flow-positive mobile game with 8 million installs. Closed in 8 weeks at a 1.1x revenue multiple.
-More: [Dino Games Case Study](https://www.kautilya-pe.com/stories/dino-games)
+### How to Verify Revenue When Buying an Online Business (and Run Its Finances After)
+Method: verify every transaction at the payment processor, not the seller's dashboard;
+deconstruct affiliate "payables" line by line; reconcile the processor, accounting system, and
+internal records across multiple years. Applied on a $1.8M UK digital wellness portfolio of 19
+sites: 30,134 transactions validated to a 99.83% monetary match rate in under 15 days, a $3.1M
+affiliate-payables line reclassified, and a $57K unreconciled revenue gap surfaced. Kautilya then
+placed an embedded financial controller to run the portfolio's bookkeeping post-close.
+More: [How to Verify Revenue When Buying an Online Business](https://www.kautilya-pe.com/stories/inspire3)
 
-### Runify — $110K Mobile App
-Type: Sourcing to Close. Fitness app acquisition structured with only $20K deployed at close. Remaining $90K tied to verified 24-month performance milestones.
-More: [Runify Case Study](https://www.kautilya-pe.com/stories/runify)
+### How to Source Off-Market Business Deals Without a Broker
+Method: map the entire target universe from public and regulatory registers rather than sampling;
+rank outreach channels by live conversion, not assumed digital-first order; where owners won't
+sell outright, test referral or client-book-transfer structures instead. Applied in the UK
+immigration advisory market (no listings, no brokers): ~1,500 advisors mapped from public
+registers, cold calls outperformed email/LinkedIn/referrals, producing a pipeline of 8–10 vetted
+opportunities led by a referral partnership worth an estimated £70K–£80K a year.
+More: [How to Source Off-Market Business Deals Without a Broker](https://www.kautilya-pe.com/stories/borderless)
 
-### SmartPrompt — $12K Education Platform
-Type: Full Mandate. GPT-native education platform with 2.5M conversations acquired at a 200x discount to market comparables. Closed in 7 days.
-More: [SmartPrompt Case Study](https://www.kautilya-pe.com/stories/smartprompt)
+### How to Do Buy-Side Due Diligence on an MSP
+Method: separate blended revenue into real service lines; re-cost labour at fully-loaded rates
+(benefits, PTO, payroll taxes, non-billable time); reconcile the PSA, billing, and accounting
+systems against each other; build an EBITDA bridge that traces to source records. Applied on a
+real $21M California MSP under LOI: 303 agreements modeled, 51,063 time entries re-costed across
+three reconciled systems (ConnectWise, Metabase, Intuit), turning a distrusted 32% blended margin
+into a defensible ~45% recurring margin and identifying $3.2M of non-delivery labor driving the
+EBITDA gap. ~300 analyst-hours, 2 analysts, ~1 month.
+More: [How to Do Buy-Side Due Diligence on an MSP](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
+
+### How to Value and De-Risk a Mobile Game Acquisition
+Method: verify revenue at the console level (Google Ads, AdMob, Play Console), not the seller's
+dashboard; treat mediated ad revenue as a single dependent stream, not diversified income; price
+platform and transition risk through payment structure (deferred consideration, escrow, milestone
+releases) rather than a lower headline price. Applied on a cash-flow-positive dinosaur-simulation
+game with ~8M Android installs, carved out of a nine-title studio portfolio: closed at $39K
+(~1.1x revenue), 56% paid at close, 44% deferred over 12 months against transition stability.
+More: [How to Value and De-Risk a Mobile Game Acquisition](https://www.kautilya-pe.com/stories/dino-games)
 
 ## Frequently Asked Questions
 
@@ -140,6 +173,7 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 
 ## Blog Articles
 
+- [What Is Buy-Side M&A Advisory? A Beginner's Guide to Buying a Business in India](https://www.kautilya-pe.com/blog/what-is-buy-side-ma-advisory): What a buy-side advisor does, buy-side vs. sell-side advisory, why first-time buyers in India use one, the step-by-step process, and common mistakes without one.
 - [What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money](https://www.kautilya-pe.com/blog/what-is-a-search-fund): How search and acquisition capital work, the 1.5x step-up, searcher equity vesting, target company criteria, and where the model fits in India.
 - [Buying a Family-Owned Business in India: What First-Time Buyers Need to Know](https://www.kautilya-pe.com/blog/buying-family-owned-business-india): Succession dynamics, informal financial records, and diligence red flags specific to family-owned acquisition targets.
 
@@ -150,12 +184,12 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 
 ## Story Articles
 
-- [Confidential MSP: Buy-Side DD on a $21M Managed-Services Business](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
-- [Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio](https://www.kautilya-pe.com/stories/inspire3)
-- [Rewriting the M&A Playbook for UK Immigration](https://www.kautilya-pe.com/stories/borderless)
-- [Dino Games: Sourcing a Cash-Flow-Positive Mobile Game](https://www.kautilya-pe.com/stories/dino-games)
-- [Runify: Structuring a Mobile App Acquisition](https://www.kautilya-pe.com/stories/runify)
-- [SmartPrompt: Two Deals Killed, One Asset Acquired](https://www.kautilya-pe.com/stories/smartprompt)
+- [How to Buy a Business With Seller Financing (When the Revenue Isn't Proven Yet)](https://www.kautilya-pe.com/stories/runify)
+- [When to Walk Away From an Acquisition (and How to Decide)](https://www.kautilya-pe.com/stories/smartprompt)
+- [How to Verify Revenue When Buying an Online Business (and Run Its Finances After)](https://www.kautilya-pe.com/stories/inspire3)
+- [How to Source Off-Market Business Deals Without a Broker](https://www.kautilya-pe.com/stories/borderless)
+- [How to Do Buy-Side Due Diligence on an MSP](https://www.kautilya-pe.com/stories/msp-buy-side-diligence)
+- [How to Value and De-Risk a Mobile Game Acquisition](https://www.kautilya-pe.com/stories/dino-games)
 - [How We Closed $200K Worth of Deals in 6 Months](https://www.kautilya-pe.com/stories/200k-deals)
 - [The Rise of Search Funds](https://www.kautilya-pe.com/stories/search-funds)
 - [How to Find Diamonds in the Rough](https://www.kautilya-pe.com/stories/diamonds)

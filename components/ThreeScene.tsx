@@ -139,6 +139,14 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
       }
     };
 
+    // Hard fallback: never let "Loading Sky..." hang forever. If a model
+    // fetch 404s or the (large) background video stalls on a slow
+    // connection, modelsReady/videoReady may never both flip true — reveal
+    // the scene anyway after a few seconds rather than blocking the page.
+    const readyFallbackTimer = window.setTimeout(() => {
+      if (!disposed) setIsReady(true);
+    }, 4000);
+
     const scene = new THREE.Scene();
     let geminiStar: THREE.Sprite;
     const tempBox = new THREE.Box3();
@@ -591,6 +599,7 @@ export default function ThreeScene({ scrollContainerSelector }: ThreeSceneProps)
     // Cleanup
     return () => {
       disposed = true;
+      window.clearTimeout(readyFallbackTimer);
       cancelAnimationFrame(animFrameId);
       window.removeEventListener('resize', onResize);
       window.removeEventListener('orientationchange', onResize);

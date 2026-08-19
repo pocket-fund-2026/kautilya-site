@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
+import { STORY_SLUGS, STORY_META, STORY_FAQ, STORY_HOWTO, type StorySlug } from '@/lib/stories';
 import StoryContent from './StoryContent';
 
 const BASE_URL = 'https://www.kautilya-pe.com';
@@ -126,10 +126,9 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     articleLd.datePublished = meta.datePublished;
     articleLd.dateModified = meta.datePublished;
   }
-  if (meta.image) {
-    articleLd.image = { '@type': 'ImageObject', url: `${BASE_URL}${meta.image}`, width: 1200, height: 630 };
-    articleLd.thumbnailUrl = `${BASE_URL}${meta.image}`;
-  }
+  const imageUrl = meta.image ? `${BASE_URL}${meta.image}` : `${BASE_URL}/opengraph-image`;
+  articleLd.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 630 };
+  articleLd.thumbnailUrl = imageUrl;
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
@@ -141,6 +140,29 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     ],
   };
 
+  const faqItems = STORY_FAQ[slug as StorySlug];
+  const faqLd = faqItems && faqItems.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } : null;
+
+  const howTo = STORY_HOWTO[slug as StorySlug];
+  const howToLd = howTo ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: howTo.name,
+    step: howTo.steps.map((step) => ({
+      '@type': 'HowToStep',
+      name: step.name,
+      text: step.text,
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -151,6 +173,18 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
+        />
+      )}
     </>
   );
 }
@@ -185,6 +219,41 @@ function StoryByline({ meta }: { meta: typeof STORY_META[StorySlug] }) {
   );
 }
 
+function MoreStories({ slug }: { slug: StorySlug }) {
+  const currentIndex = STORY_SLUGS.indexOf(slug);
+  const related = STORY_SLUGS
+    .filter((s) => s !== slug)
+    .slice(currentIndex + 1)
+    .concat(STORY_SLUGS.filter((s) => s !== slug))
+    .slice(0, 3);
+
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .more-stories { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; border-top: 1px solid var(--border, #262626); }
+        .more-stories-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 24px; font-weight: 400; color: var(--gold, #c9a84c); margin: 32px 0 20px; }
+        .more-stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .more-stories-card { display: block; text-decoration: none; padding: 16px; border: 1px solid var(--border, #262626); border-radius: 8px; transition: border-color 0.2s; }
+        .more-stories-card:hover { border-color: var(--gold, #c9a84c); }
+        .more-stories-card-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 17px; color: var(--text-primary, #f2f2f2); margin-bottom: 6px; }
+        .more-stories-card-desc { font-size: 13px; line-height: 1.6; color: var(--text-secondary, #999); }
+        @media (max-width: 768px) { .more-stories-grid { grid-template-columns: 1fr; } }
+      `}} />
+      <div className="more-stories">
+        <div className="more-stories-title">More Stories</div>
+        <div className="more-stories-grid">
+          {related.map((s) => (
+            <a key={s} href={`/stories/${s}`} className="more-stories-card">
+              <div className="more-stories-card-title">{STORY_META[s].title}</div>
+              <div className="more-stories-card-desc">{STORY_META[s].description}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default async function StoryPage({ params }: Props) {
   const { slug } = await params;
   if (!STORY_SLUGS.includes(slug as StorySlug)) {
@@ -196,6 +265,7 @@ export default async function StoryPage({ params }: Props) {
       <StoryJsonLd slug={slug} meta={meta} />
       <StoryByline meta={meta} />
       <StoryContent slug={slug} />
+      <MoreStories slug={slug as StorySlug} />
     </>
   );
 }

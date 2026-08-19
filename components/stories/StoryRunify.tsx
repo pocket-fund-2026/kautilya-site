@@ -8,7 +8,7 @@ export default function StoryRunify() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('$110K Acquisition, $30K Down: Structuring Around Uncertainty , via @kautilya');
+    const text = encodeURIComponent('How to buy a business with seller financing when the revenue isn’t proven yet , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -18,7 +18,7 @@ export default function StoryRunify() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('$110K Acquisition, $30K Down: Structuring Around Uncertainty');
+    const subject = encodeURIComponent('How to Buy a Business With Seller Financing');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -86,186 +86,200 @@ export default function StoryRunify() {
       <div className="story-hero" id="storyStart">
         <Link href="/portfolio" className="back-link">← Portfolio</Link>
         <div className="meta-row">
-          <span className="meta-tag sector">Consumer Mobile · Health &amp; Fitness</span>
+          <span className="meta-tag sector">Consumer Mobile · Health & Fitness</span>
           <span className="meta-tag geo">Global · iOS</span>
           <span className="meta-tag stage">Single-Asset Acquisition</span>
         </div>
-        <h1>$110K Acquisition, $30K Down: Structuring Around Uncertainty</h1>
+        <h1>How to Buy a Business With Seller Financing (When the Revenue Isn&rsquo;t Proven Yet)</h1>
         <div className="subtitle">
-          How Kautilya sourced, diligenced, and closed a 3-month-old fitness app in 45 days using earn-out mechanics
-          to price what hadn't been proven yet.
+          How Kautilya structured a real $110K acquisition with only $20K down on a three-month-old app,
+          by letting structure absorb the risk instead of the price.
         </div>
         <div className="hero-line" />
       </div>
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
-        <p>
-          The client was the same operator from Kautilya's earlier mobile gaming acquisition. A 20-year software
-          veteran who had recently exited a founder-led business to private equity and was now building a concentrated
-          portfolio of consumer mobile applications across health, fitness, and lifestyle. The thesis was centered on
-          habit formation and long-term retention, not engagement spikes or arbitrage-driven growth.
-        </p>
-        <p>
-          By this point in the engagement, Kautilya had already established the sourcing infrastructure, closed one
-          transaction, and was running a steady cadence of deal delivery. The question wasn't whether to acquire again.
-          It was whether to acquire something this young.
-        </p>
-        <p>
-          The target was a gamified running app. Native iOS. Subscription-based. Built around progression, competition,
-          and consistency rather than passive activity tracking. It had a dual-layer ranking system inspired by gaming,
-          with global XP-based progression and distance-specific performance rankings. The technical architecture was
-          clean: native Swift and SwiftUI on MVVM, modular backend, multi-source run data ingestion via native GPS,
-          HealthKit, and Garmin integrations.
-        </p>
-        <p>
-          The problem: it was three months old. Roughly $2,000 in MRR. Hundreds of daily active users driven primarily
-          through organic social. Early retention was volatile but directionally competitive for the stage and category.
-          The UX was polished. Privacy-first design was embedded at the product level. Infrastructure was assessed as
-          scalable.
-        </p>
-        <div className="pull-quote">
+        <div className="last-updated">Last updated: August 14, 2026</div>
+
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
           <p>
-            How do you price something where the most important signal, whether users actually stick around, hasn't
-            had time to emerge?
+            Let structure absorb the risk instead of the price. Underwrite the base valuation only on collected,
+            reliably recurring cash, keep the cash at close small, and move every unproven variable into a
+            profit-indexed earn-out. Below is how that works, and how Kautilya structured a real $110K acquisition
+            with only $20K down on a three-month-old app.
           </p>
         </div>
 
-        <h2>Sourcing: Signal Over Noise</h2>
         <p>
-          The sourcing approach mirrored what Kautilya had refined across the broader engagement. Email outreach was
-          tested early and deprioritised quickly, generating sub-5% response rates and low-context,
-          valuation-anchored conversations. The pivot to founder-dense platforms on Twitter and Reddit produced
-          dramatically better results.
+          Seller financing gets explained everywhere as a concept: the seller lends you part of the price, you pay
+          it back over time. What almost no one shows is how a real deal is built, especially the hard case where
+          the business is too young for its numbers to be trusted. That is where structure stops being a definition
+          and becomes the entire deal.
+        </p>
+        <p>
+          Here is the method, shown through a real engagement. A seasoned operator, recently exited from a software
+          company, wanted to move into consumer mobile and asked Kautilya to source and structure the acquisition
+          of a three-month-old gamified running app doing around $2K MRR. His constraint was specific: he was
+          willing to back a young product, but unwilling to pay full price upfront for durability that hadn&rsquo;t
+          been proven. Structure became the way to do both.
         </p>
 
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">500</div>
-            <div className="metric-label">Outbound Messages</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">130</div>
-            <div className="metric-label">Conversations</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">35–40%</div>
-            <div className="metric-label">Response Rate (Wk 3–4)</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">45 days</div>
-            <div className="metric-label">Sourcing to Close</div>
-          </div>
-        </div>
-
+        <h2>Step 1, Underwrite only on verified, collected cash</h2>
         <p>
-          The target was identified through Twitter sourcing, screened against the client's mandate, and moved to an
-          introductory call between buyer and seller. The total funnel across the engagement period: roughly 500
-          outbound messages, approximately 130 conversations, 20 mandate-aligned deals presented, 3 LOIs submitted,
-          and 2 transactions closed.
+          Before any structuring, strip the reported revenue down to what has actually been collected and reliably
+          recurs. Young businesses inflate their headline number in predictable ways, currency, trials counted
+          before conversion, annual prices anchored to look like monthly recurring revenue. If you underwrite the
+          headline, you overpay before you&rsquo;ve begun.
         </p>
-
-        <h2>Diligence: Separating Real Cash From Dashboard Revenue</h2>
-        <p>
-          This is where the engagement got interesting.
-        </p>
-        <p>
-          An initial revenue signal of approximately $3,000 "MRR" was referenced early in diligence, implicitly
-          assumed to be USD-denominated, realised, and monthly recurring. Kautilya dug in and found something
-          different.
-        </p>
-        <ul className="constraint-list">
-          <li>Revenue was AUD-denominated, not USD, an immediate ~30% haircut</li>
-          <li>A material portion was trial-heavy, with users counted before cash had been collected</li>
-          <li>Annual price anchoring distorted MRR optics</li>
-          <li>Conversion depended on trial completion, paywall experimentation, and App Store billing timing</li>
-        </ul>
-        <p>
-          Verified operating data told a more sober story: $1,663 USD over the last 28 days (with trials still
-          pending), $2,218 USD since launch, and $512 USD in the most recent 7-day window. A meaningful share of
-          what had been reported as revenue hadn't yet been collected.
-        </p>
-        <div className="pull-quote">
+        <p>That is precisely the trap this deal set, and where Kautilya started.</p>
+        <div className="proof-block">
+          <div className="proof-label">The Revenue, Corrected</div>
           <p>
-            Kautilya underwrote the base valuation on approximately $2,000 USD MRR, reflecting only collected or
-            reliably recurring cash flows. Everything else was moved into the earn-out and milestone structure.
+            The seller referenced roughly $3,000 of MRR. Under scrutiny it was AUD-denominated not USD, trial-heavy
+            (a material share of users counted in dashboards before any cash was collected), and distorted by
+            annual price anchoring. Verified against actual payouts, the real figures were $1,663 USD over the last
+            28 days and $2,218 since launch, both with trials pending, and $512 in the last 7 days. The team
+            underwrote the base valuation on about $2,000 USD of genuinely collected, recurring cash, and nothing
+            speculative.
           </p>
         </div>
         <p>
-          Technical diligence ran in parallel, focused not on feature completeness but on data ingestion reliability,
-          architecture decisions, and scalability constraints. The goal was to identify risks that couldn't be
-          diversified away rather than to produce a comprehensive feature audit.
+          The rule generalises: trials, currency and annual anchoring are the three places a young company&rsquo;s
+          revenue lies. Verify each before you price anything.
         </p>
 
-        <h2>Structure: Pricing the Unknown Without Overpaying for It</h2>
+        <h2>Step 2, Keep the cash at close small</h2>
         <p>
-          The buyer's position was clear. He was willing to back strong products early, but unwilling to pay fully
-          upfront for unproven durability. Structure became the primary risk management lever.
+          The upfront payment should be sized to your real risk tolerance, not the seller&rsquo;s opening ask. The
+          most useful move in the whole negotiation is often to reframe what the upfront number even represents,
+          not a statement about price, but a decision about how much capital you deploy on day one. Once both sides
+          see it that way, you can move the figure without reopening the valuation.
         </p>
-        <p>
-          Total consideration: $110,000. But the way that number was distributed told the real story.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">$110K</div>
-            <div className="metric-label">Total Consideration</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">$20K</div>
-            <div className="metric-label">Upfront at Close</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">24 mo</div>
-            <div className="metric-label">Earn-Out Period</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">$30K</div>
-            <div className="metric-label">Guaranteed Capital at Risk</div>
-          </div>
+        <p>That reframe is exactly how the team closed the gap here.</p>
+        <div className="proof-block">
+          <div className="proof-label">The Negotiation</div>
+          <p>
+            The seller expected about 30% upfront on an implied ~$77K valuation, roughly $23K, driven not by a
+            price disagreement but by needing liquidity split across multiple equity holders. Kautilya&rsquo;s
+            opening structure was ~$16K (about 20%). Rather than argue valuation, the team reframed the discussion
+            around liquidity timing and certainty, treating the upfront percentage as a capital-deployment decision.
+            That produced a controlled midpoint of $20,000 upfront (25%), reached without reopening the earn-out
+            cap, the equity split, or any governance terms.
+          </p>
         </div>
 
-        <ul className="constraint-list">
-          <li>$20,000 paid upfront at closing (~25% of implied valuation)</li>
-          <li>$57,000 in variable consideration as a profit-indexed earn-out over 24 months</li>
-          <li>Balance delivered through salary, milestone bonuses, and retained minority equity</li>
-          <li>Founder retained involvement, aligned through structures rewarding real performance</li>
-        </ul>
+        <h2>Step 3, Move everything unproven into an earn-out</h2>
         <p>
-          The negotiation was precise. The seller initially expected 30% upfront on an implied $77,000 valuation,
-          roughly $23,100 at close. Kautilya's opening position was approximately $16,000 upfront (20%), with the
-          remainder delivered through the earn-out and equity structure. The debate wasn't about valuation fairness.
-          It was about liquidity timing and certainty, treated as a capital deployment decision rather than a price
-          revision.
+          Whatever you cannot verify today goes into contingent, performance-linked consideration rather than the
+          price. Trial conversion that hasn&rsquo;t happened, renewals that haven&rsquo;t come due, growth
+          that&rsquo;s projected, none of it should be paid for at close. Structure it so the seller is paid in
+          full only if the results the price assumed actually materialise.
         </p>
+        <p>Here is the full structure the two prior steps produced:</p>
+
+        <div className="data-table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Total consideration</td><td>$110K</td></tr>
+              <tr><td>Cash at close</td><td>$20,000 (about 25%)</td></tr>
+              <tr><td>Earn-out</td><td>Up to $57,000, a 20% net-profit share over 24 months</td></tr>
+              <tr><td>Balance</td><td>Salary, milestone bonuses, and retained minority equity</td></tr>
+              <tr><td>Guaranteed capital at risk</td><td>About $30K</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="proof-block">
+          <div className="proof-label">Where the Risk Went</div>
+          <p>
+            Kautilya moved trial-conversion and annual-renewal upside, the exact things that couldn&rsquo;t be
+            verified, into the earn-out and milestone bonuses, so no upfront cash was paid for outcomes not yet
+            realised. The majority of total consideration stayed performance-linked, time-based and
+            escrow-protected. The incremental upfront liquidity improved founder alignment without materially
+            increasing the buyer&rsquo;s exposure.
+          </p>
+        </div>
+
+        <h2>Step 4, Keep the founder aligned to real performance</h2>
         <p>
-          The resolution landed at $20,000 upfront, a controlled midpoint concession achieved without reopening the
-          earn-out cap, milestone economics, the 70/30 equity split, or any governance and control provisions.
-          Post-agreement, the majority of consideration remained performance-linked, time-based, and
-          escrow-protected.
+          Structure should reward the exact outcome you&rsquo;re underwriting. Keeping the founder involved, and
+          paid mostly on what happens after close, converts unproven durability from your risk into a shared
+          incentive, the person who best knows how to make the numbers real now has a direct stake in doing so.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">On This Deal</div>
+          <p>
+            The founder retained involvement through a 70/30 equity split and milestone economics. With the
+            majority of consideration performance-linked and escrow-protected, both sides were aligned to the same
+            thing: the business actually performing after close, not a clean handoff on unproven metrics.
+          </p>
+        </div>
+
+        <h2>What the structure achieved for the buyer</h2>
+        <p>
+          This is what the method buys you when it&rsquo;s executed well. The buyer acquired majority control for
+          $20K of cash at close, with guaranteed capital at risk of about $30K against a $110K headline price, and
+          closed in 45 days. If the app&rsquo;s traction proved durable, the seller earned the full amount and
+          everyone won; if it didn&rsquo;t, the buyer never overpaid for performance that never came. That
+          asymmetry, capped downside, preserved upside, is the whole point of structuring a deal this way, and
+          it&rsquo;s the kind of structuring discipline Kautilya brings to acquisitions where the numbers are still
+          young and the risk has to live somewhere other than the price. If you&rsquo;re weighing a deal like
+          this, <Link href="/engage">Kautilya can structure it with you</Link>.
+        </p>
+        <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+          Educational content, not investment advice. Figures reflect a real, anonymized Kautilya engagement.
         </p>
 
-        <h2>Why This Deal Matters</h2>
-        <p>
-          Most buyers would have either walked away from a 3-month-old asset or overpaid for the narrative. The
-          revenue looked promising on a dashboard. The product was polished. The founder was credible. All the
-          ingredients for a deal that closes on excitement and unravels on reality.
-        </p>
-        <p>
-          Kautilya did something different. We separated what had been collected from what had been counted. We
-          underwrote on verified cash, not trial metrics. We moved every unproven variable into contingent structure
-          rather than baking it into the price. And we closed in 45 days with only $30,000 of total guaranteed
-          capital at risk.
-        </p>
-        <p>
-          For the client, this was the second acquisition in a portfolio strategy designed to generate live data,
-          compress learning cycles, and fund experimentation with real cash flow rather than assumptions. Each deal
-          made the next one smarter.
-        </p>
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">Can you buy a business with little or no money down?</h3>
+            <p className="story-faq-a">
+              Yes, by shifting risk into structure. A small cash payment at close plus a seller note or earn-out
+              lets you pay for the business over time from its own cash flow, and pay for unproven performance only
+              if it materialises. In this deal, $20K of cash at close carried a $110K total acquisition.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What is an earn-out, and how is it different from a seller note?</h3>
+            <p className="story-faq-a">
+              A seller note is a fixed loan, you owe a set amount on a schedule no matter what. An earn-out is
+              contingent, part of the price is paid only if the business hits agreed performance. When the future
+              is uncertain, an earn-out is safer for the buyer because you never pay full price for performance
+              that doesn&rsquo;t arrive.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What are the risks of seller financing for the buyer?</h3>
+            <p className="story-faq-a">
+              Overpaying for performance you can&rsquo;t yet verify, and being locked into payments if the business
+              declines. You mitigate that by underwriting the base only on collected, recurring cash, keeping cash
+              at close small, and making the deferred portion contingent on performance rather than fixed, exactly
+              the structure used here.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you price a business whose revenue isn&rsquo;t proven yet?</h3>
+            <p className="story-faq-a">
+              Underwrite the base only on cash that has actually been collected and reliably recurs. Check for the
+              three common distortions, currency, trials counted before conversion, and annual prices dressed up as
+              monthly, then put every unproven variable into a performance-linked earn-out rather than the upfront
+              price.
+            </p>
+          </div>
+        </div>
 
         <div className="story-coda">
           <div className="coda-text">
-            When you can't verify the future, structure for it.
+            When you can&rsquo;t verify the future, structure for it.
           </div>
         </div>
       </article>

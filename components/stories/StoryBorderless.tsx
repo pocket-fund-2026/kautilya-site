@@ -2,14 +2,13 @@
 import { useCallback } from 'react';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 import Link from 'next/link';
-import ShimmerImage from '@/components/ShimmerImage';
 
 export default function StoryBorderless() {
   useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Rewriting the M&A Playbook for UK Immigration, via @kautilya');
+    const text = encodeURIComponent('How to source off-market business deals without a broker , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -19,7 +18,7 @@ export default function StoryBorderless() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('Rewriting the M&A Playbook for UK Immigration');
+    const subject = encodeURIComponent('How to Source Off-Market Business Deals Without a Broker');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -87,195 +86,164 @@ export default function StoryBorderless() {
       <div className="story-hero" id="storyStart">
         <Link href="/portfolio" className="back-link">← Portfolio</Link>
         <div className="meta-row">
-          <span className="meta-tag sector">Immigration &amp; Global Mobility</span>
+          <span className="meta-tag sector">Immigration & Global Mobility</span>
           <span className="meta-tag geo">United Kingdom</span>
           <span className="meta-tag stage">Seed → Series A</span>
         </div>
-        <h1>Rewriting the M&amp;A Playbook for UK Immigration</h1>
-        <div className="subtitle">How Kautilya built a proprietary deal pipeline in a market that doesn't do deals.</div>
+        <h1>How to Source Off-Market Business Deals Without a Broker</h1>
+        <div className="subtitle">
+          How Kautilya built a client a pipeline worth £70&ndash;80K a year in a UK immigration market with no
+          listings and no brokers.
+        </div>
         <div className="hero-line" />
       </div>
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
-        <p>
-          The client had the kind of problem most seed-stage startups would envy. A $2.5M raise behind them, $2–3M in ARR on
-          the books, and a Series A process on the horizon. What they needed wasn't more product. It was more revenue. Fast,
-          non-dilutive, and executable before investors came knocking.
-        </p>
-        <p>
-          The math was straightforward. In venture markets, companies at the client's stage typically command around 20×
-          revenue multiples. If they could add £50K–£250K in annualised cashflow through acquisitions or partnerships, that
-          would translate into £1M–£5M in enterprise value, without issuing a single new share.
-        </p>
-        <p>
-          So the client came to Kautilya with a clear brief: help us acquire immigration law firms or client books, absorb
-          their recurring revenue onto our platform, and enter the Series A process with real growth levers investors can
-          underwrite.
-        </p>
-        <p>Simple enough in theory. In practice, the UK immigration market had other plans.</p>
+        <div className="last-updated">Last updated: August 14, 2026</div>
 
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/borderless/maket-no-deals.png" alt="UK immigration market with closed doors symbolising resistance to traditional M&A dealmaking" width={1200} height={675} />
-        </figure>
-
-        <h2>The Market Said No</h2>
-        <p>
-          Kautilya's initial market work revealed something that a traditional M&amp;A advisor might have taken months to
-          discover, or never acknowledged at all.
-        </p>
-        <p>
-          The UK immigration advisory space is deeply relationship-driven, governed by strict regulatory and ethical
-          constraints, and culturally resistant to transactional dealmaking. Operators don't sell partial client books. They
-          don't respond well to cold acquisition outreach. And they certainly don't hand over their most valuable asset, client trust, to a stranger with a term sheet.
-        </p>
-        <ul className="constraint-list">
-          <li>Full firm acquisitions required long diligence cycles, partner approvals, and regulatory reviews</li>
-          <li>Partial client-book sales were seen as reputationally risky or outright non-compliant</li>
-          <li>Cold outreach for acquisitions consistently underperformed due to trust barriers</li>
-        </ul>
-        <p>
-          A conventional advisor would have either forced the process anyway or walked away from the mandate. Kautilya did
-          neither.
-        </p>
-
-        <h2>The Reframe</h2>
-        <div className="pull-quote">
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
           <p>
-            The client didn't actually need to own a business. They needed access to cash-flowing clients. Once that
-            distinction was clear, everything changed.
+            Build proprietary deal flow instead of waiting for listings. Map the entire universe of targets from
+            public registers, rank outreach channels by live conversion (in relationship-driven markets, cold calls
+            usually win), and when owners won&rsquo;t sell outright, test structures that transfer cash flow
+            another way. Below is how that works, and how Kautilya built a client a pipeline worth £70&ndash;80K a
+            year in a market with no listings.
+          </p>
+        </div>
+
+        <p>
+          Most sourcing advice assumes the target will eventually sell, and that the job is just finding them
+          first. But some markets are regulated, relationship-driven and culturally resistant to selling at all,
+          and there the standard broker-and-listing playbook returns nothing. The real skill is building deal flow
+          from scratch and designing a transaction around how value can actually move.
+        </p>
+        <p>
+          Here is that skill applied. A VC-backed immigration firm engaged Kautilya to add non-dilutive revenue
+          ahead of a Series A, and initially assumed it would acquire smaller firms outright. The team&rsquo;s
+          market work showed why that would fail, and built the alternative. Over six weeks it produced a pipeline
+          of 8 to 10 vetted opportunities, led by a referral partnership worth an estimated £70K to £80K a year.
+        </p>
+
+        <h2>When a market has no listings and no brokers</h2>
+        <p>
+          First, recognise the kind of market you&rsquo;re in, because it changes everything downstream. In
+          regulated, confidentiality-sensitive, relationship-driven sectors, owners don&rsquo;t list, don&rsquo;t
+          respond to cold acquisition offers, and won&rsquo;t hand client trust to a stranger with a term sheet. A
+          conventional advisor either forces the standard process and fails, or declares the market too difficult
+          and walks.
+        </p>
+        <p>Kautilya did neither, it accepted the constraints and designed around them.</p>
+        <div className="proof-block">
+          <div className="proof-label">The Market Reality</div>
+          <p>
+            UK immigration operators don&rsquo;t sell partial client books, respond poorly to cold outreach, and
+            treat client relationships as reputationally sensitive. A key early insight reframed the mandate: the
+            client didn&rsquo;t need to own a business, it needed access to cash-flowing clients. That reframe is
+            what unlocked structures the market would actually accept.
+          </p>
+        </div>
+
+        <h2>Step 1, Map the entire universe, don&rsquo;t sample</h2>
+        <p>
+          The foundation is exhaustive coverage. Build the full list of counterparties from public and regulatory
+          registers, then enrich it with ownership, tenure and contact data. Sampling a convenient slice means
+          designing around a market you&rsquo;ve only partly seen, which is how good opportunities get missed.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The Market Map</div>
+          <p>
+            The team scraped the GOV.UK Immigration Advisor Register for roughly 1,500 advisors across Levels 1 to
+            3, enriched them with director and company data from Companies House, and supplemented with
+            law-society data and active advisor communities. The exhaustive approach took about 960 hours;
+            replicating it in-house at UK minimum wage alone would have cost the client £11,500 to £12,000, and
+            materially more with senior talent.
+          </p>
+        </div>
+
+        <h2>Step 2, Rank outreach channels by trust, not convenience</h2>
+        <p>
+          In relationship-driven markets, live dialogue beats passive interest, and the ranking of channels is
+          often the inverse of what a digital-first campaign assumes. Don&rsquo;t decide the order in advance, run
+          all of them and let live conversion rank them.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The Channel Data</div>
+          <p>
+            Across roughly 1,500 direct emails, 600 social touches, and 200 to 250 cold calls over a month, the
+            team found conversion to real conversations ranked cold calls first, then email, then LinkedIn, then
+            referrals, the opposite of what a purely digital campaign would assume. That produced 43-plus serious
+            conversations and 8 to 10 strongly aligned operators.
           </p>
         </div>
         <p>
-          Instead of asking operators to sell, Kautilya asked a different question: if sellers won't part with their clients
-          outright, how else can cashflow be transferred, compliantly, quickly, and with trust intact?
+          The lesson generalises: in a trust-driven market, the higher-effort, higher-intimacy channel usually
+          converts best, precisely because it&rsquo;s the one competitors avoid.
         </p>
-        <p>
-          Two structures emerged. First, targeted client book transfers where legally and operationally feasible. Second, this became the real unlock, referral-based overflow partnerships, where operators route excess demand to the client
-          in exchange for downstream economics.
-        </p>
-        <p>This wasn't standard M&amp;A playbook. But it was structurally aligned with how the market actually works.</p>
 
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/borderless/exhausting-market.png" alt="Research war room with index cards and data mapping 1500 UK immigration advisors" width={1200} height={675} />
-        </figure>
-
-        <h2>960 Hours of Market Exhaustion</h2>
-        <p>Kautilya doesn't sample markets. It exhausts them.</p>
+        <h2>Step 3, Test structures the market will actually accept</h2>
         <p>
-          Over six weeks, the team executed a research-led sourcing operation across the full UK immigration advisory
-          landscape. The goal was to map every viable counterparty in the client's core segment, B2B Skilled Worker
-          sponsor-license providers, and stress-test which deal structures would actually convert.
+          Once you&rsquo;ve reframed the goal as acquiring cash flow rather than ownership, structures the market
+          finds acceptable come into view, even where an outright sale is culturally off the table. Owners who
+          won&rsquo;t sell will often still route revenue, if the structure protects their relationships and feels
+          reversible.
         </p>
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">~1,500</div>
-            <div className="metric-label">Advisors Mapped</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">2,600+</div>
-            <div className="metric-label">Outreach Touches</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">960</div>
-            <div className="metric-label">Hours Invested</div>
-          </div>
+        <div className="proof-block">
+          <div className="proof-label">The Structure Pivot</div>
+          <p>
+            Operators were overloaded with demand, not short of it, selling clients felt final and risky, referring
+            them felt safe and reversible. So the team pivoted from acquisitions to referral-based overflow
+            partnerships and selective client-book transfers. The lead structure was a referral partnership worth
+            an estimated £70K to £80K a year, inside a pipeline of 8 to 10 vetted opportunities and a path to £1M
+            to £5M of valuation uplift at roughly 20x venture multiples, with no dilution.
+          </p>
         </div>
+        <p>
+          There was a second dividend the client hadn&rsquo;t asked for. Every screening call that didn&rsquo;t
+          convert still produced competitive intelligence, workflows, pricing, capacity constraints, across 1,000
+          to 1,500 operator conversations. In a relationship-driven market, the sourcing process itself becomes
+          market research, which is part of what{' '}
+          <Link href="/engage">Kautilya delivers on a sourcing mandate</Link>.
+        </p>
 
-        <div className="phase-timeline">
-          <div className="phase-block">
-            <div className="phase-label">Weeks 1–2 · Infrastructure</div>
-            <p>
-              Scraped the GOV.UK Immigration Advisor Register, capturing roughly 1,500 advisors across Levels 1–3. Enriched
-              each target with director and company data from Companies House, cross-referenced against ILB and UK law society
-              records, and tapped into active communities of immigration advisors on Facebook and WhatsApp. Direct
-              conversations with founders, operators, and intermediaries filled in the gaps.
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you find businesses to buy that aren&rsquo;t listed?</h3>
+            <p className="story-faq-a">
+              Build the target universe from public and regulatory registers, enrich it, then run structured
+              multi-channel outreach that prioritises live conversation. The best deals are rarely listed; they
+              surface through direct, proprietary contact before an owner has decided to sell.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Weeks 2–3 · Outreach at Scale</div>
-            <p>
-              Approximately 1,500 direct emails. 300 targeted campaigns aimed at advisors nearing retirement or seeking
-              partial exits. 600 social outreaches across LinkedIn, Facebook, and WhatsApp. 200–250 direct cold calls.
-            </p>
-            <p>
-              The channel ranking surprised no one who's worked in relationship-driven markets. Cold calls converted best,
-              followed by email, then LinkedIn, then referrals. Live dialogue beats passive interest every time.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What is proprietary deal sourcing?</h3>
+            <p className="story-faq-a">
+              Identifying and building trust with owners directly, before a business is publicly marketed, rather
+              than working from broker listings. It avoids auction dynamics and intermediary fees, and in niche or
+              relationship-driven markets it is often the only way to find real opportunities at all.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Weeks 3–4 · Qualification</div>
-            <p>
-              The funnel produced 43+ serious conversations with operators demonstrating genuine interest, and 8–10 with
-              strong strategic alignment to the client's B2B sponsor-license focus. B2C-heavy firms were excluded for weaker
-              LTV/CAC dynamics. Mixed-service operators filtered out for requiring a different go-to-market motion. Focus
-              narrowed to pure B2B providers.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">Which cold outreach channel converts best?</h3>
+            <p className="story-faq-a">
+              It depends on the market, which is why you test all of them. In this relationship-driven sector, cold
+              calls converted best, ahead of email, LinkedIn and referrals, the inverse of a typical digital
+              campaign. Run every channel and let live conversion rank them.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Weeks 5–6 · Structuring</div>
-            <p>
-              Designed referral agreement frameworks, clarified incentive alignment and payout mechanics, prepared contract
-              templates, and negotiated valuations for client book transfers where applicable.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What if owners in a market won&rsquo;t sell outright?</h3>
+            <p className="story-faq-a">
+              Test alternative structures. Client-book transfers and referral or overflow partnerships can move
+              cash flow compliantly even when a full sale is off the table, which is frequently the only workable
+              path in confidentiality-sensitive sectors. Owners who won&rsquo;t sell will often still route revenue
+              if the structure feels safe and reversible.
             </p>
           </div>
         </div>
 
-        <figure className="story-img">
-          <ShimmerImage src="/images/stories/borderless/money-annualised.png" alt="Financial summary showing £70-80K annualised cashflow from the client referral partnerships" width={1200} height={675} />
-        </figure>
-
-        <h2>What the Client Walked Away With</h2>
-        <p>
-          A strategic referral agreement was agreed in principle, with an estimated annual cashflow impact of £70K–£80K. But
-          the real deliverable was broader than any single deal.
-        </p>
-        <p>
-          The client emerged with a pipeline of 8–10 vetted, negotiation-ready opportunities. Pre-structured client book
-          transfer arrangements. A repeatable partnership framework that could scale to £50K–£250K in total annualised
-          cashflow. And critically, comprehensive competitive intelligence gathered organically through 1,000–1,500 operator
-          conversations.
-        </p>
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">£70–80K</div>
-            <div className="metric-label">Annualised Cashflow</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">8–10</div>
-            <div className="metric-label">Pipeline Opportunities</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">£1–5M</div>
-            <div className="metric-label">Potential Valuation Uplift</div>
-          </div>
-        </div>
-        <p>
-          The work required approximately 960 hours of effort across sourcing, outreach, structuring, and competitive
-          research. To replicate this in-house at even UK minimum wage would have cost the client roughly £11,500–£12,000 in
-          direct labor alone, and delivering comparable outcomes would realistically require more senior commercial talent,
-          pushing the true cost materially higher.
-        </p>
-        <p>
-          At a 20× multiple, the revenue pathway Kautilya built represents £1M–£5M in potential Series A valuation uplift. No
-          new shares issued. No dilution. Just a faster, safer, more capital-efficient path to growth.
-        </p>
-
-        <h2>Why This Story Matters</h2>
-        <p>
-          Most M&amp;A advisors would have forced a slow, expensive acquisition process. Or blamed the market for being too
-          difficult. Or walked away when traditional approaches failed.
-        </p>
-        <p>
-          Kautilya did something different. We accepted the market's constraints and designed around them. We reframed the
-          problem. We built structures that didn't exist before: client book transfers without full firm acquisitions,
-          referral-based overflow partnerships with downstream revenue share, trust-first negotiation approaches for a market
-          that runs on relationships.
-        </p>
-        <p>
-          The client didn't just avoid a suboptimal acquisition. They emerged with a scalable, repeatable model for
-          non-dilutive growth, and the market intelligence to deploy it with confidence.
-        </p>
         <div className="story-coda">
           <div className="coda-text">
             When traditional M&amp;A breaks down, we build new ways to move value.

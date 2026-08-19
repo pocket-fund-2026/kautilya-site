@@ -264,6 +264,55 @@ export default function EngageContent() {
             </div>
           </div>
         </div>
+
+        <style dangerouslySetInnerHTML={{ __html: `
+          .engage-next-steps { max-width: 900px; margin: 72px auto 0; padding: 48px 24px 0; border-top: 1px solid var(--border, #262626); }
+          .engage-next-steps-title { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 26px; font-weight: 400; color: var(--gold, #c9a84c); margin-bottom: 28px; text-align: center; }
+          .engage-next-steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+          .engage-next-step-num { font-family: var(--font-cormorant), 'Cormorant', serif; font-size: 32px; color: var(--gold, #c9a84c); margin-bottom: 8px; }
+          .engage-next-step-title { font-size: 15px; font-weight: 600; color: var(--text-primary, #f2f2f2); margin-bottom: 8px; }
+          .engage-next-step-desc { font-size: 13px; line-height: 1.7; color: var(--text-secondary, #999); }
+          @media (max-width: 768px) { .engage-next-steps-grid { grid-template-columns: 1fr; gap: 32px; } }
+        `}} />
+        <div className="engage-next-steps">
+          <h2 className="engage-next-steps-title">What Happens After You Submit</h2>
+          <div className="engage-next-steps-grid">
+            <div>
+              <div className="engage-next-step-num">01</div>
+              <div className="engage-next-step-title">Mandate Review</div>
+              <p className="engage-next-step-desc">
+                Kautilya reviews your acquisition criteria — sector, size, geography, and deal-breakers — and
+                responds with an assessment of fit and the recommended next step.
+              </p>
+            </div>
+            <div>
+              <div className="engage-next-step-num">02</div>
+              <div className="engage-next-step-title">Scoping Call</div>
+              <p className="engage-next-step-desc">
+                A short call to refine your acquisition thesis and confirm which engagement type fits: a
+                full-service retainer, standalone due diligence, or a standalone market research deep-dive.
+              </p>
+            </div>
+            <div>
+              <div className="engage-next-step-num">03</div>
+              <div className="engage-next-step-title">Engagement &amp; Pricing</div>
+              <p className="engage-next-step-desc">
+                Full-Service Retainer runs $2,500–$10,000/month depending on deal volume, plus a success fee on
+                close. Standalone due diligence starts at $6,500 plus a 0.3% success fee. Market research is
+                $3,500–$5,000 for a 6–8 week sector deep-dive. All engagements are month-to-month, no lock-in.
+              </p>
+            </div>
+            <div>
+              <div className="engage-next-step-num">04</div>
+              <div className="engage-next-step-title">Sourcing Begins</div>
+              <p className="engage-next-step-desc">
+                Once terms are confirmed, Kautilya's analyst team starts off-market outreach against your
+                mandate. Sourcing the right deal can take a few weeks to a few months depending on how
+                specific your criteria are — the more precisely you define them, the faster the match.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

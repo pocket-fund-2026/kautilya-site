@@ -8,7 +8,7 @@ export default function StoryInspire3() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio , via @kautilya');
+    const text = encodeURIComponent('How to verify revenue when buying an online business , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -18,7 +18,7 @@ export default function StoryInspire3() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio');
+    const subject = encodeURIComponent('How to Verify Revenue When Buying an Online Business');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -81,174 +81,171 @@ export default function StoryInspire3() {
       </div>
 
       <div className="story-hero" id="storyStart">
-        <Link href="/portfolio" className="back-link">&larr; Portfolio</Link>
+        <Link href="/portfolio" className="back-link">← Portfolio</Link>
         <div className="meta-row">
           <span className="meta-tag sector">Digital Wellness</span>
           <span className="meta-tag geo">United Kingdom</span>
           <span className="meta-tag stage">Buy-Side Due Diligence</span>
         </div>
-        <h1>Inspire3: Full-Scope DD on a $1.8M Digital Wellness Portfolio</h1>
+        <h1>How to Verify Revenue When Buying an Online Business (and Run Its Finances After)</h1>
         <div className="subtitle">
-          How Kautilya audited 30,134 transactions across 19 websites in under 15 days &mdash; and surfaced seven discrepancies the seller had never identified.
+          How Kautilya validated 30,134 transactions on a $1.8M portfolio, then stayed on to run its finances.
         </div>
         <div className="hero-line" />
       </div>
 
       <article className="story-body" id="storyBody">
-        <p>
-          Inspire3 Ltd is a UK-based digital wellness business operating 19 commercial websites across
-          self-improvement, hypnosis, subliminal audio, and manifestation verticals. The portfolio generates
-          $1.4M in FY2025 revenue with five core products: Limitless Labs, Hypnosis Bootcamp, Rapid Hypnosis,
-          Dark Psychology, and Reprogram.ME.
-        </p>
-        <p>
-          The buyer engaged Kautilya to execute comprehensive buy-side due diligence on a $1.8M acquisition.
-          The scope: validate every material financial claim, deconstruct the affiliate economics, reconcile
-          multi-year financials, and deliver a forward projection model &mdash; all within a 15-day turnaround.
-        </p>
+        <div className="last-updated">Last updated: August 14, 2026</div>
 
-        <div className="pull-quote">
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
           <p>
-            The version you are shown is rarely complete. What the summary sheets present and what
-            the transaction-level data reveals are often two different stories.
+            Diligence the source data, not the seller&rsquo;s dashboard. Screenshots can be faked, so validate every
+            transaction against the payment processor&rsquo;s records, deconstruct affiliate &ldquo;payables&rdquo;
+            line by line, and reconcile every system. Below is how that works, and how Kautilya validated 30,134
+            transactions on a $1.8M portfolio, then stayed on to run its finances.
           </p>
         </div>
 
-        <h2>Scope of Work</h2>
-        <ul className="constraint-list">
-          <li>Transaction-Level Sales Audit</li>
-          <li>Affiliate Economics Deconstruction</li>
-          <li>Multi-Year Financial Reconciliation</li>
-          <li>Financial Modelling &amp; Projections</li>
-          <li>Product &amp; Operational DD</li>
-        </ul>
+        <p>
+          Everyone in this space says the same true thing: don&rsquo;t trust the seller&rsquo;s revenue
+          screenshots, ask for a live screen-share. That&rsquo;s a good instinct, but it&rsquo;s a sniff test, not
+          proof. Real verification means working at the level of the individual transaction and every system of
+          record behind it, until the reported number and the collected number are the same number, or you know
+          exactly why they aren&rsquo;t.
+        </p>
+        <p>
+          Here is that done at scale. A buyer engaged Kautilya on a $1.8M UK digital wellness portfolio of 19
+          websites. The team validated 30,134 transactions in under 15 days and surfaced seven discrepancies the
+          seller had never found, and then went a step further than most diligence ever does: once the numbers were
+          understood, Kautilya stayed on to run the finance function itself.
+        </p>
 
-        <h2>Execution Timeline</h2>
-        <div className="phase-timeline">
-          <div className="phase-block">
-            <div className="phase-label">Jan 27 &middot; Kickoff &amp; Data Access</div>
-            <p>
-              Secured access to the seller&rsquo;s transaction databases, payment processors, and accounting
-              systems. Defined the audit scope and established a structured data room.
+        <h2>Step 1, Verify every transaction at the payment processor</h2>
+        <p>
+          The unit of truth is the individual transaction, cross-referenced against the payment processor&rsquo;s
+          own records rather than the seller&rsquo;s dashboard. Match every sale, refund and chargeback, and hold
+          yourself to a monetary match rate rather than a spot-check. A live screen-share is where you start, not
+          where you stop.
+        </p>
+        <p>That standard is what separated the reported story from the real one here.</p>
+        <div className="proof-block">
+          <div className="proof-label">The Verification</div>
+          <p>
+            Kautilya validated 30,134 individual transactions across all 19 sites, every sale, refund and
+            chargeback cross-referenced against processor records, to a 99.83% monetary match rate. The version of
+            revenue the buyer was first shown differed materially from what the source data actually supported.
+          </p>
+        </div>
+
+        <h2>Step 2, Deconstruct affiliate economics line by line</h2>
+        <p>
+          Affiliate and content businesses hide their biggest distortions in the affiliate lines. Internal
+          promotional tracking gets recorded as though it were real commission liability, or promotional credits
+          get counted as revenue. Either way the P&amp;L misleads, and the only way to catch it is to take the line
+          apart entry by entry.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The $3.1M Line</div>
+          <p>
+            What appeared as $3.1M in affiliate payables, the team deconstructed into internal promotional tracking
+            rather than actual commission obligations, a distinction that would otherwise have grossly overstated
+            the liabilities the buyer was taking on. That single correction reshaped the deal&rsquo;s economics.
+          </p>
+        </div>
+        <p>
+          There&rsquo;s a related risk buyers ask about constantly: revenue concentration. A business where one
+          affiliate program is most of the revenue is one policy change from a cliff, so the deconstruction
+          isn&rsquo;t only about accuracy, it&rsquo;s about finding where the fragility lives.
+        </p>
+
+        <h2>Step 3, Reconcile every system, and flag what you can&rsquo;t verify</h2>
+        <p>
+          Reconcile the processor, the accounting system and the internal records against each other across
+          multiple years. Where the three agree, you have truth. Where a clean trail doesn&rsquo;t exist, document
+          it as a formal limitation rather than assuming the period is clean, because integrity about what you
+          couldn&rsquo;t verify is part of what the buyer is paying for.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">The Reconciliation</div>
+          <p>
+            Multi-year reconciliation across PayPal, Xero and internal records surfaced a $57K gap on about $1.1M
+            of revenue that the seller had never reconciled internally. A prior partnership had created a two-year
+            window with a structurally limited accounting trail; rather than paper over it, the team documented
+            that window as a formal diligence limitation, leaving the most recent year as the only clean baseline.
+          </p>
+        </div>
+
+        <h2>After the deal, running the finances Kautilya had just diligenced</h2>
+        <p>
+          Verification tells you what a business earns. It doesn&rsquo;t, by itself, keep the business paid,
+          collected and compliant month to month, and for a buyer stepping into an unfamiliar portfolio, that gap
+          is where value quietly leaks. This is where the engagement went further than a report.
+        </p>
+        <p>
+          Having rebuilt the portfolio&rsquo;s finances from the source, Kautilya placed a financial controller
+          from its own team into the business to own day-to-day bookkeeping, making sure affiliate employees were
+          paid on time and that incoming payments actually arrived on schedule. Alongside the controller, the
+          principals handled the live financial firefighting, overseeing the payment indicators and payment
+          consoles, keeping affiliate payouts and the logistical nuances under control, and making sure obligations
+          were met and taxes filed on time, while working directly with management on strategic financial
+          decisions.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">Beyond the Report</div>
+          <p>
+            This is the part almost no diligence firm touches. Because full-scope diligence had already rebuilt the
+            portfolio&rsquo;s finances from source records, the same team was positioned to run them: an embedded
+            controller on the books and receivables, the principals on live financial operations and tax
+            timeliness, and a seat at the table on strategic financial calls. Diligence that understands a business
+            this well can also operate it. If you&rsquo;re stepping into an unfamiliar portfolio,{' '}
+            <Link href="/engage">Kautilya can verify it and run it</Link>.
+          </p>
+        </div>
+        <p>
+          The same transaction-level discipline is what makes a rebuild trustworthy on the other side of the
+          table too, see how it plays out on{' '}
+          <Link href="/stories/msp-buy-side-diligence">a $21M managed-services rebuild</Link>.
+        </p>
+
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How do you verify revenue when buying an online business?</h3>
+            <p className="story-faq-a">
+              Match every transaction to the payment processor&rsquo;s own records rather than the seller&rsquo;s
+              dashboard, then reconcile against the accounting system across multiple years. Discrepancies from
+              refunds, chargebacks, trials or currency are common and only surface at transaction level, which is
+              how this engagement found seven the seller had missed.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Jan 29&ndash;31 &middot; Transaction Audit</div>
-            <p>
-              30,134 individual transactions validated across all 19 websites. Every sale, refund, and
-              chargeback cross-referenced against processor records. 99.83% monetary match rate achieved.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How can you tell if a seller&rsquo;s revenue screenshots are real?</h3>
+            <p className="story-faq-a">
+              You can&rsquo;t, which is the point. Screenshots can be edited in minutes, so a live screen-share is a
+              starting sniff test, not verification. Real proof comes from tying every transaction back to
+              processor and bank records; if a seller resists that access, treat it as a red flag.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Feb 2 &middot; Affiliate Deconstruction</div>
-            <p>
-              Deconstructed the affiliate payment structure. What appeared as $3.1M in affiliate payables
-              was revealed to be internal promotional tracking &mdash; not actual commission obligations.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What&rsquo;s the most common way a digital business overstates its numbers?</h3>
+            <p className="story-faq-a">
+              Affiliate and promotional tracking presented as real commission liability or realised revenue, and
+              revenue concentrated in a single affiliate program. Deconstructing the affiliate lines individually
+              is often the single biggest valuation correction in the deal, as the $3.1M line on this portfolio
+              showed.
             </p>
           </div>
-          <div className="phase-block">
-            <div className="phase-label">Feb 5&ndash;10 &middot; Financial Reconciliation</div>
-            <p>
-              Multi-year reconciliation across PayPal, Xero, and internal records. Surfaced a $57K gap
-              on approximately $1.1M in revenue that the seller had never reconciled internally.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">Feb 10 &middot; DD Delivered</div>
-            <p>
-              Full diligence package delivered: transaction validation report, 3-year financial model,
-              forward projections across base/best/worst scenarios, and product DD across all five verticals.
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">Can a diligence firm also manage the finances after the deal?</h3>
+            <p className="story-faq-a">
+              Yes. Because full-scope diligence rebuilds a business&rsquo;s finances from source records, the same
+              team can run the bookkeeping, affiliate payouts, receivables and tax timing afterward, typically an
+              embedded controller plus hands-on oversight, which is especially useful when a buyer is stepping into
+              an unfamiliar portfolio.
             </p>
           </div>
         </div>
-
-        <h2>Diligence Findings</h2>
-
-        <h2>Where Did $3.1M in Affiliate Payables Go?</h2>
-        <p>
-          What appeared as a $3.1M liability was deconstructed into internal promotional tracking. Without
-          this challenge, a buyer relying on the database at face value would have grossly overstated the
-          business&rsquo;s commission obligations &mdash; potentially distorting the entire valuation.
-        </p>
-
-        <h2>$1,859 in Revenue Was Quietly Leaking to a Former Partner</h2>
-        <p>
-          Vaulted payment credentials from a dissolved partnership were routing revenue to a former
-          partner&rsquo;s accounts. Even at $1,800, this was a systemic leak the seller had not identified
-          until Kautilya&rsquo;s audit forced a technical review. Routes were invalidated as a direct result.
-        </p>
-
-        <h2>Two Years of Unverifiable Financials</h2>
-        <p>
-          The Cosmic Media partnership created a two-year window (2022&ndash;2024) where the accounting trail
-          is structurally limited. Formally documented as a diligence limitation &mdash; 2025 is the only
-          &ldquo;clean&rdquo; baseline year. Any valuation anchored to 2023&ndash;2024 must account for
-          this opacity.
-        </p>
-
-        <h2>Two Processing Fees or One?</h2>
-        <p>
-          What looked like two separate vendor costs was actually a single payment processing stack split
-          by categorisation. Kautilya&rsquo;s processor-level deconstruction prevented double-counting that
-          would have distorted margins by approximately $50K.
-        </p>
-
-        <h2>The Database Said $0 Commission. The Data Said Otherwise.</h2>
-        <p>
-          The seller&rsquo;s own database contained a systematic error in how managed affiliate commissions
-          were flagged. Without cross-referencing stated methodology against actual data, this error would
-          have propagated through any model built on the dataset.
-        </p>
-
-        <h2>The $57K Gap Nobody Had Reconciled</h2>
-        <p>
-          A $57K discrepancy on approximately $1.1M revenue is a 5%+ gap directly affecting profitability
-          calculations. The seller confirmed it had not been internally reconciled &mdash; it required
-          Kautilya&rsquo;s independent cross-referencing to surface. Escalated for resolution before DD close.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">30,134</div>
-            <div className="metric-label">Transactions Validated</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">$1.4M</div>
-            <div className="metric-label">Revenue Audited</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">7+</div>
-            <div className="metric-label">Discrepancies Surfaced</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">&lt;15 Days</div>
-            <div className="metric-label">Turnaround</div>
-          </div>
-        </div>
-
-        <h2>Deliverables</h2>
-        <ul className="constraint-list">
-          <li>Transaction Validation Report</li>
-          <li>3-Year Financial Model</li>
-          <li>Forward Projections (Base / Best / Worst)</li>
-          <li>Interactive HTML Dashboard</li>
-          <li>Product DD Report (5 Products)</li>
-          <li>Email List Health Check</li>
-          <li>Affiliate Economics Analysis</li>
-        </ul>
-
-        <h2>Why This Engagement Matters</h2>
-        <p>
-          Most buy-side diligence on digital assets is cursory. A spreadsheet review, a few questions to
-          the seller, and a valuation model built on unverified inputs. The result: buyers close on
-          businesses they do not actually understand.
-        </p>
-        <p>
-          Kautilya&rsquo;s approach is different. Source-level reconstruction surfaces what summary sheets
-          never show. Every transaction validated. Every affiliate payment deconstructed. Every financial
-          discrepancy documented and escalated. The 99.83% monetary match rate is not a marketing number
-          &mdash; it is the standard.
-        </p>
 
         <div className="story-coda">
           <div className="coda-text">

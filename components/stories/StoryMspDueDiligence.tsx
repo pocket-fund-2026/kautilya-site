@@ -9,7 +9,7 @@ export default function StoryMspDueDiligence() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Every agreement, every hour, the whole business rebuilt: how we turned a distrusted 32% margin into a defensible 45% on a $21M MSP, via @kautilya');
+    const text = encodeURIComponent('How to do buy-side due diligence on an MSP , via @kautilya');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -19,7 +19,7 @@ export default function StoryMspDueDiligence() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent('Confidential MSP: Buy-Side DD on a $21M Managed-Services Business');
+    const subject = encodeURIComponent('How to Do Buy-Side Due Diligence on an MSP');
     const body = encodeURIComponent(`Check out this case study: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -91,17 +91,29 @@ export default function StoryMspDueDiligence() {
           <span className="meta-tag geo">United States · California</span>
           <span className="meta-tag stage">Full-Scope Buy-Side DD</span>
         </div>
-        <h1>Confidential MSP: Buy-Side DD on a $21M Managed-Services Business</h1>
+        <h1>How to Do Buy-Side Due Diligence on an MSP</h1>
         <div className="subtitle">
-          How Kautilya rebuilt revenue, cost, and gross profit for all 303 customer agreements and re-costed
-          51,063 hours of labor — turning a distrusted 32% blended margin into a defensible, agreement-level
-          truth for a buyer under LOI.
+          How Kautilya applied it to a real $21M MSP under LOI, turning a distrusted 32% blended margin into a
+          defensible 45% recurring margin.
         </div>
         <div className="hero-line" />
       </div>
 
       {/* STORY BODY */}
       <article className="story-body" id="storyBody">
+        <div className="last-updated">Last updated: August 14, 2026</div>
+
+        <div className="short-answer">
+          <div className="short-answer-label">The Short Answer</div>
+          <p>
+            Don&rsquo;t trust the blended margin. Separate revenue into its real service lines, re-cost labour at
+            fully-loaded rates, and reconcile the PSA, billing and accounting systems against each other, then
+            build an EBITDA bridge where every adjustment traces to a source record. The recurring book, priced on
+            its own economics, is what you&rsquo;re actually buying. Below is how that works, and how Kautilya
+            applied it to a real $21M MSP under LOI.
+          </p>
+        </div>
+
         <div style={{ display: 'flex', gap: '32px', justifyContent: 'center', flexWrap: 'wrap', margin: '0 0 16px' }}>
           <div style={{ textAlign: 'center' }}>
             <Image
@@ -144,256 +156,157 @@ export default function StoryMspDueDiligence() {
           Two analysts, ~300 hours, roughly a month — the team behind this engagement.{' '}
           <Link href="/team">Meet the rest of Kautilya</Link>.
         </p>
-        <p>
-          The buyer was looking at a ~15-year-old, California-based managed service provider — recurring IT
-          contracts inside one institutional vertical, long-tenured relationships, sticky logos, ~300 active
-          agreements. On paper, an attractive recurring-revenue business: roughly $7.35M in the most recent
-          year (~$21M across the three-year window), a healthy ~90% net retention, and an owner ready to
-          transition.
-        </p>
-        <p>
-          But the blended gross margin was only ~32%, and net profit was thin. A high-cost-of-labor California
-          base only sharpened the question the buyer&rsquo;s own investors kept asking: why is profitability
-          this thin on $7M of recurring-heavy revenue? The seller&rsquo;s P&amp;L couldn&rsquo;t answer it — it
-          could give a single blended margin, but it could not say which customers made money, which lost it,
-          or where the real margin lived.
-        </p>
-
-        <div className="pull-quote">
-          <p>Why is EBITDA so low on $7M of recurring-heavy revenue — and which customers actually carry the business?</p>
-        </div>
-
-        <h2>What the Buyer Needed Answered</h2>
-        <ul className="constraint-list">
-          <li>Why is EBITDA so low on $7M of recurring-heavy revenue?</li>
-          <li>What is the revenue per client — and which clients carry the business?</li>
-          <li>What is the revenue per contract, and per hour worked?</li>
-          <li>What is the true margin by service line — recurring vs. resale vs. project vs. coaching?</li>
-          <li>Which customers make money, and which lose it?</li>
-        </ul>
-
-        <h2>What Kautilya Delivered</h2>
-        <p>
-          Kautilya rebuilt the target&rsquo;s economics from primary operational data — not management
-          summaries — and handed the buyer a view of the business no P&amp;L could provide: revenue,
-          fully-loaded cost, and gross profit for every one of ~300 agreements, every service line, and every
-          hour worked. The deliverable set spanned a reconstructed agreement-level workbook, a labor-cost model
-          across 51,063 time entries, a three-year revenue rebuild with base/best/worst forecasts, a normalized
-          EBITDA bridge with every adjustment independently toggleable, and a full cohort and churn review.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">303</div>
-            <div className="metric-label">Agreements Modeled</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~$21M</div>
-            <div className="metric-label">Revenue Audited (3-Yr)</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">51,063</div>
-            <div className="metric-label">Time Entries Reconstructed</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~1 Month</div>
-            <div className="metric-label">300 Analyst-Hours, 2 Analysts</div>
-          </div>
-        </div>
-
-        <h2>Five Businesses Inside One P&amp;L</h2>
-        <p>
-          What the buyer was actually buying: underneath the single revenue figure sit five distinct lines,
-          each with its own margin profile and its own multiple. Buying the blend means overpaying for the weak
-          lines and underpaying for the strong one. Rebuilt over three years, the mix looked like this:
-        </p>
-        <ul className="constraint-list">
-          <li><strong>Recurring MSP</strong> — $10.1M revenue (3-yr), 44.5% gross margin</li>
-          <li><strong>Resale</strong> — $8.7M revenue (3-yr), 18.3% gross margin</li>
-          <li><strong>Contracted Services</strong> — $1.3M revenue (3-yr), 14.5% gross margin</li>
-          <li><strong>Coaching</strong> — $0.9M revenue (3-yr), 46.2% gross margin</li>
-          <li><strong>Project (one-time)</strong> — $0.15M revenue (3-yr), 83.6% gross margin</li>
-        </ul>
-        <p>
-          ~48% of revenue is the high-margin recurring book; ~47% is low-margin resale and contracted install.
-          Day-to-day operations ran in ConnectWise, the PSA system of record for tickets, agreements, time and
-          invoices. Custom queries in Metabase pulled that data into structured dumps, and the books sat in
-          Intuit/QuickBooks. None of the three agreed at face value — so the first job was to make them agree,
-          and the second was to read agreements nested inside one another, with recurring and project work
-          keyed differently in the schema.
-        </p>
-
-        <h2>Three Systems, Reconciled to One Truth</h2>
-        <p>
-          Decision-grade economics start with data you can trust. Operational data in ConnectWise was extracted
-          through Metabase queries, then validated back against ConnectWise to hold the sanity of every dump —
-          and the result was further reconciled to the Intuit books. Nothing in the model rests on a number that
-          wasn&rsquo;t checked against its source.
-        </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">12,267</div>
-            <div className="metric-label">Invoice Lines Rebuilt</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">51,063</div>
-            <div className="metric-label">Time Entries Re-Costed</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">8,924</div>
-            <div className="metric-label">GL Transactions Reconciled</div>
-          </div>
-        </div>
-
-        <h2>Five Workstreams, Run in Parallel</h2>
-        <p>
-          Five workstreams ran in parallel and reconciled against one another. The hardest was joining labor to
-          revenue — because the system didn&rsquo;t make it easy.
-        </p>
-        <div className="phase-timeline">
-          <div className="phase-block">
-            <div className="phase-label">1 · Invoice-Level Revenue Audit &amp; Classification</div>
-            <p>
-              Rebuilt revenue on the invoice as the unit of record, and sorted every line into five buckets — so
-              the buyer sees revenue by what it actually is.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">2 · Labor-Cost Reconstruction</div>
-            <p>
-              Turned 51,063 time entries into true, fully-loaded cost-to-serve per agreement — separating
-              billable engineering from absorbed indirect time.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">3 · Three-System Reconciliation</div>
-            <p>
-              ConnectWise validated through Metabase and tied to the Intuit books, across accrual and cash — so
-              the rebuild stands up to a lender.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">4 · Unit Economics &amp; a Toggleable EBITDA Bridge</div>
-            <p>
-              Per-agreement margins, revenue-per-hour and per-contract, top-10 concentration, and a bridge the
-              buyer can run scenario by scenario.
-            </p>
-          </div>
-          <div className="phase-block">
-            <div className="phase-label">5 · Cohort Retention &amp; Churn</div>
-            <p>
-              ARR by customer by month — where retention holds, where revenue leaks, and which customers to
-              build the growth plan around.
-            </p>
-          </div>
-        </div>
 
         <p>
-          Digital agreements nest child agreements tabbed within a parent, with nested billing rolling to a
-          sibling. Recurring work is keyed on a record ID and joins directly to time entries. Project work is
-          keyed on a separate order number — but its labor hours carried no matching key.
+          A managed service provider almost never makes money the way its P&amp;L suggests. A single blended gross
+          margin averages together service lines that have nothing in common, so the headline number describes
+          none of them. Doing diligence properly means taking that blend apart and rebuilding it from source data
+          until you can see which customers, which contracts and which hours actually carry the business.
         </p>
-        <div className="pull-quote">
+        <p>
+          That is the general method. What it looks like in practice is best shown through a real engagement. A
+          buyer came to Kautilya under LOI on a fifteen-year-old California MSP, about $21M of revenue across three
+          years, ~90% net retention, and a nagging problem: the blended margin was only ~32%, net profit was thin,
+          and the seller&rsquo;s P&amp;L couldn&rsquo;t say why. It could give one blended number; it couldn&rsquo;t
+          say which customers made money or where the margin lived. The buyer&rsquo;s investors kept asking. So the
+          method below isn&rsquo;t hypothetical, it&rsquo;s what the team actually did.
+        </p>
+
+        <h2>Step 1, Separate the blend into real service lines</h2>
+        <p>
+          The first move is to stop treating the business as one thing. Split the P&amp;L into its true components
+          and model each on its own, because each line carries a different margin and deserves a different
+          multiple. Buying on the blend means overpaying for the weak lines and underpaying for the strong one.
+        </p>
+        <p>On this deal, that split is where the whole picture changed.</p>
+        <div className="proof-block">
+          <div className="proof-label">Five Businesses in One P&amp;L</div>
           <p>
-            Our fix: where no key tied hours to a project order, labor was rolled up by company account and
-            attributed back to project revenue. No off-the-shelf join would have caught this.
+            Under the single ~32% blend sat five distinct businesses. Rebuilt across three years: recurring MSP
+            work at $10.1M and 44.5% margin, resale at $8.7M and 18.3%, contracted services at $1.3M and 14.5%,
+            coaching at $0.9M and 46.2%, and one-time project work at $0.15M and 83.6%. To get there, Kautilya
+            modelled each of the ~300 agreements individually, revenue from invoices, labour from re-costed hours,
+            unit cost from product records, down to a margin per contract. The blend described none of them.
           </p>
         </div>
 
-        <h2>Finding I · It Isn&rsquo;t One Business. It&rsquo;s Two.</h2>
+        <h2>Step 2, Re-cost labour at fully-loaded rates</h2>
         <p>
-          A single margin figure averages a high-margin service operation with a low-margin resale operation —
-          two businesses with different economics and different multiples. By billing structure, agreement-billed
-          (recurring) work runs ~47% margin; sales-order/project work runs ~14.5%. The blend (~32%) describes
-          neither. The buyer was about to pay a blended price for a blended fiction. The rebuild let them value
-          the recurring book on its own economics and price the low-margin resale for exactly what it is —
-          passthrough volume, not hidden profit. We didn&rsquo;t estimate it — we modeled every one of the 303
-          agreements: revenue from the invoices, labor from the re-costed hours, unit cost from the product
-          records, down to a gross profit and margin per contract.
+          The seller&rsquo;s time-tracking export understates the true cost to serve. It shows billable hours at
+          headline wages and hides the benefits, PTO and payroll taxes on them, plus the non-billable time spent
+          winning and supporting the work. Load all of it back in before you believe any margin, especially on the
+          recurring book, where an unloaded number flatters badly.
+        </p>
+        <p>This is a place where most diligence takes the flattering number. Kautilya didn&rsquo;t.</p>
+        <div className="proof-block">
+          <div className="proof-label">62% to a Defensible 45%</div>
+          <p>
+            A naive allocation flattered the recurring book to 62%. The team refused it and built it down, charging
+            the recurring book its fair share of non-billable labour (about 10 points) and loading wages for
+            benefits, PTO and payroll taxes (about 7 more), landing a defensible ~45%. That independently came
+            within a point of the seller&rsquo;s own internal figure of 43.8%. It rested on turning 51,063 time
+            entries into fully-loaded cost per agreement and role.
+          </p>
+        </div>
+        <p>
+          The discipline generalises: a margin built the conservative way, one that survives a lender and
+          doesn&rsquo;t unwind after close, is worth more to a buyer than a generous one that does.
         </p>
 
-        <h2>Finding II · A 45% Recurring Margin, Built Down to Prove It</h2>
+        <h2>Step 3, Reconcile the PSA, billing and accounting systems</h2>
         <p>
-          A naive allocation flattered the recurring book to 62% — too generous, and not how the cost is
-          actually incurred. Kautilya refused that number and built it down to something a lender could
-          underwrite: charging the recurring book its fair share of non-billable labor spent winning and
-          supporting it (&minus;10 pts), then loading wages for benefits, PTO and payroll taxes the time records
-          don&rsquo;t show (&minus;7 pts). The result — a defensible ~45% blended recurring margin — independently
-          landed within ~1 point of the seller&rsquo;s own internal analysis (43.8%). A recurring margin built the
-          conservative way, validated against the seller&rsquo;s own books, survives a lender&rsquo;s scrutiny and
-          doesn&rsquo;t unwind after close.
+          An MSP runs on a PSA system, a billing or query layer, and an accounting ledger, and they rarely agree at
+          face value. Decision-grade economics start with tying them together so nothing in the model rests on an
+          unchecked number, the standard a lender will hold you to.
+        </p>
+        <div className="proof-block">
+          <div className="proof-label">Three Systems, One Truth</div>
+          <p>
+            Kautilya extracted ConnectWise data (the PSA of record for tickets, agreements, time and invoices)
+            through Metabase queries, validated it back against ConnectWise, then tied it to the Intuit books
+            across accrual and cash. The rebuild rested on 12,267 invoice detail lines, 51,063 time entries, and
+            8,924 GL transactions, each reconciled to source.
+          </p>
+        </div>
+        <p>
+          The hard part here is one an off-the-shelf approach misses entirely, and it&rsquo;s worth understanding
+          if you&rsquo;re doing this yourself. Joining labour to revenue meant working across two schemas:
+          recurring work keyed cleanly on one identifier and joined directly to time entries, but project labour
+          carried no matching key. The team built a company-account catch-all to attribute that project cost back.
+          No standard join would have caught it, and missing it would have mis-stated the margin on a whole service
+          line.
         </p>
 
-        <h2>Finding III · $3.2M of Labor That Never Touches a Customer</h2>
+        <h2>Step 4, Build an EBITDA bridge a lender will accept</h2>
         <p>
-          The investors&rsquo; question — why is profit so thin on $7M of recurring-heavy revenue? — had a
-          concrete answer once the labor was fully reconstructed. Across three years, ~$3.2M of labor sits
-          outside customer delivery: internal admin, sales and management time (19,140 hours on a single
-          internal agreement alone), plus legacy internal tracking. The organization is built and staffed for a
-          larger revenue base than it currently carries — a profitable core obscured by overhead, not a broken
-          model. This is the bulk of the EBITDA gap and the clearest normalization lever in the deal — it turns
-          &ldquo;why is profit low?&rdquo; from an unanswered risk into a quantified, fixable line in the bridge,
-          and an integration thesis for a buyer who can grow into the cost base.
+          The output is a normalized EBITDA bridge where every adjustment is independently toggleable and traces to
+          a source record, so a buyer and their lender can re-run it scenario by scenario. Done properly, it turns
+          a vague worry into a quantified, fixable line, which is exactly what happened here.
         </p>
-
-        <div className="metrics-strip">
-          <div className="metric">
-            <div className="metric-value">~45%</div>
-            <div className="metric-label">Blended Recurring Margin</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~18%</div>
-            <div className="metric-label">Resale &amp; Project Margin</div>
-          </div>
-          <div className="metric">
-            <div className="metric-value">~$3.2M</div>
-            <div className="metric-label">Non-Delivery Labor Identified</div>
-          </div>
+        <div className="proof-block">
+          <div className="proof-label">Where the Profit Went</div>
+          <p>
+            The investors&rsquo; question, why is profit thin on $7M, had a concrete answer once labour was fully
+            reconstructed: about $3.2M of labour across three years sat outside customer delivery, internal admin,
+            sales and management time, including 19,140 hours on one internal agreement. That was the bulk of the
+            EBITDA gap and the clearest normalization lever in the deal, reframing a thin-looking business as a
+            profitable core carrying overhead built for a larger revenue base. On its own ~45% economics, the
+            recurring book was worth roughly $4.5M of gross profit over three years.
+          </p>
         </div>
 
-        <h2>The Result</h2>
+        <h2>What the rebuild let the buyer do</h2>
         <p>
-          For the first time, the buyer could see the business the way an operator does: by customer, by
-          service line, by hour. That ~32% blend resolved into its parts: a low-margin resale segment (~47% of
-          revenue) pulling the average down, a coaching line in decline, and a recurring service book running
-          near 45% once labor was fully loaded and overhead was set aside. The buyer stopped underwriting a 32%
-          blend — and started underwriting the recurring book that actually drives the value.
+          This is the payoff of doing diligence at this depth rather than running a checklist. For the first time
+          the buyer could see the business the way an operator does, by customer, by service line, by hour. The
+          32% blend resolved into its parts: low-margin resale pulling the average down, a coaching line in
+          decline, and a recurring book near 45% once labour was loaded.
         </p>
-        <ul className="constraint-list">
-          <li>Value the recurring book on its true ~45% margin and price the low-margin resale and declining coaching line for what they are</li>
-          <li>Answer the investors&rsquo; question with an evidence-backed story: an organization built for a larger revenue base, not a broken one</li>
-          <li>Build a growth plan with a margin plan attached, using the cohort work to pinpoint the ideal customer profile</li>
-          <li>Move with conviction — every number traces to a source the buyer and their lender can re-check</li>
-        </ul>
+        <p>
+          That changed what they could do. They stopped underwriting a blended fiction and started underwriting the
+          recurring book that actually drives the value. They could answer their investors with evidence. And
+          because every number traced to a source they and their lender could re-check, they could move with
+          conviction, carrying a re-rated view and a plan to grow the margin, not just the revenue, into their
+          financing conversations. That level of reconstruction is the kind of attention most firms reserve for
+          deals ten times the size, which is precisely why the small-to-mid-market deals where the real economics
+          are buried in the software are the ones{' '}
+          <Link href="/engage">Kautilya is built for</Link>.
+        </p>
+        <p>
+          The same source-level discipline applies whether the target runs on ConnectWise or on affiliate and
+          payment-processor data, see how it plays out on{' '}
+          <Link href="/stories/inspire3">a $1.8M digital wellness portfolio</Link>.
+        </p>
 
-        <h2>Deliverables</h2>
-        <ul className="constraint-list">
-          <li>Reconstructed workbook with a full source trail to ConnectWise, Metabase and Intuit</li>
-          <li>Agreement-level P&amp;L across all 303 agreements and five service-line buckets</li>
-          <li>Labor cost model — 51,063 time entries loaded and allocated by agreement and role</li>
-          <li>Revenue rebuild and forecast — FY2023&ndash;2025 actuals plus base/best/worst scenarios</li>
-          <li>Three-system reconciliation across ConnectWise, Metabase and the Intuit ledger</li>
-          <li>MRR, cohort and churn review — ARR by customer by month across 36 months</li>
-          <li>Normalized EBITDA bridge, one page, every adjustment independently toggleable</li>
-          <li>Per-pillar context memos — methodology, assumptions, caveats, and the findings that matter</li>
-        </ul>
-
-        <h2>Why This Engagement Matters</h2>
-        <p>
-          Most advisory firms won&rsquo;t give a sub-$10M deal this much attention — the model doesn&rsquo;t
-          allow it. Kautilya put ~300 analyst-hours into this engagement over roughly a month, in near-daily
-          working sessions, tracing individual records through the systems until each number was real. That
-          intensity is <Link href="/approach">the same five-phase methodology</Link> behind every Kautilya
-          mandate — it&rsquo;s how a buyer gets institutional-grade certainty on a deal a larger firm would have
-          triaged with a sample and a template.
-        </p>
-        <p>
-          All figures in this case study are anonymized. Target identity, customer names and individual staff
-          are withheld — the numbers reflect a live engagement and illustrate method, not investment advice. If
-          you&rsquo;re under LOI or staring at a data room on a similar deal,{' '}
-          <Link href="/engage">Kautilya can run the same rebuild on yours</Link>.
-        </p>
+        <div className="story-faq">
+          <h2 className="story-faq-title">Frequently asked</h2>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What is a good gross margin for an MSP?</h3>
+            <p className="story-faq-a">
+              A fully-loaded recurring managed-services book typically runs in the mid-40s percent once labour
+              carries benefits and overhead; resale and project work run far lower. A single blended figure usually
+              overstates resale and understates recurring, so separate them by service line before benchmarking,
+              which is exactly what surfaced the real picture on this engagement.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">How long does buy-side diligence on an MSP take?</h3>
+            <p className="story-faq-a">
+              A full source-level rebuild, reconciling the PSA, billing and ledger and re-costing labour to the
+              agreement level, is a matter of weeks with a dedicated team. This one ran roughly a month, about 300
+              analyst-hours across two analysts.
+            </p>
+          </div>
+          <div className="story-faq-item">
+            <h3 className="story-faq-q">What are the biggest red flags in an MSP&rsquo;s numbers?</h3>
+            <p className="story-faq-a">
+              A single blended margin with no service-line breakdown, labour that doesn&rsquo;t reconcile to
+              payroll once fully loaded, and revenue that doesn&rsquo;t tie between the PSA and the accounting
+              system. On this deal all three pointed the same way, the numbers hadn&rsquo;t been stress-tested at
+              source, and the real story only appeared once they were.
+            </p>
+          </div>
+        </div>
 
         <div className="story-coda">
           <div className="coda-text">

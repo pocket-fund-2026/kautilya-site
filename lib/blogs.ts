@@ -1,6 +1,7 @@
 export const BLOG_SLUGS = [
   'buying-family-owned-business-india',
   'what-is-a-search-fund',
+  'what-is-buy-side-ma-advisory',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -186,6 +187,96 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Entrepreneurship through acquisition',
       'Search fund structure and economics',
       'Entrepreneurship through acquisition in India',
+    ],
+  },
+  'what-is-buy-side-ma-advisory': {
+    title: 'What Is Buy-Side M&A Advisory?',
+    subtitle: "A Beginner's Guide to Buying a Business in India",
+    description:
+      'New to acquiring a business? Learn what a buy-side M&A advisor does, why buyers in India use one, and how the process works — explained simply.',
+    author: 'Dev Shah',
+    datePublished: '2026-08-03',
+    category: 'Buyer Guides',
+    readTime: '8 min',
+    wordCount: 1550,
+    image: '/images/blogs/what-is-buy-side-ma-advisory/what-is-buy-side-ma-advisory-hero.webp',
+    keywords: [
+      // Primary
+      'buy-side M&A advisory',
+      'buy-side advisor India',
+      'what is buy-side M&A advisory',
+      'buy-side advisory meaning',
+      // Explainer / beginner intent
+      'buy-side advisory explained',
+      'buy-side M&A advisory for beginners',
+      'how does a buy-side advisor work',
+      'buy side vs sell side advisory',
+      'sell-side advisor vs buy-side advisor',
+      // Process
+      'buy-side M&A process',
+      'business acquisition process India',
+      'due diligence business acquisition India',
+      'M&A sourcing screening valuation diligence',
+      'off-market deal sourcing India',
+      // Buyer intent
+      'first-time business buyer India guide',
+      'how to buy a business in India',
+      'buying a business in India guide',
+      'business acquisition advisor India',
+      // Deal size
+      'buy-side advisory small deals India',
+      'SME acquisition advisory India',
+      'mid-market M&A advisory India',
+      'search fund buy-side advisory',
+      // Risk / mistakes
+      'business acquisition mistakes first-time buyers',
+      'due diligence red flags business acquisition',
+      'overpaying for a business acquisition',
+      'EBITDA add-back inflation due diligence',
+      // Regulatory
+      'FEMA compliance business acquisition India',
+      'NRI buying business in India',
+      'foreign buyer acquisition India compliance',
+      // Advisory / fees
+      'buy-side advisor fees structure',
+      'M&A advisor retainer success fee',
+      'buy-side advisory firm India',
+      // Long-tail
+      'do I need a buy-side advisor',
+      'buy-side advisor vs M&A lawyer',
+      'how long does M&A due diligence take',
+    ],
+    faqs: [
+      {
+        q: 'How much does a buy-side advisor cost?',
+        a: 'Fee structures vary by firm and deal size, but most follow a retainer plus success fee model — a fixed monthly or upfront fee during sourcing and diligence, plus a percentage tied to the deal actually closing. This aligns the advisor\'s incentive with finding you a genuinely good acquisition, rather than billing hours regardless of outcome. Ask any advisor to walk through their fee structure and what triggers the success fee before engaging them.',
+      },
+      {
+        q: 'How long does the process take?',
+        a: 'Sourcing to close typically runs three to nine months, depending on target availability, how well-documented the business is, and diligence complexity. Smaller, well-documented businesses with clean financials can close faster; family-owned businesses with informal record-keeping often take longer because diligence has more to untangle.',
+      },
+      {
+        q: 'Do I need an advisor if I already found a business to buy?',
+        a: 'Yes, if you haven\'t done independent valuation and diligence yet. Advisors add the most value at exactly this stage — verifying whether the deal you\'ve already found is actually priced fairly and structured safely, not just helping you find deals in the first place.',
+      },
+      {
+        q: "What's the difference between a buy-side advisor and an M&A lawyer?",
+        a: 'An advisor manages the overall deal — sourcing, valuation, negotiation strategy, and coordinating the diligence process — while a lawyer drafts and reviews the legal documentation and handles regulatory filings. Most serious acquisitions use both, with the advisor coordinating the process end-to-end and looping in legal counsel at the right stages.',
+      },
+      {
+        q: 'Can NRIs or foreign buyers use a buy-side advisor for Indian acquisitions?',
+        a: "Yes, and it's often more important in that case. Cross-border acquisitions add FEMA compliance, repatriation rules, and sector-specific foreign investment restrictions on top of the usual diligence — a locally experienced advisor helps navigate all of this alongside your legal counsel.",
+      },
+      {
+        q: 'What size of business is a buy-side advisor worth it for?',
+        a: "There's no fixed cutoff, but as a rough guide: once a deal is large enough that a bad valuation or a missed liability would meaningfully hurt you financially, an advisor's fee is cheap insurance. In practice, this covers most deals from a few tens of lakhs upward, not just large-cap acquisitions.",
+      },
+    ],
+    about: [
+      'Buy-side M&A advisory',
+      'Business acquisition process India',
+      'Buy-side due diligence India',
+      'First-time business buyer guidance',
     ],
   },
 };

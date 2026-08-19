@@ -5,7 +5,7 @@ import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/ne
 const BASE = 'https://www.kautilya-pe.com';
 
 export const metadata: Metadata = {
-  title: { absolute: 'The Kautilya Newsletter | Deal-Structure Teardowns from India M&A' },
+  title: { absolute: 'The Kautilya Newsletter | Deal-Structure Teardowns' },
   description:
     'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard for every Indian M&A deal worth studying. Read the archive or subscribe to The India Deal Sheet.',
   category: 'Finance & M&A Advisory',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: `${BASE}/newsletter`,
-    title: 'The Kautilya Newsletter | Deal-Structure Teardowns from India M&A',
+    title: 'The Kautilya Newsletter | Deal-Structure Teardowns',
     description:
       'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard for every Indian M&A deal worth studying.',
     siteName: 'Kautilya',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Kautilya Newsletter | Deal-Structure Teardowns from India M&A',
+    title: 'The Kautilya Newsletter | Deal-Structure Teardowns',
     description: 'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard, every time.',
     site: '@microsearchfund',
     creator: '@microsearchfund',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   other: {
-    'DC.title': 'The Kautilya Newsletter | Deal-Structure Teardowns from India M&A',
+    'DC.title': 'The Kautilya Newsletter | Deal-Structure Teardowns',
     'DC.creator': 'Dev Shah',
     'DC.subject': 'India M&A deal teardowns, deal structure analysis, proptech consolidation, buy-side advisory',
     'DC.description': 'Deal-structure teardowns from Kautilya\'s advisory desk covering Indian M&A.',

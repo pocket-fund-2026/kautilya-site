@@ -18,6 +18,8 @@ interface Deal {
   price: string;
   name: string;
   logo?: string;
+  logoWidth?: number;
+  logoHeight?: number;
   oneLiner: string;
   metrics: DealMetric[];
   storyLink?: string;
@@ -31,6 +33,8 @@ const deals: Deal[] = [
     price: '$1.8M',
     name: 'Inspire3',
     logo: '/images/portfolio-logos/inspire3.png',
+    logoWidth: 376,
+    logoHeight: 376,
     oneLiner:
       'A $1.8M wellness business put 19 websites and 30,134 transactions in front of us. We checked every dollar in under 15 days and flagged the ones the seller had missed.',
     metrics: [
@@ -82,6 +86,8 @@ const deals: Deal[] = [
     price: '$110K',
     name: 'Runify',
     logo: '/images/portfolio-logos/runify.png',
+    logoWidth: 400,
+    logoHeight: 400,
     oneLiner:
       'A $110K mobile app deal where the buyer only had to put $20K in cash on the table at closing. The rest is paid out of the app\'s own future revenue.',
     metrics: [
@@ -183,7 +189,12 @@ export default function PortfolioContent() {
                 </div>
                 {d.logo && (
                   <div className="deal-logo">
-                    <img src={d.logo} alt={`${d.name} – ${d.tag} – Kautilya Portfolio`} />
+                    <img
+                      src={d.logo}
+                      alt={`${d.name} – ${d.tag} – Kautilya Portfolio`}
+                      width={d.logoWidth}
+                      height={d.logoHeight}
+                    />
                   </div>
                 )}
                 <div className="deal-name">{d.name}</div>
