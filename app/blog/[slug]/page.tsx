@@ -4,7 +4,6 @@ import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 import BlogFamilyBusinessAcquisition from '@/components/blogs/BlogFamilyBusinessAcquisition';
 import BlogWhatIsASearchFund from '@/components/blogs/BlogWhatIsASearchFund';
 import BlogWhatIsBuySideMAAdvisory from '@/components/blogs/BlogWhatIsBuySideMAAdvisory';
-import BlogCoforgeEncora from '@/components/blogs/BlogCoforgeEncora';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -12,7 +11,6 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,
   'what-is-a-search-fund': BlogWhatIsASearchFund,
   'what-is-buy-side-ma-advisory': BlogWhatIsBuySideMAAdvisory,
-  'coforge-encora-acquisition-explained': BlogCoforgeEncora,
 };
 
 type Props = {

@@ -3,6 +3,7 @@ export const NEWSLETTER_SLUGS = [
   'aurum-housing-com-acquisition',
   'lockheed-ultra-maritime-acquisition-teardown',
   'jsw-paints-akzo-nobel-dulux-acquisition-explained',
+  'coforge-encora-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -331,6 +332,87 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Asian Paints', sameAs: 'https://www.asianpaints.com' },
       { name: 'Birla Opus' },
       { name: 'Pidilite' },
+    ],
+  },
+  'coforge-encora-acquisition-explained': {
+    title: 'Coforge Bought Encora for $2.35B With Zero Cash',
+    subtitle: 'How an All-Stock Preferential Allotment Handed the Sellers 21.8% of the Buyer',
+    description:
+      "Coforge acquired Silicon Valley's Encora at a $2.35B enterprise value and paid for it entirely in new shares, no cash. Advent International and Warburg Pincus walked away with 21.8% of Coforge and two board seats instead of a $1.89B check. Here's how the preferential allotment worked, why the sellers wanted stock, and what it signals about Indian IT M&A.",
+    author: 'Dev Shah',
+    datePublished: '2026-08-21',
+    dealDate: '2025-12-26',
+    category: 'Deal Teardowns',
+    readTime: '10 min',
+    wordCount: 2400,
+    keywords: [
+      // Deal-specific
+      'Coforge Encora acquisition',
+      'Coforge Encora deal explained',
+      'Coforge Encora $2.35 billion',
+      'Coforge all stock acquisition',
+      'Coforge Encora share swap',
+      'Advent Warburg Pincus Encora exit',
+      'Advent International Encora sale',
+      'Warburg Pincus Coforge stake',
+      // Structure angle
+      'all stock preferential allotment India',
+      'preferential allotment M&A India explained',
+      'stock for stock acquisition India IT',
+      'private equity rollover into listed stock',
+      'sponsor rollover acquisition structure',
+      'board seats for equity M&A India',
+      // Sector
+      'Indian IT services M&A 2026',
+      'ER&D acquisition India',
+      'engineering R&D services M&A',
+      'AI-native engineering acquisition',
+      'Indian IT mid-cap consolidation',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'M&A deal structure analysis India',
+      'buy-side advisory deal analysis India',
+      // Long-tail
+      'why did Coforge pay in shares for Encora',
+      'largest ER&D acquisition Indian IT company',
+      'Coforge Encora board seats',
+      'Coforge Encora 21.8 percent stake',
+    ],
+    faqs: [
+      {
+        q: 'How much did Coforge pay for Encora?',
+        a: 'Coforge acquired Encora at a $2.35B enterprise value, with equity consideration of $1.89B (₹17,032.60 Cr) settled entirely in new Coforge shares — no cash changed hands.',
+      },
+      {
+        q: 'Why did Advent and Warburg Pincus take Coforge stock instead of cash?',
+        a: "Listed Coforge stock is liquid and can be sold on any trading day, unlike a private Encora stake that would need another negotiated sale. Taking stock also let the sponsors keep exposure to the AI-led engineering shift Encora was built to capture, and the two board seats they received give them influence over the integration that determines what those shares end up being worth.",
+      },
+      {
+        q: 'How much of Coforge do the Encora sellers now own?',
+        a: "Advent, Warburg Pincus and minority holders received about 21.8% of Coforge's expanded share capital — 9,37,96,508 new shares issued at ₹1,815.91 each — plus two non-executive board seats held by Advent's Shweta Jalan and Atin Hirachand Jain.",
+      },
+      {
+        q: 'What is a preferential allotment in an M&A deal?',
+        a: 'A preferential allotment is when a company issues brand-new shares directly to a chosen party at an agreed price, rather than the buyer paying cash or the seller buying shares on the open market. Because the total consideration here was fixed in rupees, the issue price alone decided how much of Coforge the sellers ended up owning.',
+      },
+      {
+        q: 'Why does this deal matter for Indian IT M&A?',
+        a: "It's the largest ER&D (engineering R&D) takeover ever by an Indian IT company, done by a mid-cap rather than a top-tier player, and it shows sponsor rollovers into listed stock becoming a bridge between private and public valuations when cash buyers are hesitant to pay sponsor-level prices.",
+      },
+    ],
+    about: [
+      'Coforge Encora acquisition',
+      'All-stock preferential allotment structures India',
+      'Indian IT services and ER&D consolidation',
+      'Private equity rollover exits into listed stock',
+    ],
+    mentions: [
+      { name: 'Coforge Ltd' },
+      { name: 'Encora Digital LLC' },
+      { name: 'Advent International', sameAs: 'https://www.adventinternational.com' },
+      { name: 'Warburg Pincus', sameAs: 'https://www.warburgpincus.com' },
     ],
   },
 };

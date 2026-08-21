@@ -4,12 +4,12 @@ import { useCallback } from 'react';
 import Link from 'next/link';
 import { useReadingProgressAndShareBar } from '@/components/useReadingProgressAndShareBar';
 
-export default function BlogCoforgeEncora() {
+export default function NewsletterCoforgeEncora() {
   useReadingProgressAndShareBar();
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Coforge bought Encora for $2.35B and paid zero cash — an all-stock deal that handed the sellers 21.8% of Coforge and two board seats, via @microsearchfund');
+    const text = encodeURIComponent('Coforge bought Encora for $2.35B and paid zero cash — an all-stock deal that handed the sellers 21.8% of Coforge and two board seats. A deal-structure teardown, via @microsearchfund');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -54,6 +54,15 @@ export default function BlogCoforgeEncora() {
           transition: border-color 0.2s;
         }
         .blog-author-byline a:hover { border-bottom-color: var(--gold); }
+
+        .currency-note {
+          font-family: var(--font-lora), 'Lora', serif;
+          font-size: 12px;
+          font-style: italic;
+          color: var(--text-muted);
+          margin: 14px 0 0;
+          line-height: 1.7;
+        }
 
         .deal-table-wrap {
           margin: 32px 0;
@@ -186,9 +195,9 @@ export default function BlogCoforgeEncora() {
 
       {/* ── Hero ── */}
       <div className="story-hero" id="storyStart">
-        <Link href="/blog" className="back-link">← Blog</Link>
+        <Link href="/newsletter" className="back-link">← Kautilya Newsletter</Link>
         <div className="meta-row">
-          <span className="meta-tag">Deal Teardowns</span>
+          <span className="meta-tag">Deal Teardown</span>
           <span className="meta-tag">Indian IT &amp; ER&amp;D</span>
           <span className="meta-tag">10 min read</span>
         </div>
@@ -197,6 +206,11 @@ export default function BlogCoforgeEncora() {
           How an All-Stock Preferential Allotment Handed the Sellers 21.8% of the Buyer
         </div>
         <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;21 August 2026</p>
+        <p className="currency-note">
+          Currency note: dollar figures carry an approximate rupee equivalent beside them, converted
+          at ~₹90/$1, the rate implied by the announced consideration. Every converted figure is a
+          Kautilya estimate, not an independently reported number.
+        </p>
         <div className="hero-line" />
       </div>
 
@@ -404,10 +418,10 @@ export default function BlogCoforgeEncora() {
         {/* CTA */}
         <div className="story-coda">
           <p className="coda-text">
-            Every Kautilya teardown tags buyer, target, structure, and score the same way, so you
+            Every Kautilya Teardown tags buyer, target, structure, and score the same way, so you
             can compare them later. Get the next one the day it publishes.
           </p>
-          <Link href="/blog" className="coda-link">Read More Teardowns</Link>
+          <Link href="/newsletter" className="coda-link">Read More Teardowns</Link>
           <a
             href="https://kautilya-pe.beehiiv.com"
             target="_blank"
