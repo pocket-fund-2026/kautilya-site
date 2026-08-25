@@ -416,6 +416,7 @@ export default function StoriesContent() {
             <video
               ref={eventVideoRef}
               src="/videos/WebEventFinal.mp4"
+              poster="/videos/thumbs/inside-the-office.jpg"
               aria-label="Inside the Room: what happens when acquisition entrepreneurs get together"
               muted
               playsInline
@@ -441,6 +442,7 @@ export default function StoriesContent() {
             <video
               ref={symbiosisVideoRef}
               src="/videos/WebSymbiosisFinal.mp4"
+              poster="/videos/thumbs/symbiosis-talk.jpg"
               aria-label="Symbiosis Talk: Dev's college talk on acquisitions"
               muted
               playsInline
@@ -466,6 +468,7 @@ export default function StoriesContent() {
             <video
               ref={singVideoRef}
               src="/videos/WebSingFinal.mp4"
+              poster="/videos/thumbs/beyond-the-deal.jpg"
               aria-label="Beyond the Deal: the people behind the spreadsheets"
               muted
               playsInline

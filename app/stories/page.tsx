@@ -113,12 +113,62 @@ const breadcrumbSchema = {
   ],
 };
 
+const videoListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'VideoObject',
+        name: 'Inside the Kautilya Office',
+        description: 'Inside the Room: what happens when acquisition entrepreneurs get together. Clips from the Kautilya office and events hosted by the team.',
+        thumbnailUrl: [`${BASE}/videos/thumbs/inside-the-office.jpg`],
+        uploadDate: '2026-03-17',
+        contentUrl: `${BASE}/videos/WebEventFinal.mp4`,
+        duration: 'PT54S',
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'VideoObject',
+        name: 'SymBiz 2025 - Symbiosis, Pune',
+        description: "Symbiosis Talk: Kautilya's founder was invited to speak about micro acquisitions at SymBiz 2025 in Pune.",
+        thumbnailUrl: [`${BASE}/videos/thumbs/symbiosis-talk.jpg`],
+        uploadDate: '2026-03-28',
+        contentUrl: `${BASE}/videos/WebSymbiosisFinal.mp4`,
+        duration: 'PT48S',
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      item: {
+        '@type': 'VideoObject',
+        name: 'Team Kautilya at INSEAD Singapore',
+        description: 'Beyond the Deal: the people behind the spreadsheets. Team Kautilya at the INSEAD ETA Conference in Singapore.',
+        thumbnailUrl: [`${BASE}/videos/thumbs/beyond-the-deal.jpg`],
+        uploadDate: '2026-03-17',
+        contentUrl: `${BASE}/videos/WebSingFinal.mp4`,
+        duration: 'PT56S',
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+      },
+    },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoListSchema) }} />
       <StoriesContent />
     </>
   );

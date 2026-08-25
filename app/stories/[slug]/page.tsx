@@ -163,6 +163,23 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     })),
   } : null;
 
+  const videoLd = slug === 'edition-zero' ? {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Edition Zero: How This Is Bizness Began',
+    description: meta.description,
+    thumbnailUrl: ['https://img.youtube.com/vi/M7AGB7itYFk/maxresdefault.jpg'],
+    uploadDate: meta.datePublished ?? '2023-05-01',
+    embedUrl: 'https://www.youtube.com/embed/M7AGB7itYFk',
+    contentUrl: 'https://www.youtube.com/watch?v=M7AGB7itYFk',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Kautilya',
+      url: BASE_URL,
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.svg` },
+    },
+  } : null;
+
   return (
     <>
       <script
@@ -183,6 +200,12 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
+        />
+      )}
+      {videoLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoLd) }}
         />
       )}
     </>
