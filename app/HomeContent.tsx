@@ -287,7 +287,7 @@ return (
         </h1>
         <div className="gold-line" style={{ margin: '30px auto' }} />
         <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines on demand: in any sector, against any criteria, from first principles.<br /><span style={{ color: '#fff' }}>We don&apos;t carry a pipeline. We build yours.</span>
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, and family offices.<br /><span style={{ color: '#fff' }}>We don&apos;t carry a pipeline. We build yours.</span>
         </p>
         <div className="scroll-cue">
           <span>Enter</span>

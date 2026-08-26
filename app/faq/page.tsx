@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     '26 answered questions on buy-side M&A advisory, off-market deal sourcing, due diligence, deal structures, and transparent pricing — from $6,500 standalone DD to full-service retainers.',
   keywords: [
     'M&A advisory FAQ', 'buy a business FAQ India', 'off-market deal sourcing questions',
+    'lower middle market M&A FAQ', 'private equity deal sourcing FAQ',
     'due diligence cost India', 'acquisition advisory pricing', 'micro private equity FAQ',
     'search fund questions India', 'business acquisition process FAQ',
     'seller financing explained', 'how to buy a business India', 'first-time buyer acquisition',

@@ -4,10 +4,12 @@ import HomeContent from './HomeContent';
 export const metadata: Metadata = {
   title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing India' },
   description:
-    'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+    'Buy-side M&A advisory for lower middle market acquisitions. Proprietary deal sourcing for private equity, search funds, and family office buyers — off-market, mandate to close.',
   keywords: [
     'buy-side advisory India', 'proprietary deal sourcing', 'off-market acquisitions',
     'M&A advisory India', 'buy a business India', 'acquisition pipeline',
+    'lower middle market M&A India', 'lower middle market acquisitions',
+    'private equity deal sourcing India', 'private equity acquisition advisory',
     'micro private equity India', 'search fund India', 'ETA India',
     'forensic due diligence', 'family office deal sourcing', 'PE advisory India',
     'acquisition entrepreneurship India', 'buy and build strategy',
@@ -83,7 +85,8 @@ const organizationSchema = {
   ],
   knowsAbout: [
     'Buy-side M&A advisory', 'Off-market deal sourcing', 'Forensic due diligence',
-    'Acquisition entrepreneurship', 'Search funds', 'Micro private equity',
+    'Lower middle market M&A', 'Private equity', 'Acquisition entrepreneurship',
+    'Search funds', 'Micro private equity',
     'Business acquisition India', 'Seller financing', 'Post-acquisition operations',
     'Earnout structuring', 'Asset acquisition', 'Share purchase agreements',
     'LOI negotiation', 'Acquisition due diligence', 'Commercial due diligence',

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     'From mandate definition to close: five-phase acquisition process with 2,500+ founder conversations, 99.83% transaction match rate, and diligence delivered in under 15 days.',
   keywords: [
     'M&A methodology India', 'acquisition process', 'buy-side deal sourcing process',
+    'lower middle market acquisition process', 'private equity deal sourcing methodology',
     'off-market sourcing methodology', 'forensic due diligence process',
     'acquisition mandate', 'deal origination India', 'proprietary deal flow',
     'M&A due diligence India', 'business acquisition process India',
