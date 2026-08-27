@@ -134,8 +134,8 @@ return (
 
   .intro h1 {
     font-family: var(--font-fraunces), 'Fraunces', serif;
-    font-size: 52px; font-weight: 600; color: var(--text-primary);
-    margin-top: 24px; letter-spacing: 2px; line-height: 1.2;
+    font-size: 64px; font-weight: 600; color: var(--text-primary);
+    max-width: 800px; margin: 24px auto 24px; letter-spacing: 2px; line-height: 1.2;
     opacity: 1;
   }
 
@@ -281,7 +281,7 @@ return (
       {/* INTRO */}
       <div className="intro">
         <div className="section-eyebrow">Buy Side Advisory</div>
-        <h1 style={{ fontSize: 64, maxWidth: 800, margin: '0 auto 24px' }}>
+        <h1>
           You bring the thesis.<br />
           We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
         </h1>

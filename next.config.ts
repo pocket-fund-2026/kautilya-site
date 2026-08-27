@@ -65,6 +65,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'kautilya-pe.com' }],
+        destination: 'https://www.kautilya-pe.com/:path*',
+        permanent: true,
+      },
       { source: '/blog/pharma-business-valuation-india-jb-chemicals', destination: '/newsletter/torrent-jb-chemicals-pharma-valuation', permanent: true },
       { source: '/story-borderless', destination: '/stories/borderless', permanent: true },
       { source: '/story-dino-games', destination: '/stories/dino-games', permanent: true },
