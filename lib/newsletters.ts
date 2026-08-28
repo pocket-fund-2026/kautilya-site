@@ -4,6 +4,7 @@ export const NEWSLETTER_SLUGS = [
   'lockheed-ultra-maritime-acquisition-teardown',
   'jsw-paints-akzo-nobel-dulux-acquisition-explained',
   'coforge-encora-acquisition-explained',
+  'chryscapital-novartis-india-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -413,6 +414,90 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Encora Digital LLC' },
       { name: 'Advent International', sameAs: 'https://www.adventinternational.com' },
       { name: 'Warburg Pincus', sameAs: 'https://www.warburgpincus.com' },
+    ],
+  },
+  'chryscapital-novartis-india-acquisition-explained': {
+    title: "ChrysCapital's Novartis India Buyout, Explained",
+    subtitle: 'Why the Public Was Offered ₹860.64 a Share — and Only 40 Took It',
+    description:
+      "ChrysCapital paid ₹1,445.89 Cr for 70.68% of Novartis India, its first pharma buyout in 27 years. The mandatory open offer was priced at ₹860.64 — only 40 shares were tendered. Kautilya's teardown of the deal structure, the two-tier pricing, and what it means for MNC exits in India.",
+    author: 'Dev Shah',
+    datePublished: '2026-08-28',
+    dealDate: '2026-02-19',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 2100,
+    keywords: [
+      // Deal-specific
+      'ChrysCapital Novartis India acquisition',
+      'ChrysCapital Novartis India deal explained',
+      'ChrysCapital Novartis India buyout',
+      'Novartis India open offer',
+      'Novartis India ChrysCapital 70.68%',
+      'WaveRise Investments Novartis India',
+      'Novartis AG India exit',
+      'Novartis India acquisition 2026',
+      // Structure angle
+      'mandatory open offer India explained',
+      'SEBI takeover code open offer formula',
+      'persons acting in concert India takeover',
+      'control premium vs open offer price India',
+      'MNC exit India listed subsidiary',
+      'onshore offshore pricing India M&A',
+      'exchange control fair value cap India',
+      // Sector
+      'private equity pharma buyout India',
+      'ChrysCapital Fund X pharma',
+      'Indian pharma M&A 2026',
+      'India pharma consolidation PE',
+      'domestic PE control deal India',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'buy-side advisory deal analysis India',
+      'M&A deal structure analysis India',
+      // Long-tail
+      'why did the Novartis India open offer fail',
+      'how much did ChrysCapital pay for Novartis India',
+      'ChrysCapital Novartis India shares tendered',
+      'listed MNC subsidiary acquisition India',
+      'JSW Akzo Nobel Novartis India comparison',
+    ],
+    faqs: [
+      {
+        q: 'How much did ChrysCapital pay for Novartis India?',
+        a: "ChrysCapital's consortium paid ₹1,445.89 Cr (~$159M) at signing, ₹1,376.8 Cr after closing adjustments, for 70.68% of Novartis India — 1,74,50,680 equity shares. It was announced on February 19, 2026 and closed on July 29, 2026.",
+      },
+      {
+        q: 'Why did the public open offer for Novartis India shares fail?',
+        a: 'The mandatory open offer was priced at ₹860.64 a share, a 3.64% premium to the pre-announcement close. The stock hit its upper circuit the next day and traded more than 72% above the offer price during the tender window, so shareholders had no reason to tender. Only 40 of 64,19,608 shares were accepted.',
+      },
+      {
+        q: 'Why did WaveRise pay ₹860.64 a share while ChrysCapital Fund X paid ₹701.25?',
+        a: "WaveRise Investments is a Mauritius entity buying from Swiss seller Novartis AG, a non-resident-to-non-resident transfer that sits outside India's exchange-control fair-value cap. ChrysCapital Fund X and Two Infinity Partners are onshore Indian vehicles, subject to that cap. The filings disclose both prices but do not explain the split; this is Kautilya's inference from the structure, not a disclosed reason.",
+      },
+      {
+        q: 'What is a mandatory open offer under Indian takeover rules?',
+        a: "When an acquirer buys control of a listed Indian company, SEBI's takeover code requires it to offer public shareholders an exit for at least 26% of the company, at a price set by formula from trading data as of the announcement date. It is a regulatory floor, not a valuation of the business, and consortium members acting in concert are treated as one acquirer — the highest price any of them paid sets the offer price for everyone.",
+      },
+      {
+        q: 'What did Novartis India keep after the sale?',
+        a: 'Novartis AG retained Novartis Healthcare Private Ltd, an unlisted entity holding the Hyderabad R&D and clinical-trial operations and the innovative-medicines business, plus a royalty-free licence for Tegrital and a five-year distribution agreement with the newly sold listed entity.',
+      },
+    ],
+    about: [
+      'ChrysCapital Novartis India acquisition',
+      'Mandatory open offer structure India',
+      'Indian pharma private equity buyout',
+      'MNC listed subsidiary exit India',
+    ],
+    mentions: [
+      { name: 'ChrysCapital', sameAs: 'https://www.chryscapital.com' },
+      { name: 'Novartis India Ltd' },
+      { name: 'Novartis AG', sameAs: 'https://www.novartis.com' },
+      { name: 'WaveRise Investments' },
+      { name: 'Axis Capital', sameAs: 'https://www.axiscapital.co.in' },
     ],
   },
 };
