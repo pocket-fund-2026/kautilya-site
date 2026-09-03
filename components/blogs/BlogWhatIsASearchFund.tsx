@@ -425,6 +425,18 @@ export default function BlogWhatIsASearchFund() {
           infrastructure and support alongside capital. Their specific economics vary by programme
           and are not covered here.
         </p>
+        <p>
+          If you want to see who is actually running these structures, WhoBoughtWho keeps a free{' '}
+          <a href="https://whoboughtwho.com/category/search-fund" target="_blank" rel="noopener noreferrer">
+            directory of search funds and their investors
+          </a>{' '}
+          alongside a{' '}
+          <a href="https://whoboughtwho.com/deals/search-funds" target="_blank" rel="noopener noreferrer">
+            record of completed search fund acquisitions
+          </a>
+          . Reading a few real deals is the fastest way to calibrate what size of company the model
+          actually buys.
+        </p>
 
         <h2>Where the Model Does Not Fit</h2>
         <p>Honest limitations, because the failure mode is expensive and under-discussed.</p>
