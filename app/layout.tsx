@@ -150,7 +150,7 @@ export const metadata: Metadata = {
     classification: 'Finance / M&A Advisory / Private Equity',
     abstract: 'Kautilya is a buy-side M&A advisory firm that constructs proprietary acquisition pipelines on demand — sector-agnostic, off-market, from first principles.',
     target: 'PE funds, VC firms, family offices, search fund operators, acquisition entrepreneurs, first-time buyers',
-    'reply-to': 'contact@kautilya-pe.com',
+    'reply-to': 'DealDesk@kautilya.pe',
     owner: 'Kautilya',
     'revisit-after': '7 days',
     language: 'English',
@@ -166,12 +166,12 @@ export const metadata: Metadata = {
     'geo.position': '19.0760;72.8777',
     ICBM: '19.0760, 72.8777',
     /* Business */
-    'business:contact_data:email': 'contact@kautilya-pe.com',
+    'business:contact_data:email': 'DealDesk@kautilya.pe',
     'business:contact_data:locality': 'Mumbai',
     'business:contact_data:country_name': 'India',
     /* OG extras */
     'og:locale:alternate': 'en_GB',
-    'og:email': 'contact@kautilya-pe.com',
+    'og:email': 'DealDesk@kautilya.pe',
     'og:country-name': 'India',
   },
 };

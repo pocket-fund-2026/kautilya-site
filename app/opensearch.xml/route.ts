@@ -11,7 +11,7 @@ export function GET() {
   <Image width="16" height="16" type="image/svg+xml">${WWW}/icon.svg</Image>
   <Url type="text/html" method="get" template="${WWW}/stories?q={searchTerms}" />
   <Url type="application/rss+xml" rel="results" template="${WWW}/rss.xml?q={searchTerms}" />
-  <Contact>contact@kautilya-pe.com</Contact>
+  <Contact>DealDesk@kautilya.pe</Contact>
   <Tags>M&amp;A advisory India, buy a business India, acquisition entrepreneurship, micro private equity, search fund India, deal sourcing</Tags>
   <LongName>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing India</LongName>
   <moz:SearchForm>${WWW}/stories</moz:SearchForm>
