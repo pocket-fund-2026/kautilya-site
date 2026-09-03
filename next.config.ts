@@ -71,6 +71,11 @@ const nextConfig: NextConfig = {
         destination: 'https://www.kautilya-pe.com/:path*',
         permanent: true,
       },
+      // Careers moved off-domain to the hiring funnel (hirepeanalyst.com).
+      // Temporary (307) on purpose: the JobPosting structured data and ~60 careers
+      // keywords still live in app/careers/ and are NOT yet ported to hirepeanalyst.
+      // Flip `permanent: true` once that page carries its own JobPosting schema.
+      { source: '/careers', destination: 'https://hirepeanalyst.com/', permanent: false },
       { source: '/blog/pharma-business-valuation-india-jb-chemicals', destination: '/newsletter/torrent-jb-chemicals-pharma-valuation', permanent: true },
       { source: '/story-borderless', destination: '/stories/borderless', permanent: true },
       { source: '/story-dino-games', destination: '/stories/dino-games', permanent: true },
