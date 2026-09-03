@@ -68,10 +68,10 @@ const contactPageSchema = {
     '@type': 'Organization',
     name: 'Kautilya',
     url: BASE,
-    email: 'contact@kautilya-pe.com',
+    email: 'DealDesk@kautilya.pe',
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'contact@kautilya-pe.com',
+      email: 'DealDesk@kautilya.pe',
       contactType: 'sales',
       areaServed: ['IN', 'US', 'AE', 'GB'],
       availableLanguage: 'English',
