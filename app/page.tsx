@@ -128,7 +128,7 @@ const organizationSchema = {
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      email: 'contact@kautilya-pe.com',
+      email: 'DealDesk@kautilya.pe',
       contactType: 'sales',
       areaServed: ['IN', 'US', 'GB', 'AE'],
       availableLanguage: 'English',
@@ -218,7 +218,7 @@ const professionalServiceSchema = {
   name: 'Kautilya',
   url: BASE,
   description: 'Buy-side M&A advisory and proprietary deal sourcing firm serving PE, VC, and family office buyers.',
-  email: 'contact@kautilya-pe.com',
+  email: 'DealDesk@kautilya.pe',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Mumbai',
