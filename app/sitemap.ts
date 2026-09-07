@@ -89,13 +89,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${WWW}/images/aditya.jpeg`,
       ],
     },
-    {
-      url: `${WWW}/careers`,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-      lastModified: '2026-04-01',
-      images: [`${WWW}/opengraph-image`],
-    },
+    // /careers now 307s to hirepeanalyst.com — a redirecting URL in the sitemap
+    // is a Search Console warning, so it is withheld rather than removed.
+    // Restore this entry if the redirect is ever reverted.
+    // {
+    //   url: `${WWW}/careers`,
+    //   changeFrequency: 'monthly',
+    //   priority: 0.5,
+    //   lastModified: '2026-04-01',
+    //   images: [`${WWW}/opengraph-image`],
+    // },
     {
       url: `${WWW}/terms`,
       changeFrequency: 'yearly',
