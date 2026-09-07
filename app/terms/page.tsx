@@ -83,7 +83,7 @@ export default function TermsPage() {
         <h2>Contact</h2>
         <p>
           For questions about these terms, contact us at{' '}
-          <a href="mailto:contact@kautilya-pe.com" style={{ color: 'var(--gold)' }}>contact@kautilya-pe.com</a>.
+          <a href="mailto:DealDesk@kautilya.pe" style={{ color: 'var(--gold)' }}>DealDesk@kautilya.pe</a>.
         </p>
       </div>
     </div>

@@ -87,7 +87,7 @@ export default function PrivacyPage() {
         <h2>Contact</h2>
         <p>
           For privacy-related inquiries or to exercise your rights, contact us at{' '}
-          <a href="mailto:contact@kautilya-pe.com" style={{ color: 'var(--gold)' }}>contact@kautilya-pe.com</a>.
+          <a href="mailto:DealDesk@kautilya.pe" style={{ color: 'var(--gold)' }}>DealDesk@kautilya.pe</a>.
         </p>
       </div>
     </div>

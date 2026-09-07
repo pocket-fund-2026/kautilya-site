@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="footer-tagline">The Architect of the Acquisition</div>
           <div className="footer-tagline-script">कौटिल्य</div>
           <div className="footer-contact">
-            <a href="mailto:contact@kautilya-pe.com">contact@kautilya-pe.com</a>
+            <a href="mailto:DealDesk@kautilya.pe">DealDesk@kautilya.pe</a>
             <span className="footer-contact-address">Mumbai, Maharashtra, India</span>
           </div>
           <div className="footer-social">

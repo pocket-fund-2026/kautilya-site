@@ -25,7 +25,7 @@ export function GET() {
       <link>${WWW}/stories/${slug}</link>
       <guid isPermaLink="true">${WWW}/stories/${slug}</guid>
       <pubDate>${pubDate}</pubDate>
-      <author>contact@kautilya-pe.com (${escapeXml(meta.author)})</author>
+      <author>DealDesk@kautilya.pe (${escapeXml(meta.author)})</author>
       <category>Acquisitions</category>
       <category>M&amp;A Advisory India</category>
       <category>Micro Private Equity</category>
@@ -47,8 +47,8 @@ export function GET() {
     <atom:link href="${WWW}/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
     <lastBuildDate>Fri, 30 May 2026 00:00:00 GMT</lastBuildDate>
-    <managingEditor>contact@kautilya-pe.com (Kautilya)</managingEditor>
-    <webMaster>contact@kautilya-pe.com (Kautilya)</webMaster>
+    <managingEditor>DealDesk@kautilya.pe (Kautilya)</managingEditor>
+    <webMaster>DealDesk@kautilya.pe (Kautilya)</webMaster>
     <copyright>© 2026 Kautilya. All rights reserved.</copyright>
     <ttl>60</ttl>
     <category>M&amp;A Advisory</category>
