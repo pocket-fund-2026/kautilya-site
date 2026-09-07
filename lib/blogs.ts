@@ -2,6 +2,7 @@ export const BLOG_SLUGS = [
   'buying-family-owned-business-india',
   'what-is-a-search-fund',
   'what-is-buy-side-ma-advisory',
+  'analyst-diaries-direct-mail-deal-origination',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -277,6 +278,75 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Business acquisition process India',
       'Buy-side due diligence India',
       'First-time business buyer guidance',
+    ],
+  },
+  'analyst-diaries-direct-mail-deal-origination': {
+    title: "Analyst Diaries: 2,000 Letters In, Here's the Actual Playbook",
+    subtitle: "Inside Kautilya's Direct-Mail Deal Origination Process for a Buy-Side Client",
+    description:
+      "How Kautilya runs direct-mail deal origination for a buy-side client: 2,000 letters, person-verified decision-makers, sub-10% RTS, and a mandate that shifted mid-campaign.",
+    author: 'Sidharth',
+    datePublished: '2026-09-04',
+    category: 'Deal Origination',
+    readTime: '6 min',
+    wordCount: 1650,
+    keywords: [
+      // Primary
+      'direct mail deal origination',
+      'buy-side deal origination',
+      'cold outreach for search funds',
+      'direct mail outreach for acquisition entrepreneurs',
+      // Process / operations
+      'off-market deal sourcing India',
+      'M&A lead verification process',
+      'decision maker outreach SME acquisition',
+      'letter campaign for business acquisition',
+      'physical mail outreach M&A',
+      'Apollo lead sourcing M&A',
+      // Metrics
+      'RTS rate direct mail campaign',
+      'response rate cold outreach M&A',
+      'deal origination approval process',
+      // Search fund / ETA angle
+      'search fund deal sourcing letters',
+      'entrepreneurship through acquisition deal sourcing',
+      'search fund lead generation',
+      // Advisory
+      'buy-side advisory deal origination India',
+      'Kautilya deal origination',
+      'M&A sourcing case study India',
+      // Long-tail
+      'how to find acquisition targets in India',
+      'how to source off-market businesses for acquisition',
+      'finding real decision maker family business acquisition',
+    ],
+    faqs: [
+      {
+        q: 'What is direct-mail deal origination?',
+        a: "Direct-mail deal origination is off-market outreach where a buy-side team mails physical letters — not cold emails — to verified decision-makers at businesses that fit an acquisition mandate, to open a conversation about a potential sale. It's one channel inside a broader buy-side deal sourcing process, usually paired with digital sourcing and direct relationship outreach.",
+      },
+      {
+        q: 'Is direct mail effective for sourcing acquisition targets?',
+        a: "It can be, when every lead is individually verified rather than mail-merged. The main advantage over cold email is that it forces person-by-person research — confirming the actual decision-maker, business fit, and address — before a letter ever ships, which cuts down on wasted outreach to the wrong person or a defunct listing.",
+      },
+      {
+        q: 'What is a good RTS (return to sender) rate for an M&A outreach letter campaign?',
+        a: "Under 10% is a reasonable benchmark for a well-verified list. Most RTS on a campaign like this comes from businesses that haven't updated their listed address online, not from bad list-building — which is why address verification is a distinct step before mailing, separate from confirming the business and decision-maker.",
+      },
+      {
+        q: 'How do you find the real decision-maker at a small or family-owned business for cold outreach?',
+        a: "Check in order: founder, then managing director, then co-founder, then CEO — because enrichment tools like Apollo frequently list a founder who has since stepped back from day-to-day operations. Verifying against the business's own website and recent activity, rather than trusting the enrichment tool's tag, catches cases where an adult child or a hired MD is now the actual decision-maker.",
+      },
+      {
+        q: 'Why would a buy-side firm change its acquisition mandate mid-campaign?',
+        a: 'Because sector-level opportunity only becomes clear once outreach is underway. Early results and client feedback can reveal that a sector assumed to be attractive (e.g. construction, solar) is too competitive or too cyclical, while an underweighted sector (e.g. metal fabrication, height-compliance and rope-access services) turns out to have more genuine acquisition opportunity than the original mandate assumed.',
+      },
+    ],
+    about: [
+      'Buy-side deal origination',
+      'Direct mail M&A outreach',
+      'Off-market deal sourcing India',
+      'Search fund deal origination',
     ],
   },
 };
