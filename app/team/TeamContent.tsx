@@ -6,7 +6,6 @@ import Link from 'next/link';
 const devImage = '/images/Dev.jpeg';
 const aumImage = '/images/aum.jpg';
 const ganeshImage = '/images/ganesh.jpg';
-const manasImage = '/images/manas.jpeg';
 const pushkarImage = '/images/pushkar.jpeg';
 const aryanImage = '/images/aryan.jpeg';
 const kabirImage = '/images/kabir.jpg';
@@ -45,14 +44,6 @@ const TEAM_MEMBERS: TeamMember[] = [
     desc: 'Drives the technology vision, builds scalable systems, and ensures secure, efficient platforms that power our products and operations.',
     initials: 'GJ',
     image: ganeshImage,
-  },
-    {
-    name: 'Manas Kogta',
-    role: 'AI Consultant',
-    desc: 'Brings AI expertise to the firm, designing intelligent workflows and applying AI to accelerate diligence, and unlock data-driven edges across mandates.',
-    initials: 'M',
-    image: manasImage,
-    linkedin: 'https://www.linkedin.com/in/manaskogta/',
   },
   {
     name: 'Pushkar Rathod',
