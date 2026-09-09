@@ -4,7 +4,7 @@ import HomeContent from './HomeContent';
 export const metadata: Metadata = {
   title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing India' },
   description:
-    'Buy-side M&A advisory for lower middle market acquisitions. Proprietary deal sourcing for private equity, search funds, and family office buyers — off-market, mandate to close.',
+    'Buy-side M&A advisory for lower middle market acquisitions — proprietary off-market deal sourcing for PE and family office buyers, mandate to close.',
   keywords: [
     'buy-side advisory India', 'proprietary deal sourcing', 'off-market acquisitions',
     'M&A advisory India', 'buy a business India', 'acquisition pipeline',
