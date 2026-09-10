@@ -7,6 +7,7 @@ import NewsletterLockheedUltraMaritime from '@/components/newsletters/Newsletter
 import NewsletterJSWAkzoNobel from '@/components/newsletters/NewsletterJSWAkzoNobel';
 import NewsletterCoforgeEncora from '@/components/newsletters/NewsletterCoforgeEncora';
 import NewsletterChrysCapitalNovartis from '@/components/newsletters/NewsletterChrysCapitalNovartis';
+import NewsletterSunPharmaOrganon from '@/components/newsletters/NewsletterSunPharmaOrganon';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -17,6 +18,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'jsw-paints-akzo-nobel-dulux-acquisition-explained': NewsletterJSWAkzoNobel,
   'coforge-encora-acquisition-explained': NewsletterCoforgeEncora,
   'chryscapital-novartis-india-acquisition-explained': NewsletterChrysCapitalNovartis,
+  'sun-pharma-organon-acquisition-explained': NewsletterSunPharmaOrganon,
 };
 
 type Props = {

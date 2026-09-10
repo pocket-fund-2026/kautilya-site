@@ -5,6 +5,7 @@ export const NEWSLETTER_SLUGS = [
   'jsw-paints-akzo-nobel-dulux-acquisition-explained',
   'coforge-encora-acquisition-explained',
   'chryscapital-novartis-india-acquisition-explained',
+  'sun-pharma-organon-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -498,6 +499,91 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Novartis AG', sameAs: 'https://www.novartis.com' },
       { name: 'WaveRise Investments' },
       { name: 'Axis Capital', sameAs: 'https://www.axiscapital.co.in' },
+    ],
+  },
+  'sun-pharma-organon-acquisition-explained': {
+    title: "Sun Pharma's $11.75B Organon Acquisition, Explained",
+    subtitle: "How a Debt-Funded Mega-Deal Became India's Largest Overseas Pharma Buyout",
+    description:
+      "Sun Pharma is paying $11.75B for Organon, a Merck spin-off, in India's largest-ever overseas pharma acquisition. Only $3.68B is equity; the rest is assumed debt, financed by an 11-bank syndicate that includes an Indian state bank for the first time. Kautilya's deal-structure teardown of the price, the premium, and the financing.",
+    author: 'Dev Shah',
+    datePublished: '2026-09-10',
+    dealDate: '2026-04-26',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 2500,
+    image: '/images/newsletter/sun-pharma-organon-acquisition/sun-pharma-organon-equity-debt-split.webp',
+    keywords: [
+      // Deal-specific
+      'Sun Pharma Organon acquisition',
+      'Sun Pharma Organon deal explained',
+      'Sun Pharma $11.75 billion Organon',
+      'Sun Pharma Organon acquisition analysis',
+      'Organon Sun Pharma merger',
+      'largest Indian outbound pharma acquisition',
+      'Sun Pharma biosimilars acquisition',
+      'Sun Pharma women\'s health acquisition',
+      // Structure angle
+      'leveraged cross-border acquisition India',
+      'reverse triangular merger explained',
+      'assumed debt acquisition structure',
+      'enterprise value vs equity value M&A',
+      'outbound takeover loan India',
+      'SBI outbound acquisition financing',
+      'RBI reform outbound M&A financing',
+      'syndicated bank loan cross-border acquisition',
+      // Sector
+      'Indian pharma M&A 2026',
+      'Indian pharma overseas acquisition',
+      'pharma leveraged buyout India',
+      'CRISIL rating pharma acquisition',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'buy-side advisory deal analysis India',
+      'M&A deal structure analysis India',
+      // Long-tail
+      'why did Sun Pharma buy Organon',
+      'how much debt did Sun Pharma take on for Organon',
+      'Sun Pharma Organon premium 24% 60% 103%',
+      'Sun Pharma Organon financing syndicate banks',
+      'Sun Pharma Ranbaxy Organon deal comparison',
+    ],
+    faqs: [
+      {
+        q: 'How much is Sun Pharma paying for Organon?',
+        a: 'Sun Pharma agreed to pay $11.75B in enterprise value for Organon, at $14.00 a share in an all-cash deal. Of that, only $3.68B is the equity paid to shareholders; the remaining ~$8.07B is Organon\'s net debt, which Sun assumes as part of the transaction.',
+      },
+      {
+        q: 'Why do different reports quote the premium as 24%, 60%, or 103%?',
+        a: 'All three are correct, measured from different reference dates. The 24% figure is against the Friday close before announcement, but that price was already inflated by a leak the day before signing, when Organon\'s stock jumped about 31% on an Economic Times report. The 103% figure is against the April 9 ‘unaffected’ close, before any speculation moved the stock, and is the one Sun and Organon\'s own filings use as the honest denominator.',
+      },
+      {
+        q: 'What role did State Bank of India play in financing the deal?',
+        a: 'SBI joined an eleven-bank global syndicate with a commitment of roughly $1B, marking the first time an Indian public-sector bank has helped finance an outbound takeover. This followed a February 2026 RBI reform permitting domestic public-sector banks to lend into overseas acquisitions by Indian companies, a route that was effectively closed to them before.',
+      },
+      {
+        q: 'How much debt is Sun Pharma taking on, and can it carry it?',
+        a: 'Sun inherits about $8.6B of Organon\'s debt against $1.9B of EBITDA, roughly 4x leverage standalone. Once combined with Sun Pharma\'s near-debt-free balance sheet, the ratio falls to about 2.3x net debt to EBITDA. CRISIL reaffirmed Sun\'s AAA/Stable rating on August 4, 2026 after modelling the acquisition, and Sun projects about $2.5B of annual free cash flow earmarked for paying the debt down.',
+      },
+      {
+        q: 'When is the Sun Pharma-Organon deal expected to close?',
+        a: 'As of this issue (status dated August 24, 2026), the deal is shareholder-approved, cleared by US antitrust regulators, and fully financed, but not yet closed. The remaining step is clearance from the European Commission and other non-US antitrust and FDI regulators, with close expected in early 2027 and an outside date of January 26, 2027.',
+      },
+    ],
+    about: [
+      'Sun Pharma Organon acquisition',
+      'Leveraged cross-border acquisition structures',
+      'Indian outbound pharma M&A',
+      'Syndicated acquisition financing',
+    ],
+    mentions: [
+      { name: 'Sun Pharmaceutical Industries Ltd', sameAs: 'https://www.sunpharma.com' },
+      { name: 'Organon & Co.', sameAs: 'https://www.organon.com' },
+      { name: 'State Bank of India', sameAs: 'https://www.sbi.co.in' },
+      { name: 'Merck & Co.' },
+      { name: 'CRISIL', sameAs: 'https://www.crisil.com' },
     ],
   },
 };
