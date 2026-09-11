@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
@@ -8,6 +8,11 @@ const ThreeScene = dynamic(() => import('@/components/ThreeScene'), { ssr: false
 
 export default function HomeContent() {
   const scrollProgressRef = useRef(0);
+  // Defer mounting the 3D scene (three.js + GSAP ScrollTrigger + GLB loads) until
+  // the user has actually scrolled toward it, instead of on initial page load.
+  // The scene was blocking the main thread for 6+ seconds immediately on load,
+  // which delayed interactivity on the hero itself.
+  const [shouldMountScene, setShouldMountScene] = useState(false);
 
   // Cache DOM lookups so we don't getElementById on every scroll frame
   const domCacheRef = useRef<{
@@ -112,6 +117,28 @@ export default function HomeContent() {
     };
   }, [handleScroll]);
 
+  useEffect(() => {
+    // Scroll-position check rather than IntersectionObserver: the sky section
+    // sits immediately below a 100vh hero, so an observer can fire on the very
+    // first (pre-font-load) layout pass and mount the scene before the user has
+    // scrolled at all, defeating the deferral. A concrete scrollY threshold has
+    // no such race.
+    let mounted = false;
+    const maybeMount = () => {
+      if (mounted) return;
+      if (window.scrollY > window.innerHeight * 0.4) {
+        mounted = true;
+        setShouldMountScene(true);
+        window.removeEventListener('scroll', maybeMount);
+      }
+    };
+
+    window.addEventListener('scroll', maybeMount, { passive: true });
+    maybeMount();
+
+    return () => window.removeEventListener('scroll', maybeMount);
+  }, []);
+
 return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
@@ -145,8 +172,24 @@ return (
     opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
   }
 
+  .hero-cta {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 14px 36px;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease;
+    opacity: 0; animation: fadeUp 0.8s ease 0.75s forwards;
+  }
+  .hero-cta:hover { background: var(--gold); color: var(--canvas); }
+
   .intro .scroll-cue {
-    margin-top: 60px; display: flex; flex-direction: column;
+    margin-top: 40px; display: flex; flex-direction: column;
     align-items: center; gap: 10px;
     opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards;
   }
@@ -170,7 +213,7 @@ return (
   }
   /* ----------------------- */
 
-  .sky-scroll { position: relative; height: 2200vh; overscroll-behavior: none; }
+  .sky-scroll { position: relative; height: 600vh; overscroll-behavior: none; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
   .sky-sticky canvas {
     display: block; width: 100%; height: 100%;
@@ -221,7 +264,7 @@ return (
 
     .sky-mask-top, .sky-mask-bottom { height: 20vh; }
 
-    .sky-scroll { height: 850vh; }
+    .sky-scroll { height: 380vh; }
     .sky-text-overlay { padding-bottom: 8vh; }
     /* Mobile centering fix: removed leftover padding-left values that
        offset elements from true center. The hero-title also no longer
@@ -257,7 +300,7 @@ return (
 
     .sky-mask-top, .sky-mask-bottom { height: 15vh; }
 
-    .sky-scroll { height: 720vh; }
+    .sky-scroll { height: 320vh; }
     .sky-text-overlay { padding-bottom: 18vh; }
     .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; padding: 0; text-align: center; }
     .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; text-align: center; }
@@ -289,6 +332,9 @@ return (
         <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
           Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, and family offices.<br /><span style={{ color: '#fff' }}>We don&apos;t carry a pipeline. We build yours.</span>
         </p>
+        <Link href="/engage" className="hero-cta">
+          Talk to DealDesk
+        </Link>
         <div className="scroll-cue">
           <span>Enter</span>
           <div className="scroll-line" />
@@ -300,7 +346,7 @@ return (
         <div className="sky-mask-top" />
         <div className="sky-scroll" id="skyScroll">
           <div className="sky-sticky">
-            <ThreeScene scrollContainerSelector="#skyScroll" />
+            {shouldMountScene && <ThreeScene scrollContainerSelector="#skyScroll" />}
             <div className="sky-text-overlay" id="skyText0">
               <div className="eyebrow">Nakshatra · The Uncharted</div>
               <div className="main-text">The market is vast.</div>
