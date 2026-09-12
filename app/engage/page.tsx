@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     'acquisition advisory India contact', 'M&A advisor Mumbai contact',
     'buy-side M&A contact India', 'acquisition pipeline enquiry India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/engage', languages: { 'en': 'https://www.kautilya-pe.com/engage', 'x-default': 'https://www.kautilya-pe.com/engage' } },
+  alternates: { canonical: 'https://www.kautilya.pe/engage', languages: { 'en': 'https://www.kautilya.pe/engage', 'x-default': 'https://www.kautilya.pe/engage' } },
   openGraph: {
     title: 'Engage | Kautilya | Start Your Acquisition Mandate',
-    url: 'https://www.kautilya-pe.com/engage',
+    url: 'https://www.kautilya.pe/engage',
     description: 'Submit your acquisition thesis or book a call. Kautilya builds your proprietary deal pipeline from day one.',
   },
   other: {
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Engage',
     abstract: 'Submit your acquisition thesis or book a call. Kautilya builds your proprietary deal pipeline from day one.',
     summary: 'Contact Kautilya to start a buy-side acquisition mandate — retainers from $2,500/month, standalone DD from $6,500.',
-    'og:see_also': 'https://www.kautilya-pe.com/approach',
+    'og:see_also': 'https://www.kautilya.pe/approach',
   },
 };
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const contactPageSchema = {
   '@context': 'https://schema.org',

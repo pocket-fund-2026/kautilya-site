@@ -533,7 +533,7 @@ export default function BlogWhatIsASearchFund() {
           <h3>Supporting academic context</h3>
           <p>IESE Business School, Re-Thinking Search Fund Incentive Structures; Yale SOM, Exploring Search Fund Entrepreneur Economics (2023).</p>
           <h3>Kautilya&apos;s own calculations, not disclosed figures</h3>
-          <p>Every rupee conversion on this page, at ~₹96.6/$1 (July 2026). Engagement values in the outside-the-US section are from kautilya-pe.com&apos;s portfolio.</p>
+          <p>Every rupee conversion on this page, at ~₹96.6/$1 (July 2026). Engagement values in the outside-the-US section are from kautilya.pe&apos;s portfolio.</p>
           <h3>Labelled inference, not data</h3>
           <p>The three consequences listed in &ldquo;What This Looks Like Outside the US&rdquo; are Kautilya&apos;s structural reasoning. No India-specific search fund dataset exists, and none is claimed.</p>
           <h3>Open items</h3>

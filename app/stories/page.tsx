@@ -43,10 +43,10 @@ export const metadata: Metadata = {
     'MSP buy-side due diligence', 'quality of earnings MSP',
     'EBITDA normalization case study', 'MSP margin analysis',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/stories', languages: { 'en': 'https://www.kautilya-pe.com/stories', 'x-default': 'https://www.kautilya-pe.com/stories' } },
+  alternates: { canonical: 'https://www.kautilya.pe/stories', languages: { 'en': 'https://www.kautilya.pe/stories', 'x-default': 'https://www.kautilya.pe/stories' } },
   openGraph: {
     title: 'Stories | Kautilya | Acquisitions & Market Intelligence',
-    url: 'https://www.kautilya-pe.com/stories',
+    url: 'https://www.kautilya.pe/stories',
     description: 'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice.',
   },
   other: {
@@ -56,11 +56,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Stories',
     abstract: '16 deal journals, case studies, and market intelligence articles from Kautilya\'s buy-side advisory practice.',
     summary: 'Acquisition case studies and market intelligence covering search funds, micro PE, off-market deal sourcing, and due diligence in India.',
-    'og:see_also': 'https://www.kautilya-pe.com/portfolio',
+    'og:see_also': 'https://www.kautilya.pe/portfolio',
   },
 };
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const blogSchema = {
   '@context': 'https://schema.org',

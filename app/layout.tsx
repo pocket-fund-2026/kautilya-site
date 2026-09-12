@@ -35,7 +35,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.kautilya-pe.com'),
+  metadataBase: new URL('https://www.kautilya.pe'),
   title: {
     default: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     template: 'Kautilya | %s',
@@ -65,15 +65,15 @@ export const metadata: Metadata = {
     'proprietary pipeline India', 'micro PE India', 'mandated buy-side search',
     'acquisition thesis India', 'India M&A market 2026', 'off-market M&A India',
   ],
-  authors: [{ name: 'Kautilya', url: 'https://www.kautilya-pe.com' }],
+  authors: [{ name: 'Kautilya', url: 'https://www.kautilya.pe' }],
   creator: 'Kautilya',
   publisher: 'Kautilya',
   category: 'Finance & M&A Advisory',
   alternates: {
-    canonical: 'https://www.kautilya-pe.com',
+    canonical: 'https://www.kautilya.pe',
     languages: {
-      'en': 'https://www.kautilya-pe.com',
-      'x-default': 'https://www.kautilya-pe.com',
+      'en': 'https://www.kautilya.pe',
+      'x-default': 'https://www.kautilya.pe',
     },
   },
   icons: {
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.kautilya-pe.com',
+    url: 'https://www.kautilya.pe',
     siteName: 'Kautilya',
     title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
     description:

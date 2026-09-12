@@ -1,6 +1,6 @@
 import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
 
-const WWW = 'https://www.kautilya-pe.com';
+const WWW = 'https://www.kautilya.pe';
 
 function escapeXml(str: string): string {
   return str

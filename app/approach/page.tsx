@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     'acquisition success rate India', 'response rate outreach acquisition',
     'off-market deal process India', 'proprietary sourcing process India',
   ],
-  alternates: { canonical: 'https://www.kautilya-pe.com/approach', languages: { 'en': 'https://www.kautilya-pe.com/approach', 'x-default': 'https://www.kautilya-pe.com/approach' } },
+  alternates: { canonical: 'https://www.kautilya.pe/approach', languages: { 'en': 'https://www.kautilya.pe/approach', 'x-default': 'https://www.kautilya.pe/approach' } },
   openGraph: {
     title: 'Approach | Kautilya | M&A Methodology & Deal Sourcing',
-    url: 'https://www.kautilya-pe.com/approach',
+    url: 'https://www.kautilya.pe/approach',
     description: 'Five-phase acquisition process: mandate definition, universe construction, targeted outreach, diligence, and close.',
   },
   other: {
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Approach',
     abstract: 'Five-phase buy-side acquisition methodology: mandate definition, universe construction, targeted outreach, forensic diligence, and close.',
     summary: 'Kautilya\'s proprietary 5-phase acquisition process — 2,500+ founder conversations, 99.83% match rate, diligence in under 15 days.',
-    'og:see_also': 'https://www.kautilya-pe.com/portfolio',
+    'og:see_also': 'https://www.kautilya.pe/portfolio',
   },
 };
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const serviceSchema = {
   '@context': 'https://schema.org',

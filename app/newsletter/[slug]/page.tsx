@@ -9,7 +9,7 @@ import NewsletterCoforgeEncora from '@/components/newsletters/NewsletterCoforgeE
 import NewsletterChrysCapitalNovartis from '@/components/newsletters/NewsletterChrysCapitalNovartis';
 import NewsletterSunPharmaOrganon from '@/components/newsletters/NewsletterSunPharmaOrganon';
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,

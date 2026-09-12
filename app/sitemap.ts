@@ -3,7 +3,7 @@ import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 
-const WWW = 'https://www.kautilya-pe.com';
+const WWW = 'https://www.kautilya.pe';
 
 const STORY_IMAGES: Record<string, string[]> = {
   'borderless':      ['/images/portfolio-logos/borderless.png', '/images/stories/borderless/exhausting-market.png', '/images/stories/borderless/maket-no-deals.png', '/images/stories/borderless/money-annualised.png'],

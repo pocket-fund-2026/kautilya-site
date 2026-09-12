@@ -67,8 +67,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'kautilya-pe.com' }],
-        destination: 'https://www.kautilya-pe.com/:path*',
+        has: [{ type: 'host', value: 'kautilya.pe' }],
+        destination: 'https://www.kautilya.pe/:path*',
         permanent: true,
       },
       // Careers moved off-domain to the hiring funnel (hirepeanalyst.com).
