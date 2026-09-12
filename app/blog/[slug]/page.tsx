@@ -5,6 +5,7 @@ import BlogFamilyBusinessAcquisition from '@/components/blogs/BlogFamilyBusiness
 import BlogWhatIsASearchFund from '@/components/blogs/BlogWhatIsASearchFund';
 import BlogWhatIsBuySideMAAdvisory from '@/components/blogs/BlogWhatIsBuySideMAAdvisory';
 import BlogAnalystDiariesDirectMailOutreach from '@/components/blogs/BlogAnalystDiariesDirectMailOutreach';
+import BlogHowToFindAcquisitionCapital from '@/components/blogs/BlogHowToFindAcquisitionCapital';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -13,6 +14,7 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'what-is-a-search-fund': BlogWhatIsASearchFund,
   'what-is-buy-side-ma-advisory': BlogWhatIsBuySideMAAdvisory,
   'analyst-diaries-direct-mail-deal-origination': BlogAnalystDiariesDirectMailOutreach,
+  'how-to-find-acquisition-capital': BlogHowToFindAcquisitionCapital,
 };
 
 type Props = {

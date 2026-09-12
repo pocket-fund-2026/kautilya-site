@@ -3,6 +3,7 @@ export const BLOG_SLUGS = [
   'what-is-a-search-fund',
   'what-is-buy-side-ma-advisory',
   'analyst-diaries-direct-mail-deal-origination',
+  'how-to-find-acquisition-capital',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -347,6 +348,96 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Direct mail M&A outreach',
       'Off-market deal sourcing India',
       'Search fund deal origination',
+    ],
+  },
+  'how-to-find-acquisition-capital': {
+    title: 'How to Find Acquisition Capital to Buy a Business',
+    subtitle: 'Where Funding Actually Comes From, and the Work to Do Before Your First Investor Conversation',
+    description:
+      'Where acquisition capital actually comes from, what investors underwrite before they read your plan, and the work you must finish before your first investor conversation.',
+    author: 'Dev Shah',
+    datePublished: '2026-09-12',
+    category: 'Buyer Guides',
+    readTime: '10 min',
+    wordCount: 2400,
+    keywords: [
+      // Primary
+      'how to find acquisition capital',
+      'how to fund a business acquisition',
+      'raising capital to buy a business',
+      // Secondary (from brief)
+      'search fund investors',
+      'ETA funding',
+      'family office acquisition funding',
+      // Structural / no-SBA angle
+      'SBA equivalent outside US',
+      'acquisition financing without SBA loan',
+      'seller financing business acquisition',
+      'asset-backed lending business acquisition',
+      'promoter guaranteed loan business acquisition',
+      // Investor underwriting angle
+      'how investors evaluate searchers',
+      'search fund investor underwriting criteria',
+      'what investors look for in a searcher',
+      // Sourcing / capital sequencing
+      'seller conversations before raising capital',
+      'deal origination before fundraising',
+      'off-market deal sourcing for investors',
+      'search fund dealflow pipeline',
+      // Geography
+      'business acquisition funding India',
+      'acquisition capital outside United States',
+      'cross border acquisition funding',
+      'foreign investment business acquisition compliance',
+      // Search fund / ETA
+      'search fund capital raise',
+      'entrepreneurship through acquisition funding',
+      'self funded search capital',
+      'traditional search fund capital raise',
+      // Institutional
+      'Stanford search fund returns',
+      'IESE search fund study',
+      'search fund IRR data',
+      // Long-tail
+      'how much equity to raise for business acquisition',
+      'family office HNI capital for business acquisition',
+      'how to pitch investors for business acquisition',
+    ],
+    faqs: [
+      {
+        q: 'How much capital do you need to buy a business?',
+        a: "It depends entirely on deal size and structure, but outside markets with mature acquisition-lending infrastructure, assume you'll be funding most of the purchase price with equity rather than debt. Model conservatively and confirm lending appetite before committing to a structure.",
+      },
+      {
+        q: 'Can foreign investors fund a business acquisition?',
+        a: 'Often yes, subject to exchange control regulations, sector caps, valuation and pricing requirements, and reporting obligations that vary by country. This is genuinely complex and jurisdiction-specific. Engage counsel before accepting foreign capital into any acquisition vehicle.',
+      },
+      {
+        q: 'Do search funds exist outside the US?',
+        a: 'Yes. The model is well established internationally and tracked by institutions like IESE and Stanford. The maturity of the local ecosystem varies a lot by market. International funders who back searchers in other markets are often the most realistic institutional source, alongside local family offices and HNI capital that operate on a relationship basis rather than a standardised structure.',
+      },
+      {
+        q: 'How many seller conversations should I have before approaching investors?',
+        a: 'At least a dozen substantive ones, ideally twenty, concentrated in a single vertical. Quality matters more than count. A conversation where the owner disclosed their succession timeline and a revenue range is worth ten polite refusals.',
+      },
+      {
+        q: 'Is there a government-backed lending programme for buying a business?',
+        a: "In the US, yes: SBA lending. Almost everywhere else, no direct equivalent exists. Local small-business credit and guarantee schemes typically fund operations, equipment, and expansion for a business the promoter already owns, not the purchase of somebody else's equity. This absence is the main reason acquisition entrepreneurship remains comparatively rare outside the US, and why deals elsewhere tend to be structured equity-heavy.",
+      },
+      {
+        q: "Will banks lend against a target's cash flows?",
+        a: 'Generally no, not in the way US lenders do for small acquisitions. Many banking systems restrict lending against share acquisitions, so expect asset-backed facilities, promoter guarantees, seller financing, and private credit instead of cash-flow-based acquisition finance. Verify your specific situation with a banker early, before your structure depends on the answer.',
+      },
+      {
+        q: 'Does my background matter more than my dealflow?',
+        a: 'Background determines how quickly a conversation starts and on what terms. Dealflow determines whether it finishes. Neither substitutes for the other, but only one is within your control this week.',
+      },
+    ],
+    about: [
+      'Acquisition capital sourcing',
+      'Search fund investor relations',
+      'Business acquisition financing outside the US',
+      'Entrepreneurship through acquisition funding',
     ],
   },
 };
