@@ -7,7 +7,7 @@ import BlogWhatIsBuySideMAAdvisory from '@/components/blogs/BlogWhatIsBuySideMAA
 import BlogAnalystDiariesDirectMailOutreach from '@/components/blogs/BlogAnalystDiariesDirectMailOutreach';
 import BlogHowToFindAcquisitionCapital from '@/components/blogs/BlogHowToFindAcquisitionCapital';
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,

@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     'bolt-on acquisition case study India', 'acqui-hire India case study',
     'digital wellness M&A India', 'professional services acquisition India',
   ],
-  alternates: { canonical: 'https://www.kautilya.pe/portfolio', languages: { 'en': 'https://www.kautilya.pe/portfolio', 'x-default': 'https://www.kautilya.pe/portfolio' } },
+  alternates: { canonical: 'https://www.kautilya-pe.com/portfolio', languages: { 'en': 'https://www.kautilya-pe.com/portfolio', 'x-default': 'https://www.kautilya-pe.com/portfolio' } },
   openGraph: {
     title: 'Portfolio | Kautilya | Acquisitions & Case Studies',
-    url: 'https://www.kautilya.pe/portfolio',
+    url: 'https://www.kautilya-pe.com/portfolio',
     description: '$1.5M+ in deal value. Case studies across SaaS, mobile apps, digital wellness, and immigration tech.',
   },
   other: {
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Deal Portfolio',
     abstract: 'Kautilya\'s closed acquisition portfolio: $1.5M+ in deal value across SaaS, mobile apps, digital wellness, and immigration tech.',
     summary: 'Six closed acquisition and due-diligence case studies: Confidential MSP ($21M buy-side DD), Inspire3 ($1.8M DD), Borderless (UK immigration), Dino Games ($39K), Runify ($110K), SmartPrompt ($12K).',
-    'og:see_also': 'https://www.kautilya.pe/stories',
+    'og:see_also': 'https://www.kautilya-pe.com/stories',
   },
 };
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const portfolioSchema = {
   '@context': 'https://schema.org',

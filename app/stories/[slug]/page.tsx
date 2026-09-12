@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { STORY_SLUGS, STORY_META, STORY_FAQ, STORY_HOWTO, type StorySlug } from '@/lib/stories';
 import StoryContent from './StoryContent';
 
-const BASE_URL = 'https://www.kautilya.pe';
+const BASE_URL = 'https://www.kautilya-pe.com';
 
 type Props = {
   params: Promise<{ slug: string }>;

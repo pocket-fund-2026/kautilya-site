@@ -1,4 +1,4 @@
-const WWW = 'https://www.kautilya.pe';
+const WWW = 'https://www.kautilya-pe.com';
 
 function escapeXml(str: string): string {
   return str

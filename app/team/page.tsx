@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     'analyst team buy-side India', 'senior M&A practitioners India',
     'Kautilya advisory people', 'acquisition advisory counsel India',
   ],
-  alternates: { canonical: 'https://www.kautilya.pe/team', languages: { 'en': 'https://www.kautilya.pe/team', 'x-default': 'https://www.kautilya.pe/team' } },
+  alternates: { canonical: 'https://www.kautilya-pe.com/team', languages: { 'en': 'https://www.kautilya-pe.com/team', 'x-default': 'https://www.kautilya-pe.com/team' } },
   openGraph: {
     title: 'Team | Kautilya | M&A Advisory Specialists',
-    url: 'https://www.kautilya.pe/team',
+    url: 'https://www.kautilya-pe.com/team',
     description: 'Analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
   },
   other: {
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Team',
     abstract: '7-person team of analysts, operators, and M&A specialists behind Kautilya\'s proprietary deal sourcing practice.',
     summary: 'Led by Dev Shah (Founder), the Kautilya team covers deal sourcing, forensic due diligence, tech, AI workflows, and marketing.',
-    'og:see_also': 'https://www.kautilya.pe/careers',
+    'og:see_also': 'https://www.kautilya-pe.com/careers',
   },
 };
 
-const BASE_URL = 'https://www.kautilya.pe';
+const BASE_URL = 'https://www.kautilya-pe.com';
 
 const org = { '@type': 'Organization', name: 'Kautilya', url: BASE_URL };
 

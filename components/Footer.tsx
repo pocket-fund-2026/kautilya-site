@@ -62,7 +62,7 @@ export default function Footer() {
           <img src="https://lemonlaunch.dev/badge/lemonlaunch-badge-light.svg" alt="Featured on LemonLaunch" width={94} height={28} />
         </a>
         <a href="https://verifieddr.com/website/kautilya-pe-com" target="_blank" rel="noopener">
-          <img src="https://verifieddr.com/badge/kautilya-pe-com.svg" alt="Verified DR - Verified Domain Rating for www.kautilya.pe" width={220} height={68} />
+          <img src="https://verifieddr.com/badge/kautilya-pe-com.svg" alt="Verified DR - Verified Domain Rating for www.kautilya-pe.com" width={220} height={68} />
         </a>
       </div>
     </footer>

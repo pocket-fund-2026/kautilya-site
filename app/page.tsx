@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     'acquisition opportunity India', 'buying a business guide India',
     'how to acquire a business India', 'steps to buy a business India',
   ],
-  alternates: { canonical: 'https://www.kautilya.pe', languages: { 'en': 'https://www.kautilya.pe', 'x-default': 'https://www.kautilya.pe' } },
+  alternates: { canonical: 'https://www.kautilya-pe.com', languages: { 'en': 'https://www.kautilya-pe.com', 'x-default': 'https://www.kautilya-pe.com' } },
   openGraph: {
     title: 'Kautilya | Buy-Side Advisory & Deal Sourcing India',
-    url: 'https://www.kautilya.pe',
+    url: 'https://www.kautilya-pe.com',
     description:
       'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   },
@@ -48,11 +48,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Home',
     abstract: 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers — sector-agnostic, off-market, mandate to close.',
     summary: 'Buy-side M&A advisory firm building proprietary acquisition pipelines for PE, VC, and family office buyers across India, US, UAE, and UK.',
-    'og:see_also': 'https://www.kautilya.pe/approach',
+    'og:see_also': 'https://www.kautilya-pe.com/approach',
   },
 };
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const organizationSchema = {
   '@context': 'https://schema.org',

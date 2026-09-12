@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     'SaaS acquisition FAQ India', 'how does off-market sourcing work India',
     'proprietary deal sourcing process FAQ', 'acquisition mandate FAQ India',
   ],
-  alternates: { canonical: 'https://www.kautilya.pe/faq', languages: { 'en': 'https://www.kautilya.pe/faq', 'x-default': 'https://www.kautilya.pe/faq' } },
+  alternates: { canonical: 'https://www.kautilya-pe.com/faq', languages: { 'en': 'https://www.kautilya-pe.com/faq', 'x-default': 'https://www.kautilya-pe.com/faq' } },
   openGraph: {
     title: 'FAQ | Kautilya | Micro Private Equity & Buy-Side Advisory',
-    url: 'https://www.kautilya.pe/faq',
+    url: 'https://www.kautilya-pe.com/faq',
     description: '26 answered questions on M&A advisory, off-market deal sourcing, due diligence, and transparent pricing.',
   },
   other: {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — FAQ',
     abstract: '26 answered questions covering buy-side advisory, off-market deal sourcing, forensic due diligence, pricing, deal structures, and post-acquisition operations.',
     summary: 'Comprehensive FAQ for first-time buyers and experienced acquirers: what is Kautilya, how deals are sourced, what due diligence covers, and pricing from $3,500 to $10,000/month.',
-    'og:see_also': 'https://www.kautilya.pe/engage',
+    'og:see_also': 'https://www.kautilya-pe.com/engage',
   },
 };
 
@@ -242,7 +242,7 @@ const FAQ_SECTIONS: FaqSection[] = [
 
 const allItems = FAQ_SECTIONS.flatMap((s) => s.items);
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const faqSchema = {
   '@context': 'https://schema.org',

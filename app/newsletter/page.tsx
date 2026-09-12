@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import NewsletterContent from './NewsletterContent';
 import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 export const metadata: Metadata = {
   title: { absolute: 'The Kautilya Newsletter | Deal-Structure Teardowns' },
