@@ -4,6 +4,7 @@ export const BLOG_SLUGS = [
   'what-is-buy-side-ma-advisory',
   'analyst-diaries-direct-mail-deal-origination',
   'how-to-find-acquisition-capital',
+  'what-is-sell-side-ma-advisory',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -438,6 +439,80 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Search fund investor relations',
       'Business acquisition financing outside the US',
       'Entrepreneurship through acquisition funding',
+    ],
+  },
+  'what-is-sell-side-ma-advisory': {
+    title: 'Sell-Side M&A Advisory: What It Is and How It Works',
+    subtitle: 'A Plain-Language Guide for Business Owners',
+    description:
+      'A plain-language guide to sell-side M&A advisory: what it is, how the process works, what it costs, and how to tell if you actually need one.',
+    author: 'Dev Shah',
+    datePublished: '2026-09-16',
+    category: 'Seller Guides',
+    readTime: '7 min',
+    wordCount: 1750,
+    keywords: [
+      // Primary
+      'sell-side M&A advisory',
+      'sell-side M&A process',
+      'M&A advisor fees',
+      'M&A advisor vs business broker',
+      // Explainer / beginner intent
+      'what is sell-side advisory',
+      'sell-side advisory explained',
+      'how does selling a business with an advisor work',
+      'sell side vs buy side advisory',
+      'buy-side advisor vs sell-side advisor',
+      // Process
+      'sell-side M&A process steps',
+      'how to sell a business with an advisor',
+      'confidential information memorandum CIM',
+      'letter of intent business sale',
+      // Cost / fees
+      'M&A advisor retainer and success fee',
+      'Lehman formula M&A fees',
+      'investment banker fees business sale',
+      'how much does it cost to sell a business',
+      // Comparisons
+      'business broker vs investment banker',
+      'do I need an M&A advisor to sell my business',
+      'sell-side advisor vs sell-side analyst',
+      // Long-tail
+      'when to hire an M&A advisor to sell',
+      'selling a business with one buyer already',
+      'how long does selling a business take with an advisor',
+    ],
+    faqs: [
+      {
+        q: 'Is a sell-side M&A advisor the same as a sell-side analyst?',
+        a: 'No. A sell-side analyst is a job in equity research, working for a brokerage and covering publicly traded stocks. It has nothing to do with selling a private company. A sell-side M&A advisor is the role described in this article.',
+      },
+      {
+        q: 'How much do sell-side M&A advisors charge?',
+        a: 'Typically a retainer plus a success fee at closing, with the success fee often set on a sliding scale that decreases as the deal size increases. Exact percentages vary by advisor, deal size, and negotiating leverage.',
+      },
+      {
+        q: "What's the difference between an M&A advisor and a business broker?",
+        a: 'Mainly deal size and process. Business brokers usually handle smaller, simpler sales to individual buyers. M&A advisors run structured, competitive processes aimed at larger companies and institutional buyers, usually for bigger deals.',
+      },
+      {
+        q: 'What is a CIM?',
+        a: 'A Confidential Information Memorandum — a detailed document describing the business, its finances, and its opportunity, shared with serious buyers after an initial teaser and confidentiality agreement.',
+      },
+      {
+        q: 'How long does a sell-side M&A process take?',
+        a: 'Usually somewhere between six months and a year, from hiring an advisor to closing the deal, though this depends heavily on the size of the company and how ready it is for sale.',
+      },
+      {
+        q: 'Do I need a sell-side advisor if I already have a buyer?',
+        a: "Not necessarily a full sale process. With one buyer already lined up, a lawyer and an independent valuation are usually more useful than a full buyer search, since there's no group of buyers to create competition among.",
+      },
+    ],
+    about: [
+      'Sell-side M&A advisory',
+      'Business sale process',
+      'M&A advisor fee structures',
+      'Business broker vs investment banker',
     ],
   },
 };
