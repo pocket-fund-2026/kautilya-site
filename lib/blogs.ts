@@ -5,6 +5,7 @@ export const BLOG_SLUGS = [
   'analyst-diaries-direct-mail-deal-origination',
   'how-to-find-acquisition-capital',
   'what-is-sell-side-ma-advisory',
+  'what-is-pocket-deals',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -513,6 +514,77 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Business sale process',
       'M&A advisor fee structures',
       'Business broker vs investment banker',
+    ],
+  },
+  'what-is-pocket-deals': {
+    title: 'What Is Pocket Deals?',
+    subtitle: "The Deal Flow Behind Kautilya's Acquisition Newsletter",
+    description:
+      "Pocket Deals is Kautilya's newsletter for acquisition opportunities under $100K, sourced from public marketplaces and off-market inbound. Here's how it's structured, what buyers receive, and why it exists.",
+    author: 'Dev Shah',
+    datePublished: '2026-09-25',
+    category: 'Deal Sourcing',
+    readTime: '5 min',
+    wordCount: 1150,
+    keywords: [
+      // Primary
+      'Pocket Deals newsletter',
+      'Kautilya Pocket Deals',
+      'acquisition opportunities under $100K',
+      // Explainer / beginner intent
+      'what is Pocket Deals',
+      'small business acquisition newsletter',
+      'off-market deal newsletter',
+      'micro acquisition deal flow',
+      // Sourcing angle
+      'off-market business deals India',
+      'inbound deal flow M&A',
+      'proprietary deal sourcing newsletter',
+      'on-market vs off-market acquisition deals',
+      // Buyer intent
+      'small acquisition opportunities for buyers',
+      'buy a small business under $100K',
+      'verified small business listings',
+      'CIM for small acquisitions',
+      // Pricing / model
+      'off-market deal subscription',
+      'deal newsletter subscription fee',
+      'no fee business marketplace',
+      // Comparisons
+      'Pocket Deals vs business marketplace',
+      'search fund deal flow newsletter',
+      // Long-tail
+      'newsletter for buying small businesses',
+      'weekly acquisition deal newsletter',
+      'exclusive off-market business listings',
+    ],
+    faqs: [
+      {
+        q: 'What is Pocket Deals?',
+        a: "Pocket Deals is a newsletter from Kautilya, a buy-side deal origination firm, featuring acquisition opportunities valued under $100K. It surfaces businesses from public marketplaces and off-market sources that don't fit Kautilya's current client mandates.",
+      },
+      {
+        q: 'How much does Pocket Deals cost?',
+        a: "On-market deals sourced from public listings are free, with Kautilya adding verification value. Off-market deals — exclusive opportunities sourced through inbound — cost $100 a month. There are no fees to buyers or sellers on either tier; the subscription is the only revenue.",
+      },
+      {
+        q: 'Why did Kautilya start Pocket Deals?',
+        a: "Kautilya's team found that more than five off-market businesses reach them through inbound alone every week, but not every one has a matching buyer client at that moment. Rather than let viable opportunities disappear, they built a newsletter to distribute them.",
+      },
+      {
+        q: 'What do buyers actually receive with a Pocket Deals listing?',
+        a: "Each opportunity comes with a full CIM (Confidential Information Memorandum) — the same depth of documentation Kautilya would build for a client mandate, not a one-line pitch.",
+      },
+      {
+        q: 'Is Pocket Deals live yet?',
+        a: "As of September 2026, the deal-sourcing infrastructure exists and documentation for opportunities is complete, but the newsletter format itself is still being refined ahead of its first issue.",
+      },
+    ],
+    about: [
+      'Off-market deal sourcing',
+      'Small business acquisition newsletter',
+      'Buy-side deal origination',
+      'Confidential Information Memorandum (CIM)',
     ],
   },
 };
