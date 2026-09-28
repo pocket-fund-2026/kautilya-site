@@ -431,6 +431,88 @@ do I need a buy-side advisor, buy-side advisor vs M&A lawyer,
 how long does M&A due diligence take
 ```
 
+### Analyst Diaries: 2,000 Letters In, Here's the Actual Playbook
+```
+direct mail deal origination, buy-side deal origination, cold outreach for search funds,
+direct mail outreach for acquisition entrepreneurs, off-market deal sourcing India,
+M&A lead verification process, decision maker outreach SME acquisition,
+letter campaign for business acquisition, physical mail outreach M&A,
+Apollo lead sourcing M&A, RTS rate direct mail campaign, response rate cold outreach M&A,
+deal origination approval process, search fund deal sourcing letters,
+entrepreneurship through acquisition deal sourcing, search fund lead generation,
+buy-side advisory deal origination India, Kautilya deal origination,
+M&A sourcing case study India, how to find acquisition targets in India,
+how to source off-market businesses for acquisition,
+finding real decision maker family business acquisition
+```
+
+### How to Find Acquisition Capital to Buy a Business
+```
+how to find acquisition capital, how to fund a business acquisition,
+raising capital to buy a business, search fund investors, ETA funding,
+family office acquisition funding, SBA equivalent outside US,
+acquisition financing without SBA loan, seller financing business acquisition,
+asset-backed lending business acquisition, promoter guaranteed loan business acquisition,
+how investors evaluate searchers, search fund investor underwriting criteria,
+what investors look for in a searcher, seller conversations before raising capital,
+deal origination before fundraising, off-market deal sourcing for investors,
+search fund dealflow pipeline, business acquisition funding India,
+acquisition capital outside United States, cross border acquisition funding,
+foreign investment business acquisition compliance, search fund capital raise,
+entrepreneurship through acquisition funding, self funded search capital,
+traditional search fund capital raise, Stanford search fund returns,
+IESE search fund study, search fund IRR data,
+how much equity to raise for business acquisition,
+family office HNI capital for business acquisition,
+how to pitch investors for business acquisition
+```
+
+### Sell-Side M&A Advisory: What It Is and How It Works
+```
+sell-side M&A advisory, sell-side M&A process, M&A advisor fees,
+M&A advisor vs business broker, what is sell-side advisory, sell-side advisory explained,
+how does selling a business with an advisor work, sell side vs buy side advisory,
+buy-side advisor vs sell-side advisor, sell-side M&A process steps,
+how to sell a business with an advisor, confidential information memorandum CIM,
+letter of intent business sale, M&A advisor retainer and success fee,
+Lehman formula M&A fees, investment banker fees business sale,
+how much does it cost to sell a business, business broker vs investment banker,
+do I need an M&A advisor to sell my business, sell-side advisor vs sell-side analyst,
+when to hire an M&A advisor to sell, selling a business with one buyer already,
+how long does selling a business take with an advisor
+```
+
+### What Is Pocket Deals?
+```
+Pocket Deals newsletter, Kautilya Pocket Deals, acquisition opportunities under $100K,
+what is Pocket Deals, small business acquisition newsletter, off-market deal newsletter,
+micro acquisition deal flow, off-market business deals India, inbound deal flow M&A,
+proprietary deal sourcing newsletter, on-market vs off-market acquisition deals,
+small acquisition opportunities for buyers, buy a small business under $100K,
+verified small business listings, CIM for small acquisitions, off-market deal subscription,
+deal newsletter subscription fee, no fee business marketplace,
+Pocket Deals vs business marketplace, search fund deal flow newsletter,
+newsletter for buying small businesses, weekly acquisition deal newsletter,
+exclusive off-market business listings
+```
+
+### What Is a Private Placement Memorandum? A Complete Guide
+```
+what is a private placement memorandum, private placement memorandum guide, PPM meaning,
+PPM vs prospectus, private placement memorandum sections, how to raise private capital,
+private placement memorandum explained, what is a PPM in finance,
+private placement memorandum for beginners, what is in a private placement memorandum,
+PPM risk factors section, use of proceeds PPM, PPM offering summary,
+PPM subscription agreement, PPM vs business plan, PPM vs pitch deck,
+private placement memorandum vs prospectus, who uses a private placement memorandum,
+PPM hedge fund real estate syndication, search fund PPM, private equity fund PPM,
+who writes a private placement memorandum, how much does a PPM cost,
+private placement memorandum lawyer, accredited investor private placement,
+securities exemption private offering, private placement exemption by country,
+is a PPM legally required, how long is a private placement memorandum,
+does a PPM guarantee investment is safe, private placement memorandum for acquisition capital
+```
+
 ---
 
 ## Newsletter posts (`lib/newsletters.ts`)
@@ -495,6 +577,97 @@ Kautilya newsletter M&A India, India deal sheet newsletter, buy-side M&A advisor
 M&A deal structure analysis India, why did JSW Paints buy Akzo Nobel India,
 how much did JSW pay for Dulux India, JSW Paints market share after Akzo Nobel deal,
 JSW Paints JSW Dulux merger
+```
+
+### Coforge Bought Encora for $2.35B With Zero Cash
+```
+Coforge Encora acquisition, Coforge Encora deal explained, Coforge Encora $2.35 billion,
+Coforge all stock acquisition, Coforge Encora share swap, Advent Warburg Pincus Encora exit,
+Advent International Encora sale, Warburg Pincus Coforge stake,
+all stock preferential allotment India, preferential allotment M&A India explained,
+stock for stock acquisition India IT, private equity rollover into listed stock,
+sponsor rollover acquisition structure, board seats for equity M&A India,
+Indian IT services M&A 2026, ER&D acquisition India, engineering R&D services M&A,
+AI-native engineering acquisition, Indian IT mid-cap consolidation, Kautilya deal teardown,
+Kautilya newsletter M&A India, India deal sheet newsletter, M&A deal structure analysis India,
+buy-side advisory deal analysis India, why did Coforge pay in shares for Encora,
+largest ER&D acquisition Indian IT company, Coforge Encora board seats,
+Coforge Encora 21.8 percent stake
+```
+
+### ChrysCapital's Novartis India Buyout, Explained
+```
+ChrysCapital Novartis India acquisition, ChrysCapital Novartis India deal explained,
+ChrysCapital Novartis India buyout, Novartis India open offer,
+Novartis India ChrysCapital 70.68%, WaveRise Investments Novartis India,
+Novartis AG India exit, Novartis India acquisition 2026, mandatory open offer India explained,
+SEBI takeover code open offer formula, persons acting in concert India takeover,
+control premium vs open offer price India, MNC exit India listed subsidiary,
+onshore offshore pricing India M&A, exchange control fair value cap India,
+private equity pharma buyout India, ChrysCapital Fund X pharma, Indian pharma M&A 2026,
+India pharma consolidation PE, domestic PE control deal India, Kautilya deal teardown,
+Kautilya newsletter M&A India, India deal sheet newsletter,
+buy-side advisory deal analysis India, M&A deal structure analysis India,
+why did the Novartis India open offer fail, how much did ChrysCapital pay for Novartis India,
+ChrysCapital Novartis India shares tendered, listed MNC subsidiary acquisition India,
+JSW Akzo Nobel Novartis India comparison
+```
+
+### Sun Pharma's $11.75B Organon Acquisition, Explained
+```
+Sun Pharma Organon acquisition, Sun Pharma Organon deal explained,
+Sun Pharma $11.75 billion Organon, Sun Pharma Organon acquisition analysis,
+Organon Sun Pharma merger, largest Indian outbound pharma acquisition,
+Sun Pharma biosimilars acquisition, Sun Pharma women's health acquisition,
+leveraged cross-border acquisition India, reverse triangular merger explained,
+assumed debt acquisition structure, enterprise value vs equity value M&A,
+outbound takeover loan India, SBI outbound acquisition financing,
+RBI reform outbound M&A financing, syndicated bank loan cross-border acquisition,
+Indian pharma M&A 2026, Indian pharma overseas acquisition, pharma leveraged buyout India,
+CRISIL rating pharma acquisition, Kautilya deal teardown, Kautilya newsletter M&A India,
+India deal sheet newsletter, buy-side advisory deal analysis India,
+M&A deal structure analysis India, why did Sun Pharma buy Organon,
+how much debt did Sun Pharma take on for Organon,
+Sun Pharma Organon premium 24% 60% 103%, Sun Pharma Organon financing syndicate banks,
+Sun Pharma Ranbaxy Organon deal comparison
+```
+
+### CVC's $400M Secondary Sale of HealthCare Global to KKR, Explained
+```
+CVC KKR HealthCare Global acquisition, CVC KKR HealthCare Global deal explained,
+KKR HealthCare Global $400 million, HealthCare Global Enterprises acquisition,
+HCG KKR acquisition explained, CVC Aceso HealthCare Global exit, Aceso Company HCG stake sale,
+HealthCare Global open offer KKR, secondary sale private equity India,
+PE to PE secondary transaction India, private equity secondary sale healthcare India,
+mandatory open offer India explained, SEBI takeover code open offer formula,
+control premium vs open offer price India, sponsor to sponsor exit India M&A,
+Indian hospital M&A 2025, oncology hospital chain India acquisition,
+private equity healthcare India, Indian healthcare consolidation PE, KKR Max Healthcare HCG,
+KKR India healthcare platform, Kautilya deal teardown, Kautilya newsletter M&A India,
+India deal sheet newsletter, buy-side advisory deal analysis India,
+M&A deal structure analysis India, private equity value creation case study,
+how much did KKR pay for HealthCare Global, CVC HealthCare Global return multiple,
+why didn't HCG founder sell shares, HealthCare Global founder Ajaikumar chairman,
+largest Indian hospital private equity deal
+```
+
+### CVC's Aavas Financiers Buyout, Explained
+```
+CVC Aavas Financiers acquisition, CVC Aavas Financiers deal explained,
+Aavas Financiers CVC stake, Aquilo House Aavas Financiers, CVC Kedaara Partners Group Aavas,
+Aavas Financiers open offer, Aavas Financiers 48.96% stake, Aavas Financiers new promoter CVC,
+undersubscribed open offer India, mandatory open offer India explained,
+SEBI takeover code open offer formula, control premium vs open offer price India,
+private equity control deal India NBFC, promoter change listed NBFC India,
+affordable housing finance India M&A, Indian NBFC private equity buyout,
+housing finance company acquisition India, private equity NBFC control India,
+CEO change after private equity buyout India, Aavas Financiers CEO resignation,
+Sachinder Bhinder Aavas Financiers, Manu Singh Aavas Financiers CEO,
+RBI approval NBFC CEO change, Kautilya deal teardown, Kautilya newsletter M&A India,
+India deal sheet newsletter, buy-side advisory deal analysis India,
+M&A deal structure analysis India, why did Aavas Financiers stock fall,
+how much did CVC pay for Aavas Financiers, largest housing finance buyout India,
+PE buyout NBFC governance risk India
 ```
 
 ---
