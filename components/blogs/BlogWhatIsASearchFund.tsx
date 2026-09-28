@@ -482,7 +482,13 @@ export default function BlogWhatIsASearchFund() {
           <li><strong>Self-funded search is the more realistic template</strong> for most first-time acquirers in these markets, because deal sizes are within reach of personal capital plus seller financing.</li>
           <li><strong>The screening discipline still transfers even when the structure does not.</strong> Recurring revenue, low capex, boring and profitable, no technology cliff: those filters are what make an acquisition survivable for a first-time operator at any deal size.</li>
         </ul>
-        <p>The structure is US-shaped. The diligence logic is universal.</p>
+        <p>
+          The structure is US-shaped. The diligence logic is universal. In India specifically, a
+          large share of the businesses that fit this smaller-deal template are family-owned, which
+          brings its own succession dynamics and diligence questions &mdash; see{' '}
+          <Link href="/blog/buying-family-owned-business-india">buying a family-owned business in India</Link>
+          {' '}for what changes when the seller is also the founder.
+        </p>
 
         {/* FAQ */}
         <div className="blog-faq">

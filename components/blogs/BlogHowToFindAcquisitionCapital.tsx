@@ -505,7 +505,9 @@ export default function BlogHowToFindAcquisitionCapital() {
           <Link href="/blog/analyst-diaries-direct-mail-deal-origination">our direct-mail deal origination playbook</Link>
           , and for how a buy-side advisor fits alongside your own search,{' '}
           <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
-          {' '}— the conversations you log in either process are the exhibit that makes the capital conversation possible in the first place.
+          {' '}— the conversations you log in either process are the exhibit that makes the capital conversation possible in the first place. If those conversations are with a founder-owner rather than a professional seller, the dynamics differ meaningfully; see{' '}
+          <Link href="/blog/buying-family-owned-business-india">buying a family-owned business in India</Link>
+          {' '}for what to expect.
         </p>
 
         {/* FAQ */}

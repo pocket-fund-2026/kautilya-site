@@ -19,6 +19,7 @@ export type BlogMeta = {
   description: string;
   author: string;
   datePublished: string;
+  dateModified?: string;
   category: string;
   readTime: string;
   wordCount?: number;
