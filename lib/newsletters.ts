@@ -6,6 +6,7 @@ export const NEWSLETTER_SLUGS = [
   'coforge-encora-acquisition-explained',
   'chryscapital-novartis-india-acquisition-explained',
   'sun-pharma-organon-acquisition-explained',
+  'cvc-kkr-healthcare-global-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -584,6 +585,96 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'State Bank of India', sameAs: 'https://www.sbi.co.in' },
       { name: 'Merck & Co.' },
       { name: 'CRISIL', sameAs: 'https://www.crisil.com' },
+    ],
+  },
+  'cvc-kkr-healthcare-global-acquisition-explained': {
+    title: "CVC's $400M Secondary Sale of HealthCare Global to KKR, Explained",
+    subtitle: 'How ₹130 Became ₹445 in Five Years — and Why the Founder Never Sold',
+    description:
+      "CVC bought HealthCare Global at ₹130 a share in 2020 and handed it to KKR at ₹445 five years later — a $400M deal and a ~3.4x return. No founder cashed out, no business changed what it does. Only the owner did. Kautilya's teardown of India's largest PE-to-PE hospital sale.",
+    author: 'Dev Shah',
+    datePublished: '2026-09-18',
+    dealDate: '2025-02-23',
+    category: 'Deal Teardowns',
+    readTime: '9 min',
+    wordCount: 2250,
+    keywords: [
+      // Deal-specific
+      'CVC KKR HealthCare Global acquisition',
+      'CVC KKR HealthCare Global deal explained',
+      'KKR HealthCare Global $400 million',
+      'HealthCare Global Enterprises acquisition',
+      'HCG KKR acquisition explained',
+      'CVC Aceso HealthCare Global exit',
+      'Aceso Company HCG stake sale',
+      'HealthCare Global open offer KKR',
+      // Structure angle
+      'secondary sale private equity India',
+      'PE to PE secondary transaction India',
+      'private equity secondary sale healthcare India',
+      'mandatory open offer India explained',
+      'SEBI takeover code open offer formula',
+      'control premium vs open offer price India',
+      'sponsor to sponsor exit India M&A',
+      // Sector
+      'Indian hospital M&A 2025',
+      'oncology hospital chain India acquisition',
+      'private equity healthcare India',
+      'Indian healthcare consolidation PE',
+      'KKR Max Healthcare HCG',
+      'KKR India healthcare platform',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'buy-side advisory deal analysis India',
+      'M&A deal structure analysis India',
+      'private equity value creation case study',
+      // Long-tail
+      'how much did KKR pay for HealthCare Global',
+      'CVC HealthCare Global return multiple',
+      'why didn\'t HCG founder sell shares',
+      'HealthCare Global founder Ajaikumar chairman',
+      'largest Indian hospital private equity deal',
+    ],
+    faqs: [
+      {
+        q: 'How much did KKR pay for HealthCare Global?',
+        a: 'KKR agreed to acquire up to 54% of HealthCare Global Enterprises from CVC\'s Aceso vehicle at ₹445/share, a deal valued at approximately $400M, announced February 23, 2025 and targeted to close by Q3 2025.',
+      },
+      {
+        q: 'What return did CVC make on HealthCare Global?',
+        a: "CVC's Aceso vehicle originally invested in HCG in June 2020 at ₹130/share. Selling at ₹445/share roughly five years later implies a return of about 3.4x on the headline share price, or roughly 28% annualised — though this doesn't account for the separate warrant subscription CVC also took at entry, which likely changes its true blended cost basis.",
+      },
+      {
+        q: "Did HealthCare Global's founder sell his shares in this deal?",
+        a: "No. Dr B.S. Ajaikumar, HCG's founder, retained a non-executive chairman role focused on clinical and research work. The shares transacted belonged to CVC's Aceso vehicle, which had held majority control since 2020 — the founder's own remaining stake was not part of this sale.",
+      },
+      {
+        q: 'What is a secondary sale in private equity?',
+        a: "A secondary sale is when one private equity fund sells its stake in a company to another private equity fund, rather than to a strategic (operating) buyer or via an IPO. The underlying business and its operations typically continue unchanged; what changes is the identity — and the return expectations and hold-period clock — of the controlling shareholder.",
+      },
+      {
+        q: 'Why was the open offer price higher than the price KKR paid CVC?',
+        a: "The two prices are set by different mechanisms. KKR's ₹445/share was a bilaterally negotiated control price paid to CVC. The ₹504.41/share open-offer price to public shareholders was calculated under SEBI's takeover-code formula, anchored to historic trading data around the announcement date. There's no requirement that the two align, and in this deal the formula happened to land above the negotiated price.",
+      },
+      {
+        q: "Does this deal connect to KKR's other Indian healthcare investments?",
+        a: "Yes. KKR already holds a stake in Max Healthcare, a large multi-specialty Indian hospital network. HCG adds a specialist oncology platform alongside that generalist network, though public filings for this deal don't specify whether the two will be operationally integrated.",
+      },
+    ],
+    about: [
+      'Private equity secondary sales India',
+      'Indian hospital and oncology M&A',
+      'Mandatory open offer structures India',
+      'Buy-side deal origination and value creation',
+    ],
+    mentions: [
+      { name: 'KKR', sameAs: 'https://www.kkr.com' },
+      { name: 'CVC Capital Partners', sameAs: 'https://www.cvc.com' },
+      { name: 'HealthCare Global Enterprises Ltd', sameAs: 'https://www.hcgoncology.com' },
+      { name: 'Aceso Company Pte Ltd' },
+      { name: 'Max Healthcare' },
     ],
   },
 };
