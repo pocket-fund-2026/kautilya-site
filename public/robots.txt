@@ -98,3 +98,4 @@ Allow: /
 # -----------------------------------------------
 Sitemap: https://www.kautilya-pe.com/sitemap.xml
 Sitemap: https://www.kautilya-pe.com/image-sitemap.xml
+Sitemap: https://www.kautilya-pe.com/video-sitemap.xml
