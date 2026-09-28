@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${WWW}/portfolio`,
       changeFrequency: 'monthly',
       priority: 0.9,
-      lastModified: '2026-05-27',
+      lastModified: '2026-09-28',
       images: [
         `${WWW}/images/portfolio-logos/inspire3.webp`,
         `${WWW}/images/portfolio-logos/borderless.webp`,
@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${WWW}/stories`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      lastModified: '2026-05-27',
+      lastModified: '2026-09-28',
       images: [
         `${WWW}/images/blogs/edition-200k.webp`,
         `${WWW}/images/blogs/edition-acquire.webp`,
@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${WWW}/team`,
       changeFrequency: 'monthly',
       priority: 0.6,
-      lastModified: '2026-04-01',
+      lastModified: '2026-09-28',
       images: [
         `${WWW}/images/aum.webp`,
         `${WWW}/images/aditya.webp`,
