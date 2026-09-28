@@ -9,6 +9,7 @@ import NewsletterCoforgeEncora from '@/components/newsletters/NewsletterCoforgeE
 import NewsletterChrysCapitalNovartis from '@/components/newsletters/NewsletterChrysCapitalNovartis';
 import NewsletterSunPharmaOrganon from '@/components/newsletters/NewsletterSunPharmaOrganon';
 import NewsletterCVCKKRHealthcareGlobal from '@/components/newsletters/NewsletterCVCKKRHealthcareGlobal';
+import NewsletterCVCAavasFinanciers from '@/components/newsletters/NewsletterCVCAavasFinanciers';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -21,6 +22,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'chryscapital-novartis-india-acquisition-explained': NewsletterChrysCapitalNovartis,
   'sun-pharma-organon-acquisition-explained': NewsletterSunPharmaOrganon,
   'cvc-kkr-healthcare-global-acquisition-explained': NewsletterCVCKKRHealthcareGlobal,
+  'cvc-aavas-financiers-acquisition-explained': NewsletterCVCAavasFinanciers,
 };
 
 type Props = {

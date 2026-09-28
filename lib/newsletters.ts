@@ -7,6 +7,7 @@ export const NEWSLETTER_SLUGS = [
   'chryscapital-novartis-india-acquisition-explained',
   'sun-pharma-organon-acquisition-explained',
   'cvc-kkr-healthcare-global-acquisition-explained',
+  'cvc-aavas-financiers-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -675,6 +676,93 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'HealthCare Global Enterprises Ltd', sameAs: 'https://www.hcgoncology.com' },
       { name: 'Aceso Company Pte Ltd' },
       { name: 'Max Healthcare' },
+    ],
+  },
+  'cvc-aavas-financiers-acquisition-explained': {
+    title: "CVC's Aavas Financiers Buyout, Explained",
+    subtitle: 'How a ₹3,425 Cr Block Deal and an Undersubscribed Open Offer Left the Buyer at 48.96%',
+    description:
+      "CVC paid ₹3,425 Cr for a 26.47% block of Aavas Financiers, then offered the public the same exit — and almost nobody took it. The buyer landed at 48.96%, controlling one of India's largest affordable-housing lenders but short of a majority. Within a year it replaced the CEO and the stock fell about 25%. Kautilya's teardown of the deal structure and what came after.",
+    author: 'Dev Shah',
+    datePublished: '2026-09-28',
+    dealDate: '2024-08-10',
+    category: 'Deal Teardowns',
+    readTime: '9 min',
+    wordCount: 2300,
+    keywords: [
+      // Deal-specific
+      'CVC Aavas Financiers acquisition',
+      'CVC Aavas Financiers deal explained',
+      'Aavas Financiers CVC stake',
+      'Aquilo House Aavas Financiers',
+      'CVC Kedaara Partners Group Aavas',
+      'Aavas Financiers open offer',
+      'Aavas Financiers 48.96% stake',
+      'Aavas Financiers new promoter CVC',
+      // Structure angle
+      'undersubscribed open offer India',
+      'mandatory open offer India explained',
+      'SEBI takeover code open offer formula',
+      'control premium vs open offer price India',
+      'private equity control deal India NBFC',
+      'promoter change listed NBFC India',
+      // Sector
+      'affordable housing finance India M&A',
+      'Indian NBFC private equity buyout',
+      'housing finance company acquisition India',
+      'private equity NBFC control India',
+      // CEO / governance angle
+      'CEO change after private equity buyout India',
+      'Aavas Financiers CEO resignation',
+      'Sachinder Bhinder Aavas Financiers',
+      'Manu Singh Aavas Financiers CEO',
+      'RBI approval NBFC CEO change',
+      // Advisory angle
+      'Kautilya deal teardown',
+      'Kautilya newsletter M&A India',
+      'India deal sheet newsletter',
+      'buy-side advisory deal analysis India',
+      'M&A deal structure analysis India',
+      // Long-tail
+      'why did Aavas Financiers stock fall',
+      'how much did CVC pay for Aavas Financiers',
+      'largest housing finance buyout India',
+      'PE buyout NBFC governance risk India',
+    ],
+    faqs: [
+      {
+        q: 'How much did CVC pay for its stake in Aavas Financiers?',
+        a: "CVC, via its SPV Aquilo House Pte Ltd, paid ₹3,425 Cr for a 26.47% block from Kedaara Capital and an affiliate of Partners Group, announced August 10, 2024. A subsequent mandatory open offer at ₹1,767/share for a further 26% closed on March 21, 2025 with only about 22.5% tendered, taking CVC's total stake to 48.96%.",
+      },
+      {
+        q: "Why didn't CVC end up with a majority of Aavas Financiers?",
+        a: "CVC's mandatory open offer for an additional 26% was undersubscribed — only about 22.5% of shares were tendered, not the full 26% on offer. Combined with its 26.47% block purchase, that left CVC at 48.96%, just short of a clean 50%-plus-one majority, even though it became the company's controlling promoter.",
+      },
+      {
+        q: 'Why did Aavas Financiers replace its CEO after the CVC deal?',
+        a: "MD & CEO Sachinderpalsingh Bhinder resigned effective April 20, 2026, officially citing professional and personal commitments, though reports at the time pointed to performance concerns raised by CVC as the actual driver. Manu Yeshpal Singh, previously head of home loans at Kotak Mahindra Bank, was approved to succeed him effective April 21, 2026, subject to RBI and shareholder approval.",
+      },
+      {
+        q: "Why did Aavas Financiers' stock fall after the CVC takeover?",
+        a: "Shares fell roughly 25% in the months around the CEO transition, a common market reaction to leadership uncertainty at a lender. At least one analyst house, JM Financial, has pointed to an expected recovery in subsequent quarters, suggesting the fall reflects near-term disruption rather than a settled verdict on the underlying deal economics.",
+      },
+      {
+        q: 'What is an undersubscribed open offer in an Indian takeover?',
+        a: "It's when fewer shares are tendered into a mandatory open offer than the maximum the acquirer offered to buy — typically because public shareholders believe the stock is worth more than the formula-set offer price, or because they'd rather stay invested under the new owner. The acquirer simply ends up with a smaller stake than it structured for; there's no mechanism to force the remaining shares into the offer.",
+      },
+    ],
+    about: [
+      'Private equity control deals in Indian NBFCs',
+      'Affordable housing finance M&A India',
+      'Mandatory open offer structures India',
+      'Post-buyout governance and leadership change',
+    ],
+    mentions: [
+      { name: 'CVC Capital Partners', sameAs: 'https://www.cvc.com' },
+      { name: 'Aavas Financiers Ltd', sameAs: 'https://www.aavas.in' },
+      { name: 'Kedaara Capital', sameAs: 'https://www.kedaara.com' },
+      { name: 'Partners Group', sameAs: 'https://www.partnersgroup.com' },
+      { name: 'Aquilo House Pte Ltd' },
     ],
   },
 };
