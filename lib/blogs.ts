@@ -6,6 +6,7 @@ export const BLOG_SLUGS = [
   'how-to-find-acquisition-capital',
   'what-is-sell-side-ma-advisory',
   'what-is-pocket-deals',
+  'what-is-a-private-placement-memorandum',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -585,6 +586,91 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Small business acquisition newsletter',
       'Buy-side deal origination',
       'Confidential Information Memorandum (CIM)',
+    ],
+  },
+  'what-is-a-private-placement-memorandum': {
+    title: 'What Is a Private Placement Memorandum? A Complete Guide',
+    subtitle: 'What a PPM Is, Why It Exists, What Goes Inside One, and How It Differs From a Prospectus or a Pitch Deck',
+    description:
+      'A plain-language guide to what a private placement memorandum is, who uses one, what it contains, and why it matters to anyone raising or investing in private capital.',
+    author: 'Dev Shah',
+    datePublished: '2026-09-28',
+    category: 'Fundamentals',
+    readTime: '8 min',
+    wordCount: 2100,
+    keywords: [
+      // Primary
+      'what is a private placement memorandum',
+      'private placement memorandum guide',
+      'PPM meaning',
+      // Secondary
+      'PPM vs prospectus',
+      'private placement memorandum sections',
+      'how to raise private capital',
+      // Explainer / beginner intent
+      'private placement memorandum explained',
+      'what is a PPM in finance',
+      'private placement memorandum for beginners',
+      // Structure / contents
+      'what is in a private placement memorandum',
+      'PPM risk factors section',
+      'use of proceeds PPM',
+      'PPM offering summary',
+      'PPM subscription agreement',
+      // Comparisons
+      'PPM vs business plan',
+      'PPM vs pitch deck',
+      'private placement memorandum vs prospectus',
+      // Who uses it
+      'who uses a private placement memorandum',
+      'PPM hedge fund real estate syndication',
+      'search fund PPM',
+      'private equity fund PPM',
+      // Process / cost
+      'who writes a private placement memorandum',
+      'how much does a PPM cost',
+      'private placement memorandum lawyer',
+      // Regulatory
+      'accredited investor private placement',
+      'securities exemption private offering',
+      'private placement exemption by country',
+      // Long-tail
+      'is a PPM legally required',
+      'how long is a private placement memorandum',
+      'does a PPM guarantee investment is safe',
+      'private placement memorandum for acquisition capital',
+    ],
+    faqs: [
+      {
+        q: 'Is a private placement memorandum legally required?',
+        a: "It depends on the jurisdiction and the exemption being used. Some private-offering exemptions require formal written disclosure along the lines of a PPM; others don't mandate a specific document but still expect the issuer to avoid misleading investors, which in practice means preparing something functionally equivalent anyway.",
+      },
+      {
+        q: 'Who can invest through a PPM?',
+        a: 'Typically accredited, sophisticated, or qualified investors, depending on how the relevant jurisdiction defines eligibility for private offerings. These categories are usually based on income, net worth, professional experience, or institutional status.',
+      },
+      {
+        q: 'How long is a typical PPM?',
+        a: 'Anywhere from twenty to over a hundred pages, depending on the complexity of the offering and the depth of the risk factors and financial disclosures required.',
+      },
+      {
+        q: 'Is a PPM the same as a prospectus?',
+        a: "No. Both disclose an offering to investors, but a prospectus is for a public, registered offering and is typically reviewed by a regulator before use. A PPM is for a private, exempt offering and generally isn't filed for public review in the same way.",
+      },
+      {
+        q: 'Does a PPM guarantee the investment is safe?',
+        a: "No. A PPM discloses risk; it doesn't eliminate it. A long and thorough risk factors section is often a sign of a well-prepared document, not a red flag about the deal itself.",
+      },
+      {
+        q: 'Who writes a PPM?',
+        a: 'Usually a collaboration between the issuer, who supplies the business and financial details, and a securities attorney, who drafts or reviews the legal, regulatory, and risk disclosure language.',
+      },
+    ],
+    about: [
+      'Private placement memorandum',
+      'Private securities offering disclosure',
+      'Raising acquisition capital',
+      'PPM vs prospectus vs pitch deck',
     ],
   },
 };
