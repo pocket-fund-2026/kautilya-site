@@ -117,7 +117,7 @@ export default function Story200kDeals() {
         <p>Let&rsquo;s start with the receipts. Here&rsquo;s what we closed:</p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/five-deals.png" alt="The Scoreboard: 5 deals closed · 6 months · 3 countries — $200K total deal value, $1M target by June 2026" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/five-deals.webp" alt="The Scoreboard: 5 deals closed · 6 months · 3 countries — $200K total deal value, $1M target by June 2026" width={1200} height={675} />
         </figure>
 
         <h2>The Five Deals</h2>
@@ -227,7 +227,7 @@ export default function Story200kDeals() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/architecture.png" alt="The Accidental Pivot: Buyer → Advisor. Timeline from Solo Buyer (Early 2025) through Sourcing Machine, Advisory Launch, First Deal Closed, $200K Closed (Feb 2026), to Target $1M (June 2026)" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/architecture.webp" alt="The Accidental Pivot: Buyer → Advisor. Timeline from Solo Buyer (Early 2025) through Sourcing Machine, Advisory Launch, First Deal Closed, $200K Closed (Feb 2026), to Target $1M (June 2026)" width={1200} height={675} />
         </figure>
 
         <h2>What Actually Works: 3 Things We Learned</h2>
@@ -264,7 +264,7 @@ export default function Story200kDeals() {
         </ol>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/hidden-channel.png" alt="Structure > Price: deal mechanics for Runify (27% upfront / 73% deferred) and Dino Games (56% at close / 44% deferred). The pattern: the riskier the asset, the more you defer." width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/hidden-channel.webp" alt="Structure > Price: deal mechanics for Runify (27% upfront / 73% deferred) and Dino Games (56% at close / 44% deferred). The pattern: the riskier the asset, the more you defer." width={1200} height={675} />
         </figure>
 
         <div className="pull-quote">

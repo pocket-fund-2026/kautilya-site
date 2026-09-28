@@ -3,13 +3,13 @@
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 
-const devImage = '/images/Dev.jpeg';
-const aumImage = '/images/aum.jpg';
-const ganeshImage = '/images/ganesh.jpg';
-const pushkarImage = '/images/pushkar.jpeg';
-const aryanImage = '/images/aryan.jpeg';
-const kabirImage = '/images/kabir.jpg';
-const adityaImage = '/images/aditya.jpeg';
+const devImage = '/images/Dev.webp';
+const aumImage = '/images/aum.webp';
+const ganeshImage = '/images/ganesh.webp';
+const pushkarImage = '/images/pushkar.webp';
+const aryanImage = '/images/aryan.webp';
+const kabirImage = '/images/kabir.webp';
+const adityaImage = '/images/aditya.webp';
 
 type TeamMember = {
   name: string;

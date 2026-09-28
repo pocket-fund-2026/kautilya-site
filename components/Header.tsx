@@ -77,7 +77,7 @@ export default function Header() {
     <header className={`header${menuVisible ? ' menu-open' : ''}`} id="mainHeader">
       <Link className="logo" href="/">
         <Image
-          src="/images/kautilya-icon.png"
+          src="/images/kautilya-icon.webp"
           alt=""
           width={819}
           height={819}

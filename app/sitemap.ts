@@ -5,23 +5,26 @@ import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/ne
 
 const WWW = 'https://www.kautilya-pe.com';
 
+// Only images actually embedded on each story's own page are listed here —
+// Google's image-sitemap guidance expects <image:image> entries to match what's
+// rendered at that <url>, not just an asset that exists somewhere on the site.
 const STORY_IMAGES: Record<string, string[]> = {
-  'borderless':      ['/images/portfolio-logos/borderless.png', '/images/stories/borderless/exhausting-market.png', '/images/stories/borderless/maket-no-deals.png', '/images/stories/borderless/money-annualised.png'],
-  'dino-games':      ['/images/portfolio-logos/dino-games.jpeg'],
-  'runify':          ['/images/portfolio-logos/runify.png'],
-  'edition-zero':    ['/images/blogs/edition-zero.jpeg', '/images/stories/edition-zero/conviction.png', '/images/stories/edition-zero/zero.png'],
-  'sourcely':        ['/images/stories/sourcely/logo_sourcely.png', '/images/stories/sourcely/essay.png', '/images/stories/sourcely/twitter.png'],
+  'borderless':      [],
+  'dino-games':      [],
+  'runify':          [],
+  'edition-zero':    [],
+  'sourcely':        ['/images/stories/sourcely/logo_sourcely.webp', '/images/stories/sourcely/essay.webp', '/images/stories/sourcely/twitter.webp'],
   'review':          [],
-  'pocket-fund':     ['/images/stories/pocket-fund/100k.png', '/images/stories/pocket-fund/cycle.png', '/images/stories/pocket-fund/search.png'],
-  'college-startups':['/images/blogs/edition-college.jpeg', '/images/stories/college-startups/best-time-build.png', '/images/stories/college-startups/start-now.png', '/images/stories/college-startups/ten-jobs.png'],
-  'pocket-deals':    ['/images/stories/micro-saas/bigpurpose.png'],
-  'deal-sourcing':   ['/images/blogs/edition-acquire.jpeg', '/images/stories/deal-sourcing/crm.png', '/images/stories/deal-sourcing/discipline.png', '/images/stories/deal-sourcing/morning.png', '/images/stories/deal-sourcing/thousand.png'],
-  'diamonds':        ['/images/blogs/edition-thisisbiz.jpeg', '/images/stories/diamonds/uncut.png', '/images/stories/diamonds/zeroto.png'],
-  'search-funds':    ['/images/stories/search-fund/evol_of_search_fund.png', '/images/stories/search-fund/explaining_gap.png', '/images/stories/search-fund/how_search_source_deal.png', '/images/stories/search-fund/when_2walk_away.png', '/images/stories/search-fund/solo_vs_partnered.png'],
-  '200k-deals':      ['/images/blogs/edition-200k.jpeg', '/images/stories/200k/architecture.png', '/images/stories/200k/five-deals.png', '/images/stories/200k/hidden-channel.png'],
-  'smartprompt':     ['/images/stories/smart-prompt/300.png', '/images/stories/smart-prompt/discount.png', '/images/stories/smart-prompt/kill.png'],
-  'inspire3':        ['/images/portfolio-logos/inspire3.png'],
-  'msp-buy-side-diligence': ['/images/Dev.jpeg', '/images/aum.jpg', '/images/pushkar.jpeg'],
+  'pocket-fund':     ['/images/stories/pocket-fund/100k.webp', '/images/stories/pocket-fund/cycle.webp', '/images/stories/pocket-fund/search.webp'],
+  'college-startups':['/images/stories/college-startups/best-time-build.webp', '/images/stories/college-startups/start-now.webp', '/images/stories/college-startups/ten-jobs.webp'],
+  'pocket-deals':    ['/images/stories/micro-saas/bigpurpose.webp'],
+  'deal-sourcing':   ['/images/stories/deal-sourcing/crm.webp', '/images/stories/deal-sourcing/morning.webp', '/images/stories/deal-sourcing/thousand.webp'],
+  'diamonds':        ['/images/stories/diamonds/uncut.webp', '/images/stories/diamonds/zeroto.webp'],
+  'search-funds':    ['/images/stories/search-fund/evol_of_search_fund.webp', '/images/stories/search-fund/how_search_source_deal.webp', '/images/stories/search-fund/when_2walk_away.webp', '/images/stories/search-fund/solo_vs_partnered.webp'],
+  '200k-deals':      ['/images/stories/200k/architecture.webp', '/images/stories/200k/five-deals.webp', '/images/stories/200k/hidden-channel.webp'],
+  'smartprompt':     [],
+  'inspire3':        [],
+  'msp-buy-side-diligence': ['/images/Dev.webp', '/images/aum.webp', '/images/pushkar.webp'],
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,10 +49,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       lastModified: '2026-05-27',
       images: [
-        `${WWW}/images/portfolio-logos/inspire3.png`,
-        `${WWW}/images/portfolio-logos/borderless.png`,
-        `${WWW}/images/portfolio-logos/dino-games.jpeg`,
-        `${WWW}/images/portfolio-logos/runify.png`,
+        `${WWW}/images/portfolio-logos/inspire3.webp`,
+        `${WWW}/images/portfolio-logos/borderless.webp`,
+        `${WWW}/images/portfolio-logos/dino-games.webp`,
+        `${WWW}/images/portfolio-logos/runify.webp`,
       ],
     },
     {
@@ -58,11 +61,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       lastModified: '2026-05-27',
       images: [
-        `${WWW}/images/blogs/edition-200k.jpeg`,
-        `${WWW}/images/blogs/edition-acquire.jpeg`,
-        `${WWW}/images/blogs/edition-college.jpeg`,
-        `${WWW}/images/blogs/edition-thisisbiz.jpeg`,
-        `${WWW}/images/blogs/edition-zero.jpeg`,
+        `${WWW}/images/blogs/edition-200k.webp`,
+        `${WWW}/images/blogs/edition-acquire.webp`,
+        `${WWW}/images/blogs/edition-college.webp`,
+        `${WWW}/images/blogs/edition-thisisbiz.webp`,
+        `${WWW}/images/blogs/edition-zero.webp`,
       ],
     },
     {
@@ -85,8 +88,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
       lastModified: '2026-04-01',
       images: [
-        `${WWW}/images/aum.jpg`,
-        `${WWW}/images/aditya.jpeg`,
+        `${WWW}/images/aum.webp`,
+        `${WWW}/images/aditya.webp`,
       ],
     },
     // /careers now 307s to hirepeanalyst.com — a redirecting URL in the sitemap

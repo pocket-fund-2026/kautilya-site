@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'motion/react';
 import Link from 'next/link';
 import { LaserFlow } from './LaserFlow';
-const editionZeroCover = '/images/blogs/edition-zero.jpeg';
-const editionAcquire = '/images/blogs/edition-acquire.jpeg';
-const editionThisIsBIz = '/images/blogs/edition-thisisbiz.jpeg';
-const edition200k = '/images/blogs/edition-200k.jpeg';
-const editionCollege = '/images/blogs/edition-college.jpeg';
+const editionZeroCover = '/images/blogs/edition-zero.webp';
+const editionAcquire = '/images/blogs/edition-acquire.webp';
+const editionThisIsBIz = '/images/blogs/edition-thisisbiz.webp';
+const edition200k = '/images/blogs/edition-200k.webp';
+const editionCollege = '/images/blogs/edition-college.webp';
 
 const CARD_HEIGHT = 340;
 const BRANCH_HEIGHT = 52;
@@ -59,7 +59,7 @@ const phases: Phase[] = [
     position: 'bottom',
     accent: '#9ec5ff',
     surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
-    imgUrl: '/images/stories/sourcely/logo_sourcely.png',
+    imgUrl: '/images/stories/sourcely/logo_sourcely.webp',
     link: '/stories/sourcely',
   },
   {

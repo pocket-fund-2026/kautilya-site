@@ -50,14 +50,14 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: 'Edition Zero: How This Is Bizness Began',
     description: 'The origin story of Kautilya\'s weekly newsletter, built around the practice of buying and operating small businesses off-market.',
     author: 'Dev Shah',
-    image: '/images/blogs/edition-zero.jpeg',
+    image: '/images/blogs/edition-zero.webp',
   },
   'sourcely': {
     title: 'My First Bizness Acquisition: An AI Student Tool with $500 MRR for $4K',
     description: 'How Kautilya found, bought, and grew Sourcely, an AI student tool, from $500 MRR to $4.5K MRR in five months, the firm\'s first acquisition.',
     author: 'Dev Shah',
     datePublished: '2023-06-09',
-    image: '/images/stories/sourcely/logo_sourcely.png',
+    image: '/images/stories/sourcely/logo_sourcely.webp',
   },
   'review': {
     title: '2023 Review + 2024 Goals',
@@ -74,7 +74,7 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: '10 Reasons Why Now Is the Best Time to Start a Business in College',
     description: 'Ten reasons why lower startup costs, AI tooling, and a generation-wide shift toward entrepreneurship make now the best time to start a business in college.',
     author: 'Dev Shah',
-    image: '/images/blogs/edition-college.jpeg',
+    image: '/images/blogs/edition-college.webp',
   },
   'pocket-deals': {
     title: 'Pocket Deals #1: A $15K Micro-SaaS for Autism Support',
@@ -85,13 +85,13 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: 'My Morning Routine Is Looking at Acquire.com for 30 Minutes',
     description: 'Five practical strategies Kautilya uses to filter quality off-market deals from marketplace noise, drawn from reviewing 30-50 deals every week.',
     author: 'Dev Shah',
-    image: '/images/blogs/edition-acquire.jpeg',
+    image: '/images/blogs/edition-acquire.webp',
   },
   'diamonds': {
     title: 'How to Find Diamonds in the Rough',
     description: 'Why the best acquisitions are businesses previous owners failed to monetize, and how Kautilya finds these overlooked, undervalued targets off-market.',
     author: 'Dev Shah',
-    image: '/images/blogs/edition-thisisbiz.jpeg',
+    image: '/images/blogs/edition-thisisbiz.webp',
   },
   'search-funds': {
     title: 'The Rise of Search Funds',
@@ -102,7 +102,7 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     title: 'How We Closed $200K Worth of Deals in 6 Months',
     description: 'How Kautilya closed $200K worth of advisory deals in six months with an eleven-person team, and the shift from buying businesses to advising other buyers.',
     author: 'Dev Shah',
-    image: '/images/blogs/edition-200k.jpeg',
+    image: '/images/blogs/edition-200k.webp',
   },
   'smartprompt': {
     title: 'When to Walk Away From an Acquisition',
@@ -121,7 +121,7 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     description: 'How to run buy-side diligence on an MSP, on a real $21M rebuild: separate blended margins, re-cost labour, reconcile PSA and billing into an EBITDA bridge.',
     author: 'Dev Shah',
     datePublished: '2026-08-14',
-    image: '/images/Dev.jpeg',
+    image: '/images/Dev.webp',
   },
 };
 

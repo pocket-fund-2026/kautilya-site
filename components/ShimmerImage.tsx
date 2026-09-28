@@ -35,7 +35,7 @@ const toBase64 = (str: string): string =>
 //
 // Usage:
 //   <ShimmerImage
-//     src="/images/hero.jpg"
+//     src="/images/hero.webp"
 //     alt="Hero"
 //     width={1200}
 //     height={675}

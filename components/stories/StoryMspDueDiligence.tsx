@@ -117,7 +117,7 @@ export default function StoryMspDueDiligence() {
         <div style={{ display: 'flex', gap: '32px', justifyContent: 'center', flexWrap: 'wrap', margin: '0 0 16px' }}>
           <div style={{ textAlign: 'center' }}>
             <Image
-              src="/images/Dev.jpeg"
+              src="/images/Dev.webp"
               alt="Dev Shah, Founder of Kautilya — buy-side M&A advisory"
               title="Dev Shah — Founder, Kautilya"
               width={88}
@@ -129,7 +129,7 @@ export default function StoryMspDueDiligence() {
           </div>
           <div style={{ textAlign: 'center' }}>
             <Image
-              src="/images/aum.jpg"
+              src="/images/aum.webp"
               alt="Aum Thakarkar, Senior Analyst at Kautilya — deal sourcing and market intelligence"
               title="Aum Thakarkar — Senior Analyst, Kautilya"
               width={88}
@@ -141,7 +141,7 @@ export default function StoryMspDueDiligence() {
           </div>
           <div style={{ textAlign: 'center' }}>
             <Image
-              src="/images/pushkar.jpeg"
+              src="/images/pushkar.webp"
               alt="Pushkar Rathod, Analyst at Kautilya — buy-side due diligence"
               title="Pushkar Rathod — Analyst, Kautilya"
               width={88}

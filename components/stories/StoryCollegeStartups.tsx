@@ -99,7 +99,7 @@ export default function StoryCollegeStartups() {
       <article className="story-body" id="storyBody">
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/college-startups/best-time-build.png" alt="10 reasons to start a business in college: reduced risk, historical opportunity, record formation, tech democratisation, and more" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/best-time-build.webp" alt="10 reasons to start a business in college: reduced risk, historical opportunity, record formation, tech democratisation, and more" width={1200} height={675} />
         </figure>
 
         <h2 style={{ color: 'var(--gold)' }}>1. Reducing Risk of Starting Up and Failure</h2>
@@ -165,7 +165,7 @@ export default function StoryCollegeStartups() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/college-startups/ten-jobs.png" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/ten-jobs.webp" alt="Solo entrepreneur managing multiple screens illustrating AI-driven productivity for college founders" width={1200} height={675} />
         </figure>
 
         <h2 style={{ color: 'var(--gold)' }}>5. Productivity &times; AI</h2>
@@ -244,7 +244,7 @@ export default function StoryCollegeStartups() {
         <h2>Actionable Steps</h2>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/college-startups/start-now.png" alt="The Old Path versus The Builder Path: raise VC vs buy or bootstrap, build from zero vs start with $0, need a team vs AI does the work" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/college-startups/start-now.webp" alt="The Old Path versus The Builder Path: raise VC vs buy or bootstrap, build from zero vs start with $0, need a team vs AI does the work" width={1200} height={675} />
         </figure>
 
         <h3 style={{ color: 'var(--gold)' }}>1. Start building an audience</h3>

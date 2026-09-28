@@ -137,7 +137,7 @@ export default function StoryDealSourcing() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/thousand.png" alt="From browse to buy: ~1,000 businesses reviewed, 100–200 evaluated per deal, multiple negotiations, 6 acquisitions closed" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/thousand.webp" alt="From browse to buy: ~1,000 businesses reviewed, 100–200 evaluated per deal, multiple negotiations, 6 acquisitions closed" width={1200} height={675} />
         </figure>
 
         <p>
@@ -193,13 +193,13 @@ export default function StoryDealSourcing() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/morning.png" alt="5 habits of serious acquirers: check frequently, build analytical skill, use filters, negotiate early, track and revisit" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/morning.webp" alt="5 habits of serious acquirers: check frequently, build analytical skill, use filters, negotiate early, track and revisit" width={1200} height={675} />
         </figure>
 
         <h2>Here&rsquo;s a Look at Our Acquire CRM</h2>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/deal-sourcing/crm.png" alt="Kautilya's Acquire CRM spreadsheet tracking business name, asking price, type, industry, description, and deal phase" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/deal-sourcing/crm.webp" alt="Kautilya's Acquire CRM spreadsheet tracking business name, asking price, type, industry, description, and deal phase" width={1200} height={675} />
         </figure>
 
         <div className="metrics-strip">

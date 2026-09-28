@@ -116,7 +116,7 @@ export default function StoryPocketDeals() {
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.png" alt="Acquisition snapshot for iOS autism support app: $15,000 asking price, 2.5x revenue multiple, ~100% profit margin" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/bigpurpose.webp" alt="Acquisition snapshot for iOS autism support app: $15,000 asking price, 2.5x revenue multiple, ~100% profit margin" width={1200} height={675} />
         </figure>
 
         <h2>The Business</h2>
@@ -144,7 +144,7 @@ export default function StoryPocketDeals() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/numbers.png" alt="The numbers at a glance: $6,000 annual revenue and profit, $480 monthly revenue, $475 monthly profit" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/numbers.webp" alt="The numbers at a glance: $6,000 annual revenue and profit, $480 monthly revenue, $475 monthly profit" width={1200} height={675} />
         </figure>
 
         <h2>Pros of Investing</h2>
@@ -162,7 +162,7 @@ export default function StoryPocketDeals() {
         </ul>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/micro-saas/15000.png" alt="Pocket Deals #1 deal scorecard: margins, valuation, defensibility, and growth potential" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/micro-saas/15000.webp" alt="Pocket Deals #1 deal scorecard: margins, valuation, defensibility, and growth potential" width={1200} height={675} />
         </figure>
 
         <h2>Overall Analysis</h2>

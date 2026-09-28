@@ -32,7 +32,7 @@ const deals: Deal[] = [
     tagClass: 'diligence',
     price: '$1.8M',
     name: 'Inspire3',
-    logo: '/images/portfolio-logos/inspire3.png',
+    logo: '/images/portfolio-logos/inspire3.webp',
     logoWidth: 376,
     logoHeight: 376,
     oneLiner:
@@ -85,7 +85,7 @@ const deals: Deal[] = [
     tagClass: 'sourcing',
     price: '$110K',
     name: 'Runify',
-    logo: '/images/portfolio-logos/runify.png',
+    logo: '/images/portfolio-logos/runify.webp',
     logoWidth: 400,
     logoHeight: 400,
     oneLiner:

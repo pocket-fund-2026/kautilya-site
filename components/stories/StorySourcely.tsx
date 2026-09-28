@@ -99,7 +99,7 @@ export default function StorySourcely() {
       <article className="story-body" id="storyBody">
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/sourcely/logo_sourcely.png" alt="Sourcely logo — AI-powered source finding tool for students" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/sourcely/logo_sourcely.webp" alt="Sourcely logo — AI-powered source finding tool for students" width={1200} height={675} />
         </figure>
 
         <p>
@@ -120,7 +120,7 @@ export default function StorySourcely() {
         <h2>How It Started</h2>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/sourcely/twitter.png" alt="Twitter DM thread showing how Dev Shah connected with Elman Mansimov to co-acquire Sourcely" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/sourcely/twitter.webp" alt="Twitter DM thread showing how Dev Shah connected with Elman Mansimov to co-acquire Sourcely" width={1200} height={675} />
         </figure>
 
         <p>
@@ -187,7 +187,7 @@ export default function StorySourcely() {
           and have fun with it 
         </p>
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/sourcely/essay.png" alt="Sourcely product map: Citations, Plagiarism checker, Essay builder, and Advanced essay tools planned across four phases" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/sourcely/essay.webp" alt="Sourcely product map: Citations, Plagiarism checker, Essay builder, and Advanced essay tools planned across four phases" width={1200} height={675} />
         </figure>
 
         <p>

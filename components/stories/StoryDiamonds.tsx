@@ -128,7 +128,7 @@ export default function StoryDiamonds() {
         </div>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/diamonds/uncut.png" alt="What makes a diamond in the rough: stable cash flow, low owner involvement, growth potential" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/diamonds/uncut.webp" alt="What makes a diamond in the rough: stable cash flow, low owner involvement, growth potential" width={1200} height={675} />
         </figure>
 
         <h2>The Numbers Don&rsquo;t Lie</h2>
@@ -152,7 +152,7 @@ export default function StoryDiamonds() {
         <p>Is there an obvious way to improve it &mdash; better marketing, new offers, a revenue stream that was never activated? The improvement should be clear, not speculative.</p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/diamonds/zeroto.png" alt="Newsletter case study: 5,000 readers, $0 revenue to $2,500 per month passive income" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/diamonds/zeroto.webp" alt="Newsletter case study: 5,000 readers, $0 revenue to $2,500 per month passive income" width={1200} height={675} />
         </figure>
 
         <h2>The Mindset Shift</h2>

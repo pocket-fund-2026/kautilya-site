@@ -104,7 +104,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/evol_of_search_fund.png" alt="Evolution of the Search Fund Model 1984–2024: cumulative funds launched, IRR, and ROI from Jim Southern's first fund to 81% solo funds today" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/evol_of_search_fund.webp" alt="Evolution of the Search Fund Model 1984–2024: cumulative funds launched, IRR, and ROI from Jim Southern's first fund to 81% solo funds today" width={1200} height={675} />
         </figure>
 
         <h2>Introduction</h2>
@@ -177,7 +177,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/solo_vs_partnered.png" alt="Solo vs Partnered Searchers: IRR & Equity Retention — partnered 40.5% IRR / 25–30% equity, solo 30.3% IRR / 20–25% equity" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/solo_vs_partnered.webp" alt="Solo vs Partnered Searchers: IRR & Equity Retention — partnered 40.5% IRR / 25–30% equity, solo 30.3% IRR / 20–25% equity" width={1200} height={675} />
         </figure>
 
         <p>
@@ -209,7 +209,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/industry_focus_shift.png" alt="Industry focus shift in search fund acquisitions: tech-enabled services, healthcare services, and business services leading" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/industry_focus_shift.webp" alt="Industry focus shift in search fund acquisitions: tech-enabled services, healthcare services, and business services leading" width={1200} height={675} />
         </figure>
 
         <p>
@@ -265,7 +265,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/explaining_multiple_gap.png" alt="Explaining the multiple gap: core search fund vs self-funded median purchase prices and EBITDA multiples" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/explaining_multiple_gap.webp" alt="Explaining the multiple gap: core search fund vs self-funded median purchase prices and EBITDA multiples" width={1200} height={675} />
         </figure>
 
         <p>
@@ -291,7 +291,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/how_search_source_deal.png" alt="How searchers source deals: proprietary exploration used by 64% of searchers, trade shows, River Guides, and intermediaries" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/how_search_source_deal.webp" alt="How searchers source deals: proprietary exploration used by 64% of searchers, trade shows, River Guides, and intermediaries" width={1200} height={675} />
         </figure>
 
         <p>
@@ -350,7 +350,7 @@ export default function StorySearchFunds() {
         </ul>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/when_2walk_away.png" alt="When to walk away: turnaround situations, high customer concentration, high churn, seller obstructs diligence" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/when_2walk_away.webp" alt="When to walk away: turnaround situations, high customer concentration, high churn, seller obstructs diligence" width={1200} height={675} />
         </figure>
 
         <h2>The Exit and Final Reflections</h2>
@@ -363,7 +363,7 @@ export default function StorySearchFunds() {
         </p>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/search-fund/exit_final_reflections.png" alt="Distribution of ROI Outcomes (Stanford 2024): 31% loss, 27% 1–2x, 36% 2–5x, 25% 5–10x, 11% achieve 10x+ ROI" width={1200} height={675} />
+          <ShimmerImage src="/images/stories/search-fund/exit_final_reflections.webp" alt="Distribution of ROI Outcomes (Stanford 2024): 31% loss, 27% 1–2x, 36% 2–5x, 25% 5–10x, 11% achieve 10x+ ROI" width={1200} height={675} />
         </figure>
 
         <p>

@@ -71,7 +71,7 @@ const teamSchema = {
         description: 'Micro PE operator who has personally acquired and exited multiple businesses. Leads every engagement at Kautilya.',
         nationality: 'Indian',
         url: `${BASE_URL}/team`,
-        image: `${BASE_URL}/images/aditya.jpeg`,
+        image: `${BASE_URL}/images/aditya.webp`,
         worksFor: org,
         knowsAbout: ['Micro private equity', 'Off-market deal sourcing', 'Acquisition entrepreneurship', 'M&A advisory India', 'Search funds', 'Forensic due diligence'],
         hasOccupation: { '@type': 'Occupation', name: 'Founder & M&A Advisor', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
