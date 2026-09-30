@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     'M&A advisory India blog', 'buy-side advisory India insights',
     'acquisition advisory India notes', 'M&A advisory notes India',
     // Deal sourcing
-    'off-market deal sourcing India', 'proprietary deal flow India',
-    'how to source deals India', 'deal sourcing strategy India',
+    'off-market deal sourcing', 'proprietary deal flow India',
+    'how to source deals India', 'deal sourcing strategy',
     // Market types
     'micro private equity India', 'search fund India blog',
     'acquisition entrepreneurship blog India', 'ETA blog India',
     'SME acquisition India', 'SMB acquisition India insights',
     // Buyer types
-    'family office acquisition India', 'PE deal sourcing India',
+    'family office acquisition India', 'PE deal sourcing',
     'search fund buyer India', 'first-time buyer business India',
     // Education
     'how to buy a business India', 'acquisition framework India',

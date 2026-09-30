@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'talk to acquisition advisor India', 'acquisition retainer enquiry India',
     'M&A retainer enquiry India', 'buy-side retainer India',
     'acquisition consultation India', 'M&A consultation India',
-    'deal sourcing enquiry India', 'proprietary deal flow enquiry India',
+    'deal sourcing enquiry', 'proprietary deal flow enquiry India',
     'off-market deal enquiry India', 'VC advisory India enquiry',
     'family office advisory contact India', 'search fund advisor enquiry India',
     'ETA advisor contact India', 'acquisition entrepreneur advisor India',

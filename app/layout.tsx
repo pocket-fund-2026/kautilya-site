@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     'off-market business sale India', 'acquire a business India',
     'acquisition advisory firm', 'buy-side M&A firm', 'M&A consultant India',
     'small business acquisition India', 'SME acquisition India', 'online business acquisition India',
-    'VC advisory India', 'private equity deal sourcing India',
+    'VC advisory India', 'private equity deal sourcing',
     'family office acquisition India', 'business buyer India',
     'startup acquisition India', 'digital business acquisition India',
     'proprietary pipeline India', 'micro PE India', 'mandated buy-side search',
@@ -145,7 +145,7 @@ export const metadata: Metadata = {
     'DC.rights': '© 2026 Kautilya. All rights reserved.',
     'DC.coverage': 'India, United States, United Arab Emirates, United Kingdom, Europe, Asia-Pacific',
     /* Standard hidden SEO meta */
-    subject: 'Buy-side M&A advisory and proprietary deal sourcing for PE, VC, and family office buyers in India',
+    subject: 'Buy-side M&A advisory and proprietary deal sourcing for PE, VC, and family office buyers',
     topic: 'M&A Advisory, Private Equity, Business Acquisition, Deal Sourcing',
     classification: 'Finance / M&A Advisory / Private Equity',
     abstract: 'Kautilya is a buy-side M&A advisory firm that constructs proprietary acquisition pipelines on demand — sector-agnostic, off-market, from first principles.',

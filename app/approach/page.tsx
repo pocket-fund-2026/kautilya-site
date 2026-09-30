@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'M&A due diligence India', 'business acquisition process India',
     'search fund methodology', 'ETA acquisition process',
     'acquisition process steps India', 'how to acquire a business step by step',
-    'deal sourcing process India', 'founder outreach methodology',
+    'deal sourcing process', 'founder outreach methodology',
     'acquisition timeline India', 'time to close acquisition India',
     'LOI to close India', 'due diligence workstreams India',
     'DD checklist India', 'diligence process buy-side',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   other: {
     'DC.title': 'Approach | Kautilya | M&A Methodology & Deal Sourcing',
-    'DC.subject': 'M&A methodology, acquisition process, due diligence, deal sourcing India',
+    'DC.subject': 'M&A methodology, acquisition process, due diligence, deal sourcing',
     pagename: 'Kautilya — Approach',
     abstract: 'Five-phase buy-side acquisition methodology: mandate definition, universe construction, targeted outreach, forensic diligence, and close.',
     summary: 'Kautilya\'s proprietary 5-phase acquisition process — 2,500+ founder conversations, 99.83% match rate, diligence in under 15 days.',
