@@ -8,6 +8,7 @@ export const NEWSLETTER_SLUGS = [
   'sun-pharma-organon-acquisition-explained',
   'cvc-kkr-healthcare-global-acquisition-explained',
   'cvc-aavas-financiers-acquisition-explained',
+  'everstone-wingify-bootstrapped-buyout-400-500m-platform',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -763,6 +764,67 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Kedaara Capital', sameAs: 'https://www.kedaara.com' },
       { name: 'Partners Group', sameAs: 'https://www.partnersgroup.com' },
       { name: 'Aquilo House Pte Ltd' },
+    ],
+  },
+  'everstone-wingify-bootstrapped-buyout-400-500m-platform': {
+    title: 'Everstone and Wingify: $200M Bootstrapped Buyout to $400–500M Platform',
+    description: 'Everstone paid about $200M for 80% of bootstrapped Wingify (VWO), then bought a startup, merged with AB Tasty and led a $150M rights issue within a year.',
+    author: 'Kautilya PE',
+    datePublished: '2026-09-30',
+    dealDate: '2025-01-24',
+    category: 'Deal Teardowns',
+    readTime: '13 min',
+    wordCount: 3665,
+    keywords: [
+      'Everstone Wingify',
+      'Wingify acquisition',
+      'VWO acquisition',
+      'Everstone Capital',
+      'Wingify AB Tasty merger',
+      'Paras Chopra exit',
+      'bootstrapped SaaS exit India',
+      'buy-and-build strategy',
+      'Indian SaaS private equity',
+      'platform strategy M&A',
+      'management buyout with sponsor',
+      'rights issue primary capital',
+      'SaaS valuation revenue multiple',
+      'India deal teardown',
+    ],
+    faqs: [
+      {
+        q: 'How much did Everstone pay for Wingify?',
+        a: 'Everstone paid roughly $200M, all cash, for 80% of Wingify, about four times the $50M of annual recurring revenue. The figure is press-reported and confirmed by the founder, not in official filings.',
+      },
+      {
+        q: 'Who owns Wingify after the deal?',
+        a: 'After dilution, per the March 2025 RoC filing, Everstone holds 76.84%, founder Paras Chopra 10.45%, Vyom Mankekar 5.07% and CEO Sparsh Gupta 4.86%. Chopra also kept a board seat but has no operating role.',
+      },
+      {
+        q: 'What did Everstone do with Wingify after buying it?',
+        a: 'In December 2025 Wingify acquired Blitzllama, an AI user-research startup and its first acquisition. In January 2026 it merged with AB Tasty of Paris to pass $100M of combined revenue. In April 2026 a ₹ 1,381 Cr ($150M) rights issue led by Everstone funded the build.',
+      },
+      {
+        q: 'What is a buy-and-build or platform strategy?',
+        a: 'It means buying a solid company not to run it unchanged, but to use it as the base for acquiring others and building scale. The first deal supplies the product, the customers and the team; the return is expected to come from what gets built on top of it.',
+      },
+      {
+        q: 'Why does the $150M rights issue matter?',
+        a: 'It put new money into the company rather than into selling shareholders\' pockets, and Everstone led it at ₹ 8,590 a share. Primary capital funds the build, so a sponsor leading a primary raise soon after buying is committing to the growth plan.',
+      },
+    ],
+    about: [
+      'Everstone Capital',
+      'Wingify',
+      'VWO',
+      'AB Tasty',
+      'Blitzllama',
+    ],
+    mentions: [
+      { name: 'Everstone Capital' },
+      { name: 'Wingify' },
+      { name: 'AB Tasty' },
+      { name: 'Blitzllama' },
     ],
   },
 };

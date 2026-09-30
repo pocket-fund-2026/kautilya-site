@@ -10,6 +10,7 @@ import NewsletterChrysCapitalNovartis from '@/components/newsletters/NewsletterC
 import NewsletterSunPharmaOrganon from '@/components/newsletters/NewsletterSunPharmaOrganon';
 import NewsletterCVCKKRHealthcareGlobal from '@/components/newsletters/NewsletterCVCKKRHealthcareGlobal';
 import NewsletterCVCAavasFinanciers from '@/components/newsletters/NewsletterCVCAavasFinanciers';
+import NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform from '@/components/newsletters/NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -23,6 +24,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'sun-pharma-organon-acquisition-explained': NewsletterSunPharmaOrganon,
   'cvc-kkr-healthcare-global-acquisition-explained': NewsletterCVCKKRHealthcareGlobal,
   'cvc-aavas-financiers-acquisition-explained': NewsletterCVCAavasFinanciers,
+  'everstone-wingify-bootstrapped-buyout-400-500m-platform': NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform,
 };
 
 type Props = {
