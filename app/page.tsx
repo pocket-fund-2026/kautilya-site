@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing India' },
+  title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing' },
   description:
     'Buy-side M&A advisory for lower middle market acquisitions. Proprietary deal sourcing for private equity, search funds, and family office buyers — off-market, mandate to close.',
   keywords: [
     'buy-side advisory India', 'proprietary deal sourcing', 'off-market acquisitions',
     'M&A advisory India', 'buy a business India', 'acquisition pipeline',
     'lower middle market M&A India', 'lower middle market acquisitions',
-    'private equity deal sourcing India', 'private equity acquisition advisory',
+    'private equity deal sourcing', 'private equity acquisition advisory',
     'micro private equity India', 'search fund India', 'ETA India',
     'forensic due diligence', 'family office deal sourcing', 'PE advisory India',
     'acquisition entrepreneurship India', 'buy and build strategy',
     'roll-up acquisitions', 'business acquisition advisory', 'acquisition mandate India',
-    'deal sourcing firm India', 'proprietary deal flow India', 'M&A support India',
+    'deal sourcing firm', 'proprietary deal flow India', 'M&A support India',
     'company acquisition India', 'acquisition financing India', 'seller financing India',
     'earnout India', 'acquisition due diligence India', 'financial due diligence India',
     'SaaS acquisition advisory', 'tech acquisition India', 'acquisition retainer India',
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.kautilya-pe.com', languages: { 'en': 'https://www.kautilya-pe.com', 'x-default': 'https://www.kautilya-pe.com' } },
   openGraph: {
-    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing India',
+    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
       'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   },
   other: {
-    'DC.title': 'Kautilya | Buy-Side Advisory & Deal Sourcing India',
+    'DC.title': 'Kautilya | Buy-Side Advisory & Deal Sourcing',
     'DC.subject': 'Buy-side M&A advisory, proprietary deal sourcing, micro private equity India',
     pagename: 'Kautilya — Home',
     abstract: 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers — sector-agnostic, off-market, mandate to close.',

@@ -4,7 +4,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Kautilya</ShortName>
-  <Description>Search Kautilya — Buy-Side M&amp;A Advisory, Deal Sourcing &amp; Acquisition Intelligence India</Description>
+  <Description>Search Kautilya — Buy-Side M&amp;A Advisory, Deal Sourcing &amp; Acquisition Intelligence</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <OutputEncoding>UTF-8</OutputEncoding>
   <Language>en-us</Language>
@@ -13,7 +13,7 @@ export function GET() {
   <Url type="application/rss+xml" rel="results" template="${WWW}/rss.xml?q={searchTerms}" />
   <Contact>DealDesk@kautilya.pe</Contact>
   <Tags>M&amp;A advisory India, buy a business India, acquisition entrepreneurship, micro private equity, search fund India, deal sourcing</Tags>
-  <LongName>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing India</LongName>
+  <LongName>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing</LongName>
   <moz:SearchForm>${WWW}/stories</moz:SearchForm>
 </OpenSearchDescription>`;
 

@@ -217,7 +217,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'business acquisition process India',
       'due diligence business acquisition India',
       'M&A sourcing screening valuation diligence',
-      'off-market deal sourcing India',
+      'off-market deal sourcing',
       // Buyer intent
       'first-time business buyer India guide',
       'how to buy a business in India',

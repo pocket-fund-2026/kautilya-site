@@ -60,7 +60,7 @@ export function GET() {
       <url>${WWW}/icon.svg</url>
       <title>Kautilya Stories</title>
       <link>${WWW}/stories</link>
-      <description>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing India</description>
+      <description>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing</description>
     </image>
     <dc:creator>Dev Shah</dc:creator>
     <dc:publisher>Kautilya</dc:publisher>
