@@ -17,7 +17,7 @@ const IMAGE_MAP: Array<{
     pageUrl: `${WWW}/`,
     images: [
       { src: '/opengraph-image', title: 'Kautilya | Buy-Side M&A Advisory', caption: 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers.' },
-      { src: '/icon.svg', title: 'Kautilya Logo', caption: 'Official logo of Kautilya, buy-side M&A advisory firm based in Mumbai, India.' },
+      { src: '/icon.png', title: 'Kautilya Logo', caption: 'Official logo of Kautilya, buy-side M&A advisory firm based in Mumbai, India.' },
     ],
   },
   {

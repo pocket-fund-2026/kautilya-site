@@ -86,7 +86,7 @@ const newsletterListSchema = {
     '@type': 'Organization',
     name: 'Kautilya',
     url: BASE_URL,
-    logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.svg`, width: 512, height: 512 },
+    logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.png`, width: 400, height: 400 },
     sameAs: ['https://www.linkedin.com/company/pocket-fund/', 'https://x.com/microsearchfund'],
   },
   blogPost: NEWSLETTER_SLUGS.map((slug) => {

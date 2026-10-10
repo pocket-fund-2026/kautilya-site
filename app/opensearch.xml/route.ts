@@ -8,7 +8,7 @@ export function GET() {
   <InputEncoding>UTF-8</InputEncoding>
   <OutputEncoding>UTF-8</OutputEncoding>
   <Language>en-us</Language>
-  <Image width="16" height="16" type="image/svg+xml">${WWW}/icon.svg</Image>
+  <Image width="16" height="16" type="image/x-icon">${WWW}/favicon.ico</Image>
   <Url type="text/html" method="get" template="${WWW}/stories?q={searchTerms}" />
   <Url type="application/rss+xml" rel="results" template="${WWW}/rss.xml?q={searchTerms}" />
   <Contact>DealDesk@kautilya.pe</Contact>

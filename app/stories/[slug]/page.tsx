@@ -90,7 +90,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
       url: BASE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/icon.svg`,
+        url: `${BASE_URL}/icon.png`,
         width: 512,
         height: 512,
       },
@@ -176,7 +176,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
       '@type': 'Organization',
       name: 'Kautilya',
       url: BASE_URL,
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.svg` },
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.png` },
     },
   } : null;
 

@@ -63,7 +63,7 @@ const organizationSchema = {
   url: BASE,
   logo: {
     '@type': 'ImageObject',
-    url: `${BASE}/icon.svg`,
+    url: `${BASE}/icon.png`,
     width: 512,
     height: 512,
     caption: 'Kautilya — Buy-Side M&A Advisory',
@@ -98,7 +98,7 @@ const organizationSchema = {
   brand: {
     '@type': 'Brand',
     name: 'Kautilya',
-    logo: `${BASE}/icon.svg`,
+    logo: `${BASE}/icon.png`,
     slogan: 'Proprietary deal flow. From mandate to close.',
   },
   award: [
@@ -203,7 +203,7 @@ const webSiteSchema = {
     url: BASE,
     logo: {
       '@type': 'ImageObject',
-      url: `${BASE}/icon.svg`,
+      url: `${BASE}/icon.png`,
     },
   },
   speakable: {

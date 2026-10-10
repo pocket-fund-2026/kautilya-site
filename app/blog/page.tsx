@@ -114,7 +114,7 @@ const blogListSchema = {
     url: BASE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${BASE_URL}/icon.svg`,
+      url: `${BASE_URL}/icon.png`,
       width: 512,
       height: 512,
     },

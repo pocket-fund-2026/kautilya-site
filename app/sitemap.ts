@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1.0,
       lastModified: '2026-05-27',
-      images: [`${WWW}/opengraph-image`, `${WWW}/icon.svg`],
+      images: [`${WWW}/opengraph-image`, `${WWW}/icon.png`],
     },
     {
       url: `${WWW}/approach`,

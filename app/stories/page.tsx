@@ -73,7 +73,7 @@ const blogSchema = {
     '@type': 'Organization',
     name: 'Kautilya',
     url: BASE,
-    logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` },
+    logo: { '@type': 'ImageObject', url: `${BASE}/icon.png` },
   },
 };
 
@@ -128,7 +128,7 @@ const videoListSchema = {
         uploadDate: '2026-03-17',
         contentUrl: `${BASE}/videos/WebEventFinal.mp4`,
         duration: 'PT54S',
-        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.png` } },
       },
     },
     {
@@ -142,7 +142,7 @@ const videoListSchema = {
         uploadDate: '2026-03-28',
         contentUrl: `${BASE}/videos/WebSymbiosisFinal.mp4`,
         duration: 'PT48S',
-        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.png` } },
       },
     },
     {
@@ -156,7 +156,7 @@ const videoListSchema = {
         uploadDate: '2026-03-17',
         contentUrl: `${BASE}/videos/WebSingFinal.mp4`,
         duration: 'PT56S',
-        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg` } },
+        publisher: { '@type': 'Organization', name: 'Kautilya', url: BASE, logo: { '@type': 'ImageObject', url: `${BASE}/icon.png` } },
       },
     },
   ],

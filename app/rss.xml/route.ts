@@ -57,7 +57,7 @@ export function GET() {
     <category>Search Funds India</category>
     <category>Off-Market Deal Sourcing</category>
     <image>
-      <url>${WWW}/icon.svg</url>
+      <url>${WWW}/icon.png</url>
       <title>Kautilya Stories</title>
       <link>${WWW}/stories</link>
       <description>Kautilya — Buy-Side M&amp;A Advisory &amp; Deal Sourcing</description>

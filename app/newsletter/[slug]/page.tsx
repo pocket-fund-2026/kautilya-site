@@ -127,7 +127,7 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
     '@type': 'Organization',
     name: 'Kautilya',
     url: BASE,
-    logo: { '@type': 'ImageObject', url: `${BASE}/icon.svg`, width: 512, height: 512 },
+    logo: { '@type': 'ImageObject', url: `${BASE}/icon.png`, width: 400, height: 400 },
     sameAs: ['https://www.linkedin.com/company/pocket-fund/', 'https://x.com/microsearchfund'],
   };
 
