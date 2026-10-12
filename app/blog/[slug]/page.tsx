@@ -9,6 +9,7 @@ import BlogHowToFindAcquisitionCapital from '@/components/blogs/BlogHowToFindAcq
 import BlogWhatIsSellSideMAAdvisory from '@/components/blogs/BlogWhatIsSellSideMAAdvisory';
 import BlogWhatIsPocketDeals from '@/components/blogs/BlogWhatIsPocketDeals';
 import BlogWhatIsAPrivatePlacementMemorandum from '@/components/blogs/BlogWhatIsAPrivatePlacementMemorandum';
+import BlogBuySideMAAdvisoryWhatItIsAndHowItWorks from '@/components/blogs/BlogBuySideMAAdvisoryWhatItIsAndHowItWorks';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -21,6 +22,7 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'what-is-sell-side-ma-advisory': BlogWhatIsSellSideMAAdvisory,
   'what-is-pocket-deals': BlogWhatIsPocketDeals,
   'what-is-a-private-placement-memorandum': BlogWhatIsAPrivatePlacementMemorandum,
+  'buy-side-m-a-advisory-what-it-is-and-how-it-works': BlogBuySideMAAdvisoryWhatItIsAndHowItWorks,
 };
 
 type Props = {

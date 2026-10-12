@@ -7,6 +7,7 @@ export const BLOG_SLUGS = [
   'what-is-sell-side-ma-advisory',
   'what-is-pocket-deals',
   'what-is-a-private-placement-memorandum',
+  'buy-side-m-a-advisory-what-it-is-and-how-it-works',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -672,6 +673,63 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Private securities offering disclosure',
       'Raising acquisition capital',
       'PPM vs prospectus vs pitch deck',
+    ],
+  },
+  'buy-side-m-a-advisory-what-it-is-and-how-it-works': {
+    title: 'Buy-Side M&A Advisory: What It Is and How It Works',
+    subtitle: 'A Plain-Language Guide for Business Buyers',
+    description: 'A plain-language guide to buy-side M&A advisory: what it is, how the process works step by step, what advisors charge, and how to tell whether you actually need one.',
+    author: 'Dev Shah',
+    datePublished: '2026-10-12',
+    category: 'M&A Advisory',
+    readTime: '10 min',
+    wordCount: 2322,
+    keywords: [
+      'buy-side M&A advisory',
+      'what is buy-side M&A advisory',
+      'buy-side M&A process',
+      'buy-side M&A advisor fees',
+      'buy-side vs sell-side M&A',
+      'buy-side advisory India',
+      'do I need a buy-side advisor',
+      'buy-side advisor vs business broker',
+      'buy-side success fee and retainer',
+    ],
+    faqs: [
+      {
+        q: 'Is a buy-side M&A advisor the same as a buy-side analyst?',
+        a: 'No. A buy-side analyst works for an investment fund and researches listed securities. A buy-side M&A advisor helps a buyer acquire a whole company. They are different jobs with a similar name.',
+      },
+      {
+        q: 'How much do buy-side M&A advisors charge?',
+        a: 'Usually a monthly retainer plus a success fee at closing, often with the retainer credited against the fee and a minimum fee for small deals. Published percentages vary widely by source and deal size and mostly reflect US practice, so ask for the schedule in writing.',
+      },
+      {
+        q: 'What is the difference between a buy-side advisor and a business broker?',
+        a: 'A business broker mainly represents sellers, listing a business and finding a buyer for a commission. A buy-side advisor represents the buyer and searches proactively for targets that may not be listed anywhere.',
+      },
+      {
+        q: 'How long does a buy-side process take?',
+        a: 'One published estimate is 6 to 24 months from mandate to closing. It depends mostly on how narrow your criteria are and how quickly owners respond.',
+      },
+      {
+        q: 'Does a buy-side advisor negotiate the price?',
+        a: 'Yes. They typically help set a valuation range, negotiate the price and structure in the LOI, and manage earnouts and risk terms. They do not replace your lawyer, who drafts and reviews the binding agreements.',
+      },
+      {
+        q: 'Do I need a buy-side advisor to buy a small business in India?',
+        a: 'Not necessarily. For a small deal, doing the sourcing yourself and hiring a lawyer and chartered accountant for structure and diligence is often better value, since advisor minimum fees can be large relative to the deal.',
+      },
+      {
+        q: 'Can the same advisor act for both the buyer and the seller?',
+        a: 'It can happen, but it is a conflict of interest and should be disclosed in writing before you sign. Ask directly whether the advisor is being paid by, or has any arrangement with, the seller.',
+      },
+    ],
+    about: [
+      'Mergers and acquisitions',
+      'Buy-side M&A advisory',
+      'M&A advisory fees',
+      'Acquisitions in India',
     ],
   },
 };
