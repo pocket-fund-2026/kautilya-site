@@ -11,7 +11,7 @@ export default function NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatf
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Everstone and Wingify: $200M Bootstrapped Buyout to $400–500M Platform, via @microsearchfund");
+    const text = encodeURIComponent("Everstone and Wingify: $200M Bootstrapped Buyout to $400–500M Platform");
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

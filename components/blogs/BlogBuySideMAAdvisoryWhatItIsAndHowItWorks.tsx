@@ -11,7 +11,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Buy-Side M&A Advisory: What It Is and How It Works, via @microsearchfund");
+    const text = encodeURIComponent("Buy-Side M&A Advisory: What It Is and How It Works");
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

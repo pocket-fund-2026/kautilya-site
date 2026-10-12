@@ -12,7 +12,7 @@ export default function BlogFamilyBusinessAcquisition() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('What actually changes when you\'re buying a family-owned business in India instead of a professionally-run one, via @microsearchfund');
+    const text = encodeURIComponent('What actually changes when you\'re buying a family-owned business in India instead of a professionally-run one');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

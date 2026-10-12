@@ -9,7 +9,7 @@ export default function NewsletterCVCKKRHealthcareGlobal() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('CVC bought HealthCare Global at ₹130 a share in 2020 and handed it to KKR at ₹445 five years later — a $400M deal, a ~3.4x return, and a founder who never sold a share. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('CVC bought HealthCare Global at ₹130 a share in 2020 and handed it to KKR at ₹445 five years later — a $400M deal, a ~3.4x return, and a founder who never sold a share. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

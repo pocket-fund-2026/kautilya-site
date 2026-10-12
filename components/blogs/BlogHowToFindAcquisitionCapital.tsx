@@ -9,7 +9,7 @@ export default function BlogHowToFindAcquisitionCapital() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Where acquisition capital actually comes from, and the work you need to finish before your first investor conversation, via @microsearchfund');
+    const text = encodeURIComponent('Where acquisition capital actually comes from, and the work you need to finish before your first investor conversation');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

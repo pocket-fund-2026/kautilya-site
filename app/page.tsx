@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Kautilya | Buy-Side Advisory & Deal Sourcing' },
+  title: { absolute: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing' },
   description:
-    'Buy-side M&A advisory for lower middle market acquisitions — proprietary off-market deal sourcing for PE and family office buyers, mandate to close.',
+    'Buy-side M&A advisory for lower middle market acquisitions — proprietary off-market deal sourcing for private equity funds, search funds, family offices and holding companies, mandate to close.',
   keywords: [
     'buy-side advisory India', 'proprietary deal sourcing', 'off-market acquisitions',
     'M&A advisory India', 'buy a business India', 'acquisition pipeline',
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.kautilya-pe.com', languages: { 'en': 'https://www.kautilya-pe.com', 'x-default': 'https://www.kautilya-pe.com' } },
   openGraph: {
-    title: 'Kautilya | Buy-Side Advisory & Deal Sourcing',
+    title: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     url: 'https://www.kautilya-pe.com',
     description:
-      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+      'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   },
   other: {
-    'DC.title': 'Kautilya | Buy-Side Advisory & Deal Sourcing',
+    'DC.title': 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     'DC.subject': 'Buy-side M&A advisory, proprietary deal sourcing, micro private equity India',
     pagename: 'Kautilya — Home',
-    abstract: 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers — sector-agnostic, off-market, mandate to close.',
-    summary: 'Buy-side M&A advisory firm building proprietary acquisition pipelines for PE, VC, and family office buyers across India, US, UAE, and UK.',
+    abstract: 'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies — sector-agnostic, off-market, mandate to close.',
+    summary: 'Buy-side M&A advisory firm building proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies across India, US, UAE, and UK.',
     'og:see_also': 'https://www.kautilya-pe.com/approach',
   },
 };
@@ -109,20 +109,18 @@ const organizationSchema = {
     '@type': 'Person',
     name: 'Dev Shah',
     jobTitle: 'Founder & Lead Advisor',
-    description: '24-year-old micro PE operator. Personally acquired and exited multiple businesses. Leads every Kautilya engagement.',
-    url: `${BASE}/team`,
+    description: 'Has bought 7 businesses and sold 2, starting with Sourcely in 2023. Leads every Kautilya mandate, from defining the search to closing the deal.',
+    url: `${BASE}/team/dev-shah`,
     nationality: 'Indian',
     knowsAbout: ['Micro private equity', 'Acquisition entrepreneurship', 'Off-market deal sourcing', 'Search funds', 'M&A advisory India'],
     sameAs: [
-      'https://x.com/microsearchfund',
-      'https://www.instagram.com/microsearchfund/',
-      'https://in.linkedin.com/in/devlikesbizness',
+      'https://www.linkedin.com/in/devlikesbizness',
     ],
     hasOccupation: {
       '@type': 'Occupation',
       name: 'M&A Advisor',
       occupationLocation: { '@type': 'City', name: 'Mumbai' },
-      description: 'Buy-side M&A advisory and proprietary deal sourcing for PE, VC, and family office buyers.',
+      description: 'Buy-side M&A advisory and proprietary deal sourcing for private equity funds, search funds, family offices and holding companies.',
     },
   },
   contactPoint: [
@@ -151,7 +149,6 @@ const organizationSchema = {
           '@type': 'Service',
           name: 'Full-Service Retainer',
           description: 'End-to-end acquisition mandate: off-market sourcing, forensic diligence, deal structuring, operator placement, and post-acquisition growth.',
-          offers: { '@type': 'Offer', price: '2500', priceCurrency: 'USD', priceSpecification: { '@type': 'UnitPriceSpecification', referenceQuantity: { '@type': 'QuantitativeValue', value: 1, unitText: 'month' } } },
         },
       },
       {
@@ -160,7 +157,6 @@ const organizationSchema = {
           '@type': 'Service',
           name: 'Forensic Due Diligence',
           description: '8-workstream forensic DD: financial reconstruction, commercial, traffic, tech, operational, strategic, and exit analysis. Delivered in under 15 days.',
-          offers: { '@type': 'Offer', price: '6500', priceCurrency: 'USD' },
         },
       },
       {
@@ -169,15 +165,12 @@ const organizationSchema = {
           '@type': 'Service',
           name: 'Market Research',
           description: '6–8 week deep-dive into a target acquisition sector or universe.',
-          offers: { '@type': 'Offer', price: '3500', priceCurrency: 'USD' },
         },
       },
     ],
   },
   sameAs: [
-    'https://x.com/microsearchfund',
-    'https://www.instagram.com/microsearchfund/',
-    'https://www.linkedin.com/company/pocket-fund/',
+    'https://www.linkedin.com/company/kautilya-pe',
     'https://www.youtube.com/@devlikesbizness',
   ],
 };
@@ -187,7 +180,7 @@ const webSiteSchema = {
   '@type': 'WebSite',
   name: 'Kautilya',
   url: BASE,
-  description: 'Buy-side M&A advisory firm that constructs proprietary acquisition pipelines for PE, VC, and family office buyers.',
+  description: 'Buy-side M&A advisory firm that constructs proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies.',
   inLanguage: 'en-US',
   potentialAction: {
     '@type': 'SearchAction',
@@ -217,7 +210,7 @@ const professionalServiceSchema = {
   '@type': 'ProfessionalService',
   name: 'Kautilya',
   url: BASE,
-  description: 'Buy-side M&A advisory and proprietary deal sourcing firm serving PE, VC, and family office buyers.',
+  description: 'Buy-side M&A advisory and proprietary deal sourcing firm serving private equity funds, search funds, family offices and holding companies.',
   email: 'DealDesk@kautilya.pe',
   address: {
     '@type': 'PostalAddress',
@@ -244,11 +237,11 @@ const professionalServiceSchema = {
       },
       {
         '@type': 'Offer',
-        itemOffered: { '@type': 'Service', name: 'Due Diligence', description: '8-workstream forensic due diligence starting at $6,500.' },
+        itemOffered: { '@type': 'Service', name: 'Due Diligence', description: '8-workstream forensic due diligence. Quoted after the scoping call.' },
       },
       {
         '@type': 'Offer',
-        itemOffered: { '@type': 'Service', name: 'Market Research', description: '6–8 week deep-dive into a target acquisition sector. $3,500–$5,000.' },
+        itemOffered: { '@type': 'Service', name: 'Market Research', description: '6–8 week deep-dive into a target acquisition sector. Quoted after the scoping call.' },
       },
     ],
   },

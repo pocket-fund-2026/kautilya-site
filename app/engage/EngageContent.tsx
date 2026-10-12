@@ -297,9 +297,8 @@ export default function EngageContent() {
               <div className="engage-next-step-num">03</div>
               <div className="engage-next-step-title">Engagement &amp; Pricing</div>
               <p className="engage-next-step-desc">
-                Full-Service Retainer runs $2,500–$10,000/month depending on deal volume, plus a success fee on
-                close. Standalone due diligence starts at $6,500 plus a 0.3% success fee. Market research is
-                $3,500–$5,000 for a 6–8 week sector deep-dive. All engagements are month-to-month, no lock-in.
+                A monthly retainer plus a success fee on close, sized to your mandate. We quote after the
+                scoping call.
               </p>
             </div>
             <div>

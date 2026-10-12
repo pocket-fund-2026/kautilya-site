@@ -54,7 +54,7 @@ const hiringOrganization = {
   '@type': 'Organization' as const,
   name: 'Kautilya',
   url: BASE,
-  sameAs: 'https://www.linkedin.com/company/pocket-fund/',
+  sameAs: 'https://www.linkedin.com/company/kautilya-pe',
 };
 
 const jobPostings = [

@@ -9,7 +9,7 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('What a private placement memorandum actually is, what goes inside one, and how it differs from a prospectus or a pitch deck, via @microsearchfund');
+    const text = encodeURIComponent('What a private placement memorandum actually is, what goes inside one, and how it differs from a prospectus or a pitch deck');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

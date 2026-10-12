@@ -4,7 +4,7 @@ import StoriesContent from './StoriesContent';
 export const metadata: Metadata = {
   title: { absolute: 'Stories | Kautilya | Acquisitions & Market Intelligence' },
   description:
-    'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice — from a Sunday newsletter to $1M+ in closed acquisitions.',
+    'Deal journals, case studies, and market intelligence from Kautilya\'s buy-side advisory practice — from a Sunday newsletter to 8 closed deals.',
   keywords: [
     'acquisition entrepreneurship India', 'buy a business India blog',
     'M&A deal journal', 'search fund stories India', 'micro private equity blog',

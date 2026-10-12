@@ -9,7 +9,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('2,000 letters in: what direct-mail deal origination for buy-side M&A actually looks like, day to day, via @microsearchfund');
+    const text = encodeURIComponent('2,000 letters in: what direct-mail deal origination for buy-side M&A actually looks like, day to day');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

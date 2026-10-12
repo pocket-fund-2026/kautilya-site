@@ -92,6 +92,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${WWW}/images/aditya.webp`,
       ],
     },
+    {
+      url: `${WWW}/team/dev-shah`,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+      lastModified: '2026-10-12',
+      images: [`${WWW}/images/Dev.webp`],
+    },
     // /careers now 307s to hirepeanalyst.com — a redirecting URL in the sitemap
     // is a Search Console warning, so it is withheld rather than removed.
     // Restore this entry if the redirect is ever reverted.

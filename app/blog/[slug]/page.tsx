@@ -82,8 +82,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: `${fullTitle} | Kautilya`,
       description: meta.description,
-      creator: '@microsearchfund',
-      site: '@microsearchfund',
       images: [meta.image ? `${BASE}${meta.image}` : `${BASE}/opengraph-image`],
     },
     robots: {
@@ -139,8 +137,7 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
     url: BASE,
     logo: { '@type': 'ImageObject', url: `${BASE}/icon.png`, width: 400, height: 400 },
     sameAs: [
-      'https://www.linkedin.com/company/pocket-fund/',
-      'https://x.com/microsearchfund',
+      'https://www.linkedin.com/company/kautilya-pe',
     ],
   };
 
@@ -149,7 +146,6 @@ function BlogJsonLd({ slug, meta }: { slug: string; meta: (typeof BLOG_META)[Blo
     name: meta.author,
     url: `${BASE}/team`,
     worksFor: org,
-    sameAs: ['https://x.com/microsearchfund'],
   };
 
   const faqItems = meta.faqs ?? [];

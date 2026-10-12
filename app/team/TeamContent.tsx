@@ -18,37 +18,39 @@ type TeamMember = {
   initials: string;
   image?: string;
   linkedin?: string;
+  profile?: string;
 };
 
-// ---- Team Data (9 Members for a 3x3 Grid) ----
+// ---- Team Data (3-column grid) ----
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Dev Shah',
     role: 'Founder',
-    desc: 'A 24-year-old micro PE operator who has personally acquired and exited multiple businesses. Leads every Kautilya engagement, from mandate definition through sourcing, diligence, and post-acquisition growth.',
+    desc: 'Has bought 7 businesses and sold 2, starting with Sourcely in 2023. Leads every Kautilya mandate, from defining the search to closing the deal.',
     initials: 'DS',
     image: devImage,
     linkedin: 'https://www.linkedin.com/in/devlikesbizness/',
+    profile: '/team/dev-shah',
   },
   {
     name: 'Aum Thakarkar',
-    role: 'Chief Analyst',
-    desc: 'Leads research and analysis across the firm, delivers high-conviction insights on markets and opportunities, and guides data-driven investment decisions.',
+    role: 'Co-founder & COO',
+    desc: 'Runs client mandates and the sales pipeline, and coordinates due diligence across engagements.',
     initials: 'AT',
     image: aumImage,
     linkedin: 'https://www.linkedin.com/in/aumthakarkar/',
   },
   {
     name: 'Ganesh Jagtap',
-    role: 'Tech Head',
+    role: 'CTO',
     desc: 'Drives the technology vision, builds scalable systems, and ensures secure, efficient platforms that power our products and operations.',
     initials: 'GJ',
     image: ganeshImage,
   },
   {
     name: 'Pushkar Rathod',
-    role: 'Analyst',
-    desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
+    role: 'Lead Analyst',
+    desc: 'Leads the analyst team on client mandates: market maps, target write-ups and seller outreach. Runs hiring.',
     initials: 'PR',
     image: pushkarImage,
     linkedin: 'https://www.linkedin.com/in/pushkarrathod12/',
@@ -63,8 +65,8 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Kabir Dhumale',
-    role: 'Business Associate',
-    desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
+    role: 'Systems & Growth',
+    desc: 'Builds the firm\'s systems: the website, search visibility and the outreach tooling.',
     initials: 'KD',
     image: kabirImage,
     linkedin: 'https://www.linkedin.com/in/kabir-dhumale/',
@@ -76,6 +78,36 @@ const TEAM_MEMBERS: TeamMember[] = [
     initials: 'AN',
     image: adityaImage,
     linkedin: 'https://www.linkedin.com/in/aditya-negi-9a12a2223/',
+  },
+  {
+    name: 'Sidharth',
+    role: 'Analyst',
+    desc: 'Sources and screens targets on client mandates and runs founder outreach.',
+    initials: 'S',
+  },
+  {
+    name: 'Aditya GD',
+    role: 'Analyst',
+    desc: 'Builds outreach sequences and investment theses for live mandates.',
+    initials: 'AG',
+  },
+  {
+    name: 'Deep',
+    role: 'Analyst',
+    desc: 'Cold calls and seller outreach; tracks who bought whom in each sector.',
+    initials: 'D',
+  },
+  {
+    name: 'Siddhant Mehta',
+    role: 'Business Development',
+    desc: 'Runs outbound to funds and buyers.',
+    initials: 'SM',
+  },
+  {
+    name: 'Gaurav',
+    role: "Founder's Office",
+    desc: 'Works across sales and content with Dev.',
+    initials: 'G',
   },
 ];
 
@@ -499,8 +531,8 @@ export default function TeamContent() {
             <div className="section-eyebrow">The Counsel</div>
             <h2 className="section-title">The People Behind the Mandate</h2>
             <p className="section-body" style={{ margin: '0 auto' }}>
-              A focused team, not a headcount. Every engagement is led by senior practitioners who've built pipelines across
-              sectors and deal types.
+              Every mandate is led by Dev and run by a dedicated analyst, full-time on your search. The people on this
+              page are the ones who make the calls, read the numbers and sit in the seller meetings.
             </p>
           </div>
 
@@ -526,6 +558,16 @@ export default function TeamContent() {
                     <LinkedInIcon />
                     <span>LinkedIn</span>
                   </a>
+                )}
+                {member.profile && (
+                  <Link
+                    className="member-linkedin"
+                    href={member.profile}
+                    aria-label={`${member.name}: full profile`}
+                    style={member.linkedin ? { marginLeft: 16 } : undefined}
+                  >
+                    <span>Full profile →</span>
+                  </Link>
                 )}
               </div>
             ))}

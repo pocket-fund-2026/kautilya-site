@@ -356,7 +356,7 @@ export default function StoriesTimeline() {
         <div className="stories-timeline-header">
           <p className="section-eyebrow">The Journey</p>
           <h1 className="section-title">
-            From a Sunday newsletter to closing $1M+ in deals.
+            From a Sunday newsletter to 8 closed deals.
           </h1>
           <div className="stories-timeline-header-row">
             <p className="stories-timeline-intro section-body">

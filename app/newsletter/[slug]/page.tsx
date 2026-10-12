@@ -78,8 +78,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: `${fullTitle} | Kautilya`,
       description: meta.description,
-      creator: '@microsearchfund',
-      site: '@microsearchfund',
       images: [meta.image ? (meta.image.startsWith('/') ? `${BASE}${meta.image}` : meta.image) : `${BASE}/opengraph-image`],
     },
     robots: {
@@ -128,7 +126,7 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
     name: 'Kautilya',
     url: BASE,
     logo: { '@type': 'ImageObject', url: `${BASE}/icon.png`, width: 400, height: 400 },
-    sameAs: ['https://www.linkedin.com/company/pocket-fund/', 'https://x.com/microsearchfund'],
+    sameAs: ['https://www.linkedin.com/company/kautilya-pe'],
   };
 
   const author = {
@@ -136,7 +134,6 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
     name: meta.author,
     url: `${BASE}/team`,
     worksFor: org,
-    sameAs: ['https://x.com/microsearchfund'],
   };
 
   const faqItems = meta.faqs ?? [];

@@ -9,7 +9,7 @@ export default function NewsletterCVCAavasFinanciers() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('CVC paid ₹3,425 Cr for a 26.47% block of Aavas Financiers, then offered the public the same exit — and almost nobody took it. The buyer landed at 48.96%, just short of a majority. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('CVC paid ₹3,425 Cr for a 26.47% block of Aavas Financiers, then offered the public the same exit — and almost nobody took it. The buyer landed at 48.96%, just short of a majority. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

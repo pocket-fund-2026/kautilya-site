@@ -42,7 +42,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: `${meta.title} | Kautilya`,
       description: meta.description,
-      creator: '@microsearchfund',
       ...(meta.image ? { images: [meta.image] } : {}),
     },
     other: {
@@ -82,7 +81,6 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
       nationality: 'Indian',
       knowsAbout: ['Micro private equity', 'Acquisition entrepreneurship', 'M&A advisory India', 'Off-market deal sourcing'],
       worksFor: { '@type': 'Organization', name: 'Kautilya', url: BASE_URL },
-      sameAs: ['https://x.com/microsearchfund'],
     },
     publisher: {
       '@type': 'Organization',
@@ -103,7 +101,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     ],
     audience: {
       '@type': 'Audience',
-      audienceType: 'PE funds, VCs, family offices, search fund operators, acquisition entrepreneurs, first-time buyers',
+      audienceType: 'Private equity funds, search funds, family offices and holding companies',
     },
     teaches: 'How to source, evaluate, and close off-market business acquisitions in India and globally.',
     mainEntityOfPage: {

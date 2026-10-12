@@ -12,7 +12,7 @@ export default function BlogWhatIsBuySideMAAdvisory() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('What a buy-side M&A advisor actually does, and why most first-time buyers in India don\'t go it alone, via @microsearchfund');
+    const text = encodeURIComponent('What a buy-side M&A advisor actually does, and why most first-time buyers in India don\'t go it alone');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

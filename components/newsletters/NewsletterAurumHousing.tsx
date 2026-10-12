@@ -26,7 +26,7 @@ export default function NewsletterAurumHousing() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('REA didn\'t sell Housing.com for cash — it swapped operating control for a 24.9% stake in Aurum PropTech. The deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('REA didn\'t sell Housing.com for cash — it swapped operating control for a 24.9% stake in Aurum PropTech. The deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
