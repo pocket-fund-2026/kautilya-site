@@ -77,6 +77,10 @@ const nextConfig: NextConfig = {
       // Flip `permanent: true` once that page carries its own JobPosting schema.
       { source: '/careers', destination: 'https://hirepeanalyst.com/', permanent: false },
       { source: '/blog/pharma-business-valuation-india-jb-chemicals', destination: '/newsletter/torrent-jb-chemicals-pharma-valuation', permanent: true },
+      // Old/mistyped URLs Google still has indexed or discovered (they 404ed). Each goes to the closest live page.
+      { source: '/newsletter/chryscapital-chryscapital-novartis-india-acquisition-explained', destination: '/newsletter/chryscapital-novartis-india-acquisition-explained', permanent: true },
+      { source: '/stories/2023-review', destination: '/stories/review', permanent: true },
+      { source: '/stories/off-market-acquisition-targets', destination: '/stories/borderless', permanent: true },
       { source: '/story-borderless', destination: '/stories/borderless', permanent: true },
       { source: '/story-dino-games', destination: '/stories/dino-games', permanent: true },
       { source: '/story-runify', destination: '/stories/runify', permanent: true },
