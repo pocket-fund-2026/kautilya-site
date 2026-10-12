@@ -132,6 +132,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
           }
           .deal-table td:first-child {
             padding-top: 0;
+            white-space: normal;
             font-size: 11px;
             letter-spacing: 1px;
             text-transform: uppercase;
