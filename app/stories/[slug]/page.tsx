@@ -169,7 +169,7 @@ function StoryJsonLd({ slug, meta }: { slug: string; meta: typeof STORY_META[Sto
     name: 'Edition Zero: How This Is Bizness Began',
     description: meta.description,
     thumbnailUrl: ['https://img.youtube.com/vi/M7AGB7itYFk/maxresdefault.jpg'],
-    uploadDate: meta.datePublished ?? '2023-05-01',
+    uploadDate: `${meta.datePublished ?? '2023-05-01'}T00:00:00+05:30`,
     embedUrl: 'https://www.youtube.com/embed/M7AGB7itYFk',
     contentUrl: 'https://www.youtube.com/watch?v=M7AGB7itYFk',
     publisher: {
