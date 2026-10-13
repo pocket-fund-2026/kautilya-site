@@ -21,7 +21,6 @@ type TeamMember = {
   initials: string;
   image?: string;
   linkedin?: string;
-  profile?: string;
 };
 
 // ---- Team Data (3-column grid) ----
@@ -35,7 +34,6 @@ const TEAM_MEMBERS: TeamMember[] = [
     initials: 'DS',
     image: devImage,
     linkedin: 'https://www.linkedin.com/in/devlikesbizness/',
-    profile: '/team/dev-shah',
   },
   {
     name: 'Aum Thakarkar',
@@ -70,7 +68,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Deep Keswani',
-    role: 'Junior Analyst',
+    role: 'Analyst',
     desc: 'Cold calls and seller outreach; tracks who bought whom in each sector.',
     initials: 'DK',
     image: deepImage,
@@ -78,7 +76,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Aditya Gada',
-    role: 'Junior Analyst',
+    role: 'Analyst',
     desc: 'Builds outreach sequences and investment theses for live mandates, and supports market research.',
     initials: 'AG',
     image: adityaGadaImage,
@@ -89,12 +87,14 @@ const TEAM_MEMBERS: TeamMember[] = [
     role: 'Business Development',
     desc: 'Runs outbound to funds and buyers.',
     initials: 'SM',
+    linkedin: 'https://www.linkedin.com/in/siddhant-mehta-b41a50228',
   },
   {
     name: 'Gaurav Banerjee',
     role: "Founder's Office",
     desc: 'Works across sales and content with Dev.',
     initials: 'GB',
+    linkedin: 'https://www.linkedin.com/in/gsbanerjee/',
   },
   {
     name: 'Aditya Negi',
@@ -569,16 +569,6 @@ export default function TeamContent() {
                     <LinkedInIcon />
                     <span>LinkedIn</span>
                   </a>
-                )}
-                {member.profile && (
-                  <Link
-                    className="member-linkedin"
-                    href={member.profile}
-                    aria-label={`${member.name}: full profile`}
-                    style={member.linkedin ? { marginLeft: 16 } : undefined}
-                  >
-                    <span>Full profile →</span>
-                  </Link>
                 )}
               </div>
             ))}

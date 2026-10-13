@@ -157,8 +157,8 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - Ganesh Jagtap: CTO. Platform and tooling.
 - Pushkar Rathod: Lead Analyst. Leads the analyst team on client mandates.
 - Siddharth Zambre: Analyst.
-- Deep Keswani: Junior Analyst.
-- Aditya Gada: Junior Analyst. Market research and outreach.
+- Deep Keswani: Analyst.
+- Aditya Gada: Analyst. Market research and outreach.
 - Siddhant Mehta: Business Development.
 - Gaurav Banerjee: Founder's Office.
 - Aditya Negi: Tech Support.
