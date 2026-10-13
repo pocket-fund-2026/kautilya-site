@@ -143,7 +143,7 @@ const teamSchema = {
         hasOccupation: { '@type': 'Occupation', name: 'Analyst', occupationLocation: { '@type': 'City', name: 'Mumbai' } },
         sameAs: ['https://www.linkedin.com/in/aditya-gada-b1b155261'],
       },
-      { '@type': 'Person', name: 'Siddhant Mehta', jobTitle: 'Business Development', description: 'Runs outbound to funds and buyers.', worksFor: org, sameAs: ['https://www.linkedin.com/in/siddhant-mehta-b41a50228'] },
+      { '@type': 'Person', name: 'Siddhant Mehta', jobTitle: 'Business Development', description: 'Runs outbound to funds and buyers.', worksFor: org, image: `${BASE_URL}/images/siddhant-mehta.webp`, sameAs: ['https://www.linkedin.com/in/siddhant-mehta-b41a50228'] },
       { '@type': 'Person', name: 'Gaurav Banerjee', jobTitle: "Founder's Office", description: 'Works across sales and content with Dev.', worksFor: org, image: `${BASE_URL}/images/gaurav-banerjee.webp`, sameAs: ['https://www.linkedin.com/in/gsbanerjee/'] },
       {
         '@type': 'Person',

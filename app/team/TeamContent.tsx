@@ -12,6 +12,7 @@ const kabirImage = '/images/kabir.webp';
 const adityaImage = '/images/aditya.webp';
 const sidharthImage = '/images/sidharth-zambre.webp';
 const gauravImage = '/images/gaurav-banerjee.webp';
+const siddhantImage = '/images/siddhant-mehta.webp';
 const deepImage = '/images/deep.webp';
 const adityaGadaImage = '/images/aditya-gada.webp';
 
@@ -88,6 +89,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     role: 'Business Development',
     desc: 'Runs outbound to funds and buyers.',
     initials: 'SM',
+    image: siddhantImage,
     linkedin: 'https://www.linkedin.com/in/siddhant-mehta-b41a50228',
   },
   {
