@@ -4,7 +4,7 @@ import ApproachContent from './ApproachContent';
 export const metadata: Metadata = {
   title: { absolute: 'Approach | Kautilya | M&A Methodology & Deal Sourcing' },
   description:
-    'From mandate definition to close: five-phase acquisition process with 2,500+ founder conversations, 99.83% transaction match rate, and diligence delivered in under 15 days.',
+    'From mandate definition to close: five-phase acquisition process with 10,000+ founders contacted, 99.83% transaction match rate, and diligence delivered in under 15 days.',
   keywords: [
     'M&A methodology India', 'acquisition process', 'buy-side deal sourcing process',
     'lower middle market acquisition process', 'private equity deal sourcing methodology',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     'DC.subject': 'M&A methodology, acquisition process, due diligence, deal sourcing',
     pagename: 'Kautilya — Approach',
     abstract: 'Five-phase buy-side acquisition methodology: mandate definition, universe construction, targeted outreach, forensic diligence, and close.',
-    summary: 'Kautilya\'s proprietary 5-phase acquisition process — 2,500+ founder conversations, 99.83% match rate, diligence in under 15 days.',
+    summary: 'Kautilya\'s proprietary 5-phase acquisition process: 10,000+ founders contacted, 99.83% match rate, diligence in under 15 days.',
     'og:see_also': 'https://www.kautilya-pe.com/portfolio',
   },
 };
@@ -65,7 +65,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Buy-Side M&A Advisory',
   url: `${BASE}/approach`,
-  description: 'Kautilya constructs proprietary acquisition pipelines for PE, VC, and family office buyers — sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+  description: 'Kautilya constructs proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies: sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   slogan: 'Proprietary deal flow. From mandate to close.',
   provider: {
     '@type': 'Organization',
@@ -75,7 +75,7 @@ const serviceSchema = {
   },
   serviceAudience: {
     '@type': 'Audience',
-    audienceType: 'Private equity funds, venture capital firms, family offices, search fund operators, acquisition entrepreneurs, HoldCo builders',
+    audienceType: 'Private equity funds, search funds, family offices and holding companies',
   },
   availableChannel: {
     '@type': 'ServiceChannel',
@@ -106,7 +106,7 @@ const serviceSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Full-Service Retainer',
-          description: 'End-to-end acquisition mandate: sourcing, diligence, deal structuring, and post-acquisition operations. $2,500–$10,000/month plus success fees.',
+          description: 'End-to-end acquisition mandate: sourcing, diligence, deal structuring, and post-acquisition operations. A monthly retainer plus a success fee on close, quoted after the scoping call.',
         },
       },
       {
@@ -114,7 +114,7 @@ const serviceSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Due Diligence',
-          description: '8-workstream forensic due diligence: financial, commercial, traffic, tech, operational, and strategic analysis. Starting at $6,500 plus 0.3% success fee.',
+          description: '8-workstream forensic due diligence: financial, commercial, traffic, tech, operational, and strategic analysis. Quoted after the scoping call.',
         },
       },
       {
@@ -122,7 +122,7 @@ const serviceSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Market Research',
-          description: '6–8 week deep-dive into a target sector or acquisition universe. $3,500–$5,000.',
+          description: '6–8 week deep-dive into a target sector or acquisition universe. Quoted after the scoping call.',
         },
       },
     ],
@@ -135,7 +135,6 @@ const howToSchema = {
   name: 'How to Execute a Buy-Side Business Acquisition in India',
   description: 'Kautilya\'s 5-phase methodology for building proprietary acquisition pipelines and closing off-market deals. From mandate definition to close in 30–90 days.',
   totalTime: 'P90D',
-  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '2500', minValue: '2500', maxValue: '10000' },
   yield: 'A closed off-market business acquisition with forensic diligence, optimal deal structure, and post-acquisition operations plan.',
   tool: [
     { '@type': 'HowToTool', name: 'Proprietary CRM and outreach platform' },
@@ -168,7 +167,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 3,
       name: 'Targeted Outreach',
-      text: 'Personalised founder outreach via cold email, LinkedIn, and Loom video. 14.8% response rate vs industry average of ~5%. Typical volume: 2,500+ founder conversations per mandate.',
+      text: 'Personalised founder outreach via cold email, LinkedIn, and Loom video. 14.8% response rate vs industry average of ~5%.',
       url: `${BASE}/approach`,
     },
     {

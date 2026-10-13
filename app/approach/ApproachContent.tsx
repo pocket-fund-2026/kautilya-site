@@ -926,7 +926,7 @@ export default function ApproachContent() {
       <section className="services-section">
         <div className="services-inner">
           <div className="section-eyebrow">What We Do</div>
-          <h2 className="services-headline">Three ways to work with us.</h2>
+          <h2 className="services-headline">Four ways to work with us.</h2>
           <p className="services-sub">
             Some clients come before they have found a deal. Some come mid-process when something
             does not feel right. Some come after close, needing someone who understands the
@@ -955,6 +955,13 @@ export default function ApproachContent() {
               title="Forensic Due Diligence"
               onClick={() => setActiveService(2)}
             />
+            <TabButton
+              className="service-tab"
+              active={activeService === 3}
+              number="04"
+              title="Buyer Presence"
+              onClick={() => setActiveService(3)}
+            />
           </nav>
 
           <div className={`service-panel ${activeService === 0 ? 'active' : ''}`}>
@@ -976,11 +983,11 @@ export default function ApproachContent() {
 
               <div className="service-stat-row">
                 <div className="service-stat">
-                  <div className="service-stat-num">5+</div>
+                  <div className="service-stat-num">8</div>
                   <div className="service-stat-label">Deals closed</div>
                 </div>
                 <div className="service-stat">
-                  <div className="service-stat-num">2,500+</div>
+                  <div className="service-stat-num">10,000+</div>
                   <div className="service-stat-label">Founders contacted</div>
                 </div>
                 <div className="service-stat">
@@ -1062,19 +1069,18 @@ export default function ApproachContent() {
           <div className={`service-panel ${activeService === 2 ? 'active' : ''}`}>
             <div className="service-body">
               <div className="service-tag">
-                For founders who want the real picture of their own business.
+                For buyers who have found a deal and need it checked before they sign.
               </div>
-              <h3 className="service-title">Most diligence is done for buyers. This one is for you.</h3>
+              <h3 className="service-title">A seller&apos;s numbers are formatted for a sale.</h3>
               <p>
-                We go through your business the same way we would go through a target for one of
-                our buyers. Transaction-level verification. Processor reconciliation. Cost structure
-                mapping. Every number traced back to source.
+                We trace every one back to source: transactions, processor statements, cost
+                structure. You see what you are actually buying before you pay for it.
               </p>
               <p>
                 What you get is not a report that tells you what you already know. It is an
-                independently verified picture of your financial position. Every gap, inconsistency,
-                and hidden exposure surfaced before it becomes someone else&apos;s negotiating
-                leverage.
+                independently verified picture of the target&apos;s financial position. Every gap,
+                inconsistency, and hidden exposure surfaced before you sign, while it is still your
+                negotiating leverage.
               </p>
 
               <div className="service-stat-row">
@@ -1088,7 +1094,7 @@ export default function ApproachContent() {
                 </div>
                 <div className="service-stat">
                   <div className="service-stat-num">15 days</div>
-                  <div className="service-stat-label">Full scope on a 1.8M portfolio</div>
+                  <div className="service-stat-label">Full scope on a $1.8M portfolio</div>
                 </div>
                 <div className="service-stat">
                   <div className="service-stat-num">30,134</div>
@@ -1107,6 +1113,33 @@ export default function ApproachContent() {
                   <span>Cash flow analysis</span>
                   <span>Risk and findings register</span>
                   <span>Investor-ready summary</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={`service-panel ${activeService === 3 ? 'active' : ''}`}>
+            <div className="service-body">
+              <div className="service-tag">Website. Messaging. LinkedIn.</div>
+              <h3 className="service-title">
+                For buyers whose name means nothing to a seller yet.
+              </h3>
+              <p>
+                Sellers check who is calling before they take the call. A buyer with no website, no
+                clear thesis and no LinkedIn presence loses the conversation before it starts.
+              </p>
+              <p>
+                We build your website, your acquisition messaging and your LinkedIn presence, so the
+                founder who looks you up recognises a serious buyer.
+              </p>
+
+              <div className="service-includes">
+                <div className="si-label">What is included</div>
+                <div className="si-grid">
+                  <span>Buyer website</span>
+                  <span>Acquisition thesis and messaging</span>
+                  <span>LinkedIn page</span>
+                  <span>Seller-facing one-pager</span>
                 </div>
               </div>
             </div>
@@ -1619,7 +1652,7 @@ export default function ApproachContent() {
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">15 days</div>
-                  <div className="sc-label">Full DD on a 1.8M portfolio</div>
+                  <div className="sc-label">Full DD on a $1.8M portfolio</div>
                 </div>
               </div>
             </div>
@@ -1708,8 +1741,8 @@ export default function ApproachContent() {
               <div className="scorecard-title">The full scorecard</div>
               <div className="scorecard-grid">
                 <div className="sc-item">
-                  <div className="sc-num gold">2,500+</div>
-                  <div className="sc-label">Outbound messages sent</div>
+                  <div className="sc-num gold">10,000+</div>
+                  <div className="sc-label">Founders contacted</div>
                 </div>
                 <div className="sc-item">
                   <div className="sc-num gold">300+</div>
@@ -1724,7 +1757,7 @@ export default function ApproachContent() {
                   <div className="sc-label">LOI<span style={{ textTransform: 'none' }}>s</span> terminated to protect buyer</div>
                 </div>
                 <div className="sc-item">
-                  <div className="sc-num gold">5+</div>
+                  <div className="sc-num gold">8</div>
                   <div className="sc-label">Deals closed</div>
                 </div>
                 <div className="sc-item">

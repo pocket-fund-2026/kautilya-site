@@ -1,20 +1,22 @@
 /* TEAM */
 Founder & Lead Advisor: Dev Shah
-Chief Analyst: Aum Thakarkar
-Tech Head: Ganesh Jagtap
-Analyst: Pushkar Rathod
+Co-founder & COO: Aum Thakarkar
+CTO: Ganesh Jagtap
+Lead Analyst: Pushkar Rathod
+Analyst: Siddharth Zambre
 Junior Analyst: Deep Keswani
 Junior Analyst: Aditya Gada
-Marketing Head: Aryan Solanki
-Founder's Office: Ritish Maheshwari
+Business Development: Siddhant Mehta
+Founder's Office: Gaurav Banerjee
 Tech Support: Aditya Negi
-Contact: contact@kautilya-pe.com
+Marketing Head: Aryan Solanki
+Systems & Growth: Kabir Dhumale
+Contact: DealDesk@kautilya.pe
 From: Mumbai, India
-Twitter: @microsearchfund
-LinkedIn: https://www.linkedin.com/company/pocket-fund/
+LinkedIn: https://www.linkedin.com/company/kautilya-pe
 
 /* SITE */
-Last update: 2026-05-30
+Last update: 2026-10-12
 Standards: HTML5, CSS3, JSON-LD, Schema.org
 Components: Next.js 16, React, TypeScript
 Hosted: Vercel

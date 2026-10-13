@@ -357,7 +357,7 @@ return (
         </h1>
         <div className="rule" aria-hidden="true" />
         <p className="lede">
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, and family offices.
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, family offices and holding companies.
         </p>
         <p className="strap">We don&apos;t carry a pipeline. We build yours.</p>
         <Link href="/engage" className="hero-cta">

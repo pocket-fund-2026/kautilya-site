@@ -16,7 +16,7 @@ const IMAGE_MAP: Array<{
   {
     pageUrl: `${WWW}/`,
     images: [
-      { src: '/opengraph-image', title: 'Kautilya | Buy-Side M&A Advisory', caption: 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers.' },
+      { src: '/opengraph-image', title: 'Kautilya | Buy-Side M&A Advisory', caption: 'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies.' },
       { src: '/icon.png', title: 'Kautilya Logo', caption: 'Official logo of Kautilya, buy-side M&A advisory firm based in Mumbai, India.' },
     ],
   },
@@ -32,7 +32,7 @@ const IMAGE_MAP: Array<{
   {
     pageUrl: `${WWW}/team`,
     images: [
-      { src: '/images/aum.webp', title: 'Aum Thakarkar — Chief Analyst, Kautilya', caption: 'Aum Thakarkar leads research and analysis across the firm, delivering high-conviction insights on markets and acquisition opportunities.' },
+      { src: '/images/aum.webp', title: 'Aum Thakarkar, Co-founder & COO, Kautilya', caption: 'Aum Thakarkar runs client mandates and the sales pipeline, and coordinates due diligence across engagements.' },
       { src: '/images/aditya.webp', title: 'Aditya Negi — Tech Support, Kautilya', caption: 'Aditya Negi provides technical assistance and ensures smooth operation of systems for clients and internal teams at Kautilya.' },
     ],
   },

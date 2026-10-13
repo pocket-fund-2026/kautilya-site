@@ -9,7 +9,7 @@ export default function NewsletterPharmaValuation() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('KKR turned ₹3,100 Cr into ₹25,689 Cr in 5 years. What the Torrent-JB Chemicals deal tells you about your pharma business\'s true value, via @microsearchfund');
+    const text = encodeURIComponent('KKR turned ₹3,100 Cr into ₹25,689 Cr in 5 years. What the Torrent-JB Chemicals deal tells you about your pharma business\'s true value');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

@@ -509,19 +509,9 @@ export default function StoriesContent() {
           <div className="section-eyebrow">Follow Our Thinking</div>
           <h2 className="section-title">Across Channels</h2>
           <div className="social-grid">
-            <a className="social-card" href="https://x.com/microsearchfund">
-              <div className="social-platform">Twitter / X</div>
-              <div className="social-handle">@microsearchfund</div>
-              <div className="social-desc">Deal sourcing observations, market threads, and sector takes.</div>
-            </a>
-            <a className="social-card" href="https://www.instagram.com/microsearchfund/">
-              <div className="social-platform">Instagram</div>
-              <div className="social-handle">@microsearchfund</div>
-              <div className="social-desc">Visual insights, infographics, and behind-the-scenes.</div>
-            </a>
-            <a className="social-card" href="https://www.linkedin.com/company/pocket-fund/?originalSubdomain=in">
+            <a className="social-card" href="https://www.linkedin.com/company/kautilya-pe">
               <div className="social-platform">LinkedIn</div>
-              <div className="social-handle">Pocket Fund</div>
+              <div className="social-handle">Kautilya</div>
               <div className="social-desc">Long-form posts, case reflections, and industry commentary.</div>
             </a>
           </div>

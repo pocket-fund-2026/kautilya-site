@@ -9,7 +9,7 @@ export default function BlogWhatIsSellSideMAAdvisory() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('What sell-side M&A advisory actually is, how the process works, and how to tell if you need one, via @microsearchfund');
+    const text = encodeURIComponent('What sell-side M&A advisory actually is, how the process works, and how to tell if you need one');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

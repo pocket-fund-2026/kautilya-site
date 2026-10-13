@@ -10,6 +10,7 @@ const pushkarImage = '/images/pushkar-v2.webp';
 const aryanImage = '/images/aryan.webp';
 const kabirImage = '/images/kabir.webp';
 const adityaImage = '/images/aditya.webp';
+const siddharthImage = '/images/siddharth-zambre.webp';
 const deepImage = '/images/deep.webp';
 const adityaGadaImage = '/images/aditya-gada.webp';
 
@@ -20,45 +21,57 @@ type TeamMember = {
   initials: string;
   image?: string;
   linkedin?: string;
+  profile?: string;
 };
 
-// ---- Team Data (9 Members for a 3x3 Grid) ----
+// ---- Team Data (3-column grid) ----
+// Roles and bios follow Dev's 2026-10-12 site refresh. Order: leadership, then the analyst team, then BD / founder's office,
+// then tech, marketing and systems. Members without a photo or LinkedIn link show an initials avatar until details are supplied.
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Dev Shah',
     role: 'Founder',
-    desc: 'A 24-year-old micro PE operator who has personally acquired and exited multiple businesses. Leads every Kautilya engagement, from mandate definition through sourcing, diligence, and post-acquisition growth.',
+    desc: 'Has bought 7 businesses and sold 2, starting with Sourcely in 2023. Leads every Kautilya mandate, from defining the search to closing the deal.',
     initials: 'DS',
     image: devImage,
     linkedin: 'https://www.linkedin.com/in/devlikesbizness/',
+    profile: '/team/dev-shah',
   },
   {
     name: 'Aum Thakarkar',
-    role: 'Chief Analyst',
-    desc: 'Leads research and analysis across the firm, delivers high-conviction insights on markets and opportunities, and guides data-driven investment decisions.',
+    role: 'Co-founder & COO',
+    desc: 'Runs client mandates and the sales pipeline, and coordinates due diligence across engagements.',
     initials: 'AT',
     image: aumImage,
     linkedin: 'https://www.linkedin.com/in/aumthakarkar/',
   },
   {
     name: 'Ganesh Jagtap',
-    role: 'Tech Head',
+    role: 'CTO',
     desc: 'Drives the technology vision, builds scalable systems, and ensures secure, efficient platforms that power our products and operations.',
     initials: 'GJ',
     image: ganeshImage,
   },
   {
     name: 'Pushkar Rathod',
-    role: 'Analyst',
-    desc: 'Specializes in structuring complex cross-border buyouts and leading late-stage negotiations.',
+    role: 'Lead Analyst',
+    desc: 'Leads the analyst team on client mandates: market maps, target write-ups and seller outreach. Runs hiring.',
     initials: 'PR',
     image: pushkarImage,
     linkedin: 'https://www.linkedin.com/in/pushkarrathod12/',
   },
   {
+    name: 'Siddharth Zambre',
+    role: 'Analyst',
+    desc: 'Sources and screens targets on client mandates and runs founder outreach.',
+    initials: 'SZ',
+    image: siddharthImage,
+    linkedin: 'https://www.linkedin.com/in/sidharthzambre/',
+  },
+  {
     name: 'Deep Keswani',
     role: 'Junior Analyst',
-    desc: 'Supports the analyst team on market mapping, target research, and diligence workstreams, turning raw data into the numbers behind every mandate.',
+    desc: 'Cold calls and seller outreach; tracks who bought whom in each sector.',
     initials: 'DK',
     image: deepImage,
     linkedin: 'https://www.linkedin.com/in/deep-keswani-314990225',
@@ -66,10 +79,22 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Aditya Gada',
     role: 'Junior Analyst',
-    desc: 'Supports the analyst team on market research, deal sourcing, outreach tracking, and target screening, helping keep every search structured and moving.',
+    desc: 'Builds outreach sequences and investment theses for live mandates, and supports market research.',
     initials: 'AG',
     image: adityaGadaImage,
     linkedin: 'https://www.linkedin.com/in/aditya-gada-b1b155261',
+  },
+  {
+    name: 'Siddhant Mehta',
+    role: 'Business Development',
+    desc: 'Runs outbound to funds and buyers.',
+    initials: 'SM',
+  },
+  {
+    name: 'Gaurav Banerjee',
+    role: "Founder's Office",
+    desc: 'Works across sales and content with Dev.',
+    initials: 'GB',
   },
   {
     name: 'Aditya Negi',
@@ -89,8 +114,8 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Kabir Dhumale',
-    role: 'Business Associate',
-    desc: 'Works closely with leadership on high-impact projects, strategic initiatives, partnerships, and day-to-day execution across the firm.',
+    role: 'Systems & Growth',
+    desc: 'Builds the firm\'s systems: the website, search visibility and the outreach tooling.',
     initials: 'KD',
     image: kabirImage,
     linkedin: 'https://www.linkedin.com/in/kabir-dhumale/',
@@ -517,8 +542,8 @@ export default function TeamContent() {
             <div className="section-eyebrow">The Counsel</div>
             <h2 className="section-title">The People Behind the Mandate</h2>
             <p className="section-body" style={{ margin: '0 auto' }}>
-              A focused team, not a headcount. Every engagement is led by senior practitioners who've built pipelines across
-              sectors and deal types.
+              Every mandate is led by Dev and run by a dedicated analyst, full-time on your search. The people on this
+              page are the ones who make the calls, read the numbers and sit in the seller meetings.
             </p>
           </div>
 
@@ -544,6 +569,16 @@ export default function TeamContent() {
                     <LinkedInIcon />
                     <span>LinkedIn</span>
                   </a>
+                )}
+                {member.profile && (
+                  <Link
+                    className="member-linkedin"
+                    href={member.profile}
+                    aria-label={`${member.name}: full profile`}
+                    style={member.linkedin ? { marginLeft: 16 } : undefined}
+                  >
+                    <span>Full profile →</span>
+                  </Link>
                 )}
               </div>
             ))}

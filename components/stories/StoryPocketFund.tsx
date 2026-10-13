@@ -83,6 +83,21 @@ export default function StoryPocketFund() {
 
       <div className="story-hero" id="storyStart">
         <Link href="/stories" className="back-link">&larr; Stories</Link>
+        <div
+          role="note"
+          style={{
+            margin: '20px 0 24px',
+            padding: '14px 18px',
+            borderLeft: '2px solid var(--gold)',
+            background: 'rgba(201,185,154,0.06)',
+            fontSize: 14,
+            lineHeight: 1.7,
+            color: 'var(--text-secondary)',
+          }}
+        >
+          From the archive, October 2023. Pocket Fund started as a student-led fund buying businesses under
+          $5,000. It grew into Kautilya.
+        </div>
         <div className="meta-row">
           <span className="meta-tag sector">Acquisition Entrepreneurship</span>
           <span className="meta-tag geo">Claremont, CA</span>

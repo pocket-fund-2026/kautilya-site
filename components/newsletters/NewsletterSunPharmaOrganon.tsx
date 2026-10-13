@@ -12,7 +12,7 @@ export default function NewsletterSunPharmaOrganon() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Sun Pharma is paying $11.75B for Organon — but only $3.68B of that is equity. The rest is debt Sun takes on, financed by an 11-bank syndicate that includes an Indian state bank for the first time. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('Sun Pharma is paying $11.75B for Organon — but only $3.68B of that is equity. The rest is debt Sun takes on, financed by an 11-bank syndicate that includes an Indian state bank for the first time. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

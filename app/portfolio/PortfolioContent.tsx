@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { NumberTicker } from '@/components/NumberTicker';
 import { BorderBeam } from '@/components/BorderBeam';
 
 /* -- deal data -- */
@@ -16,6 +15,7 @@ interface Deal {
   tag: string;
   tagClass: string;
   price: string;
+  priceNote?: string;
   name: string;
   logo?: string;
   logoWidth?: number;
@@ -31,12 +31,13 @@ const deals: Deal[] = [
     tag: 'Due Diligence',
     tagClass: 'diligence',
     price: '$1.8M',
+    priceNote: 'Portfolio audited',
     name: 'Inspire3',
     logo: '/images/portfolio-logos/inspire3.webp',
     logoWidth: 376,
     logoHeight: 376,
     oneLiner:
-      'A $1.8M wellness business put 19 websites and 30,134 transactions in front of us. We checked every dollar in under 15 days and flagged the ones the seller had missed.',
+      'A wellness business put a $1.8M portfolio of 19 websites and 30,134 transactions in front of us. We checked every dollar in under 15 days and flagged the ones the seller had missed.',
     metrics: [
       { val: '30,134', label: 'Transactions Validated' },
       { val: '19', label: 'Websites Audited' },
@@ -128,6 +129,47 @@ const deals: Deal[] = [
     ],
     storyLink: '/stories/msp-buy-side-diligence',
   },
+  {
+    tag: 'Due Diligence · Handover',
+    tagClass: 'diligence',
+    price: '~$500K',
+    name: 'Personal Development Digital Business',
+    oneLiner:
+      'A personal-development digital business with an email list of 2.4 million people. We ran diligence and the handover on an asset purchase that closed in May 2026.',
+    metrics: [
+      { val: '2.4M', label: 'Email List' },
+      { val: 'Asset', label: 'Purchase' },
+      { val: 'May 2026', label: 'Closed' },
+    ],
+  },
+  {
+    tag: 'Sourcing to Close',
+    tagClass: 'sourcing',
+    price: '$30K',
+    name: 'Obsidian Plugin',
+    oneLiner:
+      'An Obsidian plugin doing $1,500 MRR with minimal founder involvement. Found the seller on X, structured a deal with 33% upfront and the rest over 12 months.',
+    metrics: [
+      { val: '$1.5K', label: 'MRR' },
+      { val: '33%', label: 'Upfront' },
+      { val: '12 Mo', label: 'Earnout' },
+      { val: 'X/Twitter', label: 'Source' },
+    ],
+  },
+  {
+    tag: 'Sourcing to Close',
+    tagClass: 'sourcing',
+    price: '$8K',
+    name: 'Finance Newsletter',
+    oneLiner:
+      'A 16,000-subscriber finance newsletter sold to a media roll-up operator. All-cash deal, no earnout.',
+    metrics: [
+      { val: '16K', label: 'Subscribers' },
+      { val: 'All Cash', label: 'Structure' },
+      { val: 'Finance', label: 'Niche' },
+      { val: 'Roll-Up', label: 'Buyer Type' },
+    ],
+  },
 ];
 
 /* -- stats bar (now rendered inline with NumberTicker) -- */
@@ -159,20 +201,20 @@ export default function PortfolioContent() {
         {/* Stats bar */}
         <div className="dash-stats-bar">
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={6} startValue={5} /></div>
-            <div className="ds-label">Engagements</div>
+            <div className="ds-val">8</div>
+            <div className="ds-label">Deals closed</div>
           </div>
           <div className="dash-stat">
-            <div className="ds-val">$<NumberTicker value={1.96} startValue={1.5} decimalPlaces={2} />M+</div>
-            <div className="ds-label">Total Deal Value</div>
+            <div className="ds-val">~$3M</div>
+            <div className="ds-label">Closed deal value</div>
           </div>
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={2400} startValue={2100} /></div>
-            <div className="ds-label">Analyst Hours</div>
+            <div className="ds-val">$53.2M</div>
+            <div className="ds-label">Diligenced</div>
           </div>
           <div className="dash-stat">
-            <div className="ds-val"><NumberTicker value={100} startValue={85} suffix="%" /></div>
-            <div className="ds-label">Buyer-Side</div>
+            <div className="ds-val">10,000+</div>
+            <div className="ds-label">Founders contacted</div>
           </div>
         </div>
       </div>
@@ -185,7 +227,23 @@ export default function PortfolioContent() {
               <>
                 <div className="deal-card-top">
                   <span className={`deal-tag ${d.tagClass}`}>{d.tag}</span>
-                  <span className="deal-price">{d.price}</span>
+                  <div style={{ textAlign: 'right' }}>
+                    <span className="deal-price">{d.price}</span>
+                    {d.priceNote && (
+                      <span
+                        style={{
+                          display: 'block',
+                          fontSize: 10,
+                          letterSpacing: 2,
+                          textTransform: 'uppercase',
+                          color: 'var(--text-muted)',
+                          marginTop: 4,
+                        }}
+                      >
+                        {d.priceNote}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 {d.logo && (
                   <div className="deal-logo">

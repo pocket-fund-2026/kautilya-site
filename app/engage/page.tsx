@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     'DC.type': 'InteractiveResource',
     pagename: 'Kautilya — Engage',
     abstract: 'Submit your acquisition thesis or book a call. Kautilya builds your proprietary deal pipeline from day one.',
-    summary: 'Contact Kautilya to start a buy-side acquisition mandate — retainers from $2,500/month, standalone DD from $6,500.',
+    summary: 'Contact Kautilya to start a buy-side acquisition mandate. Pricing is a monthly retainer plus a success fee on close, quoted after the scoping call.',
     'og:see_also': 'https://www.kautilya-pe.com/approach',
   },
 };
@@ -62,7 +62,7 @@ const contactPageSchema = {
   '@type': 'ContactPage',
   name: 'Engage with Kautilya',
   url: `${BASE}/engage`,
-  description: 'Submit your acquisition mandate criteria or book a call. Kautilya builds proprietary deal pipelines for PE, VC, and family office buyers.',
+  description: 'Submit your acquisition mandate criteria or book a call. Kautilya builds proprietary deal pipelines for private equity funds, search funds, family offices and holding companies.',
   inLanguage: 'en-US',
   mainEntity: {
     '@type': 'Organization',

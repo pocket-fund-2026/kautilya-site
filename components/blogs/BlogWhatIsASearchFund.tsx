@@ -12,7 +12,7 @@ export default function BlogWhatIsASearchFund() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('You don\'t need to be rich to buy a business. You need to be credible enough that other people will fund your search. A plain-English guide to search funds, via @microsearchfund');
+    const text = encodeURIComponent('You don\'t need to be rich to buy a business. You need to be credible enough that other people will fund your search. A plain-English guide to search funds');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

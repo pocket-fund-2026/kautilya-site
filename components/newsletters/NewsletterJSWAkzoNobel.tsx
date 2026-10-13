@@ -23,7 +23,7 @@ export default function NewsletterJSWAkzoNobel() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('JSW paid up to ₹12,915 Cr for Akzo Nobel India and became India\'s No. 4 paints player overnight. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('JSW paid up to ₹12,915 Cr for Akzo Nobel India and became India\'s No. 4 paints player overnight. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

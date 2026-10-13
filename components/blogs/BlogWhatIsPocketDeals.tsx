@@ -9,7 +9,7 @@ export default function BlogWhatIsPocketDeals() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("What Pocket Deals is, how Kautilya's acquisition newsletter is structured, and what buyers get, via @microsearchfund");
+    const text = encodeURIComponent("What Pocket Deals is, how Kautilya's acquisition newsletter is structured, and what buyers get");
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

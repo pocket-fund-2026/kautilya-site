@@ -1,10 +1,10 @@
 # Kautilya
 
-> Buy-side M&A advisory firm that builds proprietary acquisition pipelines for PE, VC, and family office buyers. Off-market sourcing, forensic due diligence, mandate to close. Based in Mumbai, India.
+> Buy-side M&A advisory firm that builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Off-market sourcing, forensic due diligence, mandate to close. Based in Mumbai, India.
 
 ## What is Kautilya?
 
-Kautilya is a buy-side M&A advisory firm that builds proprietary acquisition pipelines for PE funds, venture capital firms, family offices, and acquisition entrepreneurs. Unlike traditional M&A brokers who operate on the sell side, Kautilya works exclusively for buyers — constructing deal flow from first principles rather than recycling existing listings.
+Kautilya is a buy-side M&A advisory firm that builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Unlike traditional M&A brokers who operate on the sell side, Kautilya works exclusively for buyers — constructing deal flow from first principles rather than recycling existing listings.
 
 The firm is named after Chanakya (also known as Kautilya), author of the Arthashastra — an ancient Indian treatise on statecraft, economic policy, and strategy. The firm applies the same systematic, intelligence-driven approach to deal sourcing.
 
@@ -13,15 +13,18 @@ Founded by Dev Shah. Headquartered in Mumbai, India. Active across India, UK, UA
 ## Core Services
 
 ### 1. Full-Service Retainer
-End-to-end buy-side mandate execution: mandate definition, proprietary market mapping, targeted founder outreach, diligence coordination, deal structuring, negotiation, and closing. Delivered on a retainer model ($2,500–$10,000/month) with a 3% success fee on transactions under $650K.
+End-to-end buy-side mandate execution: mandate definition, proprietary market mapping, targeted founder outreach, diligence coordination, deal structuring, negotiation, and closing. Priced as a monthly retainer plus a success fee on close, sized to the mandate and quoted after the scoping call.
 
 ### 2. Forensic Due Diligence
-Transaction-level financial reconstruction for buy-side buyers. Validates revenue, expenses, and cash flows at the individual transaction level — not just summary financials. 8-workstream diligence process. Standalone engagements at $6,500 plus 0.3% success fee.
+Transaction-level financial reconstruction for buy-side buyers. Validates revenue, expenses, and cash flows at the individual transaction level — not just summary financials. 8-workstream diligence process. Standalone engagements are quoted after the scoping call.
 
 Key metric: 99.83% monetary match rate across 30,134 transactions validated. 7+ material findings per engagement on average. Delivered in under 15 days.
 
 ### 3. Market Research
-6–8 week deep-dive into a target sector or acquisition universe. $3,500–$5,000.
+6–8 week deep-dive into a target sector or acquisition universe. Quoted after the scoping call.
+
+### 4. Buyer Presence
+For buyers whose name means nothing to a seller yet. Sellers check who is calling before they take the call, so Kautilya builds the buyer's website, acquisition thesis and messaging, LinkedIn page and a seller-facing one-pager, so a founder recognises a serious buyer.
 
 ## The Acquisition Methodology (5 Phases)
 
@@ -32,7 +35,7 @@ Kautilya works with the buyer to define the acquisition thesis: sector, geograph
 Systematic market mapping to identify every potential acquisition target matching the mandate. Uses proprietary databases, LinkedIn, industry directories, marketplace data, and direct research. Typical universe: 500–2,500 companies per mandate.
 
 ### Phase 3: Targeted Outreach
-Personalised founder outreach campaign. Not spray-and-pray — each message is tailored to the specific founder and business. Response rates: less than 5% on generic outreach; 20–40% after Kautilya's channel optimisation. Typical outreach volume: 2,500+ founder conversations per mandate.
+Personalised founder outreach campaign. Not spray-and-pray — each message is tailored to the specific founder and business. Response rates: less than 5% on generic outreach; 20–40% after Kautilya's channel optimisation.
 
 ### Phase 4: Diligence and Structuring
 Buy-side due diligence across 8 workstreams: financial reconstruction, revenue quality, customer concentration, tech/product review, legal and compliance, team and operational review, market and competitive positioning, and integration planning. Kautilya has killed 2 of every 8 LOIs to protect buyers from bad deals.
@@ -42,10 +45,10 @@ Deal structuring (earnouts, deferred consideration, seller financing), negotiati
 
 ## Key Facts / Track Record
 
-- 7+ acquisitions completed, 2 successful exits
-- $1.5M+ total deal value closed
-- 1,800 analyst hours deployed
-- 2,500+ founder conversations conducted
+- 8 deals closed
+- ~$3M closed deal value
+- $53.2M diligenced
+- 10,000+ founders contacted
 - 30,134 transactions validated in diligence engagements
 - 99.83% monetary match rate
 - 7+ material findings per forensic due diligence engagement
@@ -124,7 +127,7 @@ Proprietary deal sourcing is finding acquisition targets that are not publicly l
 An off-market deal is a transaction where the business was never formally listed for sale. The buyer (or their advisor) proactively approached the seller. Off-market deals represent the majority of Kautilya's sourcing activity.
 
 ### What types of buyers does Kautilya work with?
-Private equity funds, venture capital firms, family offices, search fund operators, acquisition entrepreneurs, HoldCo builders, and first-time buyers pursuing their first acquisition mandate.
+Private equity funds, search funds, family offices and holding companies.
 
 ### What sectors does Kautilya cover?
 Sector-agnostic. Past mandates have covered SaaS, mobile applications, digital wellness, UK immigration advisory, education technology, and professional services.
@@ -136,7 +139,7 @@ India, United Kingdom, United Arab Emirates, broader MENA, Europe, and Asia-Paci
 Typically 30–90 days from engagement start to close. Kautilya has closed deals in as few as 7 days and delivered full forensic diligence in under 15 days.
 
 ### How much does Kautilya charge?
-Full mandate retainer: $2,500–$10,000/month. Success fee: 3% on transactions under $650K. Standalone forensic due diligence: $6,500 plus 0.3% success fee. Market research: $3,500–$5,000.
+A monthly retainer plus a success fee on close, sized to the mandate. Kautilya quotes after the scoping call.
 
 ### What is a search fund?
 A search fund is an investment vehicle in which an entrepreneur raises capital to fund a 1–2 year search for a business to acquire, operate, and grow. Kautilya works with search fund operators as a sourcing and diligence partner. Full guide: https://www.kautilya-pe.com/blog/what-is-a-search-fund
@@ -149,15 +152,18 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 
 ## Team
 
-- Dev Shah — Founder. Micro PE operator. 7+ acquisitions. INSEAD ETA conference speaker. SymBiz 2025 speaker.
-- Aum Thakarkar — Chief Analyst. Deal sourcing and market intelligence.
-- Ganesh Jagtap — Tech Head. Platform and tooling.
-- Pushkar Rathod — Analyst.
-- Deep Keswani — Junior Analyst.
-- Aditya Gada — Junior Analyst (market research, deal sourcing).
-- Aryan Solanki — Marketing Head.
-- Ritish Maheshwari — Founder's Office.
-- Aditya Negi — Tech Support.
+- Dev Shah: Founder. Has bought 7 businesses and sold 2, starting with Sourcely in 2023. Leads every Kautilya mandate. INSEAD ETA conference speaker. SymBiz 2025 speaker. Profile: https://www.kautilya-pe.com/team/dev-shah
+- Aum Thakarkar: Co-founder & COO. Runs client mandates and the sales pipeline, and coordinates due diligence.
+- Ganesh Jagtap: CTO. Platform and tooling.
+- Pushkar Rathod: Lead Analyst. Leads the analyst team on client mandates.
+- Siddharth Zambre: Analyst.
+- Deep Keswani: Junior Analyst.
+- Aditya Gada: Junior Analyst. Market research and outreach.
+- Siddhant Mehta: Business Development.
+- Gaurav Banerjee: Founder's Office.
+- Aditya Negi: Tech Support.
+- Aryan Solanki: Marketing Head.
+- Kabir Dhumale: Systems & Growth. The website, search visibility and the outreach tooling.
 
 ## Key Pages
 
@@ -209,14 +215,12 @@ summaries), see [/llms-full.txt](https://www.kautilya-pe.com/llms-full.txt).
 
 ## Social & External Profiles
 
-- [LinkedIn](https://www.linkedin.com/company/pocket-fund/)
-- [X / Twitter](https://x.com/microsearchfund)
-- [Instagram](https://www.instagram.com/microsearchfund/)
+- [LinkedIn](https://www.linkedin.com/company/kautilya-pe)
 - [YouTube](https://www.youtube.com/@devlikesbizness)
 
 ## Contact
 
-- Email: contact@kautilya-pe.com
+- Email: DealDesk@kautilya.pe
 - [Start a mandate](https://www.kautilya-pe.com/engage)
 - Location: Mumbai, India
 - Active geographies: India, UK, UAE, MENA, Europe, Asia-Pacific

@@ -12,7 +12,7 @@ export default function NewsletterLockheedUltraMaritime() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Lockheed Martin paid $3.45B, all cash, ~22x EBITDA for Ultra Maritime. A deal teardown, via @microsearchfund');
+    const text = encodeURIComponent('Lockheed Martin paid $3.45B, all cash, ~22x EBITDA for Ultra Maritime. A deal teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

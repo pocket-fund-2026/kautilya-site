@@ -36,8 +36,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Kautilya Newsletter | Deal-Structure Teardowns',
     description: 'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard, every time.',
-    site: '@microsearchfund',
-    creator: '@microsearchfund',
     images: [`${BASE}/opengraph-image`],
   },
   robots: {
@@ -87,7 +85,7 @@ const newsletterListSchema = {
     name: 'Kautilya',
     url: BASE_URL,
     logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.png`, width: 400, height: 400 },
-    sameAs: ['https://www.linkedin.com/company/pocket-fund/', 'https://x.com/microsearchfund'],
+    sameAs: ['https://www.linkedin.com/company/kautilya-pe'],
   },
   blogPost: NEWSLETTER_SLUGS.map((slug) => {
     const meta = NEWSLETTER_META[slug as NewsletterSlug];

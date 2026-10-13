@@ -59,8 +59,6 @@ export const metadata: Metadata = {
     title: 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes',
     description:
       'Buyer guides and acquisition frameworks from the Kautilya advisory team.',
-    site: '@microsearchfund',
-    creator: '@microsearchfund',
     images: [`${BASE}/opengraph-image`],
   },
   robots: {
@@ -119,8 +117,7 @@ const blogListSchema = {
       height: 512,
     },
     sameAs: [
-      'https://www.linkedin.com/company/pocket-fund/',
-      'https://x.com/microsearchfund',
+      'https://www.linkedin.com/company/kautilya-pe',
     ],
   },
   blogPost: [

@@ -9,7 +9,7 @@ export default function NewsletterCoforgeEncora() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Coforge bought Encora for $2.35B and paid zero cash — an all-stock deal that handed the sellers 21.8% of Coforge and two board seats. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('Coforge bought Encora for $2.35B and paid zero cash — an all-stock deal that handed the sellers 21.8% of Coforge and two board seats. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 

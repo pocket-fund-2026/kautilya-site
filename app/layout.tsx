@@ -34,11 +34,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kautilya-pe.com'),
   title: {
-    default: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    default: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     template: 'Kautilya | %s',
   },
   description:
-    'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+    'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
   keywords: [
     'buy-side advisory', 'deal sourcing', 'M&A advisory India', 'acquisition pipeline',
     'Kautilya', 'Kautilya PE', 'Kautilya advisory', 'micro private equity',
@@ -98,9 +98,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.kautilya-pe.com',
     siteName: 'Kautilya',
-    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    title: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     description:
-      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+      'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
     images: [
       {
         url: '/opengraph-image',
@@ -112,11 +112,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@microsearchfund',
-    creator: '@microsearchfund',
-    title: 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    title: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     description:
-      'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
+      'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Sector-agnostic off-market sourcing, forensic due diligence, mandate to close.',
     images: ['/opengraph-image'],
   },
   robots: {
@@ -132,10 +130,10 @@ export const metadata: Metadata = {
   },
   other: {
     /* Dublin Core */
-    'DC.title': 'Kautilya | Buy-Side M&A Advisory | Proprietary Deal Sourcing',
+    'DC.title': 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     'DC.creator': 'Dev Shah',
     'DC.subject': 'Buy-Side M&A Advisory, Deal Sourcing, Private Equity, Business Acquisition, India',
-    'DC.description': 'Kautilya builds proprietary acquisition pipelines for PE, VC, and family office buyers. Off-market sourcing, forensic due diligence, mandate to close.',
+    'DC.description': 'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies. Off-market sourcing, forensic due diligence, mandate to close.',
     'DC.publisher': 'Kautilya',
     'DC.contributor': 'Kautilya Team',
     'DC.date': '2026',
@@ -145,11 +143,11 @@ export const metadata: Metadata = {
     'DC.rights': '© 2026 Kautilya. All rights reserved.',
     'DC.coverage': 'India, United States, United Arab Emirates, United Kingdom, Europe, Asia-Pacific',
     /* Standard hidden SEO meta */
-    subject: 'Buy-side M&A advisory and proprietary deal sourcing for PE, VC, and family office buyers',
+    subject: 'Buy-side M&A advisory and proprietary deal sourcing for private equity funds, search funds, family offices and holding companies',
     topic: 'M&A Advisory, Private Equity, Business Acquisition, Deal Sourcing',
     classification: 'Finance / M&A Advisory / Private Equity',
     abstract: 'Kautilya is a buy-side M&A advisory firm that constructs proprietary acquisition pipelines on demand — sector-agnostic, off-market, from first principles.',
-    target: 'PE funds, VC firms, family offices, search fund operators, acquisition entrepreneurs, first-time buyers',
+    target: 'Private equity funds, search funds, family offices and holding companies',
     'reply-to': 'DealDesk@kautilya.pe',
     owner: 'Kautilya',
     'revisit-after': '7 days',

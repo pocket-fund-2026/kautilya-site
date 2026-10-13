@@ -9,7 +9,7 @@ export default function NewsletterChrysCapitalNovartis() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('ChrysCapital paid ₹1,445.89 Cr for 70.68% of Novartis India — India\'s first PE-led pharma buyout in 27 years. The public was offered an exit at ₹860.64 a share. Forty shares took it. A deal-structure teardown, via @microsearchfund');
+    const text = encodeURIComponent('ChrysCapital paid ₹1,445.89 Cr for 70.68% of Novartis India — India\'s first PE-led pharma buyout in 27 years. The public was offered an exit at ₹860.64 a share. Forty shares took it. A deal-structure teardown');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
