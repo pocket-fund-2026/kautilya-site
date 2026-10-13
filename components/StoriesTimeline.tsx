@@ -9,7 +9,8 @@ const editionThisIsBIz = '/images/blogs/edition-thisisbiz.webp';
 const edition200k = '/images/blogs/edition-200k.webp';
 const editionCollege = '/images/blogs/edition-college.webp';
 
-const CARD_HEIGHT = 340;
+// Slot height for each card. Raised from 340: the brand typeface (Poppins) wraps wider than the old serif, so cards grow taller.
+const CARD_HEIGHT = 420;
 const BRANCH_HEIGHT = 52;
 const NODE_SIZE = 12;
 const CARD_WIDTH = 320;
@@ -44,8 +45,8 @@ const phases: Phase[] = [
     excerpt:
       'This Is Bizness launched as a weekly breakdown of five small businesses.',
     position: 'top',
-    accent: '#c9a84c',
-    surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: editionZeroCover,
     link: '/stories/edition-zero',
   },
@@ -57,8 +58,8 @@ const phases: Phase[] = [
     excerpt:
       'Dev and his partner Elman acquired Sourcely, an AI-powered source-finding tool for students, at an 8x MRR multiple — and grew it to $4.5K MRR in five months.',
     position: 'bottom',
-    accent: '#9ec5ff',
-    surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: '/images/stories/sourcely/logo_sourcely.webp',
     link: '/stories/sourcely',
   },
@@ -70,8 +71,8 @@ const phases: Phase[] = [
     excerpt:
       'Pocket Fund launched as a student initiative focused on acquisition entrepreneurship: buying, operating, and selling small online businesses.',
     position: 'top',
-    accent: '#d2b574',
-    surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80&auto=format',
     link: '/stories/pocket-fund',
   },
@@ -84,8 +85,8 @@ const phases: Phase[] = [
     excerpt:
       'Sourcely grew to a $150K+ valuation in 5 months. A VC internship in SF. And a decision to go all in on building — even if it meant leaving college.',
     position: 'bottom',
-    accent: '#c9a84c',
-    surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=700&q=80&auto=format',
     link: '/stories/review',
   },
@@ -97,8 +98,8 @@ const phases: Phase[] = [
     excerpt:
       'Reduced startup costs, AI tools, and a generation-wide shift toward entrepreneurship make college the best time to build.',
     position: 'top',
-    accent: '#d2b574',
-    surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: editionCollege,
     link: '/stories/college-startups',
   },
@@ -110,8 +111,8 @@ const phases: Phase[] = [
     excerpt:
       'A micro-SaaS offering visual schedules and step-by-step guidance for children with autism, at a $15K asking price.',
     position: 'bottom',
-    accent: '#c9a84c',
-    surface: 'linear-gradient(172deg, #0C1829 0%, #050D1B 52%, #091727 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format',
     link: '/stories/pocket-deals',
   },
@@ -123,8 +124,8 @@ const phases: Phase[] = [
     excerpt:
       'After acquiring six micro-startups, five practical strategies emerged for filtering quality deals from marketplace noise.',
     position: 'top',
-    accent: '#9ec5ff',
-    surface: 'linear-gradient(172deg, #070B1A 0%, #030611 52%, #060A1B 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: editionAcquire,
     link: '/stories/deal-sourcing',
   },
@@ -137,8 +138,8 @@ const phases: Phase[] = [
     excerpt:
       'An under-monetized newsletter becomes a case study in how strategic improvements can dramatically increase business value.',
     position: 'bottom',
-    accent: '#d2b574',
-    surface: 'linear-gradient(172deg, #0F1118 0%, #070910 52%, #0C1020 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?w=700&q=80&auto=format',
     link: '/stories/diamonds',
   },
@@ -150,8 +151,8 @@ const phases: Phase[] = [
     excerpt:
       'From Stanford MBA experiment to distinct asset class: the search fund model and its evolution across institutional and self-funded approaches.',
     position: 'top',
-    accent: '#c9a84c',
-    surface: 'linear-gradient(172deg, #0C1018 0%, #060A10 52%, #0A0E18 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: editionThisIsBIz,
     link: '/stories/search-funds',
   },
@@ -164,8 +165,8 @@ const phases: Phase[] = [
     excerpt:
       'The team shifted from buying businesses to advising entrepreneurs on acquisitions, closing five deals totaling $200K.',
     position: 'bottom',
-    accent: '#9ec5ff',
-    surface: 'linear-gradient(172deg, #08101E 0%, #040810 52%, #08101C 100%)',
+    accent: '#c6e8f2',
+    surface: 'linear-gradient(172deg, #0b485d 0%, #0b485d 52%, #0b485d 100%)',
     imgUrl: edition200k,
     link: '/stories/200k-deals',
   },
@@ -260,8 +261,8 @@ function TimelinePhase({ post }: { post: Phase }) {
           height: BRANCH_HEIGHT,
           transformOrigin: 'top center',
           background: isTop
-            ? 'linear-gradient(180deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.4) 40%, rgba(201,168,76,0.7) 100%)'
-            : 'linear-gradient(180deg, rgba(201,168,76,0.7) 0%, rgba(201,168,76,0.4) 60%, rgba(201,168,76,0.18) 100%)',
+            ? 'linear-gradient(180deg, rgba(198,232,242,0.18) 0%, rgba(198,232,242,0.4) 40%, rgba(198,232,242,0.7) 100%)'
+            : 'linear-gradient(180deg, rgba(198,232,242,0.7) 0%, rgba(198,232,242,0.4) 60%, rgba(198,232,242,0.18) 100%)',
         }}
       />
 
@@ -373,7 +374,7 @@ export default function StoriesTimeline() {
               >
                 <path
                   d="M31.354 4.354a.5.5 0 000-.708L28.172.464a.5.5 0 10-.707.708L30.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h31v-1H0v1z"
-                  fill="rgba(201,168,76,0.45)"
+                  fill="rgba(198,232,242,0.45)"
                 />
               </motion.svg>
             </div>
@@ -446,7 +447,7 @@ export default function StoriesTimeline() {
                   height: 1,
                   pointerEvents: 'none',
                   zIndex: 0,
-                  background: 'linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.2) 8%, rgba(201,168,76,0.42) 50%, rgba(201,168,76,0.2) 92%, transparent 100%)',
+                  background: 'linear-gradient(90deg, transparent 0%, rgba(198,232,242,0.2) 8%, rgba(198,232,242,0.42) 50%, rgba(198,232,242,0.2) 92%, transparent 100%)',
                 }}
               />
               <div
@@ -459,7 +460,7 @@ export default function StoriesTimeline() {
                   height: 84,
                   pointerEvents: 'none',
                   zIndex: 0,
-                  background: 'linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.04) 15%, rgba(201,168,76,0.08) 50%, rgba(201,168,76,0.04) 85%, transparent 100%)',
+                  background: 'linear-gradient(90deg, transparent 0%, rgba(198,232,242,0.04) 15%, rgba(198,232,242,0.08) 50%, rgba(198,232,242,0.04) 85%, transparent 100%)',
                   filter: 'blur(14px)',
                 }}
               />
@@ -480,7 +481,7 @@ export default function StoriesTimeline() {
               >
                 <LaserFlow
                   style={{ width: '100%', height: '100%', background: 'transparent' }}
-                  color="#c9a84c"
+                  color="#c6e8f2"
                   verticalBeamOffset={0}
                   horizontalBeamOffset={0}
                   verticalSizing={0.12}

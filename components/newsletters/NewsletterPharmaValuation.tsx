@@ -71,13 +71,13 @@ export default function NewsletterPharmaValuation() {
           background: var(--canvas);
           text-align: center;
         }
-        .vg-cell.highlight { background: rgba(201,185,154,0.04); }
+        .vg-cell.highlight { background: color-mix(in srgb, var(--canvas) 94%, var(--brand-pastel)); }
         .vg-multiple {
           font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 42px;
           font-weight: 500;
           line-height: 1;
-          color: rgba(201,185,154,0.3);
+          color: rgba(198,232,242,0.62);   /* de-emphasised figure, still >3:1 on teal */
           margin-bottom: 10px;
         }
         .vg-cell.highlight .vg-multiple { color: var(--gold); }

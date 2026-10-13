@@ -173,7 +173,7 @@ export default function StoriesContent() {
 
         .video-card-sub {
           font-size: 13px;
-          color: rgba(255,255,255,0.65);
+          color: rgba(255,255,255,0.82);
           margin-top: 6px;
           font-style: italic;
         }
@@ -187,7 +187,7 @@ export default function StoriesContent() {
           height: 56px;
           border-radius: 50%;
           background: rgba(0,0,0,0.5);
-          border: 1px solid rgba(201,185,154,0.4);
+          border: 1px solid rgba(198,232,242,0.4);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -204,7 +204,7 @@ export default function StoriesContent() {
         .video-play-icon svg {
           width: 18px;
           height: 18px;
-          fill: rgba(201,185,154,0.9);
+          fill: rgba(198,232,242,0.9);
           margin-left: 3px;
         }
 
@@ -270,7 +270,7 @@ export default function StoriesContent() {
 
         .yt-cta-arrow {
           font-size: 20px;
-          color: var(--gold-dim);
+          color: var(--text-muted);
           transition: transform 0.3s ease, color 0.3s ease;
         }
 
@@ -315,7 +315,7 @@ export default function StoriesContent() {
         }
 
         .video-player-close:hover {
-          border-color: rgba(201,185,154,0.6);
+          border-color: rgba(198,232,242,0.6);
           background: rgba(0,0,0,0.7);
         }
 

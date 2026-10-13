@@ -240,7 +240,7 @@ export default function PortfolioContent() {
       {/* Service Cards */}
       <div className="portfolio-services">
         <div className="engage-service-card">
-          <BorderBeam duration={10} colorFrom="rgba(201,185,154,0.7)" colorTo="rgba(201,185,154,0.05)" />
+          <BorderBeam duration={10} colorFrom="rgba(198,232,242,0.7)" colorTo="rgba(198,232,242,0.05)" />
           <div className="service-accent service-accent--advisory" />
           <div className="service-eyebrow">BUY-SIDE ADVISORY</div>
           <p className="service-desc">
@@ -249,7 +249,7 @@ export default function PortfolioContent() {
           <Link href="/engage" className="service-cta">Start a mandate →</Link>
         </div>
         <div className="engage-service-card">
-          <BorderBeam duration={10} delay={5} colorFrom="rgba(201,185,154,0.5)" colorTo="rgba(201,185,154,0.05)" />
+          <BorderBeam duration={10} delay={5} colorFrom="rgba(198,232,242,0.5)" colorTo="rgba(198,232,242,0.05)" />
           <div className="service-accent service-accent--intelligence" />
           <div className="service-eyebrow">MARKET INTELLIGENCE</div>
           <p className="service-desc">

@@ -6,10 +6,12 @@ import Link from 'next/link';
 const devImage = '/images/Dev.webp';
 const aumImage = '/images/aum.webp';
 const ganeshImage = '/images/ganesh.webp';
-const pushkarImage = '/images/pushkar.webp';
+const pushkarImage = '/images/pushkar-v2.webp';
 const aryanImage = '/images/aryan.webp';
 const kabirImage = '/images/kabir.webp';
 const adityaImage = '/images/aditya.webp';
+const deepImage = '/images/deep.webp';
+const adityaGadaImage = '/images/aditya-gada.webp';
 
 type TeamMember = {
   name: string;
@@ -54,6 +56,30 @@ const TEAM_MEMBERS: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/pushkarrathod12/',
   },
   {
+    name: 'Deep Keswani',
+    role: 'Junior Analyst',
+    desc: 'Supports the analyst team on market mapping, target research, and diligence workstreams, turning raw data into the numbers behind every mandate.',
+    initials: 'DK',
+    image: deepImage,
+    linkedin: 'https://www.linkedin.com/in/deep-keswani-314990225',
+  },
+  {
+    name: 'Aditya Gada',
+    role: 'Junior Analyst',
+    desc: 'Supports the analyst team on market research, deal sourcing, outreach tracking, and target screening, helping keep every search structured and moving.',
+    initials: 'AG',
+    image: adityaGadaImage,
+    linkedin: 'https://www.linkedin.com/in/aditya-gada-b1b155261',
+  },
+  {
+    name: 'Aditya Negi',
+    role: 'Full Stack Developer',
+    desc: 'Provides timely technical assistance, resolves issues, and ensures smooth day-to-day use of our systems for clients and internal teams.',
+    initials: 'AN',
+    image: adityaImage,
+    linkedin: 'https://www.linkedin.com/in/aditya-negi-9a12a2223/',
+  },
+  {
     name: 'Aryan Solanki',
     role: 'Marketing Head',
     desc: 'Drives brand, content, and growth strategy for Kautilya across social, newsletter, and outbound channels.',
@@ -68,14 +94,6 @@ const TEAM_MEMBERS: TeamMember[] = [
     initials: 'KD',
     image: kabirImage,
     linkedin: 'https://www.linkedin.com/in/kabir-dhumale/',
-  },
-  {
-    name: 'Aditya Negi',
-    role: 'Full Stack Developer',
-    desc: 'Provides timely technical assistance, resolves issues, and ensures smooth day-to-day use of our systems for clients and internal teams.',
-    initials: 'AN',
-    image: adityaImage,
-    linkedin: 'https://www.linkedin.com/in/aditya-negi-9a12a2223/',
   },
 ];
 
@@ -298,7 +316,7 @@ export default function TeamContent() {
         .glare-card-desc {
           position: absolute;
           inset: 0;
-          background: rgba(59, 54, 64, 0.92); /* Matches canvas */
+          background: rgba(11,72,93, 0.92); /* Matches canvas */
           padding: 32px;
           display: flex;
           align-items: center;

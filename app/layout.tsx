@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { Fraunces, Lora } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from '@/components/Header';
@@ -9,22 +9,19 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SplashCursorWrapper from '@/components/SplashCursorWrapper';
 import NewsletterPopup from '@/components/NewsletterPopup';
 import SmoothScroll from '@/components/SmoothScroll';
+import { LogoDefs } from '@/components/KautilyaLogo';
 import './globals.css';
+import './brand-theme.css';
 
-const fraunces = Fraunces({
-  subsets: ['latin'],
+// Brand typography (guidelines 2.1–2.5): Gotham (display) and Arboria (secondary) are licensed Adobe fonts and are not bundled;
+// Poppins is the guideline-approved fallback. --font-fraunces / --font-lora are kept as the display / body font variables so
+// the existing styles pick up the new stacks (see :root in globals.css, where Gotham / Arboria are tried first).
+const poppins = Poppins({
+  subsets: ['latin', 'devanagari'],
   weight: ['300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-fraunces',
-});
-
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-  variable: '--font-lora',
+  variable: '--font-poppins',
 });
 
 export const viewport: Viewport = {
@@ -181,7 +178,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${lora.variable}`}>
+    <html lang="en" className={poppins.variable}>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -192,7 +189,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/manifest.json" />
         <link rel="search" type="application/opensearchdescription+xml" title="Kautilya" href="/opensearch.xml" />
         <link rel="alternate" type="application/rss+xml" title="Kautilya Stories" href="/rss.xml" />
-        <meta name="theme-color" content="#c9a84c" />
+        <meta name="theme-color" content="#ffffff" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-KGENMTGL7K" strategy="afterInteractive" />
         <Script id="ga-init" strategy="afterInteractive">
           {`
@@ -204,6 +201,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
       </head>
       <body>
+        <LogoDefs />
         <SmoothScroll />
         <SplashCursorWrapper />
         <Header />

@@ -11,8 +11,8 @@ interface BorderBeamProps {
 export function BorderBeam({
   duration = 8,
   delay = 0,
-  colorFrom = "rgba(201,185,154,0.7)",
-  colorTo = "rgba(201,185,154,0.15)",
+  colorFrom = "rgba(198,232,242,0.7)",
+  colorTo = "rgba(198,232,242,0.15)",
   borderWidth = 1,
 }: BorderBeamProps) {
   return (

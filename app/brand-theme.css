@@ -1,0 +1,295 @@
+/* ================================================================
+   KAUTILYA BRAND THEME — header, footer, buttons, cursor-trail layer
+   Source of truth: brand guidelines PDF. Palette tokens live in :root in globals.css
+   (--brand-teal / --brand-white / --brand-pastel / --brand-brown).
+
+   Layout of the page:   white header · teal page · white footer
+   Colour pairs used:    white/pastel on teal · teal & brown on white/pastel · white on brown (hover)
+                         never brown or black on teal.
+   Logo:                 official artwork only — teal on white (header, footer). Over the home-page sky the bar turns
+                         translucent teal and the logo/nav go white (reversed white-on-blue, guidelines 1.9).
+   ================================================================ */
+
+:root {
+  --header-h: 81px;          /* matches the previous live header height */
+  --logo-w: 177px;           /* whole lockup fills the bar; art ≈166px wide, above the 151px (40mm) minimum */
+  --fs-nav: 0.9375rem;       /* 15px — body range in guidelines 2.5 */
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+/* ---------------- Cursor-trail canvas (components/SplashCursor.tsx) ----------------
+   Sits above the page background but below all content, so it shows through transparent sections.
+   Light sections paint their colour on a ::before at z-index -2 so the trail also shows over them. */
+.fluid-fx { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
+.fluid-fx canvas { display: block; width: 100vw; height: 100vh; }
+
+/* ---------------- Header ---------------- */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 10040;
+  background: var(--brand-white);
+  color: var(--brand-teal);
+  transition: background 0.4s ease;
+}
+.site-header__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  min-height: var(--header-h);
+  padding-inline: clamp(20px, 3vw, 48px);
+}
+.site-header .brand { justify-self: start; display: block; line-height: 0; color: var(--brand-teal); transition: color 0.4s ease; }
+.site-header .brand svg { width: var(--logo-w); height: auto; }
+
+.site-header .nav-list { display: flex; gap: clamp(20px, 3vw, 44px); list-style: none; }
+.site-header .nav-list a {
+  position: relative;
+  display: inline-block;
+  padding: 12px 2px;
+  font: 500 var(--fs-nav)/1 var(--font-poppins), 'Poppins', system-ui, sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--brand-brown);
+  transition: color 0.4s ease;
+}
+.site-header .nav-list a::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 4px; height: 2px;
+  background: var(--brand-brown);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.28s ease;
+}
+.site-header .nav-list a:hover::after,
+.site-header .nav-list a:focus-visible::after,
+.site-header .nav-list a.active::after { transform: scaleX(1); }
+
+.site-header .header-actions { justify-self: end; display: flex; align-items: center; gap: 12px; }
+
+/* buttons */
+.site-header .btn,
+.btn-brand {
+  display: inline-block;
+  font: 600 var(--fs-nav)/1 var(--font-poppins), 'Poppins', system-ui, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 15px 30px;
+  transition: background 0.25s, color 0.25s, transform 0.25s, border-color 0.25s;
+}
+.site-header .btn-outline { border: 1.5px solid var(--brand-brown); color: var(--brand-brown); }
+.site-header .btn-outline:hover { background: var(--brand-brown); color: var(--brand-white); }
+
+.site-header .burger {
+  display: none; width: 44px; height: 44px; border: 0; background: none;
+  color: var(--brand-brown); cursor: pointer; border-radius: 50%;
+}
+.site-header .burger span { display: block; width: 22px; height: 2px; background: currentColor; margin: 5px auto; transition: transform 0.25s, opacity 0.2s; }
+.site-header .burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.site-header .burger.active span:nth-child(2) { opacity: 0; }
+.site-header .burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Over the constellation sky (HomeContent toggles .header--sky): translucent teal glass, white logo + type */
+.site-header.header--sky { background: rgba(var(--brand-teal-rgb), 0.55); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.site-header.header--sky .brand { color: var(--brand-white); }
+.site-header.header--sky .nav-list a { color: var(--brand-white); }
+.site-header.header--sky .nav-list a::after { background: var(--brand-white); }
+.site-header.header--sky .btn-outline { border-color: var(--brand-white); color: var(--brand-white); }
+.site-header.header--sky .btn-outline:hover { background: var(--brand-white); color: var(--brand-teal); }
+.site-header.header--sky .burger { color: var(--brand-white); }
+
+/* keyboard focus */
+.site-header :focus-visible { outline: 3px solid var(--brand-teal); outline-offset: 3px; border-radius: 4px; }
+.site-header.header--sky :focus-visible { outline-color: var(--brand-white); }
+
+@media (max-width: 1100px) {
+  :root { --fs-nav: 0.875rem; }
+  .site-header .nav-list { gap: 22px; }
+}
+
+@media (max-width: 980px) {
+  :root { --logo-w: 168px; --fs-nav: 1rem; }
+  .site-header__inner { grid-template-columns: 1fr auto; }
+  .site-header .burger { display: block; }
+  .site-header .btn-outline { padding: 11px 18px; font-size: 0.75rem; }
+
+  .site-nav {
+    position: absolute; left: 0; right: 0; top: 100%;
+    background: var(--brand-white);
+    border-top: 1px solid rgba(56, 41, 33, 0.16);
+    box-shadow: 0 18px 30px -18px rgba(56, 41, 33, 0.35);
+    padding: 12px var(--gutter) 24px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.22s ease, visibility 0.22s ease;
+  }
+  .site-nav.open { opacity: 1; visibility: visible; pointer-events: auto; }
+  .site-header .nav-list { flex-direction: column; gap: 0; }
+  .site-header .nav-list a { width: 100%; padding: 16px 2px; border-bottom: 1px solid rgba(56, 41, 33, 0.14); }
+  .site-header .nav-list a::after { display: none; }
+
+  .site-header.header--sky .site-nav { background: rgba(var(--brand-teal-rgb), 0.96); border-top-color: rgba(255, 255, 255, 0.22); }
+  .site-header.header--sky .nav-list a { border-bottom-color: rgba(255, 255, 255, 0.2); }
+}
+
+/* ---------------- Footer ---------------- */
+.site-footer {
+  position: relative;
+  background: transparent;            /* white is painted by ::before (below the cursor-trail canvas) */
+  color: var(--brand-brown);
+  padding: clamp(56px, 7vw, 88px) 0 40px;
+  font-family: var(--font-lora), 'Poppins', system-ui, sans-serif;
+}
+.site-footer::before { content: ""; position: absolute; inset: 0; background: var(--brand-white); z-index: -2; }
+.site-footer .wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: var(--gutter); }
+.site-footer .footer-top { display: grid; grid-template-columns: minmax(260px, 1.1fr) 2fr; gap: clamp(40px, 7vw, 96px); }
+
+.site-footer .brand-lock { display: block; color: var(--brand-teal); margin: -6px 0 18px -5px; line-height: 0; }
+.site-footer .brand-lock svg { width: 168px; height: auto; }
+.site-footer .tagline { font: 500 clamp(1.125rem, 1rem + 0.45vw, 1.5rem)/1.35 var(--font-poppins), 'Poppins', sans-serif; color: var(--brand-brown); }
+.site-footer .deva { display: block; margin-top: 6px; color: var(--brand-brown); font-weight: 300; }
+.site-footer .contact { margin-top: 26px; display: grid; gap: 4px; color: var(--brand-brown); font-size: 0.9375rem; }
+.site-footer .contact a { text-decoration: none; color: inherit; }
+.site-footer .contact a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.site-footer .social { display: flex; gap: 22px; margin-top: 22px; font: 400 0.75rem/1 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.2em; text-transform: uppercase; }
+.site-footer .social a { color: var(--brand-brown); text-decoration: none; }
+.site-footer .social a:hover { color: var(--brand-teal); text-decoration: underline; text-underline-offset: 4px; }
+
+.site-footer .footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.site-footer .footer-cols h3 { font: 500 0.75rem/1 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.26em; text-transform: uppercase; color: var(--brand-brown); margin-bottom: 22px; }
+.site-footer .footer-cols ul { list-style: none; display: grid; gap: 12px; }
+.site-footer .footer-cols a { color: var(--brand-brown); text-decoration: none; font-size: 0.9375rem; }
+.site-footer .footer-cols a:hover { color: var(--brand-teal); text-decoration: underline; text-underline-offset: 4px; }
+.site-footer .copyright { margin-top: 24px; color: var(--brand-brown); font-size: 0.875rem; line-height: 1.6; }
+
+.site-footer .disclaimer {
+  margin-top: clamp(40px, 5vw, 64px); padding-top: 28px;
+  border-top: 1px solid rgba(56, 41, 33, 0.18);
+  color: var(--brand-brown); opacity: 0.88;
+  font: 400 0.75rem/1.9 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.01em;
+}
+/* partner badges: reduced to 20px (Verified-DR badge 34px) */
+.site-footer .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 24px; opacity: 0.9; }
+.site-footer .badges a { display: block; line-height: 0; }
+.site-footer .badges img { height: 20px; width: auto; }
+.site-footer .badges .dr img { height: 34px; }
+.site-footer :focus-visible { outline: 3px solid var(--brand-teal); outline-offset: 3px; border-radius: 4px; }
+
+@media (max-width: 1023px) {
+  .site-footer .footer-top { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .site-footer .footer-cols { grid-template-columns: 1fr 1fr; }
+  .site-footer .footer-cols > div:last-child { grid-column: 1 / -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header, .site-header * { transition: none !important; }
+}
+
+/* ================================================================
+   ACCENT SYSTEM — light blue (pastel) and brown as real accents
+   Rules (guidelines p.14): brown only as text/fills ON light blue or white; white/pastel on brown; never brown on teal as text.
+     · Title bands  — full-bleed light-blue band behind every page / article title, brown type, teal eyebrow, brown rule
+     · Tags / pills — filled light blue with brown text; flip to brown fill + light-blue text when their card is hovered
+     · Cards        — on hover the card lights up light blue with brown text (alternating brown/teal hover lives on the home cards)
+     · Buttons      — light-blue pill with brown text; hover = brown fill, white text
+     · Callouts     — pull quotes, short answers, proof blocks and table headers become light-blue panels with brown type
+   Selectors are prefixed with `body` so they win over the components' own inline <style> blocks.
+   Bands/panels paint on ::before at z-index -2 (below the cursor-trail canvas at -1) so the trail shows over them too;
+   SplashCursor treats .page-hero / .story-hero / [data-fluid-light] as light regions (teal ink).
+   ================================================================ */
+
+/* ---------- Title bands ---------- */
+body .page-hero,
+body .story-hero { position: relative; border-bottom: 0; }
+body .page-hero::before,
+body .story-hero::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%);
+  background: var(--brand-pastel); z-index: -2; pointer-events: none;
+}
+body .page-hero .section-eyebrow { color: var(--brand-teal); font-weight: 500; }
+body .page-hero .section-title,
+body .story-hero h1 { color: var(--brand-brown); }
+body .page-hero .section-body,
+body .story-hero .subtitle { color: var(--brand-brown); }
+body .page-hero .gold-line,
+body .story-hero .hero-line { background: var(--brand-brown); height: 2px; width: 56px; opacity: 1; }
+body .page-hero .dash-stats-bar { border-top-color: rgba(56, 41, 33, 0.28); }
+body .page-hero .dash-stat .ds-val { color: var(--brand-brown); }
+body .page-hero .dash-stat .ds-label { color: var(--brand-teal); }
+body :is(.page-hero, .story-hero) :is(h1, h2, h3, p, span, div, li, strong, em):not(.meta-tag):not(.section-eyebrow):not(.ds-label):not(.value-desc) { color: var(--brand-brown) !important; }
+body :is(.page-hero, .story-hero) :is(.section-eyebrow, .ds-label, .value-desc) { color: var(--brand-teal) !important; }
+body :is(.page-hero, .story-hero) a:not(.meta-tag) { color: var(--brand-teal) !important; text-decoration-color: currentColor; }
+
+/* story meta tags sit on the band: brown fill, light-blue text */
+body .story-hero .meta-tag,
+body .story-hero .meta-tag.sector,
+body .story-hero .meta-tag.geo,
+body .story-hero .meta-tag.stage {
+  background: var(--brand-brown); border-color: var(--brand-brown); color: var(--brand-pastel); font-weight: 500;
+}
+
+/* approach page: its own hero section gets the same band */
+body .approach-page-methodology .hero { position: relative; }
+body .approach-page-methodology .hero::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%);
+  background: var(--brand-pastel); z-index: -2; pointer-events: none;
+}
+body .approach-page-methodology .hero :is(h1, p, span, em, div) { color: var(--brand-brown) !important; }
+body .approach-page-methodology .hero .section-eyebrow { color: var(--brand-teal) !important; font-weight: 500; }
+body .approach-page-methodology .hero .hero-headline em { color: var(--brand-teal) !important; }
+
+/* ---------- Tags / pills: brown fill, light-blue text (pastel on brown ≈ 10.8:1) ---------- */
+body :is(.deal-tag, .blog-card-tag, .card-tag, .stories-timeline-pill):not(#_) {
+  background: var(--brand-brown); border-color: var(--brand-brown); color: var(--brand-pastel); font-weight: 500;
+}
+/* timeline year marker: the WRAPPER stays transparent; the rounded inner pill carries the fill */
+body .stories-timeline-year-pill:not(#_) { background: transparent; border: 0; }
+body .stories-timeline-year-pill span:not(#_) {
+  background: var(--brand-brown); border: 1px solid rgba(198, 232, 242, 0.45); color: var(--brand-pastel); box-shadow: none;
+}
+
+/* ---------- Cards: light up on hover ---------- */
+body :is(.deal-card, .blog-post-card, .side-post-card, .case-study-card, .more-stories-card, .media-card, .social-card):hover {
+  background: var(--brand-pastel); border-color: var(--brand-pastel); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+body :is(.deal-card, .blog-post-card, .side-post-card, .case-study-card, .more-stories-card, .media-card, .social-card):hover * {
+  color: var(--brand-brown) !important;
+}
+body :is(.deal-card, .blog-post-card, .side-post-card, .case-study-card, .more-stories-card, .media-card, .social-card):hover svg { fill: var(--brand-brown) !important; }
+body :is(.deal-card, .blog-post-card, .side-post-card, .case-study-card, .more-stories-card):hover :is(.deal-tag, .blog-card-tag, .card-tag):not(#_) {
+  background: var(--brand-brown); border-color: var(--brand-brown); color: var(--brand-pastel) !important;
+}
+
+/* ---------- Buttons ---------- */
+body :is(.engage-submit, .coda-link, .team-view-all-btn, .service-cta):not(#_) {
+  background: var(--brand-pastel); color: var(--brand-brown); border: 1px solid var(--brand-pastel);
+  border-radius: 999px; font-weight: 600; text-decoration: none;
+}
+body :is(.engage-submit, .coda-link, .team-view-all-btn, .service-cta):not(#_):hover:not(:disabled) {
+  background: var(--brand-brown); border-color: var(--brand-brown); color: var(--brand-white);
+}
+
+/* ---------- Callouts → light-blue panels ---------- */
+body :is(.pull-quote, .short-answer, .proof-block) { position: relative; background: transparent; border: 0; border-radius: 4px; }
+body :is(.pull-quote, .short-answer, .proof-block)::before {
+  content: ""; position: absolute; inset: 0; background: var(--brand-pastel); border-left: 4px solid var(--brand-brown); border-radius: 4px; z-index: -2;
+}
+body :is(.pull-quote, .short-answer, .proof-block) { padding-left: 32px; padding-right: 28px; }
+body :is(.pull-quote, .short-answer, .proof-block),
+/* !important: story copy carries inline colours (e.g. style="color:var(--gold)" on figures) that were written for a dark page */
+body :is(.pull-quote, .short-answer, .proof-block):not(#_) :is(p, span, strong, em, a, cite, li, b, i, div, blockquote) { color: var(--brand-brown) !important; }
+body :is(.short-answer-label, .proof-label) { color: var(--brand-teal) !important; font-weight: 600; }
+
+/* data-table header rows */
+body :is(.data-table, .deal-table) th, body :is(.data-table, .deal-table) th * { background: var(--brand-pastel); color: var(--brand-brown) !important; font-weight: 600; }
+
+/* ---------- Text-link CTAs that became pill buttons need real button metrics ---------- */
+body .service-cta:not(#_) {
+  display: inline-block; padding: 14px 30px; border-bottom: 1px solid var(--brand-pastel);
+  font: 600 0.8125rem/1.2 var(--font-poppins), 'Poppins', system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase;
+}
+body .service-cta:not(#_):hover { border-bottom-color: var(--brand-brown); }

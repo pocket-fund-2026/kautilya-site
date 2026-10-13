@@ -39,7 +39,7 @@ export default function NewsletterContent() {
         }
         .blog-post-card:hover {
           background: rgba(255,255,255,0.03);
-          border-color: rgba(201,185,154,0.28);
+          border-color: rgba(198,232,242,0.28);
           transform: translateY(-3px);
         }
         .blog-post-card:hover::before { transform: scaleX(1); }
@@ -56,7 +56,7 @@ export default function NewsletterContent() {
           letter-spacing: 3px;
           text-transform: uppercase;
           color: var(--gold);
-          border: 1px solid rgba(201,185,154,0.28);
+          border: 1px solid rgba(198,232,242,0.28);
           padding: 4px 11px;
           border-radius: 999px;
         }

@@ -16,6 +16,26 @@ const nextConfig: NextConfig = {
   },
   transpilePackages: ['three'],
   async headers() {
+    // Year-long `immutable` caching is only safe for production builds, where script/style file names are fingerprinted.
+    // In `next dev` the chunk names stay the same when you edit code, so the browser would keep serving stale JS
+    // (hydration errors, old UI). Cache rules therefore apply only in production.
+    const isProd = process.env.NODE_ENV === 'production';
+    const immutableCacheRules = isProd
+      ? [
+          {
+            source: '/images/(.*)',
+            headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+          },
+          {
+            source: '/(.*)\\.(ico|svg|png|jpg|jpeg|gif|webp|avif|woff|woff2|ttf|eot|otf)',
+            headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+          },
+          {
+            source: '/(.*)\\.(js|css)',
+            headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+          },
+        ]
+      : [];
     return [
       {
         source: '/(.*)',
@@ -30,24 +50,7 @@ const nextConfig: NextConfig = {
           { key: 'X-Permitted-Cross-Domain-Policies', value: 'none' },
         ],
       },
-      {
-        source: '/images/(.*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
-      {
-        source: '/(.*)\\.(ico|svg|png|jpg|jpeg|gif|webp|avif|woff|woff2|ttf|eot|otf)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
-      {
-        source: '/(.*)\\.(js|css)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
+      ...immutableCacheRules,
       {
         source: '/sitemap.xml',
         headers: [

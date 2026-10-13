@@ -34,16 +34,16 @@ export default function ApproachContent() {
               --bg: var(--canvas);
               --bg2: rgba(255,255,255,0.012);
               --bg3: rgba(255,255,255,0.02);
-              --gold: #c9a84c;
-              --gold-dim: rgba(201,168,76,0.82);
-              --gold-faint: rgba(201,162,39,0.08);
+              --gold: #c6e8f2;
+              --gold-dim: rgba(198,232,242,0.82);
+              --gold-faint: rgba(198,232,242,0.08);
               --text: var(--text-primary);
               --text-dim: color-mix(in srgb, var(--text-primary) 82%, #ffffff 18%);
               --text-faint: color-mix(in srgb, var(--text-primary) 64%, #ffffff 36%);
-              --border: rgba(201,162,39,0.2);
+              --border: rgba(198,232,242,0.2);
               --border-dim: var(--border);
               --card-bg: rgba(255,255,255,0.02);
-              --card-hover: rgba(201,162,39,0.06);
+              --card-hover: rgba(198,232,242,0.06);
               --red: #c4614a;
               --green: #6a9e72;
             }
@@ -70,7 +70,7 @@ export default function ApproachContent() {
             }
 
             .approach-page-methodology .section-eyebrow {
-              color: #c9b99a;
+              color: #c6e8f2;
             }
 
             .approach-page-methodology .hero-headline {
@@ -714,7 +714,7 @@ export default function ApproachContent() {
               font-size: 18px;
             }
 
-            .approach-page-methodology .channel-table tr.top-row td { background: rgba(201,162,39,0.04); }
+            .approach-page-methodology .channel-table tr.top-row td { background: rgba(198,232,242,0.04); }
 
             .approach-page-methodology .scorecard {
               margin-top: 48px;
@@ -851,7 +851,7 @@ export default function ApproachContent() {
             .approach-page-methodology .story-link {
               color: var(--gold);
               text-decoration: none;
-              border-bottom: 1px solid rgba(201,168,76,0.3);
+              border-bottom: 1px solid rgba(198,232,242,0.3);
               transition: border-color 0.2s;
             }
 
@@ -898,7 +898,7 @@ export default function ApproachContent() {
         }}
       />
 
-      <section className="hero">
+      <section className="hero" data-fluid-light>
         <div className="section-eyebrow">The Methodology</div>
         <h1 className="hero-headline">
           The right acquisition does not find you.<br />
@@ -911,13 +911,13 @@ export default function ApproachContent() {
         </p>
         <p className="hero-sub hero-sub--accent">
           <em>The problem was never the{' '}
-          <Highlighter action="strike-through" color="#c9b99a" strokeWidth={3} animationDuration={2000} isView>
+          <Highlighter action="strike-through" color="#382921" strokeWidth={3} animationDuration={2000} isView>
             market
           </Highlighter>.</em>
         </p>
         <p className="hero-sub hero-sub--accent">
           <em>The problem was the{' '}
-          <Highlighter action="circle" color="#c9b99a" strokeWidth={2} animationDuration={2000} padding={6} isView>
+          <Highlighter action="circle" color="#382921" strokeWidth={2} animationDuration={2000} padding={6} isView>
             process
           </Highlighter>.</em>
         </p>

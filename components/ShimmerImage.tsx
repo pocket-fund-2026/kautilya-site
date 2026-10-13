@@ -12,12 +12,12 @@ const shimmer = (w: number, h: number): string => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="g">
-      <stop stop-color="#1a1a1a" offset="20%" />
-      <stop stop-color="#2a2a2a" offset="50%" />
-      <stop stop-color="#1a1a1a" offset="70%" />
+      <stop stop-color="#0b485d" offset="20%" />
+      <stop stop-color="color-mix(in srgb, #0b485d 85%, #c6e8f2)" offset="50%" />
+      <stop stop-color="#0b485d" offset="70%" />
     </linearGradient>
   </defs>
-  <rect width="${w}" height="${h}" fill="#1a1a1a" />
+  <rect width="${w}" height="${h}" fill="#0b485d" />
   <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
   <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1.2s" repeatCount="indefinite" />
 </svg>`;
@@ -47,7 +47,7 @@ const toBase64 = (str: string): string =>
 type ShimmerImageProps = Omit<ImageProps, "placeholder" | "blurDataURL"> & {
   /** Duration of the blur-to-sharp transition in ms (default: 500) */
   transitionDuration?: number;
-  /** Shimmer base colour – a dark neutral works best (default: "#1a1a1a") */
+  /** Shimmer base colour – a dark neutral works best (default: "#0b485d") */
   shimmerColor?: string;
 };
 

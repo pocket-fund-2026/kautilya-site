@@ -151,7 +151,7 @@ export default function NewsletterAurumHousing() {
         .deal-score-table tr.overall-row td {
           color: var(--text-primary);
           font-weight: 500;
-          background: rgba(201,185,154,0.04);
+          background: rgba(198,232,242,0.04);
         }
         .deal-stars { color: var(--gold); letter-spacing: 1px; font-size: 15px; white-space: nowrap; }
         .deal-stars-value { color: var(--text-muted); font-size: 12px; margin-left: 8px; letter-spacing: 0; }

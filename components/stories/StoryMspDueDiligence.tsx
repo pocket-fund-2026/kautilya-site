@@ -141,7 +141,7 @@ export default function StoryMspDueDiligence() {
           </div>
           <div style={{ textAlign: 'center' }}>
             <Image
-              src="/images/pushkar.webp"
+              src="/images/pushkar-v2.webp"
               alt="Pushkar Rathod, Analyst at Kautilya — buy-side due diligence"
               title="Pushkar Rathod — Analyst, Kautilya"
               width={88}

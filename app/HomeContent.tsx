@@ -142,196 +142,224 @@ export default function HomeContent() {
 return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
-  /* Homepage-specific styles */
+  /* Homepage — Kautilya brand theme: hero · constellation sky · approach · explore cards.
+     Colour pairs follow the guidelines (white/pastel on teal; teal/brown on white/pastel). */
+
+  /* ---------- Hero ---------- */
   .intro {
+    position: relative; overflow: hidden;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 40px 80px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: clamp(120px, 16vh, 160px) 40px clamp(110px, 14vh, 150px);
     text-align: center;
   }
+  /* graphic anchor: pale star silhouette bleeding off the bottom-right edge (guidelines 2.7) */
+  .intro .anchor { position: absolute; right: calc(-1 * min(18vw, 230px)); bottom: calc(-1 * min(18vw, 230px)); width: min(62vw, 720px); aspect-ratio: 1; color: var(--brand-pastel); opacity: 0.13; pointer-events: none; }
+  .intro > *:not(.anchor) { position: relative; z-index: 1; }
 
   .intro .section-eyebrow {
-    font-size: 12px; letter-spacing: 7px;
-    font-weight: 400;
+    font: 400 0.75rem/1.5 var(--font-poppins), 'Poppins', sans-serif;
+    letter-spacing: 0.26em; text-transform: uppercase; color: var(--brand-pastel);
+    margin-bottom: clamp(20px, 3vw, 32px);
     opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
   }
 
-  .intro h1 {
-    font-family: var(--font-fraunces), 'Fraunces', serif;
-    font-size: 64px; font-weight: 600; color: var(--text-primary);
-    max-width: 800px; margin: 24px auto 24px; letter-spacing: 2px; line-height: 1.2;
-    opacity: 1;
+  /* display heading: Gotham Bold line, then a light second line with an italic emphasis (guidelines 2.4 / 2.5) */
+  .intro h1.display {
+    font-family: var(--font-fraunces);
+    font-size: clamp(2rem, 1.35rem + 3.3vw, 4.5rem);
+    font-weight: 400; line-height: 1.1; letter-spacing: 0;
+    text-transform: uppercase; text-wrap: balance;
+    color: var(--brand-pastel);
+    max-width: none; margin: 0; opacity: 1;
   }
+  .display .l1 { display: block; font-weight: 700; }
+  .display .l2 { display: block; font-weight: 300; }
+  .display em { font-style: italic; font-weight: 300; color: var(--brand-white); }
 
-  .intro .tagline {
-    font-size: 15px; font-style: italic; color: var(--text-secondary);
-    margin-top: 20px;
-    opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
-  }
+  .intro .rule { width: 56px; height: 2px; background: var(--brand-pastel); opacity: 0.55; margin: clamp(28px, 4vw, 44px) auto; }
+  .intro .lede { max-width: 62ch; margin: 0 auto; font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); line-height: 1.7; color: var(--brand-pastel); }
+  .intro .strap { margin: 22px auto 0; color: var(--brand-white); font: 600 clamp(1rem, 0.95rem + 0.25vw, 1.125rem)/1.5 var(--font-poppins), 'Poppins', sans-serif; }
 
   .hero-cta {
     display: inline-block;
-    margin-top: 36px;
-    padding: 14px 36px;
-    border: 1px solid var(--gold);
+    margin-top: clamp(32px, 4vw, 48px);
+    padding: 17px 38px;
     border-radius: 999px;
-    color: var(--gold);
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.25s ease, color 0.25s ease;
+    background: var(--brand-pastel);
+    color: var(--brand-brown);              /* brown on pastel: permitted pair */
+    font: 600 0.8125rem/1 var(--font-poppins), 'Poppins', sans-serif;
+    letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
     opacity: 0; animation: fadeUp 0.8s ease 0.75s forwards;
   }
-  .hero-cta:hover { background: var(--gold); color: var(--canvas); }
+  .hero-cta:hover, .hero-cta:focus-visible { background: var(--brand-brown); color: var(--brand-white); transform: translateY(-2px); }
 
   .intro .scroll-cue {
     margin-top: 40px; display: flex; flex-direction: column;
     align-items: center; gap: 10px;
     opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards;
   }
+  .intro .scroll-cue span { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: rgba(198,232,242,0.8); }
+  .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(198,232,242,0.75), transparent); animation: scrollPulse 2s ease-in-out infinite; }
 
-  .intro .scroll-cue span { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: rgba(201,185,154,0.75); }
-  .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(201,185,154,0.75), transparent); animation: scrollPulse 2s ease-in-out infinite; }
-
-  /* --- NEW MASK STYLES --- */
+  /* ---------- Constellation sky ---------- */
   .sky-wrapper { position: relative; background: var(--sky); margin-top: 0; }
 
   .sky-mask-top {
     position: absolute; top: 0; left: 0; width: 100%; height: 35vh;
-    background: linear-gradient(to bottom, var(--canvas) 0%, rgba(59, 54, 64, 0) 100%);
+    background: linear-gradient(to bottom, var(--canvas) 0%, rgba(11,72,93, 0) 100%);
     z-index: 10; pointer-events: none;
   }
-
   .sky-mask-bottom {
     position: absolute; bottom: 0; left: 0; width: 100%; height: 35vh;
-    background: linear-gradient(to bottom, rgba(59, 54, 64, 0) 0%, var(--canvas) 100%);
+    background: linear-gradient(to bottom, rgba(11,72,93, 0) 0%, var(--canvas) 100%);
     z-index: 10; pointer-events: none;
   }
-  /* ----------------------- */
 
   .sky-scroll { position: relative; height: 600vh; overscroll-behavior: none; }
   .sky-sticky { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
-  .sky-sticky canvas {
-    display: block; width: 100%; height: 100%;
-    position: absolute; top: 0; left: 0;
-    z-index: 0;
-  }
+  .sky-sticky canvas { display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0; }
 
   .sky-text-overlay {
     position: absolute; inset: 0; display: flex; flex-direction: column;
-    align-items: center; justify-content: flex-end; padding-bottom: 120px; pointer-events: none;
+    align-items: center; justify-content: flex-end; padding: 0 24px 120px; text-align: center; pointer-events: none;
     z-index: 3;
     opacity: 0; transition: opacity 0.6s ease;
   }
   .sky-text-overlay.visible { opacity: 1; }
-  .sky-text-overlay .eyebrow { font-size: 12px; letter-spacing: 6px; text-transform: uppercase; color: rgba(236,221,191,0.95); margin-bottom: 18px; text-shadow: 0 2px 18px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px; border-radius: 999px; background: rgba(8,12,22,0.58); border: 1px solid rgba(201,185,154,0.28); backdrop-filter: blur(4px); }
-  .sky-text-overlay .main-text { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 48px; font-weight: 400; font-style: italic; color: rgba(249,248,246,0.98); text-align: center; line-height: 1.5; text-shadow: 0 1px 26px rgba(0,0,0,0.9), 0 0 90px rgba(0,0,0,0.75), 0 2px 8px rgba(0,0,0,0.95); max-width: 620px; }
-  .sky-text-overlay .hero-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 96px; font-weight: 500; letter-spacing: 24px; padding-left: 24px; color: #FFFBF5; margin-bottom: 8px; text-shadow: 0 5px 30px rgba(0,0,0,0.9), 0 0 110px rgba(125,110,131,0.7), 0 0 180px rgba(11,73,75,0.35), 0 3px 12px rgba(0,0,0,0.95); }
-  .sky-text-overlay .hero-sub { font-size: 14px; letter-spacing: 7px; text-transform: uppercase; color: rgba(201,185,154,0.88); margin-top: 6px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95); display: inline-block; padding: 7px 14px 7px 21px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); backdrop-filter: blur(4px); }
-  .sky-text-overlay .hero-tagline { font-size: 16px; font-style: italic; color: rgba(249,248,246,0.72); margin-top: 12px; max-width: 600px; white-space: nowrap; text-shadow: 0 2px 14px rgba(0,0,0,0.82), 0 1px 4px rgba(0,0,0,0.95); }
-  .sky-text-overlay .devanagari { font-size: 13px; color: rgba(225, 201, 154, 0.82); margin-top: 26px; letter-spacing: normal; word-spacing: 8px; white-space: nowrap; display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(8,12,22,0.5); border: 1px solid rgba(201,185,154,0.24); text-shadow: 0 1px 10px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.95); }
+  /* caption + devanagari pills: teal glass behind pastel text */
+  .sky-text-overlay .eyebrow, .sky-text-overlay .devanagari {
+    display: inline-block; border-radius: 999px;
+    background: rgba(11,72,93,0.62); border: 1px solid rgba(198,232,242,0.35);
+    -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+    color: var(--brand-pastel); text-shadow: 0 1px 10px rgba(0,0,0,0.6);
+  }
+  .sky-text-overlay .eyebrow { font: 400 0.75rem/1.5 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.26em; text-transform: uppercase; padding: 7px 18px; margin-bottom: 18px; }
+  .sky-text-overlay .devanagari { font-size: 13px; font-weight: 300; margin-top: 26px; letter-spacing: 0.06em; word-spacing: 8px; white-space: nowrap; padding: 6px 14px; }
+  .sky-text-overlay .main-text {
+    font-family: var(--font-lora); font-weight: 300; font-style: normal;
+    font-size: clamp(1.75rem, 1.2rem + 1.5vw, 3rem); line-height: 1.4;
+    color: var(--brand-white); max-width: 20em; text-wrap: balance;
+    text-shadow: 0 1px 26px rgba(0,0,0,0.85), 0 0 90px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.9);
+  }
+  .sky-text-overlay .sky-title {
+    font-family: var(--font-fraunces); font-weight: 700; text-transform: uppercase; text-wrap: balance;
+    font-size: clamp(2rem, 1.35rem + 3.3vw, 4.5rem); line-height: 1.08;
+    color: var(--brand-pastel);
+    text-shadow: 0 5px 30px rgba(0,0,0,0.85), 0 0 90px rgba(0,0,0,0.6), 0 2px 10px rgba(0,0,0,0.9);
+  }
 
   .phase-dots { position: fixed; right: 28px; top: 50%; transform: translateY(-50%); z-index: 150; display: flex; flex-direction: column; gap: 14px; opacity: 0; transition: opacity 0.4s; }
   .phase-dots.show { opacity: 1; }
-  .phase-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(249,248,246,0.12); transition: all 0.3s; }
-  .phase-dot.active { background: var(--gold); box-shadow: 0 0 8px rgba(201,185,154,0.3); }
+  .phase-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.22); transition: all 0.3s; }
+  .phase-dot.active { background: var(--brand-pastel); box-shadow: 0 0 8px rgba(198,232,242,0.55); }
 
-  .positioning { text-align: center; padding: 120px 48px; max-width: 1200px; margin: 0 auto; }
-  .positioning .section-title { font-size: 42px; max-width: 700px; margin: 0 auto 16px; }
-  .positioning .section-body { max-width: 600px; margin: 0 auto; text-align: center; }
+  /* ---------- Approach (teal page, white/pastel type) ---------- */
+  .positioning { text-align: center; padding: clamp(72px, 9vw, 128px) 48px; max-width: 1200px; margin: 0 auto; }
+  .positioning .section-eyebrow { font: 500 0.75rem/1.5 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.26em; color: var(--brand-pastel); }
+  .positioning .section-title { font-family: var(--font-lora); font-weight: 500; font-size: clamp(1.75rem, 1.2rem + 1.5vw, 2.5rem); line-height: 1.2; letter-spacing: 0; max-width: 700px; margin: 0 auto 16px; color: var(--brand-white); text-wrap: balance; }
+  .positioning .section-body { max-width: 800px; margin: 0 auto 40px; text-align: center; font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); line-height: 1.8; color: var(--brand-pastel); }
+  .positioning blockquote {
+    margin: clamp(40px, 5vw, 64px) auto 0; max-width: 640px; text-align: left;
+    padding: 6px 0 6px clamp(20px, 3vw, 36px);
+    border-left: 3px solid var(--brand-pastel);
+    font-family: var(--font-lora); font-weight: 300; font-style: normal;
+    font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.75rem); line-height: 1.45;
+    color: var(--brand-pastel);
+  }
+  .positioning blockquote footer { margin-top: 18px; font: 500 0.75rem/1.4 var(--font-poppins), 'Poppins', sans-serif; font-style: normal; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brand-pastel); }
+
+  /* ---------- Explore: white cards on a pastel band (the band sits below the cursor-trail canvas, so the trail shows over it) ---------- */
+  .explore { position: relative; color: var(--brand-teal); padding-block: clamp(72px, 9vw, 128px); }
+  .explore::before { content: ""; position: absolute; inset: 0; background: var(--brand-pastel); z-index: -2; }
+  .explore .pathways-section { padding: 0 var(--gutter); max-width: 1200px; margin: 0 auto; }
+  .explore .section-eyebrow { font: 500 0.75rem/1.5 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.26em; color: var(--brand-teal); }
+  .explore .section-title { font-family: var(--font-lora); font-weight: 500; font-size: clamp(1.75rem, 1.2rem + 1.5vw, 2.5rem); letter-spacing: 0; color: var(--brand-teal); }
+  .explore .pathway-grid { grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 1.6vw, 24px); margin-top: clamp(36px, 5vw, 56px); }
+  .explore .pathway-card {
+    display: flex; flex-direction: column; min-height: 300px; padding: 28px;
+    background: var(--brand-white); color: var(--brand-teal);
+    border: 0; border-radius: 6px;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  }
+  .explore .pathway-card::before { display: none; }
+  .explore .pathway-card .card-eyebrow { color: var(--brand-teal); font-weight: 500; font-size: 0.6875rem; letter-spacing: 0.26em; margin-bottom: 18px; transition: color 0.3s ease; }
+  .explore .pathway-card .card-title { font: 600 clamp(1.125rem, 1rem + 0.45vw, 1.5rem)/1.3 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0; color: var(--brand-teal); margin: 0; transition: color 0.3s ease; }
+  .explore .pathway-card .card-desc { margin-top: 14px; font-size: 0.9375rem; line-height: 1.65; color: var(--brand-teal); transition: color 0.3s ease; }
+  .explore .pathway-card .card-arrow { margin-top: auto; padding-top: 24px; font-size: 1.5rem; line-height: 1; color: var(--brand-teal); transition: transform 0.3s ease, color 0.3s ease; }
+  /* alternating hover: odd cards brown, even cards teal (white-on-brown / white-on-teal are permitted pairs) */
+  .explore .pathway-card:hover, .explore .pathway-card:focus-visible { transform: translateY(-6px); background: var(--brand-teal); }
+  .explore .pathway-card:nth-child(odd):hover, .explore .pathway-card:nth-child(odd):focus-visible { background: var(--brand-brown); }
+  .explore .pathway-card:hover .card-eyebrow { color: var(--brand-pastel); }
+  .explore .pathway-card:hover .card-title, .explore .pathway-card:hover .card-desc, .explore .pathway-card:hover .card-arrow { color: var(--brand-white); }
+  .explore .pathway-card:hover .card-arrow { transform: translateX(8px); }
 
   .process-section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
   .process-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; margin-top: 50px; }
   .process-pillar { position: relative; padding-top: 40px; }
   .pillar-line { width: 1px; height: 0; background: linear-gradient(to bottom, var(--gold), transparent); margin-bottom: 20px; transition: height 1s ease; }
   .pillar-line.drawn { height: 32px; }
-  .pillar-number { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 42px; font-weight: 300; color: var(--border-light); position: absolute; top: 0; right: 0; }
-  .pillar-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 22px; font-weight: 500; color: var(--text-primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
+  .pillar-number { font-family: var(--font-fraunces); font-size: 42px; font-weight: 300; color: var(--border-light); position: absolute; top: 0; right: 0; }
+  .pillar-title { font-family: var(--font-fraunces); font-size: 22px; font-weight: 500; color: var(--text-primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
   .pillar-body { font-size: 14px; color: var(--text-secondary); line-height: 1.8; }
 
-  .pathways-section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .explore .pathway-grid { grid-template-columns: repeat(2, 1fr); }
+  }
 
-  /* Mobile responsive */
+  /* ---------- Mobile ---------- */
   @media (max-width: 768px) {
-    .intro { padding: 100px 24px 60px; min-height: 90vh; }
-    .intro h1 { font-size: 38px !important; max-width: 100% !important; }
-    .intro p { font-size: 14px !important; max-width: 100% !important; margin: 0 auto 40px !important; }
+    .intro { padding: 120px 24px 110px; min-height: 90vh; }
     .intro .scroll-cue { margin-top: 40px; }
 
     .sky-mask-top, .sky-mask-bottom { height: 20vh; }
-
     .sky-scroll { height: 380vh; }
     .sky-text-overlay { padding-bottom: 8vh; }
-    /* Mobile centering fix: removed leftover padding-left values that
-       offset elements from true center. The hero-title also no longer
-       compensates for letter-spacing on mobile, so it sits visually
-       centered instead of nudged right. */
-    .sky-text-overlay .eyebrow { font-size: 10px; letter-spacing: 4px; padding: 0; margin-bottom: 12px; text-align: center; }
-    .sky-text-overlay .main-text { font-size: 32px; max-width: 90%; padding: 0 20px; text-align: center; }
-    .sky-text-overlay .hero-title { font-size: 52px; letter-spacing: 8px; padding-left: 8px; text-align: center; }
-    .sky-text-overlay .hero-sub { font-size: 11px; letter-spacing: 4px; padding: 0; white-space: normal; max-width: 90%; text-align: center; }
-    .sky-text-overlay .hero-tagline { font-size: 13px; white-space: normal; max-width: 90%; text-align: center; }
-    .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; text-align: center; }
+    .sky-text-overlay .eyebrow { font-size: 0.6875rem; letter-spacing: 0.16em; padding: 7px 14px; margin-bottom: 12px; }
+    .sky-text-overlay .devanagari { font-size: 11px; margin-top: 16px; }
+    .phase-dots { right: 14px; }
 
     .positioning { padding: 80px 24px; }
-    .positioning .section-title { font-size: 32px !important; }
-    .positioning .section-body { font-size: 14px !important; max-width: 100%; }
-    .positioning blockquote { font-size: 20px !important; padding: 24px 0 24px 20px !important; }
-    .positioning blockquote footer { font-size: 10px !important; }
-
     .process-section { padding: 60px 24px; }
     .process-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
 
-    .pathways-section { padding: 60px 24px; }
+  @media (max-width: 640px) {
+    .explore .pathway-grid { grid-template-columns: 1fr; }
+    .explore .pathway-card { min-height: 0; }
   }
 
   @media (max-width: 480px) {
-    .intro { padding: 80px 20px 50px; }
-    .intro .eyebrow { font-size: 9px; letter-spacing: 5px; }
-    .intro h1 { font-size: 28px !important; line-height: 1.3; }
-    .intro p { font-size: 13px !important; margin: 0 auto 30px !important; }
-    .intro .scroll-cue { margin-top: 30px; }
+    .intro { padding: 110px 20px 100px; }
     .intro .scroll-cue span { font-size: 9px; letter-spacing: 4px; }
     .scroll-line { height: 30px; }
 
     .sky-mask-top, .sky-mask-bottom { height: 15vh; }
-
     .sky-scroll { height: 320vh; }
     .sky-text-overlay { padding-bottom: 18vh; }
-    .sky-text-overlay .eyebrow { font-size: 9px; letter-spacing: 3px; padding: 0; text-align: center; }
-    .sky-text-overlay .main-text { font-size: 24px; line-height: 1.4; text-align: center; }
-    .sky-text-overlay .hero-title { font-size: 36px; letter-spacing: 6px; padding-left: 6px; text-align: center; }
-    .sky-text-overlay .hero-sub { font-size: 9px; letter-spacing: 3px; padding: 0; text-align: center; }
-    .sky-text-overlay .hero-tagline { font-size: 11px; margin-top: 8px; text-align: center; }
-    .sky-text-overlay .devanagari { font-size: 10px; margin-top: 12px; text-align: center; }
+    .sky-text-overlay .eyebrow { letter-spacing: 0.1em; padding: 7px 14px; }
 
     .positioning { padding: 60px 20px; }
-    .positioning .section-title { font-size: 26px !important; }
-    .positioning blockquote { font-size: 18px !important; padding: 20px 0 20px 16px !important; }
-
     .process-section { padding: 50px 20px; }
     .pillar-title { font-size: 18px; letter-spacing: 2px; }
     .pillar-body { font-size: 13px; }
     .pillar-number { font-size: 32px; }
-
-    .pathways-section { padding: 50px 20px; }
   }
       `}} />
       {/* INTRO */}
       <div className="intro">
+        <svg className="anchor" fill="currentColor" aria-hidden="true"><use href="#kl-star" /></svg>
         <div className="section-eyebrow">Buy Side Advisory</div>
-        <h1>
-          You bring the thesis.<br />
-          We build the <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>universe.</span>
+        <h1 className="display">
+          <span className="l1">You bring the thesis.</span>
+          <span className="l2">We build the <em>universe.</em></span>
         </h1>
-        <div className="gold-line" style={{ margin: '30px auto' }} />
-        <p style={{ maxWidth: 680, margin: '0 auto 60px', fontSize: 17, color: 'var(--text-secondary)' }}>
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, and family offices.<br /><span style={{ color: '#fff' }}>We don&apos;t carry a pipeline. We build yours.</span>
+        <div className="rule" aria-hidden="true" />
+        <p className="lede">
+          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, and family offices.
         </p>
+        <p className="strap">We don&apos;t carry a pipeline. We build yours.</p>
         <Link href="/engage" className="hero-cta">
           Talk to DealDesk
         </Link>
@@ -365,9 +393,8 @@ return (
               <div className="devanagari">चक्रव्यूह</div>
             </div>
             <div className="sky-text-overlay" id="skyText3">
-              <div className="hero-title">KAUTILYA</div>
-              <div className="hero-sub">Buy-Side Advisory · Sourced with Rigor</div>
-              <div className="hero-tagline">Your thesis. Our intelligence.</div>
+              <div className="eyebrow">Buy-Side Advisory · Sourced with Rigor</div>
+              <h2 className="sky-title">Your thesis.<br />Our intelligence.</h2>
               <div className="devanagari">ध्रुव · कौटिल्य</div>
             </div>
           </div>
@@ -378,40 +405,20 @@ return (
       {/* ARTHASHASTRA APPROACH */}
       <div className="positioning reveal">
         <div className="section-eyebrow">The Arthashastra Approach</div>
-        <h2 className="section-title" style={{ fontSize: 48, color: 'var(--gold)' }}>
-          <span style={{ color: 'var(--text-primary)' }}>Our Approach to</span> Deal Sourcing
-        </h2>
-        <p
-          className="section-body"
-          style={{ maxWidth: 800, margin: '0 auto 40px', fontSize: 15, lineHeight: '1.9', color: 'var(--text-secondary)' }}
-        >
+        <h2 className="section-title">Our Approach to Deal Sourcing</h2>
+        <p className="section-body">
           Chanakya's Arthashastra, the ancient treatise on statecraft and economic policy, is not merely a historical text.
           It is a blueprint for strategic acquisition, institutional intelligence, and the patient accumulation of advantage.
           Kautilya embodies these principles in modern buy-side advisory.
         </p>
-        <blockquote
-          style={{
-            margin: '50px auto 0',
-            maxWidth: 700,
-            padding: '30px 0 30px 28px',
-            borderLeft: '2px solid var(--gold)',
-            fontFamily: "var(--font-fraunces), Fraunces, serif",
-            fontSize: 24,
-            fontStyle: 'italic',
-            lineHeight: '1.8',
-            color: 'var(--gold)',
-          }}
-        >
+        <blockquote>
           "The wise acquire wealth as the bee gathers honey, without harming the flower."
-          <footer style={{ marginTop: 20, fontSize: 12, fontStyle: 'normal', letterSpacing: 2, color: 'var(--text-tertiary)' }}>
-            – Arthashastra, Book II
-          </footer>
+          <footer>– Arthashastra, Book II</footer>
         </blockquote>
       </div>
 
-      <div className="section-divider" />
-
-      {/* PATHWAY CARDS */}
+      {/* PATHWAY CARDS — data-fluid-light: everything from here down is a light background for the cursor-trail shader */}
+      <section className="explore" data-fluid-light>
       <div className="pathways-section">
         <div className="reveal">
           <div className="section-eyebrow">Explore</div>
@@ -444,6 +451,7 @@ return (
           </Link>
         </div>
       </div>
+      </section>
 
       {/* PHASE DOTS */}
       <div className="phase-dots" id="phaseDots">

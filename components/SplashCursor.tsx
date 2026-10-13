@@ -11,7 +11,7 @@ function SplashCursor({
   PRESSURE = 0.1,
   PRESSURE_ITERATIONS = 20,
   CURL = 3,
-  SPLAT_RADIUS = 0.2,
+  SPLAT_RADIUS = 0.09,   // live default was 0.2; brand theme uses a smaller splash
   SPLAT_FORCE = 6000,
   SHADING = true,
   COLOR_UPDATE_SPEED = 10,
@@ -24,6 +24,8 @@ function SplashCursor({
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    // Respect reduced-motion: no fluid trail at all
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     let isActive = true;
 
@@ -283,6 +285,12 @@ function SplashCursor({
       uniform sampler2D uDithering;
       uniform vec2 ditherScale;
       uniform vec2 texelSize;
+      uniform vec4 uBand0;       // light-background bands (x = top uv.y, y = bottom uv.y, z = enabled); up to 4 per page
+      uniform vec4 uBand1;
+      uniform vec4 uBand2;
+      uniform vec4 uBand3;
+      uniform vec3 uInkLight;    // ink colour on light sections (brand teal)
+      bool inBand(vec4 b) { return b.z > 0.5 && vUv.y < b.x && vUv.y > b.y; }
 
       vec3 linearToGamma (vec3 color) {
           color = max(color, vec3(0));
@@ -308,7 +316,13 @@ function SplashCursor({
           #endif
 
           float a = max(c.r, max(c.g, c.b));
-          gl_FragColor = vec4(c, a);
+          if (inBand(uBand0) || inBand(uBand1) || inBand(uBand2) || inBand(uBand3)) {
+              // light-blue ink would vanish on pastel/white, so draw the same swirl in teal with a stronger alpha
+              float la = clamp((a - 0.012) * 2.2, 0.0, 0.5);
+              gl_FragColor = vec4(uInkLight * la, la);
+          } else {
+              gl_FragColor = vec4(c, a);
+          }
       }
     `;
 
@@ -705,15 +719,14 @@ function SplashCursor({
     }
 
     // ==========================================
-    // CUSTOM COLOR GENERATOR: KAUTILYA GOLD
+    // CUSTOM COLOR GENERATOR: KAUTILYA LIGHT BLUE
     // ==========================================
     function generateColor() {
-      // Kautilya Gold: #C9B99A (RGB: 201, 185, 154)
-      // Scaled by 0.15 to match the intensity expectations of the shader engine
+      // Brand light blue #c6e8f2 (RGB 198, 232, 242), same 0.15 intensity scale the gold used
       return {
-        r: (201 / 255) * 0.15,
-        g: (185 / 255) * 0.15,
-        b: (154 / 255) * 0.15
+        r: (198 / 255) * 0.15,
+        g: (232 / 255) * 0.15,
+        b: (242 / 255) * 0.15
       };
     }
 
@@ -807,12 +820,28 @@ function SplashCursor({
       drawDisplay(target);
     }
 
+    let lightEls = [];
+    let lightRefresh = 0;
     function drawDisplay(target) {
       let width = target == null ? gl.drawingBufferWidth : target.width;
       let height = target == null ? gl.drawingBufferHeight : target.height;
       displayMaterial.bind();
       if (config.SHADING) gl.uniform2f(displayMaterial.uniforms.texelSize, 1.0 / width, 1.0 / height);
       gl.uniform1i(displayMaterial.uniforms.uTexture, dye.read.attach(0));
+      // light-background regions (title bands, light sections, footer) as y-ranges of the fixed viewport canvas
+      if (--lightRefresh <= 0 || lightEls.some((el) => !el.isConnected)) {
+        lightEls = Array.from(document.querySelectorAll('[data-fluid-light], .page-hero, .story-hero')).slice(0, 4);
+        lightRefresh = 30;
+      }
+      const H = window.innerHeight;
+      const bandUniforms = [displayMaterial.uniforms.uBand0, displayMaterial.uniforms.uBand1, displayMaterial.uniforms.uBand2, displayMaterial.uniforms.uBand3];
+      bandUniforms.forEach((u, i) => {
+        const el = lightEls[i];
+        if (!el) { gl.uniform4f(u, 0, 0, 0, 0); return; }
+        const r = el.getBoundingClientRect();
+        gl.uniform4f(u, 1.0 - r.top / H, 1.0 - r.bottom / H, 1, 0);
+      });
+      gl.uniform3f(displayMaterial.uniforms.uInkLight, 11 / 255, 72 / 255, 93 / 255);
       blit(target);
     }
 
@@ -824,9 +853,9 @@ function SplashCursor({
 
     function clickSplat(pointer) {
       const color = generateColor();
-      color.r *= 10.0;
-      color.g *= 10.0;
-      color.b *= 10.0;
+      color.r *= 4.0;   // was 10 — gentler click burst
+      color.g *= 4.0;
+      color.b *= 4.0;
       let dx = 10 * (Math.random() - 0.5);
       let dy = 30 * (Math.random() - 0.5);
       splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
@@ -1012,30 +1041,9 @@ function SplashCursor({
   }, []);
 
   return (
-    <div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        // Sit behind page content. Was zIndex: 9999, which put the fluid
-        // canvas on top of every button and text block — that caused
-        // hover-state paint lag (the GPU was busy compositing splats over
-        // the button) and made text overlapping the toy hard to read.
-        zIndex: 0,
-        pointerEvents: 'none',
-        width: '100%',
-        height: '100%'
-      }}
-    >
-      <canvas
-        ref={canvasRef}
-        id="fluid"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          display: 'block'
-        }}
-      />
+    // .fluid-fx (brand-theme.css): fixed, z-index -1 — above the page background, below all content
+    <div className="fluid-fx" aria-hidden="true">
+      <canvas ref={canvasRef} id="fluid" />
     </div>
   );
 }

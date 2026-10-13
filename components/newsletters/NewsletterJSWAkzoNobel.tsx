@@ -144,13 +144,13 @@ export default function NewsletterJSWAkzoNobel() {
           background: var(--canvas);
           text-align: center;
         }
-        .pc-cell.highlight { background: rgba(201,185,154,0.04); }
+        .pc-cell.highlight { background: color-mix(in srgb, var(--canvas) 94%, var(--brand-pastel)); }   /* opaque tint: the grid's 1px gap colour must not show through */
         .pc-value {
           font-family: var(--font-fraunces), 'Fraunces', serif;
           font-size: 30px;
           font-weight: 500;
           line-height: 1;
-          color: rgba(201,185,154,0.4);
+          color: rgba(198,232,242,0.62);   /* de-emphasised figure, still >3:1 on teal */
           margin-bottom: 10px;
         }
         .pc-cell.highlight .pc-value { color: var(--gold); }
@@ -171,7 +171,7 @@ export default function NewsletterJSWAkzoNobel() {
         .deal-score-table tr.overall-row td {
           color: var(--text-primary);
           font-weight: 500;
-          background: rgba(201,185,154,0.04);
+          background: rgba(198,232,242,0.04);
         }
         .deal-stars { color: var(--gold); letter-spacing: 1px; font-size: 15px; white-space: nowrap; }
         .deal-stars-value { color: var(--text-muted); font-size: 12px; margin-left: 8px; letter-spacing: 0; }

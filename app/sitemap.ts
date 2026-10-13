@@ -24,7 +24,7 @@ const STORY_IMAGES: Record<string, string[]> = {
   '200k-deals':      ['/images/stories/200k/architecture.webp', '/images/stories/200k/five-deals.webp', '/images/stories/200k/hidden-channel.webp'],
   'smartprompt':     [],
   'inspire3':        [],
-  'msp-buy-side-diligence': ['/images/Dev.webp', '/images/aum.webp', '/images/pushkar.webp'],
+  'msp-buy-side-diligence': ['/images/Dev.webp', '/images/aum.webp', '/images/pushkar-v2.webp'],
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
