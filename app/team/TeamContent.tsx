@@ -10,7 +10,7 @@ const pushkarImage = '/images/pushkar-v2.webp';
 const aryanImage = '/images/aryan.webp';
 const kabirImage = '/images/kabir.webp';
 const adityaImage = '/images/aditya.webp';
-const siddharthImage = '/images/siddharth-zambre.webp';
+const sidharthImage = '/images/sidharth-zambre.webp';
 const deepImage = '/images/deep.webp';
 const adityaGadaImage = '/images/aditya-gada.webp';
 
@@ -59,11 +59,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/pushkarrathod12/',
   },
   {
-    name: 'Siddharth Zambre',
+    name: 'Sidharth Zambre',
     role: 'Analyst',
     desc: 'Sources and screens targets on client mandates and runs founder outreach.',
     initials: 'SZ',
-    image: siddharthImage,
+    image: sidharthImage,
     linkedin: 'https://www.linkedin.com/in/sidharthzambre/',
   },
   {

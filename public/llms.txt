@@ -156,7 +156,7 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - Aum Thakarkar: Co-founder & COO. Runs client mandates and the sales pipeline, and coordinates due diligence.
 - Ganesh Jagtap: CTO. Platform and tooling.
 - Pushkar Rathod: Lead Analyst. Leads the analyst team on client mandates.
-- Siddharth Zambre: Analyst.
+- Sidharth Zambre: Analyst.
 - Deep Keswani: Analyst.
 - Aditya Gada: Analyst. Market research and outreach.
 - Siddhant Mehta: Business Development.
