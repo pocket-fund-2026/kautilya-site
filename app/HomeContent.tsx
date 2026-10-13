@@ -158,6 +158,7 @@ return (
   .intro > *:not(.anchor) { position: relative; z-index: 1; }
 
   .intro .section-eyebrow {
+    margin-top: 0;
     font: 400 0.75rem/1.5 var(--font-poppins), 'Poppins', sans-serif;
     letter-spacing: 0.26em; text-transform: uppercase; color: var(--brand-pastel);
     margin-bottom: clamp(20px, 3vw, 32px);
@@ -165,7 +166,7 @@ return (
   }
 
   /* display heading: Gotham Bold line, then a light second line with an italic emphasis (guidelines 2.4 / 2.5) */
-  .intro h1.display {
+  .intro .display {
     font-family: var(--font-fraunces);
     font-size: clamp(2rem, 1.35rem + 3.3vw, 4.5rem);
     font-weight: 400; line-height: 1.1; letter-spacing: 0;
@@ -350,14 +351,14 @@ return (
       {/* INTRO */}
       <div className="intro">
         <svg className="anchor" fill="currentColor" aria-hidden="true"><use href="#kl-star" /></svg>
-        <div className="section-eyebrow">Buy Side Advisory</div>
-        <h1 className="display">
+        <h1 className="section-eyebrow">Buy-Side M&amp;A Advisory</h1>
+        <p className="display">
           <span className="l1">You bring the thesis.</span>
           <span className="l2">We build the <em>universe.</em></span>
-        </h1>
+        </p>
         <div className="rule" aria-hidden="true" />
         <p className="lede">
-          Kautilya is a buy-side advisory that constructs proprietary acquisition pipelines for lower middle market deals: in any sector, against any criteria, from first principles. We source and structure for private equity funds, search funds, family offices and holding companies.
+          Kautilya is a Mumbai-based buy-side M&amp;A advisory. We find, diligence and close off-market acquisitions from $500K to $10M for private equity funds, search funds, family offices and holding companies, in any sector.
         </p>
         <p className="strap">We don&apos;t carry a pipeline. We build yours.</p>
         <Link href="/engage" className="hero-cta">

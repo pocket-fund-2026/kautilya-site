@@ -49,7 +49,7 @@ export default function OgImage() {
             lineHeight: 1.6,
           }}
         >
-          Proprietary deal sourcing: in any sector, against any criteria, from first principles.
+          Off-market acquisitions from $500K to $10M, from search to close.
         </div>
       </div>
     ),
