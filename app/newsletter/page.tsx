@@ -5,7 +5,7 @@ import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/ne
 const BASE = 'https://www.kautilya-pe.com';
 
 export const metadata: Metadata = {
-  title: { absolute: 'The Kautilya Newsletter | Deal-Structure Teardowns' },
+  title: { absolute: 'The Kautilya India Deal Sheet | Deal-Structure Teardowns' },
   description:
     'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard for every Indian M&A deal worth studying. Read the archive or subscribe to The India Deal Sheet.',
   category: 'Finance & M&A Advisory',
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: `${BASE}/newsletter`,
-    title: 'The Kautilya Newsletter | Deal-Structure Teardowns',
+    title: 'The Kautilya India Deal Sheet | Deal-Structure Teardowns',
     description:
       'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard for every Indian M&A deal worth studying.',
     siteName: 'Kautilya',
-    images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'The Kautilya Newsletter — Deal Table Teardowns' }],
+    images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'The Kautilya India Deal Sheet — Deal Table Teardowns' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Kautilya Newsletter | Deal-Structure Teardowns',
+    title: 'The Kautilya India Deal Sheet | Deal-Structure Teardowns',
     description: 'Deal-structure teardowns from Kautilya\'s advisory desk — buyer, target, structure, and a scorecard, every time.',
     images: [`${BASE}/opengraph-image`],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   other: {
-    'DC.title': 'The Kautilya Newsletter | Deal-Structure Teardowns',
+    'DC.title': 'The Kautilya India Deal Sheet | Deal-Structure Teardowns',
     'DC.creator': 'Dev Shah',
     'DC.subject': 'India M&A deal teardowns, deal structure analysis, proptech consolidation, buy-side advisory',
     'DC.description': 'Deal-structure teardowns from Kautilya\'s advisory desk covering Indian M&A.',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     subject: 'Deal-structure teardowns and market intelligence on Indian M&A',
     topic: 'M&A Deal Teardowns, Indian M&A, Deal Structure Analysis',
     classification: 'Finance / M&A Advisory / Market Intelligence',
-    abstract: 'The Kautilya Newsletter publishes deal-structure teardowns for buyers and advisors in Indian mid-market M&A.',
+    abstract: 'The Kautilya India Deal Sheet publishes deal-structure teardowns for buyers and advisors in Indian mid-market M&A.',
     summary: 'Deal-structure teardowns covering Indian M&A — buyer, target, structure, and a scorecard for every deal.',
     language: 'English',
     revisit: '7 days',
@@ -76,7 +76,7 @@ const BASE_URL = BASE;
 const newsletterListSchema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  name: 'The Kautilya Newsletter',
+  name: 'The Kautilya India Deal Sheet',
   description: 'Deal-structure teardowns from Kautilya\'s advisory desk covering Indian M&A — buyer, target, structure, and a scorecard for every deal.',
   url: `${BASE_URL}/newsletter`,
   inLanguage: 'en-US',
@@ -104,7 +104,7 @@ const newsletterListSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'The Kautilya Newsletter — Deal Table Teardowns',
+  name: 'The Kautilya India Deal Sheet — Deal Table Teardowns',
   url: `${BASE_URL}/newsletter`,
   numberOfItems: NEWSLETTER_SLUGS.length,
   itemListElement: NEWSLETTER_SLUGS.map((slug, i) => ({

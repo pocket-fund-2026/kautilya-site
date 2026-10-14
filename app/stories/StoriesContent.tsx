@@ -345,10 +345,14 @@ export default function StoriesContent() {
 
         /* Tighter follow section */
         .stories-follow-compact {
-          padding: 40px 48px 80px;
+          padding: 16px 48px 56px;
           max-width: 1200px;
           margin: 0 auto;
         }
+        .stories-follow-compact .social-section { margin-top: 0; padding-top: 32px; }
+        .stories-follow-compact .section-title { font-size: 28px; margin-bottom: 0; }
+        .stories-follow-compact .social-grid { margin-top: 20px; }
+        .stories-follow-compact .social-card { flex: 0 1 380px; }
 
         @media (max-width: 768px) {
           .video-showcase-section {
@@ -384,8 +388,9 @@ export default function StoriesContent() {
           }
 
           .stories-follow-compact {
-            padding: 28px 24px 60px;
+            padding: 12px 24px 44px;
           }
+          .stories-follow-compact .social-card { flex: 1 1 100%; }
         }
 
         @media (max-width: 480px) {
@@ -394,7 +399,7 @@ export default function StoriesContent() {
           }
 
           .stories-follow-compact {
-            padding: 24px 20px 50px;
+            padding: 8px 20px 40px;
           }
         }
       `}} />

@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { BLOG_META, BLOG_SLUGS, type BlogSlug } from '@/lib/blogs';
 import { NEWSLETTER_META, NEWSLETTER_SLUGS, type NewsletterSlug } from '@/lib/newsletters';
@@ -8,7 +9,21 @@ function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+type Tab = 'blog' | 'newsletter';
+
 export default function BlogContent() {
+  const [tab, setTab] = useState<Tab>('blog');
+
+  // Deep-link support: /blog#newsletter opens the India Deal Sheet tab.
+  useEffect(() => {
+    if (window.location.hash === '#newsletter') setTab('newsletter');
+  }, []);
+
+  const selectTab = (next: Tab) => {
+    setTab(next);
+    window.history.replaceState(null, '', next === 'newsletter' ? '#newsletter' : window.location.pathname + window.location.search);
+  };
+
   const slugs = [...BLOG_SLUGS].sort(
     (a, b) => new Date(BLOG_META[b as BlogSlug].datePublished).getTime() - new Date(BLOG_META[a as BlogSlug].datePublished).getTime()
   ) as BlogSlug[];
@@ -122,18 +137,31 @@ export default function BlogContent() {
           .blog-card-title { font-size: 24px; }
         }
 
-        /* Side-by-side Blog / Newsletter columns */
-        .blog-newsletter-grid {
-          display: grid;
-          grid-template-columns: 1fr 1px 1fr;
-          gap: 48px;
-          align-items: start;
+        /* Blog / India Deal Sheet toggle */
+        .blog-tabs {
+          display: inline-flex;
+          border: 1px solid var(--border);
+          border-radius: 3px;
+          margin-bottom: 40px;
         }
-        .grid-divider {
-          align-self: stretch;
-          background: var(--border);
-          min-height: 100%;
+        .blog-tab {
+          font-family: var(--font-lora), 'Lora', serif;
+          font-size: 11px;
+          letter-spacing: 2.5px;
+          text-transform: uppercase;
+          color: var(--text-secondary);
+          background: transparent;
+          border: 0;
+          padding: 14px 28px;
+          cursor: pointer;
+          transition: background 0.3s, color 0.3s;
         }
+        .blog-tab + .blog-tab { border-left: 1px solid var(--border); }
+        .blog-tab:hover { color: var(--text-primary); }
+        .blog-tab[aria-selected="true"] { background: rgba(198,232,242,0.08); color: var(--gold); }
+        .blog-tab:focus-visible { outline: 1px solid var(--gold); outline-offset: -3px; }
+        .blog-panel { max-width: 860px; }
+        .blog-panel[hidden] { display: none; }
         .grid-column-head { margin-bottom: 28px; }
         .grid-column-title {
           font-family: var(--font-fraunces), 'Fraunces', serif;
@@ -237,28 +265,36 @@ export default function BlogContent() {
           background: rgba(198,232,242,0.025);
         }
 
-        @media (max-width: 900px) {
-          .blog-newsletter-grid { grid-template-columns: 1fr; gap: 56px; }
-          .grid-divider { display: none; }
+        @media (max-width: 480px) {
+          .blog-tabs { display: flex; }
+          .blog-tab { flex: 1; padding: 14px 12px; letter-spacing: 1.5px; }
         }
       `}} />
 
       {/* Header — uses .page-hero, .section-title, .section-body, .gold-line from globals */}
       <div className="page-hero">
         <div className="phase-label">Insight & Intelligence</div>
-        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Blog &amp; Newsletter</h1>
+        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Blog &amp; India Deal Sheet</h1>
         <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
         <p className="section-body">
           Advisory guides and deal-structure teardowns from the Kautilya team — market
-          intelligence and acquisition frameworks on the left, deal-by-deal newsletter issues on
-          the right.
+          intelligence and acquisition frameworks in the Blog, deal-by-deal teardowns in the
+          India Deal Sheet.
         </p>
       </div>
 
-      {/* Blog + Newsletter, side by side — uses .content-section from globals */}
+      {/* Blog / India Deal Sheet toggle — both panels stay in the DOM so every post link is crawlable */}
       <div className="content-section" style={{ paddingTop: 40 }}>
-        <div className="blog-newsletter-grid">
-          <div className="grid-column">
+        <div className="blog-tabs" role="tablist" aria-label="Blog or India Deal Sheet">
+          <button type="button" role="tab" id="tab-blog" aria-selected={tab === 'blog'} aria-controls="panel-blog" className="blog-tab" onClick={() => selectTab('blog')}>
+            Blog
+          </button>
+          <button type="button" role="tab" id="tab-newsletter" aria-selected={tab === 'newsletter'} aria-controls="panel-newsletter" className="blog-tab" onClick={() => selectTab('newsletter')}>
+            India Deal Sheet
+          </button>
+        </div>
+        <div>
+          <div className="grid-column blog-panel" role="tabpanel" id="panel-blog" aria-labelledby="tab-blog" hidden={tab !== 'blog'}>
             <div className="grid-column-head">
               <div className="phase-label">Insight &amp; Intelligence</div>
               <h2 className="grid-column-title">The Kautilya Blog</h2>
@@ -289,12 +325,10 @@ export default function BlogContent() {
             </div>
           </div>
 
-          <div className="grid-divider" />
-
-          <div className="grid-column">
+          <div className="grid-column blog-panel" role="tabpanel" id="panel-newsletter" aria-labelledby="tab-newsletter" hidden={tab !== 'newsletter'}>
             <div className="grid-column-head">
               <div className="phase-label">Deal Table Teardowns</div>
-              <h2 className="grid-column-title">The Kautilya Newsletter</h2>
+              <h2 className="grid-column-title">The Kautilya India Deal Sheet</h2>
               <p className="grid-column-desc">
                 Deal-structure teardowns from Kautilya&apos;s advisory desk: buyer, target,
                 structure, and a scorecard for every Indian M&amp;A deal worth studying.

@@ -171,7 +171,7 @@ Forensic due diligence is a transaction-level audit of a target business's finan
 - [Approach](https://www.kautilya-pe.com/approach): Full 5-phase acquisition methodology
 - [Portfolio](https://www.kautilya-pe.com/portfolio): Closed acquisition case studies
 - [Blog](https://www.kautilya-pe.com/blog): Market intelligence, buyer guides, and deal-structure teardowns
-- [Newsletter](https://www.kautilya-pe.com/newsletter): The Kautilya Newsletter — deal-by-deal teardowns
+- [India Deal Sheet](https://www.kautilya-pe.com/newsletter): The Kautilya India Deal Sheet — deal-by-deal teardowns
 - [Stories](https://www.kautilya-pe.com/stories): Deal journals and market intelligence
 - [FAQ](https://www.kautilya-pe.com/faq): 23 answered questions on advisory, sourcing, and pricing
 - [Team](https://www.kautilya-pe.com/team): The people behind every mandate

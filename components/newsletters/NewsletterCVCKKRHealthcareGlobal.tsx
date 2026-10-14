@@ -246,7 +246,7 @@ export default function NewsletterCVCKKRHealthcareGlobal() {
 
       {/* ── Hero ── */}
       <div className="story-hero" id="storyStart">
-        <Link href="/newsletter" className="back-link">← Kautilya Newsletter</Link>
+        <Link href="/newsletter" className="back-link">← India Deal Sheet</Link>
         <div className="meta-row">
           <span className="meta-tag">Deal Teardown</span>
           <span className="meta-tag">Indian Healthcare &amp; PE</span>
