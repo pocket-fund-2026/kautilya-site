@@ -170,11 +170,11 @@
   color: var(--brand-brown); opacity: 0.88;
   font: 400 0.75rem/1.9 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0.01em;
 }
-/* partner badges: reduced to 20px (Verified-DR badge 34px) */
-.site-footer .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 24px; opacity: 0.9; }
+/* partner badges: 32px (Verified-DR badge 48px) — 20px was barely readable */
+.site-footer .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 28px; opacity: 1; }
 .site-footer .badges a { display: block; line-height: 0; }
-.site-footer .badges img { height: 20px; width: auto; }
-.site-footer .badges .dr img { height: 34px; }
+.site-footer .badges img { height: 32px; width: auto; }
+.site-footer .badges .dr img { height: 48px; }
 .site-footer :focus-visible { outline: 3px solid var(--brand-teal); outline-offset: 3px; border-radius: 4px; }
 
 @media (max-width: 1023px) {

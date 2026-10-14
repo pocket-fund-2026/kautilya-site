@@ -367,6 +367,7 @@ export default function StoriesContent() {
           white-space: nowrap;
         }
         .follow-strip-text { flex: 1; font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+        .follow-strip-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
         .follow-strip-arrow { color: var(--gold); font-size: 16px; transition: transform 0.3s; }
         .follow-strip:hover .follow-strip-arrow { transform: translateX(4px); }
 
@@ -530,7 +531,7 @@ export default function StoriesContent() {
       <div className="stories-follow-compact">
         <a className="follow-strip reveal" href="https://www.linkedin.com/company/kautilya-pe" target="_blank" rel="noopener noreferrer">
           <span className="follow-strip-label">Follow our thinking</span>
-          <span className="follow-strip-text">Long-form posts, case reflections, and industry commentary on LinkedIn</span>
+          <span className="follow-strip-text">Long-form posts, case reflections, and industry commentary on <span className="follow-strip-link">LinkedIn</span></span>
           <span className="follow-strip-arrow">&rarr;</span>
         </a>
       </div>
