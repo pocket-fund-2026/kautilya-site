@@ -83,8 +83,8 @@ export default function StoriesContent() {
 
   return (
     <div className="page stories-page">
-      <CaseStudies />
       <StoriesTimeline />
+      <CaseStudies />
 
       <style dangerouslySetInnerHTML={{ __html: `
         .video-showcase-section {
