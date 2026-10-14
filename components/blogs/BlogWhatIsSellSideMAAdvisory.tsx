@@ -456,9 +456,11 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           sell-side process is worth the cost than any fee percentage will.
         </p>
         <p>
-          Kautilya works exclusively on the buy side, so we don&apos;t run sell-side mandates —
-          this guide is here because understanding how the other side of the table operates helps
-          any buyer negotiate better. If you&apos;re the one evaluating an acquisition rather than
+          Kautilya works for buyers. This guide is here because understanding how the other side
+          of the table operates helps any buyer negotiate better. If you own a profitable digital
+          business and are thinking of selling, Pocket Fund, our sister holding company, buys SaaS,
+          mobile apps, newsletters, content sites and YouTube channels and runs them:{' '}
+          <a href="https://pocket-fund.com">pocket-fund.com</a>. If you&apos;re the one evaluating an acquisition rather than
           a sale, see <Link href="/approach">our approach</Link> or read about{' '}
           <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side advisory involves</Link>.
         </p>
