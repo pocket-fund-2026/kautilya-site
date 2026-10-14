@@ -9,6 +9,7 @@ export const NEWSLETTER_SLUGS = [
   'cvc-kkr-healthcare-global-acquisition-explained',
   'cvc-aavas-financiers-acquisition-explained',
   'everstone-wingify-bootstrapped-buyout-400-500m-platform',
+  'brookfield-american-tower-india-altius-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -825,6 +826,75 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Wingify' },
       { name: 'AB Tasty' },
       { name: 'Blitzllama' },
+    ],
+  },
+  'brookfield-american-tower-india-altius-acquisition-explained': {
+    title: 'Brookfield\'s American Tower India Buyout, Explained',
+    subtitle: 'How ₹182 Billion for 76,000 Towers Became a Platform Marked Near ₹504 Billion',
+    description: 'Brookfield paid ₹182 bn for American Tower\'s India towers, merged them into Altius, sold 24% to CDPQ at a ~₹504 bn mark and filed a ₹6,000 Cr IPO.',
+    author: 'Dev Shah',
+    datePublished: '2026-10-07',
+    dealDate: '2024-09-12',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 3113,
+    keywords: [
+      'Brookfield American Tower India acquisition',
+      'ATC India acquisition explained',
+      'Altius Telecom Infrastructure Trust',
+      'Altius IPO India tower company',
+      'Brookfield CDPQ Altius 24% stake',
+      'Data Infrastructure Trust InvIT',
+      'Summit Digitel Crest Digitel Altius',
+      'Altius vs Indus Towers',
+      'India tower company largest by sites',
+      'InvIT roll-up India infrastructure',
+      'infrastructure platform assembly strategy',
+      'American Tower exit India',
+      'Altius ₹6,000 Cr IPO',
+      'how much did Brookfield pay for ATC India',
+      'Kautilya deal teardown',
+      'India deal sheet newsletter',
+      'M&A deal structure analysis India',
+    ],
+    faqs: [
+      {
+        q: 'How much did Brookfield pay for American Tower\'s India business?',
+        a: 'Brookfield\'s Data Infrastructure Trust paid an enterprise value of ₹182 billion (about $2.2B) for ATC India, roughly 76,000 towers, below 6 times 2024 EBITDA. The deal was announced in January 2024 and closed on September 12, 2024. American Tower received about $2.5B in total proceeds including about $320M from monetising Vodafone Idea debentures.',
+      },
+      {
+        q: 'What is Altius and how big is it?',
+        a: 'Altius is the platform formed when Brookfield merged ATC India with Summit Digitel (about 175,000 towers bought from Reliance in 2020) and Crest Digitel (6,300 towers, 2022). With 258,111 combined sites it passed Indus Towers\' roughly 226,000 to become India\'s largest tower company.',
+      },
+      {
+        q: 'What did CDPQ pay for its stake in Altius?',
+        a: 'On September 2, 2026, Canada\'s La Caisse (CDPQ) bought 24% of Altius for ₹121 billion (C$1.76B). That price implies a value near ₹504 billion for the whole trust. It is a private mark from a single stake sale, not a public market price.',
+      },
+      {
+        q: 'Is Altius going public?',
+        a: 'Altius filed a draft prospectus on August 6, 2026 for an IPO of about ₹6,000 Cr, made up of a ₹500 Cr fresh issue plus an offer for sale of up to 30.47 Cr units. The listing is where the private ₹504 billion mark meets a public price.',
+      },
+      {
+        q: 'Why was American Tower willing to sell its Indian towers?',
+        a: 'American Tower runs to REIT return thresholds, and India\'s thin per-site margins and long contracts sat awkwardly against them. It exited India, and Australia and New Zealand at the same time. Brookfield, an infrastructure fund with a longer hold and a lower return bar, values exactly those long-dated, escalating rent streams.',
+      },
+      {
+        q: 'How did Brookfield finance the deal with so little of its own equity?',
+        a: 'About $1B of total equity came from the consortium, and Brookfield\'s listed arm contributed only about $140 to 150M. The rest was partners and a ₹7,900 Cr ($941M) rupee bond open only to foreign investors, at 9.99% paid quarterly over five years. The bond matures in 2029 and must be refinanced.',
+      },
+    ],
+    about: [
+      'Infrastructure M&A in India',
+      'InvIT-led platform roll-ups',
+      'Staged monetisation: minority stake sale then IPO',
+    ],
+    mentions: [
+      { name: 'Brookfield', sameAs: 'https://www.brookfield.com' },
+      { name: 'American Tower', sameAs: 'https://www.americantower.com' },
+      { name: 'Altius Telecom Infrastructure Trust' },
+      { name: 'CDPQ (La Caisse)', sameAs: 'https://www.cdpq.com' },
+      { name: 'Indus Towers', sameAs: 'https://www.industowers.com' },
+      { name: 'Summit Digitel' },
     ],
   },
 };
