@@ -1,7 +1,7 @@
-# GEO Analysis — Kautilya PE (kautilya-pe.com)
+# GEO Analysis — Kautilya PE (kautilya.pe)
 
 **Date:** 2026-08-07
-**Scope:** Live site audit (https://www.kautilya-pe.com) — homepage, blog post, newsletter post, stories/case-study page, approach, FAQ, team, careers. Verified against local repo at `/root/kautilya-site`.
+**Scope:** Live site audit (https://www.kautilya.pe) — homepage, blog post, newsletter post, stories/case-study page, approach, FAQ, team, careers. Verified against local repo at `/root/kautilya-site`.
 **Method:** Direct HTTP fetches of raw HTML (curl, no JS execution) to confirm server-rendered content, JSON-LD parsing, robots.txt/llms.txt/sitemap review, external search checks (DuckDuckGo/Bing) for brand-mention presence. No DataForSEO MCP tools were available in this session, so platform scores below are estimated from technical/content signals, not live SERP/ChatGPT scrapes.
 
 ---
@@ -23,7 +23,7 @@ The site's engineering fundamentals (SSR, crawler access, structured data, llms.
 
 ## 1. AI Crawler Access Status
 
-Fetched `https://www.kautilya-pe.com/robots.txt` directly (live, not from repo) and confirmed it matches `public/robots.txt`:
+Fetched `https://www.kautilya.pe/robots.txt` directly (live, not from repo) and confirmed it matches `public/robots.txt`:
 
 | Crawler | Platform | Status |
 |---|---|---|
@@ -51,8 +51,8 @@ No robots.ts route exists in the repo (`app/robots.ts` absent); robots.txt is a 
 ## 2. llms.txt / llms-full.txt Status
 
 Both present and served correctly:
-- `https://www.kautilya-pe.com/llms.txt` → HTTP 200, 188 lines
-- `https://www.kautilya-pe.com/llms-full.txt` → HTTP 200, 676 lines
+- `https://www.kautilya.pe/llms.txt` → HTTP 200, 188 lines
+- `https://www.kautilya.pe/llms-full.txt` → HTTP 200, 676 lines
 
 **Quality assessment — good, with gaps:**
 
@@ -193,6 +193,6 @@ Only 11% of domains get cited by both ChatGPT and Google AIO — Kautilya's tech
 
 ## Files/URLs Referenced
 
-- Live: `https://www.kautilya-pe.com/robots.txt`, `/llms.txt`, `/llms-full.txt`, `/sitemap.xml`, `/news-sitemap.xml`, `/rss.xml`, and page fetches for `/`, `/blog/what-is-buy-side-ma-advisory`, `/newsletter/aurum-housing-com-acquisition`, `/stories/inspire3`, `/stories/borderless`, `/approach`, `/faq`, `/team`, `/careers`
+- Live: `https://www.kautilya.pe/robots.txt`, `/llms.txt`, `/llms-full.txt`, `/sitemap.xml`, `/news-sitemap.xml`, `/rss.xml`, and page fetches for `/`, `/blog/what-is-buy-side-ma-advisory`, `/newsletter/aurum-housing-com-acquisition`, `/stories/inspire3`, `/stories/borderless`, `/approach`, `/faq`, `/team`, `/careers`
 - Local repo (for cross-reference only, no edits made): `/root/kautilya-site/public/robots.txt`, `/root/kautilya-site/public/llms.txt`, `/root/kautilya-site/public/llms-full.txt`, `/root/kautilya-site/app/sitemap.ts`, `/root/kautilya-site/app/stories/[slug]/StoryContent.tsx`
 - Report written to: `/root/kautilya-site/GEO-ANALYSIS.md`

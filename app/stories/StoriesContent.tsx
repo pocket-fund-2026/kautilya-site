@@ -345,10 +345,30 @@ export default function StoriesContent() {
 
         /* Tighter follow section */
         .stories-follow-compact {
-          padding: 40px 48px 80px;
+          padding: 16px 48px 56px;
           max-width: 1200px;
           margin: 0 auto;
         }
+        .follow-strip {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          padding: 18px 24px;
+          border: 1px solid var(--border);
+          text-decoration: none;
+          transition: border-color 0.3s, background 0.3s;
+        }
+        .follow-strip:hover { border-color: var(--gold-dim); background: rgba(255,255,255,0.02); }
+        .follow-strip-label {
+          font-size: 12px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: var(--gold);
+          white-space: nowrap;
+        }
+        .follow-strip-text { flex: 1; font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+        .follow-strip-arrow { color: var(--gold); font-size: 16px; transition: transform 0.3s; }
+        .follow-strip:hover .follow-strip-arrow { transform: translateX(4px); }
 
         @media (max-width: 768px) {
           .video-showcase-section {
@@ -384,8 +404,11 @@ export default function StoriesContent() {
           }
 
           .stories-follow-compact {
-            padding: 28px 24px 60px;
+            padding: 12px 24px 44px;
           }
+          .follow-strip { flex-wrap: wrap; gap: 8px 16px; padding: 16px 18px; }
+          .follow-strip-text { flex-basis: 100%; order: 3; }
+          .follow-strip-arrow { margin-left: auto; }
         }
 
         @media (max-width: 480px) {
@@ -394,7 +417,7 @@ export default function StoriesContent() {
           }
 
           .stories-follow-compact {
-            padding: 24px 20px 50px;
+            padding: 8px 20px 40px;
           }
         }
       `}} />
@@ -503,19 +526,13 @@ export default function StoriesContent() {
         </a>
       </div>
 
-      {/* SOCIAL / FOLLOW */}
+      {/* SOCIAL / FOLLOW — one channel, so a slim strip instead of a full section */}
       <div className="stories-follow-compact">
-        <div className="social-section reveal">
-          <div className="section-eyebrow">Follow Our Thinking</div>
-          <h2 className="section-title">Across Channels</h2>
-          <div className="social-grid">
-            <a className="social-card" href="https://www.linkedin.com/company/kautilya-pe">
-              <div className="social-platform">LinkedIn</div>
-              <div className="social-handle">Kautilya</div>
-              <div className="social-desc">Long-form posts, case reflections, and industry commentary.</div>
-            </a>
-          </div>
-        </div>
+        <a className="follow-strip reveal" href="https://www.linkedin.com/company/kautilya-pe" target="_blank" rel="noopener noreferrer">
+          <span className="follow-strip-label">Follow our thinking</span>
+          <span className="follow-strip-text">Long-form posts, case reflections, and industry commentary on LinkedIn</span>
+          <span className="follow-strip-arrow">&rarr;</span>
+        </a>
       </div>
 
       {/* FULLSCREEN VIDEO PLAYER */}

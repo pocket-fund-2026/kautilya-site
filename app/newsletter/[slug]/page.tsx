@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'article:author': meta.author,
       'article:section': meta.category,
       'article:tag': kw.slice(0, 8).join(','),
-      pagename: `Kautilya Newsletter — ${meta.title}`,
+      pagename: `Kautilya India Deal Sheet — ${meta.title}`,
       subject: meta.description,
       topic: `${meta.category}, M&A advisory India, deal structure analysis`,
       classification: 'Finance / M&A Advisory / Market Intelligence',
@@ -185,7 +185,7 @@ function NewsletterJsonLd({ slug, meta }: { slug: string; meta: (typeof NEWSLETT
     },
     isPartOf: {
       '@type': 'Blog',
-      name: 'The Kautilya Newsletter',
+      name: 'The Kautilya India Deal Sheet',
       url: `${BASE}/newsletter`,
       publisher: org,
     },
