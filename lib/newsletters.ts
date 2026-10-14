@@ -10,6 +10,7 @@ export const NEWSLETTER_SLUGS = [
   'cvc-aavas-financiers-acquisition-explained',
   'everstone-wingify-bootstrapped-buyout-400-500m-platform',
   'brookfield-american-tower-india-altius-acquisition-explained',
+  'bain-capital-manappuram-finance-acquisition-explained',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -895,6 +896,80 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'CDPQ (La Caisse)', sameAs: 'https://www.cdpq.com' },
       { name: 'Indus Towers', sameAs: 'https://www.industowers.com' },
       { name: 'Summit Digitel' },
+    ],
+  },
+  'bain-capital-manappuram-finance-acquisition-explained': {
+    title: 'Bain Capital\'s Manappuram Finance Deal, Explained',
+    subtitle: 'How ₹4,385 Cr of Primary Capital Bought Co-Promoter Status, and Why Not One Share Was Tendered in the Open Offer',
+    description: 'Bain Capital invested ₹4,385 Cr for 18% of Manappuram Finance as co-promoter. The open offer drew zero shares. Here is the structure, the numbers and the risks.',
+    author: 'Dev Shah',
+    datePublished: '2026-10-14',
+    dealDate: '2025-03-20',
+    category: 'Deal Teardowns',
+    readTime: '7 min',
+    wordCount: 3195,
+    keywords: [
+      'Bain Capital Manappuram Finance deal',
+      'Bain Capital Manappuram Finance stake 18%',
+      'Manappuram Finance open offer zero shares tendered',
+      'Manappuram Finance preferential allotment',
+      'Manappuram Finance co-promoter Bain Capital',
+      'how much did Bain Capital invest in Manappuram',
+      'Bain Capital ₹4,385 Cr Manappuram',
+      'Manappuram Finance open offer ₹248.29',
+      'Manappuram Finance CEO search Bain',
+      'Manappuram Finance V P Nandakumar chairman',
+      'primary capital vs secondary sale India',
+      'preferential allotment explained India',
+      'mandatory open offer SEBI takeover code India',
+      'undersubscribed open offer India',
+      'joint control co-promoter PE India',
+      'private equity gold loan NBFC India',
+      'Muthoot vs Manappuram gold loan market',
+      'founder succession private equity India',
+      'Kautilya deal teardown',
+      'India deal sheet newsletter',
+      'M&A deal structure analysis India',
+    ],
+    faqs: [
+      {
+        q: 'How much did Bain Capital invest in Manappuram Finance?',
+        a: 'Bain Capital invested ₹4,385 Cr (about $508M) for an 18% fully diluted stake through a preferential allotment of new shares and warrants at ₹236 a share, a 30% premium to the six-month average. Definitive agreements were signed on March 20, 2025, and the shares were issued on March 27, 2026. The money went into Manappuram, not to a selling shareholder.',
+      },
+      {
+        q: 'Why did no one tender shares in Bain\'s open offer for Manappuram?',
+        a: 'The mandatory open offer was for 26% at ₹236, later ₹248.29 with SEBI-directed interest, but the stock traded around ₹300 throughout the April 6 to 20, 2026 window. No holder sells below the market price, so zero shares were tendered. Bain stayed at its 18% floor rather than the 41.66% it could have reached.',
+      },
+      {
+        q: 'What is a preferential allotment, and how is it different from buying shares?',
+        a: 'In a preferential allotment the company issues new shares directly to a chosen investor at an agreed price, and the cash goes into the business. In a secondary purchase an existing shareholder sells to the buyer and the company receives nothing. Existing shareholders are diluted slightly in a preferential allotment, but nobody exits.',
+      },
+      {
+        q: 'Who controls Manappuram Finance after the Bain deal?',
+        a: 'Control is shared. Bain holds 18% and became co-promoter alongside the V P Nandakumar family, which holds 28.9%. Neither holds a majority, so major decisions need both. The founder moves to non-executive chairman and a CEO search was underway at announcement.',
+      },
+      {
+        q: 'Why did the Bain-Manappuram deal take so long to complete?',
+        a: 'The RBI took eleven months to approve, clearing the microfinance and housing subsidiaries separately, with approval on February 13, 2026. Because of the delay, SEBI directed 10% annual interest on the offer price from October 30, 2025 to May 8, 2026. That interest lifted the offer price from ₹236 to ₹248.29.',
+      },
+      {
+        q: 'Is a zero-tender open offer unusual in India?',
+        a: 'It is increasingly common when a control deal is well received and the stock trades above the formula price. The issue cites JSW-Akzo at 0.44% tendered, ChrysCapital-Novartis at forty shares, CVC-Aavas at 8.83% and now Bain-Manappuram at none. In each case the stock traded above the formula price before the window closed.',
+      },
+    ],
+    about: [
+      'Private equity growth-capital investments in Indian NBFCs',
+      'Preferential allotments and warrants',
+      'Mandatory open offers under the SEBI Takeover Code',
+      'Founder succession and joint control',
+    ],
+    mentions: [
+      { name: 'Bain Capital', sameAs: 'https://www.baincapital.com' },
+      { name: 'Manappuram Finance', sameAs: 'https://www.manappuram.com' },
+      { name: 'V P Nandakumar' },
+      { name: 'Reserve Bank of India', sameAs: 'https://www.rbi.org.in' },
+      { name: 'Securities and Exchange Board of India', sameAs: 'https://www.sebi.gov.in' },
+      { name: 'Kotak Mahindra Capital' },
     ],
   },
 };

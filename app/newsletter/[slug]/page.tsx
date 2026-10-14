@@ -12,6 +12,7 @@ import NewsletterCVCKKRHealthcareGlobal from '@/components/newsletters/Newslette
 import NewsletterCVCAavasFinanciers from '@/components/newsletters/NewsletterCVCAavasFinanciers';
 import NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform from '@/components/newsletters/NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform';
 import NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained from '@/components/newsletters/NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained';
+import NewsletterBainCapitalManappuramFinanceAcquisitionExplained from '@/components/newsletters/NewsletterBainCapitalManappuramFinanceAcquisitionExplained';
 
 const BASE = 'https://www.kautilya.pe';
 
@@ -27,6 +28,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'cvc-aavas-financiers-acquisition-explained': NewsletterCVCAavasFinanciers,
   'everstone-wingify-bootstrapped-buyout-400-500m-platform': NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform,
   'brookfield-american-tower-india-altius-acquisition-explained': NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained,
+  'bain-capital-manappuram-finance-acquisition-explained': NewsletterBainCapitalManappuramFinanceAcquisitionExplained,
 };
 
 type Props = {
