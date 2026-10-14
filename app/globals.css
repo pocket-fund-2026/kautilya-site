@@ -127,11 +127,11 @@ body {
 /* ===== COMMON ELEMENTS ===== */
 .section-eyebrow {
   font-family: var(--font-lora), 'Lora', serif;
-  font-size: 10px;
-  letter-spacing: 6px;
+  font-size: 13px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gold);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -1362,7 +1362,8 @@ a.deal-card { cursor: pointer; }
 }
 
 .phase-label {
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
@@ -1915,8 +1916,8 @@ a.deal-card { cursor: pointer; }
   }
 
   .section-eyebrow {
-    font-size: 9px;
-    letter-spacing: 4px;
+    font-size: 12px;
+    letter-spacing: 3px;
   }
 
   .section-body {
