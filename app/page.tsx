@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: { absolute: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing' },
   description:
     'Buy-side M&A advisory. We find, diligence and close off-market acquisitions from $500K to $10M for PE funds, search funds, family offices and holdcos.',
-  alternates: { canonical: 'https://www.kautilya-pe.com', languages: { 'en': 'https://www.kautilya-pe.com', 'x-default': 'https://www.kautilya-pe.com' } },
+  alternates: { canonical: 'https://www.kautilya.pe', languages: { 'en': 'https://www.kautilya.pe', 'x-default': 'https://www.kautilya.pe' } },
   openGraph: {
     type: 'website',
     title: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
-    url: 'https://www.kautilya-pe.com',
+    url: 'https://www.kautilya.pe',
     description:
       'Buy-side M&A advisory. We find, diligence and close off-market acquisitions from $500K to $10M for PE funds, search funds, family offices and holdcos.',
   },
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Home',
     abstract: 'Kautilya builds proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies — sector-agnostic, off-market, mandate to close.',
     summary: 'Buy-side M&A advisory firm building proprietary acquisition pipelines for private equity funds, search funds, family offices and holding companies across India, US, UAE, and UK.',
-    'og:see_also': 'https://www.kautilya-pe.com/approach',
+    'og:see_also': 'https://www.kautilya.pe/approach',
   },
 };
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const organizationSchema = {
   '@context': 'https://schema.org',

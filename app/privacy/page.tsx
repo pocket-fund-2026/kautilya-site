@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'How Kautilya collects, uses, and protects your personal information.',
-  alternates: { canonical: 'https://www.kautilya-pe.com/privacy' },
+  alternates: { canonical: 'https://www.kautilya.pe/privacy' },
 };
 
 export default function PrivacyPage() {

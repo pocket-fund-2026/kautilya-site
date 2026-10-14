@@ -1,4 +1,4 @@
-const WWW = 'https://www.kautilya-pe.com';
+const WWW = 'https://www.kautilya.pe';
 
 export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

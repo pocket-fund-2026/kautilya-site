@@ -11,7 +11,7 @@ import BlogWhatIsPocketDeals from '@/components/blogs/BlogWhatIsPocketDeals';
 import BlogWhatIsAPrivatePlacementMemorandum from '@/components/blogs/BlogWhatIsAPrivatePlacementMemorandum';
 import BlogBuySideMAAdvisoryWhatItIsAndHowItWorks from '@/components/blogs/BlogBuySideMAAdvisoryWhatItIsAndHowItWorks';
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buying-family-owned-business-india': BlogFamilyBusinessAcquisition,
