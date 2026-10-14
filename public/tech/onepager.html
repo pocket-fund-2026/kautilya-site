@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kautilya, One-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#ffffff;--bg-soft:#f7f6f3;--ink:#15171d;--body:#4a505a;--muted:#868c96;
+ --line:#e7e5df;--gold:#a87d2c;--gold-soft:#c9a24b;--gold-tint:#f4eddb;--dark:#14161c;
+ --ff-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+ --ff-display:'Fraunces',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e8e4;font-family:var(--ff-sans);color:var(--body);-webkit-font-smoothing:antialiased;padding:34px 16px}
+.sheet{width:210mm;min-height:297mm;margin:0 auto;background:#fff;box-shadow:0 30px 70px -30px rgba(0,0,0,.4);padding:16mm 16mm 12mm;position:relative}
+h1,h2,h3,h4{margin:0;color:var(--ink);letter-spacing:-.01em;line-height:1.12;font-weight:600}
+.em{font-family:var(--ff-display);font-style:italic;font-weight:500;color:var(--gold)}
+p{margin:0;line-height:1.55}
+/* header */
+.top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.wordmark{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--ink)}
+.wordmark .mk{width:30px;height:30px;border-radius:8px;background:#0d485d;position:relative;display:grid;place-items:center}
+.wordmark .mk::before{content:"";width:22px;height:22px;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjMxOSAxNjcgMjA0IDIwNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQ1OS43NCwyNTcuODJjMTAuODEtMi4zOSwyNS4xOS0zLjg0LDQyLjMzLTQuOS41NC0uMDMuNTQtLjgyLDAtLjg2LTguMS0uNDctMTUuMS0xLjI0LTIyLjg1LTIuMzUtMjAuMzUtMi45Mi0zNi4zNS0xOC45NC0zOC45Ny0zOS4zMy0uOS02Ljk5LTEuNTUtMTQuOTgtMi0yMi4zNi0uMDMtLjU0LS44Mi0uNTQtLjg1LDAtLjc3LDEzLjMtMi4zNSwzMC4wMi00LjkzLDQyLjM0LS4wOS40NC0uNzIuNDctLjg1LjA0LTUuMjEtMTYuNzQtNy45NS0zOC43NS05LjItNTkuMDItLjAzLS41NC0uODMtLjU0LS44NiwwLTEuMjIsMjAuOTEtNC40Miw0MC43My0xMC40LDU5LjAzLS4xNC40Mi0uNzUuMzktLjg1LS4wNC0yLjk2LTEzLjItNC43LTI3LjQ5LTUuNjItNDIuNS0uMDMtLjU0LS44Mi0uNTQtLjg1LDAtLjQ2LDcuODQtMS4xOSwxNS41My0yLjI1LDIzLjA1LTIuODYsMjAuMzgtMTguOSwzNi40LTM5LjMxLDM4Ljk4LTYuODUuODctMTMuOTEsMS41LTIxLjE0LDEuOTUtLjU0LjAzLS41NC44MiwwLC44NiwxMy43Mi44LDI4LjMyLDIuMjgsNDAuOTksNS4wMS40My4wOS40Ni43MS4wNS44NS0xNy4xNSw1LjU3LTM4LjA0LDguNjItNTkuMDIsOS45MS0uNTQuMDMtLjU0LjgzLDAsLjg2LDIwLjQ0LDEuMTksNDEuMDUsNC4yOCw1OS4wMSwxMCwuNDIuMTMuMzkuNzUtLjA0Ljg1LTEyLjcsMi43Mi0yNy41Niw0LjM0LTQxLjksNS4yMy0uNTQuMDMtLjU0LjgyLDAsLjg2LDcuNTUuNDQsMTQuOTcsMS4xNCwyMi4yMiwyLjEzLDIwLjQsMi44LDM2LjQ1LDE4LjgzLDM5LjExLDM5LjI1LjkzLDcuMTUsMS42LDE1LjEsMi4wNiwyMi42Ni4wMy41NC44My41NC44NiwwLC44My0xNC4yNSwyLjkyLTI5LjIzLDUuODQtNDIuMzQuMS0uNDMuNzEtLjQ2Ljg1LS4wNCw1LjcyLDE3LjMyLDguMzMsMzcuNzcsOS42NCw1OS4wMy4wMy41NC44My41NC44NiwwLDEuMTYtMTkuOTMsNC40OC00MS40NCw5LjkyLTU5LjAyLjEzLS40Mi43Ni0uNC44NS4wNCwyLjY0LDEyLjUzLDMuODcsMjguMjIsNC43NCw0Mi4zNC4wMy41NC44Mi41My44NiwwLC40Ni03Ljg1LDEuMTktMTUuMTksMi4yNS0yMi43MSwyLjg2LTIwLjMyLDE4LjgxLTM2LjMsMzkuMTYtMzguOTgsNy4zMS0uOTcsMTQuODctMS42NiwyMi42Mi0yLjEzLjU0LS4wMy41NC0uODMsMC0uODYtMTMuODUtLjgxLTI5LjU3LTIuNjUtNDIuMzQtNS40Mi0uNDMtLjA5LS40Ni0uNzEtLjA0LS44NSwxNi45MS01LjM2LDM4LjQ2LTgsNTkuMDMtOS4yNi41NC0uMDMuNTQtLjgzLDAtLjg2LTIyLjc0LTEuMzMtNDMuMjEtNS41NC01OS4wMS0xMC41Ni0uNDItLjEzLS4zOS0uNzUuMDQtLjg1Wk00MDcuNzIsMjgyLjI2di4wM2gtLjAzdi0uMDNoLjAzWiIvPjwvc3ZnPg==") center/contain no-repeat}
+.wordmark b{font-size:20px;letter-spacing:-.02em}
+.top .contact{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.7}
+.top .contact b{color:var(--ink);font-weight:600}
+/* hero line */
+.hl{margin:13px 0 3px}
+.hl .eyebrow{font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.hl h1{font-size:25px;line-height:1.08;letter-spacing:-.025em;margin:7px 0 0;max-width:150mm}
+.hl p{font-size:12px;color:var(--body);margin-top:7px;max-width:158mm}
+/* section label */
+.slab{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:15px 0 9px;display:flex;align-items:center;gap:9px}
+.slab::after{content:"";flex:1;height:1px;background:var(--line)}
+/* services */
+.svc{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+.svc .s{border:1px solid var(--line);border-radius:9px;padding:8px 10px;background:var(--bg-soft)}
+.svc .s .n{font-family:var(--ff-display);color:var(--gold);font-size:11px;font-weight:600}
+.svc .s h3{font-size:12.5px;margin:4px 0 3px}
+.svc .s p{font-size:10.5px;color:var(--body);line-height:1.4}
+.svc-lean{display:grid;grid-template-columns:1fr 1fr;gap:4px 26px;margin-top:2px}
+.svc-lean span{font-size:10.5px;color:var(--body);line-height:1.4}
+.svc-lean b{color:var(--ink);font-weight:600}
+/* work */
+.work{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.wc{border:1px solid var(--line);border-radius:10px;padding:10px 13px;position:relative;overflow:hidden}
+.wc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold)}
+.wc-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.wc-name{font-family:var(--ff-display);font-size:17px;font-weight:600;color:var(--ink)}
+.wc-name.sans{font-family:var(--ff-sans);font-weight:700}
+.tag{font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);background:var(--gold-tint);padding:3px 7px;border-radius:999px}
+.status{font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line);display:inline-flex;align-items:center;gap:5px}
+.status.live{color:#177a49;background:#eaf6ef;border-color:#cdead9}
+.status.deliv{color:#1c6bb0;background:#eaf2fa;border-color:#cfe0f1}
+.status.build{color:#a5731a;background:#fbf2df;border-color:#eaddbd}
+.status.design{color:#7a5cc4;background:#f2edfb;border-color:#e0d6f4}
+.status.client{color:#9a6a1e;background:var(--gold-tint);border-color:#e8dcc0}
+.status .dl{width:6px;height:6px;border-radius:50%;background:#18a558}
+.wc .role{font-size:10px;color:var(--muted);font-weight:500;margin-bottom:6px}
+.wc .desc{font-size:11px;color:var(--body);line-height:1.45}
+.wc .metric{margin-top:8px;font-size:10.5px;color:var(--ink)}
+.wc .metric b{font-family:var(--ff-display);color:var(--gold);font-weight:600}
+/* why + cta */
+.bot{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-top:13px;align-items:stretch}
+.why ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.why li{font-size:11px;color:var(--body);padding-left:16px;position:relative;line-height:1.4}
+.why li::before{content:"✦";position:absolute;left:0;color:var(--gold);font-size:9px;top:2px}
+.cta{background:var(--dark);border-radius:12px;padding:12px 16px;color:#c9ccd3;display:flex;flex-direction:column;justify-content:center}
+.cta h3{color:#fff;font-size:16px;line-height:1.2}
+.cta .em{color:var(--gold-soft)}
+.cta p{font-size:10.5px;color:#a2a7b1;margin:7px 0 11px}
+.cta .go{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:#1a150a;font-size:11.5px;font-weight:600;padding:9px 14px;border-radius:999px;text-decoration:none;width:fit-content}
+.cta .em2{color:#fff;font-weight:600}
+/* foot */
+.foot{margin-top:14px;padding-top:10px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:9px;color:var(--muted)}
+.disc{font-size:8.5px;color:#a7abb2;line-height:1.4;margin-top:8px;max-width:170mm}
+@media print{
+ @page{size:A4;margin:0}
+ body{background:#fff;padding:0}
+ /* scale the whole sheet to guarantee a single A4 page (zoom reflows + repaginates) */
+ .sheet{box-shadow:none;width:210mm;min-height:auto;margin:0 auto;padding:11mm 13mm;zoom:0.85}
+}
+@media(max-width:820px){ .sheet{width:100%;padding:26px 22px;min-height:auto} .svc,.work,.bot{grid-template-columns:1fr} }
+.wc-logo{height:14px;width:auto;max-width:64px;object-fit:contain;vertical-align:middle;flex:none}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+ <div class="top">
+ <div>
+ <a class="wordmark" href="https://kautilya-pe.com" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><span class="mk"></span><b style="font-family:var(--ff-display)">Kautilya</b></a>
+ <div style="font-size:10.5px;color:var(--muted);margin-top:6px;letter-spacing:.02em">AI-native software studio · Mumbai, India</div>
+ </div>
+ <div class="contact">
+ <b>dev@pocket-fund.com</b><br>
+ Mumbai, India<br>
+ Founded by Dev Shah
+ </div>
+ </div>
+
+ <div class="hl">
+ <span class="eyebrow">Custom software for India's family businesses</span>
+ <h1>Custom software for India's <span class="em">family businesses.</span></h1>
+ <p>We sit with your business, find the real bottlenecks, the manual work, the blind spots, the month-end scrambles, and build the exact software to fix them. We start from the <b style="color:var(--ink)">problem, not a product</b>. Software you own, not another per-seat SaaS.</p>
+ </div>
+
+ <div class="slab">What we find and fix</div>
+ <div class="svc-lean">
+ <span><b>Work still run on spreadsheets &amp; chats</b> → we build the tool that runs orders, jobs &amp; approvals.</span>
+ <span><b>Numbers only clear at month-end</b> → we build a dashboard that shows where you stand today.</span>
+ <span><b>Staff buried in the same manual task</b> → we build automations that read inboxes and apply your rules.</span>
+ <span><b>A site that doesn't match your standing</b> → we build a premium, private one that earns the right intros.</span>
+ <span><b>Clients &amp; orders tracked in someone's head</b> → we build a CRM shaped to how your business actually sells.</span>
+ <span><b>Hours lost cleaning &amp; matching messy data</b> → we build it to sort, check &amp; reconcile on its own.</span>
+ </div>
+
+ <div class="slab">Selected work</div>
+ <div class="work">
+ <div class="wc">
+ <div class="wc-top"><span style="display:inline-flex;align-items:center;gap:7px"><img class="wc-logo" src="assets/logos/jade.png" alt=""><span class="wc-name" style="letter-spacing:.04em">JADE</span></span><span class="tag">Software suite</span><span class="status live"><span class="dl"></span>Live suite</span></div>
+ <div class="role">Luxury fashion · couture &amp; bridal · JADE by Monica &amp; Karishma</div>
+ <div class="desc"><b>The problem:</b> a couture house running collections, the workshop floor and customer enquiries on scattered spreadsheets and chats. <b>What we built:</b> software that runs every collection, tracks orders through production, and answers customers on WhatsApp, one house, one system.</div>
+ <div class="metric">Fashion CRM · order &amp; production · <b>Tina</b>, a WhatsApp AI assistant</div>
+ </div>
+ <div class="wc">
+ <div class="wc-top"><span style="display:inline-flex;align-items:center;gap:7px"><img class="wc-logo" src="assets/logos/furtados-icon.png" alt=""><span class="wc-name sans">Furtados Music</span></span><span class="tag">Store Intelligence Bot</span><span class="status build">◐ In progress</span></div>
+ <div class="role">Multi-store retail · musical instruments</div>
+ <div class="desc"><b>The problem:</b> pulling each store's numbers together by hand every night, with issues surfacing days too late. <b>What we built:</b> the nightly numbers gather on their own into one clear morning summary, with anything unusual flagged, on their own server.</div>
+ <div class="metric">Replaces <b>hours of manual work each night</b> · issues flagged same-day · your own server</div>
+ </div>
+ <div class="wc">
+ <div class="wc-top"><span style="display:inline-flex;align-items:center;gap:7px"><img class="wc-logo" src="assets/logos/palette.png" alt=""><span class="wc-name">Palette Wealth</span></span><span class="tag">Website &amp; Brand</span><span class="status design">◇ In design</span></div>
+ <div class="role">Private wealth management · family-office advisory</div>
+ <div class="desc"><b>The problem:</b> a wealth practice that had to earn family-office trust before the first conversation. <b>What we built:</b> a private, elegant brand experience, credible from day one, ready to extend into a client portal and CRM.</div>
+ <div class="metric"><b>Design-led</b> · credibility-first · built to extend into a client portal &amp; CRM</div>
+ </div>
+ <div class="wc">
+ <div class="wc-top"><span style="display:inline-flex;align-items:center;gap:7px"><img class="wc-logo" src="assets/logos/chanakya.svg" alt=""><span class="wc-name">Chanakya</span></span><span class="tag">Atelier &amp; Archive</span><span class="status client">◆ Client</span></div>
+ <div class="role">Luxury craft · haute-couture hand-embroidery atelier</div>
+ <div class="desc"><b>The problem:</b> an atelier tracking orders on paper, with past designs at risk of leaking before a show. <b>What we built:</b> one simple, private system, a live view of every order and a searchable archive of past pieces, kept fully in-house.</div>
+ </div>
+ </div>
+
+ <div class="bot">
+ <div class="why">
+ <div class="slab" style="margin-top:0">Why Kautilya</div>
+ <ul>
+ <li>We start from your problem, we learn how your business runs, then build software around it, not the other way round.</li>
+ <li>Software you own, no SaaS lock-in, no per-seat pricing; deployed on your infra or run by us.</li>
+ <li>Mumbai-based &amp; senior-led, a team you deal with directly, built for family businesses and established operators.</li>
+ <li>AI-native, modern AI used only where it removes real work, never as a buzzword.</li>
+ </ul>
+ </div>
+ <div class="cta">
+ <h3>Let's build the software <span class="em">behind your business.</span></h3>
+ <p>Tell us the process eating your team's time, we'll scope a custom tool, automation, CRM, dashboard or site, built and run for you or on your own infra.</p>
+ <a class="go" href="mailto:dev@pocket-fund.com?subject=Working%20session%20, %20Kautilya">Book a working session →</a>
+ <p style="margin-top:9px">✉ <span class="em2">dev@pocket-fund.com</span></p>
+ </div>
+ </div>
+
+ <p class="disc">Engagement status shown per client: JADE's software suite is live in production (its production ERP is rolling out); the Furtados store-intelligence bot is in progress; the Palette Wealth site is in design; the Chanakya atelier system is in build. Brand names and third-party references are used descriptively; case studies published with client permission.</p>
+ <div class="foot"><span>© 2026 Kautilya · Mumbai, India</span><span>Python · Next.js · Anthropic Claude API · Software you own</span></div>
+
+</div>
+</body>
+</html>

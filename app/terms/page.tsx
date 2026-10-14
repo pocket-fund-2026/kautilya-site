@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms and Conditions',
   description: 'Terms and conditions governing the use of Kautilya\'s website and advisory services.',
-  alternates: { canonical: 'https://www.kautilya.pe/terms' },
+  alternates: { canonical: 'https://www.kautilya-pe.com/terms' },
 };
 
 export default function TermsPage() {
@@ -17,7 +17,7 @@ export default function TermsPage() {
       <div className="content-section legal-content" style={{ maxWidth: 760, margin: '0 auto' }}>
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing and using the Kautilya website (kautilya.pe), you accept and agree to be bound by these
+          By accessing and using the Kautilya website (kautilya-pe.com), you accept and agree to be bound by these
           Terms and Conditions. If you do not agree to these terms, please do not use our website.
         </p>
 

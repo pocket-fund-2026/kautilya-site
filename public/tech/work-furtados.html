@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furtados Music, Kautilya</title>
+<meta name="description" content="Custom software for Furtados Music: twelve stores, five accounting systems, one nightly ritual of manual reconciliation, ended. Watch how it works, and see what changed, on their own server.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kautilya.css?v=4">
+</head>
+<body>
+<header class="nav" id="nav">
+ <div class="wrap nav-in">
+ <a class="wordmark" href="https://kautilya-pe.com" target="_blank" rel="noopener"><span class="mk"></span><b style="font-family:var(--ff-display);font-weight:600;font-size:20px;letter-spacing:.01em">Kautilya</b></a>
+ <nav class="nav-links" id="navLinks">
+ <a href="index.html#work">Work</a>
+ <a href="index.html#capabilities">Capabilities</a>
+ <a href="index.html#approach">Approach</a>
+ <a href="index.html#contact">Contact</a>
+ </nav>
+ <div class="nav-cta">
+ <a href="index.html#contact" class="btn btn-primary">Book a call</a>
+ <button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button>
+ </div>
+ </div>
+</header>
+
+<section class="section">
+ <div class="wrap">
+ <a class="backlink" href="index.html#work">Back to work</a>
+
+ <div class="dhero reveal">
+ <img class="dhero-logo" src="assets/logos/furtados-icon.png" alt="Furtados Music logo">
+ <span class="eyebrow">Client · Multi-store retail</span>
+ <h1>Furtados Music</h1>
+ <p class="dlead">Twelve stores, five different accounting systems, and one nightly ritual: retype every number by hand and hope nothing's off. We built the software that ends it, one inbox in, one honest summary out, running quietly on Furtados's own server before the next store opens.</p>
+ </div>
+
+ <div class="dmeta reveal">
+ <span class="mi"><b>Sector:</b> Musical-instruments retail</span>
+ <span class="mi"><b>Engagement:</b> Store-intelligence bot</span>
+ <span class="mi"><b>Status:</b> <span class="status build">◐ In progress</span></span>
+ <span class="mi"><b>Built with:</b> AI · runs on their own server</span>
+ </div>
+
+ <div class="vid-section reveal">
+ <div class="vid-embed">
+ <iframe src="https://www.youtube.com/embed/mDxeUnbUOn0" title="How We Built a Custom AI System for Furtados Music" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+ <p class="vid-cap">A walkthrough of the system we built for Furtados, from the nightly inbox to the summary that's waiting on the desk before the store opens.</p>
+ </div>
+
+ <div class="sys reveal">
+ <div class="sys-head">
+ <span class="num">01</span>
+ <h2>The problem</h2>
+ </div>
+ <div class="sys-body">
+ <div class="sys-main">
+ <p>Furtados Music runs a chain of stores, and each one closes its day on whatever accounting system it uses, Tally, Busy, Zoho, Marg or plain Excel. Every night, head office received a stack of mismatched Excel, CSV and PDF reports and reconciled them by hand, hours of manual work each night, with mistakes and odd numbers only surfacing at month-end, long after they mattered.</p>
+ <ul class="built">
+ <li>Every store on a different accounting system and export format</li>
+ <li>Hours of manual reconciliation by hand, every night</li>
+ <li>Mistakes and anomalies caught late, at month-end, not overnight</li>
+ </ul>
+ </div>
+ <div class="sys-side">
+ <p class="lab">Formats in play</p>
+ <div class="stack">
+ <span class="stk">Tally</span>
+ <span class="stk">Busy</span>
+ <span class="stk">Zoho</span>
+ <span class="stk">Marg</span>
+ <span class="stk">Excel / CSV / PDF</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="sys reveal">
+ <div class="sys-head">
+ <span class="num">02</span>
+ <h2>What we built</h2>
+ </div>
+ <div class="sys-body">
+ <div class="sys-main">
+ <p><b>The solution:</b> custom software that collects every store's nightly report automatically from one inbox, reads it no matter what format it arrives in, and merges it into a single clean view. AI makes sense of the messy, off-template reports and explains anything unusual in plain English. Each store is checked against its own normal, and anything off is flagged, then one clear summary email lands before the next business day.</p>
+ <ul class="built">
+ <li>Every store's nightly report is collected automatically from one inbox, nobody has to chase them</li>
+ <li>Reports in any format, Excel, CSV or PDF, are read and merged into one clean view</li>
+ <li>AI reads the messy, off-template reports and explains anything unusual in plain English</li>
+ <li>Each store is checked against its own normal, and anything off, a cash gap, a missing report, an odd expense, is flagged</li>
+ <li>One clear summary email lands before the next business day; new stores slot in without extra setup</li>
+ </ul>
+ </div>
+ <div class="sys-side">
+ <p class="lab">Stack</p>
+ <div class="stack">
+ <span class="stk">Python</span>
+ <span class="stk">AI</span>
+ <span class="stk">Runs on their own server</span>
+ <span class="stk">Email</span>
+ </div>
+ <p class="lab">What changed</p>
+ <ul class="res io">
+ <li><span class="rv">Hands-free</span><span class="rl">The nightly reconciliation that used to eat hours now happens on its own</span></li>
+ <li><span class="rv">Overnight</span><span class="rl">Mistakes and odd numbers are caught before the next day opens, not at month-end</span></li>
+ <li><span class="rv">One view</span><span class="rl">Every store, on any accounting system, read and merged into one clean summary</span></li>
+ <li><span class="rv">On their server</span><span class="rl">Runs entirely on their own systems, the data never leaves</span></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="sys reveal">
+ <p class="case-quote">The value isn't a dashboard, it's the reconciliation that never has to happen. Every store reports in its own way; the bot reads all of it overnight and puts one honest summary on the desk before the day starts.
+ <span class="attr">Kautilya</span>
+ </p>
+ </div>
+
+ <a class="backlink" href="index.html#work">Back to work</a>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+ <div class="foot-grid">
+ <div class="foot-a">
+ <a class="wordmark" href="https://kautilya-pe.com" target="_blank" rel="noopener"><span class="mk"></span><b style="font-family:var(--ff-display);font-weight:600;font-size:19px">Kautilya</b></a>
+ <p>We build the software behind ambitious businesses, custom tools, CRMs, AI agents and automations, built for real operations.</p>
+ </div>
+ <div class="foot-cols">
+ <div class="foot-col"><h5>Firm</h5><a href="index.html#work">Work</a><a href="index.html#capabilities">Capabilities</a><a href="index.html#approach">Approach</a></div>
+ <div class="foot-col"><h5>Contact</h5><a href="mailto:dev@pocket-fund.com">dev@pocket-fund.com</a><span>Mumbai, India</span><a href="index.html#contact">Book a call</a></div>
+ </div>
+ </div>
+ <p class="disc">Engagement status is shown per client. Brand names and third-party references are used descriptively; case studies are published with client permission.</p>
+ <div class="foot-bot"><span>© <span class="js-year">2026</span> Kautilya · Mumbai, India</span><span>Software · AI · Automation · Mumbai</span></div>
+ </div>
+</footer>
+
+<script src="assets/kautilya.js"></script>
+</body></html>

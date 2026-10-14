@@ -13,15 +13,15 @@ const MD_HEADERS = {
 function notFoundMarkdown(path: string) {
   const body = `# 404: Page not found
 
-The page \`${path}\` does not exist on Kautilya (https://www.kautilya.pe).
+The page \`${path}\` does not exist on Kautilya (https://www.kautilya-pe.com).
 
 Where to look instead:
 
-- [llms.txt](https://www.kautilya.pe/llms.txt): site overview, services, and a list of every key page
-- [Sitemap](https://www.kautilya.pe/sitemap.xml): all published URLs
-- [Homepage](https://www.kautilya.pe/)
-- [Blog](https://www.kautilya.pe/blog)
-- [Contact](https://www.kautilya.pe/engage)
+- [llms.txt](https://www.kautilya-pe.com/llms.txt): site overview, services, and a list of every key page
+- [Sitemap](https://www.kautilya-pe.com/sitemap.xml): all published URLs
+- [Homepage](https://www.kautilya-pe.com/)
+- [Blog](https://www.kautilya-pe.com/blog)
+- [Contact](https://www.kautilya-pe.com/engage)
 `;
   return new Response(body, { status: 404, headers: MD_HEADERS });
 }
@@ -47,7 +47,7 @@ export async function GET(request: Request, ctx: { params: Promise<{ path?: stri
   }
   if (r.status === 404) return notFoundMarkdown(decodeURIComponent(pathname));
   if (!r.ok) {
-    return new Response(`# Error ${r.status}\n\nThis page could not be rendered. See [llms.txt](https://www.kautilya.pe/llms.txt).\n`, {
+    return new Response(`# Error ${r.status}\n\nThis page could not be rendered. See [llms.txt](https://www.kautilya-pe.com/llms.txt).\n`, {
       status: r.status,
       headers: MD_HEADERS,
     });
@@ -60,7 +60,7 @@ export async function GET(request: Request, ctx: { params: Promise<{ path?: stri
   const td = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced', bulletListMarker: '-' });
   td.remove(['form', 'button', 'iframe']);
   const md = td.turndown(html).replace(/\n{3,}/g, '\n\n').trim();
-  const canonical = `https://www.kautilya.pe${pathname === '/' ? '' : decodeURI(pathname)}`;
+  const canonical = `https://www.kautilya-pe.com${pathname === '/' ? '' : decodeURI(pathname)}`;
   const body = `${title ? `<!-- ${title.replace(/-->/g, '')} -->\n` : ''}Source: ${canonical}\n\n${md}\n`;
   return new Response(body, { status: 200, headers: MD_HEADERS });
 }

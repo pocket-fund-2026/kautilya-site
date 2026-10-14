@@ -1,5 +1,5 @@
 # Kautilya | Buy-Side M&A Advisory
-# https://www.kautilya.pe
+# https://www.kautilya-pe.com
 # robots.txt — last updated 2026-05-27
 
 # -----------------------------------------------
@@ -96,6 +96,6 @@ Allow: /
 # -----------------------------------------------
 # Sitemap locations
 # -----------------------------------------------
-Sitemap: https://www.kautilya.pe/sitemap.xml
-Sitemap: https://www.kautilya.pe/image-sitemap.xml
-Sitemap: https://www.kautilya.pe/video-sitemap.xml
+Sitemap: https://www.kautilya-pe.com/sitemap.xml
+Sitemap: https://www.kautilya-pe.com/image-sitemap.xml
+Sitemap: https://www.kautilya-pe.com/video-sitemap.xml

@@ -14,7 +14,7 @@ import NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform from '@/compo
 import NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained from '@/components/newsletters/NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained';
 import NewsletterBainCapitalManappuramFinanceAcquisitionExplained from '@/components/newsletters/NewsletterBainCapitalManappuramFinanceAcquisitionExplained';
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,

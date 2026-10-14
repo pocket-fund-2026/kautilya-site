@@ -1,5 +1,5 @@
 Contact: mailto:DealDesk@kautilya.pe
 Expires: 2027-01-01T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://www.kautilya.pe/.well-known/security.txt
-Policy: https://www.kautilya.pe/privacy
+Canonical: https://www.kautilya-pe.com/.well-known/security.txt
+Policy: https://www.kautilya-pe.com/privacy

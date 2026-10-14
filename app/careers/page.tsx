@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     'join micro PE team India', 'work with search fund India',
     'ETA community jobs India', 'acquisition ecosystem India jobs',
   ],
-  alternates: { canonical: 'https://www.kautilya.pe/careers', languages: { 'en': 'https://www.kautilya.pe/careers', 'x-default': 'https://www.kautilya.pe/careers' } },
+  alternates: { canonical: 'https://www.kautilya-pe.com/careers', languages: { 'en': 'https://www.kautilya-pe.com/careers', 'x-default': 'https://www.kautilya-pe.com/careers' } },
   openGraph: {
     title: 'Careers | Kautilya | Join the Team',
-    url: 'https://www.kautilya.pe/careers',
+    url: 'https://www.kautilya-pe.com/careers',
     description: 'Open roles at Kautilya in deal sourcing, market intelligence, and brand.',
   },
   other: {
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     pagename: 'Kautilya — Careers',
     abstract: 'Open roles at Kautilya in deal sourcing (Analyst) and brand/content (Marketing). Remote-friendly, India-based.',
     summary: 'Join a small, high-intensity M&A advisory team. Open roles: Analyst and Marketing. Apply at careers@kautilya-pe.com.',
-    'og:see_also': 'https://www.kautilya.pe/team',
+    'og:see_also': 'https://www.kautilya-pe.com/team',
   },
 };
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 const hiringOrganization = {
   '@type': 'Organization' as const,
