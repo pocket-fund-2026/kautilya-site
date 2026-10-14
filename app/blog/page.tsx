@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import BlogContent from './BlogContent';
 
-const BASE = 'https://www.kautilya.pe';
+const BASE = 'https://www.kautilya-pe.com';
 
 export const metadata: Metadata = {
   title: { absolute: 'The Kautilya Blog | Buyer Guides & M&A Advisory Notes' },

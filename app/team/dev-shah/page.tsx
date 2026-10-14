@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-const BASE_URL = 'https://www.kautilya.pe';
+const BASE_URL = 'https://www.kautilya-pe.com';
 const PAGE_URL = `${BASE_URL}/team/dev-shah`;
 const LINKEDIN_URL = 'https://www.linkedin.com/in/devlikesbizness';
 const DESCRIPTION =

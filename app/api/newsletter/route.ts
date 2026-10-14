@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
           email,
           reactivate_existing: false,
           send_welcome_email: true,
-          utm_source: 'kautilya.pe',
+          utm_source: 'kautilya-pe.com',
           utm_medium: 'website_popup',
         }),
       }

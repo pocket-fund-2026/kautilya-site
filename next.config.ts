@@ -68,14 +68,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // kautilya.pe is the primary domain (www.kautilya.pe). The apex and the old kautilya-pe.com hosts
-      // redirect permanently to it so one URL per page is indexed.
-      ...['kautilya.pe', 'kautilya-pe.com', 'www.kautilya-pe.com'].map((host) => ({
-        source: '/:path*',
-        has: [{ type: 'host' as const, value: host }],
-        destination: 'https://www.kautilya.pe/:path*',
-        permanent: true,
-      })),
+      // Domain redirects (apex/old hosts to www.kautilya-pe.com) are handled in Vercel project settings.
       // Careers moved off-domain to the hiring funnel (hirepeanalyst.com).
       // Temporary (307) on purpose: the JobPosting structured data and ~60 careers
       // keywords still live in app/careers/ and are NOT yet ported to hirepeanalyst.

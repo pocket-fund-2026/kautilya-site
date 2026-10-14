@@ -1,4 +1,4 @@
-# GEO Analysis — Kautilya PE (kautilya.pe)
+# GEO Analysis — Kautilya PE (kautilya-pe.com)
 
 **Date:** 2026-08-07
 **Scope:** Live site audit (https://www.kautilya.pe) — homepage, blog post, newsletter post, stories/case-study page, approach, FAQ, team, careers. Verified against local repo at `/root/kautilya-site`.
