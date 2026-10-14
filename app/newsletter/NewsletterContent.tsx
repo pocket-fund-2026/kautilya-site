@@ -116,7 +116,7 @@ export default function NewsletterContent() {
 
       <div className="page-hero">
         <div className="phase-label">Deal Table Teardowns</div>
-        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Newsletter</h1>
+        <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya India Deal Sheet</h1>
         <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
         <p className="section-body">
           Deal-structure teardowns from Kautilya&apos;s advisory desk — buyer, target, structure,

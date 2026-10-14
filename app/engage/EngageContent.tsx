@@ -266,7 +266,7 @@ export default function EngageContent() {
         </div>
 
         <style dangerouslySetInnerHTML={{ __html: `
-          .engage-next-steps { max-width: 900px; margin: 72px auto 0; padding: 48px 24px 0; border-top: 1px solid var(--border, color-mix(in srgb, #0b485d 85%, #c6e8f2)); }
+          .engage-next-steps { width: 100%; max-width: 900px; margin: 72px auto 0; padding: 48px 24px 0; border-top: 1px solid var(--border, color-mix(in srgb, #0b485d 85%, #c6e8f2)); }
           .engage-next-steps-title { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 26px; font-weight: 400; color: var(--gold, #c6e8f2); margin-bottom: 28px; text-align: center; }
           .engage-next-steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
           .engage-next-step-num { font-family: var(--font-fraunces), 'Fraunces', serif; font-size: 32px; color: var(--gold, #c6e8f2); margin-bottom: 8px; }

@@ -195,7 +195,7 @@ export default function NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatf
       </div>
 
       <div className="story-hero" id="storyStart">
-        <Link href="/newsletter" className="back-link">← Kautilya Newsletter</Link>
+        <Link href="/newsletter" className="back-link">← India Deal Sheet</Link>
         <div className="meta-row">
           <span className="meta-tag">Deal Teardown</span>
           <span className="meta-tag">Indian SaaS &amp; Private Equity</span>

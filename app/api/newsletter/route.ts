@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
       });
 
       await transporter.sendMail({
-        from: `"Kautilya Newsletter" <${process.env.SMTP_USER}>`,
+        from: `"Kautilya India Deal Sheet" <${process.env.SMTP_USER}>`,
         to: process.env.NEWSLETTER_EMAIL || 'newsletter@kautilya-pe.com',
         subject: `Newsletter Signup: ${email}`,
         html: `
