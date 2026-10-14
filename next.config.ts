@@ -68,8 +68,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Canonical host is https://www.kautilya.pe. The apex (kautilya.pe) and the retired
-      // kautilya-pe.com domain (apex + www) all 301 to it, preserving the path.
+      // kautilya.pe is the primary domain (www.kautilya.pe). The apex and the old kautilya-pe.com hosts
+      // redirect permanently to it so one URL per page is indexed.
       ...['kautilya.pe', 'kautilya-pe.com', 'www.kautilya-pe.com'].map((host) => ({
         source: '/:path*',
         has: [{ type: 'host' as const, value: host }],

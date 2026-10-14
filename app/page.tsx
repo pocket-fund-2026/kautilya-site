@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     'Buy-side M&A advisory. We find, diligence and close off-market acquisitions from $500K to $10M for PE funds, search funds, family offices and holdcos.',
   alternates: { canonical: 'https://www.kautilya.pe', languages: { 'en': 'https://www.kautilya.pe', 'x-default': 'https://www.kautilya.pe' } },
   openGraph: {
+    type: 'website',
     title: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing',
     url: 'https://www.kautilya.pe',
     description:
@@ -92,6 +93,12 @@ const organizationSchema = {
       occupationLocation: { '@type': 'City', name: 'Mumbai' },
       description: 'Buy-side M&A advisory and proprietary deal sourcing for private equity funds, search funds, family offices and holding companies.',
     },
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Mumbai',
+    addressRegion: 'Maharashtra',
+    addressCountry: 'IN',
   },
   contactPoint: [
     {

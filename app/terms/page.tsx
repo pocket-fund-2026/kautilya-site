@@ -17,7 +17,7 @@ export default function TermsPage() {
       <div className="content-section legal-content" style={{ maxWidth: 760, margin: '0 auto' }}>
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing and using the Kautilya website (www.kautilya.pe), you accept and agree to be bound by these
+          By accessing and using the Kautilya website (kautilya.pe), you accept and agree to be bound by these
           Terms and Conditions. If you do not agree to these terms, please do not use our website.
         </p>
 
