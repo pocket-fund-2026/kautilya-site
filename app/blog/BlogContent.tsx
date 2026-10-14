@@ -285,12 +285,12 @@ export default function BlogContent() {
 
       {/* Blog / India Deal Sheet toggle — both panels stay in the DOM so every post link is crawlable */}
       <div className="content-section" style={{ paddingTop: 40 }}>
-        <div className="blog-tabs" role="tablist" aria-label="Blog or India Deal Sheet">
+        <div className="blog-tabs" role="tablist" aria-label="Blog or Newsletter">
           <button type="button" role="tab" id="tab-blog" aria-selected={tab === 'blog'} aria-controls="panel-blog" className="blog-tab" onClick={() => selectTab('blog')}>
             Blog
           </button>
           <button type="button" role="tab" id="tab-newsletter" aria-selected={tab === 'newsletter'} aria-controls="panel-newsletter" className="blog-tab" onClick={() => selectTab('newsletter')}>
-            India Deal Sheet
+            Newsletter
           </button>
         </div>
         <div>
