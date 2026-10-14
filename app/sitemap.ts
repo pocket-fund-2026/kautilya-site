@@ -3,7 +3,7 @@ import { STORY_SLUGS, STORY_META, type StorySlug } from '@/lib/stories';
 import { BLOG_SLUGS, BLOG_META, type BlogSlug } from '@/lib/blogs';
 import { NEWSLETTER_SLUGS, NEWSLETTER_META, type NewsletterSlug } from '@/lib/newsletters';
 
-const WWW = 'https://www.kautilya-pe.com';
+const WWW = 'https://www.kautilya.pe';
 
 // Only images actually embedded on each story's own page are listed here —
 // Google's image-sitemap guidance expects <image:image> entries to match what's

@@ -1,4 +1,4 @@
-# Keyword Inventory — kautilya-pe.com
+# Keyword Inventory — kautilya.pe
 
 Every `keywords` array defined in the codebase, pulled out into one place so
 SEO/content work doesn't require grepping through `app/**/page.tsx` and

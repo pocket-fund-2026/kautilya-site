@@ -12,7 +12,7 @@ import NewsletterCVCKKRHealthcareGlobal from '@/components/newsletters/Newslette
 import NewsletterCVCAavasFinanciers from '@/components/newsletters/NewsletterCVCAavasFinanciers';
 import NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform from '@/components/newsletters/NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform';
 
-const BASE = 'https://www.kautilya-pe.com';
+const BASE = 'https://www.kautilya.pe';
 
 const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'aurum-housing-com-acquisition': NewsletterAurumHousing,

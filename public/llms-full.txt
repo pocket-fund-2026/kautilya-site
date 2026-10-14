@@ -9,7 +9,7 @@
 
 ## BLOG: What Is Buy-Side M&A Advisory? A Beginner's Guide to Buying a Business in India
 
-URL: https://www.kautilya-pe.com/blog/what-is-buy-side-ma-advisory
+URL: https://www.kautilya.pe/blog/what-is-buy-side-ma-advisory
 Author: Dev Shah · Published: 3 August 2026 · 8 min read
 
 Buy-side M&A advisory is professional support for the buyer in a business acquisition — someone
@@ -125,7 +125,7 @@ upward.
 
 ## BLOG: What Is a Search Fund? A Beginner's Guide to Buying a Business With Other People's Money
 
-URL: https://www.kautilya-pe.com/blog/what-is-a-search-fund
+URL: https://www.kautilya.pe/blog/what-is-a-search-fund
 Author: Dev Shah · Published: 28 July 2026 · 9 min read
 
 A search fund is an investment vehicle through which investors pay an entrepreneur to spend about
@@ -329,7 +329,7 @@ investment advice.
 
 ## BLOG: Buying a Family-Owned Business in India: What First-Time Buyers Need to Know
 
-URL: https://www.kautilya-pe.com/blog/buying-family-owned-business-india
+URL: https://www.kautilya.pe/blog/buying-family-owned-business-india
 Author: Dev Shah · Published: 25 July 2026 · 7 min read
 
 Most small businesses for sale in India are family businesses. A promoter built it over 15 or 25
@@ -442,7 +442,7 @@ stay indefinitely involved, which usually signals they haven't committed to the 
 
 ## NEWSLETTER: How to Value a Founder-Owned Pharma Business in India
 
-URL: https://www.kautilya-pe.com/newsletter/torrent-jb-chemicals-pharma-valuation
+URL: https://www.kautilya.pe/newsletter/torrent-jb-chemicals-pharma-valuation
 Author: Dev Shah · Published: 29 June 2025 · 12 min read
 Key metrics: ₹3,100 Cr KKR entry (2020) → ₹25,689 Cr Torrent exit (2025), 8x return in 5 years.
 
@@ -556,7 +556,7 @@ typically be more effective than a large investment bank.
 
 ## NEWSLETTER: Aurum's Housing.com Acquisition, Explained
 
-URL: https://www.kautilya-pe.com/newsletter/aurum-housing-com-acquisition
+URL: https://www.kautilya.pe/newsletter/aurum-housing-com-acquisition
 Author: Dev Shah, Kautilya Deal Table teardown · Published: 25 July 2026 · Deal announced 16 July 2026 · 11 min read
 Key metrics: ₹458 Cr deal value (all-stock) · REA's Aurum stake 5.54% → 24.90% · ~AUD 110M implied loss to REA.
 
@@ -669,8 +669,8 @@ approximate July 2026 spot rates (~₹96.6/$1, ~$0.70/AUD1), not independently d
 
 ## More Kautilya Content
 
-- [Blog index](https://www.kautilya-pe.com/blog)
-- [Newsletter index](https://www.kautilya-pe.com/newsletter)
-- [Stories — case studies and deal journals](https://www.kautilya-pe.com/stories)
-- [FAQ — 23 answered questions on advisory, sourcing, and pricing](https://www.kautilya-pe.com/faq)
-- Company overview, methodology, track record, and team: see [/llms.txt](https://www.kautilya-pe.com/llms.txt)
+- [Blog index](https://www.kautilya.pe/blog)
+- [Newsletter index](https://www.kautilya.pe/newsletter)
+- [Stories — case studies and deal journals](https://www.kautilya.pe/stories)
+- [FAQ — 23 answered questions on advisory, sourcing, and pricing](https://www.kautilya.pe/faq)
+- Company overview, methodology, track record, and team: see [/llms.txt](https://www.kautilya.pe/llms.txt)
