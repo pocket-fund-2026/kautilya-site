@@ -342,10 +342,10 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
     ],
   },
   'coforge-encora-acquisition-explained': {
-    title: 'Coforge Bought Encora for $2.35B With Zero Cash',
+    title: 'Coforge-Encora Acquisition: $2.35B Deal, Sellers Paid in Shares',
     subtitle: 'How an All-Stock Preferential Allotment Handed the Sellers 21.8% of the Buyer',
     description:
-      "Coforge acquired Silicon Valley's Encora at a $2.35B enterprise value and paid for it entirely in new shares, no cash. Advent International and Warburg Pincus walked away with 21.8% of Coforge and two board seats instead of a $1.89B check. Here's how the preferential allotment worked, why the sellers wanted stock, and what it signals about Indian IT M&A.",
+      "Coforge acquired Silicon Valley's Encora at a $2.35B enterprise value, paying the sellers entirely in new Coforge shares rather than cash. Advent International and Warburg Pincus walked away with 21.8% of Coforge and two board seats instead of a $1.89B check. Here's how the preferential allotment worked, why the sellers wanted stock, and what it signals about Indian IT M&A.",
     author: 'Dev Shah',
     datePublished: '2026-08-21',
     dealDate: '2025-12-26',
@@ -423,7 +423,7 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
     ],
   },
   'chryscapital-novartis-india-acquisition-explained': {
-    title: "ChrysCapital's Novartis India Buyout, Explained",
+    title: "ChrysCapital's Novartis India Acquisition, Explained",
     subtitle: 'Why the Public Was Offered ₹860.64 a Share — and Only 40 Took It',
     description:
       "ChrysCapital paid ₹1,445.89 Cr for 70.68% of Novartis India, its first pharma buyout in 27 years. The mandatory open offer was priced at ₹860.64 — only 40 shares were tendered. Kautilya's teardown of the deal structure, the two-tier pricing, and what it means for MNC exits in India.",

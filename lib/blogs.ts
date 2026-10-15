@@ -446,10 +446,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'what-is-sell-side-ma-advisory': {
-    title: 'Sell-Side M&A Advisory: What It Is and How It Works',
-    subtitle: 'A Plain-Language Guide for Business Owners',
+    title: 'Sell Side Advisory: What It Is and How It Works',
+    subtitle: 'A Plain-Language Guide to Sell-Side M&A for Business Owners',
     description:
-      'A plain-language guide to sell-side M&A advisory: what it is, how the process works, what it costs, and how to tell if you actually need one.',
+      'Sell side advisory means hiring an M&A advisor to represent you when you sell your company. How the process works, typical fee structures, and how to tell if you need one.',
     author: 'Dev Shah',
     datePublished: '2026-09-16',
     category: 'Seller Guides',
@@ -591,7 +591,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'what-is-a-private-placement-memorandum': {
-    title: 'What Is a Private Placement Memorandum? A Complete Guide',
+    title: 'What Is a Private Placement Memorandum (PPM)? A Complete Guide',
     subtitle: 'What a PPM Is, Why It Exists, What Goes Inside One, and How It Differs From a Prospectus or a Pitch Deck',
     description:
       'A plain-language guide to what a private placement memorandum is, who uses one, what it contains, and why it matters to anyone raising or investing in private capital.',

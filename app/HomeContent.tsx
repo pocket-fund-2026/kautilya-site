@@ -3,6 +3,7 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { HOME_FAQS } from '@/lib/homeFaqs';
 
 const ThreeScene = dynamic(() => import('@/components/ThreeScene'), { ssr: false });
 
@@ -296,6 +297,14 @@ return (
   .explore .pathway-card:hover .card-title, .explore .pathway-card:hover .card-desc, .explore .pathway-card:hover .card-arrow { color: var(--brand-white); }
   .explore .pathway-card:hover .card-arrow { transform: translateX(8px); }
 
+  .explore .home-faq { padding: clamp(56px, 7vw, 96px) var(--gutter) 0; max-width: 900px; margin: 0 auto; }
+  .explore .home-faq .faq-item { border-top: 1px solid var(--brand-teal); padding: 22px 0; }
+  .explore .home-faq .faq-item:last-child { border-bottom: 1px solid var(--brand-teal); }
+  .explore .home-faq h3 { font: 600 clamp(1.0625rem, 1rem + 0.35vw, 1.25rem)/1.35 var(--font-poppins), 'Poppins', sans-serif; letter-spacing: 0; color: var(--brand-teal); margin: 0 0 10px; }
+  .explore .home-faq p { font-size: 0.9375rem; line-height: 1.7; color: var(--brand-teal); margin: 0; }
+  .explore .home-faq .faq-more { margin-top: 24px; font-size: 0.9375rem; }
+  .explore .home-faq .faq-more a { color: var(--brand-teal); text-decoration: underline; }
+
   .process-section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
   .process-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; margin-top: 50px; }
   .process-pillar { position: relative; padding-top: 40px; }
@@ -452,6 +461,19 @@ return (
           </Link>
         </div>
       </div>
+      <div className="home-faq reveal">
+          <div className="section-eyebrow">FAQ</div>
+          <h2 className="section-title">Frequently Asked Questions About Kautilya</h2>
+          <div>
+            {HOME_FAQS.map((f) => (
+              <div className="faq-item" key={f.question}>
+                <h3>{f.question}</h3>
+                <p>{f.answer}</p>
+              </div>
+            ))}
+          </div>
+          <p className="faq-more">More answers on pricing, timelines and deal structures are on the <Link href="/faq">full FAQ page</Link>.</p>
+        </div>
       </section>
 
       {/* PHASE DOTS */}

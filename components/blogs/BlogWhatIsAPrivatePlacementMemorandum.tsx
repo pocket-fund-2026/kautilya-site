@@ -253,7 +253,9 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
         <p>
           This guide covers what a PPM actually is, why it exists, what goes inside one, and how
           it differs from the other documents it gets confused with: a prospectus, a business
-          plan, and a pitch deck.
+          plan, and a pitch deck. (If you are selling a company rather than raising capital, the
+          equivalent buyer-facing document is a Confidential Information Memorandum, covered in
+          our guide to <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link>.)
         </p>
 
         <div className="key-takeaways">

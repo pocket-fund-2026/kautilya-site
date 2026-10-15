@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HomeContent from './HomeContent';
+import { HOME_FAQS } from '@/lib/homeFaqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Kautilya | Buy-Side M&A Advisory & Off-Market Deal Sourcing' },
@@ -224,12 +225,23 @@ const professionalServiceSchema = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: HOME_FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+
 export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <HomeContent />
     </>
   );

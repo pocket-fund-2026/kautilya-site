@@ -331,7 +331,9 @@ export default function BlogWhatIsBuySideMAAdvisory() {
         <h2>Buy-Side vs. Sell-Side Advisory</h2>
         <p>
           In short: <strong>a sell-side advisor works for the seller, a buy-side advisor works
-          for you.</strong>
+          for you.</strong> If you are on the other side of the table, our guide to{' '}
+          <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link> explains how
+          the seller&apos;s process runs.
         </p>
         <div className="deal-table-wrap">
           <table className="deal-table">

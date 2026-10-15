@@ -234,9 +234,9 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <span className="meta-tag">M&amp;A Advisory</span>
           <span className="meta-tag">7 min read</span>
         </div>
-        <h1>Sell-Side M&amp;A Advisory: What It Is and How It Works</h1>
+        <h1>Sell Side Advisory: What It Is and How It Works</h1>
         <div className="subtitle">
-          A Plain-Language Guide for Business Owners
+          A Plain-Language Guide to Sell-Side M&amp;A for Business Owners
         </div>
         <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 September 2026</p>
         <div className="hero-line" />
@@ -245,8 +245,11 @@ export default function BlogWhatIsSellSideMAAdvisory() {
       {/* ── Body: uses .story-body, .constraint-list, .story-coda ── */}
       <article className="story-body">
         <p>
-          Sell-side M&amp;A advisory means hiring someone to represent you when you sell your
-          company — finding buyers, running negotiations, and closing the deal.
+          Sell side advisory (also called sell-side M&amp;A advisory) means hiring someone to
+          represent you when you sell your company — finding buyers, running negotiations, and
+          closing the deal. The advisor works for the seller, is usually paid a retainer plus a
+          success fee at closing, and is most useful when your company is large enough to attract
+          several competing buyers.
         </p>
         <p>
           Most content on this topic is published by advisory firms as marketing for their own
