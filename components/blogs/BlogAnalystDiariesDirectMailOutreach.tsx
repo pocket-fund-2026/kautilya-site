@@ -280,7 +280,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
       {/* ── Body: uses .story-body, .pull-quote, .constraint-list, .story-coda ── */}
       <article className="story-body">
         <p>
-          Kautilya runs physical outreach — direct-mail deal origination — for buy-side clients
+          Kautilya runs physical outreach (direct-mail deal origination) for buy-side clients
           searching for acquisition targets in India. This is what that looks like day to day,
           from me, Sidharth, who runs this account.
         </p>
@@ -296,7 +296,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
           <ul>
             <li>~2,000 direct-mail letters sent to date on one buy-side mandate, each one built from a person-verified lead, not a mail-merge template.</li>
             <li>5–10% of sourced leads get cut on review; RTS (return to sender) on live mail sits under 10%.</li>
-            <li>Every batch clears three approval gates — lead list, hook, and mail-house data proof — before it ships.</li>
+            <li>Every batch clears three approval gates before it ships: lead list, hook, and mail-house data proof.</li>
             <li>The acquisition mandate itself moved mid-campaign as sector criteria were tightened with the client in real time.</li>
           </ul>
         </div>
@@ -307,8 +307,8 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
           Total sent to this client to date: ~2,000.
         </p>
         <p>
-          The client handed over ~350 semi-enriched leads to start. Everything past that —
-          research, verification, decision-maker mapping — was built from scratch as part of this
+          The client handed over ~350 semi-enriched leads to start. Everything past that
+          (research, verification, decision-maker mapping) was built from scratch as part of this
           buy-side deal origination process.
         </p>
 
@@ -343,7 +343,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
           <li><strong>Find the real decision-maker.</strong> Founder → managing director → co-founder → CEO, in that order, because half the &ldquo;founders&rdquo; a tool like Apollo lists aren&apos;t even at the company anymore.</li>
           <li><strong>Get a direct email and number</strong> for that person, not a generic company inbox.</li>
           <li><strong>Verify the physical address</strong> the letter will actually be mailed to.</li>
-          <li><strong>Write a one-line hook</strong> specific to that business — never reused.</li>
+          <li><strong>Write a one-line hook</strong> specific to that business, never reused.</li>
         </ul>
         <p>
           Every batch also clears three separate approval gates before it ships: lead list
@@ -353,7 +353,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
 
         <h2>The Hit Rate: What Gets Cut, and Why</h2>
         <p>
-          ~5–10% of sourced leads get cut on review — wrong mandate fit, bad data, or the wrong
+          ~5–10% of sourced leads get cut on review: wrong mandate fit, bad data, or the wrong
           business entirely. Apollo and similar enrichment tools mis-tag small businesses
           constantly; a lead flagged under the right industry can turn out to be something else
           entirely once you check the actual website.
@@ -361,7 +361,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
         <p>
           RTS (return to sender) on this campaign currently sits under 10%, mostly companies that
           haven&apos;t updated their listed address online. The letter template, the hooks, and
-          every print-run negotiation with the mail house are handled directly — the client has
+          every print-run negotiation with the mail house are handled directly, and the client has
           never had to touch that relationship.
         </p>
 
@@ -404,7 +404,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
           client: young-founder businesses cut (no obvious succession angle), pure-play
           construction and builders cut (too competitive), solar cut (too cyclical). Metal
           manufacturing and fabrication, and height-compliance, rope-access, and engineering
-          services were added — sectors underweighted in the first pass that turned out to have
+          services were added, sectors underweighted in the first pass that turned out to have
           more opportunity than expected.
         </p>
         <p>
@@ -421,7 +421,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
 
         <h2>What This Post Doesn&apos;t Claim</h2>
         <p>
-          The client doesn&apos;t share reply data — he&apos;s on retainer specifically to run this
+          The client doesn&apos;t share reply data. He&apos;s on retainer specifically to run this
           outreach and keeps response information to himself, though he&apos;s mentioned getting a
           few replies back. So this post makes no meeting-booked claim. What it shows is the
           volume, the process, and the fact that every one of these 2,000 letters had a person,
@@ -435,7 +435,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
         <h2>Where Direct Mail Fits in Buy-Side Deal Origination</h2>
         <p>
           Kautilya runs buy-side deal origination for acquisition entrepreneurs and search funds.
-          Direct mail is one channel inside that broader process — it works because it forces
+          Direct mail is one channel inside that broader process. It works because it forces
           person-by-person verification that a purely digital, high-volume cold-email approach
           skips. If you&apos;re earlier in evaluating how buy-side sourcing works end to end, see{' '}
           <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
@@ -449,19 +449,19 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
 
           <div className="blog-faq-item">
             <div className="blog-faq-q">What is direct-mail deal origination?</div>
-            <p className="blog-faq-a">Direct-mail deal origination is off-market outreach where a buy-side team mails physical letters — not cold emails — to verified decision-makers at businesses that fit an acquisition mandate, to open a conversation about a potential sale. It&apos;s one channel inside a broader buy-side deal sourcing process, usually paired with digital sourcing and direct relationship outreach.</p>
+            <p className="blog-faq-a">Direct-mail deal origination is off-market outreach where a buy-side team mails physical letters, not cold emails, to verified decision-makers at businesses that fit an acquisition mandate, to open a conversation about a potential sale. It&apos;s one channel inside a broader buy-side deal sourcing process, usually paired with digital sourcing and direct relationship outreach.</p>
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">Is direct mail effective for sourcing acquisition targets?</div>
-            <p className="blog-faq-a">It can be, when every lead is individually verified rather than mail-merged. The main advantage over cold email is that it forces person-by-person research — confirming the actual decision-maker, business fit, and address — before a letter ever ships, which cuts down on wasted outreach to the wrong person or a defunct listing.</p>
+            <p className="blog-faq-a">It can be, when every lead is individually verified rather than mail-merged. The main advantage over cold email is that it forces person-by-person research (confirming the actual decision-maker, business fit, and address) before a letter ever ships, which cuts down on wasted outreach to the wrong person or a defunct listing.</p>
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">What is a good RTS (return to sender) rate for an M&amp;A outreach letter campaign?</div>
-            <p className="blog-faq-a">Under 10% is a reasonable benchmark for a well-verified list. Most RTS on a campaign like this comes from businesses that haven&apos;t updated their listed address online, not from bad list-building — which is why address verification is a distinct step before mailing, separate from confirming the business and decision-maker.</p>
+            <p className="blog-faq-a">Under 10% is a reasonable benchmark for a well-verified list. Most RTS on a campaign like this comes from businesses that haven&apos;t updated their listed address online, not from bad list-building. That is why address verification is a distinct step before mailing, separate from confirming the business and decision-maker.</p>
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">How do you find the real decision-maker at a small or family-owned business for cold outreach?</div>
-            <p className="blog-faq-a">Check in order: founder, then managing director, then co-founder, then CEO — because enrichment tools like Apollo frequently list a founder who has since stepped back from day-to-day operations. Verifying against the business&apos;s own website and recent activity, rather than trusting the enrichment tool&apos;s tag, catches cases where an adult child or a hired MD is now the actual decision-maker.</p>
+            <p className="blog-faq-a">Check in order: founder, then managing director, then co-founder, then CEO, because enrichment tools like Apollo frequently list a founder who has since stepped back from day-to-day operations. Verifying against the business&apos;s own website and recent activity, rather than trusting the enrichment tool&apos;s tag, catches cases where an adult child or a hired MD is now the actual decision-maker.</p>
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">Why would a buy-side firm change its acquisition mandate mid-campaign?</div>
