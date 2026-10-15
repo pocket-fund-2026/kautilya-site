@@ -1221,7 +1221,7 @@ a.deal-card { cursor: pointer; }
 .story-body {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 48px 100px;
+  padding: 40px 48px 100px;
 }
 
 .story-body p {
