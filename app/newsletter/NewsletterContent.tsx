@@ -22,7 +22,7 @@ export default function NewsletterContent() {
           text-decoration: none;
           border: 1px solid var(--border);
           border-radius: 3px;
-          padding: 52px 60px;
+          padding: 34px 40px;
           background: rgba(255,255,255,0.015);
           transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.22,1,0.36,1);
           position: relative;
@@ -91,7 +91,7 @@ export default function NewsletterContent() {
           color: var(--text-secondary);
           line-height: 1.85;
           max-width: 640px;
-          margin-bottom: 36px;
+          margin-bottom: 22px;
         }
         .blog-card-arrow {
           font-size: 11px;
@@ -119,12 +119,12 @@ export default function NewsletterContent() {
         <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya India Deal Sheet</h1>
         <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
         <p className="section-body">
-          Deal-structure teardowns from Kautilya&apos;s advisory desk — buyer, target, structure,
+          Deal-structure teardowns from Kautilya&apos;s advisory desk: buyer, target, structure,
           and a scorecard, every time, so you can compare deals as the archive grows.
         </p>
       </div>
 
-      <div className="content-section" style={{ paddingTop: 40 }}>
+      <div className="content-section" style={{ paddingTop: 32, paddingBottom: 56 }}>
         <div className="phase-label" style={{ marginBottom: 24 }}>Latest</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           {slugs.map((slug) => {

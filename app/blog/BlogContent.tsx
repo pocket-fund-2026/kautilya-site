@@ -142,7 +142,7 @@ export default function BlogContent() {
           display: inline-flex;
           border: 1px solid var(--border);
           border-radius: 3px;
-          margin-bottom: 40px;
+          margin-bottom: 28px;
         }
         .blog-tab {
           font-family: var(--font-lora), 'Lora', serif;
@@ -198,7 +198,7 @@ export default function BlogContent() {
           text-decoration: none;
           border: 1px solid var(--border);
           border-radius: 3px;
-          padding: 32px 28px;
+          padding: 26px 28px;
           background: rgba(255,255,255,0.015);
           transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.22,1,0.36,1);
           position: relative;
@@ -277,14 +277,14 @@ export default function BlogContent() {
         <h1 className="section-title" style={{ fontSize: 52, marginTop: 12 }}>The Kautilya Blog &amp; India Deal Sheet</h1>
         <div className="gold-line" style={{ margin: '20px 0 20px', marginLeft: 0 }} />
         <p className="section-body">
-          Advisory guides and deal-structure teardowns from the Kautilya team — market
+          Advisory guides and deal-structure teardowns from the Kautilya team: market
           intelligence and acquisition frameworks in the Blog, deal-by-deal teardowns in the
           India Deal Sheet.
         </p>
       </div>
 
       {/* Blog / India Deal Sheet toggle — both panels stay in the DOM so every post link is crawlable */}
-      <div className="content-section" style={{ paddingTop: 40 }}>
+      <div className="content-section" style={{ paddingTop: 32, paddingBottom: 56 }}>
         <div className="blog-tabs" role="tablist" aria-label="Blog or Newsletter">
           <button type="button" role="tab" id="tab-blog" aria-selected={tab === 'blog'} aria-controls="panel-blog" className="blog-tab" onClick={() => selectTab('blog')}>
             Blog
