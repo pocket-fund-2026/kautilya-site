@@ -8,6 +8,7 @@ export const BLOG_SLUGS = [
   'what-is-pocket-deals',
   'what-is-a-private-placement-memorandum',
   'buy-side-m-a-advisory-what-it-is-and-how-it-works',
+  'analyst-diaries-kautilya-seo-from-zero',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -730,6 +731,66 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Buy-side M&A advisory',
       'M&A advisory fees',
       'Acquisitions in India',
+    ],
+  },
+  'analyst-diaries-kautilya-seo-from-zero': {
+    title: 'Analyst Diaries: How I Built Kautilya\'s SEO From Zero',
+    subtitle: 'The research, the fixes and the results behind a three-site search strategy for a buy-side firm',
+    description: 'How Kautilya built SEO from zero for a buy-side firm: 30 competitors studied, three sites with separate jobs, how to read Search Console data, and early results.',
+    author: 'Sidharth',
+    datePublished: '2026-10-15',
+    category: 'Analyst Diaries',
+    readTime: '10 min',
+    wordCount: 3139,
+    keywords: [
+      'SEO for search fund firms',
+      'SEO for M&A advisory firm',
+      'buy-side advisory SEO India',
+      'how to read Google Search Console',
+      'Search Console impressions clicks CTR average position',
+      'brand vs non-brand queries',
+      'competitor content analysis SEO',
+      'deal sourcing SEO India',
+      'SEO strategy three sites',
+      'AI search readiness llms.txt',
+      'Kautilya SEO case study',
+      'search fund marketing India',
+    ],
+    faqs: [
+      {
+        q: 'What does BIB stand for?',
+        a: 'Buy a Business India. It is our site for first-time buyers and search fund candidates.',
+      },
+      {
+        q: 'What does SIB stand for?',
+        a: 'Sell Indian Business. It is our site for owners considering a sale.',
+      },
+      {
+        q: 'Why does a search fund firm need SEO?',
+        a: 'Searchers research alone for weeks. Clear answers to their questions put Kautilya in front of them before they start talking to advisors.',
+      },
+      {
+        q: 'Why blogs and a newsletter?',
+        a: 'A blog builds a lasting page for each question our clients ask. The newsletter covers live deals while people are searching for them and gives readers a reason to come back.',
+      },
+      {
+        q: 'Why run three sites instead of one?',
+        a: 'A single domain ranking for buyer and seller questions ends up with its own pages competing. Separate sites give each reader one clear destination.',
+      },
+      {
+        q: 'How long until SEO shows results?',
+        a: 'Expect 6 to 8 weeks before a page settles, and longer for a new site.',
+      },
+      {
+        q: 'Is Kautilya getting leads from SEO yet?',
+        a: 'We cannot say yet. Positions are improving, but we have not tied any enquiry to search.',
+      },
+    ],
+    about: [
+      'Search engine optimization',
+      'Search funds',
+      'Buy-side M&A advisory',
+      'Generative engine optimization',
     ],
   },
 };
