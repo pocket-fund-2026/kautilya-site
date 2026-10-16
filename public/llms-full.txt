@@ -440,6 +440,209 @@ stay indefinitely involved, which usually signals they haven't committed to the 
 
 ---
 
+## BLOG: Analyst Diaries: How I Built Kautilya's SEO From Zero
+
+URL: https://www.kautilya-pe.com/blog/analyst-diaries-kautilya-seo-from-zero
+Author: Sidharth · Published: 15 October 2026 · 10 min read
+
+Kautilya built its SEO from zero by studying 30 competitor firms, giving each of three sites one job, and fixing how every page is built rather than publishing more. Within a month, average position improved sharply and all three sites showed for far more searches. We cannot yet tie any enquiry to search.
+
+Most of Kautilya's clients are [search funds](https://www.kautilya-pe.com/blog/what-is-a-search-fund) looking to acquire a business. We source the targets, run outreach and handle due diligence for them. A growing share of our work is also sell-side, where we find buyers for an owner. Both start the same way: someone types a question into Google long before they ever call an advisor.
+
+This is the working log of how I set up SEO to answer those questions. What I researched, what I changed, what the first month of data showed, and what I'm changing next.
+
+## Key Takeaways
+
+- SEO is how a searcher who is researching alone finds Kautilya before they talk to any advisor. For a slow, relationship-heavy business it is the one channel that keeps working in the background.
+- We run three sites with separate jobs: Kautilya, **BIB (Buy a Business India)** for people who want to acquire, and **SIB (Sell Indian Business)** for owners who want to sell.
+- I studied 30 competitor firms across five regions before writing anything. The finding that shaped everything: volume is not our gap. We publish roughly ten times what a typical competitor does. What we publish and how each page is built is the gap.
+- Within a month, Kautilya's average position in Google improved sharply and all three sites are showing for far more searches. Turning that visibility into clicks is the next step.
+- Quick explainers of live Indian deals are our strongest content, and none of the 30 competitors do them.
+- We cannot yet tie a single enquiry to search. This post makes no lead claim.
+
+## The Work in Numbers
+
+- **30** competitor firms studied across 5 regions
+- **1,600+** competitor content pieces logged and tagged
+- **3** sites, each with its own job
+- **Weekly** blog and newsletter rhythm on Kautilya
+
+## What SEO Is, and Why It Matters for a Search Fund Firm
+
+SEO is making sure that when someone searches a question we can answer, our page is one of the first ten results. Page two is close to invisible.
+
+A searcher or an owner researches for weeks. They ask how to find businesses for sale, what due diligence covers, how an open offer works, what a [buy-side advisor](https://www.kautilya-pe.com/blog/what-is-buy-side-ma-advisory) costs. The firm that explained it clearly is the one they call. AI assistants now answer the same questions, and they draw on pages that already rank and are cleanly structured, so the same work feeds how AI tools describe us.
+
+## Why Blogs, and Why a Newsletter
+
+Google ranks pages, not websites. Each page can answer one question well, and a site only shows up for the questions it has a page for. A homepage and a services page cover a handful of searches. A blog is how a firm builds a page for every question its clients actually ask.
+
+For a search fund firm, those questions are specific. How do I find a business to buy, what goes in a [private placement memorandum](https://www.kautilya-pe.com/blog/what-is-a-private-placement-memorandum), how was a particular deal structured, what does a buy-side advisor do. Each one is a searcher in the middle of their work, and a clear answer is the first time they meet Kautilya.
+
+**Blogs answer the question that stays the same.** A guide on a PPM or on due diligence is useful this year and next year. It keeps collecting searches long after it is published.
+
+**The newsletter handles what is happening now.** Our [newsletter](https://www.kautilya-pe.com/newsletter) breaks down a live deal: who bought what, how it was structured, and what it means for a mid-market buyer, with our own take on it. People search deals by name while they are in the news, and these teardowns rank on their own. They also give a reader a reason to come back every week instead of once.
+
+Put together, the blog is the library and the newsletter is the habit. One brings in people who are searching today, the other keeps them reading until they are ready to talk.
+
+## Why Three Sites
+
+One domain cannot rank for both buyer and seller questions without its own pages competing. So each site has one job.
+
+| Site | Full name | Job | Reader |
+| --- | --- | --- | --- |
+| Kautilya | Kautilya PE | Destination. Buy-side advisory, deal teardowns, deal terms, original research. | Searchers, funds, advisors |
+| BIB | Buy a Business India | Teaches first-time buyers how to buy in India: price, funding, finding, diligence. | People who want to acquire |
+| SIB | Sell Indian Business | Captures owners thinking about an exit: tax, valuation, buyers, documents. Supports our newer sell-side work. | People who want to sell |
+
+Every BIB and SIB post links to a deeper Kautilya page where it helps the reader. BIB and SIB each publish three posts a week, Monday, Wednesday and Friday. Kautilya publishes one blog post and one newsletter teardown a week.
+
+## How to Read SEO Data, With Kautilya as the Example
+
+SEO data comes from two places, and they answer different questions. **Google Search Console** shows what happens on Google before anyone reaches us. **Google Analytics** shows what happens on our site after they arrive. Most of the confusion comes from mixing the two up.
+
+### The terms, in plain words
+
+- **Impression.** Our page appeared in someone's search results. It does not mean they saw it or scrolled to it. It means we were in the list.
+- **Click.** Someone chose our page from that list.
+- **Click-through rate (CTR).** Clicks divided by impressions. It tells you how tempting the result looked once it appeared. A strong title and description raise it.
+- **Average position.** Where the page ranked in the list, averaged. Positions 1 to 10 are page one, 11 to 20 are page two. Almost all clicks go to page one.
+- **Query.** The exact words someone typed. "Buy side advisory" and "buy side M&A advisory" are two different queries, even though they mean the same thing.
+- **Page.** The address on our site that Google showed. One page can appear for hundreds of queries, and one query can show several of our pages.
+- **Brand and non-brand queries.** Brand queries contain our name. Non-brand queries are everything else, and they are the real test of discovery.
+- **Indexing.** Google has to know a page exists before it can show it. A page that is not indexed gets zero impressions, whatever its quality.
+- **Sessions and key events (Analytics).** A session is a visit to the site. A key event is an action we care about, such as an enquiry. Without one defined, we can see visits but not what they led to.
+
+### What the numbers tell you when you read them together
+
+No single metric means much alone. The pattern across them tells you what to do. Here are the patterns we look for, using Kautilya as the example.
+
+| Pattern | What it usually means | Kautilya example and fix |
+| --- | --- | --- |
+| Impressions but no clicks, on page one | The page ranks, but the title does not earn the click | We rewrote titles and descriptions on pages that ranked and got ignored |
+| Impressions at positions 11 to 20 | The page is close. A stronger answer could move it to page one | Our sell-side explainer sat here early, so it was the first page we strengthened |
+| Positions far down the list | The page does not match the query, is too new, or Google does not yet trust it | New pages and SIB sit here. We check indexing first, then match the title to the query |
+| Two of our pages for one query | They compete, and Google may pick the weaker one | Our sell-side post was shown for buy-side searches ahead of the buy-side page. We now link them deliberately |
+| Clicks come only from brand queries | People find us because they already know us, not through discovery | Most of our clicks are still brand. Non-brand is the number to grow |
+| Impressions rise while average position falls | New pages are appearing for many deep, long-tail queries. This is usually healthy | We saw this in August. It recovered as pages matured |
+| No impressions at all | Google may not have indexed the page | Always the first check on a new page or site |
+
+### What an analyst should look at each week
+
+- Non-brand queries, and whether more of them are appearing.
+- Queries sitting just off page one, since a small change can move them.
+- Pages with plenty of impressions and almost no clicks.
+- Which page Google chooses for each important query, and whether it is the page we want.
+- Whether new pages have been indexed.
+- Trends over weeks, not single days. Daily numbers swing and Search Console runs a couple of days behind.
+
+### What to work on, in order
+
+1. **Make sure Google can find and index the page.** Nothing else matters until this is true.
+2. **Make the page match the query.** The title and main heading should contain the words people type, and the answer should come first.
+3. **Lift the pages that are almost there.** Work on queries just off page one before chasing new ones.
+4. **Earn the click.** Improve titles and descriptions on pages that rank but get skipped.
+5. **Fill real gaps with new content.** Write only for questions we have no page for.
+6. **Build authority last.** Links from other sites help the hardest terms, but only once the page itself deserves to rank.
+
+## Where Kautilya Stands
+
+Reading our own data the same way gives a clear picture, without needing the exact figures.
+
+- **Visibility is up.** Our average position improved a lot in a month, and we now show up for far more searches than a quarter ago.
+- **Traffic is growing across the sites.** Visits to Kautilya and BIB are up on the previous month, and SIB went from almost nothing to showing in search and earning its first clicks within weeks.
+- **Deal explainers lead.** They reach page one and are our best performers with people who were not searching for us by name.
+- **The foundation is in place.** Technical health, site structure and a weekly publishing rhythm are set up, so new content has a clean base.
+- **Clicks are the next lever.** We are showing up higher, and sharper titles and stronger pages are how that turns into clicks.
+
+## What I Did, Step by Step
+
+1. **Built a competitor content log.** I started with 4 firms per region, widened to 141 candidates, then cut to the 30 that publish regularly across the US, UK, Europe, Australia and India. Every piece got a title, date, URL, angle, audience and format tag. I used rule-based tagging first, then corrected by hand.
+2. **Read the pattern, not single posts.** I looked at what each firm repeats over months, since sustained repetition is the best signal available without their traffic data.
+3. **Mapped our own queries to our own pages.** From Search Console I matched each query to the page Google chose to show, with brand searches removed. That is how I found pages competing with each other.
+4. **Opened every page-one result for the terms where we sit just off page one.** I compared titles, headings, dates, authors, proof and structure against ours.
+5. **Fixed the technical layer.** Titles and meta descriptions, canonical tags, sitemaps, robots rules, structured data, redirects and mobile layout.
+6. **Logged every change.** Each SEO change goes into a dated change log tied to a site and page, so a later movement can be traced to an action instead of guessed at.
+7. **Added AI readiness.** llms.txt guidance and markdown responses for AI crawlers, with a weekly scan.
+
+## What the Research Showed
+
+- Guides and market data carry the field. Together they are over half of competitor output.
+- About 40% of firms run a dated, recurring series such as monthly deal counts. Nobody tracks the Indian mid-market.
+- The strongest content programmes take one search question and repeat it as a template, across sectors or fees.
+- Only about one piece in ten is written for buyers.
+- Almost no one analyses a live, named deal quickly. Most "news" in India is reposted press.
+- Pages that rank match the query in the title and URL, show a date and an author, and put proof on the page: timelines, fee ranges, a worked example in rupees. Length alone did not decide it.
+
+## Results So Far, and What We're Improving Next
+
+| Area | What I did | Result so far | What to change |
+| --- | --- | --- | --- |
+| Deal explainers | Published breakdowns of live Indian deals on Kautilya and BIB | Our best performers. They reach page one for deal-name searches and bring in most of our clicks from people who were not searching for us by name | Get the first take out faster after a deal, then follow with a full teardown. This is the clearest repeatable win |
+| Curated guides for searchers | Wrote a private placement memorandum guide aimed at people running a search | Strongest early pickup of any new guide we have published. It confirmed that practical resources for searchers get found | Make more resources of this kind, each with our own view and proof |
+| Core buy-side page | Rebuilt it as a pillar page | Rebuilt this month, so it is early. The research showed us why it lagged, which makes the fix targeted | Link it to related pages, add fee ranges, timelines and named proof |
+| CTR fixes | Rewrote titles and descriptions on 7 pages that ranked but earned no clicks | Live and being tracked. A quick, low-effort fix that takes 6 to 8 weeks to read | Put a number and the year in titles, as competitors do |
+| India buyer guides on BIB | Wrote tax, diligence, lease and structure guides in rupees | Several already rank on page one, and no foreign firm covers India at this depth | Add a dedicated "How to Buy a Business in India" hub and tie guides to it |
+| Glossary pages | Launched about 50 terms for each of BIB and SIB | Early and low traffic. A useful test of what searchers want to read | Fold the best terms into full guides, where readers are already looking |
+| Head terms | Tested "buy a business" style terms | Page one for these is mostly listings sites, so we learned where the real opening is | Aim at the guide and long-tail versions, where we can win |
+| Technical health | Fixed redirects, schema errors, canonicals, mobile layout | All three sites pass our technical audit | Keep the weekly scan running |
+| SIB | Launched blog, calculator and redesign | Already showing in search and earning its first clicks within weeks of launch | Confirm every page is indexed, then review at 8 to 10 weeks |
+
+## What I Did Differently
+
+Most firms in our space publish a couple of times a month. We started publishing on a fixed weekly rhythm across three sites, with a stated reason for every topic and a defined next step for the reader. Every Kautilya topic is reviewed before it goes live. The change log and the weekly report mean every action can be checked against what happened next.
+
+## What We Haven't Gotten To Yet
+
+Most of these are areas we have not focused on yet, and the fixes are well understood.
+
+- **Reaching people who do not know us yet.** Much of our traffic comes from people who already know the name. The deal breakdowns and searcher guides are aimed squarely at this.
+- **Moving pages from page two to page one.** A good share of our visibility sits just off page one. These pages are close, and a sharper title or clearer structure is usually enough to move them.
+- **Definition-style pages.** They have not pulled traffic yet, so we are folding the best of them into fuller guides.
+- **Page details.** Some pages still lack dates, authors and fee ranges. This is a quick edit we have not scheduled yet.
+- **Links from other sites.** We have not started on this and it is a later stage. Content comes first, and links help the harder terms once the pages deserve it.
+
+## Where We Want to Take It
+
+These are directions, not promises. SEO moves slowly, and we would rather adjust to what the data shows than commit to a calendar.
+
+1. **Curated content for searchers.** The PPM guide did well, and it points to what works: practical resources written for people running a search. We want to build more pieces like it across the searcher journey, from finding businesses to diligence to running the company.
+2. **Deal breakdowns with our take.** Explaining a deal is useful. Saying what we think it means for a mid-market buyer is what no one else in our space is doing. We want that view on more deals.
+3. **Strengthen the core pages first.** Make our main service pages clearer, with dates, authors, fee ranges and named proof, before adding more around them.
+4. **Keep what earns its place.** Review every post at 1, 4, 8 and 12 weeks. Expand what works and fold or retire what does not, as we already did with glossary pages.
+
+## What This Post Doesn't Claim
+
+We do not claim leads, meetings or revenue from search. Rankings this early are directional. We have no competitor traffic data, so "works" for a competitor means they keep doing it. Where numbers appear, they are rounded.
+
+## Sources & Method
+
+### What this is
+
+A first-person operating account from the Kautilya SEO analyst. Trends come from Google Search Console and Google Analytics and are described directionally. Competitor findings come from our content log of 30 firms and 1,600+ items, plus manual reads of page-one results in October 2026.
+
+### What's deliberately not claimed
+
+No lead, meeting or revenue attribution. No backlink or authority data. Not investment advice.
+
+### Frequently Asked Questions
+
+**What does BIB stand for?** Buy a Business India. It is our site for first-time buyers and search fund candidates.
+
+**What does SIB stand for?** Sell Indian Business. It is our site for owners considering a sale.
+
+**Why does a search fund firm need SEO?** Searchers research alone for weeks. Clear answers to their questions put Kautilya in front of them before they start talking to advisors.
+
+**Why blogs and a newsletter?** A blog builds a lasting page for each question our clients ask. The newsletter covers live deals while people are searching for them and gives readers a reason to come back.
+
+**Why run three sites instead of one?** A single domain ranking for buyer and seller questions ends up with its own pages competing. Separate sites give each reader one clear destination.
+
+**How long until SEO shows results?** Expect 6 to 8 weeks before a page settles, and longer for a new site.
+
+**Is Kautilya getting leads from SEO yet?** We cannot say yet. Positions are improving, but we have not tied any enquiry to search.
+
+---
+
 ## NEWSLETTER: How to Value a Founder-Owned Pharma Business in India
 
 URL: https://www.kautilya-pe.com/newsletter/torrent-jb-chemicals-pharma-valuation
