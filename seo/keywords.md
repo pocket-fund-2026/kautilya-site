@@ -670,6 +670,11 @@ how much did CVC pay for Aavas Financiers, largest housing finance buyout India,
 PE buyout NBFC governance risk India
 ```
 
+### Analyst Diaries: How I Built Kautilya's SEO From Zero
+```
+SEO for search fund firms, SEO for M&A advisory firm, buy-side advisory SEO India, how to read Google Search Console, Search Console impressions clicks CTR average position, brand vs non-brand queries, competitor content analysis SEO, deal sourcing SEO India, SEO strategy three sites, AI search readiness llms.txt, Kautilya SEO case study, search fund marketing India
+```
+
 ---
 
 ## Notes for maintenance

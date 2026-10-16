@@ -742,6 +742,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     category: 'Analyst Diaries',
     readTime: '10 min',
     wordCount: 3139,
+    image: '/images/blogs/analyst-diaries-kautilya-seo-from-zero/analyst-diaries-kautilya-seo-from-zero-hero.webp',
     keywords: [
       'SEO for search fund firms',
       'SEO for M&A advisory firm',
