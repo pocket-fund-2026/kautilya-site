@@ -66,8 +66,8 @@ export const STORY_META: Record<StorySlug, StoryMeta> = {
     datePublished: '2024-01-16',
   },
   'pocket-fund': {
-    title: 'The Pocket Fund: A Student-Led Acquisition Fund',
-    description: 'The Pocket Fund: how a $5,000 search fund became the model for buying, operating, and selling small, cash-flowing online businesses.',
+    title: 'Pocket Fund: A Student-Led $5,000 Acquisition Fund',
+    description: 'Pocket Fund is a student-led acquisition fund that started as a $5,000 search fund to buy, run for 12-18 months and sell small online businesses. How the model works.',
     author: 'Dev Shah',
   },
   'college-startups': {
@@ -129,6 +129,24 @@ export type FaqItem = { question: string; answer: string };
 export type HowToStep = { name: string; text: string };
 
 export const STORY_FAQ: Partial<Record<StorySlug, FaqItem[]>> = {
+  'pocket-fund': [
+    {
+      question: 'What is Pocket Fund?',
+      answer: 'Pocket Fund is a student-led acquisition fund that began in October 2023 as a $5,000 search fund for buying small online businesses. The plan: buy a business on Acquire.com, run it for 12-18 months, then sell it at a targeted 5x valuation.',
+    },
+    {
+      question: 'How is Pocket Fund different from a traditional search fund?',
+      answer: 'A traditional search fund raises search capital from investors to fund a full-time hunt for one company to run. Pocket Fund started with a $5,000 pool aimed at small online businesses, run by students alongside their studies, and repeats the buy-run-sell cycle.',
+    },
+    {
+      question: 'What kind of businesses did Pocket Fund plan to buy?',
+      answer: 'Online businesses priced under $5,000 that solve a niche problem with little direct competition, fit the members\' skills, and can be run profitably with systems and automation.',
+    },
+    {
+      question: 'What happened to Pocket Fund?',
+      answer: 'The model grew into Kautilya, a buy-side M&A advisory firm, and the Pocket Fund name lives on in the Pocket Fund holding company (pocket-fund.com), which buys and runs small digital businesses.',
+    },
+  ],
   'runify': [
     {
       question: 'Can you buy a business with little or no money down?',

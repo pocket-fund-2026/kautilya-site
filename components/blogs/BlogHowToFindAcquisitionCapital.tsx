@@ -507,7 +507,9 @@ export default function BlogHowToFindAcquisitionCapital() {
           <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
           {' '}— the conversations you log in either process are the exhibit that makes the capital conversation possible in the first place. If those conversations are with a founder-owner rather than a professional seller, the dynamics differ meaningfully; see{' '}
           <Link href="/blog/buying-family-owned-business-india">buying a family-owned business in India</Link>
-          {' '}for what to expect.
+          {' '}for what to expect. To see the same process from the seller&apos;s chair, including how
+          sell side advisory is structured and paid, read{' '}
+          <Link href="/blog/what-is-sell-side-ma-advisory">our guide to sell side advisory</Link>.
         </p>
 
         {/* FAQ */}

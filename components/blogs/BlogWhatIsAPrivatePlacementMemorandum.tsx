@@ -234,7 +234,7 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
           <span className="meta-tag">Capital Raising</span>
           <span className="meta-tag">8 min read</span>
         </div>
-        <h1>What Is a Private Placement Memorandum? A Complete Guide</h1>
+        <h1>What Is a Private Placement Memorandum (PPM)? A Complete Guide</h1>
         <div className="subtitle">
           What a PPM Is, Why It Exists, What Goes Inside One, and How It Differs From a Prospectus or a Pitch Deck
         </div>
@@ -244,6 +244,12 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
 
       {/* ── Body: uses .story-body, .constraint-list, .story-coda ── */}
       <article className="story-body">
+        <p>
+          A private placement memorandum (PPM) is the disclosure document an issuer gives
+          prospective investors in a private securities offering. It sets out the business, the
+          risks, the use of proceeds and the legal terms of the offering, so investors can decide
+          before committing capital. In the US, it is most often used in offerings under SEC Rule 506 of Regulation D.
+        </p>
         <p>
           A private placement memorandum sounds like the kind of document only a securities
           lawyer would read closely. In practice, anyone raising capital privately, or investing
@@ -405,6 +411,36 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
           signed against once real capital is on the table.
         </p>
 
+        <h2>What the SEC Says: Rule 506(b) and Disclosure</h2>
+        <p>
+          For US offerings, the SEC&apos;s page on{' '}
+          <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/private-placements-rule-506b" target="_blank" rel="noopener noreferrer">Rule 506(b) private placements</a>{' '}
+          sets the limits that shape when a PPM-style disclosure package is expected:
+        </p>
+        <div className="deal-table-wrap">
+          <table className="deal-table">
+            <thead>
+              <tr><th>Question</th><th>Rule 506(b) answer, per the SEC</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Accredited investors</td><td data-label="Rule 506(b) answer">The company can sell securities to an unlimited number of accredited investors</td></tr>
+              <tr><td>Non-accredited investors</td><td data-label="Rule 506(b) answer">No more than 35 non-accredited investors in any 90-calendar day period</td></tr>
+              <tr><td>General solicitation</td><td data-label="Rule 506(b) answer">No general solicitation or advertising to market the securities</td></tr>
+              <tr><td>Disclosure</td><td data-label="Rule 506(b) answer">Non-accredited investors must be given disclosure documents and the financial statement information specified in Rule 506; anything given to accredited investors must also be available to them</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          In practice, this is why issuers prepare a full PPM even when every investor is
+          accredited: one document, equal information for everyone, and a record to defend later.
+          Rule 506(c), which permits general solicitation, has its own conditions; check the SEC
+          site and speak to a securities attorney before choosing between them. If your raise is
+          to fund an acquisition, see{' '}
+          <Link href="/blog/how-to-find-acquisition-capital">how to find acquisition capital</Link>{' '}
+          and{' '}
+          <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>.
+        </p>
+
         <h2>Who Actually Uses a PPM</h2>
         <p>
           PPMs show up anywhere private securities are being sold to investors, which covers a
@@ -487,6 +523,10 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
           <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 
           <div className="blog-faq-item">
+            <div className="blog-faq-q">How many investors can invest under Rule 506(b)?</div>
+            <p className="blog-faq-a">Per the SEC, an unlimited number of accredited investors and up to 35 non-accredited investors in any 90-calendar day period, with no general solicitation. Non-accredited investors must receive disclosure documents and specified financial statement information.</p>
+          </div>
+          <div className="blog-faq-item">
             <div className="blog-faq-q">Is a private placement memorandum legally required?</div>
             <p className="blog-faq-a">It depends on the jurisdiction and the exemption being used. Some private-offering exemptions require formal written disclosure along the lines of a PPM; others don&apos;t mandate a specific document but still expect the issuer to avoid misleading investors, which in practice means preparing something functionally equivalent anyway.</p>
           </div>
@@ -515,6 +555,10 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
         {/* Sources & Method */}
         <div className="sources-appendix">
           <div className="phase-label" style={{ marginBottom: 20 }}>Sources &amp; Method</div>
+          <h3>Reference material</h3>
+          <ul>
+            <li>U.S. Securities and Exchange Commission, &ldquo;Private Placements - Rule 506(b)&rdquo;, <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/private-placements-rule-506b" target="_blank" rel="noopener noreferrer">sec.gov</a> (accessed 17 October 2026). Source of the investor limits, solicitation and disclosure points in the Rule 506(b) table. The sentence on why issuers prepare a full PPM is Kautilya&apos;s commentary.</li>
+          </ul>
           <h3>Labelled inference, not data</h3>
           <p>This piece describes the general structure and purpose of a private placement memorandum, and the exemption logic behind private offerings, as commonly practiced across jurisdictions, not as figures from a specific published dataset. Not legal or investment advice, and not a substitute for a securities attorney reviewing any specific offering — exemption categories, disclosure thresholds, and filing requirements vary by jurisdiction.</p>
         </div>

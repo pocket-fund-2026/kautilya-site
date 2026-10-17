@@ -690,6 +690,9 @@ export default function NewsletterSunPharmaOrganon() {
           <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
           {' '}and, for the search-fund-specific version of financed acquisitions,{' '}
           <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>.
+          Sellers in deals like this are typically advised by a banker; see{' '}
+          <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link>{' '}
+          for how that side of the table works.
         </p>
 
         {/* FAQ */}

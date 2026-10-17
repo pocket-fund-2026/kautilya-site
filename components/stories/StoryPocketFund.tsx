@@ -103,7 +103,7 @@ export default function StoryPocketFund() {
           <span className="meta-tag geo">Claremont, CA</span>
           <span className="meta-tag stage">The Pocket Fund &middot; Oct 2023</span>
         </div>
-        <h1>The Pocket Fund: Where Success Isn&rsquo;t Defined by the VC Funding You Raise</h1>
+        <h1>Pocket Fund: Where Success Isn&rsquo;t Defined by the VC Funding You Raise</h1>
         <div className="subtitle">
           A student-led <span style={{ color: 'var(--gold)' }}>$5,000</span> search fund built around one idea: you can buy, operate, and sell small online businesses without raising venture capital.
         </div>
@@ -128,6 +128,11 @@ export default function StoryPocketFund() {
 
         <h2>What Is Pocket Fund?</h2>
         <p>
+          <strong>Pocket Fund is a student-led acquisition fund.</strong> It began in October 2023 as a
+          $5,000 search fund for buying small online businesses, running each for 12&ndash;18 months,
+          and selling at a targeted 5x valuation. The model later grew into Kautilya.
+        </p>
+        <p>
           Pocket Fund is a home for a <strong>new kind of entrepreneur</strong> &mdash; where success
           isn&rsquo;t defined by how much VC funding you raise.
         </p>
@@ -145,6 +150,32 @@ export default function StoryPocketFund() {
             <span style={{ color: 'var(--gold)' }}>Do it for the love of entrepreneurship.</span>
           </p>
         </div>
+
+        <h2>Pocket Fund vs a Traditional Search Fund</h2>
+        <div style={{ overflowX: 'auto', margin: '24px 0' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, color: 'var(--text-secondary)' }}>
+            <thead>
+              <tr>
+                <th style={{ textAlign: 'left', padding: '10px 12px', borderBottom: '1px solid var(--border)', color: 'var(--gold)' }}></th>
+                <th style={{ textAlign: 'left', padding: '10px 12px', borderBottom: '1px solid var(--border)', color: 'var(--gold)' }}>Pocket Fund (2023)</th>
+                <th style={{ textAlign: 'left', padding: '10px 12px', borderBottom: '1px solid var(--border)', color: 'var(--gold)' }}>Traditional search fund</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Capital</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>$5,000 target ($4,000 raised at the time of writing)</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Search capital from investors, then acquisition capital</td></tr>
+              <tr><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Target</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Online businesses under $5,000</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>One established company to run as CEO</td></tr>
+              <tr><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Plan</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Buy, run 12&ndash;18 months, sell at 5x, repeat</td><td style={{ padding: '10px 12px', borderBottom: '1px solid var(--border)' }}>Search, acquire, operate long term</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The figures in the Pocket Fund column are from this October 2023 edition. For the traditional
+          model, read <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>; for what happened
+          next, see <Link href="/blog/what-is-pocket-deals">Pocket Deals</Link> and{' '}
+          <Link href="/blog/how-to-find-acquisition-capital">how to find acquisition capital</Link>.
+          The Stanford GSB publishes the reference research on traditional search funds in its{' '}
+          <a href="https://www.gsb.stanford.edu/faculty-research/centers-initiatives/ces/research/search-funds" target="_blank" rel="noopener noreferrer">Search Fund Study</a>.
+        </p>
 
         <h2>The Simple 3-Step Plan</h2>
 
@@ -234,6 +265,21 @@ export default function StoryPocketFund() {
             <div className="metric-label">Sourcely.ai Growth</div>
           </div>
         </div>
+
+        <section style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid var(--border)' }}>
+          <h2>Pocket Fund: Frequently Asked Questions</h2>
+          {[
+            ['What is Pocket Fund?', 'Pocket Fund is a student-led acquisition fund that began in October 2023 as a $5,000 search fund for buying small online businesses. The plan: buy a business on Acquire.com, run it for 12-18 months, then sell it at a targeted 5x valuation.'],
+            ['How is Pocket Fund different from a traditional search fund?', 'A traditional search fund raises search capital from investors to fund a full-time hunt for one company to run. Pocket Fund started with a $5,000 pool aimed at small online businesses, run by students alongside their studies, and repeats the buy-run-sell cycle.'],
+            ['What kind of businesses did Pocket Fund plan to buy?', "Online businesses priced under $5,000 that solve a niche problem with little direct competition, fit the members' skills, and can be run profitably with systems and automation."],
+            ['What happened to Pocket Fund?', 'The model grew into Kautilya, a buy-side M&A advisory firm, and the Pocket Fund name lives on in the Pocket Fund holding company (pocket-fund.com), which buys and runs small digital businesses.'],
+          ].map(([q, a]) => (
+            <div key={q} style={{ padding: '16px 0', borderBottom: '1px solid var(--border)' }}>
+              <h3 style={{ fontSize: 18, margin: '0 0 8px' }}>{q}</h3>
+              <p style={{ margin: 0 }}>{a}</p>
+            </div>
+          ))}
+        </section>
 
         <div className="story-coda">
           <div className="coda-text">

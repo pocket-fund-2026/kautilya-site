@@ -198,15 +198,15 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'what-is-buy-side-ma-advisory': {
-    title: 'What Is Buy-Side M&A Advisory?',
+    title: 'Buy-Side M&A Advisory in India: What It Is and Why Buyers Use It',
     subtitle: "A Beginner's Guide to Buying a Business in India",
     description:
-      'New to acquiring a business? Learn what a buy-side M&A advisor does, why buyers in India use one, and how the process works — explained simply.',
+      'Buy-side M&A advisory is professional support for the buyer in an acquisition. What an advisor does, the five-stage process, and why buyers in India use one.',
     author: 'Dev Shah',
     datePublished: '2026-08-03',
     category: 'Buyer Guides',
     readTime: '8 min',
-    wordCount: 1550,
+    wordCount: 1750,
     image: '/images/blogs/what-is-buy-side-ma-advisory/what-is-buy-side-ma-advisory-hero.webp',
     keywords: [
       // Primary
@@ -255,6 +255,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'how long does M&A due diligence take',
     ],
     faqs: [
+      {
+        q: 'What is buy-side M&A advisory?',
+        a: 'Buy-side M&A advisory is professional support for the buyer in a business acquisition: an advisor defines the target criteria, sources and approaches owners, values the business, negotiates, and coordinates due diligence through to closing.',
+      },
       {
         q: 'How much does a buy-side advisor cost?',
         a: 'Fee structures vary by firm and deal size, but most follow a retainer plus success fee model — a fixed monthly or upfront fee during sourcing and diligence, plus a percentage tied to the deal actually closing. This aligns the advisor\'s incentive with finding you a genuinely good acquisition, rather than billing hours regardless of outcome. Ask any advisor to walk through their fee structure and what triggers the success fee before engaging them.',
@@ -455,7 +459,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     datePublished: '2026-09-16',
     category: 'Seller Guides',
     readTime: '7 min',
-    wordCount: 1750,
+    wordCount: 1950,
     keywords: [
       // Primary
       'sell-side M&A advisory',
@@ -488,6 +492,14 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'how long does selling a business take with an advisor',
     ],
     faqs: [
+      {
+        q: 'What is sell side advisory?',
+        a: 'Sell side advisory is a service in which an M&A advisor represents the owner of a company in selling it: valuing the business, preparing marketing materials, approaching buyers confidentially, negotiating, and managing the deal to closing. It is usually paid as a retainer plus a success fee.',
+      },
+      {
+        q: 'What is the Lehman formula?',
+        a: 'A sliding-scale fee formula that pays 5% of the first $1 million, 4% of the second, 3% of the third, 2% of the fourth, and 1% of everything above $4 million. It remains in use in limited situations, mainly with finders, and modern advisors usually negotiate their own scale.',
+      },
       {
         q: 'Is a sell-side M&A advisor the same as a sell-side analyst?',
         a: 'No. A sell-side analyst is a job in equity research, working for a brokerage and covering publicly traded stocks. It has nothing to do with selling a private company. A sell-side M&A advisor is the role described in this article.',
@@ -595,7 +607,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     title: 'What Is a Private Placement Memorandum (PPM)? A Complete Guide',
     subtitle: 'What a PPM Is, Why It Exists, What Goes Inside One, and How It Differs From a Prospectus or a Pitch Deck',
     description:
-      'A plain-language guide to what a private placement memorandum is, who uses one, what it contains, and why it matters to anyone raising or investing in private capital.',
+      'A private placement memorandum (PPM) is the disclosure document for a private securities offering. What goes in one, SEC Rule 506(b) limits, and how it differs from a prospectus.',
     author: 'Dev Shah',
     datePublished: '2026-09-28',
     category: 'Fundamentals',
@@ -644,6 +656,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'private placement memorandum for acquisition capital',
     ],
     faqs: [
+      {
+        q: 'How many investors can invest under Rule 506(b)?',
+        a: 'Per the SEC, an unlimited number of accredited investors and up to 35 non-accredited investors in any 90-calendar day period, with no general solicitation. Non-accredited investors must receive disclosure documents and specified financial statement information.',
+      },
       {
         q: 'Is a private placement memorandum legally required?',
         a: "It depends on the jurisdiction and the exemption being used. Some private-offering exemptions require formal written disclosure along the lines of a PPM; others don't mandate a specific document but still expect the issuer to avoid misleading investors, which in practice means preparing something functionally equivalent anyway.",

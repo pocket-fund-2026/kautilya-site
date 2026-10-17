@@ -404,6 +404,36 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <li>Is there a fee owed if the company sells later, after the advisor&apos;s contract ends?</li>
         </ul>
 
+        <h3>The classic fee scale: the Lehman formula</h3>
+        <p>
+          The best-known sliding scale is the Lehman formula, which pays a percentage of the amount
+          raised or the deal value, with the percentage stepping down at each million dollars.
+          According to the{' '}
+          <a href="https://en.wikipedia.org/wiki/Lehman_Formula" target="_blank" rel="noopener noreferrer">Wikipedia entry on the Lehman Formula</a>,
+          the original tiers are:
+        </p>
+        <div className="deal-table-wrap">
+          <table className="deal-table">
+            <thead>
+              <tr><th>Tier of deal value</th><th>Original Lehman rate</th><th>Fee on that tier</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>First $1 million</td><td data-label="Original Lehman rate">5%</td><td data-label="Fee on that tier">$50,000</td></tr>
+              <tr><td>Second $1 million</td><td data-label="Original Lehman rate">4%</td><td data-label="Fee on that tier">$40,000</td></tr>
+              <tr><td>Third $1 million</td><td data-label="Original Lehman rate">3%</td><td data-label="Fee on that tier">$30,000</td></tr>
+              <tr><td>Fourth $1 million</td><td data-label="Original Lehman rate">2%</td><td data-label="Fee on that tier">$20,000</td></tr>
+              <tr><td>Everything above $4 million</td><td data-label="Original Lehman rate">1%</td><td data-label="Fee on that tier">$10,000 per additional $1 million</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          By our arithmetic on those tiers, a $5 million sale would carry a fee of $150,000, an
+          effective rate of 3%. The same Wikipedia entry notes that the original formula &ldquo;remains
+          in use in limited situations,&rdquo; mainly with finders, so treat it as a reference point
+          for how sliding scales work, not as a quote. Modern advisors usually negotiate their own
+          scale.
+        </p>
+
         <h2>Sell-Side Advisor vs Investment Banker vs Business Broker</h2>
         <p>
           These terms are often used loosely, which can lead a seller to the wrong type of
@@ -473,6 +503,14 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 
           <div className="blog-faq-item">
+            <div className="blog-faq-q">What is sell side advisory?</div>
+            <p className="blog-faq-a">Sell side advisory is a service in which an M&amp;A advisor represents the owner of a company in selling it: valuing the business, preparing marketing materials, approaching buyers confidentially, negotiating, and managing the deal to closing. It is usually paid as a retainer plus a success fee.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">What is the Lehman formula?</div>
+            <p className="blog-faq-a">A sliding-scale fee formula that pays 5% of the first $1 million, 4% of the second, 3% of the third, 2% of the fourth, and 1% of everything above $4 million. It remains in use in limited situations, mainly with finders, and modern advisors usually negotiate their own scale.</p>
+          </div>
+          <div className="blog-faq-item">
             <div className="blog-faq-q">Is a sell-side M&amp;A advisor the same as a sell-side analyst?</div>
             <p className="blog-faq-a">No. A sell-side analyst is a job in equity research, working for a brokerage and covering publicly traded stocks. It has nothing to do with selling a private company. A sell-side M&amp;A advisor is the role described in this article.</p>
           </div>
@@ -501,6 +539,10 @@ export default function BlogWhatIsSellSideMAAdvisory() {
         {/* Sources & Method */}
         <div className="sources-appendix">
           <div className="phase-label" style={{ marginBottom: 20 }}>Sources &amp; Method</div>
+          <h3>Reference material</h3>
+          <ul>
+            <li>Wikipedia, &ldquo;Lehman Formula&rdquo;, <a href="https://en.wikipedia.org/wiki/Lehman_Formula" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Lehman_Formula</a> (accessed 17 October 2026). Source of the 5%/4%/3%/2%/1% tiers. The dollar fee column and the $5 million example are Kautilya&apos;s arithmetic on those tiers.</li>
+          </ul>
           <h3>Labelled inference, not data</h3>
           <p>This piece describes the general structure of sell-side M&amp;A engagements and fee conventions (retainer plus success fee, the Lehman-formula sliding scale) as commonly practiced, not as figures from a specific published dataset. Not investment advice, and not a recommendation on any specific engagement letter or fee agreement — have a lawyer and an independent financial adviser review any actual agreement before signing it.</p>
         </div>

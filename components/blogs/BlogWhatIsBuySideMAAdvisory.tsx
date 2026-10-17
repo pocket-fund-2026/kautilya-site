@@ -263,7 +263,7 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           <span className="meta-tag">India</span>
           <span className="meta-tag">8 min read</span>
         </div>
-        <h1>What Is Buy-Side M&amp;A Advisory?</h1>
+        <h1>Buy-Side M&amp;A Advisory in India: What It Is and Why Buyers Use It</h1>
         <div className="subtitle">
           A Beginner&apos;s Guide to Buying a Business in India
         </div>
@@ -289,6 +289,12 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           Buy-side M&amp;A advisory is professional support for the <em>buyer</em> in a business
           acquisition — someone who finds, evaluates, negotiates, and closes a deal on your
           behalf, instead of you doing it alone.
+        </p>
+        <p>
+          For the full step-by-step process and fee structures, see our companion guide,{' '}
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">Buy-Side M&amp;A Advisory: What It Is and How It Works</Link>.
+          To understand the seller&apos;s side of the table, read our explainer on{' '}
+          <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link>.
         </p>
         <p>
           If you&apos;ve ever thought about buying an existing business instead of starting one
@@ -398,6 +404,33 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           <li><strong>Closing.</strong> Legal documentation, regulatory filings, and fund transfer to complete the acquisition.</li>
         </ul>
 
+        <h3>How a global advisory firm describes the same process</h3>
+        <p>
+          Arrowpoint Advisory, part of the Rothschild &amp; Co network, describes its buy-side service
+          as a five-stage process on its{' '}
+          <a href="https://www.arrowpointadvisory.com/our-services/buy-side/" target="_blank" rel="noopener noreferrer">buy-side services page</a>.
+          Set against the steps above, the structure is the same: source, value, agree terms,
+          investigate, close.
+        </p>
+        <div className="deal-table-wrap">
+          <table className="deal-table">
+            <thead>
+              <tr><th>Stage</th><th>Arrowpoint&apos;s description</th><th>What a buyer should check</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1. Target sourcing</td><td data-label="Arrowpoint's description">&ldquo;Identifying potential acquisition targets and making contact&rdquo;</td><td data-label="What a buyer should check">Does the advisor reach off-market owners, or only forward listings?</td></tr>
+              <tr><td>2. Initial review and valuation</td><td data-label="Arrowpoint's description">&ldquo;Carrying out preliminary due diligence and valuating the targets&rdquo;</td><td data-label="What a buyer should check">Is the valuation based on verified earnings, not seller-stated ones?</td></tr>
+              <tr><td>3. Agreement and exclusivity</td><td data-label="Arrowpoint's description">&ldquo;Negotiating and documenting an agreed deal and securing a period of exclusivity&rdquo;</td><td data-label="What a buyer should check">How long is exclusivity, and what happens if diligence finds problems?</td></tr>
+              <tr><td>4. In-depth investigation</td><td data-label="Arrowpoint's description">&ldquo;Detailed due diligence, involving numerous specialist workstreams&rdquo;</td><td data-label="What a buyer should check">Who runs financial, legal, tax and operational workstreams?</td></tr>
+              <tr><td>5. Legal and commercial close</td><td data-label="Arrowpoint's description">&ldquo;Negotiation of the legal agreements and final commercial terms&rdquo;</td><td data-label="What a buyer should check">Are price adjustments tied to what diligence found?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The first two columns are quoted from Arrowpoint&apos;s page (accessed 17 October 2026);
+          the third column is Kautilya&apos;s own commentary.
+        </p>
+
         <h2>Common Mistakes First-Time Buyers Make Without an Advisor</h2>
         <ul className="constraint-list">
           <li><strong>Trusting seller-provided financials at face value</strong> instead of independently verifying them.</li>
@@ -441,6 +474,10 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 
           <div className="blog-faq-item">
+            <div className="blog-faq-q">What is buy-side M&amp;A advisory?</div>
+            <p className="blog-faq-a">Buy-side M&amp;A advisory is professional support for the buyer in a business acquisition: an advisor defines the target criteria, sources and approaches owners, values the business, negotiates, and coordinates due diligence through to closing.</p>
+          </div>
+          <div className="blog-faq-item">
             <div className="blog-faq-q">How much does a buy-side advisor cost?</div>
             <p className="blog-faq-a">Fee structures vary by firm and deal size, but most follow a retainer plus success fee model — a fixed monthly or upfront fee during sourcing and diligence, plus a percentage tied to the deal actually closing. This aligns the advisor&apos;s incentive with finding you a genuinely good acquisition, rather than billing hours regardless of outcome. Ask any advisor to walk through their fee structure and what triggers the success fee before engaging them.</p>
           </div>
@@ -473,6 +510,9 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           <ul>
             <li>Investopedia, Business Valuation methods overview &mdash; general reference for the valuation methodologies mentioned (earnings multiples, comparable transactions, discounted cash flow).</li>
             <li>Reserve Bank of India, FEMA overview &mdash; general reference for cross-border and NRI/foreign-buyer compliance considerations.</li>
+          </ul>
+          <ul>
+            <li>Arrowpoint Advisory, buy-side services, <a href="https://www.arrowpointadvisory.com/our-services/buy-side/" target="_blank" rel="noopener noreferrer">arrowpointadvisory.com/our-services/buy-side/</a> (accessed 17 October 2026). Source of the five-stage descriptions quoted in the table.</li>
           </ul>
           <h3>Labelled inference, not data</h3>
           <p>The share of small-business acquisitions in India happening off-market, and the ₹25L&ndash;5Cr &ldquo;sweet spot&rdquo; range for buy-side advisory value, are Kautilya&apos;s structural reasoning from deal experience, not published statistics. No formal India-wide dataset on off-market deal share is cited or claimed.</p>
