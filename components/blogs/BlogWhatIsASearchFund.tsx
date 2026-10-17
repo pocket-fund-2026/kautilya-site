@@ -560,6 +560,8 @@ export default function BlogWhatIsASearchFund() {
           <p className="coda-text">
             Evaluating whether to start a search, or already mid-search in India?
             We help searchers screen targets and run diligence before a term sheet.
+            See <Link href="/approach#buy-side-advisory-india">how our buy-side advisory works</Link>{' '}
+            or <Link href="/engage">hire a buy-side advisor</Link>.
           </p>
           <Link href="/engage" className="coda-link">Begin the Conversation</Link>
         </div>

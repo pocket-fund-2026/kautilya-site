@@ -468,6 +468,11 @@ export default function BlogWhatIsBuySideMAAdvisory() {
           acquisitions we&apos;ve supported in <Link href="/portfolio">our portfolio</Link> and
           read detailed case studies in <Link href="/stories">our stories</Link>.
         </p>
+        <p>
+          Comparing buy-side advisory firms in India? See the{' '}
+          <Link href="/approach#buy-side-advisory-india">questions to ask any buy-side advisor</Link>,
+          or <Link href="/engage">hire a buy-side advisor</Link> directly.
+        </p>
 
         {/* FAQ */}
         <div className="blog-faq">

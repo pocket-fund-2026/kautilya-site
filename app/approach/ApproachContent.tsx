@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import BuySideAdvisorySection from './BuySideAdvisorySection';
 import Link from 'next/link';
 import { Highlighter } from '@/components/Highlighter';
 
@@ -1146,6 +1147,8 @@ export default function ApproachContent() {
           </div>
         </div>
       </section>
+
+      <BuySideAdvisorySection />
 
       <nav className="methodology-nav" aria-label="Methodology phases">
         <div className="nav-inner">

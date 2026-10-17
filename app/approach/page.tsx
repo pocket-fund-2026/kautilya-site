@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ApproachContent from './ApproachContent';
+import { BUY_SIDE_FAQS } from './buySideFaqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Approach | Kautilya | M&A Methodology & Deal Sourcing' },
@@ -207,6 +208,16 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: BUY_SIDE_FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+
 export default function Page() {
   return (
     <>
@@ -214,6 +225,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ApproachContent />
     </>
   );

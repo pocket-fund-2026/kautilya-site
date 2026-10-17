@@ -367,6 +367,8 @@ export default function BlogFamilyBusinessAcquisition() {
           <p className="coda-text">
             Looking to acquire a family-owned business in India?
             We build the pipeline and run the diligence before you engage a seller.
+            Read about our <Link href="/approach#buy-side-advisory-india">buy-side advisory in India</Link>{' '}
+            or <Link href="/engage">hire a buy-side advisor</Link>.
           </p>
           <Link href="/engage" className="coda-link">Begin the Conversation</Link>
         </div>

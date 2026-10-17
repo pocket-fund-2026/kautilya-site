@@ -373,6 +373,8 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 <h2>Where to Start</h2>
 <p>Before speaking with any advisor, answer three questions. What exactly do you want to buy, in terms specific enough to search for? How much can you actually spend, including fees and the working capital the business will need after closing? And can you realistically do the sourcing yourself in the time you have?</p>
 
+<p>If you decide to hire help, compare firms on evidence rather than rankings. Our <Link href="/approach#buy-side-advisory-india">guide to buy-side advisory firms in India</Link> lists the shortlist questions to ask any firm, and you can <Link href="/engage">hire a buy-side advisor</Link> by submitting your acquisition criteria.</p>
+
 <div className="blog-faq">
 <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 <div className="blog-faq-item">
