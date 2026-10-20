@@ -367,7 +367,7 @@ return (
         </p>
         <div className="rule" aria-hidden="true" />
         <p className="lede">
-          Kautilya is a Mumbai-based buy-side M&amp;A advisory. We find, diligence and close off-market acquisitions from $500K to $10M for private equity funds, search funds, family offices and holding companies, in any sector.
+          Kautilya is a buy side advisory firm. We find, diligence and close off market acquisitions. We specialise in building proprietary deal pipelines for buyers operating in niche markets such as private equity funds, search funds, family offices and holding companies.
         </p>
         <p className="strap">We don&apos;t carry a pipeline. We build yours.</p>
         <Link href="/engage" className="hero-cta">
