@@ -125,7 +125,7 @@ export default function Story200kDeals() {
         <h3 style={{ color: 'var(--gold)' }}>Runify &mdash; $110K</h3>
         <p>
           Mobile running app. Three months old, ~$2K MRR. Buyer: a 20-year software veteran building
-          a consumer mobile portfolio. Structure: $30K upfront, rest on an earnout tied to revenue
+          a consumer mobile portfolio. Structure: $20K cash at close, rest on an earnout tied to revenue
           stability and retention metrics. Timeline: 45 days from &ldquo;hey I found this
           thing&rdquo; to closed.
         </p>
@@ -252,19 +252,19 @@ export default function Story200kDeals() {
         <p><strong>Runify case study:</strong></p>
         <ul>
           <li>Total consideration: $110K</li>
-          <li>Upfront cash: $30K (27%)</li>
-          <li>Deferred: $80K (73%) over 12&ndash;18 months</li>
+          <li>Cash at close: $20K (about 18%)</li>
+          <li>Deferred: $90K (about 82%): an earn-out of up to $57K over 24 months, plus salary, milestone bonuses and retained minority equity</li>
           <li>Tied to: Revenue stability and retention metrics (not growth)</li>
         </ul>
         <p>Why this worked:</p>
         <ol>
           <li><strong>Seller got their number</strong> &mdash; Still $110K headline, which matters for their portfolio</li>
-          <li><strong>Buyer protected downside</strong> &mdash; Only risking $30K if the business collapses</li>
+          <li><strong>Buyer protected downside</strong> &mdash; Only about $30K of guaranteed capital at risk if the business collapses</li>
           <li><strong>Aligned incentives</strong> &mdash; Seller sticks around to ensure smooth transition (their payout depends on it)</li>
         </ol>
 
         <figure className="story-img">
-          <ShimmerImage src="/images/stories/200k/hidden-channel.webp" alt="Structure > Price: deal mechanics for Runify (27% upfront / 73% deferred) and Dino Games (56% at close / 44% deferred). The pattern: the riskier the asset, the more you defer." width={1200} height={675} />
+          <ShimmerImage src="/images/stories/200k/structure-chart.webp" alt="Structure > Price: deal mechanics for Runify ($20K cash at close / $90K deferred) and Dino Games (56% at close / 44% deferred). The pattern: the riskier the asset, the more you defer." width={1200} height={675} />
         </figure>
 
         <div className="pull-quote">

@@ -189,7 +189,7 @@ export default function StoryRunify() {
             </thead>
             <tbody>
               <tr><td>Total consideration</td><td>$110K</td></tr>
-              <tr><td>Cash at close</td><td>$20,000 (about 25%)</td></tr>
+              <tr><td>Cash at close</td><td>$20,000 (about 25% of the ~$77K base valuation)</td></tr>
               <tr><td>Earn-out</td><td>Up to $57,000, a 20% net-profit share over 24 months</td></tr>
               <tr><td>Balance</td><td>Salary, milestone bonuses, and retained minority equity</td></tr>
               <tr><td>Guaranteed capital at risk</td><td>About $30K</td></tr>

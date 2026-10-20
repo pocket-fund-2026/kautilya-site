@@ -78,7 +78,7 @@ anonymized engagement. These are the six most-cited:
 Method: underwrite the base valuation only on verified, collected cash; keep cash at close small;
 move every unproven variable into a profit-indexed earn-out; keep the founder aligned to real
 performance. Applied on a real $110K acquisition of a 3-month-old fitness app: $20K cash at close
-(~25%), up to $57K in a 20% net-profit-share earn-out over 24 months, remainder in salary,
+(~25% of the ~$77K base valuation), up to $57K in a 20% net-profit-share earn-out over 24 months, remainder in salary,
 milestone bonuses, and retained minority equity. Closed in 45 days.
 More: [How to Buy a Business With Seller Financing](https://www.kautilya-pe.com/stories/runify)
 

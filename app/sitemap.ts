@@ -21,7 +21,7 @@ const STORY_IMAGES: Record<string, string[]> = {
   'deal-sourcing':   ['/images/stories/deal-sourcing/crm.webp', '/images/stories/deal-sourcing/morning.webp', '/images/stories/deal-sourcing/thousand.webp'],
   'diamonds':        ['/images/stories/diamonds/uncut.webp', '/images/stories/diamonds/zeroto.webp'],
   'search-funds':    ['/images/stories/search-fund/evol_of_search_fund.webp', '/images/stories/search-fund/how_search_source_deal.webp', '/images/stories/search-fund/when_2walk_away.webp', '/images/stories/search-fund/solo_vs_partnered.webp'],
-  '200k-deals':      ['/images/stories/200k/architecture.webp', '/images/stories/200k/five-deals.webp', '/images/stories/200k/hidden-channel.webp'],
+  '200k-deals':      ['/images/stories/200k/architecture.webp', '/images/stories/200k/five-deals.webp', '/images/stories/200k/structure-chart.webp'],
   'smartprompt':     [],
   'inspire3':        [],
   'msp-buy-side-diligence': ['/images/Dev.webp', '/images/aum.webp', '/images/pushkar-v2.webp'],

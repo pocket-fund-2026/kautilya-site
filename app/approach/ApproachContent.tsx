@@ -1621,10 +1621,10 @@ export default function ApproachContent() {
               <Link href="/stories/runify" className="deal-card-link">
                 <div className="deal-card">
                   <div className="deal-card-name">Runify</div>
-                  <div className="deal-card-headline">74% of consideration performance-linked</div>
+                  <div className="deal-card-headline">82% of consideration paid after close</div>
                   <div className="deal-card-body">
-                    <strong>30K deployed upfront</strong> on a 110K deal after revenue quality
-                    adjustments.
+                    <strong>20K cash at close</strong> on a 110K deal, about 30K guaranteed capital at
+                    risk, after revenue quality adjustments.
                   </div>
                   <span className="deal-status status-closed">Closed - 110K</span>
                 </div>
@@ -1714,7 +1714,7 @@ export default function ApproachContent() {
                     Seller wanted 30% upfront. We opened at 20%. Final structure solved liquidity
                     timing with performance linkage.
                   </div>
-                  <span className="deal-status status-closed">110K - 30K upfront</span>
+                  <span className="deal-status status-closed">110K - 20K upfront</span>
                 </div>
               </Link>
             </div>

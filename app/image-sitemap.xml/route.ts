@@ -52,7 +52,7 @@ const IMAGE_MAP: Array<{
       { src: '/images/blogs/edition-200k.webp', title: 'Closing $200K in Deals', caption: 'How Kautilya closed $200K worth of advisory deals in 6 months.' },
       { src: '/images/stories/200k/architecture.webp', title: 'Deal Architecture — $200K Portfolio', caption: 'Architecture of five advisory deals closed in six months.' },
       { src: '/images/stories/200k/five-deals.webp', title: 'Five Advisory Deals — Kautilya', caption: 'Summary of five deals closed by Kautilya\'s advisory practice.' },
-      { src: '/images/stories/200k/hidden-channel.webp', title: 'Hidden Deal Sourcing Channels', caption: 'Off-market channels used to source advisory deals.' },
+      { src: '/images/stories/200k/structure-chart.webp', title: 'How the $200K Was Structured', caption: 'Cash at close versus deferred or earn-out consideration across five acquisitions.' },
     ],
   },
   {
