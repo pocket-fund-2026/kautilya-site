@@ -978,7 +978,7 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
     subtitle: 'India\'s biggest oil explorer and its biggest power generator formed a joint venture and, in its very first deal, bought a 4.1 GW renewables platform. Only ₹ 6,249 crore was the cheque; the rest is debt they took on.',
     description: 'ONGC and NTPC\'s 50:50 JV bought Ayana Renewable Power, a 4.1 GW platform, at a ₹ 19,500 crore enterprise value. Only ₹ 6,249 crore was equity; the rest was assumed debt.',
     author: 'Kautilya PE',
-    datePublished: '2026-09-19',
+    datePublished: '2026-10-21',
     dealDate: '2025-02-12',
     category: 'Deal Teardowns',
     readTime: '6 min',
