@@ -11,6 +11,7 @@ export const NEWSLETTER_SLUGS = [
   'everstone-wingify-bootstrapped-buyout-400-500m-platform',
   'brookfield-american-tower-india-altius-acquisition-explained',
   'bain-capital-manappuram-finance-acquisition-explained',
+  'ongc-ntpc-ayana-19500-crore-deal-mostly-debt',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -970,6 +971,66 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Reserve Bank of India', sameAs: 'https://www.rbi.org.in' },
       { name: 'Securities and Exchange Board of India', sameAs: 'https://www.sebi.gov.in' },
       { name: 'Kotak Mahindra Capital' },
+    ],
+  },
+  'ongc-ntpc-ayana-19500-crore-deal-mostly-debt': {
+    title: 'ONGC and NTPC\'s ₹ 19,500 crore Ayana deal: why most of it is debt',
+    subtitle: 'India\'s biggest oil explorer and its biggest power generator formed a joint venture and, in its very first deal, bought a 4.1 GW renewables platform. Only ₹ 6,249 crore was the cheque; the rest is debt they took on.',
+    description: 'ONGC and NTPC\'s 50:50 JV bought Ayana Renewable Power, a 4.1 GW platform, at a ₹ 19,500 crore enterprise value. Only ₹ 6,249 crore was equity; the rest was assumed debt.',
+    author: 'Kautilya PE',
+    datePublished: '2026-09-19',
+    dealDate: '2025-02-12',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 3603,
+    keywords: [
+      'ONGC NTPC Ayana acquisition',
+      'Ayana Renewable Power',
+      'ONGPL joint venture',
+      'NTPC Green Energy acquisition',
+      'ONGC Green',
+      'enterprise value vs equity value',
+      'renewables M&A India',
+      'India renewable energy deal',
+      'British International Investment exit',
+      'NIIF Ayana sale',
+      'platform acquisition',
+      'project debt',
+      'joint venture acquisition',
+      'India deal teardown',
+    ],
+    faqs: [
+      {
+        q: 'What did ONGC and NTPC buy, and for how much?',
+        a: 'Through ONGPL, a 50:50 joint venture of ONGC Green and NTPC Green Energy, they bought 100% of Ayana Renewable Power, a 4.1 GW solar, wind and hybrid platform, at a ₹ 19,500 crore enterprise value (about $2.3B). The equity consideration was ₹ 6,248.50 crore.',
+      },
+      {
+        q: 'Why was the equity only ₹ 6,249 crore when the deal was ₹ 19,500 crore?',
+        a: 'The enterprise value is the price of the whole business including its debt, while the equity is what the buyer pays the sellers. The roughly ₹ 13,252 crore gap is project-level debt that came with the assets, which the buyers assumed.',
+      },
+      {
+        q: 'Who sold Ayana?',
+        a: 'The sellers were NIIF (51%), British International Investment (32%) and the Green Growth Equity Fund (17%), with Eversource. British International Investment founded Ayana in 2018.',
+      },
+      {
+        q: 'How fast did the deal close?',
+        a: 'The share purchase agreement was signed on February 12, 2025, the CCI cleared it on March 11, and it completed on March 27, 2025, six weeks after signing and about four months after the buying JV was incorporated.',
+      },
+      {
+        q: 'How did the market react?',
+        a: 'NTPC Green, the only listed party, fell about 5% around the announcement: roughly 3.5% on March 25 and a further 1.6% on March 28, an unusual drop for an acquirer.',
+      },
+    ],
+    about: [
+      'Mergers and acquisitions',
+      'Renewable energy in India',
+    ],
+    mentions: [
+      { name: 'ONGC' },
+      { name: 'NTPC' },
+      { name: 'Ayana Renewable Power' },
+      { name: 'British International Investment' },
+      { name: 'NIIF' },
     ],
   },
 };
