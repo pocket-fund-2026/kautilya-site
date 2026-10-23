@@ -11,6 +11,7 @@ import BlogWhatIsPocketDeals from '@/components/blogs/BlogWhatIsPocketDeals';
 import BlogWhatIsAPrivatePlacementMemorandum from '@/components/blogs/BlogWhatIsAPrivatePlacementMemorandum';
 import BlogBuySideMAAdvisoryWhatItIsAndHowItWorks from '@/components/blogs/BlogBuySideMAAdvisoryWhatItIsAndHowItWorks';
 import BlogAnalystDiariesKautilyaSeoFromZero from '@/components/blogs/BlogAnalystDiariesKautilyaSeoFromZero';
+import BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor from '@/components/blogs/BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -25,6 +26,7 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'what-is-a-private-placement-memorandum': BlogWhatIsAPrivatePlacementMemorandum,
   'buy-side-m-a-advisory-what-it-is-and-how-it-works': BlogBuySideMAAdvisoryWhatItIsAndHowItWorks,
   'analyst-diaries-kautilya-seo-from-zero': BlogAnalystDiariesKautilyaSeoFromZero,
+  'ebitda-multiples-in-india-what-businesses-actually-sell-for': BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor,
 };
 
 type Props = {

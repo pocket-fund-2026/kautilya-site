@@ -9,6 +9,7 @@ export const BLOG_SLUGS = [
   'what-is-a-private-placement-memorandum',
   'buy-side-m-a-advisory-what-it-is-and-how-it-works',
   'analyst-diaries-kautilya-seo-from-zero',
+  'ebitda-multiples-in-india-what-businesses-actually-sell-for',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -808,6 +809,65 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Search funds',
       'Buy-side M&A advisory',
       'Generative engine optimization',
+    ],
+  },
+  'ebitda-multiples-in-india-what-businesses-actually-sell-for': {
+    title: 'EBITDA Multiples in India: What Businesses Actually Sell For',
+    subtitle: 'A Plain-Language Guide for Business Buyers and Sellers',
+    description: 'A plain-language guide to EBITDA multiples in India: listed sector medians, what small and mid-sized private businesses sell for, and how to use a multiple.',
+    author: 'Dev Shah',
+    datePublished: '2026-10-23',
+    category: 'M&A Advisory',
+    readTime: '10 min',
+    wordCount: 2357,
+    keywords: [
+      'EBITDA multiples in India',
+      'EBITDA multiple by industry India',
+      'EV/EBITDA India',
+      'business valuation multiples India',
+      'how to value a small business in India',
+      'SME valuation India',
+      'what is an EBITDA multiple',
+      'EBITDA multiple for small business India',
+    ],
+    faqs: [
+      {
+        q: 'What is a good EBITDA multiple in India?',
+        a: 'It depends on size and sector. Listed Indian sector medians ran from about 6x to 27x on 30 June 2026. Small private companies are quoted anywhere from 2x to 8x across published guides. A good multiple is one that matches comparable businesses of your size and quality.',
+      },
+      {
+        q: 'What EBITDA multiple do small businesses in India sell for?',
+        a: 'Published guides give 2x to 5x, 3x to 6x and 3x to 8x, depending on the source. The low end is for owner-dependent businesses. The high end is for companies with contracted revenue and real management depth. None of these ranges comes from a published transaction database.',
+      },
+      {
+        q: 'Is EV/EBITDA the same as the price I will pay?',
+        a: 'No. Enterprise value is the value of the operating business. The price for the shares is roughly enterprise value minus debt plus cash, then adjusted for debt-like items and working capital.',
+      },
+      {
+        q: 'Why are listed multiples so much higher than private ones?',
+        a: 'Listed companies are larger, easier to sell and more transparent, and investors pay for that. One Indian valuation tool suggests a private-market discount of 20 to 30 percent, though I could not verify that against deal data.',
+      },
+      {
+        q: 'Which sector has the highest EBITDA multiple in India?',
+        a: 'Among the listed sectors in Kroll\'s June 2026 report, health care facilities and services had the highest median at 27.2x, followed by industrial machinery at 25.6x and pharmaceuticals and biotechnology at 22.4x. Energy was lowest at 5.8x. These are listed companies only.',
+      },
+      {
+        q: 'Should I use EBITDA or SDE to value my business?',
+        a: 'Use EBITDA when professional managers run the business. Use SDE when the owner works in it and the buyer will step into that role, because SDE adds back the owner\'s full pay.',
+      },
+      {
+        q: 'Do EBITDA multiples change over time?',
+        a: 'Yes. Listed Indian application software went from a 24.2x median in December 2025 to 18.2x in June 2026, while pharmaceuticals went from 19.0x to 22.4x. Check the date on any multiple you rely on.',
+      },
+      {
+        q: 'Where can I find real Indian private deal multiples?',
+        a: 'They are hard to find because most private deals are confidential. Ask an adviser for closed deals in your sector and size range, and treat any single figure as indicative.',
+      },
+    ],
+    about: [
+      'EBITDA multiples',
+      'Business valuation',
+      'Mergers and acquisitions in India',
     ],
   },
 };
