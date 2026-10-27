@@ -40,6 +40,7 @@ export default function Footer() {
               <ul>
                 <li><Link href="/faq">FAQ</Link></li>
                 <li><Link href="/careers">Careers</Link></li>
+                <li><a href="https://tech.kautilya-pe.com">Kautilya Tech</a></li>
                 <li><Link href="/engage">Contact Us</Link></li>
               </ul>
             </div>
