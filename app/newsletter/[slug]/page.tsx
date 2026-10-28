@@ -14,6 +14,7 @@ import NewsletterEverstoneWingifyBootstrappedBuyout400500mPlatform from '@/compo
 import NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained from '@/components/newsletters/NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained';
 import NewsletterBainCapitalManappuramFinanceAcquisitionExplained from '@/components/newsletters/NewsletterBainCapitalManappuramFinanceAcquisitionExplained';
 import NewsletterOngcNtpcAyana19500CroreDealMostlyDebt from '@/components/newsletters/NewsletterOngcNtpcAyana19500CroreDealMostlyDebt';
+import NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies from '@/components/newsletters/NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -31,6 +32,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'brookfield-american-tower-india-altius-acquisition-explained': NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained,
   'bain-capital-manappuram-finance-acquisition-explained': NewsletterBainCapitalManappuramFinanceAcquisitionExplained,
   'ongc-ntpc-ayana-19500-crore-deal-mostly-debt': NewsletterOngcNtpcAyana19500CroreDealMostlyDebt,
+  'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies': NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies,
 };
 
 type Props = {

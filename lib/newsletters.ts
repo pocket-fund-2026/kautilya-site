@@ -12,6 +12,7 @@ export const NEWSLETTER_SLUGS = [
   'brookfield-american-tower-india-altius-acquisition-explained',
   'bain-capital-manappuram-finance-acquisition-explained',
   'ongc-ntpc-ayana-19500-crore-deal-mostly-debt',
+  'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -1031,6 +1032,65 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Ayana Renewable Power' },
       { name: 'British International Investment' },
       { name: 'NIIF' },
+    ],
+  },
+  'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies': {
+    title: 'The merger with no buyer: how a sponsor combines two companies it already owns',
+    description: 'Advent merged listed Suven with private Cohance in an all-share swap, 11 for 295, forming a ~$3B CDMO platform. What it teaches, and why it is unproven.',
+    author: 'Kautilya PE',
+    datePublished: '2026-10-28',
+    dealDate: '2024-02-29',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 3719,
+    keywords: [
+      'Advent International',
+      'Suven Pharmaceuticals',
+      'Cohance Lifesciences',
+      'CDMO India',
+      'share swap merger',
+      'swap ratio',
+      'scheme of amalgamation',
+      'related-party merger',
+      'private equity platform',
+      'buy-and-build',
+      'NJ Bio',
+      'Sapala Organics',
+      'Indian pharma manufacturing',
+      'India Deal Sheet',
+    ],
+    faqs: [
+      {
+        q: 'What did Advent do with Suven and Cohance?',
+        a: 'Advent, which owned both companies, merged the private Cohance into the listed Suven Pharmaceuticals through a scheme of amalgamation paid entirely in shares. The merger was announced in February 2024 and took effect on May 1, 2025. Suven was then renamed Cohance Lifesciences, with Advent holding 66.7% and the public 33.3%.',
+      },
+      {
+        q: 'What was the swap ratio and who set it?',
+        a: 'The ratio was 11 Suven shares for every 295 Cohance shares. It was set by independent valuers PwC and BDO and backed by a fairness opinion, because Advent sat on both sides of the deal and could not credibly set it itself.',
+      },
+      {
+        q: 'Why was no cash paid in the Suven-Cohance merger?',
+        a: 'Advent controlled both companies, so paying cash for one with the other would only have moved money within its own portfolio. Cohance\'s shareholders received new Suven shares instead, which combined the businesses and re-sliced ownership without spending anything.',
+      },
+      {
+        q: 'Why merge the private company into the listed one?',
+        a: 'Keeping the combined company listed as Suven gave it a public currency and a market valuation, which is what let the platform later pay for NJ Bio and Sapala Organics. Choosing which entity survives a merger decides which advantages the combined company inherits.',
+      },
+      {
+        q: 'How is the combined company performing?',
+        a: 'Not yet well. FY26 revenue was ₹ 2,268 crore, down 13%, with adjusted EBITDA of ₹ 480 crore at a 21% margin. Q1 FY27 revenue was ₹ 422.3 crore, down 23%, with an adjusted EBITDA margin of 2.2%, dragged by NJ Bio losses. Management calls FY26 a trough year and guides recovery from H2 FY27.',
+      },
+    ],
+    about: [
+      'Related-party mergers',
+      'Indian CDMO sector',
+    ],
+    mentions: [
+      { name: 'Advent International' },
+      { name: 'Suven Pharmaceuticals' },
+      { name: 'Cohance Lifesciences' },
+      { name: 'NJ Bio' },
+      { name: 'Sapala Organics' },
     ],
   },
 };
