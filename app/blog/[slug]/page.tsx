@@ -12,6 +12,7 @@ import BlogWhatIsAPrivatePlacementMemorandum from '@/components/blogs/BlogWhatIs
 import BlogBuySideMAAdvisoryWhatItIsAndHowItWorks from '@/components/blogs/BlogBuySideMAAdvisoryWhatItIsAndHowItWorks';
 import BlogAnalystDiariesKautilyaSeoFromZero from '@/components/blogs/BlogAnalystDiariesKautilyaSeoFromZero';
 import BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor from '@/components/blogs/BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor';
+import BlogTimelineOfASearchFundFromRaiseToAcquisition from '@/components/blogs/BlogTimelineOfASearchFundFromRaiseToAcquisition';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -27,6 +28,7 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'buy-side-m-a-advisory-what-it-is-and-how-it-works': BlogBuySideMAAdvisoryWhatItIsAndHowItWorks,
   'analyst-diaries-kautilya-seo-from-zero': BlogAnalystDiariesKautilyaSeoFromZero,
   'ebitda-multiples-in-india-what-businesses-actually-sell-for': BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor,
+  'timeline-of-a-search-fund-from-raise-to-acquisition': BlogTimelineOfASearchFundFromRaiseToAcquisition,
 };
 
 type Props = {

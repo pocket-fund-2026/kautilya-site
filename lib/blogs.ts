@@ -10,6 +10,7 @@ export const BLOG_SLUGS = [
   'buy-side-m-a-advisory-what-it-is-and-how-it-works',
   'analyst-diaries-kautilya-seo-from-zero',
   'ebitda-multiples-in-india-what-businesses-actually-sell-for',
+  'timeline-of-a-search-fund-from-raise-to-acquisition',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -868,6 +869,60 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'EBITDA multiples',
       'Business valuation',
       'Mergers and acquisitions in India',
+    ],
+  },
+  'timeline-of-a-search-fund-from-raise-to-acquisition': {
+    title: 'Timeline of a Search Fund: From Raise to Acquisition',
+    subtitle: 'How Search Funds Raise Money and How Long It Takes to Close a Deal',
+    description: 'How search funds raise search capital and acquisition capital, and a realistic timeline for closing a deal, from launch to acquisition.',
+    author: 'Dev Shah',
+    datePublished: '2026-10-30',
+    category: 'Fundamentals',
+    readTime: '4 min',
+    wordCount: 722,
+    keywords: [
+      'search fund timeline',
+      'how long does a search fund take',
+      'how search funds raise money',
+      'search capital vs acquisition capital',
+      'search capital',
+      'acquisition capital',
+      'search fund investors',
+      'search fund due diligence',
+      'search fund financing',
+      'entrepreneurship through acquisition timeline',
+    ],
+    faqs: [
+      {
+        q: 'How much money does a search fund need to raise?',
+        a: 'Search capital is typically $300,000 to $500,000. Acquisition capital is far larger and depends on deal size, usually structured as 70–80% debt and 20–30% equity.',
+      },
+      {
+        q: 'How long does it take to close a search fund acquisition?',
+        a: 'From the start of the search to closing a deal, most searchers take 20–24 months. The search itself (sourcing and negotiating) is usually the longest single phase.',
+      },
+      {
+        q: 'Do search capital investors automatically invest in the acquisition?',
+        a: 'Not automatically, but they typically hold the first right of refusal on the acquisition round, so most do participate if the deal fits their mandate.',
+      },
+      {
+        q: 'What is the difference between search capital and acquisition capital?',
+        a: 'Search capital funds the searcher\'s time and expenses while hunting for a business. Acquisition capital funds the actual purchase price once a target is found, and is raised separately for each deal.',
+      },
+      {
+        q: 'Why does a search fund rarely close faster than 20–24 months?',
+        a: 'Sourcing takes time because most searchers review hundreds of businesses to find a handful worth pursuing. Due diligence can\'t be rushed without raising risk. Financing can\'t meaningfully start earlier, because lenders and equity investors need the diligence findings before committing capital.',
+      },
+      {
+        q: 'What happens after a search fund acquires a company?',
+        a: 'The searcher typically becomes CEO and operates the business directly, commonly for 4 to 7 years, before pursuing an exit.',
+      },
+    ],
+    about: [
+      'Search fund timeline',
+      'Search capital and acquisition capital',
+      'Search fund financing structure',
+      'Entrepreneurship through acquisition',
     ],
   },
 };
