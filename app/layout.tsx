@@ -18,7 +18,7 @@ import './brand-theme.css';
 // the existing styles pick up the new stacks (see :root in globals.css, where Gotham / Arboria are tried first).
 const poppins = Poppins({
   subsets: ['latin', 'devanagari'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600'], // 300/700 dropped: the browser falls back to the nearest loaded weight
   style: ['normal', 'italic'],
   display: 'swap',
   variable: '--font-poppins',
@@ -165,8 +165,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="search" type="application/opensearchdescription+xml" title="Kautilya" href="/opensearch.xml" />
         <link rel="alternate" type="application/rss+xml" title="Kautilya Stories" href="/rss.xml" />
         <meta name="theme-color" content="#ffffff" />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-KGENMTGL7K" strategy="afterInteractive" />
-        <Script id="ga-init" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-KGENMTGL7K" strategy="lazyOnload" />
+        <Script id="ga-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

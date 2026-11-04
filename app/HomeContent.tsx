@@ -125,8 +125,13 @@ export default function HomeContent() {
     // scrolled at all, defeating the deferral. A concrete scrollY threshold has
     // no such race.
     let mounted = false;
+    // Programmatic scroll (restoration, layout shifts) must not pull in three.js: wait for real input.
+    let interacted = false;
+    const markInteracted = () => { interacted = true; maybeMount(); };
+    (['wheel', 'touchmove', 'keydown', 'pointerdown'] as const).forEach((e) =>
+      window.addEventListener(e, markInteracted, { once: true, passive: true }));
     const maybeMount = () => {
-      if (mounted) return;
+      if (mounted || !interacted) return;
       if (window.scrollY > window.innerHeight * 0.4) {
         mounted = true;
         setShouldMountScene(true);
@@ -135,9 +140,12 @@ export default function HomeContent() {
     };
 
     window.addEventListener('scroll', maybeMount, { passive: true });
-    maybeMount();
 
-    return () => window.removeEventListener('scroll', maybeMount);
+    return () => {
+      window.removeEventListener('scroll', maybeMount);
+      (['wheel', 'touchmove', 'keydown', 'pointerdown'] as const).forEach((e) =>
+        window.removeEventListener(e, markInteracted));
+    };
   }, []);
 
 return (
