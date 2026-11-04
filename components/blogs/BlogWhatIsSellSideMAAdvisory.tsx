@@ -232,13 +232,13 @@ export default function BlogWhatIsSellSideMAAdvisory() {
         <div className="meta-row">
           <span className="meta-tag">Seller Guides</span>
           <span className="meta-tag">M&amp;A Advisory</span>
-          <span className="meta-tag">7 min read</span>
+          <span className="meta-tag">9 min read</span>
         </div>
         <h1>Sell Side Advisory: What It Is and How It Works</h1>
         <div className="subtitle">
           A Plain-Language Guide to Sell-Side M&amp;A for Business Owners
         </div>
-        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 September 2026</p>
+        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 September 2026&nbsp;&nbsp;·&nbsp;&nbsp;Updated 4 November 2026</p>
         <div className="hero-line" />
       </div>
 
@@ -266,6 +266,8 @@ export default function BlogWhatIsSellSideMAAdvisory() {
             <li>A full sell-side process works best for mid-size and larger companies with more than one type of possible buyer.</li>
             <li>Smaller businesses are usually better served by a business broker or a direct sale.</li>
             <li>Advisors are usually paid a retainer plus a success fee, often on a sliding scale that decreases as the deal size grows.</li>
+            <li>Published guides put the full process at roughly 6 to 12 months, with several months of preparation before any buyer hears about it.</li>
+            <li>Information is released in stages: teaser, then NDA, then CIM, then limited data after indications of interest, then the full data room only once a buyer has exclusivity.</li>
           </ul>
         </div>
 
@@ -343,6 +345,65 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           value, package, market, meet buyers, negotiate, run due diligence, close — is the same
           across most sell-side deals, regardless of size or industry. What changes with size is
           how long and formal each step is, not whether it happens.
+        </p>
+
+        <h2>How Long Does a Sell-Side Process Take?</h2>
+        <p>
+          Published guides broadly agree on 6 to 12 months from hiring an advisor to closing.
+          One puts the typical lower-middle-market process at 6 to 9 months from engagement;
+          another says to plan for 9 to 12. The biggest variable is preparation: one source
+          estimates about 3 to 6 months of the total happens before any buyer hears about the
+          sale. These are advisor and software-vendor estimates, not a measured dataset, so
+          treat them as a planning range.
+        </p>
+        <div className="deal-table-wrap">
+          <table className="deal-table">
+            <thead>
+              <tr><th>Phase</th><th>Typical length (published estimates)</th><th>What you should have at the end</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Preparation</td><td data-label="Typical length">About 3 to 6 months</td><td data-label="What you should have">Clean financials, a valuation range, teaser, CIM, buyer list, and a data room being built in parallel</td></tr>
+              <tr><td>Marketing</td><td data-label="Typical length">About 4 to 8 weeks</td><td data-label="What you should have">NDAs signed, CIM sent, indications of interest (IOIs) back</td></tr>
+              <tr><td>LOI and exclusivity</td><td data-label="Typical length">Exclusivity often 30 to 90 days</td><td data-label="What you should have">A signed letter of intent; the binding parts are usually confidentiality and exclusivity</td></tr>
+              <tr><td>Due diligence to close</td><td data-label="Typical length">Often 30 to 90 days</td><td data-label="What you should have">Definitive agreement signed, funds transferred</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Teaser, NDA, CIM, IOI, LOI: How Information Is Released</h2>
+        <p>
+          A good process discloses in stages, so that a buyer who isn&apos;t serious never sees
+          anything that identifies you. The sequence most guides describe is:
+        </p>
+        <ul className="constraint-list">
+          <li><strong>Teaser.</strong> One to two pages, anonymous, sent widely to test and filter interest.</li>
+          <li><strong>NDA.</strong> Buyers who want more sign a confidentiality agreement before learning the company&apos;s name.</li>
+          <li><strong>CIM.</strong> The detailed Confidential Information Memorandum, which gives buyers enough depth to submit an indication of interest.</li>
+          <li><strong>IOI.</strong> A non-binding price range. The advisor uses these to pick a short list for management meetings and limited data access.</li>
+          <li><strong>LOI, then full data room.</strong> The full data room opens only once one buyer has signed a letter of intent and exclusivity, so a competitor cannot browse your contracts and then walk away.</li>
+        </ul>
+        <p>
+          The CIM is the sell-side counterpart of the disclosure document used when raising
+          capital; see our guide to the{' '}
+          <Link href="/blog/what-is-a-private-placement-memorandum">private placement memorandum</Link>{' '}
+          for how that document differs.
+        </p>
+
+        <h2>Preparing the Business: Quality of Earnings and the Data Room</h2>
+        <p>
+          Two preparation items come up in nearly every guide. The first is a sell-side quality
+          of earnings (QoE) report, an accountant&apos;s review of whether reported profit is
+          real and repeatable. Published cost estimates vary: one source cites $30,000 to
+          $75,000 and 4 to 6 weeks, another about $15,000 to $50,000 for most lower-middle-market
+          companies, and one suggests considering a sell-side QoE above roughly $3 million of
+          EBITDA. The logic is that a buyer&apos;s accountants will find the same issues anyway,
+          and finding them first lets you explain them before they become a price reduction.
+        </p>
+        <p>
+          The second is the data room: the organised set of financials, contracts, employee,
+          tax and legal documents buyers will request. One source puts it at 60 to 100 documents
+          sorted by category. Building it during preparation, rather than after the LOI, is what
+          stops diligence from stretching out.
         </p>
 
         <h2>Do You Actually Need a Full Sell-Side Advisor?</h2>
@@ -528,11 +589,23 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">How long does a sell-side M&amp;A process take?</div>
-            <p className="blog-faq-a">Usually somewhere between six months and a year, from hiring an advisor to closing the deal, though this depends heavily on the size of the company and how ready it is for sale.</p>
+            <p className="blog-faq-a">Published guides put it at roughly 6 to 12 months from hiring an advisor to closing, with several months of preparation before any buyer hears about the sale. It depends heavily on the size of the company and how ready it is.</p>
           </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">Do I need a sell-side advisor if I already have a buyer?</div>
             <p className="blog-faq-a">Not necessarily a full sale process. With one buyer already lined up, a lawyer and an independent valuation are usually more useful than a full buyer search, since there&apos;s no group of buyers to create competition among.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">What is the difference between an IOI and an LOI?</div>
+            <p className="blog-faq-a">An indication of interest (IOI) is an early, non-binding price range a buyer gives after reading the CIM. A letter of intent (LOI) comes later, names a buyer and price and terms, and usually binds the parties only on confidentiality and exclusivity.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">What is a quality of earnings report?</div>
+            <p className="blog-faq-a">An accountant-prepared review of a company&apos;s earnings that tests whether reported profit is real and repeatable. Sellers sometimes commission one before going to market so buyers find fewer surprises in diligence. Published cost estimates vary widely, roughly $15,000 to $75,000 depending on the source and company size.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">What is exclusivity in an M&amp;A deal?</div>
+            <p className="blog-faq-a">A period after the LOI is signed, one source puts it at 30 to 90 days, during which the seller agrees not to negotiate with other buyers while the chosen buyer completes due diligence.</p>
           </div>
         </div>
 
@@ -542,6 +615,9 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <h3>Reference material</h3>
           <ul>
             <li>Wikipedia, &ldquo;Lehman Formula&rdquo;, <a href="https://en.wikipedia.org/wiki/Lehman_Formula" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Lehman_Formula</a> (accessed 17 October 2026). Source of the 5%/4%/3%/2%/1% tiers. The dollar fee column and the $5 million example are Kautilya&apos;s arithmetic on those tiers.</li>
+          </ul>
+          <ul>
+            <li>Timeline, exclusivity, QoE cost and data-room figures come from published advisor and software-vendor guides, accessed 4 November 2026, including <a href="https://waveup.com/blog/sell-side-m-and-a-process/" target="_blank" rel="noopener noreferrer">Waveup</a>, <a href="https://www.papermark.com/blog/sell-side-m-and-a-process" target="_blank" rel="noopener noreferrer">Papermark</a> and <a href="https://www.imap.com/en/insights/2026/CIM-vs-Teaser-What-Goes-In-Each-and-Why-It-Matters~cv" target="_blank" rel="noopener noreferrer">IMAP</a>. These are marketing-adjacent estimates, not a measured dataset, and they differ from one another; we give ranges rather than a single number.</li>
           </ul>
           <h3>Labelled inference, not data</h3>
           <p>This piece describes the general structure of sell-side M&amp;A engagements and fee conventions (retainer plus success fee, the Lehman-formula sliding scale) as commonly practiced, not as figures from a specific published dataset. Not investment advice, and not a recommendation on any specific engagement letter or fee agreement — have a lawyer and an independent financial adviser review any actual agreement before signing it.</p>

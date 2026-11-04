@@ -232,13 +232,13 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
         <div className="meta-row">
           <span className="meta-tag">Fundamentals</span>
           <span className="meta-tag">Capital Raising</span>
-          <span className="meta-tag">8 min read</span>
+          <span className="meta-tag">10 min read</span>
         </div>
         <h1>What Is a Private Placement Memorandum (PPM)? A Complete Guide</h1>
         <div className="subtitle">
           What a PPM Is, Why It Exists, What Goes Inside One, and How It Differs From a Prospectus or a Pitch Deck
         </div>
-        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;28 September 2026</p>
+        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;28 September 2026&nbsp;&nbsp;·&nbsp;&nbsp;Updated 4 November 2026</p>
         <div className="hero-line" />
       </div>
 
@@ -441,6 +441,81 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
           <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>.
         </p>
 
+        <h2>Rule 506(b) vs Rule 506(c)</h2>
+        <p>
+          Both exemptions sit under Regulation D, but they trade off differently. Per the SEC,{' '}
+          <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/general-solicitation-rule-506c" target="_blank" rel="noopener noreferrer">Rule 506(c)</a>{' '}
+          permits general solicitation and advertising, provided that every purchaser is an
+          accredited investor and the issuer takes &ldquo;reasonable steps to verify&rdquo; that status.
+        </p>
+        <div className="deal-table-wrap">
+          <table className="deal-table">
+            <thead>
+              <tr><th></th><th>Rule 506(b)</th><th>Rule 506(c)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Advertising / general solicitation</td><td data-label="Rule 506(b)">Not allowed</td><td data-label="Rule 506(c)">Allowed</td></tr>
+              <tr><td>Non-accredited investors</td><td data-label="Rule 506(b)">Up to 35 in any 90-day period, with required disclosure</td><td data-label="Rule 506(c)">None; all purchasers must be accredited</td></tr>
+              <tr><td>Verifying accredited status</td><td data-label="Rule 506(b)">Issuer needs a reasonable belief; no formal verification step</td><td data-label="Rule 506(c)">Reasonable steps to verify are required</td></tr>
+              <tr><td>Form D</td><td data-label="Rule 506(b)">Required</td><td data-label="Rule 506(c)">Required</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The more public the solicitation, the more verification effort the SEC expects. In its
+          2013 adopting release it said an issuer soliciting through a public website, a widely
+          sent email or social media is likely obliged to take greater measures to verify.
+        </p>
+
+        <h2>Who Is an Accredited Investor?</h2>
+        <p>
+          The definition is in 17 CFR 230.501(a). The main natural-person tests are:
+        </p>
+        <ul className="constraint-list">
+          <li>Net worth above $1,000,000, alone or jointly with a spouse or spousal equivalent, excluding the primary residence (with special rules for mortgage debt).</li>
+          <li>Income above $200,000 individually, or $300,000 jointly, in each of the two most recent years, with a reasonable expectation of the same this year.</li>
+          <li>Holding a professional certification, designation or credential that the SEC has designated as qualifying.</li>
+        </ul>
+        <p>
+          Entities such as corporations, partnerships and LLCs generally qualify with total
+          assets above $5,000,000 if they were not formed specifically to buy the securities, and
+          an entity whose equity owners are all accredited also qualifies. Check the current text
+          of the rule or ask counsel; thresholds and designated credentials can change.
+        </p>
+
+        <h2>After the Offering Starts: Form D and State Filings</h2>
+        <p>
+          A Rule 506 offering is not &ldquo;unfiled.&rdquo; The SEC says{' '}
+          <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/filing-form-d-notice" target="_blank" rel="noopener noreferrer">a company must file a Form D notice</a>{' '}
+          within 15 days after the first sale of securities in the offering. The date of first
+          sale is when the first investor is irrevocably contractually committed to invest, and if
+          day 15 falls on a weekend or holiday the deadline moves to the next business day. The SEC
+          charges no filing fee. Rule 506 preempts state registration, but states can still require
+          their own notice filings and fees, so the state of each investor matters.
+        </p>
+        <p>
+          Filing a Form D is a notice, not an approval. The SEC does not review the PPM or
+          endorse the offering, which is exactly why the document itself has to carry the
+          disclosure.
+        </p>
+
+        <h2>The Real Test: Is Your PPM Accurate?</h2>
+        <p>
+          Exemption from registration is not exemption from the antifraud rules. Whatever the
+          offering exemption, statements to investors, in the PPM or outside it, must not be
+          materially false or misleading. That is the practical reason to keep the PPM, the pitch
+          deck and the emails consistent: investors will compare them, and a claim in the deck
+          that the PPM contradicts is the one a plaintiff quotes. Before sending a PPM, check
+          that:
+        </p>
+        <ul className="constraint-list">
+          <li>Every number in the deck matches the PPM, and projections are labelled as projections.</li>
+          <li>Risk factors name risks specific to this business, not a generic list.</li>
+          <li>Use of proceeds adds up to the amount being raised.</li>
+          <li>Fees paid to the sponsor or affiliates are disclosed in the terms of the offering.</li>
+          <li>The exemption you are relying on (506(b) or 506(c)) matches how you are actually finding investors.</li>
+        </ul>
+
         <h2>Who Actually Uses a PPM</h2>
         <p>
           PPMs show up anywhere private securities are being sold to investors, which covers a
@@ -547,6 +622,18 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
             <p className="blog-faq-a">No. A PPM discloses risk; it doesn&apos;t eliminate it. A long and thorough risk factors section is often a sign of a well-prepared document, not a red flag about the deal itself.</p>
           </div>
           <div className="blog-faq-item">
+            <div className="blog-faq-q">What is the difference between Rule 506(b) and Rule 506(c)?</div>
+            <p className="blog-faq-a">Rule 506(b) bans general solicitation but allows up to 35 non-accredited investors. Rule 506(c) permits broad advertising, but every purchaser must be an accredited investor and the issuer must take reasonable steps to verify that status.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">Who counts as an accredited investor?</div>
+            <p className="blog-faq-a">Under 17 CFR 230.501(a), a person with net worth above $1 million (excluding the primary residence), or income above $200,000 individually or $300,000 jointly in each of the last two years, or a qualifying professional credential. Entities generally need more than $5 million in assets.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">Do I have to file anything with the SEC for a Rule 506 offering?</div>
+            <p className="blog-faq-a">Yes. The issuer files a Form D notice within 15 days after the first sale, meaning the date the first investor is irrevocably committed. The SEC charges no fee for it, and states may require their own notice filings and fees.</p>
+          </div>
+          <div className="blog-faq-item">
             <div className="blog-faq-q">Who writes a PPM?</div>
             <p className="blog-faq-a">Usually a collaboration between the issuer, who supplies the business and financial details, and a securities attorney, who drafts or reviews the legal, regulatory, and risk disclosure language.</p>
           </div>
@@ -558,6 +645,10 @@ export default function BlogWhatIsAPrivatePlacementMemorandum() {
           <h3>Reference material</h3>
           <ul>
             <li>U.S. Securities and Exchange Commission, &ldquo;Private Placements - Rule 506(b)&rdquo;, <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/private-placements-rule-506b" target="_blank" rel="noopener noreferrer">sec.gov</a> (accessed 17 October 2026). Source of the investor limits, solicitation and disclosure points in the Rule 506(b) table. The sentence on why issuers prepare a full PPM is Kautilya&apos;s commentary.</li>
+          </ul>
+          <ul>
+            <li>U.S. SEC, &ldquo;General Solicitation - Rule 506(c)&rdquo;, <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/general-solicitation-rule-506c" target="_blank" rel="noopener noreferrer">sec.gov</a>, and &ldquo;Filing a Form D Notice&rdquo;, <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/filing-form-d-notice" target="_blank" rel="noopener noreferrer">sec.gov</a> (both accessed 4 November 2026). Source of the 506(c) conditions, the 15-day Form D deadline, the first-sale definition and the no-fee statement.</li>
+            <li>17 CFR 230.501(a), <a href="https://www.law.cornell.edu/cfr/text/17/230.501" target="_blank" rel="noopener noreferrer">law.cornell.edu</a> (accessed 4 November 2026). Source of the accredited-investor thresholds. The SEC verification-effort point is from its 2013 adopting release 33-9415.</li>
           </ul>
           <h3>Labelled inference, not data</h3>
           <p>This piece describes the general structure and purpose of a private placement memorandum, and the exemption logic behind private offerings, as commonly practiced across jurisdictions, not as figures from a specific published dataset. Not legal or investment advice, and not a substitute for a securities attorney reviewing any specific offering — exemption categories, disclosure thresholds, and filing requirements vary by jurisdiction.</p>

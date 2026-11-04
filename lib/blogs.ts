@@ -459,9 +459,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Sell side advisory means hiring an M&A advisor to represent you when you sell your company. How the process works, typical fee structures, and how to tell if you need one.',
     author: 'Dev Shah',
     datePublished: '2026-09-16',
+    dateModified: '2026-11-04',
     category: 'Seller Guides',
-    readTime: '7 min',
-    wordCount: 1950,
+    readTime: '9 min',
+    wordCount: 2650,
     keywords: [
       // Primary
       'sell-side M&A advisory',
@@ -520,7 +521,19 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       },
       {
         q: 'How long does a sell-side M&A process take?',
-        a: 'Usually somewhere between six months and a year, from hiring an advisor to closing the deal, though this depends heavily on the size of the company and how ready it is for sale.',
+        a: 'Published guides put it at roughly 6 to 12 months from hiring an advisor to closing, with several months of preparation before any buyer hears about the sale. It depends heavily on the size of the company and how ready it is.',
+      },
+      {
+        q: 'What is the difference between an IOI and an LOI?',
+        a: 'An indication of interest (IOI) is an early, non-binding price range a buyer gives after reading the CIM. A letter of intent (LOI) comes later, names a buyer and price and terms, and usually binds the parties only on confidentiality and exclusivity.',
+      },
+      {
+        q: 'What is a quality of earnings report?',
+        a: 'An accountant-prepared review of a company\'s earnings that tests whether reported profit is real and repeatable. Sellers sometimes commission one before going to market so buyers find fewer surprises in diligence. Published cost estimates vary widely, roughly $15,000 to $75,000 depending on the source and company size.',
+      },
+      {
+        q: 'What is exclusivity in an M&A deal?',
+        a: 'A period after the LOI is signed, one source puts it at 30 to 90 days, during which the seller agrees not to negotiate with other buyers while the chosen buyer completes due diligence.',
       },
       {
         q: 'Do I need a sell-side advisor if I already have a buyer?',
@@ -612,9 +625,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'A private placement memorandum (PPM) is the disclosure document for a private securities offering. What goes in one, SEC Rule 506(b) limits, and how it differs from a prospectus.',
     author: 'Dev Shah',
     datePublished: '2026-09-28',
+    dateModified: '2026-11-04',
     category: 'Fundamentals',
-    readTime: '8 min',
-    wordCount: 2100,
+    readTime: '10 min',
+    wordCount: 2800,
     keywords: [
       // Primary
       'what is a private placement memorandum',
@@ -681,6 +695,18 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       {
         q: 'Does a PPM guarantee the investment is safe?',
         a: "No. A PPM discloses risk; it doesn't eliminate it. A long and thorough risk factors section is often a sign of a well-prepared document, not a red flag about the deal itself.",
+      },
+      {
+        q: 'What is the difference between Rule 506(b) and Rule 506(c)?',
+        a: 'Rule 506(b) bans general solicitation but allows up to 35 non-accredited investors. Rule 506(c) permits broad advertising, but every purchaser must be an accredited investor and the issuer must take reasonable steps to verify that status.',
+      },
+      {
+        q: 'Who counts as an accredited investor?',
+        a: 'Under 17 CFR 230.501(a), a person with net worth above $1 million (excluding the primary residence), or income above $200,000 individually or $300,000 jointly in each of the last two years, or a qualifying professional credential. Entities generally need more than $5 million in assets.',
+      },
+      {
+        q: 'Do I have to file anything with the SEC for a Rule 506 offering?',
+        a: 'Yes. The issuer files a Form D notice within 15 days after the first sale, meaning the date the first investor is irrevocably committed. The SEC charges no fee for it, and states may require their own notice filings and fees.',
       },
       {
         q: 'Who writes a PPM?',
