@@ -13,6 +13,7 @@ export const NEWSLETTER_SLUGS = [
   'bain-capital-manappuram-finance-acquisition-explained',
   'ongc-ntpc-ayana-19500-crore-deal-mostly-debt',
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies',
+  'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -1091,6 +1092,63 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Cohance Lifesciences' },
       { name: 'NJ Bio' },
       { name: 'Sapala Organics' },
+    ],
+  },
+  'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore': {
+    title: 'The scarcity premium: why one Kolkata mall was worth ₹ 3,250 crore',
+    description: 'Blackstone paid ₹ 3,250 crore for South City Mall in Kolkata, 62.5% above the 2020 expected price. A teardown of the scarcity premium behind the deal.',
+    author: 'Kautilya PE',
+    datePublished: '2026-11-04',
+    dealDate: '2025-06-17',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 3823,
+    keywords: [
+      'Blackstone South City Mall',
+      'South City Mall Kolkata acquisition',
+      'Blackstone India mall acquisition',
+      'Blackstone Nexus Select Trust',
+      'scarcity premium real estate',
+      'single-asset acquisition',
+      'trophy asset valuation',
+      'mall turnover vs rental income',
+      'cap rate',
+      'Kolkata retail real estate',
+      'Indian retail real estate M&A',
+      'ANAROCK Blackstone',
+    ],
+    faqs: [
+      {
+        q: 'How much did Blackstone pay for South City Mall in Kolkata?',
+        a: 'Blackstone paid ₹ 3,250 crore (about $377M) for 100% of South City Projects (Kolkata) Ltd, the company that owns South City Mall. The deal closed on June 17, 2025, and is the largest mall deal in eastern India\'s history.',
+      },
+      {
+        q: 'Why was South City Mall worth ₹ 3,250 crore?',
+        a: 'The price reflects scarcity, not yield. Kolkata has almost no institutional-grade malls, so South City has near-monopoly status in premium retail, and it fills the last major gap in Blackstone\'s pan-India mall map.',
+      },
+      {
+        q: 'Why did the price rise 62.5% between 2020 and 2025?',
+        a: 'In 2020 Blackstone led a dozen bidders at an expected price of about ₹ 2,000 crore, but the families denied any sale and the process stalled through COVID. By the time it closed in 2025 the price had risen to ₹ 3,250 crore, 62.5% higher, because the scarcity value of the asset grew while the families held.',
+      },
+      {
+        q: 'Is the ₹ 1,800 crore figure the mall\'s income?',
+        a: 'No. The ₹ 1,800 crore is the mall\'s annual turnover, the total sales its tenants make. It is not the rent Blackstone collects, which is a fraction of it, and no rental income, yield or cap rate was disclosed.',
+      },
+      {
+        q: 'What is a single-asset acquisition?',
+        a: 'A single-asset acquisition means buying one specific property, or the company that holds it, rather than a portfolio or a share of a platform. The value stands or falls on that one building\'s location, tenants and footfall, with none of the diversification a multi-asset portfolio provides.',
+      },
+    ],
+    about: [
+      'Blackstone',
+      'South City Mall',
+      'Indian retail real estate',
+    ],
+    mentions: [
+      { name: 'Blackstone' },
+      { name: 'South City Mall' },
+      { name: 'Nexus Select Trust' },
+      { name: 'ANAROCK' },
     ],
   },
 };

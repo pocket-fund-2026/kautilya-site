@@ -15,6 +15,7 @@ import NewsletterBrookfieldAmericanTowerIndiaAltiusAcquisitionExplained from '@/
 import NewsletterBainCapitalManappuramFinanceAcquisitionExplained from '@/components/newsletters/NewsletterBainCapitalManappuramFinanceAcquisitionExplained';
 import NewsletterOngcNtpcAyana19500CroreDealMostlyDebt from '@/components/newsletters/NewsletterOngcNtpcAyana19500CroreDealMostlyDebt';
 import NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies from '@/components/newsletters/NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies';
+import NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore from '@/components/newsletters/NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -33,6 +34,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'bain-capital-manappuram-finance-acquisition-explained': NewsletterBainCapitalManappuramFinanceAcquisitionExplained,
   'ongc-ntpc-ayana-19500-crore-deal-mostly-debt': NewsletterOngcNtpcAyana19500CroreDealMostlyDebt,
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies': NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies,
+  'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore': NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore,
 };
 
 type Props = {
