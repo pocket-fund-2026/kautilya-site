@@ -1218,10 +1218,11 @@ a.deal-card { cursor: pointer; }
 }
 
 /* Story body */
+/* Same 1200px box and 48px gutters as .story-hero, so the body lines up with the title on both sides. */
 .story-body {
-  max-width: 860px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px 100px;
+  padding: 56px 48px 100px;
 }
 
 .story-body p {
@@ -1837,7 +1838,7 @@ a.deal-card { cursor: pointer; }
   }
 
   .story-body {
-    padding: 0 24px 80px;
+    padding: 40px 24px 80px;
   }
 
   .story-body h2 {
@@ -2086,7 +2087,7 @@ a.deal-card { cursor: pointer; }
   }
 
   .story-body {
-    padding: 0 20px 60px;
+    padding: 32px 20px 60px;
   }
 
   .story-body h2 {
