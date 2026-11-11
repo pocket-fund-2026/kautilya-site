@@ -12,6 +12,7 @@ export const BLOG_SLUGS = [
   'ebitda-multiples-in-india-what-businesses-actually-sell-for',
   'timeline-of-a-search-fund-from-raise-to-acquisition',
   'how-to-buy-a-business-with-no-money-down',
+  'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1003,6 +1004,57 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
         q: 'How much down payment do you need with seller financing only?',
         a: 'Typically a third or more of the price, with the seller’s loan repaid over 5 to 7 years.',
       },
+    ],
+  },
+  'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent': {
+    title: 'JSW Energy\'s ₹ 16,084 Crore KSK Mahanadi Acquisition: Why the Creditors Kept 26%',
+    subtitle: 'A ₹ 16,084 crore insolvency takeover of a 3,600 MW coal plant, and the equity-split structure behind it',
+    description: 'JSW Energy won KSK Mahanadi for ₹ 16,084 crore through insolvency, leaving creditors 26% it later bought out. Here is how the deal was structured.',
+    author: 'Kautilya PE',
+    datePublished: '2026-11-11',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 3768,
+    keywords: [
+      'JSW Energy KSK Mahanadi acquisition',
+      'KSK Mahanadi Power insolvency',
+      'JSW Mahanadi',
+      'distressed M&A India',
+      'IBC resolution plan',
+      'thermal power acquisition India',
+      'equity split resolution plan',
+      'creditor haircut',
+      'liquidation value',
+      'Raigarh Champa Rail',
+      'JSW Energy 100% stake',
+    ],
+    faqs: [
+      {
+        q: 'How much did JSW Energy pay for KSK Mahanadi Power?',
+        a: 'JSW Energy won KSK Mahanadi through the insolvency process with a resolution amount of ₹ 16,084 crore (about $1.93B). That recovers about 50% of the ₹ 32,335 crore that 19 banks and financial institutions were owed, and is 235% of the plant\'s ₹ 6,848 crore liquidation value.',
+      },
+      {
+        q: 'Why did the creditors keep 26% of the plant?',
+        a: 'JSW took 74% of the equity at closing and left the financial creditors 26%, alongside ₹ 15,985 crore of upfront cash. Analysts read this structure as sharing the upside of the turnaround with creditors accepting a 50% haircut, and lowered JSW\'s upfront cash without lowering the price.',
+      },
+      {
+        q: 'Did JSW Energy end up owning 100% of the plant?',
+        a: 'Not yet confirmed as closed. On April 9, 2026 JSW Energy issued notice exercising its call option to buy the creditors\' remaining 26%, which would take it to 100%. I found no closing announcement, so check JSW\'s exchange filings. The plant has been renamed JSW Mahanadi Power.',
+      },
+      {
+        q: 'What is the plant and what did JSW buy alongside it?',
+        a: 'KSK Mahanadi is a 3,600 MW coal plant in Chhattisgarh, with 1,800 MW operating and 1,800 MW under construction. JSW also bought Raigarh Champa Rail, the line that hauls the plant\'s coal, through a separate insolvency for ₹ 700.10 crore, completed March 26, 2026.',
+      },
+      {
+        q: 'What does 235% of liquidation value mean?',
+        a: 'It means the resolution plan pays creditors more than twice what they would have received by selling the plant\'s assets piecemeal. In an insolvency, liquidation value is the floor, so a plan far above it makes creditors prefer a sale to a shutdown, even at a steep haircut.',
+      },
+    ],
+    about: [
+      'JSW Energy',
+      'KSK Mahanadi Power',
+      'Insolvency and Bankruptcy Code',
+      'Distressed M&A in India',
     ],
   },
 };
