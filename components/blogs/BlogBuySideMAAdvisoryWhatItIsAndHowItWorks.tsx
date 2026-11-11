@@ -11,7 +11,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Buy-Side M&A Advisory: What It Is and How It Works");
+    const text = encodeURIComponent("Buy-Side M&A Advisory: What It Is, Process and Fees");
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -21,7 +21,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent("Buy-Side M&A Advisory: What It Is and How It Works");
+    const subject = encodeURIComponent("Buy-Side M&A Advisory: What It Is, Process and Fees");
     const body = encodeURIComponent(`Thought you'd find this useful: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -260,9 +260,9 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
           <span className="meta-tag">M&amp;A Advisory</span>
           <span className="meta-tag">10 min read</span>
         </div>
-        <h1>Buy-Side M&amp;A Advisory: What It Is and How It Works</h1>
+        <h1>Buy-Side M&amp;A Advisory: What It Is, Process and Fees</h1>
         <div className="subtitle">A Plain-Language Guide for Business Buyers</div>
-        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;12 October 2026</p>
+        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;12 October 2026&nbsp;&nbsp;·&nbsp;&nbsp;Updated 11 November 2026</p>
         <div className="hero-line" />
       </div>
 
@@ -281,10 +281,12 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 
 <h2>What Is Buy-Side M&amp;A Advisory?</h2>
 <p>In short, a buy-side M&amp;A advisor is a hired representative for the acquirer, covering the whole path from deciding what to buy through to closing the deal.</p>
-<p>The term &quot;buy-side&quot; simply means the advisor is working for the acquirer. It is the opposite of sell-side advisory, where the advisor works for the owner selling the company. If you are the one selling, our <Link href="/blog/what-is-sell-side-ma-advisory">guide to sell side advisory</Link> is the one you want. If you are the one buying, read on.</p>
+<p>The term &quot;buy-side&quot; simply means the advisor is working for the acquirer. It is the opposite of sell-side advisory, where the advisor works for the owner selling the company. If you are the one selling, our <Link href="/blog/what-is-sell-side-ma-advisory">guide to sell-side M&amp;A advisory</Link> is the one you want. If you are the one buying, read on.</p>
 <p>In practice, a buy-side advisor does three main things. First, they turn a loose idea (&quot;something profitable in logistics, in western India&quot;) into precise screening criteria that can actually be searched. Second, they reach owners directly, including owners who were not planning to sell. Third, they stay in the middle of the negotiation and diligence process, so that an awkward moment between buyer and seller does not end a deal that was otherwise workable.</p>
 <h2>Why Most Guides on Buy-Side Advisory Aren&apos;t Neutral</h2>
 <p>Almost everything written about buy-side M&amp;A advisory is published by advisory firms as marketing for their own services. That does not make the information wrong, but it does mean most guides are written to convince you to hire an advisor, not to help you decide whether you need one. This guide tries to do the second, including the parts that do not favour hiring.</p>
+<h2>What Buy-Side M&amp;A Advisory Services Include</h2>
+<p>Buy-side M&amp;A advisory services usually cover five things, each explained below: defining the acquisition criteria; sourcing and approaching targets, including owners who are not selling; valuing the business and structuring the offer; negotiating the price and letter of intent (LOI); and coordinating due diligence through to closing. The lawyer still drafts and reviews the binding agreements. For a shorter, India-specific introduction aimed at first-time buyers, see <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side advisory is and why buyers in India use it</Link>.</p>
 <h2>The Buy-Side Process, Step by Step</h2>
 <p>The buy-side process has seven steps, from defining what you want to buy through to closing the deal.</p>
 <div className="deal-table-wrap">
@@ -366,7 +368,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 </tbody>
 </table>
 </div>
-<p>For a typical Indian SME acquisition, meaning an unlisted private company bought by a search-fund buyer, a family office, or an individual, none of these triggers usually applies. That changes what an advisor is worth. Their value is in sourcing, valuation, negotiation, and choosing the right structure (see our guides on valuing a small business, the LOI, and the due diligence checklist), not in navigating open offers or merger control.</p>
+<p>For a typical Indian SME acquisition, meaning an unlisted private company bought by a search-fund buyer, a family office, or an individual, none of these triggers usually applies. That changes what an advisor is worth. Their value is in sourcing, valuation, negotiation, and choosing the right structure (see <Link href="/blog/ebitda-multiples-in-india-what-businesses-actually-sell-for">what Indian businesses actually sell for</Link>, and <Link href="/blog/what-is-a-search-fund">what a search fund is</Link> for the financed-buyer version), not in navigating open offers or merger control.</p>
 <div className="pull-quote">
 <p><em>This article explains how buy-side M&amp;A advisory generally works. It is not advice on any specific engagement letter, fee agreement, or deal. Have a lawyer and, ideally, an independent financial adviser review any actual agreement before signing it. Terms vary by advisor and by deal.</em></p>
 </div>

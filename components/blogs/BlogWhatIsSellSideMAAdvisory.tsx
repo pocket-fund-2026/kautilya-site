@@ -234,7 +234,7 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <span className="meta-tag">M&amp;A Advisory</span>
           <span className="meta-tag">9 min read</span>
         </div>
-        <h1>Sell Side Advisory: What It Is and How It Works</h1>
+        <h1>Sell-Side M&amp;A Advisory: What It Is, Process and Fees</h1>
         <div className="subtitle">
           A Plain-Language Guide to Sell-Side M&amp;A for Business Owners
         </div>
@@ -288,6 +288,16 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           for the business, finds and manages a group of qualified buyers without alerting staff
           or competitors too early, and runs a process that keeps negotiating power on the
           seller&apos;s side rather than handing it to whichever buyer shows up first.
+        </p>
+
+        <h2>What Sell Side Advisory Services Include</h2>
+        <p>
+          Sell side advisory services usually cover five things, each explained in the sections
+          below: valuing the business and preparing it for sale; writing the teaser and the
+          confidential information memorandum (CIM); approaching and screening buyers under NDA;
+          negotiating the price, structure and letter of intent (LOI); and managing due diligence
+          through to closing. A broker typically covers only the middle part, and a lawyer drafts
+          the binding documents.
         </p>
 
         <h2>The Sell-Side Process, Step by Step</h2>
@@ -526,7 +536,11 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           running the same process for every seller. If you want to understand that buyer side in
           more depth,{' '}
           <Link href="/blog/what-is-buy-side-ma-advisory">our guide to buy-side M&amp;A advisory</Link>{' '}
-          covers the same process from the other side of the table.
+          covers the same process from the other side of the table, and{' '}
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">how buy-side M&amp;A advisory works, step by step</Link>{' '}
+          shows how buyers source and screen the businesses that sellers put up for sale. For
+          the valuation side, see{' '}
+          <Link href="/blog/ebitda-multiples-in-india-what-businesses-actually-sell-for">what Indian businesses actually sell for</Link>.
         </p>
         <p>
           That said, this only works if the business&apos;s valuation and any weak points — such

@@ -486,6 +486,16 @@ export default function NewsletterCVCKKRHealthcareGlobal() {
         </div>
 
         {/* Sources & Method */}
+        <h2>Where This Fits in Buy-Side and Sell-Side Advisory</h2>
+        <p>
+          Behind a deal like the CVC and KKR transaction for Healthcare Global are two separate mandates: one for the buyer and one for the
+          seller. For how the acquirer&apos;s side is run, including process, fees and when it is
+          worth hiring help, read our guide to{' '}
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">buy-side M&amp;A advisory</Link>.
+          For the seller&apos;s side, see{' '}
+          <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link>.
+        </p>
+
         <div className="sources-appendix">
           <div className="phase-label" style={{ marginBottom: 20 }}>Sources &amp; Method</div>
           <h3>Deal facts</h3>

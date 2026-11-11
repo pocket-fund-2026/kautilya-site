@@ -687,7 +687,7 @@ export default function NewsletterSunPharmaOrganon() {
           actually matters — repeat across markets far smaller than a $11.75B pharma buyout. If
           you are evaluating how buy-side deal origination and structuring work for mid-market
           acquisitions in India, see{' '}
-          <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">what buy-side M&amp;A advisory is</Link>
           {' '}and, for the search-fund-specific version of financed acquisitions,{' '}
           <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>.
           Sellers in deals like this are typically advised by a banker; see{' '}
