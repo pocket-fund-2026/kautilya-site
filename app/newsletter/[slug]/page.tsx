@@ -17,6 +17,7 @@ import NewsletterOngcNtpcAyana19500CroreDealMostlyDebt from '@/components/newsle
 import NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies from '@/components/newsletters/NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies';
 import NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore from '@/components/newsletters/NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore';
 import NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent from '@/components/newsletters/NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent';
+import NewsletterHowToBuyABusinessWithNoMoneyDown from '@/components/newsletters/NewsletterHowToBuyABusinessWithNoMoneyDown';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -37,6 +38,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies': NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies,
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore': NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore,
   'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent': NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent,
+  'how-to-buy-a-business-with-no-money-down': NewsletterHowToBuyABusinessWithNoMoneyDown,
 };
 
 type Props = {

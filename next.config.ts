@@ -75,6 +75,7 @@ const nextConfig: NextConfig = {
       // Flip `permanent: true` once that page carries its own JobPosting schema.
       { source: '/careers', destination: 'https://hirepeanalyst.com/', permanent: false },
       { source: '/blog/jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent', destination: '/newsletter/jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent', permanent: true },
+      { source: '/blog/how-to-buy-a-business-with-no-money-down', destination: '/newsletter/how-to-buy-a-business-with-no-money-down', permanent: true },
       { source: '/blog/pharma-business-valuation-india-jb-chemicals', destination: '/newsletter/torrent-jb-chemicals-pharma-valuation', permanent: true },
       // Old/mistyped URLs Google still has indexed or discovered (they 404ed). Each goes to the closest live page.
       { source: '/newsletter/chryscapital-chryscapital-novartis-india-acquisition-explained', destination: '/newsletter/chryscapital-novartis-india-acquisition-explained', permanent: true },

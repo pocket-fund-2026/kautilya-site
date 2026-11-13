@@ -13,7 +13,6 @@ import BlogBuySideMAAdvisoryWhatItIsAndHowItWorks from '@/components/blogs/BlogB
 import BlogAnalystDiariesKautilyaSeoFromZero from '@/components/blogs/BlogAnalystDiariesKautilyaSeoFromZero';
 import BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor from '@/components/blogs/BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor';
 import BlogTimelineOfASearchFundFromRaiseToAcquisition from '@/components/blogs/BlogTimelineOfASearchFundFromRaiseToAcquisition';
-import BlogHowToBuyABusinessWithNoMoneyDown from '@/components/blogs/BlogHowToBuyABusinessWithNoMoneyDown';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -30,7 +29,6 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'analyst-diaries-kautilya-seo-from-zero': BlogAnalystDiariesKautilyaSeoFromZero,
   'ebitda-multiples-in-india-what-businesses-actually-sell-for': BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor,
   'timeline-of-a-search-fund-from-raise-to-acquisition': BlogTimelineOfASearchFundFromRaiseToAcquisition,
-  'how-to-buy-a-business-with-no-money-down': BlogHowToBuyABusinessWithNoMoneyDown,
 };
 
 type Props = {

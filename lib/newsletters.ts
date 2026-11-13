@@ -15,6 +15,7 @@ export const NEWSLETTER_SLUGS = [
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies',
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore',
   'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent',
+  'how-to-buy-a-business-with-no-money-down',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -1202,6 +1203,59 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       'KSK Mahanadi Power',
       'Insolvency and Bankruptcy Code',
       'Distressed M&A in India',
+    ],
+  },
+  'how-to-buy-a-business-with-no-money-down': {
+    title: 'How to Buy a Business With No Money Down: What Works in 2026',
+    description: 'True zero-down is gone under the 2026 SBA rules. See how much cash a $1M to $5M business needs, how a 5% seller note works, and where the rest can come from.',
+    author: 'Dev Shah',
+    datePublished: '2026-11-06',
+    dealDate: '2026-11-06',
+    category: 'Buying a Business',
+    readTime: '10 min',
+    wordCount: 2551,
+    keywords: [
+      'how to buy a business with no money down',
+      'how much money do you need to buy a business',
+      'SBA loan to buy a business down payment',
+      'how to buy a business with seller financing',
+      'seller note full standby',
+      'buy a business with little money',
+      'ROBS business acquisition',
+      'buy a business with 5% down',
+      'SBA 7(a) acquisition loan 2026',
+      'standby seller note',
+      'business acquisition stress test',
+    ],
+    faqs: [
+      {
+        q: 'Can you buy a business with no money down?',
+        a: 'Not with an SBA loan alone. Since 1 October 2026, a first acquisition needs 10% equity, and at least half must be real cash. You can put in none of your own money only if an investor or fund supplies it.',
+      },
+      {
+        q: 'How much money do I need to buy a $1 million business?',
+        a: 'About $55,000 of your own cash with an SBA loan and a standby seller note: 5% of a total project cost of roughly $1.1M once closing costs and working capital are added.',
+      },
+      {
+        q: 'What is the minimum down payment for an SBA business acquisition loan?',
+        a: '10% of total project cost. Up to half can be a seller note on full standby, so your own cash can be as low as 5%.',
+      },
+      {
+        q: 'Can I use my 401(k) to buy a business?',
+        a: 'Yes, through a ROBS structure, and the money can count toward the SBA down payment. It avoids the early-withdrawal penalty but puts retirement savings into one business.',
+      },
+      {
+        q: 'What is a seller note on full standby?',
+        a: 'A loan from the seller that receives no principal or interest payments until the SBA loan is repaid, usually 10 years. Only full-standby notes count toward the SBA equity requirement.',
+      },
+      {
+        q: 'Why would a seller agree to a standby note?',
+        a: 'They still get about 95% of the price at closing, and the note is paid from the business’s future success. Framed as a bonus, it also keeps them invested in a good handover.',
+      },
+      {
+        q: 'How much down payment do you need with seller financing only?',
+        a: 'Typically a third or more of the price, with the seller’s loan repaid over 5 to 7 years.',
+      },
     ],
   },
 };
