@@ -16,6 +16,7 @@ import NewsletterBainCapitalManappuramFinanceAcquisitionExplained from '@/compon
 import NewsletterOngcNtpcAyana19500CroreDealMostlyDebt from '@/components/newsletters/NewsletterOngcNtpcAyana19500CroreDealMostlyDebt';
 import NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies from '@/components/newsletters/NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies';
 import NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore from '@/components/newsletters/NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore';
+import NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent from '@/components/newsletters/NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -35,6 +36,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'ongc-ntpc-ayana-19500-crore-deal-mostly-debt': NewsletterOngcNtpcAyana19500CroreDealMostlyDebt,
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies': NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies,
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore': NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore,
+  'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent': NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent,
 };
 
 type Props = {

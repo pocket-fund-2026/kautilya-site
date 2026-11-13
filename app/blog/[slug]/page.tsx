@@ -14,7 +14,6 @@ import BlogAnalystDiariesKautilyaSeoFromZero from '@/components/blogs/BlogAnalys
 import BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor from '@/components/blogs/BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor';
 import BlogTimelineOfASearchFundFromRaiseToAcquisition from '@/components/blogs/BlogTimelineOfASearchFundFromRaiseToAcquisition';
 import BlogHowToBuyABusinessWithNoMoneyDown from '@/components/blogs/BlogHowToBuyABusinessWithNoMoneyDown';
-import BlogJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent from '@/components/blogs/BlogJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -32,7 +31,6 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'ebitda-multiples-in-india-what-businesses-actually-sell-for': BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor,
   'timeline-of-a-search-fund-from-raise-to-acquisition': BlogTimelineOfASearchFundFromRaiseToAcquisition,
   'how-to-buy-a-business-with-no-money-down': BlogHowToBuyABusinessWithNoMoneyDown,
-  'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent': BlogJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent,
 };
 
 type Props = {
