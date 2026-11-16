@@ -12,6 +12,7 @@ export const BLOG_SLUGS = [
   'ebitda-multiples-in-india-what-businesses-actually-sell-for',
   'timeline-of-a-search-fund-from-raise-to-acquisition',
   'how-to-buy-a-business-with-no-money-down',
+  'search-fund-vs-self-funded-search-vs-independent-sponsor',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1003,6 +1004,73 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
         q: 'How much down payment do you need with seller financing only?',
         a: 'Typically a third or more of the price, with the seller’s loan repaid over 5 to 7 years.',
       },
+    ],
+  },
+  'search-fund-vs-self-funded-search-vs-independent-sponsor': {
+    title: 'Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What',
+    description: 'A searcher who "owns 25%" often takes home about 19% of the sale. Compare search funds, self-funded search and independent sponsors on equity, debt, deal size and risk.',
+    author: 'Kautilya',
+    datePublished: '2026-11-16',
+    category: 'Search Funds',
+    readTime: '12 min',
+    wordCount: 2915,
+    keywords: [
+      'search fund vs independent sponsor',
+      'search fund vs self funded',
+      'self funded search vs independent sponsor',
+      'fundless sponsor vs search fund',
+      'self funded search economics',
+      'traditional search fund vs self-funded search',
+      'searcher equity',
+      'independent sponsor fees and carried interest',
+      'search fund equity vesting',
+      'how search funds are funded',
+      'search fund returns Stanford study',
+      'self funded search India',
+    ],
+    faqs: [
+      {
+        q: 'What is the difference between a search fund and an independent sponsor?',
+        a: 'A searcher raises money to find and buy one company, then runs it as CEO. An independent sponsor raises money deal by deal, earns fees and carried interest, and usually installs a separate CEO. They\'re often confused because neither starts with a committed fund.',
+      },
+      {
+        q: 'What is the difference between a traditional and a self-funded search?',
+        a: 'In a traditional search, investors pay for the search and your salary, and you earn up to 25% of the common equity. In a self-funded search you pay for the search yourself, use more debt and usually keep a majority of the company.',
+      },
+      {
+        q: 'How much equity does a searcher get?',
+        a: 'Up to 25% of the common equity for a solo searcher and up to 30% for a pair, vesting in three tranches: at closing, over time and on performance. Investors\' preferred equity is paid first, so your share of the sale is lower than the headline, about 19% in a typical illustration.',
+      },
+      {
+        q: 'What is a step-up in a search fund?',
+        a: 'A step-up credits search investors\' money at more than face value when a company is bought. At 1.5x, $1 of search capital becomes $1.50 in the acquisition round. If the search fails, the search capital is simply lost.',
+      },
+      {
+        q: 'What do independent sponsors earn?',
+        a: 'Usually a closing fee of about 1% to 2% of enterprise value, an annual management fee (often 3% to 5% of EBITDA when set that way), and carried interest of 10% to 25% above a hurdle.',
+      },
+      {
+        q: 'Is a search fund the same as private equity?',
+        a: 'No. A private equity fund raises a pool of money and buys many companies, run by hired management. A search fund backs one person to buy and run one company. An independent sponsor sits in between: private equity style, but without the fund.',
+      },
+      {
+        q: 'Which model has the best returns?',
+        a: 'Traditional search has the strongest record: 33.9% aggregate IRR and 4.75x in Stanford\'s 2026 study. Self-funded and sponsor deals have no comparable long-run study, so compare them on structure and fit.',
+      },
+      {
+        q: 'Do search funds work outside the US?',
+        a: 'Yes. IESE\'s 2026 report shows 30% IRR and 2.8x for funds outside the US and Canada, and 73% of concluded international searches ended in an acquisition. Stanford\'s 58% US and Canada figure is measured differently, across all funds since 1996, so don\'t compare the two directly.',
+      },
+      {
+        q: 'Can I do a self-funded search in India?',
+        a: 'Yes, but there\'s no SBA-style loan and RBI\'s 2026 acquisition-finance rules only cover large, profitable companies. Expect to put in more equity and rely on seller financing.',
+      },
+    ],
+    about: [
+      'Search funds',
+      'Self-funded search',
+      'Independent sponsors',
+      'Search fund equity and returns',
     ],
   },
 };
