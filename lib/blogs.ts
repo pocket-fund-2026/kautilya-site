@@ -1008,7 +1008,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'search-fund-vs-self-funded-search-vs-independent-sponsor': {
-    title: 'Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What',
+    title: 'Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026)',
     seoTitle: 'Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026)',
     description: 'The three ways to search for and buy a business, compared: who pays, who owns what, and what each one costs the searcher. With 2026 numbers.',
     author: 'Kautilya',

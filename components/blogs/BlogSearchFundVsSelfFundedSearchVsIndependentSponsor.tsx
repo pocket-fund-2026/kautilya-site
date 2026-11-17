@@ -11,7 +11,7 @@ export default function BlogSearchFundVsSelfFundedSearchVsIndependentSponsor() {
 
   const shareTwitter = useCallback(() => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What, via @microsearchfund");
+    const text = encodeURIComponent("Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026), via @microsearchfund");
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   }, []);
 
@@ -21,7 +21,7 @@ export default function BlogSearchFundVsSelfFundedSearchVsIndependentSponsor() {
   }, []);
 
   const shareEmail = useCallback(() => {
-    const subject = encodeURIComponent("Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What");
+    const subject = encodeURIComponent("Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026)");
     const body = encodeURIComponent(`Thought you'd find this useful: ${window.location.href}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   }, []);
@@ -259,7 +259,7 @@ export default function BlogSearchFundVsSelfFundedSearchVsIndependentSponsor() {
           <span className="meta-tag">Search Funds</span>
           <span className="meta-tag">12 min read</span>
         </div>
-        <h1>Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What</h1>
+        <h1>Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026)</h1>
         <p className="blog-author-byline">By <a href="/team">Kautilya</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 November 2026</p>
         <div className="hero-line" />
       </div>
