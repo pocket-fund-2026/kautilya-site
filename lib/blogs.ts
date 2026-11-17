@@ -21,6 +21,7 @@ export type BlogFaq = { q: string; a: string };
 
 export type BlogMeta = {
   title: string;
+  seoTitle?: string; // exact <title> tag when it should differ from the H1/title
   subtitle?: string;
   description: string;
   author: string;
@@ -1008,7 +1009,8 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
   },
   'search-fund-vs-self-funded-search-vs-independent-sponsor': {
     title: 'Search Fund vs Self-Funded Search vs Independent Sponsor: Who Pays, Who Owns What',
-    description: 'A searcher who "owns 25%" often takes home about 19% of the sale. Compare search funds, self-funded search and independent sponsors on equity, debt, deal size and risk.',
+    seoTitle: 'Types of Search Funds: Traditional vs Self-Funded vs Independent Sponsor (2026)',
+    description: 'The three ways to search for and buy a business, compared: who pays, who owns what, and what each one costs the searcher. With 2026 numbers.',
     author: 'Kautilya',
     datePublished: '2026-11-16',
     category: 'Search Funds',

@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${meta.title}: ${meta.subtitle}`
     : meta.title;
 
-  const pageTitle = `${meta.title} | Kautilya`;
+  const pageTitle = meta.seoTitle ?? `${meta.title} | Kautilya`;
   const kw = meta.keywords ?? [];
 
   return {
