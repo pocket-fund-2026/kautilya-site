@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>VegHai privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --ink:#111; --paper:#fff; --muted:#555; --line:#d9d9d9; --panel:#f5f5f2; --link:#0b5cad; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#f2f2f2; --paper:#111; --muted:#b3b3b3; --line:#333; --panel:#1c1c1a; --link:#8ab8f0; } }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width:42rem; margin:0 auto; padding:1.25rem 1.1rem 4rem; }
+  h1 { font-size:1.75rem; line-height:1.2; margin:1.2rem 0 .3rem; }
+  h2 { font-size:1.3rem; line-height:1.25; margin:2.2rem 0 .5rem; padding-top:.4rem; border-top:1px solid var(--line); }
+  h3 { font-size:1.05rem; margin:1.4rem 0 .25rem; }
+  p, li { margin:.5rem 0; }
+  ul { padding-left:1.25rem; }
+  a { color:var(--link); overflow-wrap:anywhere; }
+  .meta { color:var(--muted); font-size:.95rem; }
+  .box { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:.2rem 1rem .6rem; margin:1rem 0; }
+  .conn { border-left:4px solid var(--ink); padding:.1rem 0 .1rem .9rem; margin:1.1rem 0; }
+  nav { margin:0 0 .5rem; font-size:.95rem; }
+  code { font:0.92em ui-monospace, Menlo, Consolas, monospace; overflow-wrap:anywhere; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="support.html">Support</a></nav>
+
+<h1>VegHai privacy policy</h1>
+<p class="meta">Last updated 17 November 2026. This page describes VegHai version 1.0 for iPhone and Android.</p>
+
+<div class="box">
+<h2 style="border:0;margin-top:.8rem">The short version</h2>
+<ul>
+  <li>Your food rules, the people at your table, your trips and flights, and your saved answers stay on your phone. We never receive them.</li>
+  <li>VegHai reads labels on your phone. Photos and label text are not sent to us or to any server we run.</li>
+  <li>There is no account in the app, and no advertising or analytics of our own. On Android, Google&rsquo;s ML Kit library sends Google some diagnostics (see &ldquo;What leaves your phone&rdquo; below).</li>
+  <li>Three things use the internet: a one-time download of the reading model from Hugging Face, barcode lookups in Open Food Facts when a barcode is in view of the camera while you scan, or in a photo you take, and, on Android only, diagnostics that Google's text-recognition library sends to Google.</li>
+  <li>If you choose to email us about a wrong answer, we receive that email. Nothing is sent unless you press send.</li>
+</ul>
+</div>
+
+<h2>Who we are</h2>
+<p>VegHai is published by Jigsaw Ventures LLC (&ldquo;we&rdquo;). For anything in this policy, write to <a href="mailto:hello@pocket-fund.com">hello@pocket-fund.com</a>.</p>
+
+<h2>What stays on your phone</h2>
+<p>VegHai keeps the following in a private database on your phone, and nowhere else:</p>
+<ul>
+  <li>Your food rules and the rules of anyone you add to your table, including the names you type for them. A food rule can reveal a religion or a way of life, so it is never sent to us.</li>
+  <li>Your trips, the cards you choose, and the questions you asked in kitchens and the answers staff tapped.</li>
+  <li>Your flights: the airline, date, time, airports and seat if you enter it. VegHai does not ask for a booking reference.</li>
+  <li>Your saved answers. They are text. VegHai does not upload photos, and anything it keeps from a photo stays on your phone.</li>
+  <li>Your language choice and card settings.</li>
+</ul>
+<p>The camera is used to read food labels and menus. The pictures are processed on the phone. If you choose a photo from your library, VegHai receives only that photo.</p>
+<p>VegHai does not ask for your location, contacts, microphone or advertising identifier.</p>
+
+<h2>What leaves your phone, and where it goes</h2>
+<p>These are all of the connections VegHai makes. None of them goes to a server run by us.</p>
+
+<div class="conn">
+<h3>1. The reading model, downloaded once</h3>
+<p>VegHai reads labels with an open AI model that runs on your phone. The model file is downloaded once from Hugging Face (huggingface.co), and then works with no signal. Hugging Face sees the download request: your IP address and the standard details any app or browser sends. We do not see it. See <a href="https://huggingface.co/privacy">Hugging Face&rsquo;s privacy policy</a>.</p>
+</div>
+
+<div class="conn">
+<h3>2. Barcode lookups in Open Food Facts</h3>
+<p>When a barcode is in view of the camera while you scan, or in a photo you take, VegHai asks Open Food Facts, a public database, about that product. The barcode number goes to Open Food Facts together with your IP address and a line that names the app and its version and gives our contact email (Open Food Facts asks every app to do this). Nothing about you or your food rules is sent. We do not see the request. See <a href="https://world.openfoodfacts.org/privacy">Open Food Facts&rsquo; privacy policy</a>. An answer from the database is always labelled as not read from your pack.</p>
+</div>
+
+<div class="conn">
+<h3>3. Android only: Google ML Kit diagnostics</h3>
+<p>On Android, VegHai uses Google&rsquo;s ML Kit to read the text in a photo and to read barcodes, using models that are built into the app, so the reading itself happens on the phone. Google says that ML Kit also sends Google performance measurements (such as how long a read took), basic device information (maker, model, Android version) and a per-installation identifier that is not intended to identify you or your phone, over an encrypted connection. Google&rsquo;s published list does not include the content of your photos. VegHai has no setting that turns this off. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google&rsquo;s ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a>.</p>
+</div>
+
+<div class="conn">
+<h3>4. iPhone only: Apple text recognition</h3>
+<p>On iPhone, VegHai reads text with Apple&rsquo;s own text recognition, which runs on the phone. VegHai does not send anything to anyone for this step.</p>
+</div>
+
+<h3>Things that open another app or site because you tapped them</h3>
+<ul>
+  <li>&ldquo;Find food near me&rdquo; opens Apple Maps or Google Maps with search words in the local language. VegHai does not read your location. The maps app gets what you do there, under its own policy.</li>
+  <li>&ldquo;Open the airline&rsquo;s booking page&rdquo; opens the airline&rsquo;s site in your browser.</li>
+  <li>&ldquo;This looks wrong&rdquo; opens your mail app with a message already written. It is sent only if you press send. See &ldquo;If you email us&rdquo; below.</li>
+  <li>&ldquo;Save as image&rdquo; and sharing open your phone&rsquo;s share sheet. What you send, and to whom, is your choice.</li>
+</ul>
+<p>&ldquo;Say it aloud&rdquo; uses your phone&rsquo;s own speech voices. VegHai does not send the card text anywhere. Some phones&rsquo; speech engines can use online voices; that is the phone maker&rsquo;s or engine&rsquo;s service, not ours.</p>
+
+<h2>What we receive</h2>
+<p>From the app itself: nothing. VegHai 1.0 does not connect to a server run by us. We do not receive photos, label text, food rules, names, trips, flights, location, or any identifier for you or your phone.</p>
+
+<h3>If you email us</h3>
+<p>If you send a &ldquo;This looks wrong&rdquo; message or write to us for support, we receive your email address and what you wrote. The prefilled message may include the text VegHai read from the label and the answer it gave, so we can fix the problem. It does not include a photo unless you attach one. We use it to reply and to correct the data, and we keep it only as long as that takes. We delete it if you ask.</p>
+
+<h3>Pages on this site</h3>
+<p>This page and the support page are ordinary web pages. The company that hosts them keeps standard access logs (IP address, time, page requested) to run the site. They have nothing to do with the app.</p>
+
+<h2>Notifications</h2>
+<p>When you save a flight, VegHai asks to send notifications so it can remind you to ask for your meal. The reminders are set on your phone. Nothing about them is sent to us or to anyone else. If you say no, the flight is still saved and no reminder is set.</p>
+
+<h2>How long things are kept, and deleting them</h2>
+<p>Everything the app stores stays on your phone until you remove it or delete the app. Deleting the app deletes what it stored. If you back up your phone with iCloud or with Android backup, the backup may include the app&rsquo;s data. That is a copy in your own account under your own phone settings, not something we can see. If your phone downloaded the reading model, deleting the app removes it too.</p>
+
+<h2>Children</h2>
+<p>VegHai is not made for children. We do not collect personal data from anyone, children included. On Android, the Google ML Kit diagnostics described above are sent for every install, whoever is using the phone.</p>
+
+<h2>A note on the answers</h2>
+<p>VegHai is not for allergies and makes no medical claims. A label cannot show everything, and the app says so. The <a href="support.html">support page</a> explains what the answers mean.</p>
+
+<h2>Your rights</h2>
+<p>Because we receive no personal data from the app, there is nothing in our systems to look up, correct or delete, except an email you sent us. If you wrote to us, you can ask what we hold, ask us to correct it, or ask us to delete it, at <a href="mailto:hello@pocket-fund.com">hello@pocket-fund.com</a>. You can also complain to your local data protection authority.</p>
+
+<h2>Purchases</h2>
+<p>VegHai 1.0 has no purchases and no subscriptions. If a paid pass is added in a later version, this policy will be updated before the version that adds it, and will say what the app store and any payment service receive.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app starts making a new connection, or we start receiving anything from it, we will change this page first and change the date at the top.</p>
+
+<p class="meta">Jigsaw Ventures LLC &middot; <a href="mailto:hello@pocket-fund.com">hello@pocket-fund.com</a> &middot; <a href="support.html">Support</a></p>
+</main>
+</body>
+</html>
