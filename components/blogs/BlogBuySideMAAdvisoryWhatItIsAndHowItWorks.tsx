@@ -286,7 +286,7 @@ export default function BlogBuySideMAAdvisoryWhatItIsAndHowItWorks() {
 <h2>Why Most Guides on Buy-Side Advisory Aren&apos;t Neutral</h2>
 <p>Almost everything written about buy-side M&amp;A advisory is published by advisory firms as marketing for their own services. That does not make the information wrong, but it does mean most guides are written to convince you to hire an advisor, not to help you decide whether you need one. This guide tries to do the second, including the parts that do not favour hiring.</p>
 <h2>What Buy-Side M&amp;A Advisory Services Include</h2>
-<p>Buy-side M&amp;A advisory services usually cover five things, each explained below: defining the acquisition criteria; sourcing and approaching targets, including owners who are not selling; valuing the business and structuring the offer; negotiating the price and letter of intent (LOI); and coordinating due diligence through to closing. The lawyer still drafts and reviews the binding agreements. For a shorter, India-specific introduction aimed at first-time buyers, see <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side advisory is and why buyers in India use it</Link>.</p>
+<p>Buy-side M&amp;A advisory services usually cover five things, each explained below: defining the acquisition criteria; sourcing and approaching targets, including owners who are not selling; valuing the business and structuring the offer; negotiating the price and letter of intent (LOI); and coordinating due diligence through to closing. The lawyer still drafts and reviews the binding agreements.</p>
 <h2>The Buy-Side Process, Step by Step</h2>
 <p>The buy-side process has seven steps, from defining what you want to buy through to closing the deal.</p>
 <div className="deal-table-wrap">

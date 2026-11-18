@@ -438,7 +438,7 @@ export default function BlogAnalystDiariesDirectMailOutreach() {
           Direct mail is one channel inside that broader process. It works because it forces
           person-by-person verification that a purely digital, high-volume cold-email approach
           skips. If you&apos;re earlier in evaluating how buy-side sourcing works end to end, see{' '}
-          <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">what buy-side M&amp;A advisory is</Link>
           {' '}and, for the search-fund-specific version of this model,{' '}
           <Link href="/blog/what-is-a-search-fund">what a search fund is</Link>.
         </p>

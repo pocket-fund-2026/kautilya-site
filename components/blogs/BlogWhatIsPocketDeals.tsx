@@ -331,7 +331,7 @@ export default function BlogWhatIsPocketDeals() {
           a specific type of acquisition. Pocket Deals isn&apos;t a replacement for that — it&apos;s
           an outlet for the deal flow those mandates don&apos;t currently absorb. If you want to
           understand the mandate-driven side of Kautilya&apos;s work in more depth, see{' '}
-          <Link href="/blog/what-is-buy-side-ma-advisory">our guide to buy-side M&amp;A advisory</Link>
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">our guide to buy-side M&amp;A advisory</Link>
           {' '}and, for how the sellers of those businesses are usually advised, our explainer on{' '}
           <Link href="/blog/what-is-sell-side-ma-advisory">sell side advisory</Link>.
         </p>

@@ -99,7 +99,7 @@ export default function BuySideAdvisorySection() {
 
         <p className="section-body" style={{ marginTop: 28 }}>
           Ready to talk? <Link href="/engage">Hire a buy-side advisor: start your acquisition mandate</Link>.
-          Background reading: <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side M&amp;A advisory is</Link>.
+          Background reading: <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">what buy-side M&amp;A advisory is</Link>.
         </p>
       </div>
     </section>

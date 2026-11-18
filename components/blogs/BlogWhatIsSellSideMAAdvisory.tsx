@@ -535,7 +535,7 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           job is matching a business to the buyers most likely to pay well for it, rather than
           running the same process for every seller. If you want to understand that buyer side in
           more depth,{' '}
-          <Link href="/blog/what-is-buy-side-ma-advisory">our guide to buy-side M&amp;A advisory</Link>{' '}
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">our guide to buy-side M&amp;A advisory</Link>{' '}
           covers the same process from the other side of the table, and{' '}
           <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">how buy-side M&amp;A advisory works, step by step</Link>{' '}
           shows how buyers source and screen the businesses that sellers put up for sale. For
@@ -570,7 +570,7 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           mobile apps, newsletters, content sites and YouTube channels and runs them:{' '}
           <a href="https://pocket-fund.com">pocket-fund.com</a>. If you&apos;re the one evaluating an acquisition rather than
           a sale, see <Link href="/approach">our approach</Link> or read about{' '}
-          <Link href="/blog/what-is-buy-side-ma-advisory">what buy-side advisory involves</Link>.
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">what buy-side advisory involves</Link>.
         </p>
 
         {/* FAQ */}

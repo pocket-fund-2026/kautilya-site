@@ -442,6 +442,8 @@ export default function BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor(
 </ul>
 </div>
 
+        <p className="coda-text">Buying rather than selling? See how <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">buy-side M&amp;A advisory</Link> helps a buyer test these multiples before bidding.</p>
+
         <div className="story-coda">
 <p className="coda-text">Thinking about buying or selling a business in India? Talk to us about what the earnings are really worth.</p>
           <Link href="/engage" className="coda-link">Begin the Conversation</Link>

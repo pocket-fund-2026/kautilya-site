@@ -487,6 +487,8 @@ export default function BlogHowToBuyABusinessWithNoMoneyDown() {
 </ul>
 </div>
 
+        <p className="coda-text">Want help sourcing and diligencing the deal itself? See how <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">buy-side M&amp;A advisory</Link> works.</p>
+
         <div className="story-coda">
 <p className="coda-text">Mark went much further on Inside Micro PE: what happens after the wire clears, why cash collection slows in the first 90 days, why brokers stiff-arm first-time buyers, and why he thinks every country should copy the SBA. Watch the full conversation on YouTube, then work out your own number before you start looking.</p>
           <Link href="/engage" className="coda-link">Begin the Conversation</Link>
