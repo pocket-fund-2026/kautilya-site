@@ -15,6 +15,7 @@ export const NEWSLETTER_SLUGS = [
   'the-merger-with-no-buyer-how-a-sponsor-combines-two-companies',
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore',
   'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent',
+  'disciplined-into-a-sale-why-a-1-growth-year-made-peoplestrong-buyable',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -1202,6 +1203,71 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       'KSK Mahanadi Power',
       'Insolvency and Bankruptcy Code',
       'Distressed M&A in India',
+    ],
+  },
+  'disciplined-into-a-sale-why-a-1-growth-year-made-peoplestrong-buyable': {
+    title: 'Disciplined into a sale: why a 1% growth year made PeopleStrong buyable',
+    description: 'Goldman Sachs paid about $130M for 84% of PeopleStrong after a loss-to-profit swing on 1% growth. How profitability made an Indian SaaS company sellable.',
+    author: 'Kautilya PE',
+    datePublished: '2026-11-18',
+    dealDate: '2025-04-15',
+    category: 'Deal Teardowns',
+    readTime: '10 min',
+    wordCount: 4174,
+    keywords: [
+      'Goldman Sachs PeopleStrong',
+      'PeopleStrong acquisition',
+      'Multiples PE exit PeopleStrong',
+      'secondary buyout India',
+      'Indian SaaS private equity',
+      'profitable SaaS buyout',
+      'HR tech acquisition India',
+      'EBITDA-positive SaaS',
+      'pre-deal carve-out',
+      'selling a software company to private equity',
+      'Wingify Everstone',
+      'PeopleStrong valuation',
+    ],
+    faqs: [
+      {
+        q: 'How much did Goldman Sachs pay for PeopleStrong?',
+        a: 'Goldman Sachs Alternatives bought 84% of PeopleStrong for about $130 million (roughly ₹ 1,200 crore), plus part of the employee stock pool, from Multiples PE. The value is press-reported and is not stated in PeopleStrong\'s own release.',
+      },
+      {
+        q: 'Why was PeopleStrong sellable if revenue grew only 1%?',
+        a: 'Profitability, not growth, made it sellable. In FY24 PeopleStrong swung from an ₹ 84 crore net loss to a ₹ 57 crore net profit on revenue of ₹ 274.5 crore, up just 1% from ₹ 271.7 crore. An EBITDA-positive business can be bought on its cash flows rather than on a bet about future growth.',
+      },
+      {
+        q: 'What return did Multiples PE make on PeopleStrong?',
+        a: 'Multiples entered in 2017 at about ₹ 400 crore, buying out Lumis Partners, and exited at about ₹ 1,200 crore, roughly 3x over eight years. The roughly 3x return is press-reported.',
+      },
+      {
+        q: 'What is a secondary buyout?',
+        a: 'A secondary buyout is one private-equity firm selling a company to another, or to a global institution, rather than the company raising new money or listing. The cash goes to the exiting fund, and the business itself continues largely unchanged under a new owner.',
+      },
+      {
+        q: 'What is a pre-deal carve-out?',
+        a: 'A pre-deal carve-out separates the parts of a company the buyer does not want before the sale, so the buyer acquires only the target business. In this deal, international and other assets were carved out so Goldman invested only in the core HR software business.',
+      },
+      {
+        q: 'How does the PeopleStrong deal value the company?',
+        a: 'About $130M for 84% implies roughly $155M for the whole company, near 6x FY24 revenue of ₹ 274.5 crore, and around 20x earnings on ₹ 57 crore of net profit. The multiples are derived, not company-stated, and the deal value is press-reported, so they are directional.',
+      },
+      {
+        q: 'What is an EBITDA-positive SaaS company?',
+        a: 'An EBITDA-positive company earns more than it spends to run, before interest, tax and accounting charges. For a SaaS business that is a milestone, because it can fund itself and be valued on its profits rather than on a promise. PeopleStrong was EBITDA-positive, which the post calls uncommon for an Indian SaaS company at this scale.',
+      },
+    ],
+    about: [
+      'Secondary buyouts in Indian SaaS',
+      'Profitability as the route to a private-equity exit',
+    ],
+    mentions: [
+      { name: 'Goldman Sachs Alternatives' },
+      { name: 'PeopleStrong' },
+      { name: 'Multiples PE' },
+      { name: 'Everstone' },
+      { name: 'Wingify' },
     ],
   },
 };
