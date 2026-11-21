@@ -14,6 +14,7 @@ import BlogEbitdaMultiplesInIndiaWhatBusinessesActuallySellFor from '@/component
 import BlogTimelineOfASearchFundFromRaiseToAcquisition from '@/components/blogs/BlogTimelineOfASearchFundFromRaiseToAcquisition';
 import BlogHowToBuyABusinessWithNoMoneyDown from '@/components/blogs/BlogHowToBuyABusinessWithNoMoneyDown';
 import BlogSearchFundVsSelfFundedSearchVsIndependentSponsor from '@/components/blogs/BlogSearchFundVsSelfFundedSearchVsIndependentSponsor';
+import BlogDoYouNeedAnMbaForASearchFundA20DealBuyerVsTheData from '@/components/blogs/BlogDoYouNeedAnMbaForASearchFundA20DealBuyerVsTheData';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -31,6 +32,7 @@ const BLOG_COMPONENTS: Record<BlogSlug, React.ComponentType> = {
   'timeline-of-a-search-fund-from-raise-to-acquisition': BlogTimelineOfASearchFundFromRaiseToAcquisition,
   'how-to-buy-a-business-with-no-money-down': BlogHowToBuyABusinessWithNoMoneyDown,
   'search-fund-vs-self-funded-search-vs-independent-sponsor': BlogSearchFundVsSelfFundedSearchVsIndependentSponsor,
+  'do-you-need-an-mba-for-a-search-fund-a-20-deal-buyer-vs-the-data': BlogDoYouNeedAnMbaForASearchFundA20DealBuyerVsTheData,
 };
 
 type Props = {

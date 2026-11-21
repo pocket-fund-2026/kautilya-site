@@ -12,6 +12,7 @@ export const BLOG_SLUGS = [
   'timeline-of-a-search-fund-from-raise-to-acquisition',
   'how-to-buy-a-business-with-no-money-down',
   'search-fund-vs-self-funded-search-vs-independent-sponsor',
+  'do-you-need-an-mba-for-a-search-fund-a-20-deal-buyer-vs-the-data',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -978,6 +979,63 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Self-funded search',
       'Independent sponsors',
       'Search fund equity and returns',
+    ],
+  },
+  'do-you-need-an-mba-for-a-search-fund-a-20-deal-buyer-vs-the-data': {
+    title: 'Do You Need an MBA for a Search Fund? A 20-Deal Buyer vs the Data',
+    subtitle: 'Mark Fleming has closed more than 20 acquisitions and says skip the MBA. We tested his view against the latest data from IESE and Yale.',
+    description: 'No MBA is needed to buy a business, but search fund investors still favour one. A 20-deal buyer\'s view, tested against IESE and Yale data.',
+    author: 'Dev Shah',
+    datePublished: '2026-11-21',
+    category: 'Search Funds',
+    readTime: '9 min',
+    wordCount: 2436,
+    keywords: [
+      'do you need an MBA for a search fund',
+      'MBA for search fund',
+      'search fund without an MBA',
+      'do you need an MBA to buy a business',
+      'is an MBA worth it for ETA',
+      'entrepreneurship through acquisition MBA',
+      'search fund investors MBA',
+      'MBA-led search fund returns',
+      'buy a business without an MBA',
+      'SBA loan experience requirements',
+      'Mark Fleming Owner Actions',
+      'IESE search fund study',
+      'Yale search fund study',
+    ],
+    faqs: [
+      {
+        q: 'Do you need an MBA to start a search fund?',
+        a: 'No, but it’s the norm in traditional, investor-funded search funds: 71% of searchers outside the US and Canada have one (IESE, 2026). Without one, expect more work to win investors’ trust before you have a deal.',
+      },
+      {
+        q: 'Can you start a search fund without an MBA?',
+        a: 'Yes. About 4 in 10 of the newest international searchers in IESE’s 2026 study don’t have one. Self-funded searches and SBA-backed purchases are the easiest routes, because lenders and sellers judge experience, not degrees.',
+      },
+      {
+        q: 'Do search fund investors require an MBA?',
+        a: 'Not formally, but many prefer one, and Mark Fleming says some funds only back Harvard and Stanford graduates. In Yale’s 2026 study, non-MBA-led search fund companies returned far less, from a sample of only 14.',
+      },
+      {
+        q: 'Does an MBA improve search fund returns?',
+        a: 'MBA-led search funds have done better: a median IRR of about 28% against 1% for non-MBA-led ones in Yale’s 2026 study. Its authors say that doesn’t prove the degree is the cause.',
+      },
+      {
+        q: 'What experience do you need to buy a business with an SBA loan?',
+        a: 'Lenders want direct industry or solid management experience, good credit and enough cash; no degree is required. Mark Fleming looks for 10 to 15 years of work, 5 managing or selling, and industry experience.',
+      },
+      {
+        q: 'What percentage of searchers have an MBA?',
+        a: '71% of searchers outside the US and Canada, and 60% of the newest cohort, according to IESE’s 2026 study, down from 89% in its 2016 study.',
+      },
+    ],
+    about: [
+      'Search funds',
+      'Entrepreneurship through acquisition',
+      'MBA degree',
+      'SBA acquisition loans',
     ],
   },
 };
