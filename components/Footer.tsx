@@ -38,6 +38,7 @@ export default function Footer() {
             <div>
               <h3>Company</h3>
               <ul>
+                <li><Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">Buy-Side M&amp;A Advisory Guide</Link></li>
                 <li><Link href="/faq">FAQ</Link></li>
                 <li><Link href="/careers">Careers</Link></li>
                 <li><a href="https://tech.kautilya-pe.com">Kautilya Tech</a></li>

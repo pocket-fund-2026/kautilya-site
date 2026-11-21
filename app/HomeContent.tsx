@@ -480,7 +480,7 @@ return (
               </div>
             ))}
           </div>
-          <p className="faq-more">More answers on pricing, timelines and deal structures are on the <Link href="/faq">full FAQ page</Link>.</p>
+          <p className="faq-more">More answers on pricing, timelines and deal structures are on the <Link href="/faq">full FAQ page</Link>. New to this? Read <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">buy-side M&amp;A advisory: what it is, process and fees</Link>.</p>
         </div>
       </section>
 
