@@ -630,9 +630,10 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'buy-side-m-a-advisory-what-it-is-and-how-it-works': {
-    title: 'Buy-Side M&A Advisory: What It Is, Process and Fees',
+    title: 'Do You Need Buy-Side M&A Advisory? What It Does, the 7 Steps and the Fees',
+    seoTitle: 'Do You Need Buy-Side M&A Advisory? Fees and the 7 Steps',
     subtitle: 'A Plain-Language Guide for Business Buyers',
-    description: 'A plain-language guide to buy-side M&A advisory: what buy-side advisory services include, how the process works step by step, what advisors charge, and how to tell whether you need one.',
+    description: 'Do you need buy-side M&A advisory? A neutral guide to what advisors do, the 7-step process, how retainers and success fees work, and when to skip one.',
     author: 'Dev Shah',
     datePublished: '2026-10-12',
     dateModified: '2026-11-11',
