@@ -362,16 +362,17 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
     ],
   },
   'what-is-sell-side-ma-advisory': {
-    title: 'Sell-Side M&A Advisory: What It Is, Process and Fees',
-    subtitle: 'A Plain-Language Guide to Sell-Side M&A for Business Owners',
+    title: 'Sell-Side M&A Advisory: How It Works, and How Buyers Should Deal With It',
+    seoTitle: "Sell-Side Advisory: Process, Fees and a Buyer's Playbook",
+    subtitle: 'How sell-side advisors run a company sale, what they charge, and what a buyer should do at each stage',
     description:
-      'Sell side advisory means hiring an M&A advisor to represent you when you sell your company. What sell-side advisory services include, the step-by-step process, typical fees, and how to tell if you need one.',
+      'How a sell-side M&A advisor runs a company sale, what they charge, and how a buyer should handle the teaser, CIM, IOI, LOI and auction at each stage.',
     author: 'Dev Shah',
     datePublished: '2026-09-16',
-    dateModified: '2026-11-11',
+    dateModified: '2026-11-23',
     category: 'Seller Guides',
-    readTime: '9 min',
-    wordCount: 2650,
+    readTime: '11 min',
+    wordCount: 3250,
     keywords: [
       // Primary
       'sell-side M&A advisory',
@@ -404,6 +405,14 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'how long does selling a business take with an advisor',
     ],
     faqs: [
+      {
+        q: 'Does the sell-side advisor work for the buyer?',
+        a: "No. The sell-side advisor is hired and paid by the seller, and the success fee usually rises with the sale price. Treat their numbers as the seller's case, and check every important figure against the underlying statements yourself.",
+      },
+      {
+        q: 'How should a buyer deal with a sell-side advisor?',
+        a: 'Read the NDA closely before signing, rebuild earnings from the financial statements instead of relying on adjusted EBITDA, give indications of interest as a range with your assumptions written down, negotiate exclusivity and working capital terms in the LOI, and set a walk-away price before any best-and-final round.',
+      },
       {
         q: 'What is sell side advisory?',
         a: 'Sell side advisory is a service in which an M&A advisor represents the owner of a company in selling it: valuing the business, preparing marketing materials, approaching buyers confidentially, negotiating, and managing the deal to closing. It is usually paid as a retainer plus a success fee.',

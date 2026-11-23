@@ -234,11 +234,11 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           <span className="meta-tag">M&amp;A Advisory</span>
           <span className="meta-tag">9 min read</span>
         </div>
-        <h1>Sell-Side M&amp;A Advisory: What It Is, Process and Fees</h1>
+        <h1>Sell-Side M&amp;A Advisory: How It Works, and How Buyers Should Deal With It</h1>
         <div className="subtitle">
-          A Plain-Language Guide to Sell-Side M&amp;A for Business Owners
+          How sell-side advisors run a company sale, what they charge, and what a buyer should do at each stage
         </div>
-        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 September 2026&nbsp;&nbsp;·&nbsp;&nbsp;Updated 4 November 2026</p>
+        <p className="blog-author-byline">By <a href="/team">Dev Shah</a>&nbsp;&nbsp;·&nbsp;&nbsp;16 September 2026&nbsp;&nbsp;·&nbsp;&nbsp;Updated 23 November 2026</p>
         <div className="hero-line" />
       </div>
 
@@ -258,6 +258,13 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           actually need one. This guide tries to do the second, including the parts that
           don&apos;t favor hiring a full advisor.
         </p>
+        <p>
+          It is also written for the other side of the table. If you are buying a company, most
+          good businesses you look at will be sold through an advisor like this, and knowing how
+          they run the process tells you what each document is for, where the deadlines come
+          from, and where you have room to push. The buyer&apos;s playbook is in{' '}
+          <a href="#buyers-playbook">If You&apos;re the Buyer</a> below.
+        </p>
 
         <div className="key-takeaways">
           <div className="phase-label">Key Takeaways</div>
@@ -267,6 +274,7 @@ export default function BlogWhatIsSellSideMAAdvisory() {
             <li>Smaller businesses are usually better served by a business broker or a direct sale.</li>
             <li>Advisors are usually paid a retainer plus a success fee, often on a sliding scale that decreases as the deal size grows.</li>
             <li>Published guides put the full process at roughly 6 to 12 months, with several months of preparation before any buyer hears about it.</li>
+            <li>If you are the buyer, the advisor works for the seller: treat their numbers as the seller&apos;s case and check them against the statements.</li>
             <li>Information is released in stages: teaser, then NDA, then CIM, then limited data after indications of interest, then the full data room only once a buyer has exclusivity.</li>
           </ul>
         </div>
@@ -527,6 +535,70 @@ export default function BlogWhatIsSellSideMAAdvisory() {
           </table>
         </div>
 
+        <h2 id="buyers-playbook">If You&apos;re the Buyer: How to Work With a Sell-Side Advisor</h2>
+        <p>
+          The advisor is hired by the seller, and their success fee usually grows with the sale
+          price. That does not make them your opponent, since they also need a deal that closes,
+          but it does mean every document they send is the seller&apos;s case. Here is what to do
+          at each stage.
+        </p>
+        <h3>Teaser and NDA</h3>
+        <p>
+          The teaser is a short, anonymous summary meant to get you to sign the NDA. Read the NDA
+          before you sign it, not after: look at how long it lasts, whether it stops you from
+          approaching the company&apos;s employees, customers or suppliers, and whether it limits
+          deals you may already be looking at in the same sector. Ask for changes now; it is much
+          harder later.
+        </p>
+        <h3>The CIM</h3>
+        <p>
+          The CIM is a sales document. Its headline number is usually adjusted EBITDA, which adds
+          back costs the seller argues will not continue. Some add-backs are fair and some are
+          not, so rebuild earnings yourself from the actual financial statements and list every
+          add-back you accept and every one you reject. That list becomes your argument on price
+          later.
+        </p>
+        <h3>Indication of interest (IOI)</h3>
+        <p>
+          The process letter will set a deadline and a format. Give a range rather than a single
+          number, and write down the assumptions behind it (the earnings figure you used, how you
+          will pay, what you still need to check). If diligence later breaks an assumption, you
+          can point to it instead of looking like you are cutting price for no reason.
+        </p>
+        <h3>Management meetings</h3>
+        <p>
+          This is often your first direct contact with the people who run the business. Use it to
+          test what the CIM claims, especially how much depends on the founder and on a few large
+          customers, rather than to sell yourself.
+        </p>
+        <h3>Letter of intent (LOI)</h3>
+        <p>
+          Price is only one line in the LOI. Exclusivity (how long the seller stops talking to
+          other buyers), how working capital will be set at closing, what is paid at closing
+          versus later, and which conditions let you walk away often matter as much as the
+          headline number. Agree these now, because the seller has the most leverage before you
+          sign and you have the most leverage once you have exclusivity.
+        </p>
+        <h3>Data room and the seller&apos;s quality of earnings report</h3>
+        <p>
+          Many sell-side processes come with a quality of earnings report paid for by the seller.
+          It is useful as a starting point, but it was commissioned by the other side. Read what
+          it tested and what it left out, and decide whether you need your own.
+        </p>
+        <h3>Auctions and best-and-final rounds</h3>
+        <p>
+          The advisor&apos;s job is to create competition, so expect deadlines, other bidders and
+          a final round. Set your walk-away price before that round starts, and hold to it.
+          Overpaying is the most common way a good business becomes a bad acquisition.
+        </p>
+        <p>
+          Not every deal comes through an advisor. Smaller owner-run businesses are often sold
+          directly, and those deals usually move more slowly but face less competition. If you
+          want help on either kind of deal, see{' '}
+          <Link href="/approach">how Kautilya works with buyers</Link> and{' '}
+          <Link href="/blog/buy-side-m-a-advisory-what-it-is-and-how-it-works">what buy-side M&amp;A advisory involves</Link>.
+        </p>
+
         <h2>How This Connects to Buyer Type and Valuation</h2>
         <p>
           Different types of buyers behave differently. A larger company buying a competitor, a
@@ -577,6 +649,14 @@ export default function BlogWhatIsSellSideMAAdvisory() {
         <div className="blog-faq">
           <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">Does the sell-side advisor work for the buyer?</div>
+            <p className="blog-faq-a">No. The sell-side advisor is hired and paid by the seller, and the success fee usually rises with the sale price. Treat their numbers as the seller&apos;s case, and check every important figure against the underlying statements yourself.</p>
+          </div>
+          <div className="blog-faq-item">
+            <div className="blog-faq-q">How should a buyer deal with a sell-side advisor?</div>
+            <p className="blog-faq-a">Read the NDA closely before signing, rebuild earnings from the financial statements instead of relying on adjusted EBITDA, give indications of interest as a range with your assumptions written down, negotiate exclusivity and working capital terms in the LOI, and set a walk-away price before any best-and-final round.</p>
+          </div>
           <div className="blog-faq-item">
             <div className="blog-faq-q">What is sell side advisory?</div>
             <p className="blog-faq-a">Sell side advisory is a service in which an M&amp;A advisor represents the owner of a company in selling it: valuing the business, preparing marketing materials, approaching buyers confidentially, negotiating, and managing the deal to closing. It is usually paid as a retainer plus a success fee.</p>
