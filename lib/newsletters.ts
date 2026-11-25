@@ -16,6 +16,7 @@ export const NEWSLETTER_SLUGS = [
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore',
   'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent',
   'disciplined-into-a-sale-why-a-1-growth-year-made-peoplestrong-buyable',
+  'where-the-money-actually-goes-why-2100-crore-is-mostly-not-a-payout',
 ] as const;
 
 export type NewsletterSlug = (typeof NEWSLETTER_SLUGS)[number];
@@ -1268,6 +1269,68 @@ export const NEWSLETTER_META: Record<NewsletterSlug, NewsletterMeta> = {
       { name: 'Multiples PE' },
       { name: 'Everstone' },
       { name: 'Wingify' },
+    ],
+  },
+  'where-the-money-actually-goes-why-2100-crore-is-mostly-not-a-payout': {
+    title: '₹ 2,100 Crore Carlyle-Nido Deal: Who Gets the Money?',
+    subtitle: 'Where the money actually goes: why ₹ 2,100 crore is mostly not a payout',
+    description: 'Only ₹ 602 crore of the ₹ 2,100 crore Carlyle-Nido Home Finance deal was set to buy Edelweiss shares. ₹ 1,500 crore was fresh capital for the lender.',
+    author: 'Kautilya PE',
+    datePublished: '2026-11-25',
+    dealDate: '2026-02-10',
+    category: 'Deal Teardowns',
+    readTime: '6 min',
+    wordCount: 4468,
+    keywords: [
+      'Carlyle Nido Home Finance',
+      'Nido Home Finance acquisition',
+      'Carlyle Nido deal',
+      'Edelweiss Nido stake sale',
+      'Edelweiss Housing Finance',
+      'Aditya Puri Carlyle',
+      'affordable housing finance India',
+      'primary vs secondary capital',
+      'share warrants deal structure',
+      'growth capital investment',
+      'housing finance company valuation',
+      'India private equity deal teardown',
+    ],
+    faqs: [
+      {
+        q: 'What did Carlyle agree to invest in Nido Home Finance?',
+        a: 'On February 10, 2026, Carlyle agreed to invest ₹ 2,100 crore ($230M) for about 73% of Nido Home Finance. Former HDFC Bank chief Aditya Puri is co-investing. The plan was to buy 45% from Edelweiss and put ₹ 1,500 crore of new equity and warrants into Nido at ₹ 193 a share.',
+      },
+      {
+        q: 'How much of the ₹ 2,100 crore goes to Edelweiss?',
+        a: 'Under the announced terms, only ₹ 602 crore buys existing shares from Edelweiss. The other ₹ 1,500 crore is new equity and warrants issued by Nido, so that money goes into the company, not to the seller. At completion, the reported figures were about ₹ 580 crore and ₹ 1,446 crore.',
+      },
+      {
+        q: 'What are the three tranches of the Carlyle-Nido deal?',
+        a: 'As announced, the three tranches were ₹ 602 crore to buy 45% from Edelweiss, ₹ 500 crore of new equity into Nido, and ₹ 1,000 crore of warrants. All were set at ₹ 193 a share, for about 73%. The first tranche pays the seller. The other two fund the company.',
+      },
+      {
+        q: 'What is the difference between primary and secondary capital?',
+        a: 'Secondary money buys shares from an existing owner, so it goes to that seller. Primary money is new equity issued by the company, so it lands on the company\'s balance sheet to spend. The Nido deal is mostly primary. That means it is mostly about funding Nido\'s growth, not cashing Edelweiss out.',
+      },
+      {
+        q: 'What is a warrant?',
+        a: 'A warrant is a right, but not yet an obligation, to buy shares at a set price within a set period. The holder pays a small amount upfront and the rest on exercise. Warrants let an investor lock in a price and a stake while spreading the payment and deferring the dilution.',
+      },
+      {
+        q: 'Has the Carlyle and Nido deal closed?',
+        a: 'Yes, in its first phase. It completed on September 25, 2026, according to a CRISIL rating rationale dated October 7, 2026. CRISIL reported that ₹ 723 crore of the ₹ 1,446 crore primary infusion had been received. The rest is expected as warrants convert over 18 months.',
+      },
+    ],
+    about: [
+      'Private equity growth capital in Indian housing finance',
+      'Primary versus secondary capital',
+      'Share warrants in deal structures',
+    ],
+    mentions: [
+      { name: 'The Carlyle Group' },
+      { name: 'Nido Home Finance' },
+      { name: 'Edelweiss Financial Services' },
+      { name: 'Salisbury Investments' },
     ],
   },
 };

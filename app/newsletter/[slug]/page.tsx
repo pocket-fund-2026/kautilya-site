@@ -18,6 +18,7 @@ import NewsletterTheMergerWithNoBuyerHowASponsorCombinesTwoCompanies from '@/com
 import NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore from '@/components/newsletters/NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore';
 import NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent from '@/components/newsletters/NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent';
 import NewsletterDisciplinedIntoASaleWhyA1GrowthYearMadePeoplestrongBuyable from '@/components/newsletters/NewsletterDisciplinedIntoASaleWhyA1GrowthYearMadePeoplestrongBuyable';
+import NewsletterWhereTheMoneyActuallyGoesWhy2100CroreIsMostlyNotAPayout from '@/components/newsletters/NewsletterWhereTheMoneyActuallyGoesWhy2100CroreIsMostlyNotAPayout';
 
 const BASE = 'https://www.kautilya-pe.com';
 
@@ -39,6 +40,7 @@ const NEWSLETTER_COMPONENTS: Record<NewsletterSlug, React.ComponentType> = {
   'scarcity-premium-why-one-kolkata-mall-was-worth-3250-crore': NewsletterScarcityPremiumWhyOneKolkataMallWasWorth3250Crore,
   'jsw-energy-ksk-mahanadi-acquisition-creditors-kept-26-percent': NewsletterJswEnergyKskMahanadiAcquisitionCreditorsKept26Percent,
   'disciplined-into-a-sale-why-a-1-growth-year-made-peoplestrong-buyable': NewsletterDisciplinedIntoASaleWhyA1GrowthYearMadePeoplestrongBuyable,
+  'where-the-money-actually-goes-why-2100-crore-is-mostly-not-a-payout': NewsletterWhereTheMoneyActuallyGoesWhy2100CroreIsMostlyNotAPayout,
 };
 
 type Props = {
