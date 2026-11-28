@@ -1051,6 +1051,7 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
   },
   'should-you-start-a-search-fund': {
     title: 'Should You Start a Search Fund? 20-Question Scorecard (2026)',
+    seoTitle: 'Should You Start a Search Fund? 20-Question Scorecard (2026)',
     subtitle: 'Search fund series, Part 4: the Searcher Readiness Scorecard',
     description: 'Should you start a search fund? Recent searchers buy a company about half the time. See the 2026 odds and CEO pay, then take our 20-question test.',
     author: 'Dev Shah',

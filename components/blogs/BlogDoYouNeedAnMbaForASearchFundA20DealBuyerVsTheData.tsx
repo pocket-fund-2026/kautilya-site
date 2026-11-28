@@ -384,6 +384,8 @@ export default function BlogDoYouNeedAnMbaForASearchFundA20DealBuyerVsTheData() 
 <p>Mark also covers how Owner Actions works, the 5% down SBA structure, what goes wrong in the first 90 days after closing, and why he thinks every country should copy the SBA.</p>
 <p><strong>▶ Watch: Inside Micro PE with Mark Fleming on YouTube</strong> (<a href="https://www.youtube.com/watch?v=wG9d0GdjmHM" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=wG9d0GdjmHM</a>)</p>
 
+<p>Weighing a search of your own? <Link href="/blog/should-you-start-a-search-fund">Take the 20-question searcher readiness scorecard</Link>.</p>
+
 <div className="blog-faq">
 <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>
 <div className="blog-faq-item">

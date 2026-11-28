@@ -490,6 +490,8 @@ export default function BlogWhatIsASearchFund() {
           {' '}for what changes when the seller is also the founder.
         </p>
 
+<p>Not sure it is for you? <Link href="/blog/should-you-start-a-search-fund">Take the 20-question searcher readiness scorecard</Link>.</p>
+
         {/* FAQ */}
         <div className="blog-faq">
           <div className="phase-label" style={{ marginBottom: 20 }}>Frequently Asked Questions</div>

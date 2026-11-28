@@ -266,7 +266,7 @@ export default function BlogSearchFundVsSelfFundedSearchVsIndependentSponsor() {
 
       <article className="story-body">
 
-<p><em>Search fund series, Part 3</em></p>
+<p><em>Search fund series, Part 3. Next: <Link href="/blog/should-you-start-a-search-fund">Should You Start a Search Fund?</Link></em></p>
 <p><strong>The difference between a search fund, a self-funded search and an independent sponsor is who pays for the search, who owns what afterwards and who runs the company.</strong> A traditional search fund is paid for by investors, a self-funded search by you, and an independent sponsor raises money deal by deal. A searcher who &quot;owns 25%&quot; usually walks away with about 19% of the sale.</p>
 <p>The gap comes from how the deal is funded. There are three main ways to buy a company without a fund of your own: a traditional search fund, a self-funded search and an independent sponsor. Each splits money, risk and control differently, and the one you pick decides how much of the business you really end up owning.</p>
 <p>Below, the three are compared side by side, with the numbers behind each, so you can match a model to your savings, your risk appetite and the size of business you want to run.</p>
