@@ -13,6 +13,7 @@ export const BLOG_SLUGS = [
   'how-to-buy-a-business-with-no-money-down',
   'search-fund-vs-self-funded-search-vs-independent-sponsor',
   'do-you-need-an-mba-for-a-search-fund-a-20-deal-buyer-vs-the-data',
+  'should-you-start-a-search-fund',
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1046,6 +1047,59 @@ export const BLOG_META: Record<BlogSlug, BlogMeta> = {
       'Entrepreneurship through acquisition',
       'MBA degree',
       'SBA acquisition loans',
+    ],
+  },
+  'should-you-start-a-search-fund': {
+    title: 'Should You Start a Search Fund? 20-Question Scorecard (2026)',
+    subtitle: 'Search fund series, Part 4: the Searcher Readiness Scorecard',
+    description: 'Should you start a search fund? Recent searchers buy a company about half the time. See the 2026 odds and CEO pay, then take our 20-question test.',
+    author: 'Dev Shah',
+    datePublished: '2026-11-28',
+    category: 'Search Funds',
+    readTime: '8 min',
+    wordCount: 1742,
+    keywords: [
+      'should I start a search fund',
+      'should you start a search fund',
+      'is a search fund right for me',
+      'searcher readiness scorecard',
+      'search fund success rate',
+      'search fund acquisition rate',
+      'how many search funds acquire a company',
+      'what percentage of search funds fail',
+      'search fund risks',
+      'how much do search fund CEOs make',
+      'search fund CEO salary',
+      'how much money do you need to start a search fund',
+      'solo vs partnered search fund',
+      'entrepreneurship through acquisition',
+      'Stanford search fund study 2026',
+    ],
+    faqs: [
+      {
+        q: 'Should I start a search fund?',
+        a: 'Only if a two-year search that ends without a deal wouldn\'t sink you, you\'d be a believable CEO of the business you want to buy, and your family is on board. Recent searchers in the US and Canada buy a company about half the time, so score yourself on the 20 questions in this guide first.',
+      },
+      {
+        q: 'What percentage of search funds acquire a company?',
+        a: '58% of concluded US and Canadian search funds, according to Stanford\'s 2026 study, and 48% of those launched from 2021 to 2024. Yale researchers put the recent run rate nearer 40%. IESE found 73% of concluded international searches ended in a deal.',
+      },
+      {
+        q: 'How much do search fund CEOs make?',
+        a: 'In a 2026 Yale study of 181 CEOs whose companies were later sold, the median salary was $200,000 and the median payout at exit was $6.0 million before tax. About one in five got less than $1 million, and searchers who never bought a company aren\'t in the data.',
+      },
+      {
+        q: 'How much money do you need to start a search fund?',
+        a: 'In a traditional search fund, investors fund the search, not you. Stanford found searchers raised a median $550,000 per searcher in 2024 and 2025 to cover a salary and costs. In a self-funded search you pay those costs yourself.',
+      },
+      {
+        q: 'Is it better to search alone or with a partner?',
+        a: 'Partners buy more often: 58% against 43% for solo searchers among funds launched from 2021 to 2024, per Stanford. You also share the equity, since a pair typically splits up to 30% where a solo searcher can earn up to 25%.',
+      },
+    ],
+    about: [
+      'Search funds',
+      'Entrepreneurship through acquisition',
     ],
   },
 };
